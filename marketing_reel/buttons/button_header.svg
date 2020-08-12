@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 216 68">
+  <defs>
+    <linearGradient id="a" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#ed775a"/>
+      <stop offset="1" stop-color="#d24841"/>
+      <stop offset="1"/>
+    </linearGradient>
+  </defs>
+  <g>
+    <rect id="rm" x="0.8" y="0.8" width="214" height="66" rx="15" fill="none" stroke="#d65146" stroke-miterlimit="10" stroke-width="1.6" stroke-dasharray="133.5" stroke-dashoffset="175"/>
+    <path d="M18.809,7.8H196.791A10.047,10.047,0,0,1,206.8,17.885v31.83A10.047,10.047,0,0,1,196.791,59.8H18.809A10.047,10.047,0,0,1,8.8,49.715V17.885A10.047,10.047,0,0,1,18.809,7.8Z" fill-rule="evenodd" fill="url(#a)"/>
+    <g fill="#f29e7a" opacity="0.5">
+      <polygon points="187.049 7.8 177.116 41.273 175.609 7.8 174.006 7.8 175.724 45.964 171.618 59.8 173.29 59.8 175.944 50.856 176.346 59.8 177.95 59.8 177.336 46.164 188.721 7.8 187.049 7.8"/>
+      <polygon points="128.35 7.8 79.04 59.8 81.255 59.8 130.565 7.8 128.35 7.8"/>
+      <polygon points="28.397 59.8 61.757 7.8 59.85 7.8 26.49 59.8 28.397 59.8"/>
+    </g>
+  </g>
+</svg>

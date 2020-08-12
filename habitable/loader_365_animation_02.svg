@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+<defs>
+<clipPath id="clp">
+<rect width="200" height="100"/>
+</clipPath>
+</defs>
+<g clip-path="url(#clp)">
+<g transform="translate(100,100)">
+<circle stroke-dasharray="502.6" stroke-dashoffset="758.9" fill="none" stroke="#004155" stroke-width="10.6" stroke-miterlimit="10" cx="0" cy="0" r="80">
+<animateTransform attributeName="transform" type="rotate" values="0 0 0;360 0 0" times="0;1" dur="1.8s" calcMode="spline" keySplines="0.5 0 0.5 1" begin="0" repeatCount="indefinite"></animateTransform>
+</circle>
+</g>
+</g>
+</svg>

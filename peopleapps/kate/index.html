@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Peopleapps</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <style>
+    body, html {
+      padding: 0;
+      margin: 0;
+      background-color: #fefefe;
+      font-family: 'Roboto Condensed', sans-serif;
+    }
+    #main {
+      background: #f3deda;
+      width: 600px;
+      height: 749px;
+      overflow: hidden;
+      position: absolute;
+      left: 50%;
+      top: 50px;
+      transform: translateX(-50%);
+    }
+    .frame {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      width: 600px;
+      height: 749px;
+    }
+    .happy {
+      position: absolute;
+      left: 0px;
+      top: 193px;
+      width: 600px;
+      height: 280px;
+    }
+    .lips {
+      position: absolute;
+      left: 180px;
+      top: 492px;
+      width: 253px;
+      height: 165px;
+    }
+    #sc1 {
+      animation: sc1 14.6s infinite;
+    }
+    .stick {
+      position: absolute;
+      left: 458px;
+      top: 362px;
+    }
+    .kate {
+      position: absolute;
+      left: 0px;
+      top: 216px;
+      width: 600px;
+      height: 300px;
+    }
+    .pic {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      width: 600px;
+      height: 749px;
+    }
+    .friday {
+      position: absolute;
+      left: 0px;
+      top: 240px;
+      width: 600px;
+      height: 270px;
+    }
+    .font_bg {
+      position: absolute;
+      left: 0px;
+      top: 603px;
+      width: 600px;
+      height: 92px;
+      background: #fff;
+    }
+    .type1 {
+      position: absolute;
+      left: 0px;
+      top: 620px;
+      width: 600px;
+      color: #511a2b;
+      font-size: 64px;
+      line-height: 1;
+      text-align: center;
+    }
+    .type2 {
+      position: absolute;
+      left: 0px;
+      top: 632px;
+      width: 600px;
+      color: #511a2b;
+      font-size: 32px;
+      line-height: 1;
+      text-align: center;
+    }
+    .type3 {
+      position: absolute;
+      left: 0px;
+      top: 626px;
+      width: 600px;
+      color: #511a2b;
+      font-size: 48px;
+      line-height: 1;
+      text-align: center;
+    }
+    .type4 {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      width: 600px;
+      height: 749px;
+      color: #511a2b;
+      font-size: 96px;
+      line-height: 1.1;
+      text-align: center;
+      padding-top: 270px;
+    }
+    @keyframes sc1 {
+      0% {
+        visibility: visible;
+        filter: blur(100px);
+        top: -749px;
+      }
+      2.069%, 10.345%, 100% {
+        filter: blur(0px);
+        transform: scale(1);
+        top: 0px;
+      }
+      11.034% {
+        visibility: visible;
+        filter: blur(20px);
+        transform: scale(2);
+        opacity: 1;
+      }
+      12.414% {
+        filter: blur(50px);
+        transform: scale(4);
+        opacity: 0;
+      }
+      2.759%, 10.345%, 13.103%, 100% {
+        visibility: hidden;
+      }
+    }
+    #sc2 {
+      animation: sc2 14.6s steps(13) infinite;
+      background: url(imgs/happy_hour.png) no-repeat 0px 0px;
+    }
+    @keyframes sc2 {
+      0%, 2.069%, 11.034%, 100% {
+        visibility: hidden;
+      }
+      2.759%, 10.345% {
+        visibility: visible;
+      }
+      0%, 2.759% {
+        background-position: 0px 0px;
+      }
+      10.345%, 100% {
+        background-position: 0px -3640px;
+      }
+    }
+    #sc3 {
+      animation: sc3 14.6s steps(12) infinite;
+      background: url(imgs/lips.png) no-repeat 0px 0px;
+    }
+    @keyframes sc3 {
+      0%, 2.069%, 11.034%, 100% {
+        visibility: hidden;
+      }
+      2.759%, 10.345% {
+        visibility: visible;
+      }
+      0%, 2.759% {
+        background-position: 0px 0px;
+      }
+      10.345%, 100% {
+        background-position: 0px -1980px;
+      }
+    }
+    #sc4 {
+      animation: sc4 14.6s ease-in infinite;
+    }
+    @keyframes sc4 {
+      0%, 2.069%, 6.897%, 100% {
+        visibility: hidden;
+      }
+      2.759%, 6.207% {
+        visibility: visible;
+      }
+      0%, 2.759% {
+        left: 458px;
+        top: 362px;
+      }
+      6.207%, 100% {
+        left: 640px;
+        top: 200px;
+      }
+    }
+    #sc5 {
+      animation: sc5 14.6s steps(9) infinite;
+      background: url(imgs/kate.png) no-repeat 0px 0px;
+    }
+    @keyframes sc5 {
+      0%, 11.724% {
+        opacity: 0;
+      }
+      0%, 10.345%, 22.759%, 100% {
+        visibility: hidden;
+        transform: scale(.2);
+      }
+      11.724%, 22.069% {
+        visibility: visible;
+        transform: scale(.2);
+        filter: blur(10px);
+      }
+      0%, 13.793% {
+        background-position: 0px 0px;
+        transform: scale(1);
+        filter: blur(0px);
+        opacity: 1;
+      }
+      19.310%, 100% {
+        background-position: 0px -2700px;
+        transform: scale(1);
+        filter: blur(0px);
+      }
+      19.310% {
+        opacity: 1;
+      }
+    }
+    #sc6 {
+      animation: sc6 14.6s infinite;
+    }
+    @keyframes sc6 {
+      0%, 19.310%, 37.241%, 100% {
+        visibility: hidden;
+      }
+      20% {
+        visibility: visible;
+      }
+      0%, 19.310% {
+        opacity: 0;
+      }
+      22.069%, 100% {
+        opacity: 1;
+      }
+    }
+    #sc7 {
+      animation: sc7 14.6s infinite;
+    }
+    @keyframes sc7 {
+      0%, 22.759%, 33.103%, 100% {
+        visibility: hidden;
+      }
+      23.448% {
+        visibility: visible;
+      }
+    }
+    #sc8 {
+      animation: sc8 14.6s infinite;
+    }
+    @keyframes sc8 {
+      0%, 27.586%, 33.103%, 100% {
+        visibility: hidden;
+      }
+      28.276% {
+        visibility: visible;
+      }
+    }
+    #sc9 {
+      animation: sc9 14.6s infinite;
+    }
+    @keyframes sc9 {
+      0%, 36.552%, 100% {
+        visibility: hidden;
+      }
+      37.241% {
+        visibility: visible;
+        left: 0px;
+      }
+      42.069% {
+        left: -70px;
+        visibility: hidden;
+      }
+    }
+    #sc10 {
+      animation: sc10 14.6s infinite;
+    }
+    @keyframes sc10 {
+      0%, 42.069%, 48.966%, 100% {
+        visibility: hidden;
+        left: -70px;
+      }
+      42.759% {
+        visibility: visible;
+      }
+    }
+    #sc11 {
+      animation: sc11 14.6s infinite;
+    }
+    @keyframes sc11 {
+      0%, 48.966%, 56.552%, 100% {
+        visibility: hidden;
+        left: -70px;
+      }
+      49.655% {
+        visibility: visible;
+      }
+    }
+    #sc12 {
+      animation: sc12 14.6s infinite;
+    }
+    @keyframes sc12 {
+      0%, 36.552%, 56.552%, 100% {
+        visibility: hidden;
+      }
+      37.241% {
+        visibility: visible;
+        left: 600px;
+      }
+      42.069% {
+        left: 0px;
+      }
+    }
+    #sc13 {
+      background: #f3deda;
+      width: 1000px;
+      height: 1749px;
+      transform: rotate(30deg);
+      position: absolute;
+      top: -750px;
+      animation: sc13 14.6s infinite;
+    }
+    @keyframes sc13 {
+      0%, 53.103% {
+        left: -1200px;
+      }
+      56.552%, 100% {
+        left: 0;
+        visibility: hidden;
+      }
+    }
+    #sc14 {
+      animation: sc14 14.6s steps(16) infinite;
+      background: url(imgs/live.png) no-repeat 0px 0px;
+    }
+    @keyframes sc14 {
+      0%, 55.172%, 66.207%, 100% {
+        visibility: hidden;
+      }
+      55.862% {
+        visibility: visible;
+      }
+      0%, 55.862% {
+        background-position: 0px 0px;
+      }
+      66.207%, 100% {
+        background-position: 0px -4320px;
+      }
+    }
+    #sc15 {
+      animation: sc15 14.6s steps(13) infinite;
+      background: url(imgs/happy_hour.png) no-repeat 0px 0px;
+    }
+    @keyframes sc15 {
+      0%, 75.172%, 100% {
+        visibility: hidden;
+      }
+      75.862% {
+        visibility: visible;
+      }
+      0%, 75.862% {
+        background-position: 0px 0px;
+      }
+      82.759%, 100% {
+        background-position: 0px -3640px;
+      }
+    }
+    #sc16 {
+      animation: sc16 14.6s steps(12) infinite;
+      background: url(imgs/lips.png) no-repeat 0px 0px;
+    }
+    @keyframes sc16 {
+      0%, 75.172% {
+        visibility: hidden;
+      }
+      75.862%, 100% {
+        visibility: visible;
+      }
+      0%, 75.862% {
+        background-position: 0px 0px;
+      }
+      82.759%, 100% {
+        background-position: 0px -1980px;
+      }
+    }
+    #sc17 {
+      animation: sc17 14.6s ease-in infinite;
+    }
+    @keyframes sc17 {
+      0%, 75.172%, 6.897%, 100% {
+        visibility: hidden;
+      }
+      75.862% {
+        visibility: visible;
+      }
+      0%, 75.862% {
+        left: 458px;
+        top: 362px;
+      }
+      80.690%, 100% {
+        left: 640px;
+        top: 200px;
+      }
+    }
+    #sc18 {
+      animation: sc18 14.6s infinite;
+      background: url(imgs/lips.png) no-repeat 0px 0px;
+    }
+    @keyframes sc18 {
+      0%, 82.069% {
+        visibility: hidden;
+      }
+      82.759%, 100% {
+        visibility: visible;
+      }
+    }
+    #sc19 {
+      animation: sc19 14.6s steps(13) infinite;
+      background: url(imgs/happy_hour.png) no-repeat 0px 0px;
+    }
+    @keyframes sc19 {
+      0%, 82.069%, 100% {
+        visibility: hidden;
+      }
+      82.759% {
+        visibility: visible;
+      }
+      0%, 82.759% {
+        background-position: 0px 0px;
+      }
+      91.724%, 100% {
+        background-position: 0px -3640px;
+      }
+    }
+    #sc20 {
+      animation: sc20 14.6s steps(13) infinite;
+      background: url(imgs/happy_hour.png) no-repeat 0px 0px;
+    }
+    @keyframes sc20 {
+      0%, 91.034%, 100% {
+        visibility: hidden;
+      }
+      91.724% {
+        visibility: visible;
+      }
+      0%, 91.724% {
+        background-position: 0px 0px;
+      }
+      100% {
+        background-position: 0px -3640px;
+      }
+    }
+    #sc21 {
+      animation: sc21 14.6s infinite;
+    }
+    @keyframes sc21 {
+      0%, 22.069%, 55.172%, 100% {
+        visibility: hidden;
+      }
+      23.448% {
+        visibility: visible;
+      }
+      0%, 22.069% {
+        left: -600px;
+      }
+      25.517%, 100% {
+        left: 0px;
+      }
+    }
+    #sc22 {
+      animation: sc22 14.6s infinite;
+    }
+    @keyframes sc22 {
+      0%, 23.448%, 36.552%, 100% {
+        visibility: hidden;
+      }
+      24.138% {
+        visibility: visible;
+      }
+      0%, 23.448% {
+        left: -600px;
+        filter: blur(20px);
+      }
+      27.586%, 31.724% {
+        left: 0px;
+        filter: blur(0px);
+      }
+      36.552%, 100% {
+        left: 600px;
+        filter: blur(20px);
+      }
+    }
+    #sc23 {
+      animation: sc23 14.6s infinite;
+    }
+    @keyframes sc23 {
+      0%, 31.724%, 44.138%, 100% {
+        visibility: hidden;
+      }
+      32.414% {
+        visibility: visible;
+      }
+      0%, 31.724% {
+        left: -600px;
+        filter: blur(20px);
+      }
+      36.552%, 41.379% {
+        left: 0px;
+        filter: blur(0px);
+      }
+      44.138%, 100% {
+        left: 600px;
+        filter: blur(20px);
+      }
+    }
+    #sc24 {
+      animation: sc24 14.6s infinite;
+    }
+    @keyframes sc24 {
+      0%, 42.069%, 55.862%, 100% {
+        visibility: hidden;
+      }
+      42.759% {
+        visibility: visible;
+      }
+      0%, 42.069% {
+        left: -600px;
+        filter: blur(20px);
+      }
+      44.828%, 100% {
+        left: 0px;
+        filter: blur(0px);
+      }
+    }
+    #sc25 {
+      animation: sc25 14.6s infinite;
+    }
+    @keyframes sc25 {
+      0%, 66.207%, 76.552%, 100% {
+        visibility: hidden;
+      }
+      66.897% {
+        visibility: visible;
+      }
+      0%, 68.276% {
+        background: #f3deda;
+      }
+      68.966%, 70.345% {
+        background: #511a2b;
+        color: #f3dedb;
+      }
+      71.034%, 73.103% {
+        background: #f3deda;
+        color: #511a2b;
+      }
+      73.793%, 100% {
+        background: #511a2b;
+        color: #f3dedb;
+      }
+      0%, 74.483% {
+        opacity: 1;
+      }
+      76.552%, 100% {
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+<div id="main">
+  <div id="sc1" class="frame">
+    <img src="imgs/initial.png">
+  </div>
+  <div id="sc2" class="happy"></div>
+  <div id="sc3" class="lips"></div>
+  <img id="sc4" class="stick" src="imgs/lipstick.png">
+  <div id="sc5" class="kate"></div>
+  <img id="sc6" class="pic" src="imgs/pic1.jpg">
+  <img id="sc7" class="pic" src="imgs/pic2.jpg">
+  <img id="sc8" class="pic" src="imgs/pic3.jpg">
+  <img id="sc9" class="pic" src="imgs/pic2.jpg">
+  <img id="sc10" class="pic" src="imgs/pic3.jpg">
+  <img id="sc11" class="pic" src="imgs/pic1.jpg">
+  <img id="sc12" class="pic" src="imgs/pic4.png">
+  <div id="sc21" class="font_bg"></div>
+  <div id="sc22" class="type1">DARLINGS</div>
+  <div id="sc23" class="type2">JOIN ME & THE MESMERISING</div>
+  <div id="sc24" class="type3">KATE BOSWORTH!</div>
+  <div id="sc13"></div>
+  <div id="sc14" class="friday"></div>
+  <div id="sc15" class="happy"></div>
+  <div id="sc16" class="lips"></div>
+  <img id="sc17" class="stick" src="imgs/lipstick.png">
+  <div id="sc18" class="lips"></div>
+  <div id="sc19" class="happy"></div>
+  <div id="sc20" class="happy"></div>
+  <div id="sc25" class="type4">7PM UK<br> 11AM PST</div>
+</div>
+</body>
+</html>

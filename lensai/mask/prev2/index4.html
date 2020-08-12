@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Mask Preview</title>
+    <style>
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    .top_mask {
+        position: relative;
+        display: inline-block;
+        margin-bottom: 32px;
+    }
+
+    .top_mask svg {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="top_mask">
+        <img src="img1.jpg">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1390 740">
+            <style>
+            /* <![CDATA[ */
+                #zoom {
+                    animation: zoom 2s linear forwards infinite;
+                }
+                @keyframes zoom {
+                    0% {
+                        transform: translateX(0px);
+                    }
+                    100% {
+                        transform: translateX(550px);
+                    }
+                }
+            /* ]]> */
+            </style>
+            <defs>
+                <linearGradient id="grad1" x1="0" y1="0" x2="1" y2="0">
+                  <stop offset="0" stop-color="#fff" stop-opacity="0" />
+                  <stop offset=".4" stop-color="#fff" stop-opacity="1" />
+                  <stop offset=".5" stop-color="#fff" stop-opacity="1" />
+                  <stop offset=".6" stop-color="#fff" stop-opacity="1" />
+                  <stop offset="1" stop-color="#fff" stop-opacity="0" />
+                </linearGradient>
+                <clipPath id="clp">
+                    <path d="M975.331 56.214L718.587 369.599l-2.067 43.411 50.439 121.964 163.308-36.796 152.558-186.46.827-52.507-54.574-168.269-36.796-34.728h-16.951z" />
+                  </clipPath>
+                <mask id="msk">
+                    <g clip-path="url(#clp)">
+                        <rect id="zoom" fill="url(#grad1)" width="120" height="740" x="550" y="0">
+                    </g>
+                </mask>
+            </defs>
+            <g mask="url(#msk)">
+                <image href="img1.jpg" x="0" y="0" transform="translate(900 300) scale(1.5) translate(-900 -300)" width="1390" height="740" />
+            </g>
+        </svg>
+    </div>
+</body>
+
+</html>

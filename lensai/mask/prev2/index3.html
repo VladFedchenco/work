@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Mask Preview</title>
+    <style>
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    .top_mask {
+        position: relative;
+        display: inline-block;
+        margin-bottom: 32px;
+    }
+
+    .top_mask svg {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="top_mask">
+        <img src="img1.jpg">
+        <svg style="mix-blend-mode: hard-light;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1390 740">
+            <defs>
+                <linearGradient id="grd" class="mdl_color" x1="0" y1="0" x2="1" y2=".5">
+                    <stop offset="0" stop-color="#fff" stop-opacity="0">
+                        <animate attributeName="offset" values="0;0;.20;.40;.60;.80" dur="3s" repeatCount="indefinite" />
+                    </stop>
+                    <stop offset=".5" stop-color="#fff" stop-opacity=".7">
+                        <animate attributeName="offset" values="0;.20;.40;.60;.80;1" dur="3s" repeatCount="indefinite" />
+                        <animate attributeName="stop-opacity" values="0;.7;.7;0" dur="3s" repeatCount="indefinite" />
+                    </stop>
+                    <stop offset="1" stop-color="#fff" stop-opacity="0">
+                        <animate attributeName="offset" values=".20;.40;.60;.80;1;1" dur="3s" repeatCount="indefinite" />
+                    </stop>
+                </linearGradient>
+                <mask id="msk">
+                    <path fill="#fff" d="M975.331 56.214L718.587 369.599l-2.067 43.411 50.439 121.964 163.308-36.796 152.558-186.46.827-52.507-54.574-168.269-36.796-34.728h-16.951z" />
+                </mask>
+            </defs>
+            <path fill="url(#grd)" d="M975.331 56.214L718.587 369.599l-2.067 43.411 50.439 121.964 163.308-36.796 152.558-186.46.827-52.507-54.574-168.269-36.796-34.728h-16.951z" />
+            <image mask="url(#msk)" href="cells.gif" opacity=".4" x="710" y="50" width="480" height="480" />
+        </svg>
+    </div>
+</body>
+
+</html>

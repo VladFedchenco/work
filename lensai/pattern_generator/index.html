@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pattern Generator</title>
+</head>
+<style>
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #fefefe;
+}
+#demo {
+  padding-top: 32px;
+  text-align: center;
+}
+</style>
+<script>
+var params = {
+  'canvas': {
+    canvas_width: 440, // total width, pixels
+    canvas_height: 655, // total height, pixels
+    canvas_padding: 32 // padding between border and icons. pixels
+  },
+  'category_bg': {
+    cat_bg_width: 210, // category background width, pixels
+    cat_bg_height: 655, // category background height, pixels
+    cat_bg_color: 'rgb(40, 87, 97)' // category background color, RGB
+  },
+  'category_icn': {
+    cat_icn_width: 94, // category icon width, pixels
+    cat_icn_height: 94, // category icon height, pixels
+    cat_icn_colorR: 255, // category icon color, Red value of RGB
+    cat_icn_colorG: 255, // category icon color, Green value of RGB
+    cat_icn_colorB: 255, // category icon color, Blue value of RGB
+    cat_icn_url: 'icon.svg', // path ot the category icon
+    cat_icn_angle: 0 // category icon angle of rotation
+  },
+  'pattern_bg': {
+    ptrn_bg_width: 230, // pattern icons background width, pixels
+    ptrn_bg_height: 655, // pattern icons background height, pixels
+    ptrn_bg_color: 'rgb(71, 148, 166)' // pattern background color, RGB
+  },
+  'pattern_icn': {
+    ptrn_icn_width: 34, // pattern icon width, pixels
+    ptrn_icn_height: 34, // pattern icon height, pixels
+    ptrn_icn_colorR: 208, // pattern icon color, Red value of RGB
+    ptrn_icn_colorG: 233, // pattern icon color, Green value of RGB
+    ptrn_icn_colorB: 239, // pattern icon color, Blue value of RGB
+    ptrn_icn_url: 'icon.svg', // pathe to the pattern icon
+    ptrn_distance_hor: 15, // horizontal distance between icons, percent
+    ptrn_distance_ver: 10, // vertical distance between icons, percent
+    ptrn_icn_angle: 40, // pattern icon angle of rotation
+    ptrn_icn_angle_rndm: true // randomness of pattern icon angle
+  },
+  'logo_bg': {
+    logo_bg_width: 230, // logo background width, pixels
+    logo_bg_height: 90, // logo background height, pixels
+    logo_bg_color: 'rgb(145, 186, 194)', // logo background color, RGB
+    logo_bg_opacity: 0.9 // logo background transparency
+  },
+  'logo': {
+    logo_width: 174, // logo width, pixels
+    logo_height: 53, // logo height, pixels
+    logo_name: 'Amazon', // logo name
+    logo_url: 'logo_amazon.svg' // path to the logo
+  }
+}
+
+var clmn_dist = params.canvas.canvas_width / 100 * params.pattern_icn.ptrn_distance_hor; // distance between columns
+var row_dist = params.canvas.canvas_height / 100 * params.pattern_icn.ptrn_distance_ver; // distance between rows
+var icn_clmns = params.canvas.canvas_width / clmn_dist; // number of columns
+var icn_rows = params.canvas.canvas_height / row_dist; // number of rows
+
+var pattern_icons = ''; // pattern icons block
+var angle_of_rotation = 0; // pattern icon angle of rotation
+
+function getRandomInt(max) {
+  return Math.floor(Math.random() * Math.floor(max));
+}
+
+for(i = 1; i < icn_clmns; i++) {
+  for (j = 1; j < icn_rows; j++) {
+    if (!params.pattern_icn.ptrn_icn_angle_rndm) {
+      angle_of_rotation += params.pattern_icn.ptrn_icn_angle * (i-1);
+    } else {
+      angle_of_rotation = getRandomInt(360);
+    }
+    pattern_icons += `<use xlink:href="#ptrn_icn" x="${params.canvas.canvas_padding + clmn_dist * (i-1)}" y="${params.canvas.canvas_padding + row_dist * (j-1)}" transform="rotate(${angle_of_rotation} ${params.canvas.canvas_padding + clmn_dist * (i-1)} ${params.canvas.canvas_padding + row_dist * (j-1)})"/>\r\n`;
+  }
+}
+
+var svg_output = `
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="${params.canvas.canvas_width}" height="${params.canvas.canvas_height}" viewBox="0 0 ${params.canvas.canvas_width} ${params.canvas.canvas_height}">
+<defs>
+  <filter id="cat_icn_color">
+    <feColorMatrix
+      color-interpolation-filters="sRGB"
+      type="matrix"
+      values="${params.category_icn.cat_icn_colorR / 255} 0 0 0 0
+              0 ${params.category_icn.cat_icn_colorG / 255} 0 0 0
+              0 0 ${params.category_icn.cat_icn_colorB / 255} 0 0
+              0 0 0 1 0 "/>
+  </filter>
+  <filter id="ptrn_icn_color">
+    <feColorMatrix
+      color-interpolation-filters="sRGB"
+      type="matrix"
+      values="${params.pattern_icn.ptrn_icn_colorR / 255} 0 0 0 0
+              0 ${params.pattern_icn.ptrn_icn_colorG / 255} 0 0 0
+              0 0 ${params.pattern_icn.ptrn_icn_colorB / 255} 0 0
+              0 0 0 1 0 "/>
+  </filter>
+  <image id="ptrn_icn" href="${params.pattern_icn.ptrn_icn_url}" x="${-1*params.pattern_icn.ptrn_icn_width/2}" y="${-1*params.pattern_icn.ptrn_icn_height/2}" width="${params.pattern_icn.ptrn_icn_width}" height="${params.pattern_icn.ptrn_icn_height}" filter="url(#ptrn_icn_color)"/>
+</defs>
+<rect width="${params.canvas.canvas_width}" height="${params.canvas.canvas_height}" fill="${params.pattern_bg.ptrn_bg_color}"/>
+
+${pattern_icons}
+<rect width="${params.category_bg.cat_bg_width}" height="${params.category_bg.cat_bg_height}" x="${params.canvas.canvas_width - params.category_bg.cat_bg_width}" fill="${params.category_bg.cat_bg_color}"/>
+<image href="${params.category_icn.cat_icn_url}" x="${params.canvas.canvas_width - params.category_bg.cat_bg_width/2 - params.category_icn.cat_icn_width/2}" y="${params.canvas.canvas_height/2 - params.category_icn.cat_icn_height/2}" height="${params.category_icn.cat_icn_width}" width="${params.category_icn.cat_icn_height}" filter="url(#cat_icn_color)" transform="rotate(${params.category_icn.cat_icn_angle} ${params.canvas.canvas_width - params.category_bg.cat_bg_width/2} ${params.canvas.canvas_height/2})"/>
+<rect width="${params.logo_bg.logo_bg_width}" height="${params.logo_bg.logo_bg_height}" y="${params.canvas.canvas_height - params.logo_bg.logo_bg_height}" opacity="${params.logo_bg.logo_bg_opacity}" fill="${params.logo_bg.logo_bg_color}"/>
+<image href="${params.logo.logo_url}" width="${params.logo.logo_width}" height="${params.logo.logo_height}" x="${params.logo_bg.logo_bg_width/2 - params.logo.logo_width/2}" y="${params.canvas.canvas_height - params.logo_bg.logo_bg_height/2 - params.logo.logo_height/2}"/>
+</svg>
+`;
+
+console.log(svg_output);
+</script>
+<body>
+<div id="demo"></div>
+<script>
+  document.getElementById("demo").innerHTML = svg_output;
+</script>
+</body>
+</html>

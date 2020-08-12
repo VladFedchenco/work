@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" style="background-color: #000">
+<style>
+/* <![CDATA[ */
+
+#a1, #a2, #a3, #a4, #a5, #a6, #a7, #a8, #a9, #a10, #a11, #a12, #a13, #a14, #a15, #a16, #a17, #a18 {
+visibility: hidden;
+animation-duration: 4s;
+animation-iteration-count: infinite;
+animation-timing-function: steps(1);
+}
+
+/* ]]> */
+</style>
+  <g id="a1" fill="none" stroke="#E75300" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="11">
+    <path stroke-linecap="round" d="M160.197 155.567c-12.816 11.868-30.433 19.195-49.877 19.195-43.402 0-64.722-21.885-66.157-50.289-2.047-40.502 53.349-74.436 96.859-94.811H37.318v21.733"/>
+    <line x1="85.214" x2="97.512" y1="99.336" y2="109.598"/>
+    <line x1="113.357" x2="125.655" y1="99.336" y2="109.598"/>
+    <line x1="102.502" x2="114.799" y1="119.342" y2="129.605"/>
+  </g>
+  <g id="a2" fill="none" stroke="#E75300" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="11">
+    <path stroke-linecap="round" d="M145.735 165.902c-10.423 5.636-22.517 8.86-35.416 8.86-43.402 0-64.722-21.885-66.157-50.289-2.047-40.502 63.349-64.436 106.859-84.811H48.318v21.733"/>
+    <line x1="91.363" x2="97.512" y1="104.467" y2="109.598"/>
+    <line x1="119.392" x2="125.655" y1="104.372" y2="109.598"/>
+    <line x1="108.65" x2="114.799" y1="124.473" y2="129.605"/>
+  </g>
+  <g id="a3" fill="none" stroke="#E75300" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="11">
+    <path stroke-linecap="round" d="M110.32 174.762c-43.402 0-60.736-24.968-55.014-52.826 8.396-40.874 58.382-51.898 101.891-72.273H58.318v21.733"/>
+    <line x1="95.141" x2="97.512" y1="107.62" y2="109.598"/>
+    <line x1="123.284" x2="125.655" y1="107.62" y2="109.598"/>
+    <line x1="112.378" x2="114.799" y1="127.584" y2="129.605"/>
+  </g>
+  <path id="a4" fill="none" stroke="#E75300" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="11" d="M77.176 168.121c-18.84-9.246-24.451-25.589-14.525-42.435 20.384-34.592 97.546-22.43 97.546-66.024H68.318v21.733"/>
+  <path id="a5" fill="none" stroke="#E75300" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="11" d="M82.651 135.687c20.384-34.592 77.546 0 77.546-66.024H78.318v21.733"/>
+  <path id="a6" fill="none" stroke="#E75300" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="11" d="M60.798 123.833c57.108 34.901 92.039-2.162 92.039-2.162s7.36-22.113 7.36-44.009H88.318v22.733"/>
+  <path id="a7" fill="none" stroke="#E75300" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="11" d="M37.4 98.795c0 40.482 36.762 60.248 62.6 60.248 42.313 0 60.197-27.371 60.197-27.371V85.663H99.318v21.733"/>
+  <path id="a8" fill="none" stroke="#E75300" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="11" d="M53.918 56.024c-36.36 69.045 9.373 113.019 49.193 113.019 48.821 0 57.086-27.371 57.086-27.371V91.663h-52.879v21.733"/>
+  <path id="a9" fill="none" stroke="#E75300" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="11" d="M107.435 29.662c-32.549 0-70.117 26.532-70.117 72.55 0 46.415 37.9 72.729 69.573 72.729 40.189 0 53.306-20.531 53.306-20.531V96.662h-45.879v21.244"/>
+  <path id="a10" fill="none" stroke="#E75300" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="11" d="M150.431 42.053c-11.579-7.823-25.538-12.39-40.563-12.39-40.068 0-72.55 32.482-72.55 72.55s32.482 72.55 72.55 72.55c18.836 0 37.433-7.178 50.329-18.949v-55.93h-40.805v21.035"/>
+  <path id="a11" fill="none" stroke="#E75300" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="11" d="M107.435 29.662c-32.549 0-70.117 26.532-70.117 72.55 0 46.415 37.9 72.729 69.573 72.729 40.189 0 53.306-20.531 53.306-20.531V96.662h-45.879v21.244"/>
+  <path id="a12" fill="none" stroke="#E75300" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="11" d="M53.918 56.024c-36.36 69.045 9.373 113.019 49.193 113.019 48.821 0 57.086-27.371 57.086-27.371V91.663h-52.879v21.733"/>
+  <path id="a13" fill="none" stroke="#E75300" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="11" d="M37.4 98.795c0 40.482 36.762 60.248 62.6 60.248 42.313 0 60.197-27.371 60.197-27.371V85.663H99.318v21.733"/>
+  <path id="a14" fill="none" stroke="#E75300" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="11" d="M60.798 123.833c57.108 34.901 92.039-2.162 92.039-2.162s7.36-22.113 7.36-44.009H88.318v22.733"/>
+  <path id="a15" fill="none" stroke="#E75300" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="11" d="M82.651 135.687c20.384-34.592 77.546 0 77.546-66.024H78.318v21.733"/>
+  <path id="a16" fill="none" stroke="#E75300" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="11" d="M77.176 168.121c-18.84-9.246-24.451-25.589-14.525-42.435 20.384-34.592 97.546-22.43 97.546-66.024H68.318v21.733"/>
+  <g id="a17" fill="none" stroke="#E75300" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="11">
+    <path stroke-linecap="round" d="M110.32 174.762c-43.402 0-60.736-24.968-55.014-52.826 8.396-40.874 58.382-51.898 101.891-72.273H58.318v21.733"/>
+    <line x1="95.141" x2="97.512" y1="107.62" y2="109.598"/>
+    <line x1="123.284" x2="125.655" y1="107.62" y2="109.598"/>
+    <line x1="112.378" x2="114.799" y1="127.584" y2="129.605"/>
+  </g>
+  <g id="a18" fill="none" stroke="#E75300" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="11">
+    <path stroke-linecap="round" d="M145.735 165.902c-10.423 5.636-22.517 8.86-35.416 8.86-43.402 0-64.722-21.885-66.157-50.289-2.047-40.502 63.349-64.436 106.859-84.811H48.318v21.733"/>
+    <line x1="91.363" x2="97.512" y1="104.467" y2="109.598"/>
+    <line x1="119.392" x2="125.655" y1="104.372" y2="109.598"/>
+    <line x1="108.65" x2="114.799" y1="124.473" y2="129.605"/>
+  </g>
+
+<style>
+/* <![CDATA[ */
+
+#a1 {animation-name: a1}
+#a2 {animation-name: a2}
+#a3 {animation-name: a3}
+#a4 {animation-name: a4}
+#a5 {animation-name: a5}
+#a6 {animation-name: a6}
+#a7 {animation-name: a7}
+#a8 {animation-name: a8}
+#a9 {animation-name: a9}
+#a10 {animation-name: a10}
+#a11 {animation-name: a11}
+#a12 {animation-name: a12}
+#a13 {animation-name: a13}
+#a14 {animation-name: a14}
+#a15 {animation-name: a15}
+#a16 {animation-name: a16}
+#a17 {animation-name: a17}
+#a18 {animation-name: a18}
+
+@keyframes a1 {0.00%{visibility: visible} 37.50%{visibility: hidden}}
+@keyframes a2 {37.50%{visibility: visible} 38.75%{visibility: hidden}}
+@keyframes a3 {38.75%{visibility: visible} 40.00%{visibility: hidden}}
+@keyframes a4 {40.00%{visibility: visible} 41.25%{visibility: hidden}}
+@keyframes a5 {41.25%{visibility: visible} 42.50%{visibility: hidden}}
+@keyframes a6 {42.50%{visibility: visible} 43.75%{visibility: hidden}}
+@keyframes a7 {43.75%{visibility: visible} 45.00%{visibility: hidden}}
+@keyframes a8 {45.00%{visibility: visible} 46.25%{visibility: hidden}}
+@keyframes a9 {46.25%{visibility: visible} 47.50%{visibility: hidden}}
+@keyframes a10 {47.50%{visibility: visible} 90%{visibility: hidden}}
+@keyframes a11 {90.00%{visibility: visible} 91.25%{visibility: hidden}}
+@keyframes a12 {91.25%{visibility: visible} 92.50%{visibility: hidden}}
+@keyframes a13 {92.50%{visibility: visible} 93.75%{visibility: hidden}}
+@keyframes a14 {93.75%{visibility: visible} 95.00%{visibility: hidden}}
+@keyframes a15 {95.00%{visibility: visible} 96.25%{visibility: hidden}}
+@keyframes a16 {96.25%{visibility: visible} 97.50%{visibility: hidden}}
+@keyframes a17 {97.50%{visibility: visible} 98.75%{visibility: hidden}}
+@keyframes a18 {98.75%{visibility: visible} 100.00%{visibility: hidden}}
+
+/* ]]> */
+</style>
+</svg>

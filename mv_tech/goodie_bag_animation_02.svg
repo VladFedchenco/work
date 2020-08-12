@@ -1,0 +1,229 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 85 53">
+<style>
+/* <![CDATA[ */
+
+#a1, #a2, #a3, #a4, #a5, #a6, #a7, #a8, #a9, #a10, #a11, #a12, #a13, #a14, #a15, #a16, #a17, #a18, #a19, #a20, #a21, #a22, #a23, #a24, #a25 {
+visibility: hidden;
+animation-duration: 4s;
+animation-iteration-count: infinite;
+animation-timing-function: steps(1);
+}
+
+#b1, #b2, #b3, #b4, #b5, #b6 {
+visibility: hidden;
+animation-duration: 1s;
+animation-iteration-count: infinite;
+animation-timing-function: steps(1);
+}
+
+/* ]]> */
+</style>
+  <g id="bag" fill-rule="nonzero">
+    <path fill="#f7ffe2" d="M57.353 17.506H30.265l-1.638 29.989H58.99l-1.637-29.989zm-19.841 5.097a1.529 1.529 0 01-1.524-1.524c0-.838.686-1.524 1.524-1.524s1.524.686 1.524 1.524-.686 1.524-1.524 1.524zm12.594 0a1.529 1.529 0 01-1.524-1.524c0-.838.686-1.524 1.524-1.524s1.524.686 1.524 1.524-.686 1.524-1.524 1.524z"/>
+    <path fill="none" stroke="#95d400" d="M61.103 49.494H26.515l1.857-33.988h30.874l1.857 33.988z"/>
+    <path fill="none" stroke="#95d400" d="M37.512 22.603a1.529 1.529 0 01-1.524-1.524c0-.838.686-1.524 1.524-1.524s1.524.686 1.524 1.524-.686 1.524-1.524 1.524z"/>
+    <path fill="none" stroke="#95d400" d="M50.106 22.603a1.529 1.529 0 01-1.524-1.524c0-.838.686-1.524 1.524-1.524s1.524.686 1.524 1.524-.686 1.524-1.524 1.524z"/>
+    <path fill="none" stroke="#95d400" stroke-linecap="round" d="M50.106 21.489v3.092c0 3.463-2.834 6.297-6.297 6.297-3.463 0-6.297-2.834-6.297-6.297v-3.092"/>
+  </g>
+<g fill="none" stroke="#95d400">
+  <path id="a1" fill="#95d400" stroke-opacity=".2" d="M57.313 4.061L51.946-.132l-6.732 8.616 5.367 4.193 6.732-8.616z"/>
+  <path id="a2" fill="#95d400" stroke-opacity=".6" d="M56.859 4.952l-5.776-3.609-5.794 9.273 5.776 3.609 5.794-9.273z"/>
+  <path id="a3" fill="#95d400" d="M56.501 5.886L50.379 2.9l-4.793 9.828 5.696 2.778h.527l4.692-9.62z"/>
+  <path id="a4" fill="#95d400" d="M56.242 6.851l-6.4-2.329-3.74 10.275 1.948.709h5.042l3.15-8.655z"/>
+  <path id="a5" fill="#95d400" d="M56.085 7.839l-6.608-1.648-2.322 9.315h7.019l1.911-7.667z"/>
+  <path id="a6" fill="#95d400" d="M56.033 8.838l-6.744-.948-1.071 7.616h6.878l.937-6.668z"/>
+  <path id="a7" fill="#95d400" d="M56.033 9.838l-6.785-.594-.548 6.262h6.837l.496-5.668z"/>
+  <g id="a8">
+    <path fill="#95d400" opacity=".2" d="M36.344-1.449L28.986 2.99l7.552 12.516h4.218l4.265-2.573-8.677-14.382z"/>
+    <path fill="#95d400" d="M56.033 9.838l-6.785-.594-.548 6.262h6.837l.496-5.668z"/>
+  </g>
+  <g id="a9">
+    <path fill="#95d400" opacity=".6" d="M36.828-.089l-7.581 4.045 6.163 11.55h7.87l1.455-.776L36.828-.089z"/>
+    <path fill="#95d400" d="M56.033 9.838l-6.785-.594-.548 6.262h6.837l.496-5.668z"/>
+  </g>
+  <g id="a10">
+    <path fill="#95d400" d="M37.24 1.294l-7.784 3.64L34.4 15.506h9.486L37.24 1.294z"/>
+    <path fill="#95d400" d="M56.033 9.838l-6.785-.594-.548 6.262h6.837l.496-5.668z"/>
+  </g>
+  <g id="a11">
+    <path fill="#95d400" d="M37.579 2.696l-7.965 3.225 3.88 9.585h9.271l-5.186-12.81z"/>
+    <path fill="#95d400" d="M56.033 9.838l-6.785-.594-.548 6.262h6.837l.496-5.668z"/>
+  </g>
+  <g id="a12">
+    <path fill="#95d400" d="M37.843 4.115l-8.124 2.801 2.961 8.59h9.09L37.843 4.115z"/>
+    <path fill="#95d400" d="M56.033 9.838l-6.785-.594-.548 6.262h6.837l.496-5.668z"/>
+  </g>
+  <g id="a13">
+    <path fill="#95d400" d="M38.032 5.546l-8.26 2.368 2.177 7.592h8.939l-2.856-9.96z"/>
+    <path fill="#95d400" d="M56.033 9.838l-6.785-.594-.548 6.262h6.837l.496-5.668z"/>
+  </g>
+  <g id="a14">
+    <path fill="#95d400" d="M38.145 6.984l-8.373 1.93 1.519 6.592h8.818l-1.964-8.522z"/>
+    <path fill="#95d400" d="M56.033 9.838l-6.785-.594-.548 6.262h6.837l.496-5.668z"/>
+  </g>
+  <g id="a15">
+    <path stroke-opacity=".2" d="M42.807 15.506l9.064-13.321-8.946-6.087-7.896 11.605"/>
+    <path fill="#95d400" d="M38.145 6.984l-8.373 1.93 1.519 6.592h8.818l-1.964-8.522z"/>
+    <path fill="#95d400" d="M56.033 9.838l-6.785-.594-.548 6.262h6.837l.496-5.668z"/>
+  </g>
+  <g id="a16">
+    <path stroke-opacity=".6" d="M44.147 15.506l7.772-12.84-9.257-5.603-6.247 10.32"/>
+    <path fill="#95d400" d="M38.145 6.984l-8.373 1.93 1.519 6.592h8.818l-1.964-8.522z"/>
+    <path fill="#95d400" d="M56.033 9.838l-6.785-.594-.548 6.262h6.837l.496-5.668z"/>
+  </g>
+  <g id="a17">
+    <path d="M45.381 15.506l6.612-12.363-9.542-5.103L37.6 7.11"/>
+    <path fill="#95d400" d="M38.145 6.984l-8.373 1.93 1.519 6.592h8.818l-1.964-8.522z"/>
+    <path fill="#95d400" d="M56.033 9.838l-6.785-.594-.548 6.262h6.837l.496-5.668z"/>
+  </g>
+  <g id="a18">
+    <path d="M49.448 9.262l2.644-5.646-9.8-4.589-4.008 8.56"/>
+    <path d="M46.524 15.506L49.2 9.79"/>
+    <path fill="#95d400" d="M38.145 6.984l-8.373 1.93 1.519 6.592h8.818l-1.964-8.522z"/>
+    <path fill="#95d400" d="M56.033 9.838l-6.785-.594-.548 6.262h6.837l.496-5.668z"/>
+  </g>
+  <g id="a19">
+    <path d="M47.59 15.506l1.416-3.498"/>
+    <path d="M50.096 9.318l2.119-5.235L42.186.022l-3.598 8.884"/>
+    <path fill="#95d400" d="M38.145 6.984l-8.373 1.93 1.519 6.592h8.818l-1.964-8.522z"/>
+    <path fill="#95d400" d="M56.033 9.838l-6.785-.594-.548 6.262h6.837l.496-5.668z"/>
+  </g>
+  <g id="a20">
+    <path d="M50.702 9.371l1.662-4.828L42.133 1.02l-3.212 9.329"/>
+    <path fill="#95d400" d="M38.145 6.984l-8.373 1.93 1.519 6.592h8.818l-1.964-8.522z"/>
+    <path fill="#95d400" d="M56.033 9.838l-6.785-.594-.548 6.262h6.837l.496-5.668z"/>
+  </g>
+  <g id="a21">
+    <path d="M51.271 9.421l1.266-4.426L42.133 2.02l-2.841 9.939"/>
+    <path fill="#95d400" d="M38.145 6.984l-8.373 1.93 1.519 6.592h8.818l-1.964-8.522z"/>
+    <path fill="#95d400" d="M56.033 9.838l-6.785-.594-.548 6.262h6.837l.496-5.668z"/>
+  </g>
+  <g id="a22" opacity=".8">
+    <path d="M51.271 9.421l1.266-4.426L42.133 2.02l-2.841 9.939"/>
+    <path fill="#95d400" d="M38.145 6.984l-8.373 1.93 1.519 6.592h8.818l-1.964-8.522z"/>
+    <path fill="#95d400" d="M56.033 9.838l-6.785-.594-.548 6.262h6.837l.496-5.668z"/>
+  </g>
+  <g id="a23" opacity=".6">
+    <path d="M51.271 9.421l1.266-4.426L42.133 2.02l-2.841 9.939"/>
+    <path fill="#95d400" d="M38.145 6.984l-8.373 1.93 1.519 6.592h8.818l-1.964-8.522z"/>
+    <path fill="#95d400" d="M56.033 9.838l-6.785-.594-.548 6.262h6.837l.496-5.668z"/>
+  </g>
+  <g id="a24" opacity=".4">
+    <path d="M51.271 9.421l1.266-4.426L42.133 2.02l-2.841 9.939"/>
+    <path fill="#95d400" d="M38.145 6.984l-8.373 1.93 1.519 6.592h8.818l-1.964-8.522z"/>
+    <path fill="#95d400" d="M56.033 9.838l-6.785-.594-.548 6.262h6.837l.496-5.668z"/>
+  </g>
+  <g id="a25" opacity=".2">
+    <path d="M51.271 9.421l1.266-4.426L42.133 2.02l-2.841 9.939"/>
+    <path fill="#95d400" d="M38.145 6.984l-8.373 1.93 1.519 6.592h8.818l-1.964-8.522z"/>
+    <path fill="#95d400" d="M56.033 9.838l-6.785-.594-.548 6.262h6.837l.496-5.668z"/>
+  </g>
+</g>
+  <g id="b1">
+    <path fill="none" stroke="#95d400" d="M16.299 10.158l1.591 4.409 4.409 1.591-4.409 1.591-1.591 4.408-1.59-4.408-4.409-1.591 4.409-1.591z"/>
+    <path fill="#95d400" d="M21.311 21.555l.663 1.836 1.837.663-1.837.664-.663 1.837-.663-1.837-1.837-.664 1.837-.663.663-1.836z"/>
+    <path fill="none" stroke="#95d400" d="M68.466 17.883l1.326 3.674 3.674 1.326-3.674 1.326-1.326 3.674-1.327-3.674-3.673-1.326 3.673-1.326 1.327-3.674z"/>
+    <path fill="#95d400" d="M70.795 11.249l.663 1.837 1.837.662-1.837.663-.663 1.837-.663-1.837-1.837-.663 1.837-.662.663-1.837z"/>
+  </g>
+  <g id="b2">
+    <path fill="none" stroke="#95d400" d="M16.299 10.658l1.459 4.041 4.042 1.459-4.042 1.458-1.459 4.042-1.458-4.042-4.041-1.458 4.041-1.459z"/>
+    <path fill="#95d400" d="M21.311 21.055l.795 2.204 2.204.795-2.204.796-.795 2.204-.795-2.204-2.206-.796 2.206-.795.795-2.204z"/>
+    <path fill="none" stroke="#95d400" d="M68.466 17.383l1.458 4.042 4.042 1.458-4.042 1.458-1.458 4.042-1.459-4.042-4.041-1.458 4.041-1.458 1.459-4.042z"/>
+    <path fill="#95d400" d="M70.795 11.749l.53 1.469 1.47.53-1.47.531-.53 1.469-.53-1.469-1.47-.531 1.47-.53.53-1.469z"/>
+  </g>
+  <g id="b3">
+    <path fill="none" stroke="#95d400" d="M16.299 11.158l1.326 3.674 3.674 1.326-3.674 1.326-1.326 3.674-1.325-3.674-3.675-1.326 3.675-1.326z"/>
+    <path fill="#95d400" d="M21.311 20.554l.928 2.572 2.572.928-2.572.929-.928 2.571-.928-2.571-2.573-.929 2.573-.928.928-2.572z"/>
+    <path fill="none" stroke="#95d400" d="M68.466 16.883l1.591 4.409 4.409 1.591-4.409 1.591-1.591 4.409-1.592-4.409-4.408-1.591 4.408-1.591 1.592-4.409z"/>
+    <path fill="#95d400" d="M70.795 12.249l.398 1.102 1.102.397-1.102.398-.398 1.102-.398-1.102-1.102-.398 1.102-.397.398-1.102z"/>
+  </g>
+  <g id="b4">
+    <path fill="none" stroke="#95d400" d="M16.299 11.658l1.193 3.307 3.307 1.193-3.307 1.193-1.193 3.306-1.192-3.306-3.308-1.193 3.308-1.193z"/>
+    <path fill="#95d400" d="M21.311 20.054l1.061 2.939 2.938 1.061-2.938 1.062-1.061 2.938-1.06-2.938-2.941-1.062 2.941-1.061 1.06-2.939z"/>
+    <path fill="none" stroke="#95d400" d="M68.466 16.383l1.723 4.777 4.777 1.723-4.777 1.723-1.723 4.777-1.725-4.777-4.775-1.723 4.775-1.723 1.725-4.777z"/>
+    <path fill="#95d400" d="M70.795 12.749l.265.734.735.265-.735.266-.265.734-.265-.734-.735-.266.735-.265.265-.734z"/>
+  </g>
+  <g id="b5">
+    <path fill="none" stroke="#95d400" d="M16.299 11.158l1.326 3.674 3.674 1.326-3.674 1.326-1.326 3.674-1.325-3.674-3.675-1.326 3.675-1.326z"/>
+    <path fill="#95d400" d="M21.311 20.554l.928 2.572 2.572.928-2.572.929-.928 2.571-.928-2.571-2.573-.929 2.573-.928.928-2.572z"/>
+    <path fill="none" stroke="#95d400" d="M68.466 16.883l1.591 4.409 4.409 1.591-4.409 1.591-1.591 4.409-1.592-4.409-4.408-1.591 4.408-1.591 1.592-4.409z"/>
+    <path fill="#95d400" d="M70.795 12.249l.398 1.102 1.102.397-1.102.398-.398 1.102-.398-1.102-1.102-.398 1.102-.397.398-1.102z"/>
+  </g>
+  <g id="b6">
+    <path fill="none" stroke="#95d400" d="M16.299 10.658l1.459 4.041 4.042 1.459-4.042 1.458-1.459 4.042-1.458-4.042-4.041-1.458 4.041-1.459z"/>
+    <path fill="#95d400" d="M21.311 21.055l.795 2.204 2.204.795-2.204.796-.795 2.204-.795-2.204-2.206-.796 2.206-.795.795-2.204z"/>
+    <path fill="none" stroke="#95d400" d="M68.466 17.383l1.458 4.042 4.042 1.458-4.042 1.458-1.458 4.042-1.459-4.042-4.041-1.458 4.041-1.458 1.459-4.042z"/>
+    <path fill="#95d400" d="M70.795 11.749l.53 1.469 1.47.53-1.47.531-.53 1.469-.53-1.469-1.47-.531 1.47-.53.53-1.469z"/>
+  </g>
+<style>
+/* <![CDATA[ */
+
+#a1 {animation-name: a1}
+#a2 {animation-name: a2}
+#a3 {animation-name: a3}
+#a4 {animation-name: a4}
+#a5 {animation-name: a5}
+#a6 {animation-name: a6}
+#a7 {animation-name: a7}
+#a8 {animation-name: a8}
+#a9 {animation-name: a9}
+#a10 {animation-name: a10}
+#a11 {animation-name: a11}
+#a12 {animation-name: a12}
+#a13 {animation-name: a13}
+#a14 {animation-name: a14}
+#a15 {animation-name: a15}
+#a16 {animation-name: a16}
+#a17 {animation-name: a17}
+#a18 {animation-name: a18}
+#a19 {animation-name: a19}
+#a20 {animation-name: a20}
+#a21 {animation-name: a21}
+#a22 {animation-name: a22}
+#a23 {animation-name: a23}
+#a24 {animation-name: a24}
+#a25 {animation-name: a25}
+
+@keyframes a1 {0%{visibility: visible} 1.25%{visibility: hidden}}
+@keyframes a2 {1.25%{visibility: visible} 2.50%{visibility: hidden}}
+@keyframes a3 {2.50%{visibility: visible} 3.75%{visibility: hidden}}
+@keyframes a4 {3.75%{visibility: visible} 5%{visibility: hidden}}
+@keyframes a5 {5%{visibility: visible} 6.25%{visibility: hidden}}
+@keyframes a6 {6.25%{visibility: visible} 7.50%{visibility: hidden}}
+@keyframes a7 {7.50%{visibility: visible} 8.75%{visibility: hidden}}
+@keyframes a8 {8.75%{visibility: visible} 10%{visibility: hidden}}
+@keyframes a9 {10%{visibility: visible} 11.25%{visibility: hidden}}
+@keyframes a10 {11.25%{visibility: visible} 12.50%{visibility: hidden}}
+@keyframes a11 {12.50%{visibility: visible} 13.75%{visibility: hidden}}
+@keyframes a12 {13.75%{visibility: visible} 15%{visibility: hidden}}
+@keyframes a13 {15%{visibility: visible} 16.25%{visibility: hidden}}
+@keyframes a14 {16.25%{visibility: visible} 17.50%{visibility: hidden}}
+@keyframes a15 {17.50%{visibility: visible} 18.75%{visibility: hidden}}
+@keyframes a16 {18.75%{visibility: visible} 20%{visibility: hidden}}
+@keyframes a17 {20%{visibility: visible} 21.25%{visibility: hidden}}
+@keyframes a18 {21.25%{visibility: visible} 22.50%{visibility: hidden}}
+@keyframes a19 {22.50%{visibility: visible} 23.75%{visibility: hidden}}
+@keyframes a20 {23.75%{visibility: visible} 25%{visibility: hidden}}
+@keyframes a21 {25%{visibility: visible} 90%{visibility: hidden}}
+@keyframes a22 {90%{visibility: visible} 91.25%{visibility: hidden}}
+@keyframes a23 {91.25%{visibility: visible} 92.50%{visibility: hidden}}
+@keyframes a24 {92.50%{visibility: visible} 93.75%{visibility: hidden}}
+@keyframes a25 {93.75%{visibility: visible} 95%{visibility: hidden}}
+
+#b1 {animation-name: b1}
+#b2 {animation-name: b2}
+#b3 {animation-name: b3}
+#b4 {animation-name: b4}
+#b5 {animation-name: b5}
+#b6 {animation-name: b6}
+
+@keyframes b1 {0%{visibility: visible} 16.67%{visibility: hidden}}
+@keyframes b2 {16.67%{visibility: visible} 33.33%{visibility: hidden}}
+@keyframes b3 {33.33%{visibility: visible} 50%{visibility: hidden}}
+@keyframes b4 {50%{visibility: visible} 66.67%{visibility: hidden}}
+@keyframes b5 {66.67%{visibility: visible} 83.33%{visibility: hidden}}
+@keyframes b6 {83.33%{visibility: visible} 100%{visibility: hidden}}
+
+/* ]]> */
+</style>
+</svg>

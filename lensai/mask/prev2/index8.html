@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Mask Preview</title>
+    <style>
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    .top_mask {
+        position: relative;
+        display: inline-block;
+        margin-bottom: 32px;
+    }
+
+    .top_mask .square_zoom {
+        position: absolute;
+        left: 1020px;
+        top: 230px;
+        border: solid 2px #fff;
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+        overflow: hidden;
+        background: url(img1.jpg) no-repeat -1020px -230px;
+        animation: square_zoom 1.5s ease-in-out forwards;
+    }
+
+    @keyframes square_zoom {
+        0% {
+            transform: scale(0);
+        }
+        50% {
+            transform: scale(1.5);
+        }
+        100% {
+            transform: scale(0);
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <div class="top_mask">
+        <img src="img1.jpg">
+        <div class="square_zoom"></div>
+    </div>
+</body>
+
+</html>

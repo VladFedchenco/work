@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Marketing Reel</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <style>
+    body, html {
+      padding: 0;
+      margin: 0;
+    }
+    header {
+      padding: 0;
+      height: 100px;
+      background-color: transparent;
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      z-index: 1;
+      transition: all 0.3s ease-in-out;
+      box-shadow: none;
+    }
+    header.nav-down {
+      background-color: #fff;
+      box-shadow: 0px 4px 8px rgba(0,0,0,.05);
+    }
+    header.nav-up {
+      top: -110px;
+      opacity: 1;
+    }
+    #menu {
+      position: absolute;
+      width: 1360px;
+      height: auto;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 18px;
+    }
+    #submenu {
+      position: absolute;
+      width: 1360px;
+      height: auto;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 74px;
+      opacity: 0;
+      pointer-events: none;
+      transition: all 0.2s linear;
+    }
+    header:not(.nav-up) #menu_link:hover #submenu {
+      pointer-events: auto;
+      opacity: 1;
+    }
+    #main {
+      height: 7475px;
+      background: url(home_page.jpg) no-repeat center top;
+      background-size: 1920px auto;
+      position: relative;
+    }
+    #list {
+      position: absolute;
+      width: 1360px;
+      height: 60px;
+      overflow-y: hidden;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 1350px;
+      background: url(list.png) no-repeat 0px 0px;
+      background-size: 2867px 52px;
+      animation: list_rotate 8s ease infinite;
+    }
+    @keyframes list_rotate {
+      0%, 40%, 100% {
+        background-position: 0px 0px;
+      }
+      50%, 90% {
+        background-position: -1510px 0;
+      }
+    }
+
+    #product {
+      display: none;
+      position: absolute;
+      width: 1360px;
+      height: 572px;
+      overflow-y: hidden;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 1929px;
+      background: url(products.jpg) no-repeat 0px 0px;
+      background-size: 2720px 572px;
+      animation: product_rotate 8s ease infinite;
+    }
+    #product.vis {
+      display: block;
+    }
+    @keyframes product_rotate {
+      0%, 40%, 100% {
+        background-position: 0px 0px;
+      }
+      50%, 90% {
+        background-position: -1360px 0;
+      }
+    }
+    #book {
+      position: absolute;
+      width: 386px;
+      height: 500px;
+      overflow-y: hidden;
+      left: 50%;
+      transform: translateX(-38px);
+      top: 4057px;
+    }
+    #page1, #page2, #page3, #page4 {
+      opacity: 0;
+      position: absolute;
+      width: 386px;
+      height: 500px;
+      left: 0;
+      top: 0;
+    }
+    #page1 {
+      z-index: 1;
+      animation: book 12s linear infinite;
+    }
+    #page2 {
+      z-index: 2;
+      animation: book 12s 3s linear infinite;
+    }
+    #page3 {
+      z-index: 1;
+      animation: book 12s 6s linear infinite;
+    }
+    #page4 {
+      z-index: 2;
+      animation: book 12s 9s linear infinite;
+    }
+    @keyframes book {
+      0%, 25%, 100% {
+        opacity: 0;
+      }
+      3%, 22% {
+        opacity: 1;
+      }
+    }
+    #oct {
+      position: absolute;
+      width: 361px;
+      height: 147px;
+      z-index: 99;
+      left: 50%;
+      transform: translateX(-330px);
+      top: 4273px;
+    }
+    #tab1, #tab2, #tab3, #tab4 {
+      opacity: 0;
+      position: absolute;
+      width: 202px;
+      height: 84px;
+      top: 1845px;
+      left: 50%;
+    }
+    #tab1.active, #tab2.active, #tab3.active, #tab4.active {
+      opacity: 1;
+    }
+    #tab1 img, #tab2 img, #tab3 img, #tab4 img {
+      width: 202px;
+      height: 84px;
+      display: block;
+    }
+    #tab1 {
+      transform: translateX(-680px);
+    }
+    #tab2 {
+      transform: translateX(-456px);
+    }
+    #tab3 {
+      transform: translateX(-232px);
+    }
+    #tab4 {
+      transform: translateX(-8px);
+    }
+    #styles {
+      display: none;
+      position: absolute;
+      width: 1360px;
+      height: 572px;
+      overflow-y: hidden;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 1929px;
+      background: url(styles.jpg) no-repeat 0px 0px;
+      background-size: cover;
+    }
+    #styles.vis {
+      display: block;
+    }
+    #types {
+      display: none;
+      position: absolute;
+      width: 1360px;
+      height: 572px;
+      overflow-y: hidden;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 1929px;
+      background: url(types.jpg) no-repeat 0px 0px;
+      background-size: cover;
+    }
+    #types.vis {
+      display: block;
+    }
+    #placement {
+      display: none;
+      position: absolute;
+      width: 1360px;
+      height: 572px;
+      overflow-y: hidden;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 1929px;
+      background: url(placement.jpg) no-repeat 0px 0px;
+      background-size: cover;
+    }
+    #placement.vis {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+    <header>
+      <a id="menu_link" href="javascript:;">
+        <img id="menu" src="header.png">
+        <img id="submenu" src="submenu.png">
+      </a>
+    </header>
+    <div id="main">
+      <div id="list"></div>
+      <a id="tab1" class="active" href="javascript:;"><img src="tab1.png"></a>
+      <a id="tab2" href="javascript:;"><img src="tab2.png"></a>
+      <a id="tab3" href="javascript:;"><img src="tab3.png"></a>
+      <a id="tab4" href="javascript:;"><img src="tab4.png"></a>
+      <div id="product" class="vis"></div>
+      <div id="styles"></div>
+      <div id="types"></div>
+      <div id="placement"></div>
+      <div id="book">
+        <img id="page1" src="book_01.jpg">
+        <img id="page2" src="book_02.jpg">
+        <img id="page3" src="book_03.jpg">
+        <img id="page4" src="book_04.jpg">
+      </div>
+      <img id="oct" src="oct.png">
+    </div>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        var didScroll;
+        var lastScrollTop = 0;
+        var delta = 5;
+        var navbarHeight = $('header').outerHeight();
+
+        $(window).scroll(function(event) {
+            didScroll = true;
+        });
+
+        setInterval(function() {
+            if (didScroll && $(window).scrollTop() > 50) {
+                hasScrolled();
+                didScroll = false;
+            }
+        }, 250);
+
+        function hasScrolled() {
+            var st = $(this).scrollTop();
+
+            // Make sure they scroll more than delta
+            if (Math.abs(lastScrollTop - st) <= delta)
+                return;
+
+            // If they scrolled down and are past the navbar, add class .nav-up.
+            // This is necessary so you never see what is "behind" the navbar.
+            if (st > lastScrollTop && st > navbarHeight) {
+                // Scroll Down
+                $('header').removeClass('nav-down').addClass('nav-up');
+            } else {
+                // Scroll Up
+                if (st + $(window).height() < $(document).height()) {
+                    $('header').removeClass('nav-up').addClass('nav-down');
+                }
+            }
+
+            lastScrollTop = st;
+        }
+
+        $(window).scroll(function() {
+            var scroll = $(window).scrollTop();
+            if (scroll < 50) {
+                $("header").removeClass();
+            }
+        });
+
+        function clear_all() {
+          $("#tab1").removeClass();
+          $("#tab2").removeClass();
+          $("#tab3").removeClass();
+          $("#tab4").removeClass();
+          $("#product").removeClass();
+          $("#styles").removeClass();
+          $("#types").removeClass();
+          $("#placement").removeClass();
+        }
+
+        $("#tab1").click(function() {
+          clear_all();
+          $(this).addClass("active")
+          $("#product").addClass("vis");
+        });
+
+        $("#tab2").click(function() {
+          clear_all();
+          $(this).addClass("active")
+          $("#styles").addClass("vis");
+        });
+
+        $("#tab3").click(function() {
+          clear_all();
+          $(this).addClass("active")
+          $("#types").addClass("vis");
+        });
+
+        $("#tab4").click(function() {
+          clear_all();
+          $(this).addClass("active")
+          $("#placement").addClass("vis");
+        });
+    });
+    </script>
+</body>
+
+</html>

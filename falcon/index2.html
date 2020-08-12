@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Falcon</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #ccc;
+    }
+    #placeholder_top, #placeholder_bottom {
+      position: relative;
+    }
+    #placeholder_top span, #placeholder_bottom span {
+      display: block;
+      font-size: 56px;
+      letter-spacing: -.05em;
+      position: absolute;
+      left: 50%;
+      top: 48%;
+      transform: translate(-50%, -50%);
+      font-family: sans-serif;
+      color: #999;
+      font-weight: bold;
+      line-height: 1;
+      text-align: center;
+    }
+    #placeholder_top b, #placeholder_bottom b {
+      display: block;
+      font-weight: normal;
+      font-size: 21px;
+      letter-spacing: normal;
+    }
+  </style>
+</head>
+<body>
+<div id="placeholder_top"><span>TOP SECTION<b>scroll the page</b></span></div>
+
+<div id="your_brand_block">
+<style>
+#your_brand_block {
+position: relative;
+background: #000;
+}
+#main_parts {
+position: absolute;
+left: 0;
+top: 0;
+width: 100%;
+transition: all .1s ease;
+}
+#main_parts svg {
+position: absolute;
+left: 0;
+right: 0;
+top: 50%;
+transform: translateY(-50%);
+}
+#main_parts.fixed {
+position: fixed;
+}
+#main_parts.fixed_bottom {
+position: absolute;
+left: 0;
+top: auto;
+bottom: 0;
+}
+#arr_design, #arr_print, #arr_apparel, #arr_promo, #arr_web, #arr_marketing, #arr_experiential {
+  opacity: 0;
+  transition: opacity .1s linear;
+}
+#arr_design.vis, #arr_print.vis, #arr_apparel.vis, #arr_promo.vis, #arr_web.vis, #arr_marketing.vis, #arr_experiential.vis {
+  opacity: 1;
+}
+#img_design, #img_print, #img_apparel, #img_promo, #img_web, #img_marketing, #img_experiential {
+  opacity: 0;
+  transition: opacity .2s linear;
+}
+#img_design.vis, #img_print.vis, #img_apparel.vis, #img_promo.vis, #img_web.vis, #img_marketing.vis, #img_experiential.vis {
+  opacity: 1;
+}
+</style>
+<div id="main_parts">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" stroke-width="6" stroke-linejoin="round" stroke-linecap="round" stroke="#fff" viewBox="0 0 1920 1080">
+<defs>
+<path id="design" d="M23.1-6.8c0,0-14,6.3-25.5,13c7.9,7.3,26.2,15.7,26.2,15.7S2.5,2.5,0,0"/>
+<path id="print" transform="translate(0 10)" d="M21.4,19.1c0,0-6.2-3.9-9.7-7.3S1.4,2.1-2,1C2.5-2.8,9.2-8,13-10.7c2.4-1.7,11.9-5.9,11.9-5.9"/>
+<path id="apparel" transform="translate(-10 10)" d="M21,13.7C21,13.7,4.1,2.3-3,0.4c7.7-5.5,28.6-16.9,28.6-16.9"/>
+<path id="promo" transform="translate(0 10)" d="M19,19c0,0-2.4-7-7.6-11.7C5.6,1.9,0.8,0.9-2,0C1.6-3.6,8.8-11,22.6-15.1C15.2-10-1.7,0.1-3.5,0.8"/>
+<path id="web" transform="translate(-10 10)" d="M19.5,12.5C19.5,12.5,4.5,3-6,0c5-3.4,28-17.9,28-17.9"/>
+<path id="marketing" transform="translate(0 7)" d="M15.1-10.5L-4-1c0,0,15.3,8.8,30.4,25.6"/>
+<path id="experiential" transform="translate(0 10)" d="M11.3-17.8c0,0-4.9,9.4-11.3,17.8c4.2,1.2,6.9,4.5,8.2,10"/>
+</defs>
+<path id="line_design" d="M978.3 477.8c25.4-15.6 62.3-34.4 78.9-71.7 14.1-31.4 11.3-80.4 10.5-90.5-.8-10.1-4.3-35.7-4.3-35.7"/>
+<path id="line_print" d="M1111.4 483.3s9.6-29.3 34.5-65.6c23.6-34.4 36-57 66.7-92.3 38.4-44.2 82.3-65.1 82.3-65.1"/>
+<path id="line_apparel" d="M1124.6 524.7s15.8 8.8 49.4 13.7c33.6 4.8 53.2 2 70.4-1.3 17.2-3.2 31.4-17.2 35.4-27.1 4-9.9.5-24.4-13.8-28.2-14.4-3.8-19.8 7-19 14.2.7 7.2 9.7 17.2 22.3 19.2s33.8 2.2 66.3-2.7c26.6-4 46.7 2 46.7 2"/>
+<path id="line_promo" d="M1161.9 610.8s15.9-7.1 31.4-5.9 26.8 5 46.4 18.8c19.5 13.8 37 39.7 48.5 62.4 11.5 22.8 22 49.5 28.4 63.3 6.3 13.8 18.4 39.1 33.3 54.5 13.1 13.5 33.8 23.9 57.6 14.6"/>
+<path id="line_web" d="M776.1 581.7s-22.6 39.8-32.7 61.6c-10.1 21.8-19.1 43.6-22.6 59.6-4.1 19-2.4 43.8 12.1 53.5 9 6 33.5 14.8 53.7 8.6 20.1-6.2 19.5-28.2 16.4-36.1s-15.6-30.3-40.2-12c-25.6 19-34 50-37.4 64.8-2.9 12.8-4.8 44.3 14.7 61.3 11.2 9.8 31.5 17.3 54.5 4.7 23-12.5 40.8-39.2 40.8-39.2"/>
+<path id="line_marketing" d="M681.6 534.4s-60.5-6.7-107.1-2.2C528 536.8 496.8 551.9 473 571c-23.8 19.1-51 50.6-65.7 94.3"/>
+<path id="line_experiential" d="M758.5 462.3s-15.4-43.7-33-63.9c-15.8-18.1-31.5-29.6-56.9-32.3-20.1-2.2-39.3 2.6-40.5 13.5-1.3 10.9 16 17.5 24.3 12.4 8.3-5.2 19.6-13.4 15.7-38.3-3.9-25.5-28.2-42.4-44.1-51.5-15.9-9.1-35.9-17.3-60.9-19.7"/>
+
+<use id="arr_design" x="1063.523" y="280.269" transform="rotate(80 1063.523 280.269)" xlink:href="#design"/>
+<use id="arr_print" x="1294.981" y="260.809" transform="rotate(140 1294.981 260.809)" xlink:href="#print"/>
+<use id="arr_apparel" x="1382.226" y="514.822" transform="rotate(180 1382.226 514.822)" xlink:href="#apparel"/>
+<use id="arr_promo" x="1407.501" y="818.884" transform="rotate(160 1407.501 818.884)" xlink:href="#promo"/>
+<use id="arr_web" x="835.384" y="808.854" transform="rotate(135 835.384 808.854)" xlink:href="#web"/>
+<use id="arr_marketing" x="407.438" y="665.728" transform="rotate(290 407.438 665.728)" xlink:href="#marketing"/>
+<use id="arr_experiential" x="563.14" y="282.943" transform="rotate(0 563.14 282.943)" xlink:href="#experiential"/>
+
+<image href="your_brand.svg" x="699.77" y="489.82" width="440" height="207"/>
+<image id="img_design" href="design.svg" x="694.22" y="107.15" width="471" height="210"/>
+<image id="img_print" href="print.svg" x="1327.201" y="79.649" width="387" height="270"/>
+<image id="img_apparel" href="apparel.svg" x="1419.14" y="398.25" width="401" height="210"/>
+<image id="img_promo" href="promo.svg" x="1442.91" y="723.88" width="382" height="197"/>
+<image id="img_web" href="web.svg" x="831.066" y="746.86" width="483" height="205"/>
+<image id="img_marketing" href="marketing.svg" x="106.455" y="639.031" width="511" height="325"/>
+<image id="img_experiential" href="experiential.svg" x="85.84" y="153.94" width="437" height="305"/>
+</svg>
+</div>
+<script type="text/javascript">
+(function(){
+
+  let inthgt = window.innerHeight;
+  let sections = 7;
+  let svg_pos;
+  let svg_scroll_pos = 0;
+  let point_percent = [];
+
+  function $(sel) {
+    return document.querySelector(sel);
+  }
+
+  function setAttributes(el, attrs) {
+    for(var key in attrs) {
+      el.setAttribute(key, attrs[key]);
+    }
+  }
+
+  function rad2deg(rad) {
+    return 180 * rad / Math.PI;
+  }
+
+  var path_lenght = [$("#line_design").getTotalLength(), $("#line_print").getTotalLength(), $("#line_apparel").getTotalLength(), $("#line_promo").getTotalLength(), $("#line_web").getTotalLength(), $("#line_marketing").getTotalLength(), $("#line_experiential").getTotalLength()];
+  
+  setAttributes($("#line_design"), {"stroke-dasharray": path_lenght[0], "stroke-dashoffset": path_lenght[0]});
+  setAttributes($("#line_print"), {"stroke-dasharray": path_lenght[1], "stroke-dashoffset": path_lenght[1]});
+  setAttributes($("#line_apparel"), {"stroke-dasharray": path_lenght[2], "stroke-dashoffset": path_lenght[2]});
+  setAttributes($("#line_promo"), {"stroke-dasharray": path_lenght[3], "stroke-dashoffset": path_lenght[3]});
+  setAttributes($("#line_web"), {"stroke-dasharray": path_lenght[4], "stroke-dashoffset": path_lenght[4]});
+  setAttributes($("#line_marketing"), {"stroke-dasharray": path_lenght[5], "stroke-dashoffset": path_lenght[5]});
+  setAttributes($("#line_experiential"), {"stroke-dasharray": path_lenght[6], "stroke-dashoffset": path_lenght[6]});
+
+  $("#your_brand_block").setAttribute("style", "height:" + (sections+1)*inthgt + "px");
+  $("#main_parts").setAttribute("style", "height:" + inthgt + "px");
+
+  function set_position(path_lenght, point_percent, elem, elem_arrow) {
+
+    var point_on_path = point_percent * path_lenght;
+    var path_point_coord = elem.getPointAtLength(point_on_path);
+
+    if (path_lenght*point_percent + 1 <= path_lenght) {
+      var posAhead = elem.getPointAtLength(path_lenght*point_percent + 1);
+      angle = Math.atan2(posAhead.y - path_point_coord.y, posAhead.x - path_point_coord.x);
+    } else {
+      var posBehind = elem.getPointAtLength(path_lenght*point_percent - 1);
+      angle = Math.atan2(path_point_coord.y - posBehind.y, path_point_coord.x - posBehind.x);
+    }
+
+    if (point_percent <= 1) {
+      elem.setAttribute("stroke-dashoffset", path_lenght - point_on_path);
+      setAttributes(elem_arrow, {"x": path_point_coord.x, "y": path_point_coord.y-10, "transform": "rotate(" + ((180 + rad2deg(angle))) + " " + path_point_coord.x + " " + path_point_coord.y + ")"});
+    } else {
+      elem.setAttribute("stroke-dashoffset", 0);
+      setAttributes(elem_arrow, {"x": $("#path").getPointAtLength(path_lenght).x, "y": $("#path").getPointAtLength(path_lenght).y-10, "transform": "rotate(0" + " " + $("#path").getPointAtLength(path_lenght).x + " " + $("#path").getPointAtLength(path_lenght).y + ")"});
+    }
+  };
+
+  window.onscroll = function() {
+    svg_pos = window.pageYOffset - $("#your_brand_block").offsetTop;
+    if (svg_pos <= 0) {
+      $("#main_parts").setAttribute("class", "");
+      point_percent = [0, 0, 0, 0, 0, 0, 0];
+      svg_scroll_pos = 0;
+      $("#arr_design").setAttribute("class", "");
+    }
+    if (svg_pos > 0 && svg_pos <= sections*inthgt) {
+      $("#main_parts").setAttribute("class", "fixed");
+
+      if(svg_pos <= inthgt) {
+        point_percent[2] = 0;
+        point_percent[0] = svg_pos / inthgt;
+        $("#arr_design").setAttribute("class", "vis");
+        $("#arr_apparel").setAttribute("class", "");
+        $("#img_design").setAttribute("class", "");
+      }
+
+      if(svg_pos > inthgt && svg_pos <= inthgt*2) {
+        point_percent[4] = 0;
+        point_percent[2] = (svg_pos - inthgt) / inthgt;
+        $("#img_design").setAttribute("class", "vis");
+        $("#arr_apparel").setAttribute("class", "vis");
+        $("#arr_web").setAttribute("class", "");
+        $("#img_apparel").setAttribute("class", "");
+      }
+
+      if(svg_pos > inthgt*2 && svg_pos <= inthgt*3) {
+        point_percent[6] = 0;
+        point_percent[4] = (svg_pos - inthgt*2) / inthgt;
+        $("#img_apparel").setAttribute("class", "vis");
+        $("#arr_web").setAttribute("class", "vis");
+        $("#arr_experiential").setAttribute("class", "");
+        $("#img_web").setAttribute("class", "");
+      }
+
+      if(svg_pos > inthgt*3 && svg_pos <= inthgt*4) {
+        point_percent[1] = 0;
+        point_percent[6] = (svg_pos - inthgt*3) / inthgt;
+        $("#img_web").setAttribute("class", "vis");
+        $("#arr_experiential").setAttribute("class", "vis");
+        $("#arr_print").setAttribute("class", "");
+        $("#img_experiential").setAttribute("class", "");
+      }
+
+      if(svg_pos > inthgt*4 && svg_pos <= inthgt*5) {
+        point_percent[3] = 0;
+        point_percent[1] = (svg_pos - inthgt*4) / inthgt;
+        $("#img_experiential").setAttribute("class", "vis");
+        $("#arr_print").setAttribute("class", "vis");
+        $("#arr_promo").setAttribute("class", "");
+        $("#img_print").setAttribute("class", "");
+      }
+
+      if(svg_pos > inthgt*5 && svg_pos <= inthgt*6) {
+        point_percent[5] = 0;
+        point_percent[3] = (svg_pos - inthgt*5) / inthgt;
+        $("#img_print").setAttribute("class", "vis");
+        $("#arr_promo").setAttribute("class", "vis");
+        $("#arr_marketing").setAttribute("class", "");
+        $("#img_promo").setAttribute("class", "");
+      }
+
+      if(svg_pos > inthgt*6 && svg_pos <= inthgt*7) {
+        point_percent[5] = (svg_pos - inthgt*6) / inthgt;
+        $("#arr_marketing").setAttribute("class", "vis");
+        $("#img_promo").setAttribute("class", "vis");
+        $("#img_marketing").setAttribute("class", "");
+      }
+
+      svg_scroll_pos = svg_pos;
+    }
+    if (svg_pos >= sections*inthgt) {
+      $("#img_marketing").setAttribute("class", "vis");
+      $("#main_parts").setAttribute("class", "fixed_bottom");
+      point_percent = [1, 1, 1, 1, 1, 1, 1];
+    }
+
+    set_position(path_lenght[0], point_percent[0], $("#line_design"), $("#arr_design"));
+    set_position(path_lenght[2], point_percent[2], $("#line_apparel"), $("#arr_apparel"));
+    set_position(path_lenght[4], point_percent[4], $("#line_web"), $("#arr_web"));
+    set_position(path_lenght[6], point_percent[6], $("#line_experiential"), $("#arr_experiential"));
+    set_position(path_lenght[1], point_percent[1], $("#line_print"), $("#arr_print"));
+    set_position(path_lenght[3], point_percent[3], $("#line_promo"), $("#arr_promo"));
+    set_position(path_lenght[5], point_percent[5], $("#line_marketing"), $("#arr_marketing"));
+    //console.log(point_percent[2]);
+  };
+
+})();
+</script>
+</div>
+<div id="placeholder_bottom"><span>BOTTOM SECTION</span></div>
+<script>
+(function(){
+  let inthgt = window.innerHeight / 1.2;
+  var ptop = document.querySelector("#placeholder_top");
+  var pbtt = document.querySelector("#placeholder_bottom");
+  ptop.setAttribute("style", "height:" + inthgt + "px");
+  pbtt.setAttribute("style", "height:" + inthgt + "px");
+})();
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+};
+</script>
+</body>
+</html>

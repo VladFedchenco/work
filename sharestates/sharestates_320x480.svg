@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="480" viewBox="0 0 320 480">
+<style>
+/* <![CDATA[ */
+#main_img {
+  opacity: 0;
+  cursor: pointer;
+}
+/* ]]> */
+</style>
+
+<defs>
+<clipPath id="clp">
+<rect id="pic_clip" x="0" y="140" width="320" height="200"/>
+</clipPath>
+<clipPath id="clp2">
+<rect x="0" y="140" width="320" height="200"/>
+</clipPath>
+<linearGradient id="lnr">
+<stop offset="0" stop-color="#eee"/>
+<stop offset=".5" stop-color="#aaa"/>
+<stop offset="1" stop-color="#fff"/>
+</linearGradient>
+<filter id="shadow" filterUnits="userSpaceOnUse" x="-20" y="-20">
+<feGaussianBlur in="SourceGraphic" stdDeviation="4" />
+</filter>
+</defs>
+<g id="pictures">
+<image href="img_before.jpg" x="0" y="140" width="320" height="200"/>
+<image clip-path="url(#clp)" href="img_after.jpg" x="0" y="140" width="320" height="200"/>
+</g>
+<g clip-path="url(#clp2)">
+<rect id="scroll_shadow" x="320" y="140" width="0" height="200" opacity=".7" filter="url(#shadow)"/>
+<rect id="scroll" x="320" y="140" width="0" height="200" fill="url(#lnr)"/>
+</g>
+<image href="front_320x480.png" x="0" y="0" width="320" height="480"/>
+<path id="main_img" d="M0 193.102c38.078-20.762 92.663-36.68 154.17-42.662 64.704-6.293 124.009-.32 165.83 14.254v126.619c-37.732 19.243-89.887 33.879-148.283 39.558-67.792 6.593-129.658-.279-171.717-16.406V193.102z"/>
+<script>
+<![CDATA[
+
+var area = [0, 320, 140, 340];
+var area_width = area[1] - area[0];
+
+var scroll_max = area_width/10;
+
+var pt = $("svg").createSVGPoint();
+
+function cursorPoint(evt){
+  pt.x = evt.clientX; pt.y = evt.clientY;
+  return pt.matrixTransform($("svg").getScreenCTM().inverse());
+}
+
+function $(sel) { return document.querySelector(sel); }
+
+function setAttributes(el, attrs) {
+  for(var key in attrs) {
+    el.setAttribute(key, attrs[key]);
+  }
+}
+
+function scrolling(x_pos) {
+  var percent = 1 - x_pos/area_width;
+
+  if (x_pos < scroll_max) {
+    $("#pic_clip").setAttribute("width", scroll_max);
+    setAttributes($("#scroll"), {"width": scroll_max, "x": area[0]});
+    setAttributes($("#scroll_shadow"), {"width": scroll_max, "x": area[0]});
+  } else {
+    $("#pic_clip").setAttribute("width", x_pos);
+    setAttributes($("#scroll"), {"width": scroll_max*percent, "x": x_pos - scroll_max*percent});
+    setAttributes($("#scroll_shadow"), {"width": scroll_max*percent, "x": x_pos - scroll_max*percent - 4});
+  }
+}
+
+$("svg").addEventListener('mousemove',function(evt){
+  var loc = cursorPoint(evt);
+  if(loc.x >= area[0] && loc.x <= area[1] && loc.y >= area[2] && loc.y <= area[3]) {
+    scrolling(loc.x);
+  }
+  if (loc.x < area[0]) {
+    scrolling(area[0]);
+  }
+  if (loc.x > area[1]) {
+    scrolling(area[1]);
+  }
+},false);
+
+]]>
+</script>
+</svg>

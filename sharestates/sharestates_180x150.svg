@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="150" viewBox="0 0 180 150">
+<style>
+/* <![CDATA[ */
+#main_img {
+  opacity: 0;
+  cursor: pointer;
+}
+#txt {
+  opacity: 0;
+  transition: opacity .1s linear;
+}
+#txt.vis {
+  opacity: 1;
+}
+/* ]]> */
+</style>
+
+<defs>
+<clipPath id="clp">
+<rect id="pic_clip" x="0" y="35" width="180" height="77"/>
+</clipPath>
+<clipPath id="clp2">
+<rect x="0" y="35" width="180" height="77"/>
+</clipPath>
+<linearGradient id="lnr">
+<stop offset="0" stop-color="#eee"/>
+<stop offset=".5" stop-color="#aaa"/>
+<stop offset="1" stop-color="#fff"/>
+</linearGradient>
+<filter id="shadow" filterUnits="userSpaceOnUse" x="-20" y="-20">
+<feGaussianBlur in="SourceGraphic" stdDeviation="4" />
+</filter>
+</defs>
+<rect fill="#0a103f" width="180" height="150"/>
+<g id="pictures">
+<image href="img_before.jpg" x="0" y="14" width="180" height="113"/>
+<image clip-path="url(#clp)" href="img_after.jpg" x="0" y="14" width="180" height="113"/>
+</g>
+<g clip-path="url(#clp2)">
+<rect id="scroll_shadow" x="0" y="35" width="0" height="77" opacity=".7" filter="url(#shadow)"/>
+<rect id="scroll" x="0" y="35" width="0" height="77" fill="url(#lnr)"/>
+</g>
+<image href="front_180x150.png" x="0" y="0" width="180" height="150"/>
+<path id="main_img" d="M0,50.734c19.883,-9.285 50.917,-15.498 85.832,-15.962c39.907,-0.53 74.947,6.584 94.168,17.637l0,39.78c-19.029,11.388 -53.597,19.29 -93.142,19.815c-35.283,0.468 -66.76,-5.038 -86.858,-13.955l0,-47.315Z"/>
+<text id="txt" x="63" y="73" fill="#000" font-size="8" font-weight="bold" text-anchor="middle" font-family="sans-serif" transform="rotate(-90 63 73)">ROLLOVER</text>
+<script>
+<![CDATA[
+
+var area = [0, 180, 35, 112];
+var area_width = area[1] - area[0];
+var start = 0;
+var start_end = area_width*.3;
+var progress = start;
+var percent;
+
+var scroll_max = area[1] - area_width/10;
+
+var pt = $("svg").createSVGPoint();
+
+function cursorPoint(evt){
+  pt.x = evt.clientX; pt.y = evt.clientY;
+  return pt.matrixTransform($("svg").getScreenCTM().inverse());
+}
+
+function $(sel) { return document.querySelector(sel); }
+
+function setAttributes(el, attrs) {
+  for(var key in attrs) {
+    el.setAttribute(key, attrs[key]);
+  }
+}
+
+function scrolling(x_pos) {
+  var percent = x_pos/area_width;
+  var scroll_width = area_width/10*((--percent)*percent*percent+1);
+
+  if (x_pos > scroll_max) {
+    $("#pic_clip").setAttribute("width", scroll_max);
+    setAttributes($("#scroll"), {"width": area_width/10, "x": area[1] - area_width/10});
+    setAttributes($("#scroll_shadow"), {"width": area_width/10, "x": area[1] - area_width/10});
+  } else {
+    $("#pic_clip").setAttribute("width", x_pos);
+    setAttributes($("#scroll"), {"width": scroll_width, "x": x_pos});
+    setAttributes($("#scroll_shadow"), {"width": scroll_width, "x": x_pos + 4});
+  }
+}
+
+$("svg").addEventListener('mousemove',function(evt){
+  var loc = cursorPoint(evt);
+  if(loc.x >= area[0] && loc.x <= area[1] && loc.y >= area[2] && loc.y <= area[3]) {
+    $("#txt").setAttribute("class", "");
+    scrolling(loc.x);
+  }
+},false);
+
+function draw() {
+  if (progress < start_end) {
+    progress++;
+    percent = 1 - (start_end - progress) / (start_end - start);
+    percent = percent<.5 ? 2*percent*percent : -1+(4-2*percent)*percent;
+    scrolling(start + (start_end - start)*percent);
+    requestAnimationFrame(draw);
+  } else {
+    $("#txt").setAttribute("class", "vis");
+  }
+}
+
+window.addEventListener('DOMContentLoaded', () => {
+
+  draw();
+
+});
+
+]]>
+</script>
+</svg>

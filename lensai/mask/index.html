@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Mask Preview</title>
+    <style>
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    .top_mask {
+        position: relative;
+        display: inline-block;
+        margin-bottom: 32px;
+    }
+    .top_mask svg {
+        position: absolute;
+        width: 210px;
+        height: auto;
+        left: 420px;
+        top: 44px;
+        z-index: 999;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="top_mask">
+        <img src="img_bg.jpg">
+        <svg style="mix-blend-mode: hard-light;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1500">
+            <defs>
+                <filter id="blr">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="30" />
+                </filter>
+                <mask id="msk">
+                    <polygon fill="#fff" filter="url(#blr)" points="403,55 243,109 118,218 38,500 239,907 332,1226 332,1423 491,1495 575,1415 651,991 861,504 848,361 768,210 655,109 491,55" />
+                </mask>
+            </defs>
+            <image mask="url(#msk)" href="water.gif" width="1495" height="1495" />
+        </svg>
+    </div>
+
+    <div class="top_mask">
+        <img src="img_bg.jpg">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1500">
+            <defs>
+                <filter id="sq_set_color">
+                <feColorMatrix
+                  color-interpolation-filters="sRGB"
+                  type="matrix"
+                  values="1 0 0 0 0
+                          0 .5 0 0 0
+                          0 0 .3 0 0
+                          0 0 0 1 0 "/>
+                </filter>
+                <filter id="blr">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="30" />
+                </filter>
+                <mask id="msk">
+                    <polygon fill="#fff" filter="url(#blr)" points="403,55 243,109 118,218 38,500 239,907 332,1226 332,1423 491,1495 575,1415 651,991 861,504 848,361 768,210 655,109 491,55" />
+                </mask>
+            </defs>
+            <image mask="url(#msk)" filter="url(#sq_set_color)" href="sq.gif" opacity=".4" width="1495" height="1495" />
+        </svg>
+    </div>
+
+
+    <div class="top_mask">
+        <img src="img_bg.jpg">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1500">
+            <defs>
+                <filter id="lines_set_color">
+                <feColorMatrix
+                  color-interpolation-filters="sRGB"
+                  type="matrix"
+                  values=".4 0 0 0 0
+                          0 .4 0 0 0
+                          0 0 1 0 0
+                          0 0 0 1 0 "/>
+                </filter>
+                <filter id="blr">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="30" />
+                </filter>
+                <mask id="msk">
+                    <polygon fill="#fff" filter="url(#blr)" points="403,55 243,109 118,218 38,500 239,907 332,1226 332,1423 491,1495 575,1415 651,991 861,504 848,361 768,210 655,109 491,55" />
+                </mask>
+            </defs>
+            <image mask="url(#msk)" filter="url(#lines_set_color)" href="lines.gif" opacity=".8" width="1495" height="1495" />
+        </svg>
+    </div>
+
+    <div class="top_mask">
+        <img src="img_bg.jpg">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1500">
+            <defs>
+                <filter id="cells_set_color">
+                <feColorMatrix
+                  color-interpolation-filters="sRGB"
+                  type="matrix"
+                  values=".1 0 0 0 0
+                          0 .97 0 0 0
+                          0 0 .83 0 0
+                          0 0 0 1 0 "/>
+                </filter>
+                <filter id="blr">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="30" />
+                </filter>
+                <mask id="msk">
+                    <polygon fill="#fff" filter="url(#blr)" points="403,55 243,109 118,218 38,500 239,907 332,1226 332,1423 491,1495 575,1415 651,991 861,504 848,361 768,210 655,109 491,55" />
+                </mask>
+            </defs>
+            <image mask="url(#msk)" filter="url(#cells_set_color)" href="cells.gif" opacity=".4" width="1495" height="1495" />
+        </svg>
+    </div>
+
+    <div class="top_mask">
+        <img src="img_bg.jpg">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1500">
+            <defs>
+                <filter id="rotation_set_color">
+                <feColorMatrix
+                  color-interpolation-filters="sRGB"
+                  type="matrix"
+                  values="1 0 0 0 0
+                          0 .7 0 0 0
+                          0 0 .3 0 0
+                          0 0 0 1 0 "/>
+                </filter>
+                <filter id="blr">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="30" />
+                </filter>
+                <mask id="msk">
+                    <polygon fill="#fff" filter="url(#blr)" points="403,55 243,109 118,218 38,500 239,907 332,1226 332,1423 491,1495 575,1415 651,991 861,504 848,361 768,210 655,109 491,55" />
+                </mask>
+            </defs>
+            <image mask="url(#msk)" filter="url(#rotation_set_color)" href="rotation.gif" opacity=".5" width="1495" height="1495" />
+        </svg>
+    </div>
+
+
+    <div class="top_mask">
+        <img src="img_bg.jpg">
+        <style>
+            #svg_blend {
+                mix-blend-mode: hard-light;
+                animation: hue-rotate 3s linear infinite;
+            }
+            @keyframes hue-rotate {
+              from {
+                -webkit-filter: hue-rotate(0);
+                -moz-filter: hue-rotate(0);
+                -ms-filter: hue-rotate(0);
+                filter: hue-rotate(0);
+              }
+              to {
+                -webkit-filter: hue-rotate(360deg);
+                -moz-filter: hue-rotate(360deg);
+                -ms-filter: hue-rotate(360deg);
+                filter: hue-rotate(360deg);
+              }
+            }
+        </style>
+        <svg id="svg_blend" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1500">
+            <style>
+            /* <![CDATA[ */
+                #gradient_hue {
+                    animation: rotate_form 2s ease infinite;
+                }
+
+                @keyframes rotate_form {
+                    0%, 100% {
+                        transform: translate(450px, 750px) rotate(0deg) translate(-450px, -750px);
+                    }
+                    50% {
+                        transform: translate(450px, 750px) rotate(30deg) translate(-450px, -750px);
+                    }
+                }
+                
+            /* ]]> */
+            </style>
+            <defs>
+                <linearGradient id="grd" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#e56420" />
+                  <stop offset=".25" stop-color="#c22525" />
+                  <stop offset=".5" stop-color="#3d9c31" />
+                  <stop offset=".75" stop-color="#37bbde" />
+                  <stop offset="1" stop-color="#e56420" />
+                </linearGradient>
+                <filter id="blr">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="30" />
+                </filter>
+                <mask id="msk">
+                    <polygon fill="#fff" filter="url(#blr)" points="403,55 243,109 118,218 38,500 239,907 332,1226 332,1423 491,1495 575,1415 651,991 861,504 848,361 768,210 655,109 491,55" />
+                </mask>
+            </defs>
+            <g mask="url(#msk)">
+                <rect id="gradient_hue" opacity=".7" x="-100" width="1100" height="1500" fill="url(#grd)"/>
+            </g>
+        </svg>
+    </div>
+
+    <div class="top_mask">
+        <img src="img_bg.jpg">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1500">
+            <style>
+            /* <![CDATA[ */
+                #gradient_shape {
+                    animation: gradient_shape 2s ease forwards infinite;
+                }
+                @keyframes gradient_shape {
+                    0% {
+                        transform: translateX(0px) rotate(15deg);
+                    }
+                    100% {
+                        transform: translateX(1700px) rotate(15deg);
+                    }
+                }
+            /* ]]> */
+            </style>
+            <defs>
+                <linearGradient id="grad1" x1="0" y1="0" x2="1" y2="0">
+                  <stop offset="0" stop-color="#fff1d4" stop-opacity="0" />
+                  <stop offset=".5" stop-color="#fff1d4" stop-opacity=".5" />
+                  <stop offset="1" stop-color="#fff1d4" stop-opacity="0" />
+                </linearGradient>
+                <filter id="blr">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="30" />
+                </filter>
+                <mask id="msk">
+                    <polygon fill="#fff" filter="url(#blr)" points="403,55 243,109 118,218 38,500 239,907 332,1226 332,1423 491,1495 575,1415 651,991 861,504 848,361 768,210 655,109 491,55" />
+                </mask>
+            </defs>
+            <g mask="url(#msk)">
+                <rect id="gradient_shape" x="-700" width="700" height="2000" fill="url(#grad1)"/>
+            </g>
+        </svg>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Mask Preview</title>
+    <style>
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    .top_mask {
+        position: relative;
+        display: inline-block;
+        margin-bottom: 32px;
+    }
+
+    .top_mask svg {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="top_mask">
+        <img src="img1.jpg">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1390 740">
+            <defs>
+                <linearGradient id="grd" class="mdl_color" x1="0" y1="0" x2="1" y2=".5">
+                    <stop offset="0" stop-color="#fff" stop-opacity="0">
+                        <animate attributeName="offset" values="0;0;.20;.40;.60;.80" dur="3s" repeatCount="indefinite" />
+                    </stop>
+                    <stop offset=".5" stop-color="#fff" stop-opacity=".7">
+                        <animate attributeName="offset" values="0;.20;.40;.60;.80;1" dur="3s" repeatCount="indefinite" />
+                        <animate attributeName="stop-opacity" values="0;.7;.7;0" dur="3s" repeatCount="indefinite" />
+                    </stop>
+                    <stop offset="1" stop-color="#fff" stop-opacity="0">
+                        <animate attributeName="offset" values=".20;.40;.60;.80;1;1" dur="3s" repeatCount="indefinite" />
+                    </stop>
+                </linearGradient>
+                <filter id="blr">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="4" />
+                </filter>
+            </defs>
+            <path fill="url(#grd)" filter="url(#blr)" d="M975.331 56.214L718.587 369.599l-2.067 43.411 50.439 121.964 163.308-36.796 152.558-186.46.827-52.507-54.574-168.269-36.796-34.728h-16.951z" />
+        </svg>
+    </div>
+
+    <div class="top_mask">
+        <img src="img2.jpg">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 400">
+            <path fill="url(#grd)" filter="url(#blr)" d="M181.727 248.437L59.102 291.482l-35.45 65.473 49.557-3.256 6.511 22.789L120.595 400l136.733-70.898V276.29l-46.301-27.853h-29.3z" />
+            <path fill="url(#grd)" filter="url(#blr)" d="M505.322 285.606l-28.965 3.218 4.096 11.41-17.846 7.315 71.971 39.496-15.506 9.362 14.629 15.507-16.677 8.484-2.34 18.724L619.13 400l-33.352-89.526-27.209-24.868h-53.247z" />
+        </svg>
+    </div>
+
+    <div class="top_mask">
+        <img src="img3.jpg">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 400">
+            <path fill="url(#grd)" filter="url(#blr)" d="M516.513 46.851l-39.238 13.243-30.656 26.732L427 155.984l49.294 99.814 22.807 78.232v48.313L538.095 400l20.6-19.619 18.638-103.983 51.501-119.433-3.188-35.07-19.619-37.031-27.713-24.77-40.219-13.243h-21.582z" />
+        </svg>
+    </div>
+
+    <div class="top_mask">
+        <img src="img4.jpg">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 400">
+            <path fill="url(#grd)" filter="url(#blr)" d="M245.777 135.869l-8.35 8.199 1.062 47.826 13.513 23.836 7.288-3.188 2.125 5.314-10.476 83.96 4.251 6.225 14.424-1.063 3.188-11.387 11.387 9.413 6.225-33.25 19.738 67.411 10.324 14.576 13.512 1.974 10.325-17.612v-44.637l-18.675-50.711 3.188-14.575-19.737-4.099-3.189-14.576 21.863-23.836 7.288-22.926-11.387-8.199-11.539 12.45 6.225-27.025-25.81 9.413-35.376-13.513h-11.387z" />
+        </svg>
+    </div>
+
+    <div class="top_mask">
+        <img src="img4.jpg">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 400">
+            <path fill="url(#grd)" filter="url(#blr)" d="M307 224.401l-9.75 3.637-1.16 8.511-9.75-8.511 7.274 19.421 2.476 21.897-3.637 7.274 1.161 12.148 14.624 49.829 8.511 12.148 9.672 1.238 6.112-8.511 1.238-12.148-1.238-46.193-9.749-29.17-12.148-14.547h7.351l6.035-7.351-14.546-9.672H307z" />
+        </svg>
+    </div>
+
+    <div class="top_mask">
+        <img src="img6.jpg">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+            <path fill="url(#grd)" filter="url(#blr)" d="M383.51 169.166l-5.612 5.612-4.489 12.345-3.367 30.243 13.468 13.468h3.367l11.164-12.345 2.244-31.366-3.367-8.979 2.245-6.733-4.43-2.245H383.51z" />
+        </svg>
+    </div>
+
+    <div class="top_mask">
+        <img src="img7.jpg">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 799 400">
+            <path fill="url(#grd)" filter="url(#blr)" d="M299.499 89.709l-22.096 8.08 22.096 26.712h11.542l13.851-12.697 2.308-15.17-10.388-6.925h-17.313z" />
+        </svg>
+    </div>
+
+    <div class="top_mask">
+        <img src="img8.jpg">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+            <path fill="url(#grd)" filter="url(#blr)" d="M94.446 43.181L81.144 56.654l-1.023 281.907 13.302 18.589 43.318 1.023 78.108-1.023 13.473-16.543V55.631l-14.496-12.45H94.446z" />
+            <path fill="url(#grd)" filter="url(#blr)" d="M423.257 43.181l-14.405 11.281v292.431l11.281 10.239 123.047 1.041 11.28-7.115 3.124-16.661-2.082-278.894-15.446-12.322H423.257z" />
+        </svg>
+    </div>
+
+    <div class="top_mask">
+        <img src="img9.jpg">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+            <path fill="url(#grd)" filter="url(#blr)" d="M493.734 151.286l-66.454 3.105-7.328 6.21-6.211 200.354 3.106 13.539 7.328 5.093 78.875 4.223 12.421-6.211 3.105-8.322-3.105-208.676-13.539-9.315h-8.198z" />
+        </svg>
+    </div>
+
+    <div class="top_mask">
+        <img src="img11.jpg">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+            <path fill="url(#grd)" filter="url(#blr)" d="M69.771 124.914l-13.754 16.789-46.321 17.8 16.789 140.175 36.813 13.552 87.382-3.034-5.259-43.286 39.039-20.025 4.247-17.8-38.027-63.109-70.391-41.062H69.771z" />
+        </svg>
+    </div>
+
+</body>
+
+</html>

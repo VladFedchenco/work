@@ -1,0 +1,181 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 85 53">
+<style>
+/* <![CDATA[ */
+
+#a1, #a2, #a3, #a4, #a5, #a6, #a7, #a8, #a9, #a10, #a11, #a12, #a13, #a14, #a15, #a16, #a17, #a18, #a19, #a20, #a21, #a22, #a23, #a24, #a25, #a26, #a27 {
+visibility: hidden;
+animation-duration: 4s;
+animation-iteration-count: infinite;
+animation-timing-function: steps(1);
+}
+
+/* ]]> */
+</style>
+<defs>
+<g id="bbl">
+  <path fill="#FFF" stroke="#95D400" stroke-miterlimit="10" d="M23.307 16.071H10.274l-6.302 4.382-.022-4.382c-2.173 0-3.95-1.778-3.95-3.95v-8.17C0 1.778 1.778 0 3.95 0h19.357c2.173 0 3.95 1.778 3.95 3.95v8.17c.001 2.173-1.777 3.951-3.95 3.951z"/>
+  <path fill="#95D400" d="M13.123 10.574c-.558 0-1.011-.453-1.011-1.011v-1.72c0-.558.453-1.011 1.011-1.011.713 0 1.293-.58 1.293-1.294s-.58-1.293-1.293-1.293-1.293.58-1.293 1.293c0 .558-.453 1.011-1.011 1.011s-1.011-.452-1.011-1.01c0-1.828 1.487-3.315 3.315-3.315s3.315 1.487 3.315 3.315c0 1.476-.969 2.73-2.304 3.158v.866c0 .559-.452 1.011-1.011 1.011z"/>
+  <circle cx="13.123" cy="12.809" r="1.211" fill="#95D400"/>
+</g>
+<rect id="ln" width="12.471" height="1.355" fill="#95D400"/>
+</defs>
+<path fill="#F7FFE2" stroke="#95D400" stroke-miterlimit="10" d="M17.433 37.817v-25.93c0-1.351 1.096-2.447 2.447-2.447h45.24c1.351 0 2.447 1.096 2.447 2.447v25.931c0 1.351-1.096 2.447-2.447 2.447H19.88c-1.351-.001-2.447-1.096-2.447-2.448z"/>
+<path fill="#FFF" stroke="#95D400" stroke-miterlimit="10" d="M17.433 37.817v-2.192h50.134v2.192c0 1.351-1.096 2.447-2.447 2.447H19.88c-1.351 0-2.447-1.095-2.447-2.447z"/>
+<rect width="9.671" height="4.888" x="37.664" y="40.264" fill="#FFF" stroke="#95D400" stroke-miterlimit="10"/>
+<polygon fill="#95D400" points="50.5 45.152 47.336 44.057 37.664 44.057 34.5 45.152 34.5 46.389 50.5 46.389"/>
+<circle cx="42.5" cy="37.945" r=".744" fill="#95D400"/>
+
+<use id="a1" x="28.871" y="7.216" transform="translate(28.871 27.669) scale(.05) translate(-28.871 -27.669)" xlink:href="#bbl"/>
+<use id="a2" x="28.871" y="7.216" transform="translate(28.871 27.669) scale(.1) translate(-28.871 -27.669)" xlink:href="#bbl"/>
+<use id="a3" x="28.871" y="7.216" transform="translate(28.871 27.669) scale(.2) translate(-28.871 -27.669)" xlink:href="#bbl"/>
+<use id="a4" x="28.871" y="7.216" transform="translate(28.871 27.669) scale(.3) translate(-28.871 -27.669)" xlink:href="#bbl"/>
+<use id="a5" x="28.871" y="7.216" transform="translate(28.871 27.669) scale(.5) translate(-28.871 -27.669)" xlink:href="#bbl"/>
+<use id="a6" x="28.871" y="7.216" transform="translate(28.871 27.669) scale(.7) translate(-28.871 -27.669)" xlink:href="#bbl"/>
+<use id="a7" x="28.871" y="7.216" transform="translate(28.871 27.669) scale(.8) translate(-28.871 -27.669)" xlink:href="#bbl"/>
+<use id="a8" x="28.871" y="7.216" transform="translate(28.871 27.669) scale(.9) translate(-28.871 -27.669)" xlink:href="#bbl"/>
+<use id="a9" x="28.871" y="7.216" transform="translate(28.871 27.669) scale(.95) translate(-28.871 -27.669)" xlink:href="#bbl"/>
+<use id="a10" x="28.871" y="7.216" xlink:href="#bbl"/>
+
+<g id="a11">
+<use x="28.871" y="7.216" xlink:href="#bbl"/>
+<use x="36.265" y="27.669" transform="translate(36.265 27.669) scale(.1 1) translate(-36.265 -27.669)" xlink:href="#ln"/>
+</g>
+<g id="a12">
+<use x="28.871" y="7.216" xlink:href="#bbl"/>
+<use x="36.265" y="27.669" transform="translate(36.265 27.669) scale(.3 1) translate(-36.265 -27.669)" xlink:href="#ln"/>
+</g>
+<g id="a13">
+<use x="28.871" y="7.216" xlink:href="#bbl"/>
+<use x="36.265" y="27.669" transform="translate(36.265 27.669) scale(.5 1) translate(-36.265 -27.669)" xlink:href="#ln"/>
+</g>
+<g id="a14">
+<use x="28.871" y="7.216" xlink:href="#bbl"/>
+<use x="36.265" y="27.669" transform="translate(36.265 27.669) scale(.7 1) translate(-36.265 -27.669)" xlink:href="#ln"/>
+</g>
+<g id="a15">
+<use x="28.871" y="7.216" xlink:href="#bbl"/>
+<use x="36.265" y="27.669" transform="translate(36.265 27.669) scale(.8 1) translate(-36.265 -27.669)" xlink:href="#ln"/>
+</g>
+<g id="a16">
+<use x="28.871" y="7.216" xlink:href="#bbl"/>
+<use x="36.265" y="27.669" transform="translate(36.265 27.669) scale(.9 1) translate(-36.265 -27.669)" xlink:href="#ln"/>
+</g>
+
+<g id="a17">
+<use x="28.871" y="7.216" xlink:href="#bbl"/>
+<use x="36.265" y="27.669" xlink:href="#ln"/>
+<use x="36.265" y="30.643" transform="translate(36.265 30.643) scale(.1 1) translate(-36.265 -30.643)" xlink:href="#ln"/>
+</g>
+<g id="a18">
+<use x="28.871" y="7.216" xlink:href="#bbl"/>
+<use x="36.265" y="27.669" xlink:href="#ln"/>
+<use x="36.265" y="30.643" transform="translate(36.265 30.643) scale(.3 1) translate(-36.265 -30.643)" xlink:href="#ln"/>
+</g>
+<g id="a19">
+<use x="28.871" y="7.216" xlink:href="#bbl"/>
+<use x="36.265" y="27.669" xlink:href="#ln"/>
+<use x="36.265" y="30.643" transform="translate(36.265 30.643) scale(.5 1) translate(-36.265 -30.643)" xlink:href="#ln"/>
+</g>
+<g id="a20">
+<use x="28.871" y="7.216" xlink:href="#bbl"/>
+<use x="36.265" y="27.669" xlink:href="#ln"/>
+<use x="36.265" y="30.643" transform="translate(36.265 30.643) scale(.7 1) translate(-36.265 -30.643)" xlink:href="#ln"/>
+</g>
+<g id="a21">
+<use x="28.871" y="7.216" xlink:href="#bbl"/>
+<use x="36.265" y="27.669" xlink:href="#ln"/>
+<use x="36.265" y="30.643" transform="translate(36.265 30.643) scale(.8 1) translate(-36.265 -30.643)" xlink:href="#ln"/>
+</g>
+<g id="a22">
+<use x="28.871" y="7.216" xlink:href="#bbl"/>
+<use x="36.265" y="27.669" xlink:href="#ln"/>
+<use x="36.265" y="30.643" transform="translate(36.265 30.643) scale(.9 1) translate(-36.265 -30.643)" xlink:href="#ln"/>
+</g>
+<g id="a23">
+<use x="28.871" y="7.216" xlink:href="#bbl"/>
+<use x="36.265" y="27.669" xlink:href="#ln"/>
+<use x="36.265" y="30.643" xlink:href="#ln"/>
+</g>
+<g id="a24" opacity=".8">
+<use x="28.871" y="7.216" xlink:href="#bbl"/>
+<use x="36.265" y="27.669" xlink:href="#ln"/>
+<use x="36.265" y="30.643" xlink:href="#ln"/>
+</g>
+<g id="a25" opacity=".6">
+<use x="28.871" y="7.216" xlink:href="#bbl"/>
+<use x="36.265" y="27.669" xlink:href="#ln"/>
+<use x="36.265" y="30.643" xlink:href="#ln"/>
+</g>
+<g id="a26" opacity=".4">
+<use x="28.871" y="7.216" xlink:href="#bbl"/>
+<use x="36.265" y="27.669" xlink:href="#ln"/>
+<use x="36.265" y="30.643" xlink:href="#ln"/>
+</g>
+<g id="a27" opacity=".2">
+<use x="28.871" y="7.216" xlink:href="#bbl"/>
+<use x="36.265" y="27.669" xlink:href="#ln"/>
+<use x="36.265" y="30.643" xlink:href="#ln"/>
+</g>
+<style>
+/* <![CDATA[ */
+
+#a1 {animation-name: a1}
+#a2 {animation-name: a2}
+#a3 {animation-name: a3}
+#a4 {animation-name: a4}
+#a5 {animation-name: a5}
+#a6 {animation-name: a6}
+#a7 {animation-name: a7}
+#a8 {animation-name: a8}
+#a9 {animation-name: a9}
+#a10 {animation-name: a10}
+#a11 {animation-name: a11}
+#a12 {animation-name: a12}
+#a13 {animation-name: a13}
+#a14 {animation-name: a14}
+#a15 {animation-name: a15}
+#a16 {animation-name: a16}
+#a17 {animation-name: a17}
+#a18 {animation-name: a18}
+#a19 {animation-name: a19}
+#a20 {animation-name: a20}
+#a21 {animation-name: a21}
+#a22 {animation-name: a22}
+#a23 {animation-name: a23}
+#a24 {animation-name: a24}
+#a25 {animation-name: a25}
+#a26 {animation-name: a26}
+#a27 {animation-name: a27}
+
+@keyframes a1 {0%{visibility: visible} 1%{visibility: hidden}}
+@keyframes a2 {1%{visibility: visible} 2%{visibility: hidden}}
+@keyframes a3 {2%{visibility: visible} 3%{visibility: hidden}}
+@keyframes a4 {3%{visibility: visible} 4%{visibility: hidden}}
+@keyframes a5 {4%{visibility: visible} 5%{visibility: hidden}}
+@keyframes a6 {5%{visibility: visible} 6%{visibility: hidden}}
+@keyframes a7 {6%{visibility: visible} 7%{visibility: hidden}}
+@keyframes a8 {7%{visibility: visible} 8%{visibility: hidden}}
+@keyframes a9 {8%{visibility: visible} 9%{visibility: hidden}}
+@keyframes a10 {9%{visibility: visible} 10%{visibility: hidden}}
+@keyframes a11 {10%{visibility: visible} 11%{visibility: hidden}}
+@keyframes a12 {11%{visibility: visible} 12%{visibility: hidden}}
+@keyframes a13 {12%{visibility: visible} 13%{visibility: hidden}}
+@keyframes a14 {13%{visibility: visible} 14%{visibility: hidden}}
+@keyframes a15 {14%{visibility: visible} 15%{visibility: hidden}}
+@keyframes a16 {15%{visibility: visible} 16%{visibility: hidden}}
+@keyframes a17 {16%{visibility: visible} 17%{visibility: hidden}}
+@keyframes a18 {17%{visibility: visible} 18%{visibility: hidden}}
+@keyframes a19 {18%{visibility: visible} 19%{visibility: hidden}}
+@keyframes a20 {19%{visibility: visible} 20%{visibility: hidden}}
+@keyframes a21 {20%{visibility: visible} 21%{visibility: hidden}}
+@keyframes a22 {21%{visibility: visible} 22%{visibility: hidden}}
+@keyframes a23 {22%{visibility: visible} 89%{visibility: hidden}}
+@keyframes a24 {89%{visibility: visible} 90%{visibility: hidden}}
+@keyframes a25 {90%{visibility: visible} 91%{visibility: hidden}}
+@keyframes a26 {91%{visibility: visible} 92%{visibility: hidden}}
+@keyframes a27 {92%{visibility: visible} 93%{visibility: hidden}}
+
+
+/* ]]> */
+</style>
+</svg>

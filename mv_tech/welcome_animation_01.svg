@@ -1,0 +1,151 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 85 53">
+<style>
+/* <![CDATA[ */
+
+#a1, #a2, #a3, #a4, #a5, #a6, #a7, #a8, #a9, #a10, #a11, #a12, #a13, #a14, #a15, #a16, #a17, #a18, #a19, #a20, #a21, #a22, #a23, #a24, #a25, #a26, #a27, #a28, #a29 {
+visibility: hidden;
+animation-duration: 5.5s;
+animation-iteration-count: infinite;
+animation-timing-function: steps(1);
+}
+
+/* ]]> */
+</style>
+<defs>
+<g id="bbl">
+<path fill="#FFF" stroke="#95D400" stroke-miterlimit="10" d="M28.34 9.922h-2.037v3.655l-3.675-3.655H1.26C.564 9.922 0 9.358 0 8.662V1.26C0 .564.564 0 1.26 0h27.08c.696 0 1.26.564 1.26 1.26v7.401c0 .697-.564 1.261-1.26 1.261z"/>
+<g fill="#95D400">
+  <path d="M5.253 6.146L4.7 4.098l-.559 2.048c-.043.155-.078.267-.104.334-.026.068-.07.128-.134.182-.063.054-.148.081-.254.081-.085 0-.156-.016-.211-.048a.3692.3692 0 01-.134-.135.8436.8436 0 01-.083-.208c-.022-.08-.041-.154-.059-.223l-.568-2.3c-.034-.133-.051-.235-.051-.305 0-.088.031-.163.093-.224.062-.06.139-.09.231-.09.126 0 .211.041.254.121s.081.198.114.352l.447 1.995.501-1.867c.037-.143.071-.251.1-.326.03-.075.078-.139.145-.193.066-.055.158-.082.272-.082.117 0 .207.029.272.085.064.057.109.118.134.185.025.067.058.177.1.33l.506 1.867.447-1.995c.022-.104.042-.186.062-.244a.397.397 0 01.1-.158c.047-.047.116-.07.206-.07s.167.03.23.09.094.135.094.224c0 .064-.017.166-.051.305l-.568 2.3c-.04.156-.072.27-.098.342a.4661.4661 0 01-.13.19c-.061.054-.148.082-.26.082-.106 0-.19-.027-.254-.079-.063-.054-.108-.113-.132-.179-.025-.066-.06-.179-.105-.339z"/>
+  <path d="M9.561 3.802H8.002v.838h1.435c.106 0 .184.024.236.071.052.048.078.11.078.188s-.025.141-.076.19c-.051.049-.13.073-.238.073H8.002v.972h1.612c.109 0 .191.025.246.076.055.05.083.117.083.201 0 .081-.028.146-.083.197-.055.051-.137.076-.245.076h-1.88c-.151 0-.259-.033-.325-.1-.067-.067-.1-.175-.1-.324V3.692c0-.099.015-.18.044-.244.03-.062.076-.108.139-.137.063-.029.143-.043.241-.043h1.827c.11 0 .192.024.246.073.054.049.08.113.08.192 0 .081-.027.145-.08.194-.054.051-.136.075-.246.075z"/>
+  <path d="M11.171 3.629v2.486h1.403c.112 0 .198.028.258.082.06.055.09.123.09.205 0 .084-.029.152-.088.204-.059.052-.145.078-.259.078h-1.671c-.151 0-.259-.033-.325-.1s-.099-.175-.099-.324V3.629c0-.14.032-.244.094-.315.063-.07.146-.105.248-.105.104 0 .188.035.253.104s.096.175.096.316z"/>
+  <path d="M16.048 5.605c0 .109-.027.227-.08.353-.054.127-.138.251-.253.372-.115.122-.262.221-.441.297-.179.076-.387.115-.624.115-.18 0-.344-.017-.492-.052-.148-.034-.282-.087-.402-.159-.12-.072-.231-.167-.332-.286-.09-.107-.167-.227-.231-.36a1.8174 1.8174 0 01-.143-.425 2.3115 2.3115 0 01-.048-.48c0-.275.04-.521.12-.739.08-.217.194-.403.344-.558.149-.155.324-.272.524-.353.2-.081.414-.121.641-.121.277 0 .523.055.739.166.216.11.381.246.496.409.115.162.172.315.172.46 0 .079-.028.149-.084.21-.056.06-.123.091-.202.091-.088 0-.155-.021-.199-.063-.044-.042-.094-.114-.148-.216-.09-.17-.196-.296-.318-.38-.122-.084-.272-.126-.451-.126-.284 0-.511.108-.679.324-.169.216-.253.523-.253.92 0 .266.037.487.112.663.075.176.18.308.317.395.137.087.297.13.48.13.199 0 .367-.049.504-.148.138-.099.242-.244.312-.434.029-.09.066-.164.109-.22.043-.057.114-.085.21-.085.083 0 .153.029.212.086.058.057.088.129.088.214z"/>
+  <path d="M18.173 3.21c.354 0 .659.072.913.215.254.144.446.348.576.613.13.265.196.576.196.933 0 .264-.036.504-.107.72-.071.216-.178.403-.321.562s-.318.28-.527.363c-.208.084-.446.126-.716.126-.267 0-.506-.043-.717-.129-.211-.086-.387-.208-.529-.365s-.248-.345-.32-.566c-.072-.22-.108-.459-.108-.715 0-.263.038-.503.113-.723.075-.219.184-.405.327-.559.143-.154.317-.272.522-.353.204-.081.437-.122.698-.122zm.984 1.757c0-.25-.041-.467-.121-.65-.081-.183-.196-.322-.346-.416-.15-.094-.322-.141-.516-.141-.138 0-.266.026-.383.078a.8518.8518 0 00-.303.227c-.085.1-.151.227-.201.381-.049.155-.073.328-.073.521 0 .194.025.37.073.527.049.157.118.287.208.39.089.103.192.181.307.232.116.051.243.077.381.077.177 0 .34-.044.488-.133.148-.088.266-.225.354-.41.088-.185.132-.413.132-.683z"/>
+  <path d="M21.603 6.169l-.547-2.176v2.358c0 .13-.029.229-.087.294-.058.065-.136.098-.232.098-.093 0-.17-.032-.229-.097-.059-.064-.088-.162-.088-.295V3.648c0-.149.039-.25.116-.302.078-.052.183-.078.315-.078h.215c.129 0 .222.012.281.035.058.023.101.065.129.126.028.061.059.159.095.296l.497 1.871.496-1.871c.036-.137.068-.235.096-.296.028-.06.071-.102.129-.126.058-.023.152-.035.281-.035h.214c.132 0 .237.026.315.078.078.052.116.153.116.302v2.703c0 .13-.029.229-.087.294-.058.065-.137.098-.234.098-.092 0-.167-.033-.226-.098s-.088-.163-.088-.294V3.993l-.55 2.176c-.036.142-.065.245-.087.311-.023.066-.064.126-.125.181-.061.054-.144.082-.252.082-.081 0-.149-.018-.205-.053a.3702.3702 0 01-.13-.134.7455.7455 0 01-.073-.181c-.018-.066-.036-.134-.055-.206z"/>
+  <path d="M26.676 3.802h-1.559v.838h1.435c.106 0 .185.024.236.071.052.048.078.11.078.188s-.026.141-.077.19c-.051.049-.13.073-.238.073h-1.435v.972h1.612c.109 0 .191.025.246.076.055.05.083.117.083.201 0 .081-.028.146-.083.197-.055.051-.137.076-.246.076h-1.88c-.15 0-.259-.033-.325-.1s-.099-.175-.099-.324V3.692c0-.099.014-.18.044-.244a.2694.2694 0 01.139-.137c.063-.029.143-.043.241-.043h1.827c.11 0 .192.024.245.073.054.049.081.113.081.192 0 .081-.027.145-.081.194-.052.051-.134.075-.244.075z"/>
+</g>
+</g>
+<path id="h1" fill="#FFF" fill-rule="evenodd" stroke="#95D400" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="2" d="M59.648 29.407c-2.797-.893-5.975-.406-8.429 1.577-.007.006-3.263 2.636-5.85 4.726h13.734" clip-rule="evenodd"/>
+<g id="h2" fill="#FFF" fill-rule="evenodd" stroke="#95D400" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="2" clip-rule="evenodd">
+  <path d="M49.471 33.066H45.37c-1.071 0-1.941-.915-1.941-2.041s.87-2.041 1.941-2.041h11.533c3.156 0 5.933 1.619 7.548 4.071"/>
+  <path d="M46.716 28.984l-2.792-6.241c-.458-1.03-1.666-1.492-2.695-1.034-1.03.458-1.493 1.666-1.034 2.695l3.315 7.446c.339.762 1.09 1.214 1.873 1.212"/>
+</g>
+<g id="h3" fill="#FFF" fill-rule="evenodd" stroke="#95D400" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="2" clip-rule="evenodd">
+  <path d="M49.471 33.066H45.37c-1.071 0-1.941-.915-1.941-2.041s.87-2.041 1.941-2.041h11.533c3.156 0 5.933 1.619 7.548 4.071"/>
+  <path d="M47.017 29.025l-1.355-6.38c-.235-1.102-1.32-1.806-2.421-1.573-1.102.235-1.806 1.32-1.573 2.422l1.695 7.972c.174.816.813 1.414 1.581 1.574"/>
+</g>
+<g id="h4" fill="#FFF" fill-rule="evenodd" stroke="#95D400" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="2" clip-rule="evenodd">
+  <path d="M49.471 33.066H45.37c-1.071 0-1.941-.915-1.941-2.041s.87-2.041 1.941-2.041h11.533c3.156 0 5.933 1.619 7.548 4.071"/>
+  <path d="M47.512 28.984v-6.106c0-1.126-.915-2.041-2.041-2.041s-2.041.915-2.041 2.041v8.151c0 .834.502 1.552 1.218 1.868"/>
+</g>
+<g id="h5" fill="#FFF" fill-rule="evenodd" stroke="#95D400" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="2" clip-rule="evenodd">
+  <path id="h2" d="M49.471 33.066H45.37c-1.071 0-1.941-.915-1.941-2.041s.87-2.041 1.941-2.041h11.533c3.156 0 5.933 1.619 7.548 4.071"/>
+  <path d="M47.965 29.086l1.189-5.591c.234-1.102-.471-2.186-1.573-2.421-1.102-.234-2.186.471-2.421 1.573l-1.695 7.972c-.174.816.168 1.622.804 2.081"/>
+</g>
+</defs>
+
+<path fill="#F7FFE2" stroke="#95D400" stroke-miterlimit="10" d="M17.433 37.903V11.972c0-1.351 1.096-2.447 2.447-2.447h45.24c1.351 0 2.447 1.096 2.447 2.447v25.931c0 1.351-1.096 2.447-2.447 2.447H19.88c-1.351 0-2.447-1.096-2.447-2.447z"/>
+<path fill="#FFF" stroke="#95D400" stroke-miterlimit="10" d="M17.433 37.903v-2.192h50.134v2.192c0 1.351-1.096 2.447-2.447 2.447H19.88c-1.351 0-2.447-1.096-2.447-2.447z"/>
+<rect width="9.671" height="4.888" x="37.664" y="40.35" fill="#FFF" stroke="#95D400" stroke-miterlimit="10"/>
+<polygon fill="#95D400" points="50.5 45.237 47.336 44.143 37.664 44.143 34.5 45.237 34.5 46.474 50.5 46.474"/>
+<circle cx="42.5" cy="38.03" r=".744" fill="#95D400"/>
+<path fill="#FFF" stroke="#95D400" stroke-linejoin="round" stroke-miterlimit="2" d="M65.637 35.711c-1.018-3.871-4.541-6.727-8.733-6.727-4.191 0-7.715 2.856-8.733 6.727h17.466z"/>
+<path fill="#FFF" stroke="#95D400" stroke-linejoin="round" stroke-miterlimit="2" d="M61.684 24.203c0 2.641-2.14 4.781-4.781 4.781-2.639 0-4.779-2.14-4.779-4.781 0-2.639 2.14-4.781 4.779-4.781 2.641.001 4.781 2.142 4.781 4.781"/>
+
+<use id="a1" xlink:href="#h1"/>
+<use id="a2" xlink:href="#h2"/>
+<use id="a3" xlink:href="#h3"/>
+<use id="a4" xlink:href="#h4"/>
+<use id="a5" xlink:href="#h5"/>
+<use id="a6" xlink:href="#h4"/>
+<use id="a7" xlink:href="#h3"/>
+<use id="a8" xlink:href="#h2"/>
+<use id="a9" xlink:href="#h3"/>
+<use id="a10" xlink:href="#h4"/>
+<use id="a11" xlink:href="#h5"/>
+<use id="a12" xlink:href="#h4"/>
+<use id="a13" xlink:href="#h3"/>
+<use id="a14" xlink:href="#h2"/>
+<use id="a15" xlink:href="#h1"/>
+
+<use id="a16" x="20.278" y="12.634" transform="translate(49.878 26.212) scale(.05) translate(-49.878 -26.212)" xlink:href="#bbl"/>
+<use id="a17" x="20.278" y="12.634" transform="translate(49.878 26.212) scale(.1) translate(-49.878 -26.212)" xlink:href="#bbl"/>
+<use id="a18" x="20.278" y="12.634" transform="translate(49.878 26.212) scale(.2) translate(-49.878 -26.212)" xlink:href="#bbl"/>
+<use id="a19" x="20.278" y="12.634" transform="translate(49.878 26.212) scale(.3) translate(-49.878 -26.212)" xlink:href="#bbl"/>
+<use id="a20" x="20.278" y="12.634" transform="translate(49.878 26.212) scale(.5) translate(-49.878 -26.212)" xlink:href="#bbl"/>
+<use id="a21" x="20.278" y="12.634" transform="translate(49.878 26.212) scale(.7) translate(-49.878 -26.212)" xlink:href="#bbl"/>
+<use id="a22" x="20.278" y="12.634" transform="translate(49.878 26.212) scale(.8) translate(-49.878 -26.212)" xlink:href="#bbl"/>
+<use id="a23" x="20.278" y="12.634" transform="translate(49.878 26.212) scale(.9) translate(-49.878 -26.212)" xlink:href="#bbl"/>
+<use id="a24" x="20.278" y="12.634" transform="translate(49.878 26.212) scale(.95) translate(-49.878 -26.212)" xlink:href="#bbl"/>
+<use id="a25" x="20.278" y="12.634" xlink:href="#bbl"/>
+<use id="a26" x="20.278" y="12.634" opacity=".8" xlink:href="#bbl"/>
+<use id="a27" x="20.278" y="12.634" opacity=".6" xlink:href="#bbl"/>
+<use id="a28" x="20.278" y="12.634" opacity=".4" xlink:href="#bbl"/>
+<use id="a29" x="20.278" y="12.634" opacity=".2" xlink:href="#bbl"/>
+
+<style>
+/* <![CDATA[ */
+
+#a1 {animation-name: a1}
+#a2 {animation-name: a2}
+#a3 {animation-name: a3}
+#a4 {animation-name: a4}
+#a5 {animation-name: a5}
+#a6 {animation-name: a6}
+#a7 {animation-name: a7}
+#a8 {animation-name: a8}
+#a9 {animation-name: a9}
+#a10 {animation-name: a10}
+#a11 {animation-name: a11}
+#a12 {animation-name: a12}
+#a13 {animation-name: a13}
+#a14 {animation-name: a14}
+#a15 {animation-name: a15}
+#a16 {animation-name: a16}
+#a17 {animation-name: a17}
+#a18 {animation-name: a18}
+#a19 {animation-name: a19}
+#a20 {animation-name: a20}
+#a21 {animation-name: a21}
+#a22 {animation-name: a22}
+#a23 {animation-name: a23}
+#a24 {animation-name: a24}
+#a25 {animation-name: a25}
+#a26 {animation-name: a26}
+#a27 {animation-name: a27}
+#a28 {animation-name: a28}
+#a29 {animation-name: a29}
+
+@keyframes a1 {0.00%{visibility: visible} 1.43%{visibility: hidden}}
+@keyframes a2 {1.43%{visibility: visible} 2.86%{visibility: hidden}}
+@keyframes a3 {2.86%{visibility: visible} 4.29%{visibility: hidden}}
+@keyframes a4 {4.29%{visibility: visible} 5.71%{visibility: hidden}}
+@keyframes a5 {5.71%{visibility: visible} 7.14%{visibility: hidden}}
+@keyframes a6 {7.14%{visibility: visible} 8.57%{visibility: hidden}}
+@keyframes a7 {8.57%{visibility: visible} 10.00%{visibility: hidden}}
+@keyframes a8 {10.00%{visibility: visible} 11.43%{visibility: hidden}}
+@keyframes a9 {11.43%{visibility: visible} 12.86%{visibility: hidden}}
+@keyframes a10 {12.86%{visibility: visible} 14.29%{visibility: hidden}}
+@keyframes a11 {14.29%{visibility: visible} 15.71%{visibility: hidden}}
+@keyframes a12 {15.71%{visibility: visible} 17.14%{visibility: hidden}}
+@keyframes a13 {17.14%{visibility: visible} 18.57%{visibility: hidden}}
+@keyframes a14 {18.57%{visibility: visible} 20.00%{visibility: hidden}}
+@keyframes a15 {20.00%{visibility: visible} 21.43%{visibility: hidden}}
+@keyframes a16 {21.43%{visibility: visible} 22.86%{visibility: hidden}}
+@keyframes a17 {22.86%{visibility: visible} 24.29%{visibility: hidden}}
+@keyframes a18 {24.29%{visibility: visible} 25.71%{visibility: hidden}}
+@keyframes a19 {25.71%{visibility: visible} 27.14%{visibility: hidden}}
+@keyframes a20 {27.14%{visibility: visible} 28.57%{visibility: hidden}}
+@keyframes a21 {28.57%{visibility: visible} 30.00%{visibility: hidden}}
+@keyframes a22 {30.00%{visibility: visible} 31.43%{visibility: hidden}}
+@keyframes a23 {31.43%{visibility: visible} 32.86%{visibility: hidden}}
+@keyframes a24 {32.86%{visibility: visible} 34.29%{visibility: hidden}}
+@keyframes a25 {34.29%{visibility: visible} 84.29%{visibility: hidden}}
+
+@keyframes a26 {84.29%{visibility: visible} 85.71%{visibility: hidden}}
+@keyframes a27 {85.71%{visibility: visible} 87.14%{visibility: hidden}}
+@keyframes a28 {87.14%{visibility: visible} 88.57%{visibility: hidden}}
+@keyframes a29 {88.57%{visibility: visible} 90.00%{visibility: hidden}}
+
+/* ]]> */
+</style>
+</svg>

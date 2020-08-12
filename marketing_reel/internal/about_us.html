@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Marketing Reel - About Us</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <style>
+    body, html {
+      padding: 0;
+      margin: 0;
+    }
+    header {
+      padding: 0;
+      height: 100px;
+      background-color: transparent;
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      z-index: 999;
+      transition: all 0.3s ease-in-out;
+      box-shadow: none;
+    }
+    header.nav-down {
+      background-color: #fff;
+      box-shadow: 0px 4px 8px rgba(0,0,0,.05);
+    }
+    header.nav-up {
+      top: -110px;
+      opacity: 1;
+    }
+    #menu {
+      position: absolute;
+      width: 1360px;
+      height: auto;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 18px;
+    }
+    #submenu {
+      position: absolute;
+      width: 1360px;
+      height: auto;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 74px;
+      opacity: 0;
+      pointer-events: none;
+      transition: all 0.2s linear;
+    }
+    header:not(.nav-up) #menu_link:hover #submenu {
+      pointer-events: auto;
+      opacity: 1;
+    }
+    #main {
+      height: 4685px;
+      background: url(about_us.jpg) no-repeat center top;
+      background-size: 1920px auto;
+      position: relative;
+    }
+    #why1, #why2, #why3, #why4, #why5 {
+      opacity: 0;
+      position: absolute;
+      width: 1560px;
+      height: 726px;
+      left: 50%;
+      top: 813px;
+      transform: translateX(-780px);
+    }
+    #why1 {
+      z-index: 1;
+      animation: why 15s linear infinite;
+    }
+    #why2 {
+      z-index: 2;
+      animation: why 15s 3s linear infinite;
+    }
+    #why3 {
+      z-index: 1;
+      animation: why 15s 6s linear infinite;
+    }
+    #why4 {
+      z-index: 2;
+      animation: why 15s 9s linear infinite;
+    }
+    #why5 {
+      z-index: 1;
+      animation: why 15s 12s linear infinite;
+    }
+    @keyframes why {
+      0%, 20%, 100% {
+        opacity: 0;
+      }
+      3%, 18% {
+        opacity: 1;
+      }
+    }
+    #top_slide1, #top_slide2, #top_slide3, #top_slide4 {
+      opacity: 0;
+      position: absolute;
+      width: 535px;
+      height: 265px;
+      left: 50%;
+      top: 362px;
+      transform: translateX(-616px);
+    }
+    #top_slide1 {
+      z-index: 1;
+      animation: top_slide 9s linear infinite;
+    }
+    #top_slide2 {
+      z-index: 2;
+      animation: top_slide 9s 3s linear infinite;
+    }
+    #top_slide3 {
+      z-index: 1;
+      animation: top_slide 9s 6s linear infinite;
+    }
+    @keyframes top_slide {
+      0%, 33%, 100% {
+        opacity: 0;
+      }
+      3%, 30% {
+        opacity: 1;
+      }
+    }
+    #d_blocks {
+      position: absolute;
+      top: 2790px;
+      left: calc(50% - 341px);
+      width: 682px;
+      height: 205px;
+      perspective: 600px;
+      transform-style: preserve-3d;
+    }
+    #who1, #who2, #who3, #who4 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 682px;
+      height: 205px;
+      transform-style: preserve-3d;
+      transform: rotateX( 90deg ) translate3d(0,0,0);
+    }
+    #who1 {
+
+      animation: d_rotate 12s ease infinite;
+    }
+    #who2 {
+      animation: d_rotate2 12s ease infinite;
+    }
+    #who3 {
+      animation: d_rotate3 12s ease infinite;
+    }
+    #who4 {
+      animation: d_rotate4 12s ease infinite;
+    }
+    @keyframes d_rotate {
+      0% {
+        opacity: 0;
+        transform: rotateX( 90deg ) translate3d(0,0,0);
+      }
+      5%, 20% {
+        opacity: 1;
+        transform: rotateX( 0deg ) translate3d(0,0,0);
+      }
+      25%, 100% {
+        opacity: 0;
+        transform: rotateX( -90deg ) translate3d(0,0,0);
+      }
+    }
+    @keyframes d_rotate2 {
+      0%, 25% {
+        opacity: 0;
+        transform: rotateX( 90deg ) translate3d(0,0,0);
+      }
+      30%, 45% {
+        opacity: 1;
+        transform: rotateX( 0deg ) translate3d(0,0,0);
+      }
+      50%, 100% {
+        opacity: 0;
+        transform: rotateX( -90deg ) translate3d(0,0,0);
+      }
+    }
+    @keyframes d_rotate3 {
+      0%, 50% {
+        opacity: 0;
+        transform: rotateX( 90deg ) translate3d(0,0,0);
+      }
+      55%, 70% {
+        opacity: 1;
+        transform: rotateX( 0deg ) translate3d(0,0,0);
+      }
+      75%, 100% {
+        opacity: 0;
+        transform: rotateX( -90deg ) translate3d(0,0,0);
+      }
+    }
+    @keyframes d_rotate4 {
+      0%, 75% {
+        opacity: 0;
+        transform: rotateX( 90deg ) translate3d(0,0,0);
+      }
+      80%, 95% {
+        opacity: 1;
+        transform: rotateX( 0deg ) translate3d(0,0,0);
+      }
+      100% {
+        opacity: 0;
+        transform: rotateX( -90deg );
+      }
+    }
+  </style>
+</head>
+
+<body>
+    <header>
+      <a id="menu_link" href="javascript:;">
+        <img id="menu" src="header.png">
+        <img id="submenu" src="submenu.png">
+      </a>
+    </header>
+    <div id="main">
+      <img id="top_slide1" src="about_slide1.png">
+      <img id="top_slide2" src="about_slide2.png">
+      <img id="top_slide3" src="about_slide3.png">
+      <img id="why1" src="why_slide_01.png">
+      <img id="why2" src="why_slide_02.png">
+      <img id="why3" src="why_slide_03.png">
+      <img id="why4" src="why_slide_04.png">
+      <img id="why5" src="why_slide_05.png">
+      <div id="d_blocks">
+      <img id="who1" src="who_slide1.png">
+      <img id="who2" src="who_slide2.png">
+      <img id="who3" src="who_slide3.png">
+      <img id="who4" src="who_slide4.png">
+      </div>
+    </div>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        var didScroll;
+        var lastScrollTop = 0;
+        var delta = 5;
+        var navbarHeight = $('header').outerHeight();
+
+        $(window).scroll(function(event) {
+            didScroll = true;
+        });
+
+        setInterval(function() {
+            if (didScroll && $(window).scrollTop() > 50) {
+                hasScrolled();
+                didScroll = false;
+            }
+        }, 250);
+
+        function hasScrolled() {
+            var st = $(this).scrollTop();
+
+            // Make sure they scroll more than delta
+            if (Math.abs(lastScrollTop - st) <= delta)
+                return;
+
+            // If they scrolled down and are past the navbar, add class .nav-up.
+            // This is necessary so you never see what is "behind" the navbar.
+            if (st > lastScrollTop && st > navbarHeight) {
+                // Scroll Down
+                $('header').removeClass('nav-down').addClass('nav-up');
+            } else {
+                // Scroll Up
+                if (st + $(window).height() < $(document).height()) {
+                    $('header').removeClass('nav-up').addClass('nav-down');
+                }
+            }
+
+            lastScrollTop = st;
+        }
+
+        $(window).scroll(function() {
+            var scroll = $(window).scrollTop();
+            if (scroll < 50) {
+                $("header").removeClass();
+            }
+        });
+    });
+    </script>
+</body>
+
+</html>

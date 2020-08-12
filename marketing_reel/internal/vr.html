@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Marketing Reel - VR</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <style>
+    body, html {
+      padding: 0;
+      margin: 0;
+    }
+    header {
+      padding: 0;
+      height: 100px;
+      background-color: transparent;
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      z-index: 999;
+      transition: all 0.3s ease-in-out;
+      box-shadow: none;
+    }
+    header.nav-down {
+      background-color: #fff;
+      box-shadow: 0px 4px 8px rgba(0,0,0,.05);
+    }
+    header.nav-up {
+      top: -110px;
+      opacity: 1;
+    }
+    #menu {
+      position: absolute;
+      width: 1360px;
+      height: auto;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 18px;
+    }
+    #submenu {
+      position: absolute;
+      width: 1360px;
+      height: auto;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 74px;
+      opacity: 0;
+      pointer-events: none;
+      transition: all 0.2s linear;
+    }
+    header:not(.nav-up) #menu_link:hover #submenu {
+      pointer-events: auto;
+      opacity: 1;
+    }
+    #main {
+      height: 6150px;
+      background: url(virtual_reality.jpg) no-repeat center top;
+      background-size: 1920px auto;
+      position: relative;
+    }
+    #book {
+      position: absolute;
+      width: 386px;
+      height: 500px;
+      overflow-y: hidden;
+      left: 50%;
+      transform: translateX(-38px);
+      top: 2988px;
+    }
+    #page1, #page2, #page3, #page4 {
+      opacity: 0;
+      position: absolute;
+      width: 386px;
+      height: 500px;
+      left: 0;
+      top: 0;
+    }
+    #page1 {
+      z-index: 1;
+      animation: book 12s linear infinite;
+    }
+    #page2 {
+      z-index: 2;
+      animation: book 12s 3s linear infinite;
+    }
+    #page3 {
+      z-index: 1;
+      animation: book 12s 6s linear infinite;
+    }
+    #page4 {
+      z-index: 2;
+      animation: book 12s 9s linear infinite;
+    }
+    @keyframes book {
+      0%, 25%, 100% {
+        opacity: 0;
+      }
+      3%, 22% {
+        opacity: 1;
+      }
+    }
+    #oct {
+      position: absolute;
+      width: 361px;
+      height: 147px;
+      z-index: 99;
+      left: 50%;
+      transform: translateX(-330px);
+      top: 3205px;
+    }
+    #d_blocks {
+      position: absolute;
+      top: 2400px;
+      left: calc(50% - 420px);
+      width: 841px;
+      height: 217px;
+      perspective: 600px;
+      transform-style: preserve-3d;
+    }
+    #dgt1, #dgt2, #dgt3, #dgt4 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 841px;
+      height: 217px;
+      transform-style: preserve-3d;
+      transform: rotateX( 90deg ) translate3d(0,0,0);
+    }
+    #dgt1 {
+      animation: d_rotate 9s ease infinite;
+    }
+    #dgt2 {
+      animation: d_rotate2 9s ease infinite;
+    }
+    #dgt3 {
+      animation: d_rotate3 9s ease infinite;
+    }
+    @keyframes d_rotate {
+      0% {
+        opacity: 0;
+        transform: rotateX( 90deg ) translate3d(0,0,0);
+      }
+      5%, 28% {
+        opacity: 1;
+        transform: rotateX( 0deg ) translate3d(0,0,0);
+      }
+      33%, 100% {
+        opacity: 0;
+        transform: rotateX( -90deg ) translate3d(0,0,0);
+      }
+    }
+    @keyframes d_rotate2 {
+      0%, 33% {
+        opacity: 0;
+        transform: rotateX( 90deg ) translate3d(0,0,0);
+      }
+      38%, 61% {
+        opacity: 1;
+        transform: rotateX( 0deg ) translate3d(0,0,0);
+      }
+      66%, 100% {
+        opacity: 0;
+        transform: rotateX( -90deg ) translate3d(0,0,0);
+      }
+    }
+    @keyframes d_rotate3 {
+      0%, 66% {
+        opacity: 0;
+        transform: rotateX( 90deg ) translate3d(0,0,0);
+      }
+      71%, 95% {
+        opacity: 1;
+        transform: rotateX( 0deg ) translate3d(0,0,0);
+      }
+      100% {
+        opacity: 0;
+        transform: rotateX( -90deg ) translate3d(0,0,0);
+      }
+    }
+    #top1, #top2 {
+      opacity: 0;
+      position: absolute;
+      width: 1360px;
+      height: 518px;
+      left: 50%;
+      top: 1058px;
+      transform: translateX(-50%);
+    }
+    #top1 {
+      z-index: 1;
+      animation: tops 6s 0s linear infinite;
+    }
+    #top2 {
+      z-index: 1;
+      animation: tops 6s 3s linear infinite;
+    }
+    @keyframes tops {
+      0%, 50%, 100% {
+        opacity: 0;
+      }
+      2%, 48% {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+
+<body>
+    <header>
+      <a id="menu_link" href="javascript:;">
+        <img id="menu" src="header.png">
+        <img id="submenu" src="submenu.png">
+      </a>
+    </header>
+    <div id="main">
+      <div id="slides">
+        <div id="slides_wrapper">
+          <div id="slides_block"></div>
+          <div id="slides_block_hover"></div>
+        </div>
+      </div>
+      <img id="top1" src="vr_slide_01.png">
+      <img id="top2" src="vr_slide_02.png">
+      <div id="d_blocks">
+        <img id="dgt1" src="vr_step1.png">
+        <img id="dgt2" src="vr_step2.png">
+        <img id="dgt3" src="vr_step3.png">
+      </div>
+      <div id="book">
+        <img id="page1" src="book_01.jpg">
+        <img id="page2" src="book_02.jpg">
+        <img id="page3" src="book_03.jpg">
+        <img id="page4" src="book_04.jpg">
+      </div>
+      <img id="oct" src="oct.png">
+    </div>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        var didScroll;
+        var lastScrollTop = 0;
+        var delta = 5;
+        var navbarHeight = $('header').outerHeight();
+
+        $(window).scroll(function(event) {
+            didScroll = true;
+        });
+
+        setInterval(function() {
+            if (didScroll && $(window).scrollTop() > 50) {
+                hasScrolled();
+                didScroll = false;
+            }
+        }, 250);
+
+        function hasScrolled() {
+            var st = $(this).scrollTop();
+
+            // Make sure they scroll more than delta
+            if (Math.abs(lastScrollTop - st) <= delta)
+                return;
+
+            // If they scrolled down and are past the navbar, add class .nav-up.
+            // This is necessary so you never see what is "behind" the navbar.
+            if (st > lastScrollTop && st > navbarHeight) {
+                // Scroll Down
+                $('header').removeClass('nav-down').addClass('nav-up');
+            } else {
+                // Scroll Up
+                if (st + $(window).height() < $(document).height()) {
+                    $('header').removeClass('nav-up').addClass('nav-down');
+                }
+            }
+
+            lastScrollTop = st;
+        }
+
+        $(window).scroll(function() {
+            var scroll = $(window).scrollTop();
+            if (scroll < 50) {
+                $("header").removeClass();
+            }
+        });
+    });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <title>HTML/CSS animation test</title>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet" type="text/css" />
+  <script src="js/letterize.min.js"></script>
+  <style>
+    :root {
+      --animation-lenght: 10s;
+    }
+  </style>
+</head>
+
+<body>
+<div id="animation_frame">
+  <img id="pic_01" class="pic" src="imgs/pic_01.jpg">
+  <img id="pic_02" class="pic" src="imgs/pic_02.jpg">
+  <div class="frame"></div>
+  <img id="pic_03" class="pic2" src="imgs/pic_03.jpg">
+  <img id="off20" src="imgs/off20.svg">
+  <img id="pad" src="imgs/pad.svg">
+  <img id="a1" class="grl1" style="top: 666px; opacity: .2" src="imgs/girl_01.svg">
+  <img id="a2" class="grl1" style="top: 661px; opacity: .6" src="imgs/girl_01.svg">
+  <img id="a3" class="grl1" style="top: 656px" src="imgs/girl_01.svg">
+  <img id="a4" class="grl2" style="top: 651px" src="imgs/girl_02.svg">
+  <img id="a5" class="grl2" style="top: 646px" src="imgs/girl_02.svg">
+  <img id="a6" class="grl3" style="top: 641px" src="imgs/girl_03.svg">
+  <img id="a7" class="grl3" style="top: 636px" src="imgs/girl_03.svg">
+  <img id="a8" class="grl3" style="top: 631px" src="imgs/girl_03.svg">
+  <img id="a9" class="grl1" style="top: 636px" src="imgs/girl_01.svg">
+  <img id="a10" class="grl1" style="top: 641px" src="imgs/girl_01.svg">
+  <img id="a11" class="grl1" style="top: 646px" src="imgs/girl_01.svg">
+  <img id="a12" class="grl1" style="top: 651px" src="imgs/girl_01.svg">
+  <img id="a13" class="grl1" style="top: 656px" src="imgs/girl_01.svg">
+  <img id="a14" class="grl1" style="top: 661px" src="imgs/girl_01.svg">
+  <img id="a15" class="grl2" style="top: 666px" src="imgs/girl_02.svg">
+  <img id="a16" class="grl2" style="top: 666px" src="imgs/girl_02.svg">
+  <img id="a17" class="grl3" style="top: 661px" src="imgs/girl_03.svg">
+  <img id="a18" class="grl3" style="top: 656px" src="imgs/girl_03.svg">
+  <img id="a19" class="grl3" style="top: 651px" src="imgs/girl_03.svg">
+  <img id="a20" class="grl1" style="top: 646px" src="imgs/girl_01.svg">
+  <img id="a21" class="grl1" style="top: 641px" src="imgs/girl_01.svg">
+  <img id="a22" class="grl1" style="top: 636px" src="imgs/girl_01.svg">
+  <img id="a23" class="grl1" style="top: 631px" src="imgs/girl_01.svg">
+  <img id="a24" class="grl1" style="top: 636px; opacity: .6" src="imgs/girl_01.svg">
+  <img id="a25" class="grl1" style="top: 641px; opacity: .2" src="imgs/girl_01.svg">
+  <img id="logo" src="imgs/logo.svg">
+  <div class="text_block">
+    <div class="text t1">Just Relax,</div>
+    <div class="text t2">Leave the Details</div>
+    <div class="text t3">to Us</div>
+  </div>
+  <div class="text_block">
+    <div class="text t4">Unlimited Online</div>
+    <div class="text t5">Yoga Classes</div>
+  </div>
+  <div class="text_block">
+    <div class="text t6">Sign Up</div>
+    <div class="text t7">Today</div>
+    <div class="text t8">For</div>
+    <div class="text t9">20% Off</div>
+  </div>
+  <div class="text_block">
+    <div class="text t10">A Place to</div>
+    <div class="text t11">Center Yourself</div>
+    <div class="text t12">Flowyoga.com</div>
+  </div>
+</div>
+<script>
+var flowyoga = new Letterize({targets: ".text_block", wrapper: "b"});
+var anim_delay = getComputedStyle(document.documentElement).getPropertyValue('--animation-lenght').replace(/\D/g,'') / flowyoga.list().length;
+for(i=0; i<flowyoga.list().length; i++) {
+  for(j=0; j<flowyoga.list()[i].length; j++) {
+    flowyoga.list()[i][j].setAttribute("style", "animation-delay:" + ((Math.round(j*1) / 100) + i * anim_delay) + "s");
+  }
+}
+</script>
+</body>
+</html>

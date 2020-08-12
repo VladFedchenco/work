@@ -1,0 +1,304 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 85 53">
+<style>
+/* <![CDATA[ */
+#x_mask {
+  animation: msk 6s -.4s ease infinite;
+}
+@keyframes msk {
+  0%, 5%, 95%, 100% {
+    stroke-dashoffset: 32.61px;
+  }
+  30%, 70% {
+    stroke-dashoffset: 0px;
+  }
+}
+
+#a1, #a2, #a3, #a4, #a5, #a6, #a7, #a8, #a9, #a10, #a11, #a12, #a13, #a14, #a15, #a16, #a17, #a18, #a19, #a20, #a21, #a22, #a23, #a24, #a25, #a26, #a27, #a28, #a29, #a30, #a31 {
+visibility: hidden;
+animation-duration: 6s;
+animation-iteration-count: infinite;
+animation-timing-function: steps(1);
+}
+
+/* ]]> */
+</style>
+<defs>
+<mask id="msk">
+  <path id="x_mask" fill="none" stroke="#fff" stroke-dasharray="32.61" stroke-dashoffset="32.61" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M40.451,19.107c0,0,3.31,7.072,8.426,7.147c5.116,0.075,11.436-2.483,19.185,5.793"/>
+</mask>
+<path id="h1" fill="#FFF" stroke="#95D400" stroke-miterlimit="10" d="M12.965 16.251c0 5.471 4.434 9.906 9.906 9.906 5.469 0 9.903-4.434 9.903-9.906 0-5.469-4.434-9.906-9.903-9.906-5.472 0-9.906 4.437-9.906 9.906"/>
+<path id="h2" fill="#FFF" stroke="#95D400" stroke-miterlimit="10" d="M11.965 16.251c0 5.471 4.434 9.906 9.906 9.906 5.469 0 9.903-4.434 9.903-9.906 0-5.469-4.434-9.906-9.903-9.906-5.472 0-9.906 4.437-9.906 9.906"/>
+<path id="h3" fill="#FFF" stroke="#95D400" stroke-miterlimit="10" d="M10.965 16.251c0 5.471 4.434 9.906 9.906 9.906 5.469 0 9.903-4.434 9.903-9.906 0-5.469-4.434-9.906-9.903-9.906-5.472 0-9.906 4.437-9.906 9.906"/>
+<path id="b1" fill="#FFF" stroke="#95D400" stroke-linecap="round" stroke-miterlimit="10" d="M30.339 48.389V38.353l9.659 6.472 8.433-9.388c1.528-1.687 1.402-4.297-.284-5.827-1.685-1.527-4.295-1.401-5.825.285l-3.554 4.473s-6.518-5.033-8.583-6.584c-1.546-1.161-3.429-2.349-6.219-2.69-.366-.045-1.304-.115-2.135-.115h-2.503c-5.04 0-9.164 4.124-9.164 9.164v14.246"/>
+<path id="b2" fill="#FFF" stroke="#95D400" stroke-linecap="round" stroke-miterlimit="10" d="M30.339 48.389V36.982l10.81 5.783 7.489-10.735c1.528-1.687 1.402-4.297-.284-5.827-1.685-1.527-4.295-1.401-5.825.285L39.3 32.144s-7.092-3.969-9.115-4.955c-1.523-.742-3.429-1.755-6.219-2.096-.366-.045-1.304-.115-2.135-.115h-2.503c-5.04 0-9.164 4.124-9.164 9.164v14.246"/>
+<path id="b3" fill="#FFF" stroke="#95D400" stroke-linecap="round" stroke-miterlimit="10" d="M30.339 48.389V36.982L41.7 39.839l6.123-12.744c.991-2.049.134-4.518-1.914-5.511-2.047-.99-4.515-.134-5.509 1.915l-2.655 7.026s-5.507-2.578-7.53-3.564c-1.523-.742-3.459-1.527-6.249-1.868-.366-.045-1.304-.115-2.135-.115h-2.503c-5.04 0-9.164 4.124-9.164 9.164v14.246"/>
+<path id="b4" fill="#FFF" stroke="#95D400" stroke-linecap="round" stroke-miterlimit="10" d="M30.339 48.389V36.902l12.755.351 2.097-14.428c-.085-2.275-1.998-4.054-4.273-3.972-2.272.084-4.052 1.997-3.97 4.273l-.481 5.068s-9.712-2.759-12.502-3.1c-.366-.045-1.304-.115-2.135-.115h-2.503c-5.04 0-9.164 4.124-9.164 9.164v14.246"/>
+<path id="b5" fill="#FFF" stroke="#95D400" stroke-linecap="round" stroke-miterlimit="10" d="M30.339 48.389V36.982l9.97 5.115 9.481-8.696c1.826-1.359 2.208-3.944.85-5.772-1.357-1.825-3.942-2.206-5.77-.849l-5.776 5.246s-6.886-3.851-8.909-4.837c-1.523-.742-3.429-1.755-6.219-2.096-.366-.045-1.304-.115-2.135-.115h-2.503c-5.04 0-9.164 4.124-9.164 9.164v14.246"/>
+<path id="b6" fill="#FFF" stroke="#95D400" stroke-linecap="round" stroke-miterlimit="10" d="M30.339 48.389V36.982l11.915 2.443 10.437-8.574c1.666-1.551 1.761-4.163.211-5.83-1.549-1.664-4.161-1.759-5.828-.209l-6.804 5.099-10.085-2.721s-3.429-1.755-6.219-2.096c-.366-.045-1.304-.115-2.135-.115h-2.503c-5.04 0-9.164 4.124-9.164 9.164v14.246"/>
+<path id="b7" fill="#FFF" stroke="#95D400" stroke-linecap="round" stroke-miterlimit="10" d="M30.339 48.389V35.317l13.222 1.367 10.589-7.279c2.034-1.022 2.857-3.502 1.837-5.537-1.021-2.032-3.501-2.855-5.536-1.835l-9.488 5.892s-14.207-2.49-16.997-2.831c-.366-.045-1.304-.115-2.135-.115h-2.503c-5.04 0-9.164 4.124-9.164 9.164v14.246"/>
+<path id="b8" fill="#FFF" stroke="#95D400" stroke-linecap="round" stroke-miterlimit="10" d="M30.339 48.389V34.982l13.613-1.354 12.402-5.555c2.034-1.022 2.857-3.502 1.837-5.537-1.021-2.032-3.501-2.855-5.536-1.835L41.5 25.573s-14.744-.138-17.534-.48c-.366-.045-1.304-.115-2.135-.115h-2.503c-5.04 0-9.164 4.124-9.164 9.164v14.246"/>
+<path id="r" fill="#95D400" d="M57.554 14.833h-.409v1.852c0 .244-.054.423-.161.539s-.248.173-.421.173c-.186 0-.33-.06-.433-.181-.102-.121-.153-.297-.153-.531V12.25c0-.251.057-.434.169-.546.113-.113.295-.169.547-.169h1.898c.264 0 .486.011.674.033.186.022.354.067.502.136.182.076.342.185.48.326s.244.306.316.494c.072.187.107.386.107.595 0 .43-.121.773-.363 1.03s-.609.439-1.104.546c.207.11.406.272.594.487.189.215.357.444.506.686.148.243.264.461.346.657s.123.33.123.403c0 .076-.023.151-.072.226s-.113.134-.197.177c-.084.043-.182.065-.291.065-.131 0-.242-.031-.33-.092-.09-.062-.166-.14-.23-.234s-.152-.233-.262-.417l-.469-.779c-.166-.286-.316-.503-.449-.652s-.267-.251-.402-.307c-.137-.055-.309-.082-.516-.082zm.668-2.422h-1.077v1.584h1.046c.281 0 .516-.024.707-.073s.338-.131.439-.248c.1-.117.15-.277.15-.482 0-.16-.041-.301-.121-.422-.082-.122-.193-.213-.338-.273-.136-.057-.406-.086-.806-.086z"/>
+<path id="w" fill="#95D400" d="M40.143 16.39l-.932-3.456-.943 3.456c-.073.262-.132.45-.175.564-.044.114-.118.216-.226.307-.107.09-.251.135-.429.135-.144 0-.263-.027-.355-.081-.093-.054-.168-.129-.226-.228-.058-.098-.105-.215-.142-.35-.037-.135-.07-.26-.099-.375l-.959-3.88c-.058-.226-.086-.397-.086-.515 0-.149.052-.275.157-.377.104-.102.234-.153.389-.153.212 0 .355.068.429.205.073.136.137.334.192.594l.755 3.365.845-3.149c.063-.241.119-.425.17-.551.049-.125.131-.234.244-.326.111-.092.266-.138.459-.138.197 0 .35.048.459.144.107.096.184.2.225.312.043.113.1.299.17.559l.854 3.149.754-3.365c.037-.176.072-.313.105-.413.031-.1.088-.188.168-.267s.195-.118.348-.118.281.051.387.151c.107.101.16.228.16.379 0 .107-.029.279-.086.515l-.959 3.88c-.066.262-.121.454-.164.576-.043.122-.117.229-.221.32-.104.092-.25.138-.438.138-.178 0-.322-.044-.43-.133-.107-.089-.182-.189-.223-.301-.042-.112-.101-.303-.177-.573z"/>
+</defs>
+<g id="display">
+  <path fill="#F7FFE2" stroke="#95D400" stroke-miterlimit="10" d="M24.433 36.817v-25.93c0-1.351 1.096-2.447 2.447-2.447h45.24c1.351 0 2.447 1.096 2.447 2.447v25.931c0 1.351-1.096 2.447-2.447 2.447H26.88c-1.352-.001-2.447-1.096-2.447-2.448z"/>
+  <path fill="#FFF" stroke="#95D400" stroke-miterlimit="10" d="M24.433 36.817v-2.192h50.134v2.192c0 1.351-1.096 2.447-2.447 2.447H26.88c-1.352 0-2.447-1.095-2.447-2.447z"/>
+  <rect width="9.671" height="4.888" x="44.664" y="39.264" fill="#FFF" stroke="#95D400" stroke-miterlimit="10"/>
+  <polygon fill="#95D400" points="57.499 44.152 54.335 43.057 44.664 43.057 41.5 44.152 41.5 45.389 57.499 45.389"/>
+  <circle cx="49.5" cy="36.945" r=".744" fill="#95D400"/>
+  <path fill="#95D400" d="M42.6 19.763H36c-.312 0-.567-.255-.567-.567v-.218c0-.312.255-.567.567-.567h6.6c.312 0 .567.255.567.567v.218c0 .312-.255.567-.567.567z"/>
+  <path fill="#95D400" d="M52.061 19.763h-6.6c-.312 0-.567-.255-.567-.567v-.218c0-.312.255-.567.567-.567h6.6c.312 0 .567.255.567.567v.218c0 .312-.255.567-.567.567z"/>
+  <path fill="#95D400" d="M61.522 19.763h-6.6c-.312 0-.567-.255-.567-.567v-.218c0-.312.255-.567.567-.567h6.6c.312 0 .567.255.567.567v.218c0 .312-.255.567-.567.567z"/>
+  <path fill="#95D400" d="M70.983 19.763h-6.6c-.312 0-.567-.255-.567-.567v-.218c0-.312.255-.567.567-.567h6.6c.312 0 .567.255.567.567v.218c0 .312-.255.567-.567.567z"/>
+</g>
+<g id="x" mask="url(#msk)">
+  <g fill="none" stroke="#95D400" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M42.649 21.732s.005.033.017.094"/>
+    <path stroke-dasharray=".2 1.43" d="M43.193 23.147c.932 1.605 3.403 3.876 9.817 2.867 5.669-.892 9.103 1.258 10.644 2.616"/>
+    <path d="M64.173 29.124c.023.024.045.047.066.07"/>
+  </g>
+  <g fill="none" stroke="#95D400" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10">
+    <line x1="65.52" x2="66.482" y1="28.223" y2="32.293"/>
+    <line x1="68.014" x2="63.988" y1="29.693" y2="30.823"/>
+  </g>
+</g>
+
+<g id="a1">
+<use xlink:href="#h1"/>
+<use xlink:href="#b1"/>
+</g>
+<g id="a2">
+<use xlink:href="#h1"/>
+<use xlink:href="#b2"/>
+</g>
+<g id="a3">
+<use xlink:href="#h1"/>
+<use xlink:href="#b3"/>
+</g>
+<g id="a4">
+<use xlink:href="#h1"/>
+<use xlink:href="#b4"/>
+</g>
+<g id="a5">
+<use xlink:href="#h2"/>
+<use xlink:href="#b4"/>
+<use xlink:href="#w" opacity=".2"/>
+</g>
+<g id="a6">
+<use xlink:href="#h2"/>
+<use xlink:href="#b4"/>
+<use xlink:href="#w" opacity=".4"/>
+</g>
+<g id="a7">
+<use xlink:href="#h2"/>
+<use xlink:href="#b4"/>
+<use xlink:href="#w" opacity=".6"/>
+</g>
+<g id="a8">
+<use xlink:href="#h2"/>
+<use xlink:href="#b4"/>
+<use xlink:href="#w" opacity=".8"/>
+</g>
+<g id="a9">
+<use xlink:href="#h2"/>
+<use xlink:href="#b4"/>
+<use xlink:href="#w"/>
+</g>
+<g id="a10">
+<use xlink:href="#h2"/>
+<use xlink:href="#b3"/>
+<use xlink:href="#w"/>
+</g>
+<g id="a11">
+<use xlink:href="#h1"/>
+<use xlink:href="#b2"/>
+<use xlink:href="#w"/>
+</g>
+<g id="a12">
+<use xlink:href="#h1"/>
+<use xlink:href="#b1"/>
+<use xlink:href="#w"/>
+</g>
+<g id="a13">
+<use xlink:href="#h1"/>
+<use xlink:href="#b1"/>
+<use xlink:href="#w"/>
+</g>
+<g id="a14">
+<use xlink:href="#h1"/>
+<use xlink:href="#b5"/>
+<use xlink:href="#w"/>
+</g>
+<g id="a15">
+<use xlink:href="#h1"/>
+<use xlink:href="#b6"/>
+<use xlink:href="#w"/>
+</g>
+<g id="a16">
+<use xlink:href="#h2"/>
+<use xlink:href="#b7"/>
+<use xlink:href="#w"/>
+</g>
+<g id="a17">
+<use xlink:href="#h3"/>
+<use xlink:href="#b8"/>
+<use xlink:href="#w"/>
+</g>
+<g id="a18">
+<use xlink:href="#h3"/>
+<use xlink:href="#b8"/>
+<use xlink:href="#w"/>
+<use xlink:href="#r" opacity=".2"/>
+</g>
+<g id="a19">
+<use xlink:href="#h3"/>
+<use xlink:href="#b8"/>
+<use xlink:href="#w"/>
+<use xlink:href="#r" opacity=".4"/>
+</g>
+<g id="a20">
+<use xlink:href="#h3"/>
+<use xlink:href="#b8"/>
+<use xlink:href="#w"/>
+<use xlink:href="#r" opacity=".6"/>
+</g>
+<g id="a21">
+<use xlink:href="#h3"/>
+<use xlink:href="#b8"/>
+<use xlink:href="#w"/>
+<use xlink:href="#r" opacity=".8"/>
+</g>
+<g id="a22">
+<use xlink:href="#h3"/>
+<use xlink:href="#b8"/>
+<use xlink:href="#w"/>
+<use xlink:href="#r"/>
+</g>
+<g id="a23">
+<use xlink:href="#h2"/>
+<use xlink:href="#b7"/>
+<use xlink:href="#w"/>
+<use xlink:href="#r"/>
+</g>
+<g id="a24">
+<use xlink:href="#h1"/>
+<use xlink:href="#b6"/>
+<use xlink:href="#w"/>
+<use xlink:href="#r"/>
+</g>
+<g id="a25">
+<use xlink:href="#h1"/>
+<use xlink:href="#b5"/>
+<use xlink:href="#w"/>
+<use xlink:href="#r"/>
+</g>
+<g id="a26">
+<use xlink:href="#h1"/>
+<use xlink:href="#b1"/>
+<use xlink:href="#w"/>
+<use xlink:href="#r"/>
+</g>
+<g id="a27">
+<use xlink:href="#h1"/>
+<use xlink:href="#b1"/>
+<use opacity=".8" xlink:href="#w"/>
+<use opacity=".8" xlink:href="#r"/>
+</g>
+<g id="a28">
+<use xlink:href="#h1"/>
+<use xlink:href="#b1"/>
+<use opacity=".6" xlink:href="#w"/>
+<use opacity=".6" xlink:href="#r"/>
+</g>
+<g id="a29">
+<use xlink:href="#h1"/>
+<use xlink:href="#b1"/>
+<use opacity=".4" xlink:href="#w"/>
+<use opacity=".4" xlink:href="#r"/>
+</g>
+<g id="a30">
+<use xlink:href="#h1"/>
+<use xlink:href="#b1"/>
+<use opacity=".2" xlink:href="#w"/>
+<use opacity=".2" xlink:href="#r"/>
+</g>
+<g id="a31">
+<use xlink:href="#h1"/>
+<use xlink:href="#b1"/>
+</g>
+
+<style>
+/* <![CDATA[ */
+
+#a1 {animation-name: a1}
+#a2 {animation-name: a2}
+#a3 {animation-name: a3}
+#a4 {animation-name: a4}
+#a5 {animation-name: a5}
+#a6 {animation-name: a6}
+#a7 {animation-name: a7}
+#a8 {animation-name: a8}
+#a9 {animation-name: a9}
+#a10 {animation-name: a10}
+#a11 {animation-name: a11}
+#a12 {animation-name: a12}
+#a13 {animation-name: a13}
+#a14 {animation-name: a14}
+#a15 {animation-name: a15}
+#a16 {animation-name: a16}
+#a17 {animation-name: a17}
+#a18 {animation-name: a18}
+#a19 {animation-name: a19}
+#a20 {animation-name: a20}
+#a21 {animation-name: a21}
+#a22 {animation-name: a22}
+#a23 {animation-name: a23}
+#a24 {animation-name: a24}
+#a25 {animation-name: a25}
+#a26 {animation-name: a26}
+#a27 {animation-name: a27}
+#a28 {animation-name: a28}
+#a29 {animation-name: a29}
+#a30 {animation-name: a30}
+#a31 {animation-name: a31}
+
+@keyframes a1 {0.00%{visibility: visible} 9.00%{visibility: hidden}}
+@keyframes a2 {9.00%{visibility: visible} 10.00%{visibility: hidden}}
+@keyframes a3 {10.00%{visibility: visible} 11.00%{visibility: hidden}}
+@keyframes a4 {11.00%{visibility: visible} 12.00%{visibility: hidden}}
+@keyframes a5 {12.00%{visibility: visible} 13.00%{visibility: hidden}}
+@keyframes a6 {13.00%{visibility: visible} 14.00%{visibility: hidden}}
+@keyframes a7 {14.00%{visibility: visible} 15.00%{visibility: hidden}}
+@keyframes a8 {15.00%{visibility: visible} 16.00%{visibility: hidden}}
+@keyframes a9 {16.00%{visibility: visible} 30.00%{visibility: hidden}}
+
+@keyframes a10 {30.00%{visibility: visible} 31.00%{visibility: hidden}}
+@keyframes a11 {31.00%{visibility: visible} 32.00%{visibility: hidden}}
+@keyframes a12 {32.00%{visibility: visible} 40.00%{visibility: hidden}}
+
+@keyframes a13 {40.00%{visibility: visible} 41.00%{visibility: hidden}}
+@keyframes a14 {41.00%{visibility: visible} 42.00%{visibility: hidden}}
+@keyframes a15 {42.00%{visibility: visible} 43.00%{visibility: hidden}}
+@keyframes a16 {43.00%{visibility: visible} 44.00%{visibility: hidden}}
+@keyframes a17 {44.00%{visibility: visible} 45.00%{visibility: hidden}}
+@keyframes a18 {45.00%{visibility: visible} 46.00%{visibility: hidden}}
+@keyframes a19 {46.00%{visibility: visible} 47.00%{visibility: hidden}}
+@keyframes a20 {47.00%{visibility: visible} 48.00%{visibility: hidden}}
+@keyframes a21 {48.00%{visibility: visible} 49.00%{visibility: hidden}}
+@keyframes a22 {49.00%{visibility: visible} 59.00%{visibility: hidden}}
+
+@keyframes a23 {59.00%{visibility: visible} 60.00%{visibility: hidden}}
+@keyframes a24 {60.00%{visibility: visible} 61.00%{visibility: hidden}}
+@keyframes a25 {61.00%{visibility: visible} 62.00%{visibility: hidden}}
+@keyframes a26 {62.00%{visibility: visible} 86.00%{visibility: hidden}}
+
+@keyframes a27 {86.00%{visibility: visible} 87.00%{visibility: hidden}}
+@keyframes a28 {87.00%{visibility: visible} 88.00%{visibility: hidden}}
+@keyframes a29 {88.00%{visibility: visible} 89.00%{visibility: hidden}}
+@keyframes a30 {89.00%{visibility: visible} 90.00%{visibility: hidden}}
+@keyframes a31 {90.00%{visibility: visible} 100.00%{visibility: hidden}}
+
+/* ]]> */
+</style>
+
+</svg>

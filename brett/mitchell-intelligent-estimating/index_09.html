@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Mitchell Intelligent Estimating</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.7/css/uikit.min.css">
+    <link rel="stylesheet" href="../mitchell-intelligent-solutions/mie_page_style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-3698060-1"></script>
+<script src="../mitchell-intelligent-solutions/js/lottie.min.js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-3698060-1');
+</script>
+<style>
+
+body {
+  background-color: #06172F;
+}
+
+#info_banner {
+  /*padding-bottom: 3%;*/
+}
+
+#lottie_icn_01, #lottie_icn_02, #lottie_icn_03, #lottie_icn_04 {
+  position: relative;
+  width: 270px;
+  margin-left: 120px;
+}
+
+#lottie_icn_03 svg > g {
+  transform: translateY(-100px);
+}
+
+.info_left {
+  display: inline-block;
+  width: 34%;
+}
+
+.info_right {
+  width: 60%;
+  padding-left: 3rem;
+}
+
+.info_right.custom_car, .info_right.ipadCar {
+  padding-left: 3rem;
+}
+
+.infographs {
+  position: relative;
+  min-height: 300px;
+}
+
+.ig-icon-container {
+  opacity: 0;
+  transition: opacity .2s linear;
+}
+
+#ig1.visible_icn .ig-icon-container {
+  opacity: 1;
+}
+
+.visible .ig-icon-container {
+  opacity: 1;
+}
+
+.info_right {
+  opacity: 0;
+  margin-bottom: -200px;
+  transition: all .6s .3s ease;
+}
+
+.visible .info_right {
+  opacity: 1;
+  margin-bottom: 0px;
+}
+
+.info_right ul {
+  margin-left: 20px;
+}
+
+.info_right ul li {
+  opacity: 0;
+  transition: all .4s .4s ease;
+}
+
+.visible .info_right ul li:nth-child(1) {
+  opacity: 1;
+  margin-bottom: 0px;
+}
+
+.visible.step2 .info_right ul li:nth-child(2) {
+  opacity: 1;
+  margin-bottom: 0px;
+}
+
+#progress_scroll {
+  width: 220px;
+  position: absolute;
+}
+
+.infographs {
+  width: 100%;
+  padding: 0;
+}
+
+.ig-icon-container4 {
+  padding-left: 40px;
+}
+
+@media (max-width: 1280px) {
+  #lottie_icn_01, #lottie_icn_02, #lottie_icn_03, #lottie_icn_04 {
+    width: 220px;
+  }
+}
+
+@media (max-width: 1200px) {
+  #footer {
+      margin-top: 0;
+      padding-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  #progress_scroll {
+    display: none;
+  }
+  .info_left, .info_right {
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  #lottie_icn_01, #lottie_icn_02, #lottie_icn_03, #lottie_icn_04 {
+    width: auto;
+    margin-left: 0; 
+  }
+  .ig-icon-container4 {
+    padding-left: 0;
+  }
+}
+</style>
+</head>
+
+<body>
+<div id="offcanvas-nav-primary" uk-offcanvas="flip: true; overlay: true">
+    <div class="uk-offcanvas-bar">
+        <button class="uk-offcanvas-close" type="button" uk-close></button>
+		<div class="uk-text-center offcanvas-logo-container">
+			<a href="/" class="uk-display-inline-block" style="text-decoration: none;">
+				<img src="../mitchell-intelligent-solutions/assets/mitchell.svg" id="mitchell_logo">
+			</a>
+		</div>
+		<div class="nav-list">
+			<div class="uk-width-expand">
+				<ul class="uk-nav-default uk-nav-parent-icon" uk-nav="multiple: true">
+					<li class="">
+						<a href="../mitchell-intelligent-solutions/index.html">Mitchell Intelligence</a>
+					</li>
+					<li class="subnav"><a href="../mitchell-intelligent-solutions/index.html#MitchellIntelligentEstimating">What is Mitchell Intelligence?</a></li>
+					<li class="subnav">
+						<a href="../mitchell-intelligent-solutions/index.html#WhyMitchell">Why Mitchell?</a>
+					</li>
+					<li class="uk-active">
+						<a href="../mitchell-intelligent-solutions/index.html#ICE">Intelligent Claims Experience</a>
+					</li>
+					<li class="subnav"><a href="#">Mitchell Intelligent Estimating</a></li>
+					<!--<li class="subnav">
+						<a href="../mitchell-intelligent-solutions/index.html#IRE" target="_blank">Mitchell Intelligent Review</a>
+					</li> -->
+					<li class="">
+						<a href="../mitchell-intelligent-solutions/index.html#IRE">Intelligent Repair Experience</a>
+					</li>
+					<li class="">
+						<a href="../mitchell-intelligent-solutions/index.html#articles">Latest Industry Articles</a>
+					</li>
+					<li class="">
+						<a href="#Connect" uk-scroll>Connect with Us</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+    </div>
+</div>
+<div>
+	<div class="navcontainer uk-position-top-right uk-padding-large">
+		<a class="stickynav-button" href="#" uk-icon="icon: menu" uk-toggle="target: #offcanvas-nav-primary"></a>
+	</div>
+</div>
+<div class="uk-section uk-padding-remove-top uk-padding-remove-bottom">
+	<div class="uk-container-expand">
+		<div class="uk-width-expand">
+			<div class="estimating-page" id="info_banner">
+				<div class="dimension-container">
+				  <a href="../mitchell-intelligent-solutions/index.html" style="text-decoration: none;" target="_blank">
+					  <img class="" src="../mitchell-intelligent-solutions/assets/mitchell.svg" id="mitchell_logo"></a>
+				<img class="" src="../mitchell-intelligent-solutions/assets/Mitchell-Intelligent-Estimating.png" id="mie_logo">
+				<h2 class="">What is Mitchell Intelligent Estimating?</h2>
+				<p class="dimension-container2">Mitchell Intelligent Estimating is an end-to-end solution bringing claims automation to the collision repair industry. Built with 75 years of industry experience, Mitchell introduces the first estimating solution to leverage artificial intelligence,
+					one-of-a-kind data and a cloud-based estimating system to turn damaged vehicle images into component-level <span style="white-space:nowrap;">estimate lines.</span></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="uk-section uk-padding-remove-top uk-padding-remove-bottom">
+	<div class="uk-container-expand">
+		<div class="uk-width-expand" id="intclaimsexp">
+			<div id="infographics" class="dark_blue_bg grid">
+				<div class="dimension-container">
+					<div id="progress_scroll"></div>
+					<!--- Infographics 1--->
+					<div class="infographs" id="ig1">
+						<div>
+							<div class="info_left slide-contentn">
+								<div class="uk-display-inline-block ig-icon-container ig-icon-container1">
+									<div id="lottie_icn_01"></div>
+								</div>
+							</div>
+
+							<div class="info_right info_right2">
+								<h2 class="slide-contentn">Capture Damaged Vehicle Photos &amp; <span style="white-space:nowrap;">Collision Information</span></h2>
+								<ul>
+									<li class="slide-contentn">The Intelligent Claims Experience starts with information gathering: Claim details and vehicle images can be gathered from multiple sources–consumer-facing mobile applications, insurance workflow solutions or third-party inputs.</li>
+
+									<li class="slide-contentn">Our flexible ecosystem and workflow design allows Mitchell Intelligent Estimating to consume many different input types allowing it to evolve <span style="white-space:nowrap;">as the industry changes.</span> </li>
+								</ul>
+
+							</div>
+						</div>
+					</div>
+					<!--- End Infographics 1--->
+
+					<!--- Infographics 2--->
+					<div class="infographs"  id="ig2">
+						<div>
+							<div class="info_left slide-contenta">
+								<div class="uk-display-inline-block ig-icon-container ig-icon-container2">
+									<div id="lottie_icn_02"></div>
+								</div>
+							</div>
+							<div class="info_right info_right3">
+								<h2 class="slide-contenta">Analyze Photos Using <span style="white-space:nowrap;">Computer Vision</span></h2>
+								<ul>
+									<li class="slide-contenta">With inputs from our customers, Mitchell Intelligent Damage Analysis (MIDA) evaluates images using computer vision. This AI engine identifies damaged components for labor operations.</li>
+
+									<li class="slide-contenta">With 75 years of collision repair data and expertise, auto collision claims trends, OE build sheets and more, Mitchell Intelligent Estimating brings you efficiency and a peace of mind. It&apos;s open platform also gives you the freedom to integrate with third party AI engines to better serve your unique claims workflow.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!--- End Infographics 2--->
+
+					<!--- Infographics 3--->
+					<div class="infographs"  id="ig3">
+						<div>
+							<div class="info_left slide-contentb">
+								<div class="uk-display-inline-block ig-icon-container ig-icon-container3">
+									<div id="lottie_icn_03"></div>
+								</div>
+							</div>
+							<div class="info_right custom_car">
+								<h2 class="slide-contentb">Convert Analysis Into <span style="white-space:nowrap;">Estimate Lines</span></h2>
+								<ul>
+									<li class="slide-contentb">Mitchell&apos;s unique database, built with the latest automotive data and decades of expertise, allow MIDA recommendations to be mapped to individual estimate lines.</li>
+
+									<li class="slide-contentb">Estimate line items are converted to BMS files, ready for <span style="white-space:nowrap;">final estimate output.</span></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!--- End Infographics 3--->
+
+					<!--- Infographics 4--->
+					<div class="infographs"  id="ig4">
+						<div>
+							<div class="info_left slide-contentc">
+								<div class="uk-display-inline-block ig-icon-container ig-icon-container4">
+									<div id="lottie_icn_04"></div>
+								</div>
+							</div>
+							<div class="info_right ipadCar">
+								<h2 class="slide-contentc">Surface Estimates in Mitchell Cloud Estimating</h2>
+								<ul>
+									<li class="slide-contentc">With estimates produced in a fraction of the time, Mitchell Cloud Estimating makes it easy to surface estimates, review recommendations and <span style="white-space:nowrap;">get repairs moving.</span></li>
+
+									<li class="slide-contentc">From OE statements to Integrated Repair Procedures, Mitchell Cloud Estimating provides the information needed to enable proper and safe repairs, on any device <span style="white-space:nowrap;">at any time.</span></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!--- End Infographics 4--->
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+    <!--- start form--->
+    <div class="form" id="Connect">
+
+        <div class="inner_form">
+            <h2 class="blue form_header">Sign up to Get the Latest Updates and Insights About Mitchell Intelligent Estimating</h2>
+            <form method="post" name="copyOf2020RCQuickbooks-1584459834681" action="https://s2441.t.eloqua.com/e/f2" onsubmit="return handleFormSubmit(this)" id="form975" class="elq-form">
+                <input value="copyOf2020RCQuickbooks-1584459834681" type="hidden" name="elqFormName">
+                <input value="2441" type="hidden" name="elqSiteId" />
+                <input name="elqCampaignId" type="hidden" />
+                <div id="formElement0" style="left: 0px; right: 0px; top: 0px; bottom: 0px; padding: 6px 5px 9px 9px">
+                    <div class="field-wrapper">
+                    </div>
+                    <div class="field-wrapper" style="float: left; width: 100%; clear: both">
+                        <div class="_100" style="float: left; width: 96%; margin-right: 2%; margin-left: 2%">
+                            <p style="position: relative; margin: 0px; padding: 0px">
+                                <label for="fe10939" style="display: block; line-height: 150%; padding: 10px 0pt 3px; white-space: nowrap">
+                              <span style="color: red !important; display: inline; float: none; font-weight: bold; margin: 0pt 0pt 0pt; padding: 0pt 0pt 0pt">
+                              </span>
+                              </label>
+                                <input id="fe10939" name="firstName" type="text" onfocus="this.value=''" placeholder="First Name*" style="width: 100%">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="formElement1" style="left: 0px; right: 0px; top: 0px; bottom: 0px; padding: 6px 5px 9px 9px">
+                    <div class="field-wrapper">
+                    </div>
+                    <div class="field-wrapper" style="float: left; width: 100%; clear: both">
+                        <div class="_100" style="float: left; width: 96%; margin-right: 2%; margin-left: 2%">
+                            <p style="position: relative; margin: 0px; padding: 0px">
+                                <label for="fe10940" style="display: block; line-height: 150%; padding: 10px 0pt 3px; white-space: nowrap">
+                              <span style="color: red !important; display: inline; float: none; font-weight: bold; margin: 0pt 0pt 0pt; padding: 0pt 0pt 0pt">
+                              </span>
+                              </label>
+                                <input id="fe10940" name="lastName" type="text" onfocus="this.value=''" placeholder="Last Name*" style="width: 100%">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="formElement2" style="left: 0px; right: 0px; top: 0px; bottom: 0px; padding: 6px 5px 9px 9px">
+                    <div class="field-wrapper">
+                    </div>
+                    <div class="field-wrapper" style="float: left; width: 100%; clear: both">
+                        <div class="_100" style="float: left; width: 96%; margin-right: 2%; margin-left: 2%">
+                            <p style="position: relative; margin: 0px; padding: 0px">
+                                <label for="fe10938" style="display: block; line-height: 150%; padding: 10px 0pt 3px; white-space: nowrap">
+                              <span style="color: red !important; display: inline; float: none; font-weight: bold; margin: 0pt 0pt 0pt; padding: 0pt 0pt 0pt">
+                              </span>
+                              </label>
+                                <input id="fe10938" name="emailAddress" type="text" onfocus="this.value=''" placeholder="Email Address*" style="width: 100%">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="formElement3" class="sc-view form-design-field sc-static-layout sc-regular-size" style="left: 0px; right: 0px; top: 0px; bottom: 0px; padding: 6px 5px 9px 9px">
+                    <div class="field-wrapper">
+                    </div>
+                    <div class="field-wrapper" style="float: left; width: 100%; clear: both">
+                        <div class="_100" style="float: left; width: 96%; margin-right: 2%; margin-left: 2%">
+                            <p style="position: relative; margin: 0px; padding: 0px">
+                                <label for="fe10941" style="display: block; line-height: 150%; padding: 10px 0pt 3px; white-space: nowrap">
+                              <span style="color: red !important; display: inline; float: none; font-weight: bold; margin: 0pt 0pt 0pt; padding: 0pt 0pt 0pt">
+                              </span>
+                              </label>
+                                <input id="fe10941" name="company" type="text" onfocus="this.value=''" placeholder="Company*" style="width: 100%">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="formElement4" class="sc-view form-design-field sc-static-layout sc-regular-size" style="left: 0px; right: 0px; top: 0px; bottom: 0px; padding: 6px 5px 9px 9px">
+                    <div class="field-wrapper">
+                    </div>
+                    <div class="field-wrapper" style="float: left; width: 100%; clear: both">
+                        <div class="_100" style="float: left; width: 96%; margin-right: 2%; margin-left: 2%">
+                            <p style="position: relative; margin: 0px; padding: 0px">
+                                <label for="fe10944" style="display: block; line-height: 150%; padding: 10px 0pt 3px; white-space: nowrap">
+                              <span style="color: red !important; display: inline; float: none; font-weight: bold; margin: 0pt 0pt 0pt; padding: 0pt 0pt 0pt">
+                              </span>
+                              </label>
+                                <input id="fe10944" name="businessPhone" type="text" onfocus="this.value=''" placeholder="Phone*" style="width: 100%">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="formElement6" class="sc-view form-design-field sc-static-layout sc-regular-size" style="left: 0px; right: 0px; top: 0px; bottom: 0px">
+                    <div class="field-wrapper">
+                    </div>
+                    <div class="field-wrapper" style="float: left; width: 100%; clear: both">
+                        <div class="_100" style="float: left; width: 96%; margin-right: 2%; margin-left: 2%">
+                            <p style="position: relative; margin: 0px; padding: 0px">
+                                <input id="fe10947" type="hidden" name="hiddenField2" value="APD-INS" />
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="formElement5" class="sc-view form-design-field sc-static-layout item-padding sc-regular-size">
+                    <div class="field-wrapper">
+                    </div>
+                    <div class="individual field-wrapper">
+                        <div class="_100 field-style">
+                            <p class="field-p">
+                                <input id="fe10949" value="Connect With Us" class="submit-button " style="font-size: 100%; height: auto; min-height: 48px; width: 200px; background-color: #aaba0a; color: #ffffff; margin-top: 25px;" type="submit">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--- end form--->
+
+    <!-- start -->
+    <center>
+        <div class="" id="footer">
+
+            <div class="">
+
+                <div style="color: #333333;">
+                    <p class="privacy">Read Our <a href="/privacy-practices" class="blue" style="text-decoration: underline;" target="_blank">Privacy Practices</a></p>
+                </div>
+                <div class="">
+                    <a href="https://www.linkedin.com/company/mitchell-international" style="text-decoration: none;" target="_blank">
+                        <img src="http://img.en25.com/EloquaImages/clients/MitchellInternationalInc/%7B4ec74f49-1746-4c70-8308-487e2fc587a6%7D_linkedin-icon.png" width="auto" height="auto" alt="" class="p-3">
+                    </a>
+                    <a href="https://twitter.com/MitchellRepair" style="text-decoration: none;" target="_blank">
+                        <img src="http://img.en25.com/EloquaImages/clients/MitchellInternationalInc/%7B21565658-c2b2-4395-9c9a-90c31944b318%7D_social-twitter.png" width="auto" height="auto" alt="" class="p-3">
+                    </a>
+                    <a href="https://www.youtube.com/user/MitchellIntl" style="text-decoration: none;" target="_blank">
+                        <img src="http://img.en25.com/EloquaImages/clients/MitchellInternationalInc/%7Baa113b0c-168a-4b89-b719-b266a852fc3d%7D_social-youtube.png" width="auto" height="auto" alt="" class="p-3">
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+
+    </center>
+    <!-- end -->	
+	<script src="https://cdn.jsdelivr.net/combine/npm/uikit@3.1.7/dist/js/uikit.min.js,npm/uikit@3.1.7/dist/js/uikit-icons.min.js,npm/jquery@2.2.4/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="https://img.en25.com/i/livevalidation_standalone.compressed.js">
+    </script>
+    <style type="text/css" media="screen">
+        .elq-form .loader {
+            vertical-align: middle;
+            display: inline-block;
+            margin-left: 10px;
+            border: 3px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 3px solid #3498db;
+            width: 20px;
+            height: 20px;
+            -webkit-animation: spin 2s linear infinite;
+            animation: spin 2s linear infinite;
+        }
+        
+        @-webkit-keyframes spin {
+            0% {
+                -webkit-transform: rotate(0deg);
+            }
+            100% {
+                -webkit-transform: rotate(360deg);
+            }
+        }
+        
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        
+        .LV_validation_message {
+            font-weight: bold;
+            margin: 0 0 0 5px;
+        }
+        
+        .LV_valid {
+            color: #00CC00;
+            display: none;
+        }
+        
+        .LV_invalid {
+            color: #CC0000;
+            font-size: 10px;
+        }
+        
+        .LV_valid_field,
+        input.LV_valid_field:hover,
+        input.LV_valid_field:active,
+        textarea.LV_valid_field:hover,
+        textarea.LV_valid_field:active {
+            outline: 1px solid #00CC00;
+        }
+        
+        .LV_invalid_field,
+        input.LV_invalid_field:hover,
+        input.LV_invalid_field:active,
+        textarea.LV_invalid_field:hover,
+        textarea.LV_invalid_field:active {
+            outline: 1px solid #CC0000;
+        }
+    </style>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200,
+        })
+    </script>
+    <script>
+        function handleFormSubmit(ele) {
+            var submitButton = ele.querySelector('input[type=submit]');
+            var spinner = document.createElement('span');
+            spinner.setAttribute('class', 'loader');
+            submitButton.setAttribute('disabled', true);
+            submitButton.style.cursor = 'wait';
+            submitButton.parentNode.appendChild(spinner);
+            return true;
+        }
+
+        function resetSubmitButton(e) {
+            var submitButtons = e.target.form.getElementsByClassName('submit-button');
+            for (var i = 0; i < submitButtons.length; i++) {
+                submitButtons[i].disabled = false;
+            }
+        }
+
+        function addChangeHandler(elements) {
+            for (var i = 0; i < elements.length; i++) {
+                elements[i].addEventListener('change', resetSubmitButton);
+            }
+        }
+        var form = document.getElementById('form975');
+        addChangeHandler(form.getElementsByTagName('input'));
+        addChangeHandler(form.getElementsByTagName('select'));
+        addChangeHandler(form.getElementsByTagName('textarea'));
+        var nodes = document.querySelectorAll('#form975 input[data-subscription]');
+        if (nodes) {
+            for (var i = 0, len = nodes.length; i < len; i++) {
+                var status = nodes[i].dataset ? nodes[i].dataset.subscription : nodes[i].getAttribute('data-subscription');
+                if (status === 'true') {
+                    nodes[i].checked = true;
+                }
+            }
+        };
+        var nodes = document.querySelectorAll('#form975 select[data-value]');
+        if (nodes) {
+            for (var i = 0; i < nodes.length; i++) {
+                var node = nodes[i];
+                var selectedValue = node.dataset ? node.dataset.value : node.getAttribute('data-value');
+                if (selectedValue) {
+                    for (var j = 0; j < node.options.length; j++) {
+                        if (node.options[j].value === selectedValue) {
+                            node.options[j].selected = 'selected';
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+        this.getParentElement = function(list) {
+            return list[list.length - 1].parentElement
+        };
+        var dom0 = document.querySelector('#form975 #fe10939');
+        var fe10939 = new LiveValidation(dom0, {
+            validMessage: "",
+            onlyOnBlur: false,
+            wait: 300
+        });
+        fe10939.add(Validate.Presence, {
+            failureMessage: "This field is required"
+        });
+        var dom1 = document.querySelector('#form975 #fe10940');
+        var fe10940 = new LiveValidation(dom1, {
+            validMessage: "",
+            onlyOnBlur: false,
+            wait: 300
+        });
+        fe10940.add(Validate.Presence, {
+            failureMessage: "This field is required"
+        });
+        var dom2 = document.querySelector('#form975 #fe10938');
+        var fe10938 = new LiveValidation(dom2, {
+            validMessage: "",
+            onlyOnBlur: false,
+            wait: 300
+        });
+        fe10938.add(Validate.Format, {
+            pattern: /^([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})$/i,
+            failureMessage: "A valid email address is required"
+        });
+        fe10938.add(Validate.Presence, {
+            failureMessage: "This field is required"
+        });
+        var dom3 = document.querySelector('#form975 #fe10941');
+        var fe10941 = new LiveValidation(dom3, {
+            validMessage: "",
+            onlyOnBlur: false,
+            wait: 300
+        });
+        fe10941.add(Validate.Presence, {
+            failureMessage: "This field is required"
+        });
+        var dom4 = document.querySelector('#form975 #fe10944');
+        var fe10944 = new LiveValidation(dom4, {
+            validMessage: "",
+            onlyOnBlur: false,
+            wait: 300
+        });
+        fe10944.add(Validate.Presence, {
+            failureMessage: "This field can only contain numeric values"
+        });
+        fe10944.add(Validate.Length, {
+            tooShortMessage: "This field can only contain numeric values",
+            tooLongMessage: "This field can only contain numeric values",
+            minimum: 10,
+            maximum: 16
+        });
+    </script>
+    <script>
+    $(document).ready(function() {
+
+    var start_pos = $("#progress_scroll").offset().top - 500;
+    var scroll = 0;
+    var trig = [true, true, true, false];
+    var trig_back = [false, false, false, false];
+
+    setTimeout(function(){
+      $("#ig1").addClass("visible_icn");
+      anim5.setSpeed(.7);
+      anim5.setDirection(1);
+      anim5.playSegments([0, 21], true);
+      setTimeout(function(){
+        anim1.goToAndPlay(0, false);
+      }, 700);
+    }, 800);
+
+
+    $(window).scroll(function() {
+        scroll = $(window).scrollTop();
+
+        if (scroll >= start_pos) {
+          if (trig[0]) {
+            if (!$("#ig1").hasClass("visible_icn")) {
+              anim1.goToAndPlay(0, false);
+              anim5.setSpeed(.7);
+              anim5.setDirection(1);
+              anim5.playSegments([0, 21], true);
+              $("#ig1").removeClass("visible_icn").addClass("visible");
+              setTimeout(function(){
+                $("#ig1").addClass("step2");
+              }, 400);
+            } else {
+              setTimeout(function(){
+                $("#ig1").removeClass("visible_icn").addClass("visible");
+                setTimeout(function(){
+                  $("#ig1").addClass("step2");
+                }, 400);
+              }, 1000);
+            }
+
+            trig[0] = false;
+            trig_back[0] = true;
+          }
+        } else {
+          $("#ig1").removeClass("visible step2 step2");
+          if (!$("#ig1").hasClass("visible_icn")) {
+            anim1.pause();
+          }
+          trig[0] = true;
+          if (trig_back[0]) {
+            anim5.setDirection(-1);
+            anim5.playSegments([21, 0], true);
+            trig_back[0] = false;
+          }
+        }
+        if (scroll >= (start_pos + $("#ig1").outerHeight())) {
+          if (trig[1]) {
+            $("#ig2").addClass("visible");
+            setTimeout(function(){
+              $("#ig2").addClass("step2");
+            }, 400);
+            anim2.goToAndPlay(0, false);
+            anim5.setDirection(1);
+            anim5.playSegments([140, 183], true);
+            trig[1] = false;
+            trig_back[1] = true;
+          }
+        } else {
+          $("#ig2").removeClass("visible step2");
+          anim2.pause();
+          trig[1] = true;
+          if (trig_back[1]) {
+            anim5.setDirection(-1);
+            anim5.playSegments([183, 140], true);
+            trig_back[1] = false;
+          }
+        }
+        if (scroll >= (start_pos + $("#ig1").outerHeight() + $("#ig2").outerHeight())) {
+          if (trig[2]) {
+            $("#ig3").addClass("visible");
+            setTimeout(function(){
+              $("#ig3").addClass("step2");
+            }, 400);
+            anim3.setSpeed(1.7);
+            anim3.goToAndPlay(0, false);
+            anim5.setDirection(1);
+            anim5.playSegments([290, 336], true);
+            trig[2] = false;
+            trig_back[2] = true;
+          }
+        } else {
+          $("#ig3").removeClass("visible step2");
+          anim3.pause();
+          trig[2] = true;
+          if (trig_back[2]) {
+            anim5.setDirection(-1);
+            anim5.playSegments([336, 290], true);
+            trig_back[2] = false;
+          }
+        }
+        if (scroll >= (start_pos + $("#ig1").outerHeight() + $("#ig2").outerHeight() + $("#ig3").outerHeight())) {
+          if (trig[3]) {
+            $("#ig4").addClass("visible");
+            setTimeout(function(){
+              $("#ig4").addClass("step2");
+            }, 400);
+            anim4.goToAndPlay(0, false)
+            anim5.setDirection(1);
+            anim5.playSegments([440, 486], true);
+            trig[3] = false;
+            trig_back[3] = true;
+            }
+        } else {
+          $("#ig4").removeClass("visible step2");
+          anim4.pause();
+          trig[3] = true;
+          if (trig_back[3]) {
+            anim5.setDirection(-1);
+            anim5.playSegments([486, 440], true);
+            trig_back[3] = false;
+          }
+        }
+    });
+
+    var animData1 = {
+        wrapper: document.getElementById('lottie_icn_01'),
+        animType: 'svg',
+        loop: true,
+        prerender: true,
+        autoplay: false,
+        path: 'https://vladfedchenco.github.io/work/brett/mitchell-intelligent-solutions/json/icn1.json'
+    };
+    var animData2 = {
+        wrapper: document.getElementById('lottie_icn_02'),
+        animType: 'svg',
+        loop: true,
+        prerender: true,
+        autoplay: false,
+        path: 'https://vladfedchenco.github.io/work/brett/mitchell-intelligent-solutions/json/icn2.json'
+    };
+    var animData3 = {
+        wrapper: document.getElementById('lottie_icn_03'),
+        animType: 'svg',
+        loop: true,
+        prerender: true,
+        autoplay: false,
+        path: 'https://vladfedchenco.github.io/work/brett/mitchell-intelligent-solutions/json/icn4.json'
+    };
+    var animData4 = {
+        wrapper: document.getElementById('lottie_icn_04'),
+        animType: 'svg',
+        loop: true,
+        prerender: true,
+        autoplay: false,
+        path: 'https://vladfedchenco.github.io/work/brett/mitchell-intelligent-solutions/json/icn3.json'
+    };
+    var animData5 = {
+        wrapper: document.getElementById('progress_scroll'),
+        animType: 'svg',
+        loop: false,
+        prerender: false,
+        autoplay: false,
+        autoloadSegments: false,
+        path: 'https://vladfedchenco.github.io/work/brett/mitchell-intelligent-solutions/json/scroll.json'
+    };
+
+    var anim1 = bodymovin.loadAnimation(animData1);
+    var anim2 = bodymovin.loadAnimation(animData2);
+    var anim3 = bodymovin.loadAnimation(animData3);
+    var anim4 = bodymovin.loadAnimation(animData4);
+    var anim5 = bodymovin.loadAnimation(animData5);
+
+		});
+
+    window.onbeforeunload = function () {
+      window.scrollTo(0, 0);
+    };
+	</script>
+</body>
+</html>

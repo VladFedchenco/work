@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Marketing Reel - Buttons</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #4b4b4b;
+    font-family: 'Montserrat', sans-serif;
+  }
+  #main {
+    width: 1360px;
+    margin: 0 auto;
+    padding-top: 32px;
+  }
+  h1, h2, h3, h4 {
+    color: #021730;
+  }
+  a {
+    color: #fff;
+    transition: all .3s ease;
+  }
+  #menu_bttn {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    width: 216px;
+    height: 68px;
+    display: block;
+    position: relative;
+  }
+  #menu_bttn span {
+    display: block;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    line-height: 68px;
+    white-space: nowrap;
+  }
+  #menu_bttn:hover span {
+    font-size: 19px;
+  }
+  #menu_bttn:hover #menubttn_grd {
+    fill: url(#menubttn_b);
+  }
+  #menubttn_border {
+    stroke-dashoffset: 175px;
+    transition: stroke-dashoffset .3s ease;
+  }
+  #menu_bttn:hover #menubttn_border {
+    stroke-dashoffset: 310px;
+  }
+  #bttn_shadow, #bttn_shapes {
+    transition: all .2s ease;
+  }
+  button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    width: 235px;
+    height: 86px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    transition: all .2s ease;
+  }
+  button span {
+    display: block;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    line-height: 78px;
+    padding-left: 6px;
+    white-space: nowrap;
+  }
+  button:focus {
+    outline: none;
+  }
+  button:hover {
+    font-size: 19px;
+  }
+  button:hover #bttn_shapes {
+    transform: translate(117px, 43px) rotate(2deg) translate(-117px, -43px);
+  }
+  button:hover #bttn_shadow {
+    transform: translate(117px, 43px) rotate(-4deg) translate(-117px, -43px);
+  }
+  #bttn_bg {
+    transition: all .2s ease;
+  }
+  button:hover #bttn_bg {
+    fill: #2360cc;
+  }
+  #tab {
+    position: relative;
+    width: 202px;
+    height: 84px;
+    display: block;
+    color: #021730;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  #tab span {
+    display: block;
+    position: absolute;
+    left: 0;
+    background: #fff;
+    height: 56px;
+    line-height: 56px;
+    width: 100%;
+    padding-left: 36px;
+    transition: all .2s ease;
+  }
+  #tab span:before {
+    content: '';
+    width: 8px;
+    height: 56px;
+    background: #c63336;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    transition: all .2s ease;
+  }
+  #tab:hover span {
+    height: 84px;
+    line-height: 84px;
+  }
+  #tab:hover span:before {
+    height: 8px;
+    width: 84px;
+    left: 36px;
+    top: 56px;
+  }
+</style>
+<body>
+<section id="main">
+  <h2>Header menu button</h2>
+  <a id="menu_bttn" href="javasctript:;">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 216 68">
+      <defs>
+        <linearGradient id="menubttn_a" y1="1" x2="1" y2="0">
+          <stop offset="0" stop-color="#ed775a"/>
+          <stop offset="1" stop-color="#d24841"/>
+          <stop offset="1"/>
+        </linearGradient>
+        <linearGradient id="menubttn_b" x1="1" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#ed775a"/>
+          <stop offset="1" stop-color="#d24841"/>
+          <stop offset="1"/>
+        </linearGradient>
+      </defs>
+      <g>
+        <rect id="menubttn_border" x="0.8" y="0.8" width="214" height="66" rx="15" fill="none" stroke="#d65146" stroke-miterlimit="10" stroke-width="1.6" stroke-dasharray="133.5" stroke-dashoffset="175"/>
+        <path id="menubttn_grd" d="M18.809,7.8H196.791A10.047,10.047,0,0,1,206.8,17.885v31.83A10.047,10.047,0,0,1,196.791,59.8H18.809A10.047,10.047,0,0,1,8.8,49.715V17.885A10.047,10.047,0,0,1,18.809,7.8Z" fill-rule="evenodd" fill="url(#menubttn_a)"/>
+        <g fill="#f29e7a" opacity="0.5">
+          <polygon points="187.049 7.8 177.116 41.273 175.609 7.8 174.006 7.8 175.724 45.964 171.618 59.8 173.29 59.8 175.944 50.856 176.346 59.8 177.95 59.8 177.336 46.164 188.721 7.8 187.049 7.8"/>
+          <polygon points="128.35 7.8 79.04 59.8 81.255 59.8 130.565 7.8 128.35 7.8"/>
+          <polygon points="28.397 59.8 61.757 7.8 59.85 7.8 26.49 59.8 28.397 59.8"/>
+        </g>
+      </g>
+    </svg>
+    <span>Get in Touch</span>
+  </a>
+  <br>
+  <br>
+  <h2>Content button</h2>
+  <button>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 235 86">
+      <path id="bttn_shadow" d="M15.871,75.116l208.84,9.905,9.905-72.09L5.14,0Z" opacity="0.1"/>
+      <g id="bttn_shapes">
+        <path id="bttn_bg" d="M234.616,74.507,23.663,67.078,0,13.921,227,5.942Z" fill="#4169b0"/>
+        <g fill="#5a93d0">
+          <polygon points="64.565 11.651 62.121 11.737 25.965 67.159 28.299 67.242 64.565 11.651"/>
+          <polygon points="209.575 53.495 223.562 6.063 221.456 6.137 209.3 47.357 207.479 6.628 205.48 6.699 207.562 53.252 201.636 73.346 203.699 73.418 207.836 59.39 208.471 73.587 210.476 73.657 209.575 53.495"/>
+          <polygon points="150.098 8.645 147.241 8.746 89.495 69.397 92.167 69.491 150.098 8.645"/>
+        </g>
+      </g>
+    </svg>
+    <span>View Portfolio</span>
+  </button>
+  <br>
+  <br>
+  <h2>Content tab</h2>
+  <a id="tab" href="javasctript:;">
+    <span>Products</span>
+  </a>
+</section>
+</body>
+</html>

@@ -1,0 +1,322 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 700;
+  background: #fff;
+}
+b {
+  font-weight: 700;
+}
+#animation_frame {
+  position: relative;
+  width: 540px;
+  height: 960px;
+  margin: 0 auto;
+  background: #fff;
+  overflow: hidden;
+}
+.frame {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url(../imgs/frame_01.svg) no-repeat;
+  background-size: cover;
+}
+.frame:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url(../imgs/frame_02.svg) no-repeat;
+  background-size: cover;
+  animation: anim_frame 1s linear infinite;
+}
+@keyframes anim_frame {
+  0%, 40%, 100% {
+    opacity: 0;
+  }
+  50%, 90% {
+    opacity: 1;
+  }
+}
+.text {
+  position: absolute;
+  width: 100%;
+  color: #B00D53;
+  font-size: 52px;
+  text-align: center;
+}
+.t1 {
+  top: 680px;
+}
+.t2 {
+  top: 740px;
+}
+.t3 {
+  top: 800px;
+}
+.t4 {
+  top: 700px;
+}
+.t5 {
+  top: 760px;
+}
+.t6, .t7, .t8, .t9 {
+  font-size: 72px;
+}
+.t6 {
+  top: 320px;
+}
+.t7 {
+  top: 400px;
+}
+.t8 {
+  top: 480px;
+}
+.t9 {
+  top: 560px;
+}
+.t10 {
+  top: 210px;
+}
+.t11 {
+  top: 270px;
+}
+.t12 {
+  top: 660px;
+}
+.text_block b {
+  padding: 0 2px;
+  display: inline-block;
+  opacity: 0;
+  animation: letter_block_01 var(--animation-lenght) infinite;
+}
+@keyframes letter_block_01 {
+  0%, 25%, 100% {
+    opacity: 0;
+    padding: 0 2px;
+  }
+  5%, 20% {
+    opacity: 1;
+    padding: 0px;
+  }
+}
+.pic {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 80px;
+  clip: rect(0px 540px 555px 540px);
+}
+.pic2 {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 0;
+  clip: rect(0px 540px 960px 540px);
+}
+#pic_01 {
+  animation: clip_img_01 var(--animation-lenght) infinite;
+}
+@keyframes clip_img_01 {
+  0% {
+    opacity: 0;
+    clip: rect(0px 540px 555px 540px);
+  }
+  5%, 30% {
+    opacity: 1;
+    clip: rect(0px 540px 555px 0px);
+  }
+  35%, 100% {
+    opacity: 0;
+    clip: rect(0px 0px 555px 0px);
+  }
+}
+#pic_02 {
+  animation: clip_img_02 var(--animation-lenght) infinite;
+}
+@keyframes clip_img_02 {
+  0%, 25% {
+    opacity: 0;
+    clip: rect(0px 540px 555px 540px);
+  }
+  30%, 55% {
+    opacity: 1;
+    clip: rect(0px 540px 555px 0px);
+  }
+  60%, 100% {
+    opacity: 0;
+    clip: rect(0px 0px 555px 0px);
+  }
+}
+#pic_03 {
+  animation: clip_img_03 var(--animation-lenght) infinite;
+}
+@keyframes clip_img_03 {
+  0%, 50% {
+    opacity: 0;
+    clip: rect(0px 540px 960px 540px);
+  }
+  55%, 95% {
+    opacity: 1;
+    clip: rect(0px 540px 960px 0px);
+  }
+  100% {
+    opacity: 0;
+    clip: rect(0px 0px 960px 0px);
+  }
+}
+#off20 {
+  opacity: 0;
+  position: absolute;
+  width: 177px;
+  height: 182px;
+  left: 184px;
+  top: 82px;
+  animation: off var(--animation-lenght) infinite;
+}
+@keyframes off {
+  0%, 50%, 75%, 100% {
+    opacity: 0;
+  }
+  55%, 70% {
+    opacity: 1;
+  }
+  50%, 70% {
+    transform: rotate(5deg);
+  }
+  60% {
+    transform: rotate(-5deg);
+  }
+  75% {
+    transform: rotate(0deg);
+  }
+}
+#pad {
+  opacity: 0;
+  position: absolute;
+  width: 150px;
+  height: 33px;
+  left: 198px;
+  top: 864px;
+  animation: apad var(--animation-lenght) infinite;
+}
+@keyframes apad {
+  0%, 50%, 75%, 100% {
+    opacity: 0;
+  }
+  53%, 73% {
+    opacity: 1;
+  }
+}
+.grl1 {
+  position: absolute;
+  width: 105px;
+  height: 216px;
+  left: 221px;
+  top: 666px;
+  animation: grl1 var(--animation-lenght) infinite;
+}
+.grl2 {
+  position: absolute;
+  width: 127px;
+  height: 216px;
+  left: 208px;
+  top: 666px;
+  animation: grl2 var(--animation-lenght) infinite;
+}
+.grl3 {
+  position: absolute;
+  width: 127px;
+  height: 216px;
+  left: 208px;
+  top: 666px;
+  animation: grl3 var(--animation-lenght) infinite;
+}
+
+#a1, #a2, #a3, #a4, #a5, #a6, #a7, #a8, #a9, #a10, #a11, #a12, #a13, #a14, #a15, #a16, #a17, #a18, #a19, #a20, #a21, #a22, #a23, #a24, #a25 {
+visibility: hidden;
+animation-duration: var(--animation-lenght);
+animation-iteration-count: infinite;
+animation-timing-function: steps(1);
+}
+
+#a1 {animation-name: a1}
+#a2 {animation-name: a2}
+#a3 {animation-name: a3}
+#a4 {animation-name: a4}
+#a5 {animation-name: a5}
+#a6 {animation-name: a6}
+#a7 {animation-name: a7}
+#a8 {animation-name: a8}
+#a9 {animation-name: a9}
+#a10 {animation-name: a10}
+#a11 {animation-name: a11}
+#a12 {animation-name: a12}
+#a13 {animation-name: a13}
+#a14 {animation-name: a14}
+#a15 {animation-name: a15}
+#a16 {animation-name: a16}
+#a17 {animation-name: a17}
+#a18 {animation-name: a18}
+#a19 {animation-name: a19}
+#a20 {animation-name: a20}
+#a21 {animation-name: a21}
+#a22 {animation-name: a22}
+#a23 {animation-name: a23}
+#a24 {animation-name: a24}
+#a25 {animation-name: a25}
+
+@keyframes a1 {50%{visibility: visible} 0%, 51%{visibility: hidden}}
+@keyframes a2 {51%{visibility: visible} 52%{visibility: hidden}}
+@keyframes a3 {52%{visibility: visible} 53%{visibility: hidden}}
+@keyframes a4 {53%{visibility: visible} 54%{visibility: hidden}}
+@keyframes a5 {54%{visibility: visible} 55%{visibility: hidden}}
+@keyframes a6 {55%{visibility: visible} 56%{visibility: hidden}}
+@keyframes a7 {56%{visibility: visible} 57%{visibility: hidden}}
+@keyframes a8 {57%{visibility: visible} 58%{visibility: hidden}}
+@keyframes a9 {58%{visibility: visible} 59%{visibility: hidden}}
+@keyframes a10 {59%{visibility: visible} 60%{visibility: hidden}}
+@keyframes a11 {60%{visibility: visible} 61%{visibility: hidden}}
+@keyframes a12 {61%{visibility: visible} 62%{visibility: hidden}}
+@keyframes a13 {62%{visibility: visible} 63%{visibility: hidden}}
+@keyframes a14 {63%{visibility: visible} 64%{visibility: hidden}}
+@keyframes a15 {64%{visibility: visible} 65%{visibility: hidden}}
+@keyframes a16 {65%{visibility: visible} 66%{visibility: hidden}}
+@keyframes a17 {66%{visibility: visible} 67%{visibility: hidden}}
+@keyframes a18 {67%{visibility: visible} 68%{visibility: hidden}}
+@keyframes a19 {68%{visibility: visible} 69%{visibility: hidden}}
+@keyframes a20 {69%{visibility: visible} 70%{visibility: hidden}}
+@keyframes a21 {70%{visibility: visible} 71%{visibility: hidden}}
+@keyframes a22 {71%{visibility: visible} 72%{visibility: hidden}}
+@keyframes a23 {72%{visibility: visible} 73%{visibility: hidden}}
+@keyframes a24 {73%{visibility: visible} 74%{visibility: hidden}}
+@keyframes a25 {74%{visibility: visible} 75%, 100%{visibility: hidden}}
+
+#logo {
+  position: absolute;
+  width: 276px;
+  height: 278px;
+  left: 132px;
+  top: 355px;
+  animation: logo var(--animation-lenght) infinite;
+}
+
+@keyframes logo {
+  0%, 75%, 100% {
+    opacity: 0;
+    transform: scale(1.2);
+  }
+  80%, 95% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

@@ -1,0 +1,204 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 200 200">
+<style>
+/* <![CDATA[ */
+#c1 {
+  animation: c1 2s linear infinite;
+}
+@keyframes c1 {
+/* 31.4 */
+  0% {
+    stroke-dashoffset: 31.4;
+    transform: translate(100px, 100px) rotate(0deg) translate(-100px, -100px);
+  }
+  100% {
+    stroke-dashoffset: 94.2;
+    transform: translate(100px, 100px) rotate(-360deg) translate(-100px, -100px);
+  }
+}
+
+#c2 {
+  animation: c2 2s linear infinite;
+}
+@keyframes c2 {
+/* 194.68 */
+  0%, 100% {
+    stroke-dasharray: 50 144.68;
+  }
+  50% {
+    stroke-dasharray: 10 184.68;
+  }
+  0% {
+    transform: translate(100px, 100px) rotate(0deg) translate(-100px, -100px);
+  }
+  100% {
+    transform: translate(100px, 100px) rotate(360deg) translate(-100px, -100px);
+  }
+}
+
+#c3 {
+  animation: c3 2s -1s linear infinite;
+}
+@keyframes c3 {
+/* 194.68 */
+  0%, 100% {
+    stroke-dasharray: 47 147.68;
+  }
+  50% {
+    stroke-dasharray: 8 186.68;
+  }
+  0% {
+    transform: translate(100px, 100px) rotate(0deg) translate(-100px, -100px);
+  }
+  100% {
+    transform: translate(100px, 100px) rotate(-360deg) translate(-100px, -100px);
+  }
+}
+
+#c4 {
+  animation: c4 2s linear infinite;
+}
+@keyframes c4 {
+/* 194.68 */
+  0%, 100% {
+    stroke-dasharray: 23.5 171.18;
+  }
+  50% {
+    stroke-dasharray: 12 182.68;
+  }
+  0% {
+    transform: translate(100px, 100px) rotate(0deg) translate(-100px, -100px);
+  }
+  100% {
+    transform: translate(100px, 100px) rotate(360deg) translate(-100px, -100px);
+  }
+}
+
+#c5 {
+  animation: c5 2s -1s linear infinite;
+}
+@keyframes c5 {
+/* 194.68 */
+  0%, 100% {
+    stroke-dasharray: 43 151.68;
+  }
+  50% {
+    stroke-dasharray: 14 180.68;
+  }
+  0% {
+    transform: translate(100px, 100px) rotate(0deg) translate(-100px, -100px);
+  }
+  100% {
+    transform: translate(100px, 100px) rotate(-360deg) translate(-100px, -100px);
+  }
+}
+
+#c6 {
+  animation: c6 2s linear infinite;
+}
+@keyframes c6 {
+/* 345.4 */
+  0%, 100% {
+    stroke-dasharray: 48.5 296.9;
+  }
+  50% {
+    stroke-dasharray: 40 305.4;
+  }
+  0% {
+    transform: translate(100px, 100px) rotate(0deg) translate(-100px, -100px);
+  }
+  100% {
+    transform: translate(100px, 100px) rotate(360deg) translate(-100px, -100px);
+  }
+}
+
+#c7 {
+  animation: c7 2s -1s linear infinite;
+}
+@keyframes c7 {
+/* 383.08 */
+  0%, 100% {
+    stroke-dasharray: 102 281.08;
+  }
+  50% {
+    stroke-dasharray: 30 353.08;
+  }
+  0% {
+    transform: translate(100px, 100px) rotate(0deg) translate(-100px, -100px);
+  }
+  100% {
+    transform: translate(100px, 100px) rotate(-360deg) translate(-100px, -100px);
+  }
+}
+
+#c8 {
+  animation: c8 2s linear infinite;
+}
+@keyframes c8 {
+/* 414.48 */
+  0%, 100% {
+    stroke-dasharray: 116.5 297.98;
+  }
+  50% {
+    stroke-dasharray: 36 378.48;
+  }
+  0% {
+    transform: translate(100px, 100px) rotate(0deg) translate(-100px, -100px);
+  }
+  100% {
+    transform: translate(100px, 100px) rotate(360deg) translate(-100px, -100px);
+  }
+}
+
+#c9 {
+  animation: c9 2s -1s linear infinite;
+}
+@keyframes c9 {
+/* 452.16 */
+  0%, 100% {
+    stroke-dasharray: 110.1 342.06;
+  }
+  50% {
+    stroke-dasharray: 22 430.16;
+  }
+  0% {
+    transform: translate(100px, 100px) rotate(0deg) translate(-100px, -100px);
+  }
+  100% {
+    transform: translate(100px, 100px) rotate(-360deg) translate(-100px, -100px);
+  }
+}
+
+/* ]]> */
+</style>
+<defs>
+  <linearGradient id="lnr1" x2="1">
+    <stop offset="0" stop-color="#fdff00"/>
+    <stop offset=".5" stop-color="#fee200"/>
+    <stop offset="1" stop-color="#ffc600"/>
+  </linearGradient>
+  <linearGradient id="lnr2" x2="1">
+    <stop offset="0" stop-color="#00dac6"/>
+    <stop offset=".5" stop-color="#00c6ad"/>
+    <stop offset="1" stop-color="#00b395"/>
+  </linearGradient>
+  <linearGradient id="lnr3" x2="1">
+    <stop offset="0" stop-color="#182245"/>
+    <stop offset=".5" stop-color="#233460"/>
+    <stop offset="1" stop-color="#2f457b"/>
+  </linearGradient>
+  <linearGradient id="lnr4" x2="1">
+    <stop offset="0" stop-color="#ff5126"/>
+    <stop offset=".5" stop-color="#fd4852"/>
+    <stop offset="1" stop-color="#fb407e"/>
+  </linearGradient>
+</defs>
+<circle id="c1" stroke-dasharray="31.4" stroke-dashoffset="31.4" cx="100" cy="100" fill="none" r="5" stroke="#8bc34a" stroke-width="10"/>
+<circle id="c2" stroke-dasharray="50 144.68" stroke-dashoffset="83" cx="100" cy="100" r="31" fill="none" stroke="url(#lnr3)" stroke-width="9"/>
+<circle id="c3" stroke-dasharray="47 147.68" stroke-dashoffset="25" cx="100" cy="100" r="31" fill="none" stroke="url(#lnr2)" stroke-width="9"/>
+<circle id="c4" stroke-dasharray="23.5 171.18" stroke-dashoffset="165" cx="100" cy="100" r="31" fill="none" stroke="url(#lnr1)" stroke-width="9"/>
+<circle id="c5" stroke-dasharray="43 151.68" stroke-dashoffset="134" cx="100" cy="100" r="31" fill="none" stroke="#e24538" stroke-width="9"/>
+<circle id="c6" stroke-dasharray="48.5 296.9" stroke-dashoffset="166.5" cx="100" cy="100" r="55" fill="none" stroke="url(#lnr1)" stroke-width="8"/>
+<circle id="c7" stroke-dasharray="102 281.08" stroke-dashoffset="293.5" cx="100" cy="100" r="61" fill="none" stroke="url(#lnr2)" stroke-width="19"/>
+<circle id="c8" stroke-dasharray="116.5 297.98" stroke-dashoffset="441" cx="100" cy="100" r="66" fill="none" stroke="url(#lnr3)" stroke-width="30"/>
+<circle id="c9" stroke-dasharray="110.1 342.06" stroke-dashoffset="147" cx="100" cy="100" r="72" fill="none" stroke="url(#lnr4)" stroke-width="43"/>
+</svg>
