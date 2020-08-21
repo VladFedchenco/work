@@ -81,6 +81,395 @@
   }
 }
 
+#arrows.animated #ard1 {
+  animation: ard1 8s -8s linear infinite;
+}
+
+#arrows.animated #art1 {
+  animation: ard1 8s -8s linear reverse infinite;
+}
+
+@keyframes ard1 {
+  0% {
+    opacity: 0;
+    transform: matrix(-0.98,-0.21,0.21,-0.98,797.42,832);
+  }
+  10% {
+    opacity: 1;
+  }
+  18% {
+    transform: matrix(-0.98,-0.21,0.21,-0.98,929.371,859.908);
+  }
+  20% {
+    transform: matrix(-0.35,-0.94,0.94,-0.35,927.821,864.551);
+  }
+  40% {
+    transform: matrix(-0.35,-0.94,0.94,-0.35,982.261,1011.245);
+  }
+  42% {
+    transform: matrix(0.00,-1.00,1.00,0.00,989.953,1029.615);
+  }
+  60% {
+    transform: matrix(0.00,-1.00,1.00,0.00,989.953,1164.631);
+  }
+  62% {
+    transform: matrix(0.98,-0.21,0.21,0.98,982.389,1174.862);
+  }
+  72% {
+    transform: matrix(0.80,-0.60,0.60,0.80,920.722,1203.533);
+  }
+  80% {
+    transform: matrix(0.71,-0.70,0.70,0.71,877.903,1241.633);
+  }
+  90% {
+    opacity: 1;
+    transform: matrix(0.62,-0.78,0.78,0.62,838.162,1287.065);
+  }
+  100% {
+    opacity: 0;
+    transform: matrix(0.54,-0.84,0.84,0.54,792.205,1351.883);
+  }
+}
+
+#arrows.animated #ard2 {
+  animation: ard2 8s -4s linear infinite;
+}
+#arrows.animated #art2 {
+  animation: ard2 8s -4s linear reverse infinite;
+}
+
+@keyframes ard2 {
+  0% {
+    opacity: 0;
+    transform: matrix(-0.98,-0.21,0.21,-0.98,797.42,832);
+  }
+  10% {
+    opacity: 1;
+  }
+  18% {
+    transform: matrix(-0.98,-0.21,0.21,-0.98,929.371,859.908);
+  }
+  20% {
+    transform: matrix(-0.35,-0.94,0.94,-0.35,927.821,864.551);
+  }
+  40% {
+    transform: matrix(-0.35,-0.94,0.94,-0.35,982.261,1011.245);
+  }
+  42% {
+    transform: matrix(0.00,-1.00,1.00,0.00,989.953,1029.615);
+  }
+  60% {
+    transform: matrix(0.00,-1.00,1.00,0.00,989.953,1164.631);
+  }
+  62% {
+    transform: matrix(0.98,-0.21,0.21,0.98,982.389,1174.862);
+  }
+  72% {
+    transform: matrix(0.79,-0.61,0.61,0.79,929.215,1198.326);
+  }
+  74% {
+    transform: matrix(0.23,-0.97,0.97,0.23,926.077,1207.998);
+  }
+  78% {
+    transform: matrix(0.55,-0.84,0.84,0.55,916.22,1232.223);
+  }
+  86% {
+    transform: matrix(0.39,-0.92,0.92,0.39,894.937,1266.983);
+  }
+  93% {
+    opacity: 1;
+    transform: matrix(0.14,-0.99,0.99,0.14,883.245,1298.449);
+  }
+  100% {
+    opacity: 0;
+    transform: matrix(-0.02,-1.00,1.00,-0.02,879.255,1335.166);
+  }
+}
+
+#arrows.animated #ard3 {
+  animation: ard3 9s -9s linear infinite;
+}
+
+#arrows.animated #art3 {
+  animation: ard3 9s -9s linear reverse infinite;
+}
+
+@keyframes ard3 {
+  0% {
+    opacity: 0;
+    transform: matrix(-0.58,-0.81,0.81,-0.58,884.2,628.932);
+  }
+  10% {
+    opacity: 1;
+  }
+  18% {
+    transform: matrix(-0.58,-0.81,0.81,-0.58,979.122,760.853);
+  }
+  20% {
+    transform: matrix(0.00,-1.00,1.00,0.00,989.953,779.581);
+  }
+  60% {
+    transform: matrix(0.00,-1.00,1.00,0.00,989.953,1164.631);
+  }
+  62% {
+    transform: matrix(0.71,-0.71,0.71,0.71,989.13,1175.706);
+  }
+  73% {
+    transform: matrix(0.38,-0.93,0.93,0.38,962.585,1218.538);
+  }
+  86% {
+    transform: matrix(0.17,-0.98,0.98,0.17,943.479,1287.946);
+  }
+  92% {
+    opacity: 1;
+    transform: matrix(0.40,-0.92,0.92,0.40,934.64,1329.242);
+  }
+  100% {
+    opacity: 0;
+    transform: matrix(0.76,-0.65,0.65,0.76,915.66,1352.984);
+  }
+}
+
+#arrows.animated #ard4 {
+  animation: ard4 9s -6s linear infinite;
+}
+
+#arrows.animated #art4 {
+  animation: ard4 9s -6s linear reverse infinite;
+}
+
+@keyframes ard4 {
+  0% {
+    opacity: 0;
+    transform: matrix(-0.48,-0.88,0.88,-0.48,889.642,598.936);
+  }
+  10% {
+    opacity: 1;
+  }
+  24% {
+    transform: matrix(-0.48,-0.88,0.88,-0.48,979.563,759.086);
+  }
+  26% {
+    transform: matrix(0.00,-1.00,1.00,0.00,989.953,779.581);
+  }
+  70% {
+    transform: matrix(0.00,-1.00,1.00,0.00,989.953,1164.631);
+  }
+  72% {
+    transform: matrix(0.57,-0.82,0.82,0.57,990.172,1178.705);
+  }
+  80% {
+    transform: matrix(0.35,-0.94,0.94,0.35,972.887,1211.841);
+  }
+  88% {
+    transform: matrix(0.09,-1.00,1.00,0.09,960.599,1252.368);
+  }
+  95% {
+    opacity: 1;
+    transform: matrix(-0.10,-1.00,1.00,-0.10,958.711,1294.685);
+  }
+  100% {
+    opacity: 0;
+    transform: matrix(-0.22,-0.98,0.98,-0.22,961.382,1320.582);
+  }
+}
+
+#arrows.animated #ard5 {
+  animation: ard5 9s -3s linear infinite;
+}
+
+#arrows.animated #art5 {
+  animation: ard5 9s -3s linear reverse infinite;
+}
+
+@keyframes ard5 {
+  0% {
+    opacity: 0;
+    transform: matrix(-0.29,-0.96,0.96,-0.29,935.052,633.01);
+  }
+  10% {
+    opacity: 1;
+  }
+  16% {
+    transform: matrix(-0.34,-0.94,0.94,-0.34,981.946,760.214);
+  }
+  18% {
+    transform: matrix(0.00,-1.00,1.00,0.00,989.953,779.581);
+  }
+  60% {
+    transform: matrix(0.00,-1.00,1.00,0.00,989.953,1164.631);
+  }
+  62% {
+    transform: matrix(-0.09,-1.00,1.00,-0.09,990.022,1183.608);
+  }
+  72% {
+    transform: matrix(-0.32,-0.95,0.95,-0.32,999.738,1235.513);
+  }
+  82% {
+    transform: matrix(-0.32,-0.95,0.95,-0.32,1020.322,1286.205);
+  }
+  91% {
+    opacity: 1;
+    transform: matrix(-0.01,-1.00,1.00,-0.01,1031.41,1335.47);
+  }
+  100% {
+    opacity: 0;
+    transform: matrix(0.14,-0.99,0.99,0.14,1030.386,1379.007);
+  }
+}
+
+#arrows.animated #ard6 {
+  animation: ard6 10s linear infinite;
+}
+
+#arrows.animated #art6 {
+  animation: ard6 10s linear reverse infinite;
+}
+
+@keyframes ard6 {
+  0% {
+    opacity: 0;
+    transform: matrix(0.37,-0.93,0.93,0.37,1084.11,475.483);
+  }
+  10% {
+    opacity: 1;
+  }
+  13% {
+    transform: matrix(0.37,-0.93,0.93,0.37,1037.042,586.213);
+  }
+  15% {
+    transform: matrix(0.21,-0.98,0.98,0.21,1032.464,602.293);
+  }
+  30% {
+    transform: matrix(0.21,-0.98,0.98,0.21,995.316,759.223);
+  }
+  32% {
+    transform: matrix(0.00,-1.00,1.00,0.00,989.868,776.559);
+  }
+  70% {
+    transform: matrix(0.00,-1.00,1.00,0.00,989.868,1164.283);
+  }
+  72% {
+    transform: matrix(-0.70,-0.71,0.71,-0.70,991.11,1174.647);
+  }
+  78% {
+    transform: matrix(-0.54,-0.84,0.84,-0.54,1020.187,1209.625);
+  }
+  86% {
+    transform: matrix(-0.25,-0.97,0.97,-0.25,1046.194,1266.913);
+  }
+  93% {
+    opacity: 1;
+    transform: matrix(-0.23,-0.97,0.97,-0.23,1059.699,1321.007);
+  }
+  100% {
+    opacity: 0;
+    transform: matrix(-0.23,-0.97,0.97,-0.23,1070.419,1365.316);
+  }
+}
+
+#arrows.animated #ard7 {
+  animation: ard7 9s -5s linear infinite;
+}
+
+#arrows.animated #art7 {
+  animation: ard7 9s -5s linear reverse infinite;
+}
+
+@keyframes ard7 {
+  0% {
+    opacity: 0;
+    transform: matrix(0.90,-0.43,0.43,0.90,1141.004,696.79);
+  }
+  10% {
+    opacity: 1;
+  }
+  10% {
+    transform: matrix(0.90,-0.43,0.43,0.90,1090.077,720.925);
+  }
+  12% {
+    transform: matrix(0.50,-0.87,0.87,0.50,1078.755,732.337);
+  }
+  30% {
+    transform: matrix(0.50,-0.87,0.87,0.50,997.093,890.606);
+  }
+  32% {
+    transform: matrix(0.00,-1.00,1.00,0.00,989.997,905.558);
+  }
+  60% {
+    transform: matrix(0.00,-1.00,1.00,0.00,989.997,1171.288);
+  }
+  62% {
+    transform: matrix(-0.92,-0.40,0.40,-0.92,992.738,1172.594);
+  }
+  72% {
+    transform: matrix(-0.74,-0.67,0.67,-0.74,1040.737,1204.214);
+  }
+  82% {
+    transform: matrix(-0.66,-0.75,0.75,-0.66,1088.284,1251.18);
+  }
+  91% {
+    opacity: 1;
+    transform: matrix(-0.74,-0.67,0.67,-0.74,1139.279,1302.007);
+  }
+  100% {
+    opacity: 0;
+    transform: matrix(-0.83,-0.56,0.56,-0.83,1186.751,1338.176);
+  }
+}
+
+#arrows.animated #ard8 {
+  animation: ard8 9s -1s linear infinite;
+}
+
+#arrows.animated #art8 {
+  animation: ard8 9s -1s linear reverse infinite;
+}
+
+@keyframes ard8 {
+  0% {
+    opacity: 0;
+    transform: matrix(0.90,-0.43,0.43,0.90,1141.004,696.79);
+  }
+  10% {
+    opacity: 1;
+  }
+  10% {
+    transform: matrix(0.90,-0.43,0.43,0.90,1090.077,720.925);
+  }
+  12% {
+    transform: matrix(0.50,-0.87,0.87,0.50,1078.755,732.337);
+  }
+  30% {
+    transform: matrix(0.50,-0.87,0.87,0.50,997.093,890.606);
+  }
+  32% {
+    transform: matrix(0.00,-1.00,1.00,0.00,989.997,905.558);
+  }
+  60% {
+    transform: matrix(0.00,-1.00,1.00,0.00,989.997,1171.288);
+  }
+  62% {
+    transform: matrix(-0.92,-0.40,0.40,-0.92,992.738,1172.594);
+  }
+  72% {
+    transform: matrix(-0.74,-0.67,0.67,-0.74,1040.737,1204.214);
+  }
+  74% {
+    transform: matrix(-0.98,-0.17,0.17,-0.98,1054.247,1210.975);
+  }
+  80% {
+    transform: matrix(-0.87,-0.49,0.49,-0.87,1081.67,1218.703);
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: matrix(-0.87,-0.49,0.49,-0.87,1177.617,1278.81);
+  }
+}
+
 /* ]]> */
 </style>
 
@@ -103,6 +492,8 @@
   <use xlink:href="#mol1" transform="rotate(90 0 0)"/>
   <use xlink:href="#co2"/>
 </g>
+<path id="ard" fill="#37ff00" d="M-11.22 0l22.15 10.7L6.47 0l4.46-10.71L-11.22-.01z"/>
+<path id="art" fill="#136100" stroke="#37ff00" d="M-5.35 0l-3.82 9.13L9.17 0-9.17-9.13-5.35 0z"/>
 </defs>
 
 <clipPath id="soil_clip">
@@ -611,10 +1002,54 @@
       <path fill="none" stroke="#FB8906" stroke-linecap="round" stroke-width="4" d="M-58.24-52.93c-1.02 10.19 6.49 17.1 16.76 15.43h0c10.27-1.66 17.78 5.25 16.76 15.43h0c-1.02 10.19 6.49 17.1 16.76 15.43h0C2.32-8.29 9.82-1.38 8.81 8.81h0C7.79 19 15.29 25.91 25.57 24.24h0c10.27-1.66 17.77 5.25 16.75 15.44h0c-1.02 10.19 6.49 17.1 16.76 15.43h0c10.27-1.66 17.78 5.25 16.76 15.43h0c-1.02 10.19 6.49 17.1 16.76 15.43h0c5.14-.83 9.58.48 12.61 3.27"/>
     </g>
   </g>
-
-  <use id="carbon1" opacity="0" xlink:href="#crb1"/>
-  <use id="carbon2" opacity="0" xlink:href="#crb2"/>
 </g>
+
+<g id="arr_path" opacity="0">
+  <g fill="none" stroke="#37FF00">
+    <polyline points="880.66 621.28 989.95 773.09 989.95 1174.86"/>
+    <line x1="886.17" x2="989.95" y1="591.01" y2="773.09"/>
+    <line x1="931.86" x2="989.95" y1="624.79" y2="773.09"/>
+    <path d="M781.7 1364.38s103.24-174.18 208.27-189.13"/>
+    <path d="M924.84 1203.02s0 16.56-16.56 38.25-31.97 45.67-28.55 105.05"/>
+    <path d="M965.87 1331.11s-12.34-43.83-5.19-87.65c7.14-43.83 29.24-67.75 29.24-67.75-36.85 30.37-40.91 75.18-50.53 125.87-9.62 50.68-35.51 62.52-35.51 62.52"/>
+    <path d="M1027.22 1389.87s13.38-65.84-4.22-104.21c-19.8-43.18-28.54-66.45-33.11-110.7 0 0 13.76 10.74 27.84 27.59s25.72 43.39 34.42 78.67c8.7 35.27 21.53 90.7 21.53 90.7"/>
+    <path d="M1195.94 1346.91s-34.78-18.12-93.48-80.91c-58.7-62.79-80.61-78.43-112.57-91.04"/>
+    <path d="M1174.5 1280.82s-41.83-26.2-67.52-43.59c-25.69-17.39-39.57-24.18-59.34-25.76"/>
+    <polyline points="787.77 829.98 929.45 860.23 989.53 1022.33"/>
+    <polyline points="1086.79 468.13 1031.33 598.52 989.93 772.97"/>
+    <polyline points="1150.52 696.16 1077.98 730.54 989.95 899.85"/>
+  </g>
+  <g fill="#37FF00">
+    <circle cx="886.35" cy="591.26" r="3.79"/>
+    <circle cx="1086.64" cy="468.35" r="3.79"/>
+    <circle cx="1150.04" cy="696.16" r="3.79"/>
+    <circle cx="880.78" cy="621.32" r="3.79"/>
+    <circle cx="787.86" cy="829.95" r="3.79"/>
+    <circle cx="931.94" cy="624.69" r="3.79"/>
+  </g>
+</g>
+
+<g id="arrows" opacity="0">
+<use id="art1" opacity="0" xlink:href="#art"/>
+<use id="art2" opacity="0" xlink:href="#art"/>
+<use id="art3" opacity="0" xlink:href="#art"/>
+<use id="art4" opacity="0" xlink:href="#art"/>
+<use id="art5" opacity="0" xlink:href="#art"/>
+<use id="art6" opacity="0" xlink:href="#art"/>
+<use id="art7" opacity="0" xlink:href="#art"/>
+<use id="art8" opacity="0" xlink:href="#art"/>
+<use id="ard1" opacity="0" xlink:href="#ard"/>
+<use id="ard2" opacity="0" xlink:href="#ard"/>
+<use id="ard3" opacity="0" xlink:href="#ard"/>
+<use id="ard4" opacity="0" xlink:href="#ard"/>
+<use id="ard5" opacity="0" xlink:href="#ard"/>
+<use id="ard6" opacity="0" xlink:href="#ard"/>
+<use id="ard7" opacity="0" xlink:href="#ard"/>
+<use id="ard8" opacity="0" xlink:href="#ard"/>
+</g>
+
+<use id="carbon1" opacity="0" xlink:href="#crb1"/>
+<use id="carbon2" opacity="0" xlink:href="#crb2"/>
 
 <script>
 <![CDATA[
@@ -663,11 +1098,14 @@ function animate(timestamp) {
       $("#ray").setAttribute("class", "animated");
       $("#carbon1").setAttribute("class", "animated");
       $("#carbon2").setAttribute("class", "animated");
+      $("#arrows").setAttribute("class", "animated");
       lock[1] = false;
     }
     $("#carbon1").setAttribute("opacity", local_progress);
     $("#carbon2").setAttribute("opacity", local_progress);
     $("#ray").setAttribute("opacity", local_progress);
+    $("#arr_path").setAttribute("opacity", local_progress);
+    $("#arrows").setAttribute("opacity", local_progress);
   }
 }
 
