@@ -1,0 +1,2200 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1680 948" style="background: #000">
+<style>
+/* <![CDATA[ */
+
+.bp2, .bp3, .bp4, .bp5, .bp6, .bp7, .bp8 {
+  visibility: hidden;
+}
+
+.animated .bp1, .animated .bp2, .animated .bp3, .animated .bp4, .animated .bp5, .animated .bp6, .animated .bp7, .animated .bp8 {
+visibility: hidden;
+animation-duration: .4s;
+animation-iteration-count: infinite;
+animation-timing-function: steps(1);
+}
+
+.animated #brd {
+  animation: brd 1.4s linear forwards;
+}
+
+@keyframes brd {
+  0% {
+    transform:rotate(0deg)
+  }
+  100% {
+    transform:rotate(-90deg)
+  }
+  0%, 20% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animated #plnk {
+  animation: plnk 1.4s linear forwards;
+}
+@keyframes plnk {
+  0% {
+    transform:matrix(1,0,0,1,834,19);
+  }
+  100% {
+    transform:matrix(-0.75,0.27,-0.27,-0.75,654,841);
+  }
+  0%, 20% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animated #rd1 {
+  animation: rd1 1.4s linear forwards;
+}
+@keyframes rd1 {
+  0% {
+    transform:matrix(1,0,0,1,825,343);
+  }
+  100% {
+    transform:matrix(-4,0,-0,-4,-100,400);
+  }
+  0%, 20% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animated #rd2 {
+  animation: rd2 1.4s linear forwards;
+}
+@keyframes rd2 {
+  0% {
+    transform:matrix(1,0,0,1,914,343);
+  }
+  100% {
+    transform:matrix(-2.65,5.20,-5.20,-2.65,533,749);
+  }
+  0%, 20% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animated #rd3 {
+  animation: rd3 1.4s linear forwards;
+}
+@keyframes rd3 {
+  0% {
+    transform:matrix(1,0,0,1,1003,343);
+  }
+  100% {
+    transform:matrix(-5.08,-1.85,1.85,-5.08,1000,998);
+  }
+  0%, 20% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animated #rd4 {
+  animation: rd4 1.4s linear forwards;
+}
+@keyframes rd4 {
+  0% {
+    transform:matrix(1,0,0,1,1092,343);
+  }
+  100% {
+    transform:matrix(0.74,4.20,-4.20,0.74,1233,250);
+  }
+  0%, 20% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animated #rd5 {
+  animation: rd5 1.4s linear forwards;
+}
+@keyframes rd5 {
+  0% {
+    transform:matrix(1,0,0,1,1181,343);
+  }
+  100% {
+    transform:matrix(-3.45,4.11,-4.11,-3.45,1902,686);
+  }
+  0%, 20% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animated #rd6 {
+  animation: rd6 1.4s linear forwards;
+}
+@keyframes rd6 {
+  0% {
+    transform:matrix(1,0,0,1,1270,343);
+  }
+  100% {
+    transform:matrix(0.19,-1.05,1.05,0.19,1430,560);
+  }
+  0%, 20% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animated #rd7 {
+  animation: rd7 1.4s linear forwards;
+}
+@keyframes rd7 {
+  0% {
+    transform:matrix(1,0,0,1,1359,343);
+  }
+  100% {
+    transform:matrix(-0.65,0.47,-0.47,-0.65,144,654);
+  }
+  0%, 20% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animated #rd8 {
+  animation: rd8 1.4s linear forwards;
+}
+@keyframes rd8 {
+  0% {
+    transform:matrix(1,0,0,1,1448,343);
+  }
+  100% {
+    transform:matrix(-1.56,0.70,-0.70,-1.56,1039,683);
+  }
+  0%, 20% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animated #rd9 {
+  animation: rd9 1.4s linear forwards;
+}
+@keyframes rd9 {
+  0% {
+    transform:matrix(1,0,0,1,1003,422);
+  }
+  100% {
+    transform:matrix(1.58,-4.34,4.34,1.58,1537,343);
+  }
+  0%, 20% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animated #bd1 {
+  animation: bd1 1.4s linear forwards;
+}
+@keyframes bd1 {
+  0% {
+    transform:matrix(1,0,0,1,825,189);
+  }
+  100% {
+    transform:matrix(-4,0,-0,-4,-100,400);
+  }
+  0%, 50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animated #bd2 {
+  animation: bd2 1.4s linear forwards;
+}
+@keyframes bd2 {
+  0% {
+    transform:matrix(1,0,0,1,825,226);
+  }
+  100% {
+    transform:matrix(-2,0,-0,-2,200,-100);
+  }
+  0%, 50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animated #bd3 {
+  animation: bd3 1.4s linear forwards;
+}
+@keyframes bd3 {
+  0% {
+    transform:matrix(1,0,0,1,825,348);
+  }
+  100% {
+    transform:matrix(-.5,0,-0,-.5,10,1000);
+  }
+  0%, 50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animated #bd4 {
+  animation: bd4 1.4s linear forwards;
+}
+@keyframes bd4 {
+  0% {
+    transform:matrix(1,0,0,1,825,385);
+  }
+  100% {
+    transform:matrix(-1.5,0,-0,-1.5,1700,50);
+  }
+  0%, 50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animated #bd5 {
+  animation: bd5 1.4s linear forwards;
+}
+@keyframes bd5 {
+  0% {
+    transform:matrix(1,0,0,1,825,385);
+  }
+  100% {
+    transform:matrix(-6,0,-0,-6,900,400);
+  }
+  0%, 50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animated #bd6 {
+  animation: bd6 1.4s linear forwards;
+}
+@keyframes bd6 {
+  0% {
+    transform:matrix(1,0,0,1,825,422);
+  }
+  100% {
+    transform:matrix(-3,0,-0,-3,1100,1000);
+  }
+  0%, 50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animated #bd7 {
+  animation: bd7 1.4s linear forwards;
+}
+@keyframes bd7 {
+  0% {
+    transform:matrix(1,0,0,1,825,459);
+  }
+  100% {
+    transform:matrix(-1,0,-0,-1,500,-100);
+  }
+  0%, 50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animated #bd8 {
+  animation: bd8 1.4s linear forwards;
+}
+@keyframes bd8 {
+  0% {
+    transform:matrix(1,0,0,1,914,189);
+  }
+  100% {
+    transform:matrix(1.01,-0.37,0.37,1.01,1446,449);
+  }
+  0%, 50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animated #bd9 {
+  animation: bd9 1.4s linear forwards;
+}
+@keyframes bd9 {
+  0% {
+    transform:matrix(1,0,0,1,914,226);
+  }
+  100% {
+    transform:matrix(0.63,-1.72,1.72,0.63,1040,805);
+  }
+  0%, 50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animated #bd10 {
+  animation: bd10 1.4s linear forwards;
+}
+@keyframes bd10 {
+  0% {
+    transform:matrix(1,0,0,1,914,348);
+  }
+  100% {
+    transform:matrix(-0.67,-3.77,3.77,-0.67,556,-92);
+  }
+  0%, 50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animated #bd11 {
+  animation: bd11 1.4s linear forwards;
+}
+@keyframes bd11 {
+  0% {
+    transform:matrix(1,0,0,1,914,385);
+  }
+  100% {
+    transform:matrix(-0.00,3.19,-3.19,-0.00,1399,-36);
+  }
+  0%, 50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animated #bd12 {
+  animation: bd12 1.4s linear forwards;
+}
+@keyframes bd12 {
+  0% {
+    transform:matrix(1,0,0,1,914,422);
+  }
+  100% {
+    transform:matrix(-2.65,5.20,-5.20,-2.65,533,749);
+  }
+  0%, 50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animated #bd13 {
+  animation: bd13 1.4s linear forwards;
+}
+@keyframes bd13 {
+  0% {
+    transform:matrix(1,0,0,1,914,459);
+  }
+  100% {
+    transform:matrix(-5.08,-1.85,1.85,-5.08,1000,998);
+  }
+  0%, 50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animated #bd14 {
+  animation: bd14 1.4s linear forwards;
+}
+@keyframes bd14 {
+  0% {
+    transform:matrix(1,0,0,1,914,496);
+  }
+  100% {
+    transform:matrix(0.74,4.20,-4.20,0.74,1233,250);
+  }
+  0%, 50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animated #bd15 {
+  animation: bd15 1.4s linear forwards;
+}
+@keyframes bd15 {
+  0% {
+    transform:matrix(1,0,0,1,1003,189);
+  }
+  100% {
+    transform:matrix(-3.45,4.11,-4.11,-3.45,1902,686);
+  }
+  0%, 50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animated #bd16 {
+  animation: bd16 1.4s linear forwards;
+}
+@keyframes bd16 {
+  0% {
+    transform:matrix(1,0,0,1,1003,226);
+  }
+  100% {
+    transform:matrix(0.19,-1.05,1.05,0.19,1430,560);
+  }
+  0%, 50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animated #bd17 {
+  animation: bd17 1.4s linear forwards;
+}
+@keyframes bd17 {
+  0% {
+    transform:matrix(1,0,0,1,1003,348);
+  }
+  100% {
+    transform:matrix(-0.65,0.47,-0.47,-0.65,144,654);
+  }
+  0%, 50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animated #bd18 {
+  animation: bd18 1.4s linear forwards;
+}
+@keyframes bd18 {
+  0% {
+    transform:matrix(1,0,0,1,1003,385);
+  }
+  100% {
+    transform:matrix(-1.56,0.70,-0.70,-1.56,1039,683);
+  }
+  0%, 50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animated #bd19 {
+  animation: bd19 1.4s linear forwards;
+}
+@keyframes bd19 {
+  0% {
+    transform:matrix(1,0,0,1,1003,422);
+  }
+  100% {
+    transform:matrix(1.58,-4.34,4.34,1.58,1809,-42);
+  }
+  0%, 50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animated #bd20 {
+  animation: bd20 1.4s linear forwards;
+}
+@keyframes bd20 {
+  0% {
+    transform:matrix(1,0,0,1,1003,459);
+  }
+  100% {
+    transform:matrix(1.30,0.75,-0.75,1.30,1050,148);
+  }
+  0%, 50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animated #bd21 {
+  animation: bd21 1.4s linear forwards;
+}
+@keyframes bd21 {
+  0% {
+    transform:matrix(1,0,0,1,1003,496);
+  }
+  100% {
+    transform:matrix(0.00,-3.03,3.03,0.00,77,90);
+  }
+  0%, 50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animated #bd22 {
+  animation: bd22 1.4s linear forwards;
+}
+@keyframes bd22 {
+  0% {
+    transform:matrix(1,0,0,1,1092,189);
+  }
+  100% {
+    transform:matrix(-1.69,0.30,-0.30,-1.69,1483,521);
+  }
+  0%, 50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animated #bd23 {
+  animation: bd23 1.4s linear forwards;
+}
+@keyframes bd23 {
+  0% {
+    transform:matrix(1,0,0,1,1092,226);
+  }
+  100% {
+    transform:matrix(2.86,-3.41,3.41,2.8,1504,722);
+  }
+  0%, 50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animated #bd24 {
+  animation: bd24 1.4s linear forwards;
+}
+@keyframes bd24 {
+  0% {
+    transform:matrix(1,0,0,1,1092,348);
+  }
+  100% {
+    transform:matrix(-3.45,-4.11,4.11,-3.45,183,723);
+  }
+  0%, 50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animated #bd25 {
+  animation: bd25 1.4s linear forwards;
+}
+@keyframes bd25 {
+  0% {
+    transform:matrix(1,0,0,1,1092,385);
+  }
+  100% {
+    transform:matrix(-0.17,0.95,-0.95,-0.17,808,-59);
+  }
+  0%, 50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animated #bd26 {
+  animation: bd26 1.4s linear forwards;
+}
+@keyframes bd26 {
+  0% {
+    transform:matrix(1,0,0,1,1092,422);
+  }
+  100% {
+    transform:matrix(0.67,-3.79,3.79,0.67,267,614);
+  }
+  0%, 50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animated #bd27 {
+  animation: bd27 1.4s linear forwards;
+}
+@keyframes bd27 {
+  0% {
+    transform:matrix(1,0,0,1,1092,459);
+  }
+  100% {
+    transform:matrix(-0.36,-1.00,1.00,-0.36,1051,23);
+  }
+  0%, 50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animated #bd28 {
+  animation: bd28 1.4s linear forwards;
+}
+@keyframes bd28 {
+  0% {
+    transform:matrix(1,0,0,1,1092,496);
+  }
+  100% {
+    transform:matrix(0.48,-1.31,1.31,0.48,1741,292);
+  }
+  0%, 50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animated #bd29 {
+  animation: bd29 1.4s linear forwards;
+}
+@keyframes bd29 {
+  0% {
+    transform:matrix(1,0,0,1,1181,189);
+  }
+  100% {
+    transform:matrix(-1.69,3.32,-3.32,-1.69,1986,962);
+  }
+  0%, 50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animated #bd30 {
+  animation: bd30 1.4s linear forwards;
+}
+@keyframes bd30 {
+  0% {
+    transform:matrix(1,0,0,1,1181,226);
+  }
+  100% {
+    transform:matrix(-0.75,0.27,-0.27,-0.75,654,841);
+  }
+  0%, 50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animated #bd31 {
+  animation: bd31 1.4s linear forwards;
+}
+@keyframes bd31 {
+  0% {
+    transform:matrix(1,0,0,1,1181,348);
+  }
+  100% {
+    transform:matrix(-0.77,4.35,-4.35,-0.77,106,428);
+  }
+  0%, 50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animated #bd32 {
+  animation: bd32 1.4s linear forwards;
+}
+@keyframes bd32 {
+  0% {
+    transform:matrix(1,0,0,1,1181,385);
+  }
+  100% {
+    transform:matrix(-5.14,2.96,-2.96,-5.14,1987,398);
+  }
+  0%, 50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animated #bd33 {
+  animation: bd33 1.4s linear forwards;
+}
+@keyframes bd33 {
+  0% {
+    transform:matrix(1,0,0,1,1181,422);
+  }
+  100% {
+    transform:matrix(0.29,0.81,-0.81,0.29,1893,224);
+  }
+  0%, 50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animated #bd34 {
+  animation: bd34 1.4s linear forwards;
+}
+@keyframes bd34 {
+  0% {
+    transform:matrix(1,0,0,1,1181,459);
+  }
+  100% {
+    transform:matrix(1.45,-0.83,0.83,1.45,1194,139);
+  }
+  0%, 50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animated #bd35 {
+  animation: bd35 1.4s linear forwards;
+}
+@keyframes bd35 {
+  0% {
+    transform:matrix(1,0,0,1,1181,496);
+  }
+  100% {
+    transform:matrix(-1.72,0.30,-0.30,-1.72,1061,-29);
+  }
+  0%, 50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animated #bd36 {
+  animation: bd36 1.4s linear forwards;
+}
+@keyframes bd36 {
+  0% {
+    transform:matrix(1,0,0,1,1270,189);
+  }
+  100% {
+    transform:matrix(0.00,-2.88,2.88,0.00,1415,770);
+  }
+  0%, 50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animated #bd37 {
+  animation: bd37 1.4s linear forwards;
+}
+@keyframes bd37 {
+  0% {
+    transform:matrix(1,0,0,1,1270,226);
+  }
+  100% {
+    transform:matrix(-1.64,0.94,-0.94,-1.64,1509,849);
+  }
+  0%, 50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animated #bd38 {
+  animation: bd38 1.4s linear forwards;
+}
+@keyframes bd38 {
+  0% {
+    transform:matrix(1,0,0,1,1270,348);
+  }
+  100% {
+    transform:matrix(1.99,-5.48,5.48,1.99,241,709);
+  }
+  0%, 50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animated #bd39 {
+  animation: bd39 1.4s linear forwards;
+}
+@keyframes bd39 {
+  0% {
+    transform:matrix(1,0,0,1,1270,385);
+  }
+  100% {
+    transform:matrix(-1.45,3.11,-3.11,-1.45,64,681);
+  }
+  0%, 50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animated #bd40 {
+  animation: bd40 1.4s linear forwards;
+}
+@keyframes bd40 {
+  0% {
+    transform:matrix(1,0,0,1,1270,422);
+  }
+  100% {
+    transform:matrix(2.34,-0.85,0.85,2.34,543,982);
+  }
+  0%, 50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animated #bd41 {
+  animation: bd41 1.4s linear forwards;
+}
+@keyframes bd41 {
+  0% {
+    transform:matrix(1,0,0,1,1270,459);
+  }
+  100% {
+    transform:matrix(-4.36,1.59,-1.59,-4.36,1558,490);
+  }
+  0%, 50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animated #bd42 {
+  animation: bd42 1.4s linear forwards;
+}
+@keyframes bd42 {
+  0% {
+    transform:matrix(1,0,0,1,1270,496);
+  }
+  100% {
+    transform:matrix(0.70,-1.21,1.21,0.70,817,946);
+  }
+  0%, 50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animated #bd43 {
+  animation: bd43 1.4s linear forwards;
+}
+@keyframes bd43 {
+  0% {
+    transform:matrix(1,0,0,1,1359,189);
+  }
+  100% {
+    transform:matrix(-2.08,-0.37,0.37,-2.08,644,505);
+  }
+  0%, 50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animated #bd44 {
+  animation: bd44 1.4s linear forwards;
+}
+@keyframes bd44 {
+  0% {
+    transform:matrix(1,0,0,1,1359,226);
+  }
+  100% {
+    transform:matrix(1.58,-1.32,1.32,1.58,1492,903);
+  }
+  0%, 50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animated #bd45 {
+  animation: bd45 1.4s linear forwards;
+}
+@keyframes bd45 {
+  0% {
+    transform:matrix(1,0,0,1,1359,348);
+  }
+  100% {
+    transform:matrix(2.76,4.77,-4.77,2.76,345,805);
+  }
+  0%, 50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animated #bd46 {
+  animation: bd46 1.4s linear forwards;
+}
+@keyframes bd46 {
+  0% {
+    transform:matrix(1,0,0,1,1359,385);
+  }
+  100% {
+    transform:matrix(-0.96,1.15,-1.15,-0.96,678,589);
+  }
+  0%, 50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animated #bd47 {
+  animation: bd47 1.4s linear forwards;
+}
+@keyframes bd47 {
+  0% {
+    transform:matrix(1,0,0,1,1359,422);
+  }
+  100% {
+    transform:matrix(-4.89,-2.83,2.83,-4.89,706,539);
+  }
+  0%, 50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animated #bd48 {
+  animation: bd48 1.4s linear forwards;
+}
+@keyframes bd48 {
+  0% {
+    transform:matrix(1,0,0,1,1359,459);
+  }
+  100% {
+    transform:matrix(4.78,-1.74,1.74,4.78,1296,845);
+  }
+  0%, 50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animated #bd49 {
+  animation: bd49 1.4s linear forwards;
+}
+@keyframes bd49 {
+  0% {
+    transform:matrix(1,0,0,1,1359,496);
+  }
+  100% {
+    transform:matrix(-0.68,3.86,-3.86,-0.68,-63,803);
+  }
+  0%, 50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animated #bd50 {
+  animation: bd50 1.4s linear forwards;
+}
+@keyframes bd50 {
+  0% {
+    transform:matrix(1,0,0,1,1448,189);
+  }
+  100% {
+    transform:matrix(2.25,-1.30,1.30,2.25,991,949);
+  }
+  0%, 50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animated #bd51 {
+  animation: bd51 1.4s linear forwards;
+}
+@keyframes bd51 {
+  0% {
+    transform:matrix(1,0,0,1,1448,226);
+  }
+  100% {
+    transform:matrix(-3.11,-3.71,3.71,-3.11,781,-99);
+  }
+  0%, 50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animated #bd52 {
+  animation: bd52 1.4s linear forwards;
+}
+@keyframes bd52 {
+  0% {
+    transform:matrix(1,0,0,1,1448,348);
+  }
+  100% {
+    transform:matrix(-2.71,-3.23,3.23,-2.71,1250,177);
+  }
+  0%, 50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animated #bd53 {
+  animation: bd53 1.4s linear forwards;
+}
+@keyframes bd53 {
+  0% {
+    transform:matrix(1,0,0,1,1448,385);
+  }
+  100% {
+    transform:matrix(-1.12,0.41,-0.41,-1.12,1930,343);
+  }
+  0%, 50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animated #bd54 {
+  animation: bd54 1.4s linear forwards;
+}
+@keyframes bd54 {
+  0% {
+    transform:matrix(1,0,0,1,1448,422);
+  }
+  100% {
+    transform:matrix(0.80,0.67,-0.67,0.80,1239,974);
+  }
+  0%, 50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animated #bd55 {
+  animation: bd55 1.4s linear forwards;
+}
+@keyframes bd55 {
+  0% {
+    transform:matrix(1,0,0,1,1448,459);
+  }
+  100% {
+    transform:matrix(-1.00,-2.75,2.75,-1.00,977,75);
+  }
+  0%, 50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animated #bd56 {
+  animation: bd56 1.4s linear forwards;
+}
+@keyframes bd56 {
+  0% {
+    transform:matrix(1,0,0,1,1448,496);
+  }
+  100% {
+    transform:matrix(1.13,-1.35,1.35,1.13,487,761);
+  }
+  0%, 50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animated #bd57 {
+  animation: bd57 1.4s linear forwards;
+}
+@keyframes bd57 {
+  0% {
+    transform:matrix(1,0,0,1,1537,189);
+  }
+  100% {
+    transform:matrix(0.88,4.97,-4.97,0.88,204,679);
+  }
+  0%, 50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animated #bd58 {
+  animation: bd58 1.4s linear forwards;
+}
+@keyframes bd58 {
+  0% {
+    transform:matrix(1,0,0,1,1537,226);
+  }
+  100% {
+    transform:matrix(-2.15,-4.60,4.60,-2.15,1593,90);
+  }
+  0%, 50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animated #bd59 {
+  animation: bd59 1.4s linear forwards;
+}
+@keyframes bd59 {
+  0% {
+    transform:matrix(1,0,0,1,1537,348);
+  }
+  100% {
+    transform:matrix(1.52,-0.44,0.44,1.52,131,99);
+  }
+  0%, 50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animated #bd60 {
+  animation: bd60 1.4s linear forwards;
+}
+@keyframes bd60 {
+  0% {
+    transform:matrix(1,0,0,1,1537,385);
+  }
+  100% {
+    transform:matrix(0.42,2.39,-2.39,0.42,47,150);
+  }
+  0%, 50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animated #bd61 {
+  animation: bd61 1.4s linear forwards;
+}
+@keyframes bd61 {
+  0% {
+    transform:matrix(1,0,0,1,1537,422);
+  }
+  100% {
+    transform:matrix(0.63,1.08,-1.08,0.63,1379,-28);
+  }
+  0%, 50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animated #bd62 {
+  animation: bd62 1.4s linear forwards;
+}
+@keyframes bd62 {
+  0% {
+    transform:matrix(1,0,0,1,1537,459);
+  }
+  100% {
+    transform:matrix(-0.49,-0.41,0.41,-0.49,1129,444);
+  }
+  0%, 50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animated #bd63 {
+  animation: bd63 1.4s linear forwards;
+}
+@keyframes bd63 {
+  0% {
+    transform:matrix(1,0,0,1,1537,496);
+  }
+  100% {
+    transform:matrix(2.96,-0.52,0.52,2.96,1653,723);
+  }
+  0%, 50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* ]]> */
+</style>
+<defs>
+<g id="board">
+<path fill="#6B342B" d="M852 407l4-403 4-4H0v415l4-3 848-5zM19 18h814v370H19V18z"/>
+<path fill="#1C0500" d="M8 8L4 411l-4 4h860V0l-4 3L8 8zm833 389H27V27h814v370z"/>
+<rect width="834" height="389" x="13" y="12.33" fill="#290800"/>
+<path fill="#500D03" d="M4 2.83v408h852v-408H4zm833 389H23v-370h814v370z"/>
+</g>
+<linearGradient id="rod_grd">
+  <stop offset="0" stop-color="#4a2f00"/>
+  <stop offset="1" stop-color="#823200"/>
+</linearGradient>
+<rect id="rod" x="-7" y="-185" width="14" height="370" fill="url(#rod_grd)"/>
+<radialGradient id="bead_grd" cx=".7" cy=".3" r=".7">
+  <stop offset="0" stop-color="#ffd200"/>
+  <stop offset="1" stop-color="#c27100"/>
+</radialGradient>
+<radialGradient id="bead_grd2" cx=".5" cy=".5">
+  <stop offset="0" stop-color="#ffd200"/>
+  <stop offset="1" stop-color="#c27100"/>
+</radialGradient>
+<linearGradient id="bead_grd3" x1=".25" x2=".75" y2="0">
+  <stop offset="0" stop-color="#c27100"/>
+  <stop offset="1" stop-color="#ffd200"/>
+</linearGradient>
+<linearGradient id="bead_grd4">
+  <stop offset="0" stop-color="#290800"/>
+  <stop offset="1" stop-color="#500d03"/>
+</linearGradient>
+<linearGradient id="bead_grd5" x1=".25" y1=".75" x2=".9" y2=".1">
+  <stop offset="0" stop-color="#c27100"/>
+  <stop offset="1" stop-color="#ffd200"/>
+</linearGradient>
+<linearGradient id="bead_grd6" x1=".25" x2=".75" y2="0">
+  <stop offset="0" stop-color="#c27100"/>
+  <stop offset="1" stop-color="#ffd200"/>
+</linearGradient>
+<linearGradient id="bead_grd7">
+  <stop offset="0" stop-color="#290800"/>
+  <stop offset="1" stop-color="#500d03"/>
+</linearGradient>
+<linearGradient id="bead_grd8" x1="0" x2="1" y1="1" y2="0">
+  <stop offset="0" stop-color="#c27100"/>
+  <stop offset="1" stop-color="#ffd200"/>
+</linearGradient>
+<linearGradient id="bead_grd9" x1=".25" y1=".75" x2=".9" y2=".1">
+  <stop offset="0" stop-color="#c27100"/>
+  <stop offset="1" stop-color="#ffd200"/>
+</linearGradient>
+<linearGradient id="bead_grd10" x1=".25" x2=".75" y2="0">
+  <stop offset="0" stop-color="#c27100"/>
+  <stop offset="1" stop-color="#ffd200"/>
+</linearGradient>
+<g id="bead1">
+  <path fill="url(#bead_grd)" d="M-36.5 0a36.4 36.4 0 004.47 17.5h64.06A36.4 36.4 0 0036.5 0a36.4 36.4 0 00-4.46-17.5h-64.06A36.4 36.4 0 00-36.5 0z"/>
+  <path fill="#2F0F00" d="M32.67-16.25c-.2-.42-.4-.84-.64-1.25h-64.06A36.4 36.4 0 00-36.5 0a36.4 36.4 0 004.46 17.5h64.06c.31-.57.61-1.16.9-1.75h-45.44c-10 0-16-9-17-18s2-14 2-14h60.19z" opacity=".1"/>
+  <path fill="#2F0F00" d="M-30.18-17.5h-1.85A36.3 36.3 0 00-36.48 0a36.4 36.4 0 004.46 17.5H1.04c-.07-.09-15.84-.29-23.33-.4-2.33-.03-4.62-.88-5.8-2.75A34.08 34.08 0 01-33-.75c-.75-7.98 1.02-13.41 2.83-16.75z" opacity=".2"/>
+</g>
+<g id="bead2">
+  <path fill="url(#bead_grd7)" d="M-10.33 7.05v-23.1H9.74v23.1h-20.07z"/>
+  <path fill="url(#bead_grd9)" d="M28.64-19.1c-6.45-3.96-16.89-6.53-28.66-6.54-11.3 0-21.35 2.37-27.85 6.06l-.14.08c-4.7 2.7-7.49 6.1-7.49 9.8C-35.5-.92-19.62 6.21-.02 6.21 19.57 6.22 35.45-.9 35.45-9.7c0-3.46-2.46-6.66-6.64-9.28l-.17-.1zM-9.04-9.7c0-2.24 4.04-4.06 9.02-4.06C4.96-13.76 9-11.94 9-9.7 9-7.47 4.96-5.66-.02-5.66c-3.01 0-5.67-.66-7.31-1.67C-8.41-8-9.04-8.82-9.04-9.71z"/>
+  <path fill="url(#bead_grd10)" d="M35.45-9.7C35.45-.9 19.57 6.22-.02 6.22-19.62 6.22-35.5-.9-35.5-9.7c-1.85 6.17-.91 19.52 1 23.32 3.76 7.5 14.88 14.92 34.48 14.93 19.59 0 30.12-6.32 34.48-14.93 1.99-3.92 2.9-18.56 1-23.31z"/>
+  <path fill="#ebb101" d="M35.45-9.35v-.71c0 8.8-15.88 15.92-35.47 15.92-19.6 0-35.48-7.13-35.48-15.93v.72c0 8.8 15.88 16.93 35.48 16.93 19.59 0 35.47-8.13 35.47-16.93"/>
+</g>
+<g id="bead3">
+  <path fill="url(#bead_grd6)" fill-rule="nonzero" d="M-35.87-8.15s-.56 3.18-.6 4.25a72 72 0 00.6 10.65C-33.44 22.25-19.8 33.8.01 33.8c11.18 0 20.39-3.87 26.73-9.92l.16-.16a30.43 30.43 0 008.98-16.98c.38-2.33.67-7.07.61-9.43a81.4 81.4 0 00-.6-5.47h-71.76z"/>
+  <path fill="url(#bead_grd7)" d="M-10.33 7.05v-23.1H9.74v23.1h-20.07z"/>
+  <path fill="url(#bead_grd8)" fill-rule="nonzero" d="M29-23.8C22.46-30.53 11.92-34.9 0-34.9c-11.42 0-21.6 4.02-28.16 10.29l-.15.13c-4.74 4.59-7.57 10.36-7.57 16.63C-35.87 7.1-19.8 19.21.01 19.21c19.81 0 35.87-12.1 35.88-27.05 0-5.89-2.5-11.33-6.72-15.77l-.18-.19zM-9.11-7.85c0-3.8 4.08-6.88 9.12-6.88 5.04 0 9.12 3.08 9.12 6.88S5.05-.97.01-.97c-3.04 0-5.73-1.12-7.4-2.85A5.8 5.8 0 01-9.1-7.85z"/>
+  <path fill="#ebb101" fill-rule="nonzero" d="M35.88-7.24v-1.21C35.88 6.49 19.82 17.6.02 17.6c-19.82 0-35.88-11.11-35.88-26.06v1.22C-35.87 7.7-19.8 19.82.01 19.82c19.81 0 35.87-12.11 35.88-27.06"/>
+</g>
+<g id="bead4">
+  <path fill="url(#bead_grd3)" fill-rule="nonzero" d="M-36.13-4.41s-.83 5.37 0 11c.98 6.57 7.17 28.92 36 28.92 26.45 0 34.45-19.51 35.98-26.59 1.47-6.86 0-13.33 0-13.33-23.61 14.72-48.37 14.45-71.98 0z"/>
+  <path fill="url(#bead_grd4)" d="M-10.51 4.02v-16.89H9.62v16.9a10.9 10.9 0 00-20.13 0z"/>
+  <path fill="url(#bead_grd5)" fill-rule="nonzero" d="M28.93-21.91c-6.54-7.88-17.13-13-29.07-13-11.45 0-21.66 4.7-28.25 12.04l-.14.16a29.18 29.18 0 00-7.6 19.44c0 17.47 16.11 31.64 35.99 31.64 19.87 0 35.98-14.16 35.98-31.63a29 29 0 00-6.73-18.44l-.18-.21zM-9.29-3.27c0-4.44 4.1-8.04 9.15-8.04C4.9-11.31 9-7.71 9-3.27 9 1.18 4.9 4.78-.14 4.78a9.58 9.58 0 01-7.41-3.33A7.38 7.38 0 01-9.3-3.27z"/>
+  <path fill="#eba101" fill-rule="nonzero" d="M35.84-2.55v-1.43c0 17.48-16.1 31.64-35.98 31.64-19.88 0-35.99-14.17-35.99-31.64v1.42c0 17.48 16.11 31.64 35.99 31.64 19.87 0 35.98-14.16 35.98-31.63"/>
+</g>
+<path id="bead5" fill="url(#bead_grd2)" d="M0-36.5a36.5 36.5 0 100 73 36.5 36.5 0 000-73zM-9.28 0A9.28 9.28 0 119.28 0 9.28 9.28 0 01-9.28 0z"/>
+<use id="bead6" xlink:href="#bead4" transform="scale(1 -1)"/>
+<use id="bead7" xlink:href="#bead3" transform="scale(1 -1)"/>
+<use id="bead8" xlink:href="#bead2" transform="scale(1 -1)"/>
+
+<rect id="plank" width="834" height="19" fill="#500D03"/>
+</defs>
+
+<image href="bg.jpg" width="1680" height="947"/>
+
+<g id="all">
+
+<use id="brd" x="751" y="136" xlink:href="#board"/>
+
+<use id="rd1" transform="translate(825 343)" xlink:href="#rod"/>
+<use id="rd2" transform="translate(914 343)" xlink:href="#rod"/>
+<use id="rd3" transform="translate(1003 343)" xlink:href="#rod"/>
+<use id="rd4" transform="translate(1092 343)" xlink:href="#rod"/>
+<use id="rd5" transform="translate(1181 343)" xlink:href="#rod"/>
+<use id="rd6" transform="translate(1270 343)" xlink:href="#rod"/>
+<use id="rd7" transform="translate(1359 343)" xlink:href="#rod"/>
+<use id="rd8" transform="translate(1448 343)" xlink:href="#rod"/>
+<use id="rd9" transform="translate(1537 343)" xlink:href="#rod"/>
+
+<use id="plnk" transform="translate(764 272)" xlink:href="#plank"/>
+
+<g id="rod_beads1">
+  <g id="bd1" transform="translate(825 189)">
+  <use class="bp1" xlink:href="#bead1"/>
+  <use class="bp2" xlink:href="#bead2"/>
+  <use class="bp3" xlink:href="#bead3"/>
+  <use class="bp4" xlink:href="#bead4"/>
+  <use class="bp5" xlink:href="#bead5"/>
+  <use class="bp6" xlink:href="#bead6"/>
+  <use class="bp7" xlink:href="#bead7"/>
+  <use class="bp8" xlink:href="#bead8"/>
+  </g>
+
+  <g id="bd2" transform="translate(825 226)">
+  <use class="bp1" xlink:href="#bead1"/>
+  <use class="bp2" xlink:href="#bead2"/>
+  <use class="bp3" xlink:href="#bead3"/>
+  <use class="bp4" xlink:href="#bead4"/>
+  <use class="bp5" xlink:href="#bead5"/>
+  <use class="bp6" xlink:href="#bead6"/>
+  <use class="bp7" xlink:href="#bead7"/>
+  <use class="bp8" xlink:href="#bead8"/>
+  </g>
+
+  <g id="bd3" transform="translate(825 348)">
+  <use class="bp1" xlink:href="#bead1"/>
+  <use class="bp2" xlink:href="#bead2"/>
+  <use class="bp3" xlink:href="#bead3"/>
+  <use class="bp4" xlink:href="#bead4"/>
+  <use class="bp5" xlink:href="#bead5"/>
+  <use class="bp6" xlink:href="#bead6"/>
+  <use class="bp7" xlink:href="#bead7"/>
+  <use class="bp8" xlink:href="#bead8"/>
+  </g>
+
+  <g id="bd4" transform="translate(825 385)">
+  <use class="bp1" xlink:href="#bead1"/>
+  <use class="bp2" xlink:href="#bead2"/>
+  <use class="bp3" xlink:href="#bead3"/>
+  <use class="bp4" xlink:href="#bead4"/>
+  <use class="bp5" xlink:href="#bead5"/>
+  <use class="bp6" xlink:href="#bead6"/>
+  <use class="bp7" xlink:href="#bead7"/>
+  <use class="bp8" xlink:href="#bead8"/>
+  </g>
+
+  <g id="bd5" transform="translate(825 422)">
+  <use class="bp1" xlink:href="#bead1"/>
+  <use class="bp2" xlink:href="#bead2"/>
+  <use class="bp3" xlink:href="#bead3"/>
+  <use class="bp4" xlink:href="#bead4"/>
+  <use class="bp5" xlink:href="#bead5"/>
+  <use class="bp6" xlink:href="#bead6"/>
+  <use class="bp7" xlink:href="#bead7"/>
+  <use class="bp8" xlink:href="#bead8"/>
+  </g>
+
+  <g id="bd6" transform="translate(825 459)">
+  <use class="bp1" xlink:href="#bead1"/>
+  <use class="bp2" xlink:href="#bead2"/>
+  <use class="bp3" xlink:href="#bead3"/>
+  <use class="bp4" xlink:href="#bead4"/>
+  <use class="bp5" xlink:href="#bead5"/>
+  <use class="bp6" xlink:href="#bead6"/>
+  <use class="bp7" xlink:href="#bead7"/>
+  <use class="bp8" xlink:href="#bead8"/>
+  </g>
+
+  <g id="bd7" transform="translate(825 496)">
+  <use class="bp1" xlink:href="#bead1"/>
+  <use class="bp2" xlink:href="#bead2"/>
+  <use class="bp3" xlink:href="#bead3"/>
+  <use class="bp4" xlink:href="#bead4"/>
+  <use class="bp5" xlink:href="#bead5"/>
+  <use class="bp6" xlink:href="#bead6"/>
+  <use class="bp7" xlink:href="#bead7"/>
+  <use class="bp8" xlink:href="#bead8"/>
+  </g>
+</g>
+
+<g id="rod_beads2">
+  <g id="bd8" transform="translate(914 189)">
+  <use class="bp1" xlink:href="#bead1"/>
+  <use class="bp2" xlink:href="#bead2"/>
+  <use class="bp3" xlink:href="#bead3"/>
+  <use class="bp4" xlink:href="#bead4"/>
+  <use class="bp5" xlink:href="#bead5"/>
+  <use class="bp6" xlink:href="#bead6"/>
+  <use class="bp7" xlink:href="#bead7"/>
+  <use class="bp8" xlink:href="#bead8"/>
+  </g>
+
+  <g id="bd9" transform="translate(914 226)">
+  <use class="bp1" xlink:href="#bead1"/>
+  <use class="bp2" xlink:href="#bead2"/>
+  <use class="bp3" xlink:href="#bead3"/>
+  <use class="bp4" xlink:href="#bead4"/>
+  <use class="bp5" xlink:href="#bead5"/>
+  <use class="bp6" xlink:href="#bead6"/>
+  <use class="bp7" xlink:href="#bead7"/>
+  <use class="bp8" xlink:href="#bead8"/>
+  </g>
+
+  <g id="bd10" transform="translate(914 348)">
+  <use class="bp1" xlink:href="#bead1"/>
+  <use class="bp2" xlink:href="#bead2"/>
+  <use class="bp3" xlink:href="#bead3"/>
+  <use class="bp4" xlink:href="#bead4"/>
+  <use class="bp5" xlink:href="#bead5"/>
+  <use class="bp6" xlink:href="#bead6"/>
+  <use class="bp7" xlink:href="#bead7"/>
+  <use class="bp8" xlink:href="#bead8"/>
+  </g>
+
+  <g id="bd11" transform="translate(914 385)">
+  <use class="bp1" xlink:href="#bead1"/>
+  <use class="bp2" xlink:href="#bead2"/>
+  <use class="bp3" xlink:href="#bead3"/>
+  <use class="bp4" xlink:href="#bead4"/>
+  <use class="bp5" xlink:href="#bead5"/>
+  <use class="bp6" xlink:href="#bead6"/>
+  <use class="bp7" xlink:href="#bead7"/>
+  <use class="bp8" xlink:href="#bead8"/>
+  </g>
+
+  <g id="bd12" transform="translate(914 422)">
+  <use class="bp1" xlink:href="#bead1"/>
+  <use class="bp2" xlink:href="#bead2"/>
+  <use class="bp3" xlink:href="#bead3"/>
+  <use class="bp4" xlink:href="#bead4"/>
+  <use class="bp5" xlink:href="#bead5"/>
+  <use class="bp6" xlink:href="#bead6"/>
+  <use class="bp7" xlink:href="#bead7"/>
+  <use class="bp8" xlink:href="#bead8"/>
+  </g>
+
+  <g id="bd13" transform="translate(914 459)">
+  <use class="bp1" xlink:href="#bead1"/>
+  <use class="bp2" xlink:href="#bead2"/>
+  <use class="bp3" xlink:href="#bead3"/>
+  <use class="bp4" xlink:href="#bead4"/>
+  <use class="bp5" xlink:href="#bead5"/>
+  <use class="bp6" xlink:href="#bead6"/>
+  <use class="bp7" xlink:href="#bead7"/>
+  <use class="bp8" xlink:href="#bead8"/>
+  </g>
+
+  <g id="bd14" transform="translate(914 496)">
+  <use class="bp1" xlink:href="#bead1"/>
+  <use class="bp2" xlink:href="#bead2"/>
+  <use class="bp3" xlink:href="#bead3"/>
+  <use class="bp4" xlink:href="#bead4"/>
+  <use class="bp5" xlink:href="#bead5"/>
+  <use class="bp6" xlink:href="#bead6"/>
+  <use class="bp7" xlink:href="#bead7"/>
+  <use class="bp8" xlink:href="#bead8"/>
+  </g>
+</g>
+
+<g id="rod_beads3">
+  <g id="bd15" transform="translate(1003 189)">
+  <use class="bp1" xlink:href="#bead1"/>
+  <use class="bp2" xlink:href="#bead2"/>
+  <use class="bp3" xlink:href="#bead3"/>
+  <use class="bp4" xlink:href="#bead4"/>
+  <use class="bp5" xlink:href="#bead5"/>
+  <use class="bp6" xlink:href="#bead6"/>
+  <use class="bp7" xlink:href="#bead7"/>
+  <use class="bp8" xlink:href="#bead8"/>
+  </g>
+
+  <g id="bd16" transform="translate(1003 226)">
+  <use class="bp1" xlink:href="#bead1"/>
+  <use class="bp2" xlink:href="#bead2"/>
+  <use class="bp3" xlink:href="#bead3"/>
+  <use class="bp4" xlink:href="#bead4"/>
+  <use class="bp5" xlink:href="#bead5"/>
+  <use class="bp6" xlink:href="#bead6"/>
+  <use class="bp7" xlink:href="#bead7"/>
+  <use class="bp8" xlink:href="#bead8"/>
+  </g>
+
+  <g id="bd17" transform="translate(1003 348)">
+  <use class="bp1" xlink:href="#bead1"/>
+  <use class="bp2" xlink:href="#bead2"/>
+  <use class="bp3" xlink:href="#bead3"/>
+  <use class="bp4" xlink:href="#bead4"/>
+  <use class="bp5" xlink:href="#bead5"/>
+  <use class="bp6" xlink:href="#bead6"/>
+  <use class="bp7" xlink:href="#bead7"/>
+  <use class="bp8" xlink:href="#bead8"/>
+  </g>
+
+  <g id="bd18" transform="translate(1003 385)">
+  <use class="bp1" xlink:href="#bead1"/>
+  <use class="bp2" xlink:href="#bead2"/>
+  <use class="bp3" xlink:href="#bead3"/>
+  <use class="bp4" xlink:href="#bead4"/>
+  <use class="bp5" xlink:href="#bead5"/>
+  <use class="bp6" xlink:href="#bead6"/>
+  <use class="bp7" xlink:href="#bead7"/>
+  <use class="bp8" xlink:href="#bead8"/>
+  </g>
+
+  <g id="bd19" transform="translate(1003 422)">
+  <use class="bp1" xlink:href="#bead1"/>
+  <use class="bp2" xlink:href="#bead2"/>
+  <use class="bp3" xlink:href="#bead3"/>
+  <use class="bp4" xlink:href="#bead4"/>
+  <use class="bp5" xlink:href="#bead5"/>
+  <use class="bp6" xlink:href="#bead6"/>
+  <use class="bp7" xlink:href="#bead7"/>
+  <use class="bp8" xlink:href="#bead8"/>
+  </g>
+
+  <g id="bd20" transform="translate(1003 459)">
+  <use class="bp1" xlink:href="#bead1"/>
+  <use class="bp2" xlink:href="#bead2"/>
+  <use class="bp3" xlink:href="#bead3"/>
+  <use class="bp4" xlink:href="#bead4"/>
+  <use class="bp5" xlink:href="#bead5"/>
+  <use class="bp6" xlink:href="#bead6"/>
+  <use class="bp7" xlink:href="#bead7"/>
+  <use class="bp8" xlink:href="#bead8"/>
+  </g>
+
+  <g id="bd21" transform="translate(1003 496)">
+  <use class="bp1" xlink:href="#bead1"/>
+  <use class="bp2" xlink:href="#bead2"/>
+  <use class="bp3" xlink:href="#bead3"/>
+  <use class="bp4" xlink:href="#bead4"/>
+  <use class="bp5" xlink:href="#bead5"/>
+  <use class="bp6" xlink:href="#bead6"/>
+  <use class="bp7" xlink:href="#bead7"/>
+  <use class="bp8" xlink:href="#bead8"/>
+  </g>
+</g>
+
+<g id="rod_beads4">
+  <g id="bd22" transform="translate(1092 189)">
+  <use class="bp1" xlink:href="#bead1"/>
+  <use class="bp2" xlink:href="#bead2"/>
+  <use class="bp3" xlink:href="#bead3"/>
+  <use class="bp4" xlink:href="#bead4"/>
+  <use class="bp5" xlink:href="#bead5"/>
+  <use class="bp6" xlink:href="#bead6"/>
+  <use class="bp7" xlink:href="#bead7"/>
+  <use class="bp8" xlink:href="#bead8"/>
+  </g>
+
+  <g id="bd23" transform="translate(1092 226)">
+  <use class="bp1" xlink:href="#bead1"/>
+  <use class="bp2" xlink:href="#bead2"/>
+  <use class="bp3" xlink:href="#bead3"/>
+  <use class="bp4" xlink:href="#bead4"/>
+  <use class="bp5" xlink:href="#bead5"/>
+  <use class="bp6" xlink:href="#bead6"/>
+  <use class="bp7" xlink:href="#bead7"/>
+  <use class="bp8" xlink:href="#bead8"/>
+  </g>
+
+  <g id="bd24" transform="translate(1092 348)">
+  <use class="bp1" xlink:href="#bead1"/>
+  <use class="bp2" xlink:href="#bead2"/>
+  <use class="bp3" xlink:href="#bead3"/>
+  <use class="bp4" xlink:href="#bead4"/>
+  <use class="bp5" xlink:href="#bead5"/>
+  <use class="bp6" xlink:href="#bead6"/>
+  <use class="bp7" xlink:href="#bead7"/>
+  <use class="bp8" xlink:href="#bead8"/>
+  </g>
+
+  <g id="bd25" transform="translate(1092 385)">
+  <use class="bp1" xlink:href="#bead1"/>
+  <use class="bp2" xlink:href="#bead2"/>
+  <use class="bp3" xlink:href="#bead3"/>
+  <use class="bp4" xlink:href="#bead4"/>
+  <use class="bp5" xlink:href="#bead5"/>
+  <use class="bp6" xlink:href="#bead6"/>
+  <use class="bp7" xlink:href="#bead7"/>
+  <use class="bp8" xlink:href="#bead8"/>
+  </g>
+
+  <g id="bd26" transform="translate(1092 422)">
+  <use class="bp1" xlink:href="#bead1"/>
+  <use class="bp2" xlink:href="#bead2"/>
+  <use class="bp3" xlink:href="#bead3"/>
+  <use class="bp4" xlink:href="#bead4"/>
+  <use class="bp5" xlink:href="#bead5"/>
+  <use class="bp6" xlink:href="#bead6"/>
+  <use class="bp7" xlink:href="#bead7"/>
+  <use class="bp8" xlink:href="#bead8"/>
+  </g>
+
+  <g id="bd27" transform="translate(1092 459)">
+  <use class="bp1" xlink:href="#bead1"/>
+  <use class="bp2" xlink:href="#bead2"/>
+  <use class="bp3" xlink:href="#bead3"/>
+  <use class="bp4" xlink:href="#bead4"/>
+  <use class="bp5" xlink:href="#bead5"/>
+  <use class="bp6" xlink:href="#bead6"/>
+  <use class="bp7" xlink:href="#bead7"/>
+  <use class="bp8" xlink:href="#bead8"/>
+  </g>
+
+  <g id="bd28" transform="translate(1092 496)">
+  <use class="bp1" xlink:href="#bead1"/>
+  <use class="bp2" xlink:href="#bead2"/>
+  <use class="bp3" xlink:href="#bead3"/>
+  <use class="bp4" xlink:href="#bead4"/>
+  <use class="bp5" xlink:href="#bead5"/>
+  <use class="bp6" xlink:href="#bead6"/>
+  <use class="bp7" xlink:href="#bead7"/>
+  <use class="bp8" xlink:href="#bead8"/>
+  </g>
+</g>
+
+<g id="rod_beads5">
+  <g id="bd29" transform="translate(1181 189)">
+  <use class="bp1" xlink:href="#bead1"/>
+  <use class="bp2" xlink:href="#bead2"/>
+  <use class="bp3" xlink:href="#bead3"/>
+  <use class="bp4" xlink:href="#bead4"/>
+  <use class="bp5" xlink:href="#bead5"/>
+  <use class="bp6" xlink:href="#bead6"/>
+  <use class="bp7" xlink:href="#bead7"/>
+  <use class="bp8" xlink:href="#bead8"/>
+  </g>
+
+  <g id="bd30" transform="translate(1181 226)">
+  <use class="bp1" xlink:href="#bead1"/>
+  <use class="bp2" xlink:href="#bead2"/>
+  <use class="bp3" xlink:href="#bead3"/>
+  <use class="bp4" xlink:href="#bead4"/>
+  <use class="bp5" xlink:href="#bead5"/>
+  <use class="bp6" xlink:href="#bead6"/>
+  <use class="bp7" xlink:href="#bead7"/>
+  <use class="bp8" xlink:href="#bead8"/>
+  </g>
+
+  <g id="bd31" transform="translate(1181 348)">
+  <use class="bp1" xlink:href="#bead1"/>
+  <use class="bp2" xlink:href="#bead2"/>
+  <use class="bp3" xlink:href="#bead3"/>
+  <use class="bp4" xlink:href="#bead4"/>
+  <use class="bp5" xlink:href="#bead5"/>
+  <use class="bp6" xlink:href="#bead6"/>
+  <use class="bp7" xlink:href="#bead7"/>
+  <use class="bp8" xlink:href="#bead8"/>
+  </g>
+
+  <g id="bd32" transform="translate(1181 385)">
+  <use class="bp1" xlink:href="#bead1"/>
+  <use class="bp2" xlink:href="#bead2"/>
+  <use class="bp3" xlink:href="#bead3"/>
+  <use class="bp4" xlink:href="#bead4"/>
+  <use class="bp5" xlink:href="#bead5"/>
+  <use class="bp6" xlink:href="#bead6"/>
+  <use class="bp7" xlink:href="#bead7"/>
+  <use class="bp8" xlink:href="#bead8"/>
+  </g>
+
+  <g id="bd33" transform="translate(1181 422)">
+  <use class="bp1" xlink:href="#bead1"/>
+  <use class="bp2" xlink:href="#bead2"/>
+  <use class="bp3" xlink:href="#bead3"/>
+  <use class="bp4" xlink:href="#bead4"/>
+  <use class="bp5" xlink:href="#bead5"/>
+  <use class="bp6" xlink:href="#bead6"/>
+  <use class="bp7" xlink:href="#bead7"/>
+  <use class="bp8" xlink:href="#bead8"/>
+  </g>
+
+  <g id="bd34" transform="translate(1181 459)">
+  <use class="bp1" xlink:href="#bead1"/>
+  <use class="bp2" xlink:href="#bead2"/>
+  <use class="bp3" xlink:href="#bead3"/>
+  <use class="bp4" xlink:href="#bead4"/>
+  <use class="bp5" xlink:href="#bead5"/>
+  <use class="bp6" xlink:href="#bead6"/>
+  <use class="bp7" xlink:href="#bead7"/>
+  <use class="bp8" xlink:href="#bead8"/>
+  </g>
+
+  <g id="bd35" transform="translate(1181 496)">
+  <use class="bp1" xlink:href="#bead1"/>
+  <use class="bp2" xlink:href="#bead2"/>
+  <use class="bp3" xlink:href="#bead3"/>
+  <use class="bp4" xlink:href="#bead4"/>
+  <use class="bp5" xlink:href="#bead5"/>
+  <use class="bp6" xlink:href="#bead6"/>
+  <use class="bp7" xlink:href="#bead7"/>
+  <use class="bp8" xlink:href="#bead8"/>
+  </g>
+</g>
+
+<g id="rod_beads6">
+  <g id="bd36" transform="translate(1270 189)">
+  <use class="bp1" xlink:href="#bead1"/>
+  <use class="bp2" xlink:href="#bead2"/>
+  <use class="bp3" xlink:href="#bead3"/>
+  <use class="bp4" xlink:href="#bead4"/>
+  <use class="bp5" xlink:href="#bead5"/>
+  <use class="bp6" xlink:href="#bead6"/>
+  <use class="bp7" xlink:href="#bead7"/>
+  <use class="bp8" xlink:href="#bead8"/>
+  </g>
+
+  <g id="bd37" transform="translate(1270 226)">
+  <use class="bp1" xlink:href="#bead1"/>
+  <use class="bp2" xlink:href="#bead2"/>
+  <use class="bp3" xlink:href="#bead3"/>
+  <use class="bp4" xlink:href="#bead4"/>
+  <use class="bp5" xlink:href="#bead5"/>
+  <use class="bp6" xlink:href="#bead6"/>
+  <use class="bp7" xlink:href="#bead7"/>
+  <use class="bp8" xlink:href="#bead8"/>
+  </g>
+
+  <g id="bd38" transform="translate(1270 348)">
+  <use class="bp1" xlink:href="#bead1"/>
+  <use class="bp2" xlink:href="#bead2"/>
+  <use class="bp3" xlink:href="#bead3"/>
+  <use class="bp4" xlink:href="#bead4"/>
+  <use class="bp5" xlink:href="#bead5"/>
+  <use class="bp6" xlink:href="#bead6"/>
+  <use class="bp7" xlink:href="#bead7"/>
+  <use class="bp8" xlink:href="#bead8"/>
+  </g>
+
+  <g id="bd39" transform="translate(1270 385)">
+  <use class="bp1" xlink:href="#bead1"/>
+  <use class="bp2" xlink:href="#bead2"/>
+  <use class="bp3" xlink:href="#bead3"/>
+  <use class="bp4" xlink:href="#bead4"/>
+  <use class="bp5" xlink:href="#bead5"/>
+  <use class="bp6" xlink:href="#bead6"/>
+  <use class="bp7" xlink:href="#bead7"/>
+  <use class="bp8" xlink:href="#bead8"/>
+  </g>
+
+  <g id="bd40" transform="translate(1270 422)">
+  <use class="bp1" xlink:href="#bead1"/>
+  <use class="bp2" xlink:href="#bead2"/>
+  <use class="bp3" xlink:href="#bead3"/>
+  <use class="bp4" xlink:href="#bead4"/>
+  <use class="bp5" xlink:href="#bead5"/>
+  <use class="bp6" xlink:href="#bead6"/>
+  <use class="bp7" xlink:href="#bead7"/>
+  <use class="bp8" xlink:href="#bead8"/>
+  </g>
+
+  <g id="bd41" transform="translate(1270 459)">
+  <use class="bp1" xlink:href="#bead1"/>
+  <use class="bp2" xlink:href="#bead2"/>
+  <use class="bp3" xlink:href="#bead3"/>
+  <use class="bp4" xlink:href="#bead4"/>
+  <use class="bp5" xlink:href="#bead5"/>
+  <use class="bp6" xlink:href="#bead6"/>
+  <use class="bp7" xlink:href="#bead7"/>
+  <use class="bp8" xlink:href="#bead8"/>
+  </g>
+
+  <g id="bd42" transform="translate(1270 496)">
+  <use class="bp1" xlink:href="#bead1"/>
+  <use class="bp2" xlink:href="#bead2"/>
+  <use class="bp3" xlink:href="#bead3"/>
+  <use class="bp4" xlink:href="#bead4"/>
+  <use class="bp5" xlink:href="#bead5"/>
+  <use class="bp6" xlink:href="#bead6"/>
+  <use class="bp7" xlink:href="#bead7"/>
+  <use class="bp8" xlink:href="#bead8"/>
+  </g>
+</g>
+
+<g id="rod_beads7">
+  <g id="bd43" transform="translate(1359 189)">
+  <use class="bp1" xlink:href="#bead1"/>
+  <use class="bp2" xlink:href="#bead2"/>
+  <use class="bp3" xlink:href="#bead3"/>
+  <use class="bp4" xlink:href="#bead4"/>
+  <use class="bp5" xlink:href="#bead5"/>
+  <use class="bp6" xlink:href="#bead6"/>
+  <use class="bp7" xlink:href="#bead7"/>
+  <use class="bp8" xlink:href="#bead8"/>
+  </g>
+
+  <g id="bd44" transform="translate(1359 226)">
+  <use class="bp1" xlink:href="#bead1"/>
+  <use class="bp2" xlink:href="#bead2"/>
+  <use class="bp3" xlink:href="#bead3"/>
+  <use class="bp4" xlink:href="#bead4"/>
+  <use class="bp5" xlink:href="#bead5"/>
+  <use class="bp6" xlink:href="#bead6"/>
+  <use class="bp7" xlink:href="#bead7"/>
+  <use class="bp8" xlink:href="#bead8"/>
+  </g>
+
+  <g id="bd45" transform="translate(1359 348)">
+  <use class="bp1" xlink:href="#bead1"/>
+  <use class="bp2" xlink:href="#bead2"/>
+  <use class="bp3" xlink:href="#bead3"/>
+  <use class="bp4" xlink:href="#bead4"/>
+  <use class="bp5" xlink:href="#bead5"/>
+  <use class="bp6" xlink:href="#bead6"/>
+  <use class="bp7" xlink:href="#bead7"/>
+  <use class="bp8" xlink:href="#bead8"/>
+  </g>
+
+  <g id="bd46" transform="translate(1359 385)">
+  <use class="bp1" xlink:href="#bead1"/>
+  <use class="bp2" xlink:href="#bead2"/>
+  <use class="bp3" xlink:href="#bead3"/>
+  <use class="bp4" xlink:href="#bead4"/>
+  <use class="bp5" xlink:href="#bead5"/>
+  <use class="bp6" xlink:href="#bead6"/>
+  <use class="bp7" xlink:href="#bead7"/>
+  <use class="bp8" xlink:href="#bead8"/>
+  </g>
+
+  <g id="bd47" transform="translate(1359 422)">
+  <use class="bp1" xlink:href="#bead1"/>
+  <use class="bp2" xlink:href="#bead2"/>
+  <use class="bp3" xlink:href="#bead3"/>
+  <use class="bp4" xlink:href="#bead4"/>
+  <use class="bp5" xlink:href="#bead5"/>
+  <use class="bp6" xlink:href="#bead6"/>
+  <use class="bp7" xlink:href="#bead7"/>
+  <use class="bp8" xlink:href="#bead8"/>
+  </g>
+
+  <g id="bd48" transform="translate(1359 459)">
+  <use class="bp1" xlink:href="#bead1"/>
+  <use class="bp2" xlink:href="#bead2"/>
+  <use class="bp3" xlink:href="#bead3"/>
+  <use class="bp4" xlink:href="#bead4"/>
+  <use class="bp5" xlink:href="#bead5"/>
+  <use class="bp6" xlink:href="#bead6"/>
+  <use class="bp7" xlink:href="#bead7"/>
+  <use class="bp8" xlink:href="#bead8"/>
+  </g>
+
+  <g id="bd49" transform="translate(1359 496)">
+  <use class="bp1" xlink:href="#bead1"/>
+  <use class="bp2" xlink:href="#bead2"/>
+  <use class="bp3" xlink:href="#bead3"/>
+  <use class="bp4" xlink:href="#bead4"/>
+  <use class="bp5" xlink:href="#bead5"/>
+  <use class="bp6" xlink:href="#bead6"/>
+  <use class="bp7" xlink:href="#bead7"/>
+  <use class="bp8" xlink:href="#bead8"/>
+  </g>
+</g>
+
+<g id="rod_beads8">
+  <g id="bd50" transform="translate(1448 189)">
+  <use class="bp1" xlink:href="#bead1"/>
+  <use class="bp2" xlink:href="#bead2"/>
+  <use class="bp3" xlink:href="#bead3"/>
+  <use class="bp4" xlink:href="#bead4"/>
+  <use class="bp5" xlink:href="#bead5"/>
+  <use class="bp6" xlink:href="#bead6"/>
+  <use class="bp7" xlink:href="#bead7"/>
+  <use class="bp8" xlink:href="#bead8"/>
+  </g>
+
+  <g id="bd51" transform="translate(1448 226)">
+  <use class="bp1" xlink:href="#bead1"/>
+  <use class="bp2" xlink:href="#bead2"/>
+  <use class="bp3" xlink:href="#bead3"/>
+  <use class="bp4" xlink:href="#bead4"/>
+  <use class="bp5" xlink:href="#bead5"/>
+  <use class="bp6" xlink:href="#bead6"/>
+  <use class="bp7" xlink:href="#bead7"/>
+  <use class="bp8" xlink:href="#bead8"/>
+  </g>
+
+  <g id="bd52" transform="translate(1448 348)">
+  <use class="bp1" xlink:href="#bead1"/>
+  <use class="bp2" xlink:href="#bead2"/>
+  <use class="bp3" xlink:href="#bead3"/>
+  <use class="bp4" xlink:href="#bead4"/>
+  <use class="bp5" xlink:href="#bead5"/>
+  <use class="bp6" xlink:href="#bead6"/>
+  <use class="bp7" xlink:href="#bead7"/>
+  <use class="bp8" xlink:href="#bead8"/>
+  </g>
+
+  <g id="bd53" transform="translate(1448 385)">
+  <use class="bp1" xlink:href="#bead1"/>
+  <use class="bp2" xlink:href="#bead2"/>
+  <use class="bp3" xlink:href="#bead3"/>
+  <use class="bp4" xlink:href="#bead4"/>
+  <use class="bp5" xlink:href="#bead5"/>
+  <use class="bp6" xlink:href="#bead6"/>
+  <use class="bp7" xlink:href="#bead7"/>
+  <use class="bp8" xlink:href="#bead8"/>
+  </g>
+
+  <g id="bd54" transform="translate(1448 422)">
+  <use class="bp1" xlink:href="#bead1"/>
+  <use class="bp2" xlink:href="#bead2"/>
+  <use class="bp3" xlink:href="#bead3"/>
+  <use class="bp4" xlink:href="#bead4"/>
+  <use class="bp5" xlink:href="#bead5"/>
+  <use class="bp6" xlink:href="#bead6"/>
+  <use class="bp7" xlink:href="#bead7"/>
+  <use class="bp8" xlink:href="#bead8"/>
+  </g>
+
+  <g id="bd55" transform="translate(1448 459)">
+  <use class="bp1" xlink:href="#bead1"/>
+  <use class="bp2" xlink:href="#bead2"/>
+  <use class="bp3" xlink:href="#bead3"/>
+  <use class="bp4" xlink:href="#bead4"/>
+  <use class="bp5" xlink:href="#bead5"/>
+  <use class="bp6" xlink:href="#bead6"/>
+  <use class="bp7" xlink:href="#bead7"/>
+  <use class="bp8" xlink:href="#bead8"/>
+  </g>
+
+  <g id="bd56" transform="translate(1448 496)">
+  <use class="bp1" xlink:href="#bead1"/>
+  <use class="bp2" xlink:href="#bead2"/>
+  <use class="bp3" xlink:href="#bead3"/>
+  <use class="bp4" xlink:href="#bead4"/>
+  <use class="bp5" xlink:href="#bead5"/>
+  <use class="bp6" xlink:href="#bead6"/>
+  <use class="bp7" xlink:href="#bead7"/>
+  <use class="bp8" xlink:href="#bead8"/>
+  </g>
+</g>
+
+<g id="rod_beads9">
+  <g id="bd57" transform="translate(1537 189)">
+  <use class="bp1" xlink:href="#bead1"/>
+  <use class="bp2" xlink:href="#bead2"/>
+  <use class="bp3" xlink:href="#bead3"/>
+  <use class="bp4" xlink:href="#bead4"/>
+  <use class="bp5" xlink:href="#bead5"/>
+  <use class="bp6" xlink:href="#bead6"/>
+  <use class="bp7" xlink:href="#bead7"/>
+  <use class="bp8" xlink:href="#bead8"/>
+  </g>
+
+  <g id="bd58" transform="translate(1537 226)">
+  <use class="bp1" xlink:href="#bead1"/>
+  <use class="bp2" xlink:href="#bead2"/>
+  <use class="bp3" xlink:href="#bead3"/>
+  <use class="bp4" xlink:href="#bead4"/>
+  <use class="bp5" xlink:href="#bead5"/>
+  <use class="bp6" xlink:href="#bead6"/>
+  <use class="bp7" xlink:href="#bead7"/>
+  <use class="bp8" xlink:href="#bead8"/>
+  </g>
+
+  <g id="bd59" transform="translate(1537 348)">
+  <use class="bp1" xlink:href="#bead1"/>
+  <use class="bp2" xlink:href="#bead2"/>
+  <use class="bp3" xlink:href="#bead3"/>
+  <use class="bp4" xlink:href="#bead4"/>
+  <use class="bp5" xlink:href="#bead5"/>
+  <use class="bp6" xlink:href="#bead6"/>
+  <use class="bp7" xlink:href="#bead7"/>
+  <use class="bp8" xlink:href="#bead8"/>
+  </g>
+
+  <g id="bd60" transform="translate(1537 385)">
+  <use class="bp1" xlink:href="#bead1"/>
+  <use class="bp2" xlink:href="#bead2"/>
+  <use class="bp3" xlink:href="#bead3"/>
+  <use class="bp4" xlink:href="#bead4"/>
+  <use class="bp5" xlink:href="#bead5"/>
+  <use class="bp6" xlink:href="#bead6"/>
+  <use class="bp7" xlink:href="#bead7"/>
+  <use class="bp8" xlink:href="#bead8"/>
+  </g>
+
+  <g id="bd61" transform="translate(1537 422)">
+  <use class="bp1" xlink:href="#bead1"/>
+  <use class="bp2" xlink:href="#bead2"/>
+  <use class="bp3" xlink:href="#bead3"/>
+  <use class="bp4" xlink:href="#bead4"/>
+  <use class="bp5" xlink:href="#bead5"/>
+  <use class="bp6" xlink:href="#bead6"/>
+  <use class="bp7" xlink:href="#bead7"/>
+  <use class="bp8" xlink:href="#bead8"/>
+  </g>
+
+  <g id="bd62" transform="translate(1537 459)">
+  <use class="bp1" xlink:href="#bead1"/>
+  <use class="bp2" xlink:href="#bead2"/>
+  <use class="bp3" xlink:href="#bead3"/>
+  <use class="bp4" xlink:href="#bead4"/>
+  <use class="bp5" xlink:href="#bead5"/>
+  <use class="bp6" xlink:href="#bead6"/>
+  <use class="bp7" xlink:href="#bead7"/>
+  <use class="bp8" xlink:href="#bead8"/>
+  </g>
+
+  <g id="bd63" transform="translate(1537 496)">
+  <use class="bp1" xlink:href="#bead1"/>
+  <use class="bp2" xlink:href="#bead2"/>
+  <use class="bp3" xlink:href="#bead3"/>
+  <use class="bp4" xlink:href="#bead4"/>
+  <use class="bp5" xlink:href="#bead5"/>
+  <use class="bp6" xlink:href="#bead6"/>
+  <use class="bp7" xlink:href="#bead7"/>
+  <use class="bp8" xlink:href="#bead8"/>
+  </g>
+</g>
+</g>
+
+<style>
+/* <![CDATA[ */
+
+.bp1 {animation-name: bp11}
+.bp2 {animation-name: bp12}
+.bp3 {animation-name: bp13}
+.bp4 {animation-name: bp14}
+.bp5 {animation-name: bp15}
+.bp6 {animation-name: bp16}
+.bp7 {animation-name: bp17}
+.bp8 {animation-name: bp18}
+
+@keyframes bp11 {0.00%{visibility: visible} 12.50%{visibility: hidden}}
+@keyframes bp12 {12.50%{visibility: visible} 25.00%{visibility: hidden}}
+@keyframes bp13 {25.00%{visibility: visible} 37.50%{visibility: hidden}}
+@keyframes bp14 {37.50%{visibility: visible} 50.00%{visibility: hidden}}
+@keyframes bp15 {50.00%{visibility: visible} 62.50%{visibility: hidden}}
+@keyframes bp16 {62.50%{visibility: visible} 75.00%{visibility: hidden}}
+@keyframes bp17 {75.00%{visibility: visible} 87.50%{visibility: hidden}}
+@keyframes bp18 {87.50%{visibility: visible} 100.00%{visibility: hidden}}
+
+/* ]]> */
+</style>
+
+<script>
+<![CDATA[
+setTimeout(function(){
+  document.querySelector("#all").setAttribute("class", "animated");
+
+  setTimeout(function(){
+    document.querySelector("#all").setAttribute("class", "");
+    document.querySelector("#all").setAttribute("opacity", "0");
+  }, 3000);
+}, 2000);
+]]>
+</script>
+</svg>
