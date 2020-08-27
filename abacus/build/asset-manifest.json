@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.536efd68.chunk.css",
+    "main.js": "/static/js/main.8be51c89.chunk.js",
+    "main.js.map": "/static/js/main.8be51c89.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.cc4fb634.js",
+    "runtime-main.js.map": "/static/js/runtime-main.cc4fb634.js.map",
+    "static/css/2.70e35f80.chunk.css": "/static/css/2.70e35f80.chunk.css",
+    "static/js/2.10f4c243.chunk.js": "/static/js/2.10f4c243.chunk.js",
+    "static/js/2.10f4c243.chunk.js.map": "/static/js/2.10f4c243.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.81ca999814be81eb121337a4606de8ee.js": "/precache-manifest.81ca999814be81eb121337a4606de8ee.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.70e35f80.chunk.css.map": "/static/css/2.70e35f80.chunk.css.map",
+    "static/css/main.536efd68.chunk.css.map": "/static/css/main.536efd68.chunk.css.map",
+    "static/js/2.10f4c243.chunk.js.LICENSE.txt": "/static/js/2.10f4c243.chunk.js.LICENSE.txt",
+    "static/media/abacus_animation.svg": "/static/media/abacus_animation.a312c9d3.svg",
+    "static/media/lng-tanker.svg": "/static/media/lng-tanker.c98153c9.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cc4fb634.js",
+    "static/css/2.70e35f80.chunk.css",
+    "static/js/2.10f4c243.chunk.js",
+    "static/css/main.536efd68.chunk.css",
+    "static/js/main.8be51c89.chunk.js"
+  ]
+}
