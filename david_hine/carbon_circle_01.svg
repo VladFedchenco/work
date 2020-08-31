@@ -772,6 +772,10 @@ svg|a:link, svg|a:visited {
   animation: circle_arrows var(--circle_speed) linear infinite;
 }
 
+#circle_arrows.animated.paused {
+  animation-play-state: paused;
+}
+
 @keyframes circle_arrows {
   0% {
     transform: translate(991px, 1076px) rotate(0deg) translate(-991px, -1076px);
@@ -795,6 +799,10 @@ svg|a:link, svg|a:visited {
 
 #therm_minus:active .btn_bg, #therm_plus:active .btn_bg {
   fill: #871900;
+}
+
+#pause_play:hover path {
+  fill: #666;
 }
 
 /* ]]> */
@@ -1291,9 +1299,7 @@ svg|a:link, svg|a:visited {
 
 <g id="circle_arrows" class="" style="--circle_speed: 12s" opacity="0" fill="none" stroke="#3AEAFF" stroke-miterlimit="10" stroke-width="10">
   <polyline points="271.91 1104.64 217.61 1045.94 158.91 1100.24"/>
-  <polyline points="1823.08 1051.84 1764.38 1106.15 1710.08 1047.45"/>
 </g>
-
 
 <linearGradient id="sun_msk_grd" x2="0" y2="1">
   <stop offset="0" stop-color="#fff"/>
@@ -1762,6 +1768,15 @@ svg|a:link, svg|a:visited {
 </a>
 </g>
 
+<a id="pause_play" href="javascript:;" opacity="0" display="none">
+<rect width="57.51" height="52.96" x="963.38" y="1747.69" fill="#FFF"/>
+<g id="pause" fill="#333">
+<path d="M972.18 1797.46h10.93a3.05 3.05 0 003.05-3.05v-39.22a3.05 3.05 0 00-3.05-3.05h-10.93a3.05 3.05 0 00-3.05 3.05v39.22a3.04 3.04 0 003.05 3.05z"/>
+<path d="M998.12 1755.19v39.22a3.05 3.05 0 003.05 3.05h10.93a3.05 3.05 0 003.05-3.05v-39.22a3.05 3.05 0 00-3.05-3.05h-10.93a3.04 3.04 0 00-3.05 3.05z"/>
+</g>
+<path id="play" opacity="0" fill="#333" d="M977.64 1789.46v-29.32a3.91 3.91 0 015.92-3.36l24.45 14.66a3.91 3.91 0 010 6.71l-24.45 14.66a3.9 3.9 0 01-5.92-3.35z"/>
+</a>
+
 <use id="carbon3" opacity="0" xlink:href="#crb1"/>
 <use id="carbon4" opacity="0" xlink:href="#crb2"/>
 
@@ -1770,7 +1785,8 @@ svg|a:link, svg|a:visited {
 
 let start;
 let total_time = 40000;
-let timeframe = [2000, 8000, 13000, 14000, 17000, 21000, 28000, 33000];
+let timeframe = [2000, 8000, 16000, 17000, 20000, 24000, 35000, 40000];
+// let timeframe = [100, 1000, 2000, 3000, 3100, 3200, 3300, 33000];
 let lock = [true, true, true, true, true, true, true, true];
 
 function $(sel) {
@@ -1783,9 +1799,25 @@ var hum = .5;
 var trm = .5;
 var hum_trm = .5;
 
+var pause = false;
+
+$("#pause_play").onclick = function() {
+  if(!pause) {
+    pause = true;
+    $("#circle_arrows").setAttribute("class", "animated paused");
+    $("#pause").setAttribute("opacity", 0);
+    $("#play").setAttribute("opacity", 1);
+  } else {
+    pause = false;
+    $("#circle_arrows").setAttribute("class", "animated");
+    $("#pause").setAttribute("opacity", 1);
+    $("#play").setAttribute("opacity", 0);
+  }
+}
+
 function set_speed() {
   hum_trm = (hum + trm) / 2;
-  let time_rotate = 6 + (24 * (1 - hum_trm));
+  let time_rotate = 2 + (10 * (1 - hum_trm));
   $("#hum_clip_rect").setAttribute("transform", "translate(0 " + 82 * (1 - hum) + ")");
   $("#therm_clip_rect").setAttribute("transform", "translate(0 " + 92 * (1 - trm) + ")");
   $("#circle_arrows").setAttribute("style", "--circle_speed:" + time_rotate + "s");
@@ -1793,7 +1825,7 @@ function set_speed() {
 
 $("#hum_minus").onclick = function() {
   if(hum >= .11) {
-    hum -= .05;
+    hum -= .2;
   } else {
     hum = 0;
   }
@@ -1802,7 +1834,7 @@ $("#hum_minus").onclick = function() {
 
 $("#hum_plus").onclick = function() {
   if(hum <= .89) {
-    hum += .05;
+    hum += .2;
   } else {
     hum = 1;
   }
@@ -1811,7 +1843,7 @@ $("#hum_plus").onclick = function() {
 
 $("#therm_minus").onclick = function() {
   if(trm >= .11) {
-    trm -= .05;
+    trm -= .2;
   } else {
     trm = 0;
   }
@@ -1820,7 +1852,7 @@ $("#therm_minus").onclick = function() {
 
 $("#therm_plus").onclick = function() {
   if(trm <= .89) {
-    trm += .05;
+    trm += .2;
   } else {
     trm = 1;
   }
@@ -2014,6 +2046,7 @@ function animate(timestamp) {
       $("#bttm_line").setAttribute("stroke-dashoffset", 2432 * local_progress2 + 2432);
       $("#management").setAttribute("opacity", local_progress2);
       $("#icn_therm").setAttribute("display", "inline");
+      $("#pause_play").setAttribute("display", "inline");
       $("#icn_humidity").setAttribute("display", "inline");
     }
 
@@ -2026,7 +2059,11 @@ function animate(timestamp) {
       $("#icn_humidity").setAttribute("opacity", local_progress3);
       $("#sensor").setAttribute("opacity", local_progress3);
       $("#circle_arrows").setAttribute("opacity", local_progress3);
+      $("#pause_play").setAttribute("opacity", local_progress3);
+    }
+    if(lock[7]) {
       $("#circle_arrows").setAttribute("class", "animated");
+      lock[7] = false;
     }
   }
 }
