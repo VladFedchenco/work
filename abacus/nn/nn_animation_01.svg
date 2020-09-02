@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1880 1060" style="background: #000">
+<style>
+/* <![CDATA[ */
+
+path {
+  fill: none;
+  stroke-width: 1.6;
+}
+
+/* ]]> */
+</style>
+<defs>
+  <circle id="dt" r="9"/>
+</defs>
+
+<path id="line1" stroke="#555" d=""/><use id="dot1" fill="#555" xlink:href="#dt"/>
+<path id="line2" stroke="#666" d=""/><use id="dot2" fill="#666" xlink:href="#dt"/>
+<path id="line3" stroke="#777" d=""/><use id="dot3" fill="#777" xlink:href="#dt"/>
+<path id="line4" stroke="#888" d=""/><use id="dot4" fill="#888" xlink:href="#dt"/>
+<path id="line5" stroke="#999" d=""/><use id="dot5" fill="#999" xlink:href="#dt"/>
+<path id="line6" stroke="#aaa" d=""/><use id="dot6" fill="#aaa" xlink:href="#dt"/>
+<path id="line7" stroke="#bbb" d=""/><use id="dot7" fill="#bbb" xlink:href="#dt"/>
+<path id="line8" stroke="#ccc" d=""/><use id="dot8" fill="#ccc" xlink:href="#dt"/>
+<path id="line9" stroke="#ddd" d=""/><use id="dot9" fill="#ddd" xlink:href="#dt"/>
+<path id="line10" stroke="#eee" d=""/><use id="dot10" fill="#eee" xlink:href="#dt"/>
+<path id="line11" stroke="#fff" d=""/><use id="dot11" fill="#fff" xlink:href="#dt"/>
+
+<script>
+<![CDATA[
+
+var dx = [1,1,1,1,1,1,1,1,1,1,1];
+var dy = [1,1,1,1,1,1,1,1,1,1,1];
+var angle = [0,.5,1,1.5,2,2.5,3,3.5,4,4.5,5];
+var anglex = [6,5.5,5,4.5,4,3.5,3,2.5,2,1.5,1];
+
+var start;
+var total_time = 4000;
+
+var l1 = [0,626,230,100,0,160,-50,244,-36,105,25,156,7,170,-127,287,-127,201,43,318,35,154,-76,285,-76]
+var l2 = [0,626,230,100,0,100,6,201,-6,146,-6,198,30,222,211,340,211,180,-187,298,-187,156,118,288,118]
+var l3 = [0,626,237,100,0,142,30,212,20,130,-100,204,-115,169,48,288,48,193,-142,312,-150,227,156,363,98]
+var l4 = [0,626,230,100,0,196,30,263,-18,150,-100,266,-30,135,108,252,108,118,-84,270,-100,266,191,419,191]
+var l5 = [0,626,230,125,0,200,-37,272,-79,140,-69,218,-53,165,91,286,91,177,-132,370,-30,214,210,372,150]
+var l6 = [0,626,230,121,0,217,-113,287,-113,125,112,252,111,92,-175,215,-190,134,139,228,139,224,-249,344,-248]
+var l7 = [0,626,230,121,0,120,-6,201,6,140,10,219,-16,160,-91,277,-91,172,132,350,132,208,-186,360,-186]
+var l8 = [0,626,230,121,0,146,30,230,42,269,-40,362,-19,138,104,227,104,208,-166,341,30,180,108,332,108]
+var l9 = [0,626,230,121,0,217,113,287,113,120,-70,214,-42,150,134,268,134,148,-83,243,-83,161,122,280,122]
+var l10 = [0,626,230,140,0,163,-9,230,-30,130,-70,217,-44,133,176,250,176,130,-108,308,-108,250,162,402,162]
+var l11 = [0,626,230,121,0,130,62,258,10,240,-70,375,0,176,-144,265,-90,150,130,285,96,232,-79,385,-79]
+
+function $(sel) {
+  return document.querySelector(sel);
+}
+
+function set_line(id, d) {
+  $("#line"+id).setAttribute("d", "M" + d[0] + " " + d[1] + "h" + d[2] + "c" + d[3] * dx[0] + " " + d[4] * dy[0] + " " + d[5] * dx[1] + " " + d[6] * dy[1] + " " + d[7] * dx[2] + " " + d[8] * dy[2] + "s" + " " + d[9] * dx[3] + " " + d[10] * dy[3] + " " + d[11] * dx[4] + " " + d[12] * dy[4] + " " + d[13] * dx[5] + " " + d[14] * dy[5] + " " + d[15] * dx[6] + " " + d[16] * dy[6] + " " + d[17] * dx[7] + " " + d[18] * dy[7] + " " + d[19] * dx[8] + " " + d[20] * dy[8] + " " + d[21] * dx[9] + " " + d[22] * dy[9] + " " + d[23] * dx[10] + " " + d[24] * dy[10]);
+  $("#dot"+id).setAttribute("x", d[0] + d[2] + d[7] * dx[2] + d[11] * dx[4] + d[15] * dx[6] + d[19] * dx[8] + d[23] * dx[10]);
+  $("#dot"+id).setAttribute("y", d[1] + d[8] * dy[2] + d[12] * dy[4] + d[16] * dy[6] + d[20] * dy[8] + d[24] * dy[10]);
+}
+
+function animate(timestamp) {
+  if (!start) {
+    start = timestamp;
+  }
+  const progress = timestamp - start;
+  if (progress < total_time) {
+    requestAnimationFrame(animate);
+  } else {
+    start = timestamp;
+    requestAnimationFrame(animate);
+  }
+
+  for(j=0; j<11; j++) {
+    angle[j] += .01 + Math.random() * .02;
+    if (angle[j] >= (Math.PI * 2)) {
+      angle[j] = 0;
+    }
+    dy[j] = Math.sin(angle[j]);
+
+    anglex[j] += .01 + Math.random() * .02;
+    if (anglex[j] >= (Math.PI * 2)) {
+      anglex[j] = 0;
+    }
+    dx[j] = 1 - Math.abs(Math.sin(anglex[j]) / 20);
+  }
+
+  for(i=1; i<=11; i++) {
+    set_line(i, eval("l" + i));
+  }
+}
+
+requestAnimationFrame(animate);
+
+]]>
+</script>
+</svg>
