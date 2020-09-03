@@ -1,0 +1,36 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #000;
+}
+#dark path {
+  fill: none;
+  stroke: #555;
+  stroke-width: 1.4;
+}
+#dark circle {
+  fill: #555;
+}
+#gray path {
+  fill: none;
+  stroke: #aaa;
+  stroke-width: 1.4;
+}
+#gray circle {
+  fill: #aaa;
+}
+#white path {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 1.4;
+}
+#white circle {
+  fill: #aaa;
+}
+.op {
+  opacity: 0;
+  transition: opacity .2s linear;
+}
+.op.vis {
+  opacity: 1;
+}
