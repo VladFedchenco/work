@@ -21,7 +21,7 @@ var nn_data = {
     color: 'dark',
     'popup': {
       amount: 21223,
-      label: 'FIX training event',
+      label: 'Lorem Ipsum Dolor',
       progress: 80
     }
   },
@@ -34,7 +34,7 @@ var nn_data = {
     color: 'dark',
     'popup': {
       amount: 22543,
-      label: 'FIX training event',
+      label: 'Sit Amet Consectetur',
       progress: 63
     }
   },
@@ -47,7 +47,7 @@ var nn_data = {
     color: 'gray',
     'popup': {
       amount: 23112,
-      label: 'FIX training event',
+      label: 'Adipiscing Elit',
       progress: 45
     }
   },
@@ -60,7 +60,7 @@ var nn_data = {
     color: 'gray',
     'popup': {
       amount: 24245,
-      label: 'FIX training event',
+      label: 'Epicurei Num Desistunt',
       progress: 71
     }
   },
@@ -73,7 +73,7 @@ var nn_data = {
     color: 'gray',
     'popup': {
       amount: 24577,
-      label: 'FIX training event',
+      label: 'De Isdem De Quibus Et',
       progress: 68
     }
   },
@@ -86,7 +86,7 @@ var nn_data = {
     color: 'gray',
     'popup': {
       amount: 25366,
-      label: 'FIX training event',
+      label: 'Ab Epicuro Scriptum',
       progress: 82
     }
   },
@@ -99,7 +99,7 @@ var nn_data = {
     color: 'white',
     'popup': {
       amount: 26001,
-      label: 'FIX training event',
+      label: 'Est Et Ab Antiquis',
       progress: 91
     }
   },
@@ -112,7 +112,7 @@ var nn_data = {
     color: 'white',
     'popup': {
       amount: 26433,
-      label: 'FIX training event',
+      label: 'Ad Arbitrium Suum',
       progress: 77
     }
   },
@@ -125,7 +125,7 @@ var nn_data = {
     color: 'white',
     'popup': {
       amount: 27409,
-      label: 'FIX training event',
+      label: 'Scribere Nam E Quibus',
       progress: 74
     }
   },
@@ -138,7 +138,7 @@ var nn_data = {
     color: 'white',
     'popup': {
       amount: 28304,
-      label: 'FIX training event',
+      label: 'Locis Quasi Thesauris',
       progress: 82
     }
   },
@@ -150,9 +150,9 @@ var nn_data = {
     angle_x: 3.1,
     color: 'dark',
     'popup': {
-      amount: 0,
-      label: '',
-      progress: 0
+      amount: 48134,
+      label: 'Argumenta Depromerentur',
+      progress: 63
     }
   },
   'itm_13': {
@@ -163,9 +163,9 @@ var nn_data = {
     angle_x: 2.4,
     color: 'dark',
     'popup': {
-      amount: 0,
-      label: '',
-      progress: 0
+      amount: 37286,
+      label: 'Vestri Ne Suspicati',
+      progress: 79
     }
   },
   'itm_14': {
@@ -176,9 +176,9 @@ var nn_data = {
     angle_x: 0.2,
     color: 'dark',
     'popup': {
-      amount: 0,
-      label: '',
-      progress: 0
+      amount: 44877,
+      label: 'Quidem Sunt Superiores',
+      progress: 10
     }
   },
   'itm_15': {
@@ -189,9 +189,9 @@ var nn_data = {
     angle_x: 0.8,
     color: 'gray',
     'popup': {
-      amount: 0,
-      label: '',
-      progress: 0
+      amount: 34926,
+      label: 'Autem Artificio Et',
+      progress: 91
     }
   },
   'itm_16': {
@@ -202,9 +202,9 @@ var nn_data = {
     angle_x: 5.0,
     color: 'dark',
     'popup': {
-      amount: 0,
-      label: '',
-      progress: 0
+      amount: 34667,
+      label: 'Via Tradiderunt',
+      progress: 95
     }
   },
   'itm_17': {
@@ -215,9 +215,9 @@ var nn_data = {
     angle_x: 1.9,
     color: 'white',
     'popup': {
-      amount: 0,
-      label: '',
-      progress: 0
+      amount: 29893,
+      label: 'Cum Ageremus Inquit',
+      progress: 100
     }
   },
   'itm_18': {
@@ -228,9 +228,9 @@ var nn_data = {
     angle_x: 2.3,
     color: 'white',
     'popup': {
-      amount: 0,
-      label: '',
-      progress: 0
+      amount: 23438,
+      label: 'Vitae Beatum Et Eundem',
+      progress: 96
     }
   },
   'itm_19': {
@@ -241,9 +241,9 @@ var nn_data = {
     angle_x: 1.2,
     color: 'gray',
     'popup': {
-      amount: 0,
-      label: '',
-      progress: 0
+      amount: 45277,
+      label: 'Supremum Diem',
+      progress: 55
     }
   },
   'itm_20': {
@@ -254,9 +254,9 @@ var nn_data = {
     angle_x: 1.6,
     color: 'dark',
     'popup': {
-      amount: 0,
-      label: '',
-      progress: 0
+      amount: 23105,
+      label: 'Scribebamus Haec Tollit',
+      progress: 56
     }
   },
   'itm_21': {
@@ -267,9 +267,9 @@ var nn_data = {
     angle_x: 3.9,
     color: 'white',
     'popup': {
-      amount: 0,
-      label: '',
-      progress: 0
+      amount: 31063,
+      label: 'Definitiones Nihil',
+      progress: 28
     }
   },
   'itm_22': {
@@ -280,9 +280,9 @@ var nn_data = {
     angle_x: 4.2,
     color: 'dark',
     'popup': {
-      amount: 0,
-      label: '',
-      progress: 0
+      amount: 48206,
+      label: 'De Dividendo Ac Partiendo',
+      progress: 84
     }
   },
   'itm_23': {
@@ -293,9 +293,9 @@ var nn_data = {
     angle_x: 2.6,
     color: 'white',
     'popup': {
-      amount: 0,
-      label: '',
-      progress: 0
+      amount: 47100,
+      label: 'Docet Non Quo Modo',
+      progress: 60
     }
   },
   'itm_24': {
@@ -306,9 +306,9 @@ var nn_data = {
     angle_x: 1.1,
     color: 'gray',
     'popup': {
-      amount: 0,
-      label: '',
-      progress: 0
+      amount: 29271,
+      label: 'Efficiatur Concludaturque',
+      progress: 88
     }
   },
   'itm_25': {
@@ -319,9 +319,9 @@ var nn_data = {
     angle_x: 4.5,
     color: 'gray',
     'popup': {
-      amount: 0,
-      label: '',
-      progress: 0
+      amount: 36257,
+      label: 'Ratio Tradit',
+      progress: 24
     }
   },
   'itm_26': {
@@ -332,9 +332,9 @@ var nn_data = {
     angle_x: 5.4,
     color: 'dark',
     'popup': {
-      amount: 0,
-      label: '',
-      progress: 0
+      amount: 40406,
+      label: 'Non Qua Via Captiosa',
+      progress: 74
     }
   },
   'itm_27': {
@@ -345,9 +345,9 @@ var nn_data = {
     angle_x: 5.4,
     color: 'gray',
     'popup': {
-      amount: 0,
-      label: '',
-      progress: 0
+      amount: 36822,
+      label: 'Solvantur Ambigua',
+      progress: 55
     }
   },
   'itm_28': {
@@ -358,9 +358,9 @@ var nn_data = {
     angle_x: 1.5,
     color: 'gray',
     'popup': {
-      amount: 0,
-      label: '',
-      progress: 0
+      amount: 41335,
+      label: 'Distinguantur Ostendit',
+      progress: 36
     }
   },
   'itm_29': {
@@ -371,9 +371,9 @@ var nn_data = {
     angle_x: 3.3,
     color: 'gray',
     'popup': {
-      amount: 0,
-      label: '',
-      progress: 0
+      amount: 42509,
+      label: 'Ex Eorum Enim Scriptis',
+      progress: 82
     }
   },
   'itm_30': {
@@ -384,9 +384,9 @@ var nn_data = {
     angle_x: 1.1,
     color: 'dark',
     'popup': {
-      amount: 0,
-      label: '',
-      progress: 0
+      amount: 31211,
+      label: 'Et Institutis Cum Omnis',
+      progress: 30
     }
   },
   'itm_31': {
@@ -397,9 +397,9 @@ var nn_data = {
     angle_x: 4.9,
     color: 'white',
     'popup': {
-      amount: 0,
-      label: '',
-      progress: 0
+      amount: 38823,
+      label: 'Doctrina Liberalis',
+      progress: 14
     }
   },
   'itm_32': {
@@ -410,9 +410,9 @@ var nn_data = {
     angle_x: 2.7,
     color: 'white',
     'popup': {
-      amount: 0,
-      label: '',
-      progress: 0
+      amount: 35592,
+      label: 'Omnis Historia Duo Reges',
+      progress: 66
     }
   },
   'itm_33': {
@@ -423,9 +423,9 @@ var nn_data = {
     angle_x: 3.9,
     color: 'gray',
     'popup': {
-      amount: 0,
-      label: '',
-      progress: 0
+      amount: 43140,
+      label: 'Constructio Interrete',
+      progress: 12
     }
   },
   'itm_34': {
@@ -436,9 +436,9 @@ var nn_data = {
     angle_x: 4.8,
     color: 'white',
     'popup': {
-      amount: 0,
-      label: '',
-      progress: 0
+      amount: 22356,
+      label: 'Neque Enim Civitas',
+      progress: 32
     }
   },
   'itm_35': {
@@ -449,9 +449,9 @@ var nn_data = {
     angle_x: 4.1,
     color: 'white',
     'popup': {
-      amount: 0,
-      label: '',
-      progress: 0
+      amount: 39675,
+      label: 'In Seditione Beata Esse',
+      progress: 99
     }
   },
   'itm_36': {
@@ -462,9 +462,9 @@ var nn_data = {
     angle_x: 3.6,
     color: 'gray',
     'popup': {
-      amount: 0,
-      label: '',
-      progress: 0
+      amount: 32860,
+      label: 'Potest Nec In Discordia',
+      progress: 97
     }
   },
   'itm_37': {
@@ -475,9 +475,9 @@ var nn_data = {
     angle_x: 5.5,
     color: 'gray',
     'popup': {
-      amount: 0,
-      label: '',
-      progress: 0
+      amount: 48289,
+      label: 'Dominorum Domus',
+      progress: 32
     }
   },
   'itm_38': {
@@ -488,9 +488,9 @@ var nn_data = {
     angle_x: 0.3,
     color: 'gray',
     'popup': {
-      amount: 0,
-      label: '',
-      progress: 0
+      amount: 41131,
+      label: 'Serpere Anguiculos',
+      progress: 19
     }
   },
   'itm_39': {
@@ -501,9 +501,9 @@ var nn_data = {
     angle_x: 1.9,
     color: 'white',
     'popup': {
-      amount: 0,
-      label: '',
-      progress: 0
+      amount: 27433,
+      label: 'Nare Anaticulas Evolare',
+      progress: 54
     }
   },
   'itm_40': {
@@ -514,9 +514,9 @@ var nn_data = {
     angle_x: 2.9,
     color: 'white',
     'popup': {
-      amount: 0,
-      label: '',
-      progress: 0
+      amount: 46088,
+      label: 'Merulas Cornibus Uti',
+      progress: 48
     }
   },
   'itm_41': {
@@ -527,9 +527,9 @@ var nn_data = {
     angle_x: 5.1,
     color: 'dark',
     'popup': {
-      amount: 0,
-      label: '',
-      progress: 0
+      amount: 20066,
+      label: 'Videmus Boves Nepas',
+      progress: 58
     }
   },
   'itm_42': {
@@ -540,9 +540,9 @@ var nn_data = {
     angle_x: 3.4,
     color: 'dark',
     'popup': {
-      amount: 0,
-      label: '',
-      progress: 0
+      amount: 44136,
+      label: 'Aculeis Quid Enim',
+      progress: 12
     }
   },
   'itm_43': {
@@ -553,9 +553,9 @@ var nn_data = {
     angle_x: 2.2,
     color: 'gray',
     'popup': {
-      amount: 0,
-      label: '',
-      progress: 0
+      amount: 38102,
+      label: 'Ab Antiquis Ex Eo Genere',
+      progress: 13
     }
   },
   'itm_44': {
@@ -566,9 +566,9 @@ var nn_data = {
     angle_x: 5.6,
     color: 'dark',
     'popup': {
-      amount: 0,
-      label: '',
-      progress: 0
+      amount: 39454,
+      label: 'Quod Ad Disserendum',
+      progress: 44
     }
   },
   'itm_45': {
@@ -579,9 +579,9 @@ var nn_data = {
     angle_x: 4.9,
     color: 'gray',
     'popup': {
-      amount: 0,
-      label: '',
-      progress: 0
+      amount: 49338,
+      label: 'Valet Praetermissum Est',
+      progress: 80
     }
   },
   'itm_46': {
@@ -592,9 +592,9 @@ var nn_data = {
     angle_x: 5.5,
     color: 'dark',
     'popup': {
-      amount: 0,
-      label: '',
-      progress: 0
+      amount: 23735,
+      label: 'Nam His Libris Eum',
+      progress: 46
     }
   },
   'itm_47': {
@@ -605,9 +605,9 @@ var nn_data = {
     angle_x: 2.6,
     color: 'gray',
     'popup': {
-      amount: 0,
-      label: '',
-      progress: 0
+      amount: 47761,
+      label: 'Malo Quam Reliquo Ornatu',
+      progress: 16
     }
   },
   'itm_48': {
@@ -618,9 +618,9 @@ var nn_data = {
     angle_x: 1.8,
     color: 'dark',
     'popup': {
-      amount: 0,
-      label: '',
-      progress: 0
+      amount: 39733,
+      label: 'Villae Delectari',
+      progress: 70
     }
   },
   'itm_49': {
@@ -631,9 +631,9 @@ var nn_data = {
     angle_x: 3.3,
     color: 'dark',
     'popup': {
-      amount: 0,
-      label: '',
-      progress: 0
+      amount: 45318,
+      label: 'Laboro Autem Non Sine',
+      progress: 15
     }
   },
   'itm_50': {
@@ -644,9 +644,9 @@ var nn_data = {
     angle_x: 3.6,
     color: 'dark',
     'popup': {
-      amount: 0,
-      label: '',
-      progress: 0
+      amount: 42082,
+      label: 'Causa Sed Utrum Hortandus',
+      progress: 37
     }
   },
 }

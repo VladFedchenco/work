@@ -34,3 +34,18 @@ html, body {
 .op.vis {
   opacity: 1;
 }
+text {
+  font-family: 'Roboto', sans-serif;
+}
+.amnt {
+  font-size: 40px;
+}
+.lbl {
+  font-size: 23px;
+}
+.prgs {
+  font-size: 20px;
+}
+.prsnt {
+  font-size: 20px;
+}
