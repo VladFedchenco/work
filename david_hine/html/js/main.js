@@ -1,24 +1,38 @@
-let el = document.getElementById("nav");
-
 function nav_toggle() {
   el.classList.toggle("active");
   document.getElementById("top_nav").classList.toggle("hidden");
 }
 
+function toggle_faq(el) {
+  let cur_el = el.target.nextElementSibling;
+  cur_el.classList.toggle("hidden");
+}
+
+function read_more_toggle(el) {
+  let text_body = el.target.previousElementSibling;
+  el.target.classList.toggle("hidden");
+  text_body.classList.toggle("hidden");
+  text_body.previousElementSibling.classList.toggle("hidden");
+}
+
+let el = document.getElementById("nav");
 el.onclick = function() {
   nav_toggle();
 }
 
 function attachClickEvent() {
-  var faq_all = document.querySelectorAll(".faq h4");
+  let faq_all = document.querySelectorAll(".faq h4");
   for(i=0; i<faq_all.length; i++) {
     faq_all[i].addEventListener("click", toggle_faq);
   }
-}
-
-function toggle_faq(el) {
-  let cur_el = el.target.nextElementSibling;
-  cur_el.classList.toggle("hidden");
+  let nav_all = document.querySelectorAll("#top_nav a");
+  for(i=0; i<nav_all.length; i++) {
+    nav_all[i].addEventListener("click", nav_toggle);
+  }
+  let read_more_all = document.querySelectorAll(".read_more");
+  for(i=0; i<read_more_all.length; i++) {
+    read_more_all[i].addEventListener("click", read_more_toggle);
+  }
 }
 
 let didScroll;

@@ -8,6 +8,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-anchor: none;
 }
 
 html,
@@ -206,7 +207,11 @@ header {
 header.nav-down {
     background-color: #fff;
     box-shadow: 0px 4px 8px rgba(0,0,0,.05);
-    top: 0px;
+    top: -36px;
+    height: 88px;
+}
+header.nav-down .clmns {
+    padding-bottom: 10px;
 }
 header.nav-up {
     top: -110px;
@@ -409,10 +414,11 @@ p {
     width: 25vw;
     padding: 64px 32px;
     text-align: center;
-    background-color: #fff;
+    background: linear-gradient(90deg, transparent 0%, transparent 45%, #fff 45%, #fff 55%, transparent 55%, transparent 100%);
+    transition: none;
 }
 #main .dark_section h2 {
-    background-color: #39454e;
+    background: linear-gradient(90deg, transparent 0%, transparent 45%, #39454e 45%, #39454e 55%, transparent 55%, transparent 100%);
 }
 #main h2:before, #main h2:after {
     content: '';
@@ -546,5 +552,46 @@ p {
 }
 .faq h4:hover {
     text-decoration: underline;
+}
+.read_more {
+    text-decoration: none;
+    display: inline-block;
+    padding-bottom: 2px;
+    border-bottom: solid 1px #218b1d;
+}
+.read_more:hover {
+    border-bottom: solid 1px transparent;
+}
+.read_more:after {
+    content: 'Read less ⬆';
+}
+.read_more.hidden:after {
+    content: 'Read more ⬇';
+}
+.shortened_text_body {
+    overflow: hidden;
+    max-height: 1000px;
+    transition: all .2s ease;
+}
+.shortened_text_body.hidden {
+    max-height: 0;
+}
+.shortened_text.hidden:after {
+    content: ' ...';
+}
+#animation_block {
+    margin: 32px 0;
+}
+#animation_block p {
+    display: block;
+    margin: 16px 0 32px 0;
+    padding: 24px;
+    border: solid 1px #ddd;
+    background-color: #fafafa;
+    font-style: italic;
+}
+#main #animation_block h3 {
+    text-align: center;
+    margin: 0;
 }
 
