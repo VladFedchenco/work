@@ -604,7 +604,7 @@ p {
     flex-direction: row;
     justify-content: start;
     align-items: flex-start;
-    width: 1280px;
+    max-width: 1280px;
     margin: auto;
 }
 #footer_section a {
