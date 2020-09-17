@@ -102,6 +102,10 @@ select {
     width: 100%;
 }
 
+textarea {
+    height: 100px;
+}
+
 input[type='number'] {
     -moz-appearance: textfield;
 }
@@ -189,7 +193,7 @@ input[type=submit],
 button:hover,
 input[type=submit]:hover,
 .button:hover {
-    background: #00b4ff;
+    background: #1eab18;
     color: #fff;
 }
 
@@ -220,7 +224,7 @@ header.nav-up {
 footer {
     color: #fff;
     background-color: #39454e;
-    padding: 32px;
+    padding: 32px 64px;
     text-align: center;
 }
 
@@ -594,4 +598,40 @@ p {
     text-align: center;
     margin: 0;
 }
+#footer_section {
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: flex-start;
+    width: 1280px;
+    margin: auto;
+}
+#footer_section a {
+    color: #9bff00;
+}
+.left_part {
+    padding: 0 32px 0 0;
+    flex: 30%;
+}
+.right_part {
+    flex: 70%;
+}
+.contact_form {
+    display: flex;
+    flex-direction: row;
+}
+.w30 {
+    flex: 33%;
+    padding: 8px 16px 8px 0;
+}
+.w100 {
+    flex: 100%;
+    padding: 8px 16px 8px 0;
+}
 
+#footer_section button {
+    width: 30%;
+    margin-top: 8px;
+    padding: 24px 16px;
+}
