@@ -1891,7 +1891,7 @@ Click the plus or minus button on soil moisture or soil temperature
 </g>
 
 <a id="start_all" href="javascript:;">
-<circle cx="991" cy="1076" r="127.86" fill="#8cc63f" stroke="#fff" stroke-width="8" stroke-opacity=".8"/>
+<circle cx="991" cy="1076" r="127.86" fill="#16ef16" stroke="#fff" stroke-width="8" stroke-opacity=".8"/>
 <path fill="#fff" d="M967.04 1135.49v-118.04l75.38 59.02-75.38 59.02z"/>
 </a>
 </g>
