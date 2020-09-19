@@ -28,7 +28,7 @@ body {
 }
 
 a {
-    color: #16ef16;
+    color: #1616ef;
     transition: all 0.3s ease;
 }
 
@@ -371,7 +371,7 @@ p {
     transition: all .3s ease;
 }
 #nav:hover:before, #nav:hover:after, #nav:hover div {
-    background-color: #16ef16;
+    background-color: #1616ef;
 }
 #nav:after {
     bottom: 0;
