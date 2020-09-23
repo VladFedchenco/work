@@ -817,7 +817,7 @@ function gw_upd() {
   $("#gray_label").textContent = "- " + (g_angle / 30).toFixed(2) + " (BAR)";
   $("#white_label").textContent = "- " + (w_angle / 5).toFixed(2) + " (LPD)";
 
-  if (w_angle > 1 && r_angle > 0) {
+  if (w_angle > 1 && r_angle > 0 && y_angle < r_angle) {
     if(allow_play) {
       animation_id = requestAnimationFrame(animate);
     }
