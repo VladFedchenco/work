@@ -628,16 +628,23 @@ text {
   <path id="valve_bottom" transform="translate(0 -20)" d="M712.46 726.7a68 68 0 0148.19-19.95 68 68 0 0148.19 19.95"/>
   <line x1="737.47" x2="783.85" y1="736.25" y2="629.5"/>
   <polyline points="788.11 641.11 783.85 629.5 772.6 634.64"/>
-  <line x1="932.43" x2="982.43" y1="575.42" y2="591.8"/>
-  <line x1="932.43" x2="982.43" y1="608.18" y2="591.8"/>
-  <line x1="932.43" x2="982.43" y1="608.18" y2="624.56"/>
-  <line x1="957.43" x2="982.43" y1="632.75" y2="624.56"/>
-  <line x1="957.43" x2="957.43" y1="575.42" y2="730.89"/>
-  <path d="M912.51 575.42a47.49 47.49 0 1194.98 0h-94.98z"/>
-  <polyline id="valve_line" transform="translate(0 20)" stroke-dasharray="30 20" points="957.43 630.91 1142.66 630.91 1142.66 511.44 760.66 511.44 760.66 661.87"/>
-  <line x1="1142.66" x2="1142.66" y1="481.04" y2="494"/>
+  <polyline id="valve_line" transform="translate(0 20)" stroke-dasharray="30 20" stroke-dashoffset="10" points="957.43 630.91 1142.66 630.91 1142.66 501.44 760.66 501.44 760.66 660"/>
+  <line x1="1142.66" x2="1142.66" y1="481.04" y2="498"/>
+  <g id="spring">
+    <line id="spring_1" x1="932.43" x2="982.43" y1="576" y2="597"/>
+    <line id="spring_2" x1="932.43" x2="982.43" y1="618" y2="597"/>
+    <line id="spring_3" x1="932.43" x2="982.43" y1="618" y2="639"/>
+    <line id="spring_4" x1="957.43" x2="982.43" y1="650" y2="639"/>
+  </g>
 </g>
-<path d="M955.3 749.92l-13.81-21.28a2.55 2.55 0 012.14-3.94h27.63a2.55 2.55 0 012.14 3.94l-13.81 21.28a2.56 2.56 0 01-4.29 0z"/>
+
+<g id="valve_body">
+  <g fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="5.6">
+    <line x1="957.43" x2="957.43" y1="575.42" y2="730.89"/>
+    <path d="M912.51 575.42a47.49 47.49 0 1194.98 0h-94.98z"/>
+  </g>
+  <path d="M955.3 749.92l-13.81-21.28a2.55 2.55 0 012.14-3.94h27.63a2.55 2.55 0 012.14 3.94l-13.81 21.28a2.56 2.56 0 01-4.29 0z"/>
+</g>
 </g>
 
 <g id="popup_warn" class="popup_box invis">
@@ -725,6 +732,10 @@ let arrows_shift = 1;
 let animation_id;
 let allow_play = true;
 let setint;
+let spring_pos;
+let osc_pos = 0;
+let osc_iter = 20;
+let setint2;
 
 function $(sel) {
   return document.querySelector(sel);
@@ -787,18 +798,26 @@ function gw_upd() {
   }
   g_angle = t_angle * 3;
   w_angle = t_angle * 2.35;
+  spring_pos = $("#spring_3").getAttribute('y1');
   $("#gray_arrow").setAttribute("transform", "rotate(" + (g_angle - 150) + " 708.719 880.397)");
   $("#white_arrow").setAttribute("transform", "rotate(" + (w_angle - 150) + " 1748.044 763.201)");
   $("#valve_line").setAttribute("transform", "translate(0 " + (100 - t_angle) / 5 + ")");
   $("#valve_top").setAttribute("transform", "translate(0 " + (100 - t_angle) / 5 + ")");
   $("#valve_bottom").setAttribute("transform", "translate(0 " + (100 - t_angle) / -5 + ")");
+  $("#spring_4").setAttribute("y1", 630 + (100 - t_angle) / 5);
+  $("#spring_4").setAttribute("y2", 624 + (100 - t_angle) / 6.666);
+  $("#spring_3").setAttribute("y2", 624 + (100 - t_angle) / 6.666);
+  $("#spring_3").setAttribute("y1", 608 + (100 - t_angle) / 10);
+  $("#spring_2").setAttribute("y1", 608 + (100 - t_angle) / 10);
+  $("#spring_2").setAttribute("y2", 592 + (100 - t_angle) / 20);
+  $("#spring_1").setAttribute("y2", 592 + (100 - t_angle) / 20);
 
   $("#red_label").textContent = "- " + r_angle + " (BAR)";
   $("#yellow_label").textContent = "- " + y_angle + " (BAR)";
   $("#gray_label").textContent = "- " + (g_angle / 30).toFixed(2) + " (BAR)";
   $("#white_label").textContent = "- " + (w_angle / 5).toFixed(2) + " (LPD)";
 
-  if (w_angle > 1) {
+  if (w_angle > 1 && r_angle > 0) {
     if(allow_play) {
       animation_id = requestAnimationFrame(animate);
     }
@@ -807,6 +826,31 @@ function gw_upd() {
     cancelAnimationFrame(animation_id);
     allow_play = true;
   }
+}
+
+function oscillate() {
+  if(osc_iter > 0) {
+    osc_iter--;
+    if(osc_iter >= 10) {
+      osc_pos++;
+      $("#valve_body").setAttribute("transform", "translate(0 " + osc_pos + ")");
+      $("#spring").setAttribute("transform", "translate(0 " + spring_pos * (1 + osc_pos/200) + ") scale(1 " + (1 - osc_pos / (spring_pos - 546)) + ") translate(0 " + (-1 * spring_pos * (1 + osc_pos/200)) + ")");
+    } else {
+      osc_pos--;
+      $("#valve_body").setAttribute("transform", "translate(0 " + osc_pos + ")");
+      $("#spring").setAttribute("transform", "translate(0 " + spring_pos * (1 + osc_pos/200) + ") scale(1 " + (1 - osc_pos / (spring_pos - 546)) + ") translate(0 " + (-1 * spring_pos * (1 + osc_pos/200)) + ")");
+    }
+  } else {
+    clearInterval(setint2);
+    osc_iter = 20;
+    $("#popup_intdifreg").classList.add("invis");
+  }
+}
+
+function start_oscillate() {
+  clearInterval(setint2);
+  $("#popup_intdifreg").classList.remove("invis");
+  setint2 = setInterval(function(){oscillate()}, 80);
 }
 
 function rarr_dwn() {
@@ -866,14 +910,20 @@ $("#rb_left").onmousedown = function() {
   setint = setInterval(function(){rarr_dwn()}, 100);
 }
 $("#rb_left").onclick = function() {rarr_dwn()};
-$("#rb_left").onmouseup = function() {clearInterval(setint)};
+$("#rb_left").onmouseup = function() {
+  clearInterval(setint);
+  start_oscillate();
+};
 
 $("#rb_right").onmousedown = function() {
   clearInterval(setint);
   setint = setInterval(function(){rarr_up()}, 100);
 }
 $("#rb_right").onclick = function() {rarr_up()};
-$("#rb_right").onmouseup = function() {clearInterval(setint)};
+$("#rb_right").onmouseup = function() {
+  clearInterval(setint);
+  start_oscillate();
+};
 
 $("#tgl_left").onmousedown = function() {
   clearInterval(setint);
@@ -894,14 +944,20 @@ $("#yb_left").onmousedown = function() {
   setint = setInterval(function(){yarr_dwn()}, 100);
 }
 $("#yb_left").onclick = function() {yarr_dwn()};
-$("#yb_left").onmouseup = function() {clearInterval(setint)};
+$("#yb_left").onmouseup = function() {
+  clearInterval(setint);
+  start_oscillate();
+};
 
 $("#yb_right").onmousedown = function() {
   clearInterval(setint);
   setint = setInterval(function(){yarr_up()}, 100);
 }
 $("#yb_right").onclick = function() {yarr_up()};
-$("#yb_right").onmouseup = function() {clearInterval(setint)};
+$("#yb_right").onmouseup = function() {
+  clearInterval(setint);
+  start_oscillate();
+};
 
 function animate() {
   if(arrows_shift < 120) {
@@ -915,7 +971,7 @@ function animate() {
     $("#queue2").setAttribute("transform", "translate(" + arrows_shift + " 0)");
     $("#queue3").setAttribute("transform", "translate(" + arrows_shift + " 0)");
   }
-  animation_id = requestAnimationFrame(animate);
+    animation_id = requestAnimationFrame(animate);
 }
 
 ]]>
