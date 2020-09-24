@@ -33,6 +33,46 @@ function attachClickEvent() {
   for(i=0; i<read_more_all.length; i++) {
     read_more_all[i].addEventListener("click", read_more_toggle);
   }
+  let form_block = document.querySelector("form");
+  form_block.addEventListener("submit", function(event) {
+    event.preventDefault();
+    let contact_name = document.querySelector("#contact_name");
+    let contact_email = document.querySelector("#contact_email");
+    let contact_subject = document.querySelector("#contact_subject");
+    let contact_message = document.querySelector("#contact_message");
+    let contact_sent = document.querySelector("#sent_ok");
+    contact_name.setAttribute("style", "background-color: #fff");
+    contact_email.setAttribute("style", "background-color: #fff");
+    contact_subject.setAttribute("style", "background-color: #fff");
+    contact_message.setAttribute("style", "background-color: #fff");
+    if (!contact_name.value || !contact_email.value || !contact_subject.value || !contact_message.value) {
+      alert("All required fields have to be filled.");
+      if(!contact_name.value) {
+        contact_name.setAttribute("style", "background-color: #ffe5bf")
+      };
+      if(!contact_email.value) {
+        contact_email.setAttribute("style", "background-color: #ffe5bf")
+      };
+      if(!contact_subject.value) {
+        contact_subject.setAttribute("style", "background-color: #ffe5bf")
+      };
+      if(!contact_message.value) {
+        contact_message.setAttribute("style", "background-color: #ffe5bf")
+      };
+    }
+    setTimeout(function(){
+      contact_sent.classList.add("none");
+      setTimeout(function(){
+        contact_sent.classList.add("vis");
+        setTimeout(function(){
+          contact_sent.classList.remove("vis");
+          setTimeout(function(){
+            contact_sent.classList.remove("none");
+          }, 100);
+        }, 3000);
+      }, 100);
+    }, 100);
+  });
 }
 
 let didScroll;

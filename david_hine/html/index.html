@@ -27,6 +27,12 @@
         </a>
       </div>
     </div>
+    <a id="blog" href="javascript:;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 109 108">
+        <path fill="#3b454d" d="M106.7 22a38.5 38.5 0 00-8.2-11.6C90 2 79-3.6 72.8 2.6L11.2 64.2.4 97.1A8.3 8.3 0 0011 107.5l32.8-10.7 61.6-61.6c1.8-1.9 4.5-6 1.4-13.3zM9.4 98.4L19 69.1 79 9c2.2-1 11.8 4.5 17.4 12.8 2.7 4 3 6.4 2.5 7l-2.5 2.4L83 18 26.4 74.4c9.7 4 11.3 10.5 11.1 15z"/>
+      </svg>
+      BLOG
+    </a>
   </header>
   <section id="main" class="clmns">
     <div class="clmn clmn_25"><div class="donut"></div></div>
@@ -58,7 +64,7 @@
 
       <p>We believe that farms considering participation in carbon and other ecosystem markets should assess and quantify the potential benefits to productivity and increased returns from sales of product as the primary source of additional income, and the potential sales of carbon credits as supplementary funds that support investment in your soil.</p>
 
-      <p>Get in touch to discuss your how our approach can help your business.</p>
+      <p><a href="#section_06">Get in touch</a> to discuss your how our approach can help your business.</p>
     </div>
 
     <div class="dark_section">
@@ -67,14 +73,14 @@
         <h2 id="section_02">What are the benefits of managing a farm, using a soil health framework?</h2>
         <p>Managing by soil health principles is good for business, as well as for the company brand. Healthy soils maintain a diverse community of soil organisms that</p>
         <ul class="list_digits">
-          <li>help to control plant disease, insect and weed pests;</li>
-          <li>form beneficial symbiotic associations with plant roots;</li>
-          <li>recycle essential plant nutrients;</li>
+          <li>help to minimise plant disease, insect and weed pests;</li>
+          <li>form beneficial symbiotic associations with plant roots. Almost all plant nutrition passes through soil biology. Roots exude carbohydrates;</li>
+          <li>hold plant nutrients in the root zone and make them more available;</li>
           <li>improve soil structure with positive consequences for permeability to rainfall, soil water holding capacity and nutrient holding capacity; and</li>
-          <li>improve crop production.</li>
+          <li>improve plant productivity.</li>
         </ul>
         <p>Since soil health supports productivity and reduces operating costs, many farms are now more focussed on the soil health broadly not just the soil chemical condition measured in N, P and K. If this is your approach, it may be useful to understand and take up soil carbon farming for its additional financial benefits through carbon credits.</p>
-        <p>We help you understand the relationships and how to measure your progress.</p>
+        <p><a href="#section_06">We help you</a> understand the relationships and how to measure your progress.</p>
       </div>
     </div>
     <div class="clmn clmn_25">&nbsp;</div>
@@ -176,19 +182,19 @@
       <div class="left_part">
         <p>Soil Health is a trading name of<br> <a href="https://www.landandwater.com.au/">Land and Water Management Pty Ltd</a></p>
 
-        <p>Tel: 0429 886 146 (+61) 429 886 146</p>
-        <p>(+61) 7 4015 3470</p>
-        <p>e-mail: <a href="mailto:info@soil-health.com">info@soil-health.com</a></p>
+        <p>Tel: 0429 886 146 :: (+61) 429 886 146</p>
+        <p>and (+61) 7 4015 3470</p>
+        <p>e-mail: <a href="mailto:info@soil-health.com">info@soil-health.com.au</a></p>
       </div>
-      <div class="right_part">
+      <div id="section_06" class="right_part">
         <h3>Send us an e-mail</h3>
-        <form>
+        <form name="contact_form">
           <div class="contact_form">
             <div class="w30">
-              <input type="text" placeholder="Name*">
+              <input id="contact_name" type="text" placeholder="Name*">
             </div>
             <div class="w30">
-              <input type="email" placeholder="Email*">
+              <input id="contact_email" type="email" placeholder="Email*">
             </div>
             <div class="w30">
               <input type="tel" placeholder="Phone">
@@ -196,16 +202,19 @@
           </div>
           <div class="contact_form">
             <div class="w100">
-              <input type="text" placeholder="Subject*">
+              <input id="contact_subject" type="text" placeholder="Subject*">
             </div>
           </div>
           <div class="contact_form">
             <div class="w100">
-              <textarea placeholder="Message*"></textarea>
+              <textarea  id="contact_message" placeholder="Message*"></textarea>
             </div>
           </div>
           <button>Send Message</button>
         </form>
+        <div id="sent_ok" class="">
+          <h3><img src="imgs/check.svg">Your message has been sent</h3>
+        </div>
       </div>
     </div>
   </footer>

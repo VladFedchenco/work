@@ -606,7 +606,7 @@ p {
     max-width: 1280px;
     margin: auto;
 }
-#footer_section a {
+#footer_section a, .dark_section a {
     color: #16ef16;
 }
 .left_part {
@@ -633,4 +633,58 @@ p {
     width: 30%;
     margin-top: 8px;
     padding: 24px 16px;
+}
+
+#blog {
+    display: block;
+    position: absolute;
+    left: 75%;
+    top: 44px;
+    font-weight: 700;
+    color: #000;
+    text-decoration: none;
+}
+
+#blog svg {
+    margin-bottom: -10px;
+}
+
+#blog:hover {
+    color: #1616ef;
+}
+
+#blog:hover svg path {
+    fill: #1616ef;
+}
+
+#section_06 {
+    position: relative;
+    overflow: hidden;
+}
+
+#sent_ok {
+    display: none;
+    opacity: 0;
+    position: absolute;
+    background-color: #39454e;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 64px 0 0 0;
+    text-align: center;
+    transition: all .3s ease;
+}
+
+#sent_ok.none {
+    display: block;
+}
+
+#sent_ok.vis {
+    opacity: 1;
+}
+
+#sent_ok h3 img {
+    margin: 0 16px 0 -6px;
+    vertical-align: middle;
 }
