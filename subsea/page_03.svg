@@ -536,27 +536,13 @@ text {
 </g>
 
 <g id="toggle">
-  <circle cx="1143.41" cy="408.4" r="68.39" fill="#EAE5DF"/>
-  <circle cx="1143.41" cy="408.4" r="62.42" fill="#474644"/>
-  <circle cx="1143.41" cy="408.4" r="55.56" fill="#2E2D2C"/>
-  <circle cx="1143.41" cy="408.4" r="49.44" fill="#7D7876"/>
-  <path fill="#B3B3B3" d="M1095.7 408.4a49.45 49.45 0 0148.57-49.43l-.86-.01a49.44 49.44 0 100 98.88l.86-.01a49.45 49.45 0 01-48.57-49.43z"/>
-  <path d="M1143.41 358.96l-.66.01a49.43 49.43 0 010 98.86l.66.01a49.44 49.44 0 100-98.88z"/>
-  <circle cx="1063.26" cy="408.4" r="3.81" fill="#EAE5DF"/>
-  <circle cx="1223.57" cy="408.4" r="3.81" fill="#EAE5DF"/>
-  <circle cx="1212.83" cy="368.32" r="3.81" fill="#EAE5DF"/>
-  <circle cx="1183.49" cy="338.98" r="3.81" fill="#EAE5DF"/>
-  <circle cx="1143.41" cy="328.24" r="3.81" fill="#EAE5DF"/>
-  <circle cx="1103.33" cy="338.98" r="3.81" fill="#EAE5DF"/>
-  <circle cx="1073.99" cy="368.32" r="3.81" fill="#EAE5DF"/>
-  <g id="toggle_arrow" transform="rotate(90 1143.412 408.396)">
-    <path fill="#BFBEB6" d="M1147.63 440.93h-8.43a4.63 4.63 0 01-4.62-4.62v-78.79a4.63 4.63 0 014.62-4.62h8.43a4.63 4.63 0 014.62 4.62v78.79a4.63 4.63 0 01-4.62 4.62z"/>
-    <path fill="#2E2D2C" d="M1142.12 380.51h2.58c.78 0 1.41-.64 1.41-1.41v-24.06c0-.78-.64-1.41-1.41-1.41h-2.58c-.78 0-1.41.64-1.41 1.41v24.06c0 .77.64 1.41 1.41 1.41z"/>
-    <path fill="#FFF" d="M1144.98 379.09v-24.06c0-.78-.64-1.41-1.41-1.41h1.14c.78 0 1.41.64 1.41 1.41v24.06c0 .78-.64 1.41-1.41 1.41h-1.14a1.4 1.4 0 001.41-1.41z"/>
-    <path fill="#FFF" d="M1136.01 436.31v-78.79a4.63 4.63 0 014.62-4.62h-1.44a4.63 4.63 0 00-4.62 4.62v78.79a4.63 4.63 0 004.62 4.62h1.44a4.63 4.63 0 01-4.62-4.62z"/>
-    <path d="M1147.63 352.89h-1.97a4.63 4.63 0 014.62 4.62v78.79a4.63 4.63 0 01-4.62 4.62h1.97a4.63 4.63 0 004.62-4.62v-78.79a4.63 4.63 0 00-4.62-4.62z"/>
-    <path d="M1141.85 379.09v-24.06c0-.78.64-1.41 1.41-1.41h-1.14c-.78 0-1.41.64-1.41 1.41v24.06c0 .78.64 1.41 1.41 1.41h1.14a1.4 1.4 0 01-1.41-1.41z"/>
-  </g>
+  <line fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="5.6" x1="1142.66" x2="1142.66" y1="481.04" y2="498"/>
+  <circle cx="1143.4" cy="408.4" r="62.4" fill="#474644"/>
+  <circle cx="1143.4" cy="408.4" r="55.6" fill="#2E2D2C"/>
+  <circle cx="1143.4" cy="408.4" r="49.4" fill="#7D7876"/>
+  <path fill="#B3B3B3" d="M1095.7 408.4c0-27 21.7-49 48.6-49.4h-.9a49.4 49.4 0 100 98.8h.9a49.4 49.4 0 01-48.6-49.4z"/>
+  <path d="M1143.4 359h-.7a49.4 49.4 0 010 98.8h.7a49.4 49.4 0 100-98.8z"/>
+  <path fill="url(#pipe_grd5)" id="toggle_arrow" d="M1230.8 425.1s2-6.3 2-16.7c0-9-2-16.7-2-16.7H1056s-2 6.4-2 16.7 2 16.7 2 16.7h174.8z"/>
   <a id="tgl_left" class="bttn" href="javascript:;">
     <use x="1053.825" y="280" xlink:href="#bttn_l"/>
   </a>
@@ -629,7 +615,6 @@ text {
   <line x1="737.47" x2="783.85" y1="736.25" y2="629.5"/>
   <polyline points="788.11 641.11 783.85 629.5 772.6 634.64"/>
   <polyline id="valve_line" transform="translate(0 20)" stroke-dasharray="30 20" stroke-dashoffset="10" points="957.43 630.91 1142.66 630.91 1142.66 501.44 760.66 501.44 760.66 660"/>
-  <line x1="1142.66" x2="1142.66" y1="481.04" y2="498"/>
   <g id="spring">
     <line id="spring_1" x1="932.43" x2="982.43" y1="576" y2="597"/>
     <line id="spring_2" x1="932.43" x2="982.43" y1="618" y2="597"/>
@@ -823,6 +808,8 @@ function gw_upd() {
     }
     allow_play = false;
   } else {
+    $("#gray_arrow").setAttribute("transform", "rotate(-150 708.719 880.397)");
+    $("#white_arrow").setAttribute("transform", "rotate(-150 1748.044 763.201)");
     cancelAnimationFrame(animation_id);
     allow_play = true;
   }
@@ -892,7 +879,7 @@ function yarr_up() {
 function tgl_dwn() {
   if(t_angle > 0) {
     t_angle -= 2;
-    $("#toggle_arrow").setAttribute("transform", "rotate(" + ((100 - t_angle) * 1.8 - 90) + " 1143.412 408.396)");
+    $("#toggle_arrow").setAttribute("transform", "rotate(" + ((100 - t_angle) * 1.8 - 180) + " 1143.412 408.396)");
   }
   gw_upd();
 }
@@ -900,7 +887,7 @@ function tgl_dwn() {
 function tgl_up() {
   if(t_angle < 100) {
     t_angle += 2;
-    $("#toggle_arrow").setAttribute("transform", "rotate(" + ((100 - t_angle) * 1.8 - 90) + " 1143.412 408.396)");
+    $("#toggle_arrow").setAttribute("transform", "rotate(" + ((100 - t_angle) * 1.8 - 180) + " 1143.412 408.396)");
   }
   gw_upd();
 }
