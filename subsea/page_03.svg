@@ -694,6 +694,28 @@ text {
   </a>
 </g>
 
+<g id="popup_spring" class="popup_box invis">
+  <path fill="#FFF" d="M620.41 457.4h210.11a22.18 22.18 0 0122.17 22.17v22.61l67.96 43.76-67.96-12.15a22.18 22.18 0 01-22.17 22.17H620.41a22.18 22.18 0 01-22.17-22.17v-54.22a22.17 22.17 0 0122.17-22.17z" opacity=".5"/>
+  <text x="720.834" y="500">
+    Spring balanced
+    <tspan x="720.834" dy="32">piston</tspan>
+  </text>
+  <a id="popup_spring_close" class="bttn_close" href="javascript:;">
+    <use x="862.152" y="450" xlink:href="#popup_close"/>
+  </a>
+</g>
+
+<g id="popup_stem" class="popup_box invis">
+  <path fill="#FFF" d="M1272.91 580.19H1062.8a22.18 22.18 0 01-22.17-22.17V503.8a22.18 22.18 0 0122.17-22.17h15.82l29.23-21.52-1.17 21.52h166.23a22.18 22.18 0 0122.17 22.17v54.22a22.16 22.16 0 01-22.17 22.17z" opacity=".5"/>
+  <text x="1166.163" y="524.785">
+    Adjustment stem
+    <tspan x="1166.163" dy="32">powered by gear</tspan>
+  </text>
+  <a id="popup_stem_close" class="bttn_close" href="javascript:;">
+    <use x="1304.294" y="473.933" xlink:href="#popup_close"/>
+  </a>
+</g>
+
 <g id="info_labels">
 <rect x="920" y="1000" width="30" height="30" fill="#ffb8b8" stroke="#fff"/>
 <text id="red_label" x="960" y="1022">- 0 (BAR)</text>
@@ -760,11 +782,23 @@ $("#popup_throttling_close").onclick = function() {
   $("#info").classList.remove("invis");
 };
 
+$("#popup_spring_close").onclick = function() {
+  $("#popup_spring").classList.toggle("invis");
+  $("#info").classList.remove("invis");
+};
+
+$("#popup_stem_close").onclick = function() {
+  $("#popup_stem").classList.toggle("invis");
+  $("#info").classList.remove("invis");
+};
+
 function info_show() {
   $("#popup_flow_meter").classList.remove("invis");
   $("#popup_demonstrate").classList.remove("invis");
   $("#popup_restrictor").classList.remove("invis");
   $("#popup_throttling").classList.remove("invis");
+  $("#popup_spring").classList.remove("invis");
+  $("#popup_stem").classList.remove("invis");
 }
 
 $("#info").onclick = function() {
