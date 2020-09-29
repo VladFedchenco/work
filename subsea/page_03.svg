@@ -240,7 +240,7 @@ text {
   </g>
 </defs>
 
-<a href="javascript:;" id="bttn_prev" class="nav_button">
+<a href="page_02.svg" id="bttn_prev" class="nav_button">
   <path class="nav_button_bg" d="M184.5 119.66H63.98c-6.6 0-12-5.4-12-12V69.84c0-6.6 5.4-12 12-12H184.5c6.6 0 12 5.4 12 12v37.83c0 6.59-5.4 11.99-12 11.99z"/>
   <text x="126" y="100">PREV</text>
 </a>
@@ -263,7 +263,7 @@ text {
 </g>
 
 <text x="960" y="106" class="ttl">LOW FLOW CORE - P&amp;ID</text>
-<a id="info" class="popup_box invis" fill="#fff" href="javascript:;">
+<a id="info" class="popup_box" fill="#fff" href="javascript:;">
   <path id="info_bg" fill-opacity="0" stroke="#fff" stroke-width="3" d="M1291 53.55a17.01 17.01 0 010 34 17.01 17.01 0 010-34h0z"/>
   <path fill="#FFF" d="M1293.38 70.85a2.59 2.59 0 00-2.57-2.42 2.6 2.6 0 00-2.58 2.42v7.13a2.6 2.6 0 002.58 2.42 2.59 2.59 0 002.57-2.42v-7.13z"/>
   <path fill="#FFF" d="M1293.38 63.39a2.59 2.59 0 00-2.57-2.42 2.6 2.6 0 00-2.58 2.42v.03a2.6 2.6 0 002.58 2.42 2.59 2.59 0 002.57-2.42v-.03z"/>
@@ -756,7 +756,6 @@ $("#bttn_surface").onclick = function() {
 
 $("#popup_flow_meter_close").onclick = function() {
   $("#popup_flow_meter").classList.toggle("invis");
-  $("#info").classList.remove("invis");
 };
 
 $("#popup_warn_close").onclick = function() {
@@ -769,36 +768,40 @@ $("#popup_intdifreg_close").onclick = function() {
 
 $("#popup_demonstrate_close").onclick = function() {
   $("#popup_demonstrate").classList.toggle("invis");
-  $("#info").classList.remove("invis");
 };
 
 $("#popup_restrictor_close").onclick = function() {
   $("#popup_restrictor").classList.toggle("invis");
-  $("#info").classList.remove("invis");
 };
 
 $("#popup_throttling_close").onclick = function() {
   $("#popup_throttling").classList.toggle("invis");
-  $("#info").classList.remove("invis");
 };
 
 $("#popup_spring_close").onclick = function() {
   $("#popup_spring").classList.toggle("invis");
-  $("#info").classList.remove("invis");
 };
 
 $("#popup_stem_close").onclick = function() {
   $("#popup_stem").classList.toggle("invis");
-  $("#info").classList.remove("invis");
 };
 
 function info_show() {
+if($("#popup_flow_meter").classList.contains("invis") || $("#popup_demonstrate").classList.contains("invis") || $("#popup_restrictor").classList.contains("invis") || $("#popup_throttling").classList.contains("invis") || $("#popup_spring").classList.contains("invis") || $("#popup_stem").classList.contains("invis")) {
   $("#popup_flow_meter").classList.remove("invis");
   $("#popup_demonstrate").classList.remove("invis");
   $("#popup_restrictor").classList.remove("invis");
   $("#popup_throttling").classList.remove("invis");
   $("#popup_spring").classList.remove("invis");
   $("#popup_stem").classList.remove("invis");
+} else {
+  $("#popup_flow_meter").classList.toggle("invis");
+  $("#popup_demonstrate").classList.toggle("invis");
+  $("#popup_restrictor").classList.toggle("invis");
+  $("#popup_throttling").classList.toggle("invis");
+  $("#popup_spring").classList.toggle("invis");
+  $("#popup_stem").classList.toggle("invis");
+  }
 }
 
 $("#info").onclick = function() {
@@ -842,6 +845,9 @@ function gw_upd() {
     }
     allow_play = false;
   } else {
+    if(y_angle >= r_angle) {
+      $("#popup_warn").classList.remove("invis");
+    }
     $("#gray_arrow").setAttribute("transform", "rotate(-150 708.719 880.397)");
     $("#white_arrow").setAttribute("transform", "rotate(-150 1748.044 763.201)");
     cancelAnimationFrame(animation_id);
@@ -875,7 +881,7 @@ function start_oscillate() {
 }
 
 function rarr_dwn() {
-  if(r_angle > 0 && r_angle >= y_angle + 5) {
+  if(r_angle > 0 && r_angle > y_angle) {
     r_angle -= 5;
     $("#red_arrow").setAttribute("transform", "rotate(" + (r_angle - 150) + " 171.933 434.709)");
   } else {
@@ -901,7 +907,7 @@ function yarr_dwn() {
 }
 
 function yarr_up() {
-  if(y_angle < 300 && r_angle >= y_angle + 5) {
+  if(y_angle < 300 && r_angle > y_angle) {
     y_angle += 5;
     $("#yellow_arrow").setAttribute("transform", "rotate(" + (y_angle - 150) + " 1455.102 434.729)");
   } else {
@@ -928,7 +934,7 @@ function tgl_up() {
 
 $("#rb_left").onmousedown = function() {
   clearInterval(setint);
-  setint = setInterval(function(){rarr_dwn()}, 100);
+  setint = setInterval(function(){rarr_dwn()}, 200);
 }
 $("#rb_left").onclick = function() {rarr_dwn()};
 $("#rb_left").onmouseup = function() {
@@ -938,41 +944,39 @@ $("#rb_left").onmouseup = function() {
 
 $("#rb_right").onmousedown = function() {
   clearInterval(setint);
-  setint = setInterval(function(){rarr_up()}, 100);
+  setint = setInterval(function(){rarr_up()}, 200);
 }
 $("#rb_right").onclick = function() {rarr_up()};
 $("#rb_right").onmouseup = function() {
-  clearInterval(setint);
   start_oscillate();
 };
 
 $("#tgl_left").onmousedown = function() {
   clearInterval(setint);
-  setint = setInterval(function(){tgl_up()}, 100);
+  setint = setInterval(function(){tgl_up()}, 200);
 }
 $("#tgl_left").onclick = function() {tgl_up()};
-$("#tgl_left").onmouseup = function() {clearInterval(setint)};
 
 $("#tgl_right").onmousedown = function() {
   clearInterval(setint);
-  setint = setInterval(function(){tgl_dwn()}, 100);
+  setint = setInterval(function(){tgl_dwn()}, 200);
 }
 $("#tgl_right").onclick = function() {tgl_dwn()};
-$("#tgl_right").onmouseup = function() {clearInterval(setint)};
 
 $("#yb_left").onmousedown = function() {
   clearInterval(setint);
-  setint = setInterval(function(){yarr_dwn()}, 100);
+  setint = setInterval(function(){yarr_dwn()}, 200);
 }
 $("#yb_left").onclick = function() {yarr_dwn()};
 $("#yb_left").onmouseup = function() {
-  clearInterval(setint);
   start_oscillate();
 };
 
+window.onmouseup = function() {clearInterval(setint)};
+
 $("#yb_right").onmousedown = function() {
   clearInterval(setint);
-  setint = setInterval(function(){yarr_up()}, 100);
+  setint = setInterval(function(){yarr_up()}, 200);
 }
 $("#yb_right").onclick = function() {yarr_up()};
 $("#yb_right").onmouseup = function() {
