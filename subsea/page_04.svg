@@ -120,52 +120,89 @@ text {
   text-anchor: start;
 }
 
+.label {
+  font-size: 16px;
+  font-weight: 700;
+  text-anchor: middle;
+}
+
 /* ]]> */
 </style>
 
 <defs>
-  <linearGradient id="pipe_grd1" x2="0" y2="1">
-    <stop offset="0" stop-color="#363636"/>
-    <stop offset=".05" stop-color="#4e4e4e"/>
-    <stop offset=".07" stop-color="#4d4d4d"/>
-    <stop offset=".16" stop-color="#6a6a6a"/>
-    <stop offset=".36" stop-color="#444"/>
-    <stop offset=".6" stop-color="#aaa"/>
-    <stop offset=".61" stop-color="#ccc"/>
-    <stop offset="1" stop-color="#999"/>
+  <linearGradient id="ver_gray" x2=".6" y2="1">
+    <stop offset="0" stop-color="#c5d6d9"/>
+    <stop offset="1" stop-color="#aac2c7"/>
   </linearGradient>
-  <linearGradient id="pipe_grd12" x1="1" x2="0" y2="0">
-    <stop offset="0" stop-color="#363636"/>
-    <stop offset=".05" stop-color="#4e4e4e"/>
-    <stop offset=".07" stop-color="#4d4d4d"/>
-    <stop offset=".16" stop-color="#6a6a6a"/>
-    <stop offset=".36" stop-color="#444"/>
-    <stop offset=".6" stop-color="#aaa"/>
-    <stop offset=".61" stop-color="#ccc"/>
-    <stop offset="1" stop-color="#999"/>
+  <linearGradient id="ver_bwb" x2="0" y2="1">
+    <stop offset="0" stop-color="#6a6a6a"/>
+    <stop offset=".5" stop-color="#c4c4c4"/>
+    <stop offset="1" stop-color="#6a6a6a"/>
   </linearGradient>
-  <linearGradient id="pipe_grd2" x2="1">
-    <stop offset="0" stop-color="#868686"/>
+  <linearGradient id="hor_bwb" x2="1" y2="0">
+    <stop offset="0" stop-color="#6a6a6a"/>
+    <stop offset=".5" stop-color="#c4c4c4"/>
+    <stop offset="1" stop-color="#6a6a6a"/>
+  </linearGradient>
+  <linearGradient id="hor_yllw" x2="1" y2="0">
+    <stop offset="0" stop-color="#e0b100"/>
+    <stop offset=".6" stop-color="#FCEE21"/>
+    <stop offset="1" stop-color="#e0b100"/>
+  </linearGradient>
+  <linearGradient id="ver_yllw" x2="0" y2="1">
+    <stop offset="0" stop-color="#e0b100"/>
+    <stop offset=".6" stop-color="#FCEE21"/>
+    <stop offset="1" stop-color="#e0b100"/>
+  </linearGradient>
+  <linearGradient id="hor_red" x2="1" y2="0">
+    <stop offset="0" stop-color="#d4145a"/>
+    <stop offset=".6" stop-color="#d47f9e"/>
+    <stop offset="1" stop-color="#d4145a"/>
+  </linearGradient>
+  <linearGradient id="angl_red" y1="1" y2=".32">
+    <stop offset="0" stop-color="#d4145a"/>
+    <stop offset=".5" stop-color="#d4145a"/>
+    <stop offset=".6" stop-color="#d47f9e"/>
+    <stop offset=".7" stop-color="#d4145a"/>
+    <stop offset="1" stop-color="#d4145a"/>
+  </linearGradient>
+  <linearGradient id="ver_red" x2="0" y2="1">
+    <stop offset="0" stop-color="#d4145a"/>
+    <stop offset=".6" stop-color="#d47f9e"/>
+    <stop offset="1" stop-color="#d4145a"/>
+  </linearGradient>
+  <linearGradient id="hor_vlt" x2="1" y2="0">
+    <stop offset="0" stop-color="#70699d"/>
+    <stop offset=".6" stop-color="#bdb3fd"/>
+    <stop offset="1" stop-color="#70699d"/>
+  </linearGradient>
+  <linearGradient id="ver_vlt" x2="0" y2="1">
+    <stop offset="0" stop-color="#70699d"/>
+    <stop offset=".6" stop-color="#bdb3fd"/>
+    <stop offset="1" stop-color="#70699d"/>
+  </linearGradient>
+  <linearGradient id="hor_org" x2="1" y2="0">
+    <stop offset="0" stop-color="#c77900"/>
+    <stop offset=".6" stop-color="#fbce27"/>
+    <stop offset="1" stop-color="#c77900"/>
+  </linearGradient>
+  <linearGradient id="ver_org" x2="0" y2="1">
+    <stop offset="0" stop-color="#c77900"/>
+    <stop offset=".6" stop-color="#fbce27"/>
+    <stop offset="1" stop-color="#c77900"/>
+  </linearGradient>
+  <linearGradient id="angl_org" y1="1" y2=".4">
+    <stop offset="0" stop-color="#c77900"/>
+    <stop offset=".5" stop-color="#c77900"/>
+    <stop offset=".6" stop-color="#fbce27"/>
+    <stop offset=".7" stop-color="#c77900"/>
+    <stop offset="1" stop-color="#c77900"/>
+  </linearGradient>
+  <linearGradient id="hor_mask" x2="1" y2="0">
+    <stop offset="0" stop-color="#fff"/>
     <stop offset="1" stop-color="#000"/>
   </linearGradient>
-  <linearGradient id="pipe_grd3" x2="1">
-    <stop offset="0" stop-color="#878787"/>
-    <stop offset="1" stop-color="#c3c3c3"/>
-  </linearGradient>
-  <linearGradient id="pipe_grd4" x1="1" x2="0">
-    <stop offset="0" stop-color="#9f9f9f"/>
-    <stop offset=".04" stop-color="#9b9b9b"/>
-    <stop offset=".05" stop-color="#4e4e4e"/>
-    <stop offset=".07" stop-color="#4d4d4d"/>
-    <stop offset=".08" stop-color="#898989"/>
-    <stop offset=".15" stop-color="#8a8a8a"/>
-    <stop offset=".16" stop-color="#6a6a6a"/>
-    <stop offset=".36" stop-color="#5d5d5d"/>
-    <stop offset=".6" stop-color="#bdbdbd"/>
-    <stop offset=".61" stop-color="#e6e6e6"/>
-    <stop offset="1" stop-color="#b5b5b5"/>
-  </linearGradient>
-  <linearGradient id="pipe_grd5" x2="0" y1="1" y2="0">
+  <linearGradient id="hor_metallic" x2="0" y1="1" y2="0">
     <stop offset="0" stop-color="#363636"/>
     <stop offset=".05" stop-color="#4e4e4e"/>
     <stop offset=".07" stop-color="#4d4d4d"/>
@@ -240,11 +277,11 @@ text {
   </g>
 </defs>
 
-<a href="page_02.svg" id="bttn_prev" class="nav_button">
+<a href="page_03.svg" id="bttn_prev" class="nav_button">
   <path class="nav_button_bg" d="M184.5 119.66H63.98c-6.6 0-12-5.4-12-12V69.84c0-6.6 5.4-12 12-12H184.5c6.6 0 12 5.4 12 12v37.83c0 6.59-5.4 11.99-12 11.99z"/>
   <text x="126" y="100">PREV</text>
 </a>
-<a href="page_04.svg" id="bttn_next" class="nav_button">
+<a href="javascript:;" id="bttn_next" class="nav_button">
   <path class="nav_button_bg" d="M1856.02 119.66H1735.5c-6.6 0-12-5.4-12-12V69.84c0-6.6 5.4-12 12-12h120.52c6.6 0 12 5.4 12 12v37.83c0 6.59-5.4 11.99-12 11.99z"/>
   <text x="1798" y="100">NEXT</text>
 </a>
@@ -259,99 +296,320 @@ text {
 </a>
 <g id="page_num">
   <circle cx="1821.47" cy="984.85" r="41.88" fill="#fff"/>
-  <text x="1821.47" y="1005.44">3</text>
+  <text x="1818" y="1005.44">4</text>
 </g>
 
-<text x="960" y="106" class="ttl">LOW FLOW CORE - P&amp;ID</text>
-<a id="info" class="popup_box" fill="#fff" href="javascript:;">
+<text x="960" y="106" class="ttl">LOW FLOW X-SECTION</text>
+<a id="info" class="popup_box" fill="#fff" transform="translate(-20 0)" href="javascript:;">
   <path id="info_bg" fill-opacity="0" stroke="#fff" stroke-width="3" d="M1291 53.55a17.01 17.01 0 010 34 17.01 17.01 0 010-34h0z"/>
   <path fill="#FFF" d="M1293.38 70.85a2.59 2.59 0 00-2.57-2.42 2.6 2.6 0 00-2.58 2.42v7.13a2.6 2.6 0 002.58 2.42 2.59 2.59 0 002.57-2.42v-7.13z"/>
   <path fill="#FFF" d="M1293.38 63.39a2.59 2.59 0 00-2.57-2.42 2.6 2.6 0 00-2.58 2.42v.03a2.6 2.6 0 002.58 2.42 2.59 2.59 0 002.57-2.42v-.03z"/>
 </a>
 <text x="960" y="159" class="text_body">
-  The SkoFlo Low Flow series adjusts the flow set point by simultaneously varying a restrictor (Cv)
-  <tspan x="960" dy="32">and controlling the internal pressure drop (DP) across that restrictor. As DP is independent of</tspan>
-  <tspan x="960" dy="32">system pressure changes, flow is stable in all field conditions.</tspan>
+  The Low Flow valve adjusts a variable pressure drop across a mechanically coupled variable
+  <tspan x="960" dy="32">restrictor to achieve its range and stability</tspan>
 </text>
 
-<g id="pipes">
-  <rect width="945.43" height="83.83" x="51.97" y="642.89" fill="url(#pipe_grd1)"/>
-  <rect width="950.43" height="10" x="51.97" y="641.89" fill="#CCC"/>
-  <rect width="875.6" height="10" x="51.97" y="716.72" fill="#555"/>
-  <rect width="824.33" height="83.83" x="922.57" y="727.25" fill="url(#pipe_grd1)"/>
-  <rect width="754.5" height="10" x="992.4" y="726.25" fill="#CCC"/>
-  <rect width="18.78" height="10" x="550.87" y="716.72" fill="url(#pipe_grd3)"/>
-  <rect width="18.78" height="10" x="848.53" y="716.72" fill="url(#pipe_grd3)"/>
-  <rect width="18.78" height="10" x="162.76" y="641.89" fill="url(#pipe_grd2)"/>
-  <path fill="url(#pipe_grd4)" d="M185.15 641.89v-91.9h-26v91.9s5.02 1 13 1 13-1 13-1z"/>
-  <path fill="url(#pipe_grd4)" d="M572.98 725.92v167.4h-26v-167.4s5.02-1 13-1c7.99 0 13 1 13 1z"/>
-  <path fill="url(#pipe_grd4)" d="M870.64 725.92v167.4h-26v-167.4s5.02-1 13-1 13 1 13 1z"/>
-  <path fill="url(#pipe_grd5)" d="M591.99 893.65h-45l26-26h19s1 5.02 1 13-1 13-1 13z"/>
-  <path fill="url(#pipe_grd5)" d="M825.64 893.65h45l-26-26h-19s-1 5.02-1 13 1 13 1 13z"/>
-  <rect width="18.78" height="10" x="1445.86" y="726.25" fill="url(#pipe_grd2)"/>
-  <path fill="url(#pipe_grd4)" d="M1468.25 726.25V549.99h-26v176.26s5.02 1 13 1 13-1 13-1z"/>
-  <polygon points="992.4 651.89 992.4 736.25 927.57 801.08 927.57 716.72" fill="url(#pipe_grd12)"/>
-  <rect width="10" height="94.36" x="992.4" y="641.89" fill="#CCC"/>
-  <rect width="10" height="94.32" x="917.57" y="716.72" fill="#555"/>
-  <rect width="829.33" height="10" x="917.57" y="801.08" fill="#555"/>
-  <rect width="18.78" height="10" x="672.51" y="641.89" fill="url(#pipe_grd2)"/>
-  <path fill="url(#pipe_grd4)" d="M694.62 642.7V435.3h-26v207.4s5.02 1 13 1c7.99 0 13-1 13-1z"/>
-  <path fill="url(#pipe_grd4)" d="M973 435.3h-26v94.78s5.02 1 13 1 13-1 13-1V435.3z"/>
-  <polygon fill="url(#pipe_grd5)" points="668.63 434.97 694.63 460.97 947 460.97 973 434.97"/>
-  <g stroke-dasharray="30 20" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="4">
-    <line x1="171.97" x2="171.97" y1="554.69" y2="643.27" stroke="#BC0000"/>
-    <polyline stroke="#BC0000" points="681.62 643.7 681.62 448.32 959.46 448.32 959.46 527.93"/>
-    <polyline stroke="#BC0000" points="559.98 724.92 559.98 879.64 588.72 879.64"/>
-    <polyline stroke="#F7931E" points="857.64 724.92 857.64 879.64 828.6 879.64"/>
-    <line x1="1455.25" x2="1455.25" y1="727.25" y2="554.47" stroke="#FF0"/>
-  </g>
+<g stroke="#000" stroke-width=".5">
+    <path fill="url(#ver_gray)" d="M498.21 340.24h930.22c4.44 0 8.05 3.6 8.05 8.05v460.07c0 4.44-3.6 8.05-8.05 8.05H498.21a8.05 8.05 0 01-8.05-8.05V348.29a8.05 8.05 0 018.05-8.05z"/>
+    <path fill="#9E9DA6" d="M1079.75 340.24H852.07V220.56c0-2.7 2.19-4.88 4.88-4.88h217.91c2.7 0 4.88 2.19 4.88 4.88v119.68z"/>
+    <rect width="212.73" height="117.47" x="859.55" y="222.77" fill="url(#hor_bwb)"/>
+    <rect width="24.67" height="5.19" x="877.28" y="335.05" fill="#9E9DA6"/>
+    <rect width="21.49" height="15.07" x="878.87" y="319.98" fill="#9E9DA6"/>
+    <rect width="17.42" height="3.38" x="880.9" y="316.61" fill="#9E9DA6"/>
+    <rect width="24.67" height="5.19" x="905.11" y="335.05" fill="#9E9DA6"/>
+    <rect width="21.49" height="15.07" x="906.7" y="319.98" fill="#9E9DA6"/>
+    <rect width="17.42" height="3.38" x="908.74" y="316.61" fill="#9E9DA6"/>
+    <rect width="24.67" height="5.19" x="992.88" y="335.05" fill="#9E9DA6"/>
+    <rect width="21.49" height="15.07" x="994.47" y="319.98" fill="#9E9DA6"/>
+    <rect width="17.42" height="3.38" x="996.51" y="316.61" fill="#9E9DA6"/>
+    <rect width="24.67" height="5.19" x="1021.73" y="335.05" fill="#9E9DA6"/>
+    <rect width="21.49" height="15.07" x="1023.31" y="319.98" fill="#9E9DA6"/>
+    <rect width="17.42" height="3.38" x="1025.35" y="316.61" fill="#9E9DA6"/>
+    <rect width="100.87" height="60.47" x="911.46" y="237.69" fill="#CC6766"/>
+    <rect width="16.72" height="66.47" x="1015.27" y="233.74" fill="#99CC01"/>
+</g>
+<path fill="none" stroke="#000" d="M889.91 316.61s.7-5.37 12.04-6.18c11.34-.81 98.43-3.75 106.24-4.59 9.36-1 9.36-5.62 9.36-5.62"/>
+<path fill="none" stroke="#000" d="M917.45 316.61s1.8-4.99 8.71-4.99c6.91 0 67.77-2.72 75.86-3.07s19.68-1.04 19.68-8.34"/>
+<path fill="none" stroke="#000" d="M1005.21 316.61s.92-5.06 7.11-5.86c8.28-1.07 13.18-2.63 13.18-10.53"/>
+<path fill="none" stroke="#000" d="M1034.05 316.61s.01-4.72-2.05-6.55c-1.6-1.42-2.91-3.78-3-5.86-.08-1.95 0-3.98 0-3.98"/>
+<circle cx="961.89" cy="268.87" r="21.14" fill="none" stroke="#000" stroke-width="3"/>
+<path d="M952.96 260.14h2.14l6.83 13.08 6.75-13.08h2.14v17.44h-1.6l-.02-15.05-6.83 13.18h-.95l-6.85-13.18v15.05h-1.62v-17.44z"/>
+<g stroke="#000" stroke-width=".5">
+    <rect width="48.16" height="40.1" x="937.81" y="298.17" fill="#666"/>
+    <path fill="url(#hor_bwb)" d="M973.2 306.65l-21.1 4.46a2.93 2.93 0 01-3.46-2.25l-.08-.37a2.93 2.93 0 012.25-3.46l21.1-4.46a2.93 2.93 0 013.46 2.25l.08.37a2.92 2.92 0 01-2.25 3.46z"/>
+    <path fill="url(#hor_bwb)" d="M973.2 318.59l-21.1 4.46a2.93 2.93 0 01-3.46-2.25l-.08-.37a2.93 2.93 0 012.25-3.46l21.1-4.46a2.93 2.93 0 013.46 2.25l.08.37a2.92 2.92 0 01-2.25 3.46z"/>
+    <path fill="url(#hor_bwb)" d="M973.2 330.53l-21.1 4.46a2.93 2.93 0 01-3.46-2.25l-.08-.37a2.93 2.93 0 012.25-3.46l21.1-4.46a2.93 2.93 0 013.46 2.25l.08.37a2.92 2.92 0 01-2.25 3.46z"/>
 </g>
 
-<clipPath id="arrow_clip1">
-  <rect x="52" y="652" width="709" height="64"/>
-</clipPath>
-<clipPath id="arrow_clip2">
-  <rect x="957" y="736" width="681" height="64"/>
-</clipPath>
-<clipPath id="arrow_clip3">
-  <rect x="761" y="652" width="196" height="64"/>
-</clipPath>
-<g clip-path="url(#arrow_clip1)">
-  <g id="queue">
-    <use x="-70" y="685" xlink:href="#arrow_r"/>
-    <use x="52" y="685" xlink:href="#arrow_r"/>
-    <use x="174" y="685" xlink:href="#arrow_r"/>
-    <use x="296" y="685" xlink:href="#arrow_r"/>
-    <use x="418" y="685" xlink:href="#arrow_r"/>
-    <use x="540" y="685" xlink:href="#arrow_r"/>
-    <use x="662" y="685" xlink:href="#arrow_r"/>
-    <use x="784" y="685" xlink:href="#arrow_r"/>
-  </g>
+<g stroke="#000" stroke-width=".5">
+  <rect width="22.74" height="31" x="639.62" y="831.62" fill="url(#hor_bwb)"/>
+  <polygon fill="#929199" points="662.36 831.62 662.36 862.62 679.12 862.62 679.12 811.1 671.1 811.1 671.1 798.88 630.87 798.88 630.87 811.1 622.85 811.1 622.85 862.62 639.62 862.62 639.62 831.62"/>
+  <polygon fill="url(#hor_bwb)" points="637.36 862.62 640.93 856.77 640.93 862.62"/>
+  <polygon fill="url(#hor_bwb)" points="664.62 862.62 661.04 856.77 661.04 862.62"/>
+  <rect width="3.57" height="3.31" x="637.36" y="849.83" fill="url(#hor_bwb)"/>
+  <rect width="3.57" height="3.31" x="661.04" y="849.83" fill="url(#hor_bwb)"/>
+  <polygon fill="#929199" points="679.33 925.23 679.33 885.01 686.27 885.01 686.27 863.99 661.04 863.99 661.04 833.08 640.93 833.08 640.93 863.99 615.7 863.99 615.7 885.01 622.64 885.01 622.64 925.23"/>
+  <rect width="13.06" height="89.69" x="644.45" y="835.54" fill="url(#hor_bwb)"/>
+  <rect width="13.06" height="29.64" x="644.45" y="798.88" fill="url(#hor_bwb)"/>
+  <rect width="7.02" height="3.1" x="647.47" y="828.52" fill="url(#hor_bwb)"/>
+  <rect width="7.02" height="2.46" x="647.47" y="833.08" fill="url(#hor_bwb)"/>
+  <polygon fill="#9E9DA6" points="647.28 815.78 647.28 825.93 648.67 827.2 648.67 831.62 653.3 831.62 653.3 827.2 654.69 825.93 654.69 815.78"/>
+  <polygon fill="#9E9DA6" points="653.3 833.08 648.67 833.08 648.67 836.6 647.28 837.87 647.28 848.02 654.69 848.02 654.69 837.87 653.3 836.6"/>
 </g>
-<g clip-path="url(#arrow_clip3)">
-  <g id="queue3">
-    <use x="540" y="685" xlink:href="#arrow_o"/>
-    <use x="662" y="685" xlink:href="#arrow_o"/>
-    <use x="784" y="685" xlink:href="#arrow_o"/>
-    <use x="906" y="685" xlink:href="#arrow_o"/>
-    <use x="1028" y="685" xlink:href="#arrow_o"/>
-  </g>
+<g stroke="#000" stroke-width=".5">
+  <rect width="22.74" height="31" x="1303.2" y="831.62" fill="url(#hor_bwb)"/>
+  <polygon fill="#929199" points="1325.94 831.62 1325.94 862.62 1342.71 862.62 1342.71 811.1 1334.69 811.1 1334.69 798.88 1294.46 798.88 1294.46 811.1 1286.44 811.1 1286.44 862.62 1303.2 862.62 1303.2 831.62"/>
+  <polygon fill="url(#hor_bwb)" points="1300.94 862.62 1304.52 856.77 1304.52 862.62"/>
+  <polygon fill="url(#hor_bwb)" points="1328.2 862.62 1324.63 856.77 1324.63 862.62"/>
+  <rect width="3.57" height="3.31" x="1300.94" y="849.83" fill="url(#hor_bwb)"/>
+  <rect width="3.57" height="3.31" x="1324.63" y="849.83" fill="url(#hor_bwb)"/>
+  <polygon fill="#929199" points="1342.92 925.23 1342.92 885.01 1349.86 885.01 1349.86 863.99 1324.63 863.99 1324.63 833.08 1304.52 833.08 1304.52 863.99 1279.29 863.99 1279.29 885.01 1286.23 885.01 1286.23 925.23"/>
+  <rect width="13.06" height="89.69" x="1308.04" y="835.54" fill="url(#hor_bwb)"/>
+  <rect width="13.06" height="29.64" x="1308.04" y="798.88" fill="url(#hor_bwb)"/>
+  <rect width="7.02" height="3.1" x="1311.06" y="828.52" fill="url(#hor_bwb)"/>
+  <rect width="7.02" height="2.46" x="1311.06" y="833.08" fill="url(#hor_bwb)"/>
+  <polygon fill="#9E9DA6" points="1310.87 815.78 1310.87 825.93 1312.26 827.2 1312.26 831.62 1316.89 831.62 1316.89 827.2 1318.28 825.93 1318.28 815.78"/>
+  <polygon fill="#9E9DA6" points="1316.89 833.08 1312.26 833.08 1312.26 836.6 1310.87 837.87 1310.87 848.02 1318.28 848.02 1318.28 837.87 1316.89 836.6"/>
 </g>
-<g clip-path="url(#arrow_clip2)">
-  <g id="queue2">
-    <use x="784" y="771" xlink:href="#arrow_y"/>
-    <use x="906" y="771" xlink:href="#arrow_y"/>
-    <use x="1028" y="771" xlink:href="#arrow_y"/>
-    <use x="1150" y="771" xlink:href="#arrow_y"/>
-    <use x="1272" y="771" xlink:href="#arrow_y"/>
-    <use x="1394" y="771" xlink:href="#arrow_y"/>
-    <use x="1516" y="771" xlink:href="#arrow_y"/>
-    <use x="1638" y="771" xlink:href="#arrow_y"/>
-  </g>
+<rect width="40.24" height="57.85" x="630.86" y="741.03" fill="url(#hor_yllw)" stroke="#000" stroke-width=".5"/>
+<polygon fill="url(#hor_yllw)" stroke="#000" stroke-width=".5" points="671.1 741.03 630.87 741.03 642.76 728.59 659.21 728.59"/>
+<rect width="16.44" height="135.85" x="642.76" y="592.75" fill="url(#hor_yllw)" stroke="#000" stroke-width=".5"/>
+<circle cx="650.99" cy="771.08" r="15.36" fill="none" stroke="#000"/>
+<polyline fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" points="669.44 763.61 650.99 746 632.54 763.61"/>
+<g stroke="#000" stroke-width=".5">
+  <rect width="40.23" height="12.97" x="1294.46" y="785.9" fill="url(#hor_vlt)"/>
+  <rect width="69.78" height="10.13" x="1279.69" y="707.54" fill="none"/>
+  <rect width="9.93" height="5.07" x="1289.53" y="723.45" fill="url(#ver_vlt)"/>
+  <rect width="9.93" height="5.07" x="1329.69" y="723.45" fill="url(#ver_vlt)"/>
+  <rect width="9.93" height="5.07" x="1289.53" y="738.32" fill="url(#ver_vlt)"/>
+  <rect width="9.93" height="5.07" x="1329.69" y="738.32" fill="url(#ver_vlt)"/>
+  <rect width="9.93" height="5.07" x="1289.53" y="753.2" fill="url(#ver_vlt)"/>
+  <rect width="9.93" height="5.07" x="1329.69" y="753.2" fill="url(#ver_vlt)"/>
+  <polygon fill="url(#hor_vlt)" points="1339.62 717.67 1339.62 770.5 1289.53 770.5 1289.53 717.67 1279.69 717.67 1279.69 785.9 1349.46 785.9 1349.46 717.67"/>
+  <rect width="30.22" height="46.73" x="1299.46" y="717.67" fill="url(#hor_red)"/>
+  <rect width="6.47" height="6.09" x="1311.34" y="764.4" fill="url(#hor_vlt)"/>
+</g>
+<polygon fill="url(#ver_red)" stroke="#000" stroke-width=".5" points="1211.25 788.43 1057.04 788.43 1057.04 770.9 1193.71 770.9"/>
+<polygon fill="url(#angl_red)" stroke="#000" stroke-width=".5" points="1080.61 770.9 1043.86 527.33 1061.4 527.33 1098.14 770.9"/>
+<rect width="179.7" height="16.44" x="741.86" y="547.6" fill="url(#ver_yllw)" stroke="#000" stroke-width=".5"/>
+<polygon fill="url(#hor_red)" stroke="#000" stroke-width=".5" points="1193.71 770.9 1193.71 701.31 1211.25 701.31 1211.25 788.43"/>
+
+<g stroke="#000">
+<line x1="1334.69" x2="1489.3" y1="792.27" y2="792.27" fill="none" stroke-width="2"/>
+<line x1="448.83" x2="630.86" y1="792.27" y2="792.27" fill="none" stroke-width="2"/>
+<polyline fill="none" stroke-width="2" points="1408.36 792.39 1408.36 354.12 1034.05 354.12 1034.05 340.24"/>
+<circle cx="1408.36" cy="792.33" r="16" fill="#FFF" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline fill="none" stroke-width="2" points="1081.84 946.4 1121.74 946.4 1121.74 386.92 1005.21 386.92 1005.21 340.24"/>
+<circle cx="1121.74" cy="493.11" r="16" fill="#FFF" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="1062.49" x2="1105.91" y1="493.11" y2="493.11" fill="none" stroke-width="2"/>
+<line x1="810" x2="868.11" y1="493.11" y2="493.11" fill="none" stroke-width="2"/>
+<polyline fill="none" stroke-width="2" points="841.82 946.4 810.11 946.4 810.11 386.92 917.45 386.92 917.45 340.24"/>
+<circle cx="810.11" cy="493.11" r="16" fill="#FFF" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline fill="none" stroke-width="2" points="515.3 792.39 515.3 354.12 889.61 354.12 889.61 340.24"/>
+<circle cx="515.3" cy="792.33" r="16" fill="#FFF" stroke-linecap="round" stroke-linejoin="round"/>
 </g>
 
-<g id="red_bar">
-  <circle cx="172" cy="434.67" r="101" fill="#FFB8B8" fill-rule="evenodd" clip-rule="evenodd"/>
+<text x="515.8" y="798" class="label">P3</text>
+<text x="810" y="499" class="label">P2</text>
+<text x="1122" y="499" class="label">P1</text>
+<text x="1408.36" y="798" class="label">P4</text>
+
+<path fill="#9E9DA6" stroke="#000" stroke-width=".5" d="M1309.96 367.75h-102.79a30.32 30.32 0 00-20.55 8.03l-13.84 12.77a30.32 30.32 0 00-9.75 22.26v245.98h191.06V410.82c0-8.46-3.53-16.53-9.75-22.26l-13.84-12.77a30.26 30.26 0 00-20.54-8.04z"/>
+<path fill="url(#hor_bwb)" stroke="#000" stroke-width=".5" d="M1171.11 648.72v-237.9a22.3 22.3 0 017.15-16.33l13.84-12.77a22.16 22.16 0 0115.07-5.89h102.79c5.6 0 10.96 2.09 15.07 5.89l13.84 12.77a22.3 22.3 0 017.15 16.33v237.9h-174.91z"/>
+<rect width="144.15" height="240.42" x="1186.49" y="460.88" fill="#9E9DA6" stroke="#000" stroke-width=".5"/>
+<rect width="89.11" height="157.92" x="1214.01" y="534.38" fill="url(#hor_red)" stroke="#000" stroke-width=".5"/>
+<g fill="#CC6601" stroke="#000" stroke-width=".5">
+  <circle cx="1200.95" cy="402.72" r="3.8"/>
+  <circle cx="1209.66" cy="402.72" r="3.8"/>
+  <circle cx="1218.36" cy="402.72" r="3.8"/>
+  <circle cx="1227.06" cy="402.72" r="3.8"/>
+  <circle cx="1200.95" cy="411.13" r="3.8"/>
+  <circle cx="1209.66" cy="411.13" r="3.8"/>
+  <circle cx="1218.36" cy="411.13" r="3.8"/>
+  <circle cx="1227.06" cy="411.13" r="3.8"/>
+  <circle cx="1200.95" cy="419.55" r="3.8"/>
+  <circle cx="1209.66" cy="419.55" r="3.8"/>
+  <circle cx="1218.36" cy="419.55" r="3.8"/>
+  <circle cx="1227.06" cy="419.55" r="3.8"/>
+  <circle cx="1200.95" cy="427.97" r="3.8"/>
+  <circle cx="1209.66" cy="427.97" r="3.8"/>
+  <circle cx="1218.36" cy="427.97" r="3.8"/>
+  <circle cx="1227.06" cy="427.97" r="3.8"/>
+  <circle cx="1200.95" cy="436.38" r="3.8"/>
+  <circle cx="1209.66" cy="436.38" r="3.8"/>
+  <circle cx="1218.36" cy="436.38" r="3.8"/>
+  <circle cx="1227.06" cy="436.38" r="3.8"/>
+  <circle cx="1200.95" cy="444.8" r="3.8"/>
+  <circle cx="1209.66" cy="444.8" r="3.8"/>
+  <circle cx="1218.36" cy="444.8" r="3.8"/>
+  <circle cx="1227.06" cy="444.8" r="3.8"/>
+  <circle cx="1200.95" cy="453.21" r="3.8"/>
+  <circle cx="1209.66" cy="453.21" r="3.8"/>
+  <circle cx="1218.36" cy="453.21" r="3.8"/>
+  <circle cx="1227.06" cy="453.21" r="3.8"/>
+  <circle cx="1316.17" cy="402.72" r="3.8"/>
+  <circle cx="1307.47" cy="402.72" r="3.8"/>
+  <circle cx="1298.77" cy="402.72" r="3.8"/>
+  <circle cx="1290.07" cy="402.72" r="3.8"/>
+  <circle cx="1316.17" cy="411.13" r="3.8"/>
+  <circle cx="1307.47" cy="411.13" r="3.8"/>
+  <circle cx="1298.77" cy="411.13" r="3.8"/>
+  <circle cx="1290.07" cy="411.13" r="3.8"/>
+  <circle cx="1316.17" cy="419.55" r="3.8"/>
+  <circle cx="1307.47" cy="419.55" r="3.8"/>
+  <circle cx="1298.77" cy="419.55" r="3.8"/>
+  <circle cx="1290.07" cy="419.55" r="3.8"/>
+  <circle cx="1316.17" cy="427.97" r="3.8"/>
+  <circle cx="1307.47" cy="427.97" r="3.8"/>
+  <circle cx="1298.77" cy="427.97" r="3.8"/>
+  <circle cx="1290.07" cy="427.97" r="3.8"/>
+  <circle cx="1316.17" cy="436.38" r="3.8"/>
+  <circle cx="1307.47" cy="436.38" r="3.8"/>
+  <circle cx="1298.77" cy="436.38" r="3.8"/>
+  <circle cx="1290.07" cy="436.38" r="3.8"/>
+  <circle cx="1316.17" cy="444.8" r="3.8"/>
+  <circle cx="1307.47" cy="444.8" r="3.8"/>
+  <circle cx="1298.77" cy="444.8" r="3.8"/>
+  <circle cx="1290.07" cy="444.8" r="3.8"/>
+  <circle cx="1316.17" cy="453.21" r="3.8"/>
+  <circle cx="1307.47" cy="453.21" r="3.8"/>
+  <circle cx="1298.77" cy="453.21" r="3.8"/>
+  <circle cx="1290.07" cy="453.21" r="3.8"/>
+</g>
+<polyline fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="1194.96 396.52 1233.05 396.52 1233.05 459 1194.96 459"/>
+<polyline fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="1322.17 396.52 1284.07 396.52 1284.07 459 1322.17 459"/>
+<polygon fill="#929199" stroke="#000" stroke-width=".5" points="1280.54 460.87 1280.54 386.99 1236.59 386.99 1236.59 460.87 1194.96 460.87 1194.96 469.11 1322.17 469.11 1322.17 460.87"/>
+<rect width="32.53" height="38.27" x="1242.3" y="392.53" fill="url(#hor_bwb)" stroke="#000" stroke-width=".5"/>
+<polygon fill="url(#hor_red)" stroke="#000" stroke-width=".5" points="1196.41 469.11 1196.41 506.75 1247.88 506.75 1251.97 502.66 1265.15 502.66 1269.24 506.75 1320.72 506.75 1320.72 469.11"/>
+<polygon fill="url(#hor_bwb)" stroke="#000" stroke-width=".5" points="1272.58 482.43 1275.44 480.21 1272.58 477.99 1275.44 475.77 1272.58 473.55 1275.44 471.33 1272.58 469.11 1244.54 469.11 1241.68 471.33 1244.54 473.55 1241.68 475.77 1244.54 477.99 1241.68 480.21 1244.54 482.43"/>
+<polygon fill="#9E9DA6" stroke="#000" stroke-width=".5" points="1273.31 416.21 1273.31 394.25 1243.82 394.25 1243.82 416.21 1254.93 416.21 1254.93 481.92 1244.54 481.92 1244.54 494.17 1272.59 494.17 1272.59 481.92 1262.2 481.92 1262.2 416.21"/>
+<rect width="20.27" height="8.03" x="1248.43" y="488.04"/>
+<g stroke="#000" fill="#CC6601" stroke-width=".5">
+  <circle cx="1179.04" cy="541.06" r="3.8"/>
+  <circle cx="1179.04" cy="549.48" r="3.8"/>
+  <circle cx="1179.04" cy="557.89" r="3.8"/>
+  <circle cx="1179.04" cy="566.31" r="3.8"/>
+  <circle cx="1179.04" cy="576.95" r="3.8"/>
+  <circle cx="1179.04" cy="585.36" r="3.8"/>
+  <circle cx="1179.04" cy="593.78" r="3.8"/>
+  <circle cx="1179.04" cy="602.19" r="3.8"/>
+  <circle cx="1179.04" cy="612.83" r="3.8"/>
+  <circle cx="1179.04" cy="621.25" r="3.8"/>
+  <circle cx="1179.04" cy="629.67" r="3.8"/>
+  <circle cx="1179.04" cy="638.08" r="3.8"/>
+  <circle cx="1338.09" cy="541.06" r="3.8"/>
+  <circle cx="1338.09" cy="549.48" r="3.8"/>
+  <circle cx="1338.09" cy="557.89" r="3.8"/>
+  <circle cx="1338.09" cy="566.31" r="3.8"/>
+  <circle cx="1338.09" cy="576.95" r="3.8"/>
+  <circle cx="1338.09" cy="585.36" r="3.8"/>
+  <circle cx="1338.09" cy="593.78" r="3.8"/>
+  <circle cx="1338.09" cy="602.19" r="3.8"/>
+  <circle cx="1338.09" cy="612.83" r="3.8"/>
+  <circle cx="1338.09" cy="621.25" r="3.8"/>
+  <circle cx="1338.09" cy="629.67" r="3.8"/>
+  <circle cx="1338.09" cy="638.08" r="3.8"/>
+</g>
+<g stroke="#000" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+  <polyline points="1174.58 535.74 1184.47 535.74 1184.47 571.63 1174.58 571.63"/>
+  <polyline points="1174.58 571.63 1184.47 571.63 1184.47 607.51 1174.58 607.51"/>
+  <polyline points="1174.58 607.51 1184.47 607.51 1184.47 643.4 1174.58 643.4"/>
+  <polyline points="1342.55 535.74 1332.66 535.74 1332.66 571.63 1342.55 571.63"/>
+  <polyline points="1342.55 571.63 1332.66 571.63 1332.66 607.51 1342.55 607.51"/>
+  <polyline points="1342.55 607.51 1332.66 607.51 1332.66 643.4 1342.55 643.4"/>
+</g>
+<polygon fill="url(#ver_red)" stroke="#000" stroke-width=".5" points="1320.72 517.44 1264.77 517.44 1252.36 528.6 1308.31 528.6"/>
+<polygon fill="url(#hor_red)" stroke="#000" stroke-width=".5" points="1264.77 502.66 1252.36 502.66 1252.36 528.6 1264.77 517.44"/>
+<rect width="12.4" height="194.56" x="1196.41" y="506.75" fill="url(#hor_red)" stroke="#000" stroke-width=".5"/>
+<polygon fill="url(#hor_red)" stroke="#000" stroke-width=".5" points="1320.72 717.67 1320.72 517.44 1308.31 528.6 1308.31 717.67"/>
+<rect width="5.19" height="11.17" x="1303.12" y="537.26" fill="url(#ver_red)" stroke="#000" stroke-width=".5"/>
+<rect width="5.19" height="11.17" x="1208.81" y="673.27" fill="url(#ver_red)" stroke="#000" stroke-width=".5"/>
+<polygon fill="#9E9DA6" stroke="#000" stroke-width=".5" points="1264.77 542.85 1264.77 534.38 1252.36 534.38 1252.36 542.85 1214.01 542.85 1214.01 610.64 1303.12 610.64 1303.12 542.85"/>
+<rect width="4.1" height="11.25" x="1214.01" y="542.85" fill="#666" stroke="#000" stroke-width=".5"/>
+<rect width="4.1" height="11.25" x="1299.02" y="542.85" fill="#666" stroke="#000" stroke-width=".5"/>
+<rect width="4.1" height="11.25" x="1214.01" y="599.4" fill="#666" stroke="#000" stroke-width=".5"/>
+<rect width="4.1" height="11.25" x="1299.02" y="599.4" fill="#666" stroke="#000" stroke-width=".5"/>
+<rect width="4.1" height="24.08" x="1214.01" y="564.7" fill="#CCC" stroke="#000" stroke-width=".5"/>
+<rect width="4.1" height="24.08" x="1299.02" y="564.7" fill="#CCC" stroke="#000" stroke-width=".5"/>
+<rect width="41.2" height="8.9" x="1237.96" y="623.54" fill="url(#hor_bwb)" stroke="#000" stroke-width=".5" transform="rotate(-13.03 1258.83 628.08)"/>
+<circle cx="1238.49" cy="632.64" r="4.45" fill="#999" stroke="#CCC" stroke-width=".5"/>
+<circle cx="1278.63" cy="623.35" r="4.45" fill="#999" stroke="#CCC" stroke-width=".5"/>
+<rect width="41.2" height="8.9" x="1237.96" y="639.18" fill="url(#hor_bwb)" stroke="#000" stroke-width=".5" transform="rotate(-13.03 1258.83 643.72)"/>
+<circle cx="1238.49" cy="648.27" r="4.45" fill="#999" stroke="#CCC" stroke-width=".5"/>
+<circle cx="1278.63" cy="638.98" r="4.45" fill="#999" stroke="#CCC" stroke-width=".5"/>
+<rect width="41.2" height="8.9" x="1237.96" y="654.81" fill="url(#hor_bwb)" stroke="#000" stroke-width=".5" transform="rotate(-13.03 1258.83 659.36)"/>
+<circle cx="1238.49" cy="663.91" r="4.45" fill="#999" stroke="#CCC" stroke-width=".5"/>
+<circle cx="1278.63" cy="654.62" r="4.45" fill="#999" stroke="#CCC" stroke-width=".5"/>
+<rect width="41.2" height="8.9" x="1237.96" y="670.45" fill="url(#hor_bwb)" stroke="#000" stroke-width=".5" transform="rotate(-13.03 1258.83 675)"/>
+<circle cx="1238.49" cy="679.54" r="4.45" fill="#999" stroke="#CCC" stroke-width=".5"/>
+<circle cx="1278.63" cy="670.25" r="4.45" fill="#999" stroke="#CCC" stroke-width=".5"/>
+
+<g stroke="#000" stroke-width=".5">
+  <rect width="190.4" height="55.86" x="866.64" y="690.55" fill="url(#hor_org)"/>
+  <rect width="190.4" height="42.02" x="866.64" y="746.41" fill="url(#hor_red)"/>
+  <rect width="131.75" height="60.02" x="895.96" y="630.53" fill="url(#hor_org)"/>
+  <polygon fill="#929199" points="901.51 718.62 868.39 724.07 868.39 732.65 901.51 727.2"/>
+  <polygon fill="#929199" points="901.51 718.62 868.39 713.17 868.39 704.58 901.51 710.04"/>
+  <polygon fill="#929199" points="901.51 690.55 868.39 696 868.39 704.58 901.51 699.13"/>
+  <polygon fill="#929199" points="1022.17 718.62 1055.3 724.07 1055.3 732.65 1022.17 727.2"/>
+  <polygon fill="#929199" points="1022.17 718.62 1055.3 713.17 1055.3 704.58 1022.17 710.04"/>
+  <polygon fill="#929199" points="1022.17 690.55 1055.3 696 1055.3 704.58 1022.17 699.13"/>
+  <rect width="11.52" height="15.87" x="866.64" y="748.04" fill="#666"/>
+  <rect width="11.52" height="15.87" x="1045.52" y="748.04" fill="#666"/>
+  <polygon fill="url(#angl_org)" points="900.22 630.53 877.01 527.33 894.55 527.33 917.75 630.53"/>
+  <rect width="80.47" height="198.46" x="921.61" y="432.07" fill="url(#hor_org)"/>
+  <polygon fill="#666" points="999.86 527.33 999.86 454.32 990.48 454.32 990.48 444.84 999.86 444.84 999.86 442.94 923.82 442.94 923.82 444.84 933.21 444.84 933.21 454.32 923.82 454.32 923.82 527.33 933.21 527.33 933.21 536.8 923.82 536.8 923.82 594.2 933.21 594.2 933.21 603.67 923.82 603.67 923.82 650.16 999.86 650.16 999.86 603.67 990.48 603.67 990.48 594.2 999.86 594.2 999.86 536.8 990.48 536.8 990.48 527.33"/>
+  <rect width="6.98" height="47.05" x="924.55" y="541.29" fill="url(#ver_yllw)"/>
+  <rect width="6.98" height="47.05" x="992.15" y="541.29" fill="url(#ver_yllw)"/>
+  <polygon fill="#9E9DA6" points="985.31 635.43 985.31 627.71 992.31 627.71 992.31 607.16 931.38 607.16 931.38 627.71 938.38 627.71 938.38 635.43 931.38 635.43 931.38 651 992.31 651 992.31 635.43"/>
+  <rect width="20.39" height="73.37" x="951.64" y="577.63" fill="url(#hor_yllw)"/>
+  <rect width="60.63" height="22.55" x="931.53" y="555.08" fill="url(#ver_yllw)"/>
+  <circle cx="928.25" cy="532.07" r="4.43" fill="#4D4D4D"/>
+  <circle cx="995.43" cy="532.07" r="4.43" fill="#4D4D4D"/>
+  <circle cx="928.25" cy="449.6" r="4.43" fill="#4D4D4D"/>
+  <circle cx="995.43" cy="449.6" r="4.43" fill="#4D4D4D"/>
+  <circle cx="928.25" cy="598.97" r="4.43" fill="#4D4D4D"/>
+  <circle cx="934.64" cy="631.57" r="3.26" fill="#666"/>
+  <circle cx="989.04" cy="631.57" r="3.26" fill="#666"/>
+  <circle cx="995.43" cy="598.97" r="4.43" fill="#4D4D4D"/>
+  <rect width="53.49" height="68.43" x="868.11" y="458.89" fill="url(#ver_org)"/>
+  <rect width="60.41" height="68.43" x="1002.08" y="458.89" fill="url(#ver_red)"/>
+  <polygon fill="#9E9DA6" points="911.3 461.55 911.3 475.33 886.05 475.33 886.05 510.89 911.3 510.89 911.3 524.67 921.61 524.67 921.61 461.55"/>
+  <polygon fill="#9E9DA6" points="1012.39 461.55 1012.39 475.33 1037.63 475.33 1037.63 510.89 1012.39 510.89 1012.39 524.67 1002.08 524.67 1002.08 461.55"/>
+  <rect width="35.56" height="19.01" x="886.05" y="483.6" fill="url(#ver_org)"/>
+  <g>
+    <mask id="red_org">
+      <rect width="76.04" height="19.01" x="923.82" y="483.6" stroke="none" fill="url(#hor_mask)"/>
+    </mask>
+    <rect width="76.04" height="19.01" x="923.82" y="483.6" fill="url(#ver_red)"/>
+    <rect width="76.04" height="19.01" x="923.82" y="483.6" fill="url(#ver_org)" mask="url(#red_org)"/>
+  </g>
+  <rect width="35.56" height="19.01" x="1002.08" y="483.6" fill="url(#ver_red)"/>
+  <polygon fill="#9E9DA6" points="1045.52 772.31 1045.52 746.43 1055.3 746.43 1055.3 732.65 1022.17 732.65 1022.17 673.46 977.95 673.46 977.95 662.58 961.84 636.84 945.73 662.58 945.73 673.46 901.51 673.46 901.51 732.65 868.39 732.65 868.39 746.43 878.16 746.43 878.16 772.31"/>
+  <rect width="24.18" height="72.34" x="949.75" y="359.76" fill="url(#hor_org)"/>
+  <rect width="12.68" height="104.71" x="955.5" y="338.27" fill="url(#hor_bwb)"/>
+  <rect width="7.42" height="104.71" x="958.13" y="338.27" fill="#9E9DA6"/>
+  <path fill="url(#ver_bwb)" d="M953.11 436.57h5.02v-6.72h-5.02a3.35 3.35 0 00-3.36 3.36h0c0 1.86 1.5 3.36 3.36 3.36z"/>
+  <path fill="url(#ver_bwb)" d="M970.57 436.57h-5.02v-6.72h5.02c1.86 0 3.36 1.5 3.36 3.36h0a3.36 3.36 0 01-3.36 3.36z"/>
+  <path fill="url(#ver_bwb)" d="M953.11 423.73h5.02v-6.72h-5.02a3.35 3.35 0 00-3.36 3.36h0c0 1.86 1.5 3.36 3.36 3.36z"/>
+  <path fill="url(#ver_bwb)" d="M970.57 423.73h-5.02v-6.72h5.02c1.86 0 3.36 1.5 3.36 3.36h0a3.36 3.36 0 01-3.36 3.36z"/>
+  <path fill="url(#ver_bwb)" d="M953.11 410.9h5.02v-6.72h-5.02a3.35 3.35 0 00-3.36 3.36h0c0 1.85 1.5 3.36 3.36 3.36z"/>
+  <path fill="url(#ver_bwb)" d="M970.57 410.9h-5.02v-6.72h5.02c1.86 0 3.36 1.5 3.36 3.36h0a3.37 3.37 0 01-3.36 3.36z"/>
+  <path fill="url(#ver_bwb)" d="M953.11 398.06h5.02v-6.72h-5.02a3.35 3.35 0 00-3.36 3.36v0c0 1.86 1.5 3.36 3.36 3.36z"/>
+  <path fill="url(#ver_bwb)" d="M970.57 398.06h-5.02v-6.72h5.02c1.86 0 3.36 1.5 3.36 3.36v0a3.36 3.36 0 01-3.36 3.36z"/>
+  <path fill="url(#ver_bwb)" d="M953.11 385.22h5.02v-6.72h-5.02a3.35 3.35 0 00-3.36 3.36h0c0 1.86 1.5 3.36 3.36 3.36z"/>
+  <path fill="url(#ver_bwb)" d="M970.57 385.22h-5.02v-6.72h5.02c1.86 0 3.36 1.5 3.36 3.36h0a3.36 3.36 0 01-3.36 3.36z"/>
+  <path fill="url(#ver_bwb)" d="M953.11 372.39h5.02v-6.72h-5.02a3.35 3.35 0 00-3.36 3.36h0c0 1.85 1.5 3.36 3.36 3.36z"/>
+  <path fill="url(#ver_bwb)" d="M970.57 372.39h-5.02v-6.72h5.02c1.86 0 3.36 1.5 3.36 3.36h0a3.37 3.37 0 01-3.36 3.36z"/>
+  <path fill="url(#ver_bwb)" d="M953.11 359.55h5.02v-6.72h-5.02a3.35 3.35 0 00-3.36 3.36v0c0 1.85 1.5 3.36 3.36 3.36z"/>
+  <path fill="url(#ver_bwb)" d="M970.57 359.55h-5.02v-6.72h5.02c1.86 0 3.36 1.5 3.36 3.36v0a3.37 3.37 0 01-3.36 3.36z"/>
+  <path fill="url(#ver_bwb)" d="M953.11 346.71h5.02v-6.72h-5.02a3.35 3.35 0 00-3.36 3.36h0c0 1.86 1.5 3.36 3.36 3.36z"/>
+  <path fill="url(#ver_bwb)" d="M970.57 346.71h-5.02v-6.72h5.02c1.86 0 3.36 1.5 3.36 3.36h0a3.36 3.36 0 01-3.36 3.36z"/>
+</g>
+
+<g id="red_bar" transform="translate(1436 358)">
+  <circle cx="172" cy="434.67" r="101" fill="#b1a7fa" fill-rule="evenodd" clip-rule="evenodd"/>
   <path fill="#D16969" stroke="#994D4D" stroke-width="1.4" d="M172 327.12c-59.4 0-107.56 48.15-107.56 107.56S112.59 542.24 172 542.24c59.4 0 107.56-48.15 107.56-107.56S231.4 327.12 172 327.12zm0 208.55c-55.78 0-101-45.22-101-101s45.22-101 101-101 101 45.22 101 101-45.22 101-101 101z"/>
   <g id="red_dashes" fill="none" stroke="#000" stroke-linecap="round" stroke-width="1.68">
     <path d="M135.47 497.93l-7.99 13.85"/>
@@ -390,7 +648,7 @@ text {
   <g id="red_arrow" transform="rotate(-150 171.933 434.709)">
     <circle cx="171.99" cy="434.68" r="9.28"/>
     <polygon points="169.34 457.98 174.66 457.98 172.56 354.37 171.44 354.37"/>
-    <circle cx="171.99" cy="434.68" r="4.98" fill="#FFB8B8"/>
+    <circle cx="171.99" cy="434.68" r="4.98" fill="#b1a7fa"/>
   </g>
   <a id="rb_left" class="bttn" href="javascript:;">
     <use x="81.667" y="280" xlink:href="#bttn_l"/>
@@ -401,7 +659,7 @@ text {
   <use x="51.965" y="314.693" xlink:href="#ring"/>
 </g>
 
-<g id="gray_bar">
+<g id="gray_bar" transform="translate(253 66)">
   <circle cx="708.72" cy="880.41" r="101" fill="#D4D4D4"/>
   <path fill="#696969" stroke="#383838" stroke-miterlimit="10" stroke-width=".84" d="M708.72 772.85c-59.4 0-107.56 48.15-107.56 107.56 0 59.4 48.15 107.56 107.56 107.56 59.4 0 107.56-48.15 107.56-107.56 0-59.4-48.16-107.56-107.56-107.56zm0 208.56c-55.78 0-101-45.22-101-101s45.22-101 101-101 101 45.22 101 101-45.22 101-101 101z"/>
   <g id="gray_ttl">
@@ -454,7 +712,7 @@ text {
   <use x="588.723" y="760.408" xlink:href="#ring"/>
 </g>
 
-<g id="yellow_bar">
+<g id="yellow_bar" transform="translate(-1126 358)">
   <circle cx="1455.08" cy="434.67" r="101" fill="#FFFF63" fill-rule="evenodd" clip-rule="evenodd"/>
   <path fill="#FCB500" stroke="#B08010" stroke-width=".84" d="M1455.08 327.12c-59.4 0-107.56 48.15-107.56 107.56s48.15 107.56 107.56 107.56 107.56-48.15 107.56-107.56-48.16-107.56-107.56-107.56h0zm0 208.55c-55.78 0-101-45.22-101-101s45.22-101 101-101 101 45.22 101 101-45.22 101-101 101z"/>
   <g id="yellow_dashes" fill="none" stroke="#000" stroke-linecap="round" stroke-width="1.68">
@@ -505,7 +763,7 @@ text {
   <use x="1335.102" y="314.693" xlink:href="#ring"/>
 </g>
 
-<g id="white_bar">
+<g id="white_bar" transform="translate(-1097 -208)">
   <circle cx="1748.03" cy="763.27" r="101" fill="#FFF" fill-rule="evenodd" clip-rule="evenodd"/>
   <path fill="#696969" stroke="#383838" stroke-width=".84" d="M1748.03 655.72c-59.4 0-107.56 48.15-107.56 107.56 0 59.4 48.15 107.56 107.56 107.56s107.56-48.15 107.56-107.56c-.01-59.41-48.16-107.56-107.56-107.56zm0 208.55c-55.78 0-101-45.22-101-101s45.22-101 101-101 101 45.22 101 101-45.22 101-101 101z"/>
   <g id="white_dashes" fill="none" stroke="#000" stroke-linecap="round" stroke-width="1.68">
@@ -535,14 +793,13 @@ text {
   <use x="1628.024" y="643.327" xlink:href="#ring"/>
 </g>
 
-<g id="toggle">
-  <line fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="5.6" x1="1142.66" x2="1142.66" y1="481.04" y2="498"/>
+<g id="toggle" transform="translate(464 0)">
   <circle cx="1143.4" cy="408.4" r="62.4" fill="#474644"/>
   <circle cx="1143.4" cy="408.4" r="55.6" fill="#2E2D2C"/>
   <circle cx="1143.4" cy="408.4" r="49.4" fill="#7D7876"/>
   <path fill="#B3B3B3" d="M1095.7 408.4c0-27 21.7-49 48.6-49.4h-.9a49.4 49.4 0 100 98.8h.9a49.4 49.4 0 01-48.6-49.4z"/>
   <path d="M1143.4 359h-.7a49.4 49.4 0 010 98.8h.7a49.4 49.4 0 100-98.8z"/>
-  <path fill="url(#pipe_grd5)" id="toggle_arrow" d="M1230.8 425.1s2-6.3 2-16.7c0-9-2-16.7-2-16.7H1056s-2 6.4-2 16.7 2 16.7 2 16.7h174.8z"/>
+  <path fill="url(#hor_metallic)" id="toggle_arrow" d="M1230.8 425.1s2-6.3 2-16.7c0-9-2-16.7-2-16.7H1056s-2 6.4-2 16.7 2 16.7 2 16.7h174.8z"/>
   <a id="tgl_left" class="bttn" href="javascript:;">
     <use x="1053.825" y="280" xlink:href="#bttn_l"/>
   </a>
@@ -551,180 +808,15 @@ text {
   </a>
 </g>
 
-<g id="surface" class="">
-  <rect width="18.78" height="10" x="383.02" y="641.89" fill="url(#pipe_grd2)"/>
-  <rect width="18.78" height="10" x="590.68" y="641.89" fill="url(#pipe_grd2)"/>
-  <path fill="url(#pipe_grd4)" d="M405.13 642.7V475.3h-26v167.4s5.02 1 13 1c7.99 0 13-1 13-1z"/>
-  <path fill="url(#pipe_grd4)" d="M612.79 642.7V475.3h-26v167.4s5.02 1 13 1 13-1 13-1z"/>
-  <path fill="url(#pipe_grd5)" d="M424.14 474.97h-45l26 26h19s1-5.02 1-13-1-13-1-13z"/>
-  <path fill="url(#pipe_grd5)" d="M567.79 474.97h45l-26 26h-19s-1-5.02-1-13 1-13 1-13z"/>
-  <g fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="5.6">
-    <line x1="512.53" x2="521.28" y1="501.32" y2="474.61"/>
-    <line x1="530.03" x2="521.28" y1="501.32" y2="474.61"/>
-    <line x1="530.03" x2="538.78" y1="501.32" y2="474.61"/>
-    <circle cx="1237.3" cy="768.83" r="22.93"/>
-    <polyline points="1219.46 797 1191.62 769.17 1219.46 741.33"/>
-    <rect width="141.65" height="66.29" x="425.14" y="454.82"/>
-    <rect width="12.57" height="66.29" x="499.96" y="454.82"/>
-    <line x1="431.79" x2="490.82" y1="573.31" y2="588.07"/>
-    <line x1="431.79" x2="490.82" y1="602.83" y2="588.07"/>
-    <line x1="461.31" x2="461.31" y1="573.31" y2="661.87"/>
-    <path d="M488.13 674.18l-23.18 35.71a4.34 4.34 0 01-7.27 0l-23.18-35.71"/>
-    <rect width="59.03" height="27.62" x="431.79" y="545.69"/>
-    <polyline points="431.79 602.83 490.82 617.59 431.79 617.59"/>
-    <rect width="52.91" height="52.91" x="236.21" y="657.85" transform="rotate(45 262.67 684.3)"/>
-    <line x1="262.66" x2="262.66" y1="646.89" y2="721.72"/>
-  </g>
-  <path d="M459.45 693.52l-21.26-32.75a3.7 3.7 0 013.1-5.71h40.03a3.7 3.7 0 013.1 5.71l-21.26 32.75a2.2 2.2 0 01-3.71 0z"/>
-  <g stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3">
-    <circle cx="640.7" cy="588.36" r="21" fill="#FFF"/>
-    <line x1="640.7" x2="640.7" y1="609.36" y2="651.89" fill="none"/>
-    <circle cx="107.7" cy="588.36" r="21" fill="#FFF"/>
-    <line x1="107.7" x2="107.7" y1="609.36" y2="651.89" fill="none"/>
-    <circle cx="857.92" cy="588.36" r="21" fill="#FFF"/>
-    <line x1="857.92" x2="857.92" y1="609.36" y2="651.89" fill="none"/>
-    <circle cx="1550.98" cy="672.59" r="21" fill="#FFF"/>
-    <line x1="1550.98" x2="1550.98" y1="693.59" y2="736.13" fill="none"/>
-  </g>
-  <g id="surface_labels">
-    <text x="640.459" y="595.62">P1</text>
-    <text x="857.535" y="595.62">P2</text>
-    <text x="1551" y="680">P3</text>
-    <text x="107.75" y="595.62">P4</text>
-  </g>
-  <g stroke-dasharray="30 20" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="4">
-    <polyline stroke="#BC0000" points="392.13 643.7 392.13 488.21 425.14 488.21"/>
-    <polyline stroke="#BC0000" points="599.79 643.7 599.79 487.75 566.79 487.75"/>
-  </g>
-  <g id="popup_flow_meter" class="popup_box invis">
-    <path fill="#FFF" d="M77.01 866.93h250.11a22.18 22.18 0 0022.17-22.17v-54.22a22.18 22.18 0 00-22.17-22.17h-23.23l121.24-247.26-159.24 247.26H77.01a22.18 22.18 0 00-22.17 22.17v54.22a22.18 22.18 0 0022.17 22.17z" opacity=".5"/>
-    <text x="202" y="813.122">
-      Positive displacement
-      <tspan x="202" dy="32">flow meter</tspan>
-    </text>
-    <a id="popup_flow_meter_close" class="bttn_close" href="javascript:;">
-      <use x="355" y="762" xlink:href="#popup_close"/>
-    </a>
-  </g>
-</g>
-
-<g id="valve">
-<g fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="5.6">
-  <path id="valve_top" transform="translate(0 20)" d="M712.46 641.92a68 68 0 0048.19 19.95 68 68 0 0048.19-19.95"/>
-  <path id="valve_bottom" transform="translate(0 -20)" d="M712.46 726.7a68 68 0 0148.19-19.95 68 68 0 0148.19 19.95"/>
-  <line x1="737.47" x2="783.85" y1="736.25" y2="629.5"/>
-  <polyline points="788.11 641.11 783.85 629.5 772.6 634.64"/>
-  <polyline id="valve_line" transform="translate(0 20)" stroke-dasharray="30 20" stroke-dashoffset="10" points="957.43 630.91 1142.66 630.91 1142.66 501.44 760.66 501.44 760.66 660"/>
-  <g id="spring">
-    <line id="spring_1" x1="932.43" x2="982.43" y1="576" y2="597"/>
-    <line id="spring_2" x1="932.43" x2="982.43" y1="618" y2="597"/>
-    <line id="spring_3" x1="932.43" x2="982.43" y1="618" y2="639"/>
-    <line id="spring_4" x1="957.43" x2="982.43" y1="650" y2="639"/>
-  </g>
-</g>
-
-<g id="valve_body">
-  <g fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="5.6">
-    <line x1="957.43" x2="957.43" y1="575.42" y2="730.89"/>
-    <path d="M912.51 575.42a47.49 47.49 0 1194.98 0h-94.98z"/>
-  </g>
-  <path d="M955.3 749.92l-13.81-21.28a2.55 2.55 0 012.14-3.94h27.63a2.55 2.55 0 012.14 3.94l-13.81 21.28a2.56 2.56 0 01-4.29 0z"/>
-</g>
-</g>
-
-<g id="popup_warn" class="popup_box invis">
-  <path fill="#FFF" stroke="#C72B2B" stroke-width="3" d="M1855.83 554.69h-257.88a12.23 12.23 0 01-12.19-12.19V262.99c0-6.71 5.49-12.19 12.19-12.19h257.88c6.71 0 12.19 5.49 12.19 12.19V542.5c0 6.71-5.48 12.19-12.19 12.19z" opacity=".5"/>
-  <path fill="#C72B2B" stroke="#FFF" stroke-linecap="round" stroke-width="2" d="M1720.21 271.56a6 6 0 0110.72 0l25.89 51.78a6.03 6.03 0 01-5.37 8.68s0 0 0 0h-51.77s0 0 0 0a6.03 6.03 0 01-5.37-8.68l25.9-51.78h0z"/>
-  <path fill="#FFF" d="M1729.1 310.83h-6.93l-1.1-25.26h9.12l-1.09 25.26zm-8.28 7.87c0-1.25.45-2.28 1.36-3.08.9-.8 2.04-1.21 3.39-1.21s2.48.4 3.39 1.2c.9.81 1.36 1.84 1.36 3.1 0 1.24-.45 2.27-1.36 3.08-.9.8-2.04 1.2-3.39 1.2s-2.48-.4-3.39-1.2a3.96 3.96 0 01-1.36-3.09z"/>
-  <text x="1725.568" y="365.463">
-    Pressure drop across
-    <tspan x="1725.568" dy="32">valve is below</tspan>
-    <tspan x="1725.568" dy="32">specifications -</tspan>
-    <tspan x="1725.568" dy="32">please increase inlet</tspan>
-    <tspan x="1725.568" dy="32">or decrease outlet</tspan>
-    <tspan x="1725.568" dy="32">pressure</tspan>
-  </text>
-  <a id="popup_warn_close" class="bttn_close" href="javascript:;">
-    <use x="1878.324" y="239.474" xlink:href="#popup_close"/>
-  </a>
-</g>
-
-<g id="popup_intdifreg" class="popup_box invis">
-  <circle cx="957.434" cy="575.885" r="126" fill="none" stroke="#fff" stroke-width="5"/>
-  <path fill="#FFF" d="M1381.66 690.43h-210.11a22.18 22.18 0 01-22.17-22.17v-22.61l-67.96-43.76 67.96 12.15a22.18 22.18 0 0122.17-22.17h210.11a22.18 22.18 0 0122.17 22.17v54.22a22.18 22.18 0 01-22.17 22.17z" opacity=".5"/>
-  <text x="1276.121" y="634.6">
-    Internal differential
-    <tspan x="1276.121" dy="32">regulation</tspan>
-  </text>
-  <a id="popup_intdifreg_close" class="bttn_close" href="javascript:;">
-    <use x="1410.972" y="586.973" xlink:href="#popup_close"/>
-  </a>
-</g>
-
-<g id="popup_demonstrate" class="popup_box invis">
-  <path fill="#FFF" d="M998.58 357.51v-15.44a22.18 22.18 0 00-22.17-22.17h-532.5a22.18 22.18 0 00-22.17 22.17l-143.96-13.55 143.96 45.16v22.35a22.18 22.18 0 0022.17 22.17h532.5a22.18 22.18 0 0022.17-22.17v-7.09l359.16-63.52-319.75 28.57 17.42-26.29-56.83 29.81z" opacity=".5"/>
-  <text x="705.216" y="361.295">
-    To demonstrate, click the arrows to adjust
-    <tspan x="705.216" dy="32">field pressures and valve setpoint</tspan>
-  </text>
-  <a id="popup_demonstrate_close" class="bttn_close" href="javascript:;">
-    <use x="1007.749" y="313.584" xlink:href="#popup_close"/>
-  </a>
-</g>
-
-<g id="popup_restrictor" class="popup_box invis">
-  <path fill="#FFF" d="M1012.75 949.78H873.64a22.18 22.18 0 01-22.17-22.17v-52.22a22.18 22.18 0 0122.17-22.17h7.83L760.66 682.88l155.91 170.34h96.18a22.18 22.18 0 0122.17 22.17v52.22a22.18 22.18 0 01-22.17 22.17z" opacity=".5"/>
-  <text x="940.283" y="895.431">
-    Adjustable
-    <tspan x="940.283" dy="32">restrictor</tspan>
-  </text>
-  <a id="popup_restrictor_close" class="bttn_close" href="javascript:;">
-    <use x="1043.247" y="844.193" xlink:href="#popup_close"/>
-  </a>
-</g>
-
-<g id="popup_throttling" class="popup_box invis">
-  <path fill="#FFF" d="M1436.75 949.78h-325.11a22.18 22.18 0 01-22.17-22.17v-52.22a22.18 22.18 0 0122.17-22.17h7.83l-162.04-136.5 197.14 136.49h282.18a22.18 22.18 0 0122.17 22.17v52.22a22.17 22.17 0 01-22.17 22.18z" opacity=".5"/>
-  <text x="1273.173" y="895.431">
-    Throttling points consume
-    <tspan x="1273.173" dy="32">majority of pressure drop</tspan>
-  </text>
-  <a id="popup_throttling_close" class="bttn_close" href="javascript:;">
-    <use x="1473.548" y="844.481" xlink:href="#popup_close"/>
-  </a>
-</g>
-
-<g id="popup_spring" class="popup_box invis">
-  <path fill="#FFF" d="M620.41 457.4h210.11a22.18 22.18 0 0122.17 22.17v22.61l67.96 43.76-67.96-12.15a22.18 22.18 0 01-22.17 22.17H620.41a22.18 22.18 0 01-22.17-22.17v-54.22a22.17 22.17 0 0122.17-22.17z" opacity=".5"/>
-  <text x="720.834" y="500">
-    Spring balanced
-    <tspan x="720.834" dy="32">piston</tspan>
-  </text>
-  <a id="popup_spring_close" class="bttn_close" href="javascript:;">
-    <use x="862.152" y="450" xlink:href="#popup_close"/>
-  </a>
-</g>
-
-<g id="popup_stem" class="popup_box invis">
-  <path fill="#FFF" d="M1272.91 580.19H1062.8a22.18 22.18 0 01-22.17-22.17V503.8a22.18 22.18 0 0122.17-22.17h15.82l29.23-21.52-1.17 21.52h166.23a22.18 22.18 0 0122.17 22.17v54.22a22.16 22.16 0 01-22.17 22.17z" opacity=".5"/>
-  <text x="1166.163" y="524.785">
-    Adjustment stem
-    <tspan x="1166.163" dy="32">powered by gear</tspan>
-  </text>
-  <a id="popup_stem_close" class="bttn_close" href="javascript:;">
-    <use x="1304.294" y="473.933" xlink:href="#popup_close"/>
-  </a>
-</g>
-
 <g id="info_labels">
-<rect x="920" y="1000" width="30" height="30" fill="#ffb8b8" stroke="#fff"/>
-<text id="red_label" x="960" y="1022">- 0 (BAR)</text>
-<rect x="1110" y="1000" width="30" height="30" fill="#ffff63" stroke="#fff"/>
-<text id="yellow_label" x="1150" y="1022">- 0 (BAR)</text>
-<rect x="1300" y="1000" width="30" height="30" fill="#d4d4d4" stroke="#fff"/>
-<text id="gray_label" x="1340" y="1022">- 0 (BAR)</text>
-<rect x="1490" y="1000" width="30" height="30" fill="#fff" stroke="#fff"/>
-<text id="white_label" x="1530" y="1022">- 0 (LPD)</text>
+<rect x="51" y="300" width="30" height="30" fill="#b1a7fa" stroke="#fff"/>
+<text id="red_label" x="94" y="322" font-size="24" fill="#fff">- 0 (BAR)</text>
+<rect x="51" y="350" width="30" height="30" fill="#ffff63" stroke="#fff"/>
+<text id="yellow_label" x="94" y="372" font-size="24" fill="#fff">- 0 (BAR)</text>
+<rect x="51" y="400" width="30" height="30" fill="#d4d4d4" stroke="#fff"/>
+<text id="gray_label" x="94" y="422" font-size="24" fill="#fff">- 0 (BAR)</text>
+<rect x="51" y="450" width="30" height="30" fill="#fff" stroke="#fff"/>
+<text id="white_label" x="94" y="472" font-size="24" fill="#fff">- 0 (LPD)</text>
 </g>
 
 <script>
@@ -749,6 +841,8 @@ function $(sel) {
 }
 
 // Popups
+
+/* // ------------------------------------------------------------------------------------------------
 
 $("#bttn_surface").onclick = function() {
   $("#surface").classList.toggle("invis");
@@ -786,6 +880,7 @@ $("#popup_stem_close").onclick = function() {
   $("#popup_stem").classList.toggle("invis");
 };
 
+
 function info_show() {
 if($("#popup_flow_meter").classList.contains("invis") || $("#popup_demonstrate").classList.contains("invis") || $("#popup_restrictor").classList.contains("invis") || $("#popup_throttling").classList.contains("invis") || $("#popup_spring").classList.contains("invis") || $("#popup_stem").classList.contains("invis")) {
   $("#popup_flow_meter").classList.remove("invis");
@@ -811,6 +906,8 @@ $("#info").onclick = function() {
 setTimeout(function(){
   info_show();
 }, 400);
+
+*/ // ------------------------------------------------------------------------------------------------
 
 // Gauges
 
