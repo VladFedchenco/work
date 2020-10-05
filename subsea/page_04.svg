@@ -107,6 +107,10 @@ text {
   transition: all .2s linear;
 }
 
+.popup_box text {
+  font-size: 24px;
+}
+
 .popup_box.invis {
   opacity: 0;
 }
@@ -255,9 +259,19 @@ text {
       <path d="M24.36 22.14l-3 9.27 9.28 2.99"/>
     </g>
   </g>
-  <path id="arrow_r" fill="#BC0000" d="M22.31 0L-.62-22.89v12.59h-21.69v20.6H-.62v12.59L22.31 0z"/>
-  <path id="arrow_o" fill="#F7931E" d="M22.31 0L-.62-22.89v12.59h-21.69v20.6H-.62v12.59L22.31 0z"/>
-  <path id="arrow_y" fill="#FFFF00" d="M22.31 0L-.62-22.89v12.59h-21.69v20.6H-.62v12.59L22.31 0z"/>
+  <path id="arr_mt" d="M0-5.27L-5.41.15h2.98v5.13h4.87V.15h2.98L0-5.27z"/>
+  <path id="arr_ml" d="M-5.27 0L.15 5.41V2.43h5.13v-4.87H.15v-2.98L-5.27 0z"/>
+  <path id="arr_mb" d="M0 5.27L5.41-.15H2.43v-5.13h-4.87v5.13h-2.98L0 5.27z"/>
+  <path id="arr_b" d="M0 7.51L7.71-.21H3.47v-7.3h-6.94v7.3h-4.24L0 7.51z"/>
+  <path id="arr_t" d="M0-7.51L7.71.21H3.47v7.3h-6.94V.21h-4.24L0-7.51z"/>
+  <path id="arr_l" d="M-7.51 0L.21 7.71V3.47h7.3v-6.94H.21v-4.24L-7.51 0z"/>
+  <path id="arr_db" d="M1.69 7.71l5.83-9.22-4.14.93-1.6-7.13-6.77 1.52 1.6 7.13-4.14.93 9.22 5.84z"/>
+  <path id="arr_dt" d="M-1.29-7.7L-7.6 1.2l4.18-.71 1.22 7.2 6.84-1.15-1.22-7.2 4.18-.71-8.89-6.33z"/>
+  <path id="arr_st" d="M0-4.18L-4.29.11h2.36v4.06h3.86V.12h2.36L0-4.18z"/>
+  <path id="arr_sl" d="M-4.18 0L.11 4.29V1.93h4.06v-3.86H.12v-2.36L-4.18 0z"/>
+  <path id="arr_sr" d="M4.18 0L-.11 4.29V1.93h-4.06v-3.86h4.06v-2.36L4.18 0z"/>
+  <path id="arr_nr" d="M2.09 0L-.06 2.14V.96h-2.03V-.97h2.03v-1.18L2.09 0z"/>
+  <path id="arr_nl" d="M-2.09 0L.06 2.14V.96h2.03V-.97H.06v-1.18L-2.09 0z"/>
   <g id="popup_close">
     <rect fill-opacity="0" width="24" height="24" x="-12" y="-12" />
     <path fill="#555" d="M3.72 0L9.3 5.58 5.58 9.3 0 3.72-5.58 9.3-9.3 5.58-3.72 0-9.3-5.58l3.72-3.72L0-3.72 5.58-9.3 9.3-5.58 3.72 0z"/>
@@ -300,7 +314,7 @@ text {
 </g>
 
 <text x="960" y="106" class="ttl">LOW FLOW X-SECTION</text>
-<a id="info" class="popup_box" fill="#fff" transform="translate(-20 0)" href="javascript:;">
+<a id="info" fill="#fff" transform="translate(-20 0)" href="javascript:;">
   <path id="info_bg" fill-opacity="0" stroke="#fff" stroke-width="3" d="M1291 53.55a17.01 17.01 0 010 34 17.01 17.01 0 010-34h0z"/>
   <path fill="#FFF" d="M1293.38 70.85a2.59 2.59 0 00-2.57-2.42 2.6 2.6 0 00-2.58 2.42v7.13a2.6 2.6 0 002.58 2.42 2.59 2.59 0 002.57-2.42v-7.13z"/>
   <path fill="#FFF" d="M1293.38 63.39a2.59 2.59 0 00-2.57-2.42 2.6 2.6 0 00-2.58 2.42v.03a2.6 2.6 0 002.58 2.42 2.59 2.59 0 002.57-2.42v-.03z"/>
@@ -418,7 +432,7 @@ text {
 <path fill="#9E9DA6" stroke="#000" stroke-width=".5" d="M1309.96 367.75h-102.79a30.32 30.32 0 00-20.55 8.03l-13.84 12.77a30.32 30.32 0 00-9.75 22.26v245.98h191.06V410.82c0-8.46-3.53-16.53-9.75-22.26l-13.84-12.77a30.26 30.26 0 00-20.54-8.04z"/>
 <path fill="url(#hor_bwb)" stroke="#000" stroke-width=".5" d="M1171.11 648.72v-237.9a22.3 22.3 0 017.15-16.33l13.84-12.77a22.16 22.16 0 0115.07-5.89h102.79c5.6 0 10.96 2.09 15.07 5.89l13.84 12.77a22.3 22.3 0 017.15 16.33v237.9h-174.91z"/>
 <rect width="144.15" height="240.42" x="1186.49" y="460.88" fill="#9E9DA6" stroke="#000" stroke-width=".5"/>
-<rect width="89.11" height="157.92" x="1214.01" y="534.38" fill="url(#hor_red)" stroke="#000" stroke-width=".5"/>
+<rect width="89.11" height="157.92" x="1214.01" y="531" fill="url(#hor_red)" stroke="#000" stroke-width=".5"/>
 <g fill="#CC6601" stroke="#000" stroke-width=".5">
   <circle cx="1200.95" cy="402.72" r="3.8"/>
   <circle cx="1209.66" cy="402.72" r="3.8"/>
@@ -523,89 +537,428 @@ text {
 <polygon fill="url(#hor_red)" stroke="#000" stroke-width=".5" points="1264.77 502.66 1252.36 502.66 1252.36 528.6 1264.77 517.44"/>
 <rect width="12.4" height="194.56" x="1196.41" y="506.75" fill="url(#hor_red)" stroke="#000" stroke-width=".5"/>
 <polygon fill="url(#hor_red)" stroke="#000" stroke-width=".5" points="1320.72 717.67 1320.72 517.44 1308.31 528.6 1308.31 717.67"/>
-<rect width="5.19" height="11.17" x="1303.12" y="537.26" fill="url(#ver_red)" stroke="#000" stroke-width=".5"/>
+<rect width="5.19" height="10" x="1303.12" y="532" fill="url(#ver_red)" stroke="#000" stroke-width=".5"/>
 <rect width="5.19" height="11.17" x="1208.81" y="673.27" fill="url(#ver_red)" stroke="#000" stroke-width=".5"/>
-<polygon fill="#9E9DA6" stroke="#000" stroke-width=".5" points="1264.77 542.85 1264.77 534.38 1252.36 534.38 1252.36 542.85 1214.01 542.85 1214.01 610.64 1303.12 610.64 1303.12 542.85"/>
-<rect width="4.1" height="11.25" x="1214.01" y="542.85" fill="#666" stroke="#000" stroke-width=".5"/>
-<rect width="4.1" height="11.25" x="1299.02" y="542.85" fill="#666" stroke="#000" stroke-width=".5"/>
-<rect width="4.1" height="11.25" x="1214.01" y="599.4" fill="#666" stroke="#000" stroke-width=".5"/>
-<rect width="4.1" height="11.25" x="1299.02" y="599.4" fill="#666" stroke="#000" stroke-width=".5"/>
-<rect width="4.1" height="24.08" x="1214.01" y="564.7" fill="#CCC" stroke="#000" stroke-width=".5"/>
-<rect width="4.1" height="24.08" x="1299.02" y="564.7" fill="#CCC" stroke="#000" stroke-width=".5"/>
-<rect width="41.2" height="8.9" x="1237.96" y="623.54" fill="url(#hor_bwb)" stroke="#000" stroke-width=".5" transform="rotate(-13.03 1258.83 628.08)"/>
-<circle cx="1238.49" cy="632.64" r="4.45" fill="#999" stroke="#CCC" stroke-width=".5"/>
-<circle cx="1278.63" cy="623.35" r="4.45" fill="#999" stroke="#CCC" stroke-width=".5"/>
-<rect width="41.2" height="8.9" x="1237.96" y="639.18" fill="url(#hor_bwb)" stroke="#000" stroke-width=".5" transform="rotate(-13.03 1258.83 643.72)"/>
-<circle cx="1238.49" cy="648.27" r="4.45" fill="#999" stroke="#CCC" stroke-width=".5"/>
-<circle cx="1278.63" cy="638.98" r="4.45" fill="#999" stroke="#CCC" stroke-width=".5"/>
-<rect width="41.2" height="8.9" x="1237.96" y="654.81" fill="url(#hor_bwb)" stroke="#000" stroke-width=".5" transform="rotate(-13.03 1258.83 659.36)"/>
-<circle cx="1238.49" cy="663.91" r="4.45" fill="#999" stroke="#CCC" stroke-width=".5"/>
-<circle cx="1278.63" cy="654.62" r="4.45" fill="#999" stroke="#CCC" stroke-width=".5"/>
-<rect width="41.2" height="8.9" x="1237.96" y="670.45" fill="url(#hor_bwb)" stroke="#000" stroke-width=".5" transform="rotate(-13.03 1258.83 675)"/>
-<circle cx="1238.49" cy="679.54" r="4.45" fill="#999" stroke="#CCC" stroke-width=".5"/>
-<circle cx="1278.63" cy="670.25" r="4.45" fill="#999" stroke="#CCC" stroke-width=".5"/>
+
+<g id="r_piston" transform="translate(0 0)">
+  <polygon fill="#9E9DA6" stroke="#000" stroke-width=".5" points="1264.77 542.85 1264.77 531 1252.36 531 1252.36 542.85 1214.01 542.85 1214.01 610.64 1303.12 610.64 1303.12 542.85"/>
+  <rect width="4.1" height="11.25" x="1214.01" y="542.85" fill="#666" stroke="#000" stroke-width=".5"/>
+  <rect width="4.1" height="11.25" x="1299.02" y="542.85" fill="#666" stroke="#000" stroke-width=".5"/>
+  <rect width="4.1" height="11.25" x="1214.01" y="599.4" fill="#666" stroke="#000" stroke-width=".5"/>
+  <rect width="4.1" height="11.25" x="1299.02" y="599.4" fill="#666" stroke="#000" stroke-width=".5"/>
+  <rect width="4.1" height="24.08" x="1214.01" y="564.7" fill="#CCC" stroke="#000" stroke-width=".5"/>
+  <rect width="4.1" height="24.08" x="1299.02" y="564.7" fill="#CCC" stroke="#000" stroke-width=".5"/>
+</g>
+
+<g id="r_spring" transform="translate(1258.5 683.9) scale(1 1.1) translate(-1258.5 -683.9)">
+  <rect width="41.2" height="8.9" x="1237.96" y="623.54" fill="url(#hor_bwb)" stroke="#000" stroke-width=".5" transform="rotate(-13.03 1258.83 628.08)"/>
+  <circle cx="1238.49" cy="632.64" r="4.45" fill="#999" stroke="#CCC" stroke-width=".5"/>
+  <circle cx="1278.63" cy="623.35" r="4.45" fill="#999" stroke="#CCC" stroke-width=".5"/>
+  <rect width="41.2" height="8.9" x="1237.96" y="639.18" fill="url(#hor_bwb)" stroke="#000" stroke-width=".5" transform="rotate(-13.03 1258.83 643.72)"/>
+  <circle cx="1238.49" cy="648.27" r="4.45" fill="#999" stroke="#CCC" stroke-width=".5"/>
+  <circle cx="1278.63" cy="638.98" r="4.45" fill="#999" stroke="#CCC" stroke-width=".5"/>
+  <rect width="41.2" height="8.9" x="1237.96" y="654.81" fill="url(#hor_bwb)" stroke="#000" stroke-width=".5" transform="rotate(-13.03 1258.83 659.36)"/>
+  <circle cx="1238.49" cy="663.91" r="4.45" fill="#999" stroke="#CCC" stroke-width=".5"/>
+  <circle cx="1278.63" cy="654.62" r="4.45" fill="#999" stroke="#CCC" stroke-width=".5"/>
+  <rect width="41.2" height="8.9" x="1237.96" y="670.45" fill="url(#hor_bwb)" stroke="#000" stroke-width=".5" transform="rotate(-13.03 1258.83 675)"/>
+  <circle cx="1238.49" cy="679.54" r="4.45" fill="#999" stroke="#CCC" stroke-width=".5"/>
+  <circle cx="1278.63" cy="670.25" r="4.45" fill="#999" stroke="#CCC" stroke-width=".5"/>
+</g>
 
 <g stroke="#000" stroke-width=".5">
   <rect width="190.4" height="55.86" x="866.64" y="690.55" fill="url(#hor_org)"/>
   <rect width="190.4" height="42.02" x="866.64" y="746.41" fill="url(#hor_red)"/>
   <rect width="131.75" height="60.02" x="895.96" y="630.53" fill="url(#hor_org)"/>
-  <polygon fill="#929199" points="901.51 718.62 868.39 724.07 868.39 732.65 901.51 727.2"/>
-  <polygon fill="#929199" points="901.51 718.62 868.39 713.17 868.39 704.58 901.51 710.04"/>
-  <polygon fill="#929199" points="901.51 690.55 868.39 696 868.39 704.58 901.51 699.13"/>
-  <polygon fill="#929199" points="1022.17 718.62 1055.3 724.07 1055.3 732.65 1022.17 727.2"/>
-  <polygon fill="#929199" points="1022.17 718.62 1055.3 713.17 1055.3 704.58 1022.17 710.04"/>
-  <polygon fill="#929199" points="1022.17 690.55 1055.3 696 1055.3 704.58 1022.17 699.13"/>
+  <g id="bottom_spring" transform="translate(961.8 690.5) scale(1 1.3) translate(-961.8 -690.5)">
+    <polygon fill="#929199" points="901.51 718.62 868.39 724.07 868.39 732.65 901.51 727.2"/>
+    <polygon fill="#929199" points="901.51 718.62 868.39 713.17 868.39 704.58 901.51 710.04"/>
+    <polygon fill="#929199" points="901.51 690.55 868.39 696 868.39 704.58 901.51 699.13"/>
+    <polygon fill="#929199" points="1022.17 718.62 1055.3 724.07 1055.3 732.65 1022.17 727.2"/>
+    <polygon fill="#929199" points="1022.17 718.62 1055.3 713.17 1055.3 704.58 1022.17 710.04"/>
+    <polygon fill="#929199" points="1022.17 690.55 1055.3 696 1055.3 704.58 1022.17 699.13"/>
+  </g>
   <rect width="11.52" height="15.87" x="866.64" y="748.04" fill="#666"/>
   <rect width="11.52" height="15.87" x="1045.52" y="748.04" fill="#666"/>
   <polygon fill="url(#angl_org)" points="900.22 630.53 877.01 527.33 894.55 527.33 917.75 630.53"/>
   <rect width="80.47" height="198.46" x="921.61" y="432.07" fill="url(#hor_org)"/>
-  <polygon fill="#666" points="999.86 527.33 999.86 454.32 990.48 454.32 990.48 444.84 999.86 444.84 999.86 442.94 923.82 442.94 923.82 444.84 933.21 444.84 933.21 454.32 923.82 454.32 923.82 527.33 933.21 527.33 933.21 536.8 923.82 536.8 923.82 594.2 933.21 594.2 933.21 603.67 923.82 603.67 923.82 650.16 999.86 650.16 999.86 603.67 990.48 603.67 990.48 594.2 999.86 594.2 999.86 536.8 990.48 536.8 990.48 527.33"/>
-  <rect width="6.98" height="47.05" x="924.55" y="541.29" fill="url(#ver_yllw)"/>
-  <rect width="6.98" height="47.05" x="992.15" y="541.29" fill="url(#ver_yllw)"/>
-  <polygon fill="#9E9DA6" points="985.31 635.43 985.31 627.71 992.31 627.71 992.31 607.16 931.38 607.16 931.38 627.71 938.38 627.71 938.38 635.43 931.38 635.43 931.38 651 992.31 651 992.31 635.43"/>
-  <rect width="20.39" height="73.37" x="951.64" y="577.63" fill="url(#hor_yllw)"/>
-  <rect width="60.63" height="22.55" x="931.53" y="555.08" fill="url(#ver_yllw)"/>
-  <circle cx="928.25" cy="532.07" r="4.43" fill="#4D4D4D"/>
-  <circle cx="995.43" cy="532.07" r="4.43" fill="#4D4D4D"/>
-  <circle cx="928.25" cy="449.6" r="4.43" fill="#4D4D4D"/>
-  <circle cx="995.43" cy="449.6" r="4.43" fill="#4D4D4D"/>
-  <circle cx="928.25" cy="598.97" r="4.43" fill="#4D4D4D"/>
-  <circle cx="934.64" cy="631.57" r="3.26" fill="#666"/>
-  <circle cx="989.04" cy="631.57" r="3.26" fill="#666"/>
-  <circle cx="995.43" cy="598.97" r="4.43" fill="#4D4D4D"/>
+  <g id="l_piston" transform="translate(0 14)">
+    <polygon fill="#666" points="999.86 527.33 999.86 454.32 990.48 454.32 990.48 444.84 999.86 444.84 999.86 442.94 923.82 442.94 923.82 444.84 933.21 444.84 933.21 454.32 923.82 454.32 923.82 527.33 933.21 527.33 933.21 536.8 923.82 536.8 923.82 594.2 933.21 594.2 933.21 603.67 923.82 603.67 923.82 650.16 999.86 650.16 999.86 603.67 990.48 603.67 990.48 594.2 999.86 594.2 999.86 536.8 990.48 536.8 990.48 527.33"/>
+    <rect width="6.98" height="41" x="924.55" y="537" fill="url(#ver_yllw)"/>
+    <rect width="6.98" height="41" x="992.15" y="537" fill="url(#ver_yllw)"/>
+    <polygon fill="#9E9DA6" points="985.31 635.43 985.31 627.71 992.31 627.71 992.31 607.16 931.38 607.16 931.38 627.71 938.38 627.71 938.38 635.43 931.38 635.43 931.38 651 992.31 651 992.31 635.43"/>
+    <rect width="20.39" height="83.37" x="951.64" y="567.63" fill="url(#hor_yllw)"/>
+    <rect width="60.63" height="22.55" x="931.53" y="545" fill="url(#ver_yllw)"/>
+    <circle cx="928.25" cy="532.07" r="4.43" fill="#4D4D4D"/>
+    <circle cx="995.43" cy="532.07" r="4.43" fill="#4D4D4D"/>
+    <circle cx="928.25" cy="449.6" r="4.43" fill="#4D4D4D"/>
+    <circle cx="995.43" cy="449.6" r="4.43" fill="#4D4D4D"/>
+    <circle cx="928.25" cy="598.97" r="4.43" fill="#4D4D4D"/>
+    <circle cx="934.64" cy="631.57" r="3.26" fill="#666"/>
+    <circle cx="989.04" cy="631.57" r="3.26" fill="#666"/>
+    <circle cx="995.43" cy="598.97" r="4.43" fill="#4D4D4D"/>
+    <g>
+      <mask id="red_org">
+        <rect width="76.04" height="19.01" x="923.82" y="483.6" stroke="none" fill="url(#hor_mask)"/>
+      </mask>
+      <rect width="76.04" height="19.01" x="923.82" y="483.6" fill="url(#ver_red)"/>
+      <rect width="76.04" height="19.01" x="923.82" y="483.6" fill="url(#ver_org)" mask="url(#red_org)"/>
+    </g>
+    <polygon fill="#9E9DA6" points="1045.52 772.31 1045.52 746.43 1055.3 746.43 1055.3 732.65 1022.17 732.65 1022.17 673.46 977.95 673.46 977.95 662.58 961.84 636.84 945.73 662.58 945.73 673.46 901.51 673.46 901.51 732.65 868.39 732.65 868.39 746.43 878.16 746.43 878.16 772.31"/>
+    <clipPath id="arr_16_clp">
+      <rect x="924" y="484" width="76" height="18"/>
+    </clipPath>
+    <g id="arr_16" clip-path="url(#arr_16_clp)">
+      <g id="q_16">
+        <use x="1030" y="493" xlink:href="#arr_l"/>
+        <use x="990" y="493" xlink:href="#arr_l"/>
+        <use x="950" y="493" xlink:href="#arr_l"/>
+        <use x="910" y="493" xlink:href="#arr_l"/>
+      </g>
+    </g>
+    <clipPath id="arr_19_clp">
+      <rect x="924" y="654" width="22" height="20"/>
+    </clipPath>
+    <g id="arr_19" clip-path="url(#arr_19_clp)">
+      <g id="q_19">
+        <use x="891" y="664" transform="rotate(180 891 664)" xlink:href="#arr_l"/>
+        <use x="931" y="664" transform="rotate(180 931 664)" xlink:href="#arr_l"/>
+      </g>
+    </g>
+    <clipPath id="arr_20_clp">
+      <rect x="952" y="557" width="20" height="80"/>
+    </clipPath>
+    <g id="arr_20" clip-path="url(#arr_20_clp)">
+      <g id="q_20">
+        <use x="962" y="669" xlink:href="#arr_t"/>
+        <use x="962" y="629" xlink:href="#arr_t"/>
+        <use x="962" y="589" xlink:href="#arr_t"/>
+        <use x="962" y="549" xlink:href="#arr_t"/>
+      </g>
+    </g>
+    <clipPath id="arr_21_clp">
+      <rect x="931.5" y="546.5" width="20.5" height="20"/>
+    </clipPath>
+    <g id="arr_21" clip-path="url(#arr_21_clp)">
+      <g id="q_21">
+        <use x="985" y="556.5" xlink:href="#arr_l"/>
+        <use x="945" y="556.5" xlink:href="#arr_l"/>
+      </g>
+    </g>
+  </g>
   <rect width="53.49" height="68.43" x="868.11" y="458.89" fill="url(#ver_org)"/>
   <rect width="60.41" height="68.43" x="1002.08" y="458.89" fill="url(#ver_red)"/>
   <polygon fill="#9E9DA6" points="911.3 461.55 911.3 475.33 886.05 475.33 886.05 510.89 911.3 510.89 911.3 524.67 921.61 524.67 921.61 461.55"/>
   <polygon fill="#9E9DA6" points="1012.39 461.55 1012.39 475.33 1037.63 475.33 1037.63 510.89 1012.39 510.89 1012.39 524.67 1002.08 524.67 1002.08 461.55"/>
   <rect width="35.56" height="19.01" x="886.05" y="483.6" fill="url(#ver_org)"/>
-  <g>
-    <mask id="red_org">
-      <rect width="76.04" height="19.01" x="923.82" y="483.6" stroke="none" fill="url(#hor_mask)"/>
-    </mask>
-    <rect width="76.04" height="19.01" x="923.82" y="483.6" fill="url(#ver_red)"/>
-    <rect width="76.04" height="19.01" x="923.82" y="483.6" fill="url(#ver_org)" mask="url(#red_org)"/>
-  </g>
   <rect width="35.56" height="19.01" x="1002.08" y="483.6" fill="url(#ver_red)"/>
-  <polygon fill="#9E9DA6" points="1045.52 772.31 1045.52 746.43 1055.3 746.43 1055.3 732.65 1022.17 732.65 1022.17 673.46 977.95 673.46 977.95 662.58 961.84 636.84 945.73 662.58 945.73 673.46 901.51 673.46 901.51 732.65 868.39 732.65 868.39 746.43 878.16 746.43 878.16 772.31"/>
-  <rect width="24.18" height="72.34" x="949.75" y="359.76" fill="url(#hor_org)"/>
-  <rect width="12.68" height="104.71" x="955.5" y="338.27" fill="url(#hor_bwb)"/>
-  <rect width="7.42" height="104.71" x="958.13" y="338.27" fill="#9E9DA6"/>
-  <path fill="url(#ver_bwb)" d="M953.11 436.57h5.02v-6.72h-5.02a3.35 3.35 0 00-3.36 3.36h0c0 1.86 1.5 3.36 3.36 3.36z"/>
-  <path fill="url(#ver_bwb)" d="M970.57 436.57h-5.02v-6.72h5.02c1.86 0 3.36 1.5 3.36 3.36h0a3.36 3.36 0 01-3.36 3.36z"/>
-  <path fill="url(#ver_bwb)" d="M953.11 423.73h5.02v-6.72h-5.02a3.35 3.35 0 00-3.36 3.36h0c0 1.86 1.5 3.36 3.36 3.36z"/>
-  <path fill="url(#ver_bwb)" d="M970.57 423.73h-5.02v-6.72h5.02c1.86 0 3.36 1.5 3.36 3.36h0a3.36 3.36 0 01-3.36 3.36z"/>
-  <path fill="url(#ver_bwb)" d="M953.11 410.9h5.02v-6.72h-5.02a3.35 3.35 0 00-3.36 3.36h0c0 1.85 1.5 3.36 3.36 3.36z"/>
-  <path fill="url(#ver_bwb)" d="M970.57 410.9h-5.02v-6.72h5.02c1.86 0 3.36 1.5 3.36 3.36h0a3.37 3.37 0 01-3.36 3.36z"/>
-  <path fill="url(#ver_bwb)" d="M953.11 398.06h5.02v-6.72h-5.02a3.35 3.35 0 00-3.36 3.36v0c0 1.86 1.5 3.36 3.36 3.36z"/>
-  <path fill="url(#ver_bwb)" d="M970.57 398.06h-5.02v-6.72h5.02c1.86 0 3.36 1.5 3.36 3.36v0a3.36 3.36 0 01-3.36 3.36z"/>
-  <path fill="url(#ver_bwb)" d="M953.11 385.22h5.02v-6.72h-5.02a3.35 3.35 0 00-3.36 3.36h0c0 1.86 1.5 3.36 3.36 3.36z"/>
-  <path fill="url(#ver_bwb)" d="M970.57 385.22h-5.02v-6.72h5.02c1.86 0 3.36 1.5 3.36 3.36h0a3.36 3.36 0 01-3.36 3.36z"/>
-  <path fill="url(#ver_bwb)" d="M953.11 372.39h5.02v-6.72h-5.02a3.35 3.35 0 00-3.36 3.36h0c0 1.85 1.5 3.36 3.36 3.36z"/>
-  <path fill="url(#ver_bwb)" d="M970.57 372.39h-5.02v-6.72h5.02c1.86 0 3.36 1.5 3.36 3.36h0a3.37 3.37 0 01-3.36 3.36z"/>
-  <path fill="url(#ver_bwb)" d="M953.11 359.55h5.02v-6.72h-5.02a3.35 3.35 0 00-3.36 3.36v0c0 1.85 1.5 3.36 3.36 3.36z"/>
-  <path fill="url(#ver_bwb)" d="M970.57 359.55h-5.02v-6.72h5.02c1.86 0 3.36 1.5 3.36 3.36v0a3.37 3.37 0 01-3.36 3.36z"/>
-  <path fill="url(#ver_bwb)" d="M953.11 346.71h5.02v-6.72h-5.02a3.35 3.35 0 00-3.36 3.36h0c0 1.86 1.5 3.36 3.36 3.36z"/>
-  <path fill="url(#ver_bwb)" d="M970.57 346.71h-5.02v-6.72h5.02c1.86 0 3.36 1.5 3.36 3.36h0a3.36 3.36 0 01-3.36 3.36z"/>
+  <g id="top_spring" transform="translate(961.8 338.3) scale(1 1.14) translate(-961.8 -338.3)">
+    <rect width="24.18" height="72.34" x="949.75" y="359.76" fill="url(#hor_org)"/>
+    <rect width="12.68" height="104.71" x="955.5" y="338.27" fill="url(#hor_bwb)"/>
+    <rect width="7.42" height="104.71" x="958.13" y="338.27" fill="#9E9DA6"/>
+    <path fill="url(#ver_bwb)" d="M953.11 436.57h5.02v-6.72h-5.02a3.35 3.35 0 00-3.36 3.36h0c0 1.86 1.5 3.36 3.36 3.36z"/>
+    <path fill="url(#ver_bwb)" d="M970.57 436.57h-5.02v-6.72h5.02c1.86 0 3.36 1.5 3.36 3.36h0a3.36 3.36 0 01-3.36 3.36z"/>
+    <path fill="url(#ver_bwb)" d="M953.11 423.73h5.02v-6.72h-5.02a3.35 3.35 0 00-3.36 3.36h0c0 1.86 1.5 3.36 3.36 3.36z"/>
+    <path fill="url(#ver_bwb)" d="M970.57 423.73h-5.02v-6.72h5.02c1.86 0 3.36 1.5 3.36 3.36h0a3.36 3.36 0 01-3.36 3.36z"/>
+    <path fill="url(#ver_bwb)" d="M953.11 410.9h5.02v-6.72h-5.02a3.35 3.35 0 00-3.36 3.36h0c0 1.85 1.5 3.36 3.36 3.36z"/>
+    <path fill="url(#ver_bwb)" d="M970.57 410.9h-5.02v-6.72h5.02c1.86 0 3.36 1.5 3.36 3.36h0a3.37 3.37 0 01-3.36 3.36z"/>
+    <path fill="url(#ver_bwb)" d="M953.11 398.06h5.02v-6.72h-5.02a3.35 3.35 0 00-3.36 3.36v0c0 1.86 1.5 3.36 3.36 3.36z"/>
+    <path fill="url(#ver_bwb)" d="M970.57 398.06h-5.02v-6.72h5.02c1.86 0 3.36 1.5 3.36 3.36v0a3.36 3.36 0 01-3.36 3.36z"/>
+    <path fill="url(#ver_bwb)" d="M953.11 385.22h5.02v-6.72h-5.02a3.35 3.35 0 00-3.36 3.36h0c0 1.86 1.5 3.36 3.36 3.36z"/>
+    <path fill="url(#ver_bwb)" d="M970.57 385.22h-5.02v-6.72h5.02c1.86 0 3.36 1.5 3.36 3.36h0a3.36 3.36 0 01-3.36 3.36z"/>
+    <path fill="url(#ver_bwb)" d="M953.11 372.39h5.02v-6.72h-5.02a3.35 3.35 0 00-3.36 3.36h0c0 1.85 1.5 3.36 3.36 3.36z"/>
+    <path fill="url(#ver_bwb)" d="M970.57 372.39h-5.02v-6.72h5.02c1.86 0 3.36 1.5 3.36 3.36h0a3.37 3.37 0 01-3.36 3.36z"/>
+    <path fill="url(#ver_bwb)" d="M953.11 359.55h5.02v-6.72h-5.02a3.35 3.35 0 00-3.36 3.36v0c0 1.85 1.5 3.36 3.36 3.36z"/>
+    <path fill="url(#ver_bwb)" d="M970.57 359.55h-5.02v-6.72h5.02c1.86 0 3.36 1.5 3.36 3.36v0a3.37 3.37 0 01-3.36 3.36z"/>
+    <path fill="url(#ver_bwb)" d="M953.11 346.71h5.02v-6.72h-5.02a3.35 3.35 0 00-3.36 3.36h0c0 1.86 1.5 3.36 3.36 3.36z"/>
+    <path fill="url(#ver_bwb)" d="M970.57 346.71h-5.02v-6.72h5.02c1.86 0 3.36 1.5 3.36 3.36h0a3.36 3.36 0 01-3.36 3.36z"/>
+  </g>
+</g>
+
+<clipPath id="arr_01_clp">
+  <rect x="1308" y="777" width="13" height="148"/>
+</clipPath>
+<g id="arr_01" clip-path="url(#arr_01_clp)">
+  <g id="q_01">
+    <use x="1314.574" y="980" xlink:href="#arr_mt"/>
+    <use x="1314.574" y="950" xlink:href="#arr_mt"/>
+    <use x="1314.574" y="920" xlink:href="#arr_mt"/>
+    <use x="1314.574" y="890" xlink:href="#arr_mt"/>
+    <use x="1314.574" y="860" xlink:href="#arr_mt"/>
+    <use x="1314.574" y="830" xlink:href="#arr_mt"/>
+    <use x="1314.574" y="800" xlink:href="#arr_mt"/>
+    <use x="1314.574" y="770" xlink:href="#arr_mt"/>
+    <use x="1314.574" y="740" xlink:href="#arr_mt"/>
+  </g>
+</g>
+
+<clipPath id="arr_02_clp">
+  <rect x="1280" y="771" width="28" height="15"/>
+</clipPath>
+<g id="arr_02" clip-path="url(#arr_02_clp)">
+  <g id="q_02">
+    <use x="1340" y="778" xlink:href="#arr_sl"/>
+    <use x="1320" y="778" xlink:href="#arr_sl"/>
+    <use x="1300" y="778" xlink:href="#arr_sl"/>
+    <use x="1280" y="778" xlink:href="#arr_sl"/>
+    <use x="1260" y="778" xlink:href="#arr_sl"/>
+  </g>
+</g>
+
+<clipPath id="arr_03_clp">
+  <rect x="1321" y="771" width="28" height="15"/>
+</clipPath>
+<g id="arr_03" clip-path="url(#arr_03_clp)">
+  <g id="q_03">
+    <use x="1289" y="778" xlink:href="#arr_sr"/>
+    <use x="1309" y="778" xlink:href="#arr_sr"/>
+    <use x="1329" y="778" xlink:href="#arr_sr"/>
+    <use x="1349" y="778" xlink:href="#arr_sr"/>
+    <use x="1369" y="778" xlink:href="#arr_sr"/>
+  </g>
+</g>
+
+<clipPath id="arr_04_clp">
+  <rect x="1279" y="718" width="71" height="53"/>
+</clipPath>
+<g id="arr_04" clip-path="url(#arr_04_clp)">
+  <g id="q_04">
+    <use x="1284.5" y="786" xlink:href="#arr_st"/>
+    <use x="1284.5" y="766" xlink:href="#arr_st"/>
+    <use x="1284.5" y="746" xlink:href="#arr_st"/>
+    <use x="1284.5" y="726" xlink:href="#arr_st"/>
+    <use x="1284.5" y="706" xlink:href="#arr_st"/>
+    <use x="1344.5" y="786" xlink:href="#arr_st"/>
+    <use x="1344.5" y="766" xlink:href="#arr_st"/>
+    <use x="1344.5" y="746" xlink:href="#arr_st"/>
+    <use x="1344.5" y="726" xlink:href="#arr_st"/>
+    <use x="1344.5" y="706" xlink:href="#arr_st"/>
+  </g>
+</g>
+
+<clipPath id="arr_05_clp">
+  <rect x="1289.5" y="723" width="10" height="36"/>
+</clipPath>
+<g id="arr_05" clip-path="url(#arr_05_clp)">
+  <g id="q_05">
+    <use x="1282" y="755.7" xlink:href="#arr_nr"/>
+    <use x="1292" y="755.7" xlink:href="#arr_nr"/>
+    <use x="1302" y="755.7" xlink:href="#arr_nr"/>
+    <use x="1312" y="755.7" xlink:href="#arr_nr"/>
+    <use x="1282" y="740.85" xlink:href="#arr_nr"/>
+    <use x="1292" y="740.85" xlink:href="#arr_nr"/>
+    <use x="1302" y="740.85" xlink:href="#arr_nr"/>
+    <use x="1312" y="740.85" xlink:href="#arr_nr"/>
+    <use x="1282" y="726" xlink:href="#arr_nr"/>
+    <use x="1292" y="726" xlink:href="#arr_nr"/>
+    <use x="1302" y="726" xlink:href="#arr_nr"/>
+    <use x="1312" y="726" xlink:href="#arr_nr"/>
+  </g>
+</g>
+
+<clipPath id="arr_06_clp">
+  <rect x="1329.65" y="723" width="10" height="36"/>
+</clipPath>
+<g id="arr_06" clip-path="url(#arr_06_clp)">
+  <g id="q_06">
+    <use x="1317.5" y="755.7" xlink:href="#arr_nl"/>
+    <use x="1327.5" y="755.7" xlink:href="#arr_nl"/>
+    <use x="1337.5" y="755.7" xlink:href="#arr_nl"/>
+    <use x="1347.5" y="755.7" xlink:href="#arr_nl"/>
+    <use x="1317.5" y="740.85" xlink:href="#arr_nl"/>
+    <use x="1327.5" y="740.85" xlink:href="#arr_nl"/>
+    <use x="1337.5" y="740.85" xlink:href="#arr_nl"/>
+    <use x="1347.5" y="740.85" xlink:href="#arr_nl"/>
+    <use x="1317.5" y="726" xlink:href="#arr_nl"/>
+    <use x="1327.5" y="726" xlink:href="#arr_nl"/>
+    <use x="1337.5" y="726" xlink:href="#arr_nl"/>
+    <use x="1347.5" y="726" xlink:href="#arr_nl"/>
+  </g>
+</g>
+
+<clipPath id="arr_07_clp">
+  <rect x="1308" y="517.5" width="13" height="241"/>
+</clipPath>
+<g id="arr_07" clip-path="url(#arr_07_clp)">
+  <g id="q_07">
+    <use x="1314.574" y="813" xlink:href="#arr_mt"/>
+    <use x="1314.574" y="783" xlink:href="#arr_mt"/>
+    <use x="1314.574" y="753" xlink:href="#arr_mt"/>
+    <use x="1314.574" y="723" xlink:href="#arr_mt"/>
+    <use x="1314.574" y="693" xlink:href="#arr_mt"/>
+    <use x="1314.574" y="663" xlink:href="#arr_mt"/>
+    <use x="1314.574" y="633" xlink:href="#arr_mt"/>
+    <use x="1314.574" y="603" xlink:href="#arr_mt"/>
+    <use x="1314.574" y="573" xlink:href="#arr_mt"/>
+    <use x="1314.574" y="543" xlink:href="#arr_mt"/>
+    <use x="1314.574" y="513" xlink:href="#arr_mt"/>
+  </g>
+</g>
+
+<clipPath id="arr_08_clp">
+  <rect x="1252.5" y="517.5" width="56" height="11.2"/>
+</clipPath>
+<g id="arr_08" clip-path="url(#arr_08_clp)">
+  <g id="q_08">
+    <use x="1333" y="523" xlink:href="#arr_ml"/>
+    <use x="1303" y="523" xlink:href="#arr_ml"/>
+    <use x="1273" y="523" xlink:href="#arr_ml"/>
+    <use x="1243" y="523" xlink:href="#arr_ml"/>
+  </g>
+</g>
+
+<clipPath id="arr_09_clp">
+  <rect x="1252.5" y="496" width="12" height="21.5"/>
+</clipPath>
+<g id="arr_09" clip-path="url(#arr_09_clp)">
+  <g id="q_09">
+    <use x="1258.6" y="542" xlink:href="#arr_mt"/>
+    <use x="1258.6" y="512" xlink:href="#arr_mt"/>
+    <use x="1258.6" y="482" xlink:href="#arr_mt"/>
+  </g>
+</g>
+
+<clipPath id="arr_10_clp">
+  <rect x="1196.4" y="494.2" width="51.5" height="12.5"/>
+</clipPath>
+<g id="arr_10" clip-path="url(#arr_10_clp)">
+  <g id="q_10">
+    <use x="1273" y="500.5" xlink:href="#arr_ml"/>
+    <use x="1243" y="500.5" xlink:href="#arr_ml"/>
+    <use x="1213" y="500.5" xlink:href="#arr_ml"/>
+    <use x="1183" y="500.5" xlink:href="#arr_ml"/>
+  </g>
+</g>
+
+<clipPath id="arr_11_clp">
+  <rect x="1196.4" y="507" width="12.5" height="194.5"/>
+</clipPath>
+<g id="arr_11" clip-path="url(#arr_11_clp)">
+  <g id="q_11">
+    <use x="1202.6" y="482" xlink:href="#arr_mb"/>
+    <use x="1202.6" y="512" xlink:href="#arr_mb"/>
+    <use x="1202.6" y="542" xlink:href="#arr_mb"/>
+    <use x="1202.6" y="572" xlink:href="#arr_mb"/>
+    <use x="1202.6" y="602" xlink:href="#arr_mb"/>
+    <use x="1202.6" y="632" xlink:href="#arr_mb"/>
+    <use x="1202.6" y="662" xlink:href="#arr_mb"/>
+    <use x="1202.6" y="692" xlink:href="#arr_mb"/>
+    <use x="1202.6" y="722" xlink:href="#arr_mb"/>
+  </g>
+</g>
+
+<clipPath id="arr_12_clp">
+  <rect x="1193.5" y="701.5" width="18" height="87"/>
+</clipPath>
+<g id="arr_12" clip-path="url(#arr_12_clp)">
+  <g id="q_12">
+    <use x="1202.6" y="669" xlink:href="#arr_b"/>
+    <use x="1202.6" y="709" xlink:href="#arr_b"/>
+    <use x="1202.6" y="749" xlink:href="#arr_b"/>
+    <use x="1202.6" y="789" xlink:href="#arr_b"/>
+    <use x="1202.6" y="829" xlink:href="#arr_b"/>
+  </g>
+</g>
+
+<clipPath id="arr_13_clp">
+  <rect x="1080.5" y="771" width="113" height="18"/>
+</clipPath>
+<g id="arr_13" clip-path="url(#arr_13_clp)">
+  <g id="q_13">
+    <use x="1226" y="780" xlink:href="#arr_l"/>
+    <use x="1186" y="780" xlink:href="#arr_l"/>
+    <use x="1146" y="780" xlink:href="#arr_l"/>
+    <use x="1106" y="780" xlink:href="#arr_l"/>
+    <use x="1066" y="780" xlink:href="#arr_l"/>
+  </g>
+</g>
+
+<clipPath id="arr_14_clp">
+  <polygon points="1037,484 1055,484 1098,771 1081,771"/>
+</clipPath>
+<g id="arr_14" clip-path="url(#arr_14_clp)">
+  <g id="q_14">
+    <use x="1094.469" y="803.84" xlink:href="#arr_dt"/>
+    <use x="1088.418" y="764.3" xlink:href="#arr_dt"/>
+    <use x="1082.368" y="724.76" xlink:href="#arr_dt"/>
+    <use x="1076.317" y="685.22" xlink:href="#arr_dt"/>
+    <use x="1070.267" y="645.681" xlink:href="#arr_dt"/>
+    <use x="1064.216" y="606.141" xlink:href="#arr_dt"/>
+    <use x="1058.166" y="566.601" xlink:href="#arr_dt"/>
+    <use x="1052.116" y="527.061" xlink:href="#arr_dt"/>
+    <use x="1046.065" y="487.522" xlink:href="#arr_dt"/>
+    <use x="1039.873" y="447.871" xlink:href="#arr_dt"/>
+  </g>
+</g>
+
+<clipPath id="arr_15_clp">
+  <rect x="1002" y="484" width="35.5" height="18"/>
+</clipPath>
+<g id="arr_15" clip-path="url(#arr_15_clp)">
+  <g id="q_15">
+    <use x="1070" y="493" xlink:href="#arr_l"/>
+    <use x="1030" y="493" xlink:href="#arr_l"/>
+    <use x="990" y="493" xlink:href="#arr_l"/>
+  </g>
+</g>
+
+<clipPath id="arr_17_clp">
+  <rect x="886" y="484" width="35.5" height="18"/>
+</clipPath>
+<g id="arr_17" clip-path="url(#arr_17_clp)">
+  <g id="q_17">
+    <use x="950" y="493" xlink:href="#arr_l"/>
+    <use x="910" y="493" xlink:href="#arr_l"/>
+    <use x="860" y="493" xlink:href="#arr_l"/>
+  </g>
+</g>
+
+<clipPath id="arr_18_clp">
+  <polygon points="871.4,502.6 888.9,502.6 922.6,652.2 905,652.2"/>
+</clipPath>
+<g id="arr_18" clip-path="url(#arr_18_clp)">
+  <g id="q_18">
+    <use x="872.814" y="469.61" xlink:href="#arr_db"/>
+    <use x="881.608" y="508.631" xlink:href="#arr_db"/>
+    <use x="890.402" y="547.653" xlink:href="#arr_db"/>
+    <use x="899.196" y="586.674" xlink:href="#arr_db"/>
+    <use x="907.989" y="625.695" xlink:href="#arr_db"/>
+    <use x="916.783" y="664.717" xlink:href="#arr_db"/>
+  </g>
+</g>
+
+<clipPath id="arr_22_clp">
+  <polygon points="770,547.5 881.5,547.5 885,563.5 770,563.5"/>
+  <polygon points="899,547.5 921.5,547.5 921.5,563.5 902.716,563.5"/>
+</clipPath>
+<g id="arr_22" clip-path="url(#arr_22_clp)">
+  <g id="q_22">
+    <use x="946" y="556" xlink:href="#arr_ml"/>
+    <use x="916" y="556" xlink:href="#arr_ml"/>
+    <use x="886" y="556" xlink:href="#arr_ml"/>
+    <use x="856" y="556" xlink:href="#arr_ml"/>
+    <use x="826" y="556" xlink:href="#arr_ml"/>
+    <use x="796" y="556" xlink:href="#arr_ml"/>
+    <use x="766" y="556" xlink:href="#arr_ml"/>
+    <use x="736" y="556" xlink:href="#arr_ml"/>
+  </g>
+</g>
+
+<clipPath id="arr_23_clp">
+  <rect x="642" y="681" width="18" height="244"/>
+</clipPath>
+<g id="arr_23" clip-path="url(#arr_23_clp)">
+  <g id="q_23">
+    <use x="651" y="657" xlink:href="#arr_mb"/>
+    <use x="651" y="687" xlink:href="#arr_mb"/>
+    <use x="651" y="717" xlink:href="#arr_mb"/>
+    <use x="651" y="747" xlink:href="#arr_mb"/>
+    <use x="651" y="777" xlink:href="#arr_mb"/>
+    <use x="651" y="807" xlink:href="#arr_mb"/>
+    <use x="651" y="837" xlink:href="#arr_mb"/>
+    <use x="651" y="867" xlink:href="#arr_mb"/>
+    <use x="651" y="897" xlink:href="#arr_mb"/>
+    <use x="651" y="927" xlink:href="#arr_mb"/>
+  </g>
 </g>
 
 <g id="red_bar" transform="translate(1436 358)">
@@ -819,6 +1172,169 @@ text {
 <text id="white_label" x="94" y="472" font-size="24" fill="#fff">- 0 (LPD)</text>
 </g>
 
+<g id="popup_nitro" class="popup_box invis">
+<path d="M817.45 287.08H630.61c-7.7 0-14-6.3-14-14v-21.97c0-7.7 6.3-14 14-14h186.84c7.7 0 14 6.3 14 14v2.98l39.83-5.1-39.83 21.14v2.95c0 7.7-6.3 14-14 14z" fill="#fff" opacity=".5"/>
+  <text x="723.826" y="270">
+    2 ATM Nitrogen
+  </text>
+  <a id="popup_nitro_close" class="bttn_close" href="javascript:;">
+    <use x="837.587" y="232.072" xlink:href="#popup_close"/>
+  </a>
+</g>
+
+<g id="popup_piston" class="popup_box invis">
+<path d="M870.28 668.58H683.44c-7.7 0-14 6.3-14 14v50.97c0 7.7 6.3 14 14 14h186.84c7.7 0 14-6.3 14-14v-31.98l39.83 5.1-39.83-21.14v-2.95c0-7.7-6.3-14-14-14z" fill="#fff" opacity=".5"/>
+  <text x="776.648" y="701.567">
+    Spring balanced
+    <tspan x="776.648" dy="30">piston</tspan>
+  </text>
+  <a id="popup_piston_close" class="bttn_close" href="javascript:;">
+    <use x="890.409" y="663.54" xlink:href="#popup_close"/>
+  </a>
+</g>
+
+<g id="popup_circuit" class="popup_box invis">
+<path d="M1078.74 287.08h186.84c7.7 0 14-6.3 14-14v-21.97c0-7.7-6.3-14-14-14h-186.84c-7.7 0-14 6.3-14 14v2.98l-39.83-5.1 39.83 21.14v2.95c0 7.7 6.3 14 14 14z" fill="#fff" opacity=".5"/>
+  <text x="1172.117" y="269">
+    Circuit board
+  </text>
+  <a id="popup_circuit_close" class="bttn_close" href="javascript:;">
+    <use x="1287.878" y="232.072" xlink:href="#popup_close"/>
+  </a>
+</g>
+
+<g id="popup_sensor" class="popup_box invis">
+<path d="M1078.74 362.02h186.84c7.7 0 14-6.3 14-14v-21.97c0-7.7-6.3-14-14-14h-186.84c-7.7 0-14 6.3-14 14v2.98l-39.83-5.1 39.83 21.14v2.95c0 7.7 6.3 14 14 14z" fill="#fff" opacity=".5"/>
+  <text x="1172.117" y="343">
+    Pressure sensor
+  </text>
+  <a id="popup_sensor_close" class="bttn_close" href="javascript:;">
+    <use x="1287.878" y="307" xlink:href="#popup_close"/>
+  </a>
+</g>
+
+<g id="popup_tention" class="popup_box invis">
+<path d="M1000.74 466.54h186.84c7.7 0 14-6.3 14-14v-51.97c0-7.7-6.3-14-14-14h-186.84c-7.7 0-14 6.3-14 14v2.98l-17.01-8.85 17.01 24.89v32.95c0 7.7 6.3 14 14 14z" fill="#fff" opacity=".5"/>
+  <text x="1094.124" y="420.136">
+    Stem controls
+    <tspan x="1094.124" dy="30">spring tension</tspan>
+  </text>
+  <a id="popup_tention_close" class="bttn_close" href="javascript:;">
+    <use x="1209.884" y="381.53" xlink:href="#popup_close"/>
+  </a>
+</g>
+
+<g id="popup_displacement" class="popup_box invis" transform="translate(0 80)">
+<path d="M1365.3 487.33h246.84c7.7 0 14-6.3 14-14v-51.97c0-7.7-6.3-14-14-14H1365.3c-7.7 0-14 6.3-14 14v2.98l-18.64-.17 18.64 16.21v32.95c0 7.7 6.3 14 14 14z" fill="#fff" opacity=".5"/>
+  <text x="1484.557" y="440.973">
+    Positive displacement
+    <tspan x="1484.557" dy="30">flow meter</tspan>
+  </text>
+  <a id="popup_displacement_close" class="bttn_close" href="javascript:;">
+    <use x="1638.484" y="402.323" xlink:href="#popup_close"/>
+  </a>
+</g>
+
+<g id="popup_mating" class="popup_box invis">
+<path d="M1012.19 686.4h186.84c7.7 0 14-6.3 14-14v-51.97c0-7.7-6.3-14-14-14h-186.84c-7.7 0-14 6.3-14 14v2.98l-17.01-8.85 17.01 24.89v32.95c0 7.7 6.3 14 14 14z" fill="#fff" opacity=".5"/>
+  <text x="1105.74" y="639.788">
+    Mating ceramic
+    <tspan x="1105.74" dy="30">trim</tspan>
+  </text>
+  <a id="popup_mating_close" class="bttn_close" href="javascript:;">
+    <use x="1221.33" y="601.385" xlink:href="#popup_close"/>
+  </a>
+</g>
+
+<g id="popup_ball" class="popup_box invis">
+<path d="M817.45 361.58H630.61c-7.7 0-14-6.3-14-14V325.6c0-7.7 6.3-14 14-14h186.84c7.7 0 14 6.3 14 14v2.98l112.35-8.6-112.35 24.64v2.95c0 7.71-6.3 14.01-14 14.01z" fill="#fff" opacity=".5"/>
+  <text x="723.826" y="343">
+    Ball Screw
+  </text>
+  <a id="popup_ball_close" class="bttn_close" href="javascript:;">
+    <use x="837.587" y="306.566" xlink:href="#popup_close"/>
+  </a>
+</g>
+
+<g id="popup_bellows" class="popup_box invis">
+<path d="M817.45 433.21H630.61c-7.7 0-14-6.3-14-14v-21.97c0-7.7 6.3-14 14-14h186.84c7.7 0 14 6.3 14 14v2.98l112.35-8.6-112.35 24.64v2.95c0 7.7-6.3 14-14 14z" fill="#fff" opacity=".5"/>
+  <text x="723.826" y="415">
+    Isolation bellows
+  </text>
+  <a id="popup_bellows_close" class="bttn_close" href="javascript:;">
+    <use x="837.587" y="378.205" xlink:href="#popup_close"/>
+  </a>
+</g>
+
+<g id="popup_adj_rest" class="popup_box invis">
+<path d="M907.7 600.32H790.86c-7.7 0-14-6.3-14-14v-40.97c0-7.7 6.3-14 14-14H907.7c7.7 0 14 6.3 14 14v2.98l65.21-49.5-65.21 65.55v21.95c0 7.69-6.3 13.99-14 13.99z" fill="#fff" opacity=".5"/>
+  <text x="849.802" y="560.248">
+    Adjustable
+    <tspan x="849.802" dy="30">restrictor</tspan>
+  </text>
+  <a id="popup_adj_rest_close" class="bttn_close" href="javascript:;">
+    <use x="928.04" y="525.106" xlink:href="#popup_close"/>
+  </a>
+</g>
+
+<g id="popup_int_check" class="popup_box invis">
+<path d="M584.85 762.89H468.01c-7.7 0-14-6.3-14-14v-40.97c0-7.7 6.3-14 14-14h116.84c7.7 0 14 6.3 14 14v21l40.76 21.97-40.76-5.93v3.93c0 7.7-6.3 14-14 14z" fill="#fff" opacity=".5"/>
+  <text x="528.657" y="722.3">
+    Internal
+    <tspan x="528.657" dy="30">check</tspan>
+  </text>
+  <a id="popup_int_check_close" class="bttn_close" href="javascript:;">
+    <use x="605.191" y="687.675" xlink:href="#popup_close"/>
+  </a>
+</g>
+
+<g id="popup_catch" class="popup_box invis">
+<path d="M1385.67 764.97h80.84c7.7 0 14-6.3 14-14V710c0-7.7-6.3-14-14-14h-80.84c-7.7 0-14 6.3-14 14v21l-28.96 31.08 28.96-15.04v3.93c0 7.7 6.3 14 14 14z" fill="#fff" opacity=".5"/>
+  <text x="1426.738" y="724">
+    Catch
+    <tspan x="1426.738" dy="30">screen</tspan>
+  </text>
+  <a id="popup_catch_close" class="bttn_close" href="javascript:;">
+    <use x="1489.805" y="691.225" xlink:href="#popup_close"/>
+  </a>
+</g>
+
+<g id="popup_out_coupler" class="popup_box invis">
+<path d="M584.85 915.83H468.01c-7.7 0-14-6.3-14-14v-40.97c0-7.7 6.3-14 14-14h116.84c7.7 0 14 6.3 14 14v21l40.76 21.97-40.76-5.93v3.93c0 7.7-6.3 14-14 14z" fill="#fff" opacity=".5"/>
+  <text x="526" y="874">
+    Outlet
+    <tspan x="526" dy="30">coupler</tspan>
+  </text>
+  <a id="popup_out_coupler_close" class="bttn_close" href="javascript:;">
+    <use x="605.191" y="840.613" xlink:href="#popup_close"/>
+  </a>
+</g>
+
+<g id="popup_in_coupler" class="popup_box invis">
+<path d="M1248.33 915.83h-116.84c-7.7 0-14-6.3-14-14v-40.97c0-7.7 6.3-14 14-14h116.84c7.7 0 14 6.3 14 14v21l40.76 21.97-40.76-5.93v3.93c0 7.7-6.3 14-14 14z" fill="#fff" opacity=".5"/>
+  <text x="1190.122" y="874">
+    Inlet
+    <tspan x="1190.122" dy="30">coupler</tspan>
+  </text>
+  <a id="popup_in_coupler_close" class="bttn_close" href="javascript:;">
+    <use x="1268.668" y="840.613" xlink:href="#popup_close"/>
+  </a>
+</g>
+
+<g id="popup_demonstrate" class="popup_box invis">
+<path fill="#fff" d="M449.02 572.42h-64.39l-35.37 56.88 10.27-56.88H257.3c-7.7 0-14-6.3-14-14V368.45c0-7.7 6.3-14 14-14h191.72c7.7 0 14 6.3 14 14v189.97c0 7.7-6.3 14-14 14z" opacity=".5"/>
+  <text x="353.131" y="406">
+    To demonstrate,
+    <tspan x="353.131" dy="32">click the arrows</tspan>
+    <tspan x="353.131" dy="32">to adjust field</tspan>
+    <tspan x="353.131" dy="32">pressures and</tspan>
+    <tspan x="353.131" dy="32">valve setpoint</tspan>
+  </text>
+  <a id="popup_demonstrate_close" class="bttn_close" href="javascript:;">
+    <use x="470.319" y="348.351" xlink:href="#popup_close"/>
+  </a>
+</g>
+
 <script>
 <![CDATA[
 
@@ -831,10 +1347,6 @@ let arrows_shift = 1;
 let animation_id;
 let allow_play = true;
 let setint;
-let spring_pos;
-let osc_pos = 0;
-let osc_iter = 20;
-let setint2;
 
 function $(sel) {
   return document.querySelector(sel);
@@ -848,54 +1360,101 @@ $("#bttn_surface").onclick = function() {
   $("#surface").classList.toggle("invis");
 };
 
-$("#popup_flow_meter_close").onclick = function() {
-  $("#popup_flow_meter").classList.toggle("invis");
+*/ // ------------------------------------------------------------------------------------------------
+
+$("#popup_nitro_close").onclick = function() {
+  $("#popup_nitro").classList.toggle("invis");
 };
 
-$("#popup_warn_close").onclick = function() {
-  $("#popup_warn").classList.toggle("invis");
+$("#popup_piston_close").onclick = function() {
+  $("#popup_piston").classList.toggle("invis");
 };
 
-$("#popup_intdifreg_close").onclick = function() {
-  $("#popup_intdifreg").classList.toggle("invis");
+$("#popup_circuit_close").onclick = function() {
+  $("#popup_circuit").classList.toggle("invis");
+};
+
+$("#popup_sensor_close").onclick = function() {
+  $("#popup_sensor").classList.toggle("invis");
+};
+
+$("#popup_tention_close").onclick = function() {
+  $("#popup_tention").classList.toggle("invis");
+};
+
+$("#popup_displacement_close").onclick = function() {
+  $("#popup_displacement").classList.toggle("invis");
+};
+
+$("#popup_mating_close").onclick = function() {
+  $("#popup_mating").classList.toggle("invis");
+};
+
+$("#popup_ball_close").onclick = function() {
+  $("#popup_ball").classList.toggle("invis");
+};
+
+$("#popup_bellows_close").onclick = function() {
+  $("#popup_bellows").classList.toggle("invis");
+};
+
+$("#popup_adj_rest_close").onclick = function() {
+  $("#popup_adj_rest").classList.toggle("invis");
+};
+
+$("#popup_int_check_close").onclick = function() {
+  $("#popup_int_check").classList.toggle("invis");
+};
+
+$("#popup_catch_close").onclick = function() {
+  $("#popup_catch").classList.toggle("invis");
+};
+
+$("#popup_out_coupler_close").onclick = function() {
+  $("#popup_out_coupler").classList.toggle("invis");
+};
+
+$("#popup_in_coupler_close").onclick = function() {
+  $("#popup_in_coupler").classList.toggle("invis");
 };
 
 $("#popup_demonstrate_close").onclick = function() {
   $("#popup_demonstrate").classList.toggle("invis");
 };
 
-$("#popup_restrictor_close").onclick = function() {
-  $("#popup_restrictor").classList.toggle("invis");
-};
-
-$("#popup_throttling_close").onclick = function() {
-  $("#popup_throttling").classList.toggle("invis");
-};
-
-$("#popup_spring_close").onclick = function() {
-  $("#popup_spring").classList.toggle("invis");
-};
-
-$("#popup_stem_close").onclick = function() {
-  $("#popup_stem").classList.toggle("invis");
-};
-
-
 function info_show() {
-if($("#popup_flow_meter").classList.contains("invis") || $("#popup_demonstrate").classList.contains("invis") || $("#popup_restrictor").classList.contains("invis") || $("#popup_throttling").classList.contains("invis") || $("#popup_spring").classList.contains("invis") || $("#popup_stem").classList.contains("invis")) {
-  $("#popup_flow_meter").classList.remove("invis");
+if($("#popup_nitro").classList.contains("invis") || $("#popup_piston").classList.contains("invis") || $("#popup_circuit").classList.contains("invis") || $("#popup_sensor").classList.contains("invis") || $("#popup_tention").classList.contains("invis") || $("#popup_displacement").classList.contains("invis") || $("#popup_mating").classList.contains("invis") || $("#popup_ball").classList.contains("invis") || $("#popup_bellows").classList.contains("invis") || $("#popup_adj_rest").classList.contains("invis") || $("#popup_int_check").classList.contains("invis") || $("#popup_catch").classList.contains("invis") || $("#popup_out_coupler").classList.contains("invis") || $("#popup_in_coupler").classList.contains("invis") || $("#popup_demonstrate").classList.contains("invis")) {
+  $("#popup_nitro").classList.remove("invis");
+  $("#popup_piston").classList.remove("invis");
+  $("#popup_circuit").classList.remove("invis");
+  $("#popup_sensor").classList.remove("invis");
+  $("#popup_tention").classList.remove("invis");
+  $("#popup_displacement").classList.remove("invis");
+  $("#popup_mating").classList.remove("invis");
+  $("#popup_ball").classList.remove("invis");
+  $("#popup_bellows").classList.remove("invis");
+  $("#popup_adj_rest").classList.remove("invis");
+  $("#popup_int_check").classList.remove("invis");
+  $("#popup_catch").classList.remove("invis");
+  $("#popup_out_coupler").classList.remove("invis");
+  $("#popup_in_coupler").classList.remove("invis");
   $("#popup_demonstrate").classList.remove("invis");
-  $("#popup_restrictor").classList.remove("invis");
-  $("#popup_throttling").classList.remove("invis");
-  $("#popup_spring").classList.remove("invis");
-  $("#popup_stem").classList.remove("invis");
 } else {
-  $("#popup_flow_meter").classList.toggle("invis");
+  $("#popup_nitro").classList.toggle("invis");
+  $("#popup_piston").classList.toggle("invis");
+  $("#popup_circuit").classList.toggle("invis");
+  $("#popup_sensor").classList.toggle("invis");
+  $("#popup_tention").classList.toggle("invis");
+  $("#popup_displacement").classList.toggle("invis");
+  $("#popup_mating").classList.toggle("invis");
+  $("#popup_ball").classList.toggle("invis");
+  $("#popup_bellows").classList.toggle("invis");
+  $("#popup_adj_rest").classList.toggle("invis");
+  $("#popup_int_check").classList.toggle("invis");
+  $("#popup_catch").classList.toggle("invis");
+  $("#popup_out_coupler").classList.toggle("invis");
+  $("#popup_in_coupler").classList.toggle("invis");
   $("#popup_demonstrate").classList.toggle("invis");
-  $("#popup_restrictor").classList.toggle("invis");
-  $("#popup_throttling").classList.toggle("invis");
-  $("#popup_spring").classList.toggle("invis");
-  $("#popup_stem").classList.toggle("invis");
   }
 }
 
@@ -907,29 +1466,14 @@ setTimeout(function(){
   info_show();
 }, 400);
 
-*/ // ------------------------------------------------------------------------------------------------
-
 // Gauges
 
 function gw_upd() {
-  if(r_angle > y_angle) {
-    $("#popup_warn").classList.add("invis");
-  }
   g_angle = t_angle * 3;
   w_angle = t_angle * 2.35;
-  spring_pos = $("#spring_3").getAttribute('y1');
+
   $("#gray_arrow").setAttribute("transform", "rotate(" + (g_angle - 150) + " 708.719 880.397)");
   $("#white_arrow").setAttribute("transform", "rotate(" + (w_angle - 150) + " 1748.044 763.201)");
-  $("#valve_line").setAttribute("transform", "translate(0 " + (100 - t_angle) / 5 + ")");
-  $("#valve_top").setAttribute("transform", "translate(0 " + (100 - t_angle) / 5 + ")");
-  $("#valve_bottom").setAttribute("transform", "translate(0 " + (100 - t_angle) / -5 + ")");
-  $("#spring_4").setAttribute("y1", 630 + (100 - t_angle) / 5);
-  $("#spring_4").setAttribute("y2", 624 + (100 - t_angle) / 6.666);
-  $("#spring_3").setAttribute("y2", 624 + (100 - t_angle) / 6.666);
-  $("#spring_3").setAttribute("y1", 608 + (100 - t_angle) / 10);
-  $("#spring_2").setAttribute("y1", 608 + (100 - t_angle) / 10);
-  $("#spring_2").setAttribute("y2", 592 + (100 - t_angle) / 20);
-  $("#spring_1").setAttribute("y2", 592 + (100 - t_angle) / 20);
 
   $("#red_label").textContent = "- " + r_angle + " (BAR)";
   $("#yellow_label").textContent = "- " + y_angle + " (BAR)";
@@ -942,47 +1486,23 @@ function gw_upd() {
     }
     allow_play = false;
   } else {
-    if(y_angle >= r_angle) {
-      $("#popup_warn").classList.remove("invis");
-    }
     $("#gray_arrow").setAttribute("transform", "rotate(-150 708.719 880.397)");
     $("#white_arrow").setAttribute("transform", "rotate(-150 1748.044 763.201)");
     cancelAnimationFrame(animation_id);
     allow_play = true;
   }
-}
 
-function oscillate() {
-  if(osc_iter > 0) {
-    osc_iter--;
-    if(osc_iter >= 10) {
-      osc_pos++;
-      $("#valve_body").setAttribute("transform", "translate(0 " + osc_pos + ")");
-      $("#spring").setAttribute("transform", "translate(0 " + spring_pos * (1 + osc_pos/200) + ") scale(1 " + (1 - osc_pos / (spring_pos - 546)) + ") translate(0 " + (-1 * spring_pos * (1 + osc_pos/200)) + ")");
-    } else {
-      osc_pos--;
-      $("#valve_body").setAttribute("transform", "translate(0 " + osc_pos + ")");
-      $("#spring").setAttribute("transform", "translate(0 " + spring_pos * (1 + osc_pos/200) + ") scale(1 " + (1 - osc_pos / (spring_pos - 546)) + ") translate(0 " + (-1 * spring_pos * (1 + osc_pos/200)) + ")");
-    }
-  } else {
-    clearInterval(setint2);
-    osc_iter = 20;
-    $("#popup_intdifreg").classList.add("invis");
-  }
-}
-
-function start_oscillate() {
-  clearInterval(setint2);
-  $("#popup_intdifreg").classList.remove("invis");
-  setint2 = setInterval(function(){oscillate()}, 80);
+  $("#r_piston").setAttribute("transform", "translate(0 " + w_angle / 5 * -0.234 + ")");
+  $("#r_spring").setAttribute("transform", "translate(1258.5 683.9) scale(1 " + (1.1 + w_angle / 5 * 0.0042553) + ") translate(-1258.5 -683.9)");
+  $("#bottom_spring").setAttribute("transform", "translate(961.8 690.5) scale(1 " + (1.3 - w_angle / 5 * 0.006383) + ") translate(-961.8 -690.5)");
+  $("#top_spring").setAttribute("transform", "translate(961.8 338.3) scale(1 " + (1.14 - w_angle / 5 * 0.002978) + ") translate(-961.8 -338.3)");
+  $("#l_piston").setAttribute("transform", "translate(0 " + (14 - w_angle / 5 * 0.2979) + ")");
 }
 
 function rarr_dwn() {
   if(r_angle > 0 && r_angle > y_angle) {
     r_angle -= 5;
     $("#red_arrow").setAttribute("transform", "rotate(" + (r_angle - 150) + " 171.933 434.709)");
-  } else {
-    $("#popup_warn").classList.remove("invis");
   }
   gw_upd();
 }
@@ -1007,8 +1527,6 @@ function yarr_up() {
   if(y_angle < 300 && r_angle > y_angle) {
     y_angle += 5;
     $("#yellow_arrow").setAttribute("transform", "rotate(" + (y_angle - 150) + " 1455.102 434.729)");
-  } else {
-    $("#popup_warn").classList.remove("invis");
   }
   gw_upd();
 }
@@ -1036,7 +1554,6 @@ $("#rb_left").onmousedown = function() {
 $("#rb_left").onclick = function() {rarr_dwn()};
 $("#rb_left").onmouseup = function() {
   clearInterval(setint);
-  start_oscillate();
 };
 
 $("#rb_right").onmousedown = function() {
@@ -1044,9 +1561,6 @@ $("#rb_right").onmousedown = function() {
   setint = setInterval(function(){rarr_up()}, 200);
 }
 $("#rb_right").onclick = function() {rarr_up()};
-$("#rb_right").onmouseup = function() {
-  start_oscillate();
-};
 
 $("#tgl_left").onmousedown = function() {
   clearInterval(setint);
@@ -1065,9 +1579,6 @@ $("#yb_left").onmousedown = function() {
   setint = setInterval(function(){yarr_dwn()}, 200);
 }
 $("#yb_left").onclick = function() {yarr_dwn()};
-$("#yb_left").onmouseup = function() {
-  start_oscillate();
-};
 
 window.onmouseup = function() {clearInterval(setint)};
 
@@ -1078,20 +1589,36 @@ $("#yb_right").onmousedown = function() {
 $("#yb_right").onclick = function() {yarr_up()};
 $("#yb_right").onmouseup = function() {
   clearInterval(setint);
-  start_oscillate();
 };
 
 function animate() {
-  if(arrows_shift < 120) {
-    arrows_shift += w_angle / 30;
-    $("#queue").setAttribute("transform", "translate(" + arrows_shift + " 0)");
-    $("#queue2").setAttribute("transform", "translate(" + arrows_shift + " 0)");
-    $("#queue3").setAttribute("transform", "translate(" + arrows_shift + " 0)");
+  if(arrows_shift < 40) {
+    arrows_shift += w_angle / 100;
+    $("#q_01").setAttribute("transform", "translate(0 " + arrows_shift * -0.75 + ")");
+    $("#q_02").setAttribute("transform", "translate(" + arrows_shift * -0.5 + " 0)");
+    $("#q_03").setAttribute("transform", "translate(" + arrows_shift * 0.5 + " 0)");
+    $("#q_04").setAttribute("transform", "translate(0 " + arrows_shift * -0.5 + ")");
+    $("#q_05").setAttribute("transform", "translate(" + arrows_shift * 0.25 + " 0)");
+    $("#q_06").setAttribute("transform", "translate(" + arrows_shift * -0.25 + " 0)");
+    $("#q_07").setAttribute("transform", "translate(0 " + arrows_shift * -0.75 + ")");
+    $("#q_08").setAttribute("transform", "translate(" + arrows_shift * -0.75 + " 0)");
+    $("#q_09").setAttribute("transform", "translate(0 " + arrows_shift * -0.75 + ")");
+    $("#q_10").setAttribute("transform", "translate(" + arrows_shift * -0.75 + " 0)");
+    $("#q_11").setAttribute("transform", "translate(0 " + arrows_shift * 0.75 + ")");
+    $("#q_12").setAttribute("transform", "translate(0 " + arrows_shift + ")");
+    $("#q_13").setAttribute("transform", "translate(" + arrows_shift * -1 + " 0)");
+    $("#q_14").setAttribute("transform", "translate(" + arrows_shift * -0.15 + " " + arrows_shift * -0.9875 + ")");
+    $("#q_15").setAttribute("transform", "translate(" + arrows_shift * -1 + " 0)");
+    $("#q_16").setAttribute("transform", "translate(" + arrows_shift * -1 + " 0)");
+    $("#q_17").setAttribute("transform", "translate(" + arrows_shift * -1 + " 0)");
+    $("#q_18").setAttribute("transform", "translate(" + arrows_shift * 0.22 + " " + arrows_shift * 0.975 + ")");
+    $("#q_19").setAttribute("transform", "translate(" + arrows_shift + " 0)");
+    $("#q_20").setAttribute("transform", "translate(0 " + arrows_shift * -1 + ")");
+    $("#q_21").setAttribute("transform", "translate(" + arrows_shift * -1 + " 0)");
+    $("#q_22").setAttribute("transform", "translate(" + arrows_shift * -0.75 + " 0)");
+    $("#q_23").setAttribute("transform", "translate(0 " + arrows_shift * 0.75 + ")");
   } else {
     arrows_shift = 1;
-    $("#queue").setAttribute("transform", "translate(" + arrows_shift + " 0)");
-    $("#queue2").setAttribute("transform", "translate(" + arrows_shift + " 0)");
-    $("#queue3").setAttribute("transform", "translate(" + arrows_shift + " 0)");
   }
     animation_id = requestAnimationFrame(animate);
 }
