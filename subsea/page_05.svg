@@ -1,0 +1,196 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1080">
+
+<defs>
+<style>@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900');</style>
+</defs>
+
+<style>
+/* <![CDATA[ */
+
+@namespace svg url(http://www.w3.org/2000/svg);
+
+svg|a {
+  outline: none;
+}
+
+svg {
+  background: linear-gradient(#4a6785, #dbedff);
+}
+
+text {
+  font-weight: 700;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.bttn:hover use {
+  filter: url(#h_color);
+  transform: translate(0px, 0px);
+}
+
+.bttn:active use {
+  filter: url(#a_color);
+  transform: translate(0px, 2px);
+}
+
+.nav_button_bg {
+  fill: #fff;
+  fill-opacity: 0;
+  stroke: #fff;
+  transition: fill-opacity .1s linear;
+}
+
+.nav_button:hover .nav_button_bg {
+  fill-opacity: .3;
+}
+
+.nav_button text {
+  font-size: 32px;
+  font-weight: 700;
+  text-anchor: middle;
+  fill: #fff;
+}
+
+#page_num text {
+  font-size: 60px;
+  font-weight: 900;
+  text-anchor: middle;
+}
+
+.ttl {
+  font-size: 54px;
+  fill: #fff;
+  font-weight: 900;
+  text-anchor: middle;
+}
+
+.text_body {
+  font-weight: 400;
+  font-size: 26px;
+  fill: #fff;
+  text-anchor: middle;
+}
+
+.text_body2 {
+  font-weight: 400;
+  font-size: 26px;
+  fill: #fff;
+}
+
+.text_body.dark {
+  fill: #000;
+}
+
+.graph_label {
+  font-size: 32px;
+  font-weight: 700;
+  text-anchor: middle;
+}
+
+/* ]]> */
+</style>
+
+<a href="page_04.svg" id="bttn_prev" class="nav_button">
+  <path class="nav_button_bg" d="M184.5 119.66H63.98c-6.6 0-12-5.4-12-12V69.84c0-6.6 5.4-12 12-12H184.5c6.6 0 12 5.4 12 12v37.83c0 6.59-5.4 11.99-12 11.99z"/>
+  <text x="126" y="100">PREV</text>
+</a>
+<a href="javascript:;" id="bttn_next" class="nav_button">
+  <path class="nav_button_bg" d="M1856.02 119.66H1735.5c-6.6 0-12-5.4-12-12V69.84c0-6.6 5.4-12 12-12h120.52c6.6 0 12 5.4 12 12v37.83c0 6.59-5.4 11.99-12 11.99z"/>
+  <text x="1798" y="100">NEXT</text>
+</a>
+<a href="javascript:;" id="bttn_tofc" class="nav_button">
+  <path class="nav_button_bg" d="M184.5 217.16H63.98c-6.6 0-12-5.4-12-12v-37.83c0-6.6 5.4-12 12-12H184.5c6.6 0 12 5.4 12 12v37.83c0 6.6-5.4 12-12 12z"/>
+  <text x="126" y="199">TofC</text>
+</a>
+<g id="page_num">
+  <circle cx="1821.47" cy="984.85" r="41.88" fill="#fff"/>
+  <text x="1821.47" y="1005.44">5</text>
+</g>
+
+<text x="960" y="150" class="ttl">LOW FLOW GRAPH</text>
+<text x="960" y="230" class="text_body">
+  Flow rate as pressure across valve increases — Low Flow
+</text>
+
+<text x="70" y="550" class="text_body2">Data from valve serial
+  <tspan x="70" dy="32">#1008 PI TEST 11/16/09</tspan>
+</text>
+
+<text x="1468" y="545" class="text_body2">Notes in graph area are typical
+  <tspan x="1468" dy="32">percent of reading change per</tspan>
+  <tspan x="1468" dy="32">70 bar change in well pressure</tspan>
+</text>
+
+<g fill="none" stroke="#000">
+<polyline points="938.2 385.42 948.69 385.42 948.69 365.38"/>
+<polyline points="1177.48 508.38 1187.96 508.38 1187.96 488.33"/>
+<polyline points="1106.46 666.11 1116.95 666.11 1116.95 646.06"/>
+<polyline points="1326.98 759.19 1337.46 759.19 1337.46 779.24"/>
+<polyline points="1317.18 839.59 1327.67 839.59 1327.67 859.64"/>
+<polyline points="645.82 904.98 534.81 904.98 534.81 414.4"/>
+<polyline points="534.81 403.66 534.81 287.09 1384.18 287.09 1384.18 904.98 656.54 904.98"/>
+<line x1="534.81" x2="1384.18" y1="351.69" y2="351.69"/>
+<line x1="534.81" x2="1384.18" y1="469.9" y2="469.9"/>
+<line x1="534.81" x2="1384.18" y1="626.43" y2="626.43"/>
+<line x1="534.81" x2="1384.18" y1="796.57" y2="796.57"/>
+<line x1="534.81" x2="1384.18" y1="875.21" y2="875.21"/>
+<line x1="613.24" x2="613.24" y1="904.98" y2="287.09"/>
+<line x1="690.19" x2="690.19" y1="904.98" y2="287.09"/>
+<line x1="805.61" x2="805.61" y1="904.98" y2="287.09"/>
+<line x1="921.86" x2="921.86" y1="904.98" y2="287.09"/>
+<line x1="1037.28" x2="1037.28" y1="904.98" y2="287.09"/>
+<line x1="1153.53" x2="1153.53" y1="904.98" y2="287.09"/>
+<line x1="1268.95" x2="1268.95" y1="904.98" y2="287.09"/>
+<path stroke-width="3" d="M534.81 904.98c.57-8.37 2.96-19.88 6.31-24.81 3.33-4.9 8.8-5.71 17.24-5.99 22.08-.72 55.45-.56 71.17-.69 17.28-.14 87.28-.99 110.4-.99s197.27-.03 210.42 0c142.18.33 311.92 2.91 433.36 6.15"/>
+<path stroke-width="3" d="M534.81 904.98c.57-8.37 4.68-79.96 10.7-96.25 4.27-11.55 19.69-13.79 28.13-14.07 22.08-.72 52.03-1.37 67.75-1.5 17.28-.14 88.07 1 111.19 1s198.69 1.85 211.84 2.01c149.84 1.76 298.19 2.11 419.62 5.35"/>
+<path stroke-width="3" d="M534.81 904.98c.33-4.93 2.01-90.41 4.9-162.82 2.02-50.59 5.33-94.45 6.25-101.53 2.16-16.62 22.64-15.69 31.08-15.97 22.08-.72 42.12-1.38 57.84-1.51 17.28-.14 94.93-.22 118.05-.22 23.12 0 198.56 2.44 211.71 2.59 149.84 1.76 297.96 4.98 419.39 8.22"/>
+<path stroke-width="3" d="M534.81 904.98c.33-4.93 16.36-249.44 19.25-321.85 2.02-50.59 4.96-83.22 5.71-90.32 2.06-19.53 16.46-22.09 24.75-23.71 21.29-4.15 48.13-2.64 63.86-2.77 17.28-.14 81.06 0 104.18 0 23.12 0 243.53.2 256.68.36 149.84 1.76 253.37 4.16 374.81 7.4"/>
+<path stroke-width="3" d="M534.81 904.98c.33-4.93 27.94-254.17 30.84-326.59 2.02-50.59 26.29-196.8 27.72-205.46 3.33-20.21 10.8-23.97 19.19-24.88 19.18-2.09 52.64-1.82 68.36-1.97 17.29-.16 79.48-.45 106.37-.57 90.99-.43 193.57 2.07 206.72 2.37 148.77 3.37 263.87 4.29 390.72 6.44"/>
+<line x1="922.39" x2="1164.27" y1="351.03" y2="351.03"/>
+<line x1="1158.24" x2="1384.2" y1="473.99" y2="473.99"/>
+<line x1="1107.68" x2="1384.09" y1="633.72" y2="633.72"/>
+<line x1="822.21" x2="1343.9" y1="794.7" y2="794.7"/>
+<line x1="1025.95" x2="1334.1" y1="872.85" y2="872.85"/>
+<path d="M554.94 403.74c-2.22 1.55-5.89 2.57-10.06 2.57-6.62 0-12.93-5.13-20.12-5.13-4.17 0-7.84 1.02-10.06 2.57"/>
+<path d="M554.94 414.49c-2.22 1.55-5.89 2.57-10.06 2.57-6.62 0-12.93-5.13-20.12-5.13-4.17 0-7.84 1.02-10.06 2.57"/>
+<path d="M645.88 884.91c1.55 2.22 2.57 5.89 2.57 10.06 0 6.62-5.13 12.93-5.13 20.12 0 4.17 1.02 7.84 2.57 10.06"/>
+<path d="M656.63 884.91c1.55 2.22 2.57 5.89 2.57 10.06 0 6.62-5.13 12.93-5.13 20.12 0 4.17 1.02 7.84 2.57 10.06"/>
+</g>
+<polygon points="952.78 367.28 944.74 367.28 948.76 354.57"/>
+<polygon points="1192.06 490.23 1184.01 490.23 1188.04 477.53"/>
+<polygon points="1121.04 647.96 1113 647.96 1117.02 635.26"/>
+<polygon points="1341.56 777.34 1333.51 777.34 1337.53 790.04"/>
+<polygon points="1331.76 857.74 1323.71 857.74 1327.74 870.44"/>
+
+<text x="472" y="578" class="graph_label" transform="rotate(-90 472 578)">Flow (LPH)</text>
+<text x="975" y="1010" class="graph_label">Pressure Drop Across Valve (BAR)</text>
+
+<text x="497" y="352">80</text>
+<text x="497" y="470">3.2</text>
+<text x="497" y="625">1.6</text>
+<text x="497" y="798">0.8</text>
+<text x="497" y="876">0.3</text>
+<text x="510" y="906">0</text>
+
+<text x="534" y="920" transform="rotate(90 534 920)">0</text>
+<text x="616" y="920" transform="rotate(90 616 920)">17</text>
+<text x="691" y="920" transform="rotate(90 691 920)">100</text>
+<text x="805" y="920" transform="rotate(90 805 920)">200</text>
+<text x="920" y="920" transform="rotate(90 920 920)">300</text>
+<text x="1035" y="920" transform="rotate(90 1035 920)">400</text>
+<text x="1150" y="920" transform="rotate(90 1150 920)">500</text>
+<text x="1265" y="920" transform="rotate(90 1265 920)">600</text>
+<text x="1380" y="920" transform="rotate(90 1380 920)">700</text>
+
+<text x="890" y="392">0.7%</text>
+<text x="1143" y="514">3%</text>
+<text x="1074" y="673">6%</text>
+<text x="1292" y="767">8%</text>
+<text x="1276" y="847">10%</text>
+
+<script>
+<![CDATA[
+
+]]>
+</script>
+</svg>
