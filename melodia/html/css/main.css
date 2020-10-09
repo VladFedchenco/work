@@ -29,10 +29,15 @@ body {
 }
 
 header {
+    height: 180px;
     padding: 64px 100px 0 100px;
     background-color: #fff;
     text-align: right;
-    position: relative;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
 }
 
 a {
@@ -40,8 +45,21 @@ a {
     transition: color .2s ease;
 }
 
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
 strong {
     font-weight: bold;
+}
+
+h2 {
+    text-align: center;
+    font-weight: 300;
+    color: #2f343c;
+    font-size: 30px;
 }
 
 #logo {
@@ -64,7 +82,7 @@ strong {
 #nav {
     font-weight: bold;
     display: block;
-    padding-top: 16px;
+    padding-top: 32px;
     font-size: 20px;
 }
 
@@ -85,7 +103,7 @@ strong {
 .typess {
     position: absolute;
     left: 130px;
-    top: 250px;
+    top: 300px;
 }
 
 .typess p {
@@ -94,6 +112,7 @@ strong {
     font-size: 80px;
     line-height: 1.5;
     color: #2f343c;
+    margin: 0;
 }
 
 .typess p span {
@@ -127,6 +146,38 @@ strong {
 
 .typess p span.cursor.typing {
     animation: none;
+}
+
+#top_section {
+    height: 100vh;
+}
+
+#middle_section {
+    height: 1000px;
+    background-color: #fff;
+    margin-bottom: 940px;
+}
+
+#middle_section h2 {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+#bottom_section {
+    height: 800px;
+    background-color: #fafafa;
+    text-align: center;
+    padding-top: 200px;
+}
+
+#phones_animation.fixed {
+    position: fixed;
+    bottom: -140px;
+    left: 0;
+    width: 100%;
+    height: 840px;
 }
 
 @keyframes blink {
@@ -169,4 +220,215 @@ strong {
     top: 200px;
     width: 478px;
     height: auto;
+}
+#nav_slide {
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    z-index: 999;
+}
+
+#nav_slide .dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #d6dae1;
+    display: block;
+    margin: 8px 0;
+    transition: background-color .2s linear;
+}
+
+#nav_slide.slide1 .dot:nth-child(1) {
+    background-color: #304768;
+}
+
+#nav_slide.slide2 .dot:nth-child(1) {
+    background-color: #d6dae1;
+}
+
+#nav_slide.slide2 .dot:nth-child(2) {
+    background-color: #304768;
+}
+
+#nav_slide.slide3 .dot:nth-child(1) {
+    background-color: #d6dae1;
+}
+
+#nav_slide.slide3 .dot:nth-child(2) {
+    background-color: #d6dae1;
+}
+
+#nav_slide.slide3 .dot:nth-child(3) {
+    background-color: #304768;
+}
+
+#phone1 {
+    top: 140px;
+    left: 30%;
+    transition: top .3s ease;
+}
+
+#phone2 {
+    top: 140px;
+    left: 50%;
+    transition: top .3s ease;
+}
+
+#phone3 {
+    top: 140px;
+    left: 70%;
+    transition: top .3s ease;
+}
+
+.phone {
+    position: absolute;
+    width: 407px;
+    height: 700px;
+    background: url(../imgs/phone_bg.png) no-repeat center top;
+    background-size: cover;
+    transform: translateX(-196px);
+}
+
+#phone1.active, #phone2.active, #phone3.active {
+    top: 40px;
+}
+
+.phone_screen, .phone_screen_hover {
+    position: absolute;
+    width: 256px;
+    height: 554px;
+    top: 63px;
+    left: 66px;
+}
+
+.phone_screen_hover {
+    background: url(../imgs/active_overlay.svg) no-repeat center top;
+    background-size: cover;
+    padding: 60px 32px 32px 32px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 1.6;
+    text-align: center;
+    opacity: 0;
+    transition: opacity .2s ease;
+}
+
+.active .phone_screen_hover {
+    opacity: 1;
+}
+
+.phone_screen.screen1 {
+    background: url(../imgs/phone1.png) no-repeat;
+    background-size: cover;
+}
+
+.phone_screen.screen2 {
+    background: url(../imgs/phone2.png) no-repeat;
+    background-size: cover;
+}
+
+.phone_screen.screen3 {
+    background: url(../imgs/phone3.png) no-repeat;
+    background-size: cover;
+}
+
+.ttl {
+    position: absolute;
+    text-align: center;
+    font-size: 17px;
+    color: #8394b0;
+    width: 407px;
+    transform: translateX(-50%);
+}
+
+#title1 {
+    top: 130px;
+    left: 30%;
+}
+
+#title2 {
+    top: 130px;
+    left: 50%;
+}
+
+#title3 {
+    top: 130px;
+    left: 70%;
+}
+
+@media screen and (max-width: 1450px) {
+    header {
+        height: 160px;
+        padding: 32px 48px 0 48px;
+    }
+    #logo {
+        left: 48px;
+        top: 32px;
+    }
+    .typess {
+        position: absolute;
+        left: 80px;
+        top: 250px;
+    }
+    .typess p {
+        font-size: 56px;
+    }
+    #appstore {
+        left: 80px;
+        top: 450px;
+    }
+    #android {
+        font-size: 18px;
+        left: 80px;
+        top: 550px;
+    }
+    #ui_animation {
+        width: 380px;
+        right: 80px;
+    }
+}
+@media screen and (max-width: 1100px) {
+    header {
+        height: 110px;
+        padding: 24px 32px 0 32px;
+    }
+    #nav {
+        padding-top: 22px;
+    }
+    #logo {
+        left: 32px;
+        top: 24px;
+        font-size: 24px;
+    }
+    #logo img {
+        width: 64px;
+        height: 64px;
+    }
+    #logo span {
+        top: 18px;
+        left: 80px;
+    }
+    .typess {
+        position: absolute;
+        left: 48px;
+        top: 220px;
+    }
+    .typess p {
+        font-size: 48px;
+    }
+    #appstore {
+        left: 48px;
+        top: 390px;
+    }
+    #android {
+        font-size: 18px;
+        left: 48px;
+        top: 480px;
+    }
+    #ui_animation {
+        width: 340px;
+        right: 48px;
+    }
 }
