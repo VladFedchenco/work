@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-anchor: none;
+}
+
+html,
+body {
+    height: 100%;
+    color: #2f343c;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Gotham', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    font-style: normal;
+    color: #000;
+    background-color: #fff;
+}
+
+header {
+    padding: 64px 100px 0 100px;
+    background-color: #fff;
+    text-align: right;
+    position: relative;
+}
+
+a {
+    color: #007aff;
+    transition: color .2s ease;
+}
+
+strong {
+    font-weight: bold;
+}
+
+#logo {
+    color: #304768;
+    font-size: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    position: absolute;
+    left: 100px;
+    top: 64px;
+}
+
+#logo span {
+    position: absolute;
+    top: 30px;
+    left: 136px;
+}
+
+#nav {
+    font-weight: bold;
+    display: block;
+    padding-top: 16px;
+    font-size: 20px;
+}
+
+#nav li {
+    display: inline-block;
+    margin: 0 32px;
+}
+
+#nav li a {
+    text-decoration: none;
+    color: #304768;
+}
+
+#nav li a:hover {
+    color: #007aff;
+}
+
+.typess {
+    position: absolute;
+    left: 130px;
+    top: 250px;
+}
+
+.typess p {
+    overflow: hidden;
+    text-align: left;
+    font-size: 80px;
+    line-height: 1.5;
+    color: #2f343c;
+}
+
+.typess p span {
+    color: #007aff;
+}
+
+.videos {
+    width: 65%;
+    padding-top: 0px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.videos video {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.typess p span.typed-text {
+    color: #007aff;
+}
+
+.typess p span.cursor {
+    display: inline-block;
+    background-color: #007aff;
+    margin-left: 0.1rem;
+    width: 3px;
+    animation: blink 1s infinite;
+}
+
+.typess p span.cursor.typing {
+    animation: none;
+}
+
+@keyframes blink {
+    0% {
+        background-color: #007aff;
+    }
+
+    49% {
+        background-color: #007aff;
+    }
+
+    50% {
+        background-color: transparent;
+    }
+
+    99% {
+        background-color: transparent;
+    }
+
+    100% {
+        background-color: #007aff;
+    }
+}
+
+#appstore {
+    position: absolute;
+    left: 130px;
+    top: 600px;
+}
+#android {
+    color: #2f343c;
+    font-size: 20px;
+    position: absolute;
+    left: 130px;
+    top: 700px;
+}
+#ui_animation {
+    position: absolute;
+    right: 100px;
+    top: 200px;
+    width: 478px;
+    height: auto;
+}

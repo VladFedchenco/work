@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <title>Melodia</title>
+  <link href="css/main.css" rel="stylesheet" type="text/css"/>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/TweenMax.min.js"></script>
+  <script src="js/ScrollMagic.js"></script>
+  <script src="js/animation.gsap.js"></script>
+  <script src="js/debug.addIndicators.js"></script>
+</head>
+
+<body>
+  <header>
+    <a href="javascript:;" id="logo"><img src="imgs/logo.svg"><span>melodia</span></a>
+    <ul id="nav">
+      <li><a href="javascript:;">contact</a></li>
+      <li><a href="javascript:;">subscribe</a></li>
+      <li><a href="javascript:;">jobs</a></li>
+    </ul>
+  </header>
+  <section id="top_section">
+    <div class="typess">
+      <p>One <span class="typed-text"></span><span class="cursor">&nbsp;</span><br> music station.</p>
+    </div>
+    <img id="appstore" src="imgs/app-store-icon.svg">
+    <div id="android"><strong>Anroid user?</strong> Sign up <a href="javascript:;">here</a> for the latest updates.</div>
+    <object id="ui_animation" data="imgs/ui_animation.svg"></object>
+  </section>
+  <script src="js/type.js"></script>
+  <script>
+  $(function () {
+    var controller = new ScrollMagic.Controller();
+
+    // var tween1 = TweenMax.to("#el_to_animate1", 1, {strokeDashoffset: 0, ease: Linear.easeNone});
+    // var tween2 = TweenMax.to("#el_to_animate2", 1, {strokeDashoffset: 0, ease: Linear.easeNone});
+
+    // var scene1 = new ScrollMagic.Scene({triggerElement: "#trigger", duration: 2500, offset: 300})
+    //         .setTween(tween1)
+    //         .setPin("#target", {pushFollowers: true})
+    //         .addIndicators() // add indicators (requires plugin)
+    //         .addTo(controller);
+    // var scene2 = new ScrollMagic.Scene({triggerElement: "#trigger", duration: 2500, offset: 2800})
+    //         .setTween(tween2)
+    //         .setPin("#target", {pushFollowers: true})
+    //         .addIndicators() // add indicators (requires plugin)
+    //         .addTo(controller);
+  });
+</script>
+</body>
+</html>
