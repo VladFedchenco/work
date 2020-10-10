@@ -120,14 +120,22 @@ let slide_position = 1;
 $("#slide_left").onclick = function() {
   if(slide_position > 1) {
     slide_position--;
+    $("#slide_right").setAttribute("style", "");
     $("#phones_animation").setAttribute("class", "slide_position_" + slide_position);
+  }
+  if(slide_position == 1) {
+    $("#slide_left").setAttribute("style", "opacity: .2");
   }
 }
 
 $("#slide_right").onclick = function() {
   if(slide_position < 3) {
     slide_position++;
+    $("#slide_left").setAttribute("style", "");
     $("#phones_animation").setAttribute("class", "slide_position_" + slide_position);
+  }
+  if(slide_position == 3) {
+    $("#slide_right").setAttribute("style", "opacity: .2");
   }
 }
 
