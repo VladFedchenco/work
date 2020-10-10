@@ -1,0 +1,768 @@
+* {
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+button,
+textarea,
+input,
+select,
+a{
+ -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+ -webkit-tap-highlight-color: transparent;
+ -webkit-user-select: none;
+ -khtml-user-select: none;
+ -moz-user-select: none;
+ -ms-user-select: none;
+  user-select: none;
+
+}
+
+html {
+    height: 100vh;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    overflow-anchor: none;
+}
+
+html,
+body {
+    color: #2f343c;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+    overscroll-behavior-y: none;
+}
+
+html::-webkit-scrollbar, body::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+body {
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Gotham', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    font-style: normal;
+    color: #000;
+    background-color: #fff;
+}
+
+header {
+    height: 180px;
+    padding: 64px 100px 0 100px;
+    text-align: right;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+a {
+    color: #007aff;
+    transition: color .2s ease;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+strong {
+    font-weight: bold;
+}
+
+h2 {
+    text-align: center;
+    font-weight: 300;
+    color: #2f343c;
+    font-size: 30px;
+}
+
+#logo {
+    color: #304768;
+    font-size: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    position: absolute;
+    left: 100px;
+    top: 64px;
+}
+
+#logo span {
+    position: absolute;
+    top: 30px;
+    left: 136px;
+}
+
+#nav {
+    font-weight: bold;
+    display: block;
+    padding-top: 32px;
+    font-size: 20px;
+}
+
+#nav li {
+    display: inline-block;
+    margin: 0 32px;
+}
+
+#nav li a {
+    text-decoration: none;
+    color: #304768;
+}
+
+#nav li a:hover {
+    color: #007aff;
+}
+
+.typess {
+    position: absolute;
+    left: 130px;
+    top: 300px;
+}
+
+.typess p {
+    overflow: hidden;
+    text-align: left;
+    font-size: 80px;
+    line-height: 1.5;
+    color: #2f343c;
+    margin: 0;
+}
+
+.typess p span {
+    color: #007aff;
+}
+
+.typess p span.typed-text {
+    color: #007aff;
+}
+
+.typess p span.cursor {
+    display: inline-block;
+    background-color: #007aff;
+    margin-left: 0.1rem;
+    width: 3px;
+    animation: blink 1s infinite;
+}
+
+.typess p span.cursor.typing {
+    animation: none;
+}
+
+#top_section {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity .2s linear;
+}
+
+#middle_section {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity .2s linear;
+}
+
+#middle_section h2 {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+#bottom_section {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    text-align: center;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity .2s linear;
+}
+
+#transition_overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    opacity: 0;
+    background-color: #fff;
+    pointer-events: none;
+    z-index: 99;
+}
+
+#transition_overlay.animated {
+    animation: transition_overlay .5s linear;
+}
+
+@keyframes transition_overlay {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+.topped {
+    opacity: 1 !important;
+    z-index: 10;
+    pointer-events: initial !important;
+}
+
+#phones_animation {
+    position: fixed;
+    bottom: -140px;
+    left: 0;
+    width: 100%;
+    height: 840px;
+}
+
+@keyframes blink {
+    0% {
+        background-color: #007aff;
+    }
+
+    49% {
+        background-color: #007aff;
+    }
+
+    50% {
+        background-color: transparent;
+    }
+
+    99% {
+        background-color: transparent;
+    }
+
+    100% {
+        background-color: #007aff;
+    }
+}
+
+#appstore {
+    position: absolute;
+    left: 130px;
+    top: 600px;
+}
+#android {
+    color: #2f343c;
+    font-size: 20px;
+    position: absolute;
+    left: 130px;
+    top: 700px;
+}
+#ui_animation {
+    position: absolute;
+    right: 100px;
+    top: 200px;
+    width: 478px;
+    height: auto;
+}
+#nav_slide {
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    z-index: 999;
+}
+
+#nav_slide .dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #d6dae1;
+    display: block;
+    margin: 12px 0;
+    transition: background-color .2s linear;
+}
+
+#nav_slide.slide1 .dot:nth-child(1) {
+    background-color: #304768;
+}
+
+#nav_slide.slide2 .dot:nth-child(1) {
+    background-color: #d6dae1;
+}
+
+#nav_slide.slide2 .dot:nth-child(2) {
+    background-color: #304768;
+}
+
+#nav_slide.slide3 .dot:nth-child(1) {
+    background-color: #d6dae1;
+}
+
+#nav_slide.slide3 .dot:nth-child(2) {
+    background-color: #d6dae1;
+}
+
+#nav_slide.slide3 .dot:nth-child(3) {
+    background-color: #304768;
+}
+
+#phone1, #phone2, #phone3 {
+    top: 140px;
+    cursor: pointer;
+    transition: top .3s ease, left .3s ease;
+}
+
+#phone1 {
+    left: calc(50% - 340px);
+}
+
+#phone2 {
+    left: 50%;
+}
+
+#phone3 {
+    left: calc(50% + 340px);
+}
+
+.phone {
+    position: absolute;
+    width: 407px;
+    height: 700px;
+    background: url(../imgs/phone_bg.png) no-repeat center top;
+    background-size: cover;
+    transform: translateX(-196px);
+}
+
+#phone1:hover, #phone2:hover, #phone3:hover,
+#phone1.active, #phone2.active, #phone3.active {
+    top: 40px;
+}
+
+.phone_screen, .phone_screen_hover {
+    position: absolute;
+    width: 256px;
+    height: 554px;
+    top: 63px;
+    left: 66px;
+}
+
+.phone_screen_hover {
+    background: url(../imgs/active_overlay.svg) no-repeat center top;
+    background-size: cover;
+    padding: 60px 32px 32px 32px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 1.6;
+    text-align: center;
+    opacity: 0;
+    transition: opacity .2s ease;
+}
+
+#phone1:hover .phone_screen_hover,
+#phone2:hover .phone_screen_hover,
+#phone3:hover .phone_screen_hover {
+    opacity: 1;
+}
+
+.phone_screen.screen1 {
+    background: url(../imgs/phone1.png) no-repeat;
+    background-size: cover;
+}
+
+.phone_screen.screen2 {
+    background: url(../imgs/phone2.png) no-repeat;
+    background-size: cover;
+}
+
+.phone_screen.screen3 {
+    background: url(../imgs/phone3.png) no-repeat;
+    background-size: cover;
+}
+
+.ttl {
+    position: absolute;
+    text-align: center;
+    font-size: 17px;
+    color: #8394b0;
+    width: 407px;
+    transform: translateX(-50%);
+}
+
+#title1, #title2, #title3 {
+    top: 130px;
+    transition: left .3s ease;
+}
+
+#title1 {
+    left: calc(50% - 340px);
+}
+
+#title2 {
+    left: 50%;
+}
+
+#title3 {
+    left: calc(50% + 340px);
+}
+
+#bttm_music, #bttm_apstore, #bttm_social {
+    position: absolute;
+    left: 50%;
+    color: #2F343C;
+    transform: translateX(-50%);
+}
+
+#bttm_music {
+    top: 30%;
+}
+
+#bttm_apstore {
+    top: 50%;
+}
+
+#bttm_social {
+    top: 70%;
+}
+
+#bttm_social img {
+    height: 30px;
+    margin: 0 18px;
+}
+
+#bttm_apstore img {
+    margin-bottom: 32px;
+}
+
+#mob_nav {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    width: 22px;
+    height: 16px;
+    margin: 0 auto;
+}
+#mob_nav:before, #mob_nav:after, #mob_nav div {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 22px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #223456;
+    transition: all .3s ease;
+}
+#mob_nav:hover:before, #mob_nav:hover:after, #mob_nav:hover div {
+    background-color: #317af6;
+}
+#mob_nav:after {
+    bottom: 0;
+}
+#mob_nav div {
+    top: 6px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#mob_nav.active:before {
+    transform: translate(0px, 6px) rotate(45deg);
+}
+#mob_nav.active:after {
+    transform: translate(0px, -6px) rotate(-45deg);
+}
+#mob_nav.active div {
+    opacity: 0;
+    width: 4px;
+}
+.slide_nav {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    display: block;
+    bottom: 140px;
+}
+#slide_left {
+    display: none;
+    left: 16px;
+}
+#slide_right {
+    display: none;
+    right: 16px;
+}
+
+@media screen and (max-width: 1450px) {
+    header {
+        height: 160px;
+        padding: 32px 48px 0 48px;
+    }
+    #logo {
+        left: 48px;
+        top: 32px;
+    }
+    .typess {
+        position: absolute;
+        left: 80px;
+        top: 250px;
+    }
+    .typess p {
+        font-size: 56px;
+    }
+    #appstore {
+        left: 80px;
+        top: 450px;
+    }
+    #android {
+        font-size: 18px;
+        left: 80px;
+        top: 550px;
+    }
+    #ui_animation {
+        width: 380px;
+        right: 80px;
+    }
+}
+@media screen and (max-width: 1300px) {
+    header {
+        height: 110px;
+        padding: 24px 32px 0 32px;
+    }
+    #nav {
+        padding-top: 22px;
+    }
+    #logo {
+        left: 32px;
+        top: 24px;
+        font-size: 24px;
+    }
+    #logo img {
+        width: 64px;
+        height: 64px;
+    }
+    #logo span {
+        top: 18px;
+        left: 80px;
+    }
+    .typess {
+        top: 190px;
+    }
+    #appstore {
+        top: 380px;
+    }
+    #android {
+        top: 480px;
+    }
+    #ui_animation {
+        width: 340px;
+        top: 130px;
+    }
+    #phone1, #phone2, #phone3 {
+        top: 220px;
+    }
+    #title1, #title2, #title3 {
+        top: 230px;
+    }
+    #phone1:hover, #phone2:hover, #phone3:hover,
+    #phone1.active, #phone2.active, #phone3.active {
+        top: 180px;
+    }
+    #middle_section h2 {
+        top: 130px;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .typess {
+        position: absolute;
+        left: 48px;
+        top: 220px;
+    }
+    .typess p {
+        font-size: 48px;
+    }
+    #appstore {
+        left: 48px;
+        top: 390px;
+    }
+    #android {
+        font-size: 18px;
+        left: 48px;
+        top: 480px;
+    }
+    #ui_animation {
+        width: 340px;
+        right: 48px;
+    }
+}
+@media screen and (max-width: 990px) {
+    header {
+        padding-top: 16px;
+    }
+    #mob_nav {
+        display: block;
+    }
+    #logo {
+        left: 50%;
+        top: 16px;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+    #logo span {
+        position: static;
+        display: block;
+    }
+    #nav.move {
+        opacity: 1;
+        pointer-events: initial;
+        top: 120px;
+        border: solid 1px #ccc;
+        box-shadow: 0px 8px 8px rgba(0,0,0,.1);
+    }
+    #nav {
+        opacity: 0;
+        pointer-events: none;
+        padding: 0;
+        position: absolute;
+        left: 50%;
+        width: 90%;
+        top: -100px;
+        transform: translateX(-50%);
+        background-color: #fff;
+        border: solid 1px transparent;
+        border-radius: 8px;
+        transition: opacity .4s ease, top .4s ease;
+    }
+    #nav li {
+        display: block;
+        text-align: center;
+        padding: 16px;
+    }
+    .typess {
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        top: 120px;
+        width: 100%;
+    }
+    .typess p {
+        text-align: center;
+        font-size: 26px;
+        line-height: 1.2;
+    }
+    #ui_animation {
+        right: auto;
+        width: 270px;
+        left: 50%;
+        top: 200px;
+        transform: translateX(-94px);
+    }
+    #appstore {
+        left: 50%;
+        transform: translateX(-50%);
+        top: 600px;
+        width: 100px;
+        height: auto;
+    }
+    #android {
+        font-size: 12px;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 640px;
+        width: 80%;
+        text-align: center;
+    }
+    #phones_animation {
+        position: absolute;
+        bottom: auto;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+    }
+    #middle_section h2 {
+        margin: 0;
+    }
+    #title1, #title2, #title3 {
+        top: 220px;
+    }
+    .phone {
+        width: 350px;
+        height: 602px;
+        transform: translateX(-172px);
+    }
+    .phone_screen, .phone_screen_hover {
+        width: 221px;
+        height: 479px;
+        top: 54px;
+        left: 57px;
+    }
+    .slide_position_1 #phone1, .slide_position_1 #title1 {
+        left: 50%;
+    }
+    .slide_position_1 #phone2, .slide_position_1 #title2 {
+        left: 150%;
+    }
+    .slide_position_1 #phone3, .slide_position_1 #title3 {
+        left: 250%;
+    }
+    .slide_position_2 #phone1, .slide_position_2 #title1 {
+        left: -150%;
+    }
+    .slide_position_2 #phone2, .slide_position_2 #title2 {
+        left: 50%;
+    }
+    .slide_position_2 #phone3, .slide_position_2 #title3 {
+        left: 150%;
+    }
+    .slide_position_3 #phone1, .slide_position_3 #title1 {
+        left: -250%;
+    }
+    .slide_position_3 #phone2, .slide_position_3 #title2 {
+        left: -150%;
+    }
+    .slide_position_3 #phone3, .slide_position_3 #title3 {
+        left: 50%;
+    }
+    #bttm_music {
+        top: 25%;
+    }
+    #bttm_apstore {
+        width: 70%;
+        top: 46%;
+        font-size: 16px;
+    }
+    #bttm_apstore img {
+        width: 140px;
+        margin-bottom: 24px;
+    }
+    #bttm_social {
+        width: 100%;
+    }
+    #middle_section h2 {
+        top: 120px;
+        font-size: 26px;
+        padding: 0 44px;
+        line-height: 1.2;
+    }
+    #slide_left, #slide_right {
+        display: block;
+    }
+}
