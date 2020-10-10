@@ -70,6 +70,7 @@ function set_slide3() {
 
 let section_num = 1;
 let section_lock = false;
+let section_lock2 = false;
 
 function fsection_num(num) {
   if(num == 1) {
@@ -83,34 +84,29 @@ function fsection_num(num) {
   }
 }
 
-window.addEventListener('wheel', function(event)
-{
+window.addEventListener('wheel', function(event) {
  if (event.deltaY < 0) {
   if (section_num > 1) {
-    if(!section_lock) {
+    if(!section_lock && event.deltaY < -40) {
       section_num--;
       section_lock = true;
       fsection_num(section_num);
-      window.scrollTo(0, 0);
       setTimeout(function(){
         section_lock = false;
       }, 700);
     }
-   // console.log(section_num);
   }
  }
  else if (event.deltaY > 0) {
   if (section_num < 3) {
-    if(!section_lock) {
+    if(!section_lock && event.deltaY > 40) {
       section_num++;
       section_lock = true;
       fsection_num(section_num);
-      window.scrollTo(0, 0);
       setTimeout(function(){
         section_lock = false;
       }, 700);
     }
-   // console.log(section_num);
   }
  }
 });
@@ -133,51 +129,6 @@ window.addEventListener('keyup' /* or keyup, see what feels better when you test
       /* don't do anything */
   }
 });
-
-var touchstartX = 0;
-var touchstartY = 0;
-var touchendX = 0;
-var touchendY = 0;
-
-var gesuredZone = $("body");
-
-gesuredZone.addEventListener('touchstart', function(event) {
-    touchstartX = event.screenX;
-    touchstartY = event.screenY;
-}, false);
-
-gesuredZone.addEventListener('touchend', function(event) {
-    touchendX = event.screenX;
-    touchendY = event.screenY;
-    handleGesure();
-}, false); 
-
-function handleGesure() {
-    var swiped = 'swiped: ';
-    if (touchendX < touchstartX) {
-        
-    }
-    if (touchendX > touchstartX) {
-        
-    }
-    if (touchendY < touchstartY) {
-        if (section_num > 1) {
-          section_num--;
-          fsection_num(section_num);
-        }
-        console.log("1")
-    }
-    if (touchendY > touchstartY) {
-        if (section_num < 3) {
-          section_num++;
-          fsection_num(section_num);
-        }
-        console.log("2")
-    }
-    if (touchendY == touchstartY) {
-        console.log("touch");
-    }
-}
 
 $(".dot1").onclick = function() {
   set_slide1();

@@ -6,6 +6,11 @@
     outline: none;
 }
 
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
 button,
 textarea,
 input,
@@ -22,10 +27,7 @@ a{
 }
 
 html {
-    height: 100vh;
-    overflow: hidden;
-    scroll-behavior: smooth;
-    overflow-anchor: none;
+    overflow: scroll;
 }
 
 html,
@@ -41,7 +43,6 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
 }
 
 body {
-    height: 100vh;
     margin: 0px;
     padding: 0px;
     font-family: 'Gotham', sans-serif;
@@ -591,24 +592,28 @@ h2 {
 @media screen and (max-width: 1100px) {
     .typess {
         position: absolute;
-        left: 48px;
-        top: 220px;
+        left: 100px;
+        top: 170px;
     }
     .typess p {
         font-size: 48px;
     }
     #appstore {
-        left: 48px;
-        top: 390px;
+        left: 100px;
+        top: 330px;
+        width: 150px;
     }
     #android {
-        font-size: 18px;
-        left: 48px;
-        top: 480px;
+        font-size: 16px;
+        left: 100px;
+        top: 400px;
     }
     #ui_animation {
-        width: 340px;
-        right: 48px;
+        width: 300px;
+        right: 100px;
+    }
+    #nav {
+        font-size: 16px;
     }
 }
 @media screen and (max-width: 990px) {
