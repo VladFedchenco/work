@@ -1,0 +1,608 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1080">
+
+<defs>
+<style>@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900');</style>
+</defs>
+
+<style>
+/* <![CDATA[ */
+
+@namespace svg url(http://www.w3.org/2000/svg);
+
+svg|a {
+  outline: none;
+}
+
+svg {
+  background: linear-gradient(#4a6785, #dbedff);
+}
+
+text {
+  font-family: 'Roboto', sans-serif;
+  text-anchor: middle;
+  font-size: 26px;
+}
+
+.nav_button_bg {
+  fill: #fff;
+  fill-opacity: 0;
+  stroke: #fff;
+  transition: fill-opacity .1s linear;
+}
+
+.nav_button:hover .nav_button_bg {
+  fill-opacity: .3;
+}
+
+.nav_button text {
+  font-size: 32px;
+  font-weight: 700;
+  fill: #fff;
+}
+
+#page_num text {
+  font-size: 60px;
+  font-weight: 900;
+}
+
+.ttl {
+  font-size: 54px;
+  fill: #fff;
+  font-weight: 900;
+}
+
+.text_body {
+  font-size: 26px;
+  fill: #fff;
+}
+
+.text_body.dark {
+  fill: #000;
+}
+
+.graph_label {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.bttn_close:hover use {
+  filter: url(#c_color);
+}
+
+.popup_box {
+  opacity: 1;
+  transition: all .1s linear;
+}
+
+.popup_box text {
+  font-size: 24px;
+}
+
+.popup_box.invis {
+  opacity: 0;
+}
+
+.popup_box.none {
+  display: none;
+}
+
+#info:hover #info_bg {
+  fill-opacity: .3;
+}
+
+#info_labels text {
+  font-size: 24px;
+  text-anchor: start;
+}
+
+text.label_txt {
+  text-anchor: start;
+}
+
+/* ]]> */
+</style>
+
+<defs>
+  <linearGradient id="hor_bwb" x2="1" y2="0">
+    <stop offset="0" stop-color="#6a6a6a"/>
+    <stop offset=".5" stop-color="#c4c4c4"/>
+    <stop offset="1" stop-color="#6a6a6a"/>
+  </linearGradient>
+  <linearGradient id="hor_red" x2="1" y2="0">
+    <stop offset="0" stop-color="#B80000"/>
+    <stop offset=".6" stop-color="#D47F7F"/>
+    <stop offset="1" stop-color="#B80000"/>
+  </linearGradient>
+  <linearGradient id="ver_red" x2="0" y2="1">
+    <stop offset="0" stop-color="#B80000"/>
+    <stop offset=".6" stop-color="#D47F7F"/>
+    <stop offset="1" stop-color="#B80000"/>
+  </linearGradient>
+  <filter id="c_color">
+    <feColorMatrix
+      color-interpolation-filters="sRGB"
+      type="matrix"
+      values="0 0 0 0 0
+              0 .5 0 0 0
+              0 0 0 0 0
+              0 0 0 1 0 "/>
+  </filter>
+  <path id="arr_mt" d="M0-5.27L-5.41.15h2.98v5.13h4.87V.15h2.98L0-5.27z"/>
+  <path id="arr_ml" d="M-5.27 0L.15 5.41V2.43h5.13v-4.87H.15v-2.98L-5.27 0z"/>
+  <path id="arr_mb" d="M0 5.27L5.41-.15H2.43v-5.13h-4.87v5.13h-2.98L0 5.27z"/>
+  <path id="arr_b" d="M0 7.51L7.71-.21H3.47v-7.3h-6.94v7.3h-4.24L0 7.51z"/>
+  <path id="arr_t" d="M0-7.51L7.71.21H3.47v7.3h-6.94V.21h-4.24L0-7.51z"/>
+  <path id="arr_l" d="M-7.51 0L.21 7.71V3.47h7.3v-6.94H.21v-4.24L-7.51 0z"/>
+  <path id="arr_db" d="M1.69 7.71l5.83-9.22-4.14.93-1.6-7.13-6.77 1.52 1.6 7.13-4.14.93 9.22 5.84z"/>
+  <path id="arr_dt" d="M-1.29-7.7L-7.6 1.2l4.18-.71 1.22 7.2 6.84-1.15-1.22-7.2 4.18-.71-8.89-6.33z"/>
+  <path id="arr_st" d="M0-4.18L-4.29.11h2.36v4.06h3.86V.12h2.36L0-4.18z"/>
+  <path id="arr_sl" d="M-4.18 0L.11 4.29V1.93h4.06v-3.86H.12v-2.36L-4.18 0z"/>
+  <path id="arr_sr" d="M4.18 0L-.11 4.29V1.93h-4.06v-3.86h4.06v-2.36L4.18 0z"/>
+  <path id="arr_nr" d="M2.09 0L-.06 2.14V.96h-2.03V-.97h2.03v-1.18L2.09 0z"/>
+  <path id="arr_nl" d="M-2.09 0L.06 2.14V.96h2.03V-.97H.06v-1.18L-2.09 0z"/>
+  <g id="popup_close">
+    <rect fill-opacity="0" width="24" height="24" x="-12" y="-12" />
+    <path fill="#555" d="M3.72 0L9.3 5.58 5.58 9.3 0 3.72-5.58 9.3-9.3 5.58-3.72 0-9.3-5.58l3.72-3.72L0-3.72 5.58-9.3 9.3-5.58 3.72 0z"/>
+  </g>
+</defs>
+
+<a href="javascript:;" id="bttn_prev" class="nav_button">
+  <path class="nav_button_bg" d="M184.5 119.66H63.98c-6.6 0-12-5.4-12-12V69.84c0-6.6 5.4-12 12-12H184.5c6.6 0 12 5.4 12 12v37.83c0 6.59-5.4 11.99-12 11.99z"/>
+  <text x="126" y="100">PREV</text>
+</a>
+<a href="javascript:;" id="bttn_next" class="nav_button">
+  <path class="nav_button_bg" d="M1856.02 119.66H1735.5c-6.6 0-12-5.4-12-12V69.84c0-6.6 5.4-12 12-12h120.52c6.6 0 12 5.4 12 12v37.83c0 6.59-5.4 11.99-12 11.99z"/>
+  <text x="1798" y="100">NEXT</text>
+</a>
+<a href="javascript:;" id="bttn_tofc" class="nav_button">
+  <path class="nav_button_bg" d="M184.5 217.16H63.98c-6.6 0-12-5.4-12-12v-37.83c0-6.6 5.4-12 12-12H184.5c6.6 0 12 5.4 12 12v37.83c0 6.6-5.4 12-12 12z"/>
+  <text x="126" y="199">TofC</text>
+</a>
+<g id="page_num">
+  <circle cx="1821.47" cy="984.85" r="41.88" fill="#fff"/>
+  <text x="1823" y="1008">7</text>
+</g>
+
+<text x="960" y="106" class="ttl">PD Meter OP Principle</text>
+<a id="info" fill="#fff" transform="translate(-20 0)" href="javascript:;">
+  <path id="info_bg" fill-opacity="0" stroke="#fff" stroke-width="3" d="M1291 53.55a17.01 17.01 0 010 34 17.01 17.01 0 010-34h0z"/>
+  <path fill="#FFF" d="M1293.38 70.85a2.59 2.59 0 00-2.57-2.42 2.6 2.6 0 00-2.58 2.42v7.13a2.6 2.6 0 002.58 2.42 2.59 2.59 0 002.57-2.42v-7.13z"/>
+  <path fill="#FFF" d="M1293.38 63.39a2.59 2.59 0 00-2.57-2.42 2.6 2.6 0 00-2.58 2.42v.03a2.6 2.6 0 002.58 2.42 2.59 2.59 0 002.57-2.42v-.03z"/>
+</a>
+<text x="960" y="159" class="text_body">
+  In dormant mode, the piston does not move and is held in a starting position by a return spring.
+  <tspan x="960" dy="32">Flow is circulated from the inlet through a valve seat and then to the outlet.</tspan>
+</text>
+
+<g transform="translate(1258 593) scale(-2 2) translate(-1110 -520)">
+<g id="right_part">
+<path fill="#9E9DA6" stroke="#000" stroke-width=".5" d="M1309.96 367.75h-102.79a30.32 30.32 0 00-20.55 8.03l-13.84 12.77a30.32 30.32 0 00-9.75 22.26v245.98h191.06V410.82c0-8.46-3.53-16.53-9.75-22.26l-13.84-12.77a30.26 30.26 0 00-20.54-8.04z"/>
+<path fill="url(#hor_bwb)" stroke="#000" stroke-width=".5" d="M1171.11 648.72v-237.9a22.3 22.3 0 017.15-16.33l13.84-12.77a22.16 22.16 0 0115.07-5.89h102.79c5.6 0 10.96 2.09 15.07 5.89l13.84 12.77a22.3 22.3 0 017.15 16.33v237.9h-174.91z"/>
+<rect width="144.15" height="240.42" x="1186.49" y="460.88" fill="#9E9DA6" stroke="#000" stroke-width=".5"/>
+<rect width="89.11" height="157.92" x="1214.01" y="531" fill="url(#hor_red)" stroke="#000" stroke-width=".5"/>
+<g fill="#CC6601" stroke="#000" stroke-width=".5">
+  <circle cx="1200.95" cy="402.72" r="3.8"/>
+  <circle cx="1209.66" cy="402.72" r="3.8"/>
+  <circle cx="1218.36" cy="402.72" r="3.8"/>
+  <circle cx="1227.06" cy="402.72" r="3.8"/>
+  <circle cx="1200.95" cy="411.13" r="3.8"/>
+  <circle cx="1209.66" cy="411.13" r="3.8"/>
+  <circle cx="1218.36" cy="411.13" r="3.8"/>
+  <circle cx="1227.06" cy="411.13" r="3.8"/>
+  <circle cx="1200.95" cy="419.55" r="3.8"/>
+  <circle cx="1209.66" cy="419.55" r="3.8"/>
+  <circle cx="1218.36" cy="419.55" r="3.8"/>
+  <circle cx="1227.06" cy="419.55" r="3.8"/>
+  <circle cx="1200.95" cy="427.97" r="3.8"/>
+  <circle cx="1209.66" cy="427.97" r="3.8"/>
+  <circle cx="1218.36" cy="427.97" r="3.8"/>
+  <circle cx="1227.06" cy="427.97" r="3.8"/>
+  <circle cx="1200.95" cy="436.38" r="3.8"/>
+  <circle cx="1209.66" cy="436.38" r="3.8"/>
+  <circle cx="1218.36" cy="436.38" r="3.8"/>
+  <circle cx="1227.06" cy="436.38" r="3.8"/>
+  <circle cx="1200.95" cy="444.8" r="3.8"/>
+  <circle cx="1209.66" cy="444.8" r="3.8"/>
+  <circle cx="1218.36" cy="444.8" r="3.8"/>
+  <circle cx="1227.06" cy="444.8" r="3.8"/>
+  <circle cx="1200.95" cy="453.21" r="3.8"/>
+  <circle cx="1209.66" cy="453.21" r="3.8"/>
+  <circle cx="1218.36" cy="453.21" r="3.8"/>
+  <circle cx="1227.06" cy="453.21" r="3.8"/>
+  <circle cx="1316.17" cy="402.72" r="3.8"/>
+  <circle cx="1307.47" cy="402.72" r="3.8"/>
+  <circle cx="1298.77" cy="402.72" r="3.8"/>
+  <circle cx="1290.07" cy="402.72" r="3.8"/>
+  <circle cx="1316.17" cy="411.13" r="3.8"/>
+  <circle cx="1307.47" cy="411.13" r="3.8"/>
+  <circle cx="1298.77" cy="411.13" r="3.8"/>
+  <circle cx="1290.07" cy="411.13" r="3.8"/>
+  <circle cx="1316.17" cy="419.55" r="3.8"/>
+  <circle cx="1307.47" cy="419.55" r="3.8"/>
+  <circle cx="1298.77" cy="419.55" r="3.8"/>
+  <circle cx="1290.07" cy="419.55" r="3.8"/>
+  <circle cx="1316.17" cy="427.97" r="3.8"/>
+  <circle cx="1307.47" cy="427.97" r="3.8"/>
+  <circle cx="1298.77" cy="427.97" r="3.8"/>
+  <circle cx="1290.07" cy="427.97" r="3.8"/>
+  <circle cx="1316.17" cy="436.38" r="3.8"/>
+  <circle cx="1307.47" cy="436.38" r="3.8"/>
+  <circle cx="1298.77" cy="436.38" r="3.8"/>
+  <circle cx="1290.07" cy="436.38" r="3.8"/>
+  <circle cx="1316.17" cy="444.8" r="3.8"/>
+  <circle cx="1307.47" cy="444.8" r="3.8"/>
+  <circle cx="1298.77" cy="444.8" r="3.8"/>
+  <circle cx="1290.07" cy="444.8" r="3.8"/>
+  <circle cx="1316.17" cy="453.21" r="3.8"/>
+  <circle cx="1307.47" cy="453.21" r="3.8"/>
+  <circle cx="1298.77" cy="453.21" r="3.8"/>
+  <circle cx="1290.07" cy="453.21" r="3.8"/>
+</g>
+<polyline fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="1194.96 396.52 1233.05 396.52 1233.05 459 1194.96 459"/>
+<polyline fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="1322.17 396.52 1284.07 396.52 1284.07 459 1322.17 459"/>
+<polygon fill="#929199" stroke="#000" stroke-width=".5" points="1280.54 460.87 1280.54 386.99 1236.59 386.99 1236.59 460.87 1194.96 460.87 1194.96 469.11 1322.17 469.11 1322.17 460.87"/>
+<rect width="32.53" height="38.27" x="1242.3" y="392.53" fill="url(#hor_bwb)" stroke="#000" stroke-width=".5"/>
+<polygon fill="url(#hor_red)" stroke="#000" stroke-width=".5" points="1196.41 469.11 1196.41 506.75 1247.88 506.75 1251.97 502.66 1265.15 502.66 1269.24 506.75 1320.72 506.75 1320.72 469.11"/>
+<polygon fill="url(#hor_bwb)" stroke="#000" stroke-width=".5" points="1272.58 482.43 1275.44 480.21 1272.58 477.99 1275.44 475.77 1272.58 473.55 1275.44 471.33 1272.58 469.11 1244.54 469.11 1241.68 471.33 1244.54 473.55 1241.68 475.77 1244.54 477.99 1241.68 480.21 1244.54 482.43"/>
+<polygon fill="#9E9DA6" stroke="#000" stroke-width=".5" points="1273.31 416.21 1273.31 394.25 1243.82 394.25 1243.82 416.21 1254.93 416.21 1254.93 481.92 1244.54 481.92 1244.54 494.17 1272.59 494.17 1272.59 481.92 1262.2 481.92 1262.2 416.21"/>
+<rect width="20.27" height="8.03" x="1248.43" y="488.04"/>
+<g stroke="#000" fill="#CC6601" stroke-width=".5">
+  <circle cx="1179.04" cy="541.06" r="3.8"/>
+  <circle cx="1179.04" cy="549.48" r="3.8"/>
+  <circle cx="1179.04" cy="557.89" r="3.8"/>
+  <circle cx="1179.04" cy="566.31" r="3.8"/>
+  <circle cx="1179.04" cy="576.95" r="3.8"/>
+  <circle cx="1179.04" cy="585.36" r="3.8"/>
+  <circle cx="1179.04" cy="593.78" r="3.8"/>
+  <circle cx="1179.04" cy="602.19" r="3.8"/>
+  <circle cx="1179.04" cy="612.83" r="3.8"/>
+  <circle cx="1179.04" cy="621.25" r="3.8"/>
+  <circle cx="1179.04" cy="629.67" r="3.8"/>
+  <circle cx="1179.04" cy="638.08" r="3.8"/>
+  <circle cx="1338.09" cy="541.06" r="3.8"/>
+  <circle cx="1338.09" cy="549.48" r="3.8"/>
+  <circle cx="1338.09" cy="557.89" r="3.8"/>
+  <circle cx="1338.09" cy="566.31" r="3.8"/>
+  <circle cx="1338.09" cy="576.95" r="3.8"/>
+  <circle cx="1338.09" cy="585.36" r="3.8"/>
+  <circle cx="1338.09" cy="593.78" r="3.8"/>
+  <circle cx="1338.09" cy="602.19" r="3.8"/>
+  <circle cx="1338.09" cy="612.83" r="3.8"/>
+  <circle cx="1338.09" cy="621.25" r="3.8"/>
+  <circle cx="1338.09" cy="629.67" r="3.8"/>
+  <circle cx="1338.09" cy="638.08" r="3.8"/>
+</g>
+<g stroke="#000" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+  <polyline points="1174.58 535.74 1184.47 535.74 1184.47 571.63 1174.58 571.63"/>
+  <polyline points="1174.58 571.63 1184.47 571.63 1184.47 607.51 1174.58 607.51"/>
+  <polyline points="1174.58 607.51 1184.47 607.51 1184.47 643.4 1174.58 643.4"/>
+  <polyline points="1342.55 535.74 1332.66 535.74 1332.66 571.63 1342.55 571.63"/>
+  <polyline points="1342.55 571.63 1332.66 571.63 1332.66 607.51 1342.55 607.51"/>
+  <polyline points="1342.55 607.51 1332.66 607.51 1332.66 643.4 1342.55 643.4"/>
+</g>
+<polygon fill="url(#ver_red)" stroke="#000" stroke-width=".5" points="1320.72 517.44 1264.77 517.44 1252.36 528.6 1308.31 528.6"/>
+<polygon fill="url(#hor_red)" stroke="#000" stroke-width=".5" points="1264.77 502.66 1252.36 502.66 1252.36 528.6 1264.77 517.44"/>
+<rect width="12.4" height="194.56" x="1196.41" y="506.75" fill="url(#hor_red)" stroke="#000" stroke-width=".5"/>
+<polygon fill="url(#hor_red)" stroke="#000" stroke-width=".5" points="1320.72 701.5 1320.72 517.44 1308.31 528.6 1308.31 701.5"/>
+<rect width="5.19" height="10" x="1303.12" y="532" fill="url(#ver_red)" stroke="#000" stroke-width=".5"/>
+<rect width="5.19" height="11.17" x="1208.81" y="673.27" fill="url(#ver_red)" stroke="#000" stroke-width=".5"/>
+
+<g id="r_piston" transform="translate(0 0)">
+  <polygon fill="#9E9DA6" stroke="#000" stroke-width=".5" points="1264.77 542.85 1264.77 531 1252.36 531 1252.36 542.85 1214.01 542.85 1214.01 610.64 1303.12 610.64 1303.12 542.85"/>
+  <rect width="4.1" height="11.25" x="1214.01" y="542.85" fill="#666" stroke="#000" stroke-width=".5"/>
+  <rect width="4.1" height="11.25" x="1299.02" y="542.85" fill="#666" stroke="#000" stroke-width=".5"/>
+  <rect width="4.1" height="11.25" x="1214.01" y="599.4" fill="#666" stroke="#000" stroke-width=".5"/>
+  <rect width="4.1" height="11.25" x="1299.02" y="599.4" fill="#666" stroke="#000" stroke-width=".5"/>
+  <rect width="4.1" height="24.08" x="1214.01" y="564.7" fill="#CCC" stroke="#000" stroke-width=".5"/>
+  <rect width="4.1" height="24.08" x="1299.02" y="564.7" fill="#CCC" stroke="#000" stroke-width=".5"/>
+</g>
+
+<g id="r_spring" transform="translate(1258.5 683.9) scale(1 1.1) translate(-1258.5 -683.9)">
+  <rect width="41.2" height="8.9" x="1237.96" y="623.54" fill="url(#hor_bwb)" stroke="#000" stroke-width=".5" transform="rotate(-13.03 1258.83 628.08)"/>
+  <circle cx="1238.49" cy="632.64" r="4.45" fill="#999" stroke="#CCC" stroke-width=".5"/>
+  <circle cx="1278.63" cy="623.35" r="4.45" fill="#999" stroke="#CCC" stroke-width=".5"/>
+  <rect width="41.2" height="8.9" x="1237.96" y="639.18" fill="url(#hor_bwb)" stroke="#000" stroke-width=".5" transform="rotate(-13.03 1258.83 643.72)"/>
+  <circle cx="1238.49" cy="648.27" r="4.45" fill="#999" stroke="#CCC" stroke-width=".5"/>
+  <circle cx="1278.63" cy="638.98" r="4.45" fill="#999" stroke="#CCC" stroke-width=".5"/>
+  <rect width="41.2" height="8.9" x="1237.96" y="654.81" fill="url(#hor_bwb)" stroke="#000" stroke-width=".5" transform="rotate(-13.03 1258.83 659.36)"/>
+  <circle cx="1238.49" cy="663.91" r="4.45" fill="#999" stroke="#CCC" stroke-width=".5"/>
+  <circle cx="1278.63" cy="654.62" r="4.45" fill="#999" stroke="#CCC" stroke-width=".5"/>
+  <rect width="41.2" height="8.9" x="1237.96" y="670.45" fill="url(#hor_bwb)" stroke="#000" stroke-width=".5" transform="rotate(-13.03 1258.83 675)"/>
+  <circle cx="1238.49" cy="679.54" r="4.45" fill="#999" stroke="#CCC" stroke-width=".5"/>
+  <circle cx="1278.63" cy="670.25" r="4.45" fill="#999" stroke="#CCC" stroke-width=".5"/>
+</g>
+</g>
+
+<clipPath id="arr_07_clp">
+  <rect x="1308" y="517.5" width="13" height="220"/>
+</clipPath>
+<g id="arr_07" class="" clip-path="url(#arr_07_clp)">
+  <g id="q_07">
+    <use x="1314.574" y="813" xlink:href="#arr_mt"/>
+    <use x="1314.574" y="783" xlink:href="#arr_mt"/>
+    <use x="1314.574" y="753" xlink:href="#arr_mt"/>
+    <use x="1314.574" y="723" xlink:href="#arr_mt"/>
+    <use x="1314.574" y="693" xlink:href="#arr_mt"/>
+    <use x="1314.574" y="663" xlink:href="#arr_mt"/>
+    <use x="1314.574" y="633" xlink:href="#arr_mt"/>
+    <use x="1314.574" y="603" xlink:href="#arr_mt"/>
+    <use x="1314.574" y="573" xlink:href="#arr_mt"/>
+    <use x="1314.574" y="543" xlink:href="#arr_mt"/>
+    <use x="1314.574" y="513" xlink:href="#arr_mt"/>
+  </g>
+</g>
+
+<clipPath id="arr_08_clp">
+  <rect x="1252.5" y="517.5" width="56" height="11.2"/>
+</clipPath>
+<g id="arr_08" class="" clip-path="url(#arr_08_clp)">
+  <g id="q_08">
+    <use x="1333" y="523" xlink:href="#arr_ml"/>
+    <use x="1303" y="523" xlink:href="#arr_ml"/>
+    <use x="1273" y="523" xlink:href="#arr_ml"/>
+    <use x="1243" y="523" xlink:href="#arr_ml"/>
+  </g>
+</g>
+
+<clipPath id="arr_09_clp">
+  <rect x="1252.5" y="496" width="12" height="21.5"/>
+</clipPath>
+<g id="arr_09" class="" clip-path="url(#arr_09_clp)">
+  <g id="q_09">
+    <use x="1258.6" y="542" xlink:href="#arr_mt"/>
+    <use x="1258.6" y="512" xlink:href="#arr_mt"/>
+    <use x="1258.6" y="482" xlink:href="#arr_mt"/>
+  </g>
+</g>
+
+<clipPath id="arr_10_clp">
+  <rect x="1196.4" y="494.2" width="51.5" height="12.5"/>
+</clipPath>
+<g id="arr_10" class="" clip-path="url(#arr_10_clp)">
+  <g id="q_10">
+    <use x="1273" y="500.5" xlink:href="#arr_ml"/>
+    <use x="1243" y="500.5" xlink:href="#arr_ml"/>
+    <use x="1213" y="500.5" xlink:href="#arr_ml"/>
+    <use x="1183" y="500.5" xlink:href="#arr_ml"/>
+  </g>
+</g>
+
+<clipPath id="arr_11_clp">
+  <rect x="1196.4" y="507" width="12.5" height="230"/>
+</clipPath>
+<g id="arr_11" class="" clip-path="url(#arr_11_clp)">
+  <g id="q_11">
+    <use x="1202.6" y="482" xlink:href="#arr_mb"/>
+    <use x="1202.6" y="512" xlink:href="#arr_mb"/>
+    <use x="1202.6" y="542" xlink:href="#arr_mb"/>
+    <use x="1202.6" y="572" xlink:href="#arr_mb"/>
+    <use x="1202.6" y="602" xlink:href="#arr_mb"/>
+    <use x="1202.6" y="632" xlink:href="#arr_mb"/>
+    <use x="1202.6" y="662" xlink:href="#arr_mb"/>
+    <use x="1202.6" y="692" xlink:href="#arr_mb"/>
+    <use x="1202.6" y="722" xlink:href="#arr_mb"/>
+    <use x="1202.6" y="752" xlink:href="#arr_mb"/>
+  </g>
+</g>
+
+</g>
+<g id="popup_oil" class="popup_box invis none">
+<path fill="#fff" opacity=".5" d="M788.76 434.47H544.92c-7.7 0-14 6.3-14 14v59.97c0 7.7 6.3 14 14 14h243.84c7.7 0 14-6.3 14-14V478.2l139.11 22.1-118.22-34.84 111.94-59.29-132.83 45.24v-2.95c0-7.7-6.3-14-14-14z"/>
+  <text x="667.6" y="471.8">
+    Oil-filled chamber
+    <tspan x="667.6" dy="30">isolated by bellows</tspan>
+  </text>
+  <a id="popup_oil_close" class="bttn_close" href="javascript:;">
+    <use x="812" y="427.7" xlink:href="#popup_close"/>
+  </a>
+</g>
+
+<g id="popup_seal" class="popup_box invis none">
+<path fill="#fff" opacity=".5" d="M788.4 613.96H632.43c-7.7 0-14-6.3-14-14v-36.25c0-7.7 6.3-14 14-14h155.99c7.7 0 14 6.3 14 14v7.51l151.2-35.72-151.2 58.32v6.14c0 7.7-6.3 14-14 14z"/>
+  <text x="712.4" y="589">
+    Sealing pad
+  </text>
+  <a id="popup_seal_close" class="bttn_close" href="javascript:;">
+    <use x="812" y="542" xlink:href="#popup_close"/>
+  </a>
+</g>
+
+<g id="popup_lvdt" class="popup_box invis none">
+<path fill="#fff" opacity=".5" d="M731.16 722.01H575.18c-7.7 0-14-6.3-14-14v-36.25c0-7.7 6.3-14 14-14h155.98c7.7 0 14 6.3 14 14v7.51l56.31-10.77-56.3 33.37v6.14c0 7.7-6.3 14-14 14z"/>
+  <text x="656" y="698">
+    LVDT coils
+  </text>
+  <a id="popup_lvdt_close" class="bttn_close" href="javascript:;">
+    <use x="751.3" y="652.7" xlink:href="#popup_close"/>
+  </a>
+</g>
+
+<g id="popup_inlet" class="popup_box invis none">
+<path fill="#fff" opacity=".5" d="M774.8 994.06h-55.35c-7.7 0-14-6.3-14-14V950.8c0-7.7 6.3-14 14-14h55.35c7.7 0 14 6.3 14 14v3.5l56.31-6.77-56.3 29.37v3.15c0 7.7-6.3 14-14 14z"/>
+  <text x="748.8" y="974.3">
+    Inlet
+  </text>
+  <a id="popup_inlet_close" class="bttn_close" href="javascript:;">
+    <use x="794.9" y="931.8" xlink:href="#popup_close"/>
+  </a>
+</g>
+
+<g id="popup_outlet" class="popup_box invis none">
+<path fill="#fff" opacity=".5" d="M1151.01 994.06h74.35c7.7 0 14-6.3 14-14V950.8c0-7.7-6.3-14-14-14H1151c-7.7 0-14 6.3-14 14v3.5l-56.3-6.77 56.3 29.37v3.15c0 7.7 6.3 14 14 14z"/>
+  <text x="1188.3" y="974.3">
+    Outlet
+  </text>
+  <a id="popup_outlet_close" class="bttn_close" href="javascript:;">
+    <use x="1248.8" y="931.8" xlink:href="#popup_close"/>
+  </a>
+</g>
+
+<g id="popup_piston" class="popup_box invis none">
+<path fill="#fff" opacity=".5" d="M1070.72 826.06h235.52c7.7 0 14 6.3 14 14v36.25c0 7.7-6.3 14-14 14h-235.52c-7.7 0-14-6.3-14-14v-7.5l-56.3 10.77 56.3-33.37v-6.15c0-7.7 6.3-14 14-14z"/>
+  <text x="1187.8" y="865">
+    Piston return spring
+  </text>
+  <a id="popup_piston_close" class="bttn_close" href="javascript:;">
+    <use x="1330.1" y="821" xlink:href="#popup_close"/>
+  </a>
+</g>
+
+<g id="popup_cup" class="popup_box invis none">
+<path fill="#fff" opacity=".5" d="M1153.42 683.35h176.74c7.7 0 14 6.3 14 14v59.97c0 7.7-6.3 14-14 14h-176.74c-7.7 0-14-6.3-14-14v-30.23l-93.38 40.98 72.49-53.72-74.51-41.85 95.4 27.8v-2.95c0-7.7 6.3-14 14-14z"/>
+  <text x="1241.6" y="720">
+    Piston cup
+    <tspan x="1241.6" dy="30">&amp; wiper seals</tspan>
+  </text>
+  <a id="popup_cup_close" class="bttn_close" href="javascript:;">
+    <use x="1355.2" y="676.5" xlink:href="#popup_close"/>
+  </a>
+</g>
+
+<g id="popup_seat" class="popup_box invis none">
+<path fill="#fff" opacity=".5" d="M1133.5 504.4h65.35c7.7 0 14 6.3 14 14v29.25c0 7.7-6.3 14-14 14h-65.35c-7.7 0-14-6.3-14-14v-3.5l-156.7 13.21 156.7-35.81v-3.15c0-7.7 6.3-14 14-14z"/>
+  <text x="1165.8" y="541">
+    Seat
+  </text>
+  <a id="popup_seat_close" class="bttn_close" href="javascript:;">
+    <use x="1224.5" y="499.4" xlink:href="#popup_close"/>
+  </a>
+</g>
+
+<g id="popup_solenoid" class="popup_box invis none">
+<path fill="#fff" opacity=".5" d="M1127.04 373.2h155.99c7.7 0 14 6.3 14 14v36.25c0 7.7-6.3 14-14 14h-155.99c-7.7 0-14-6.3-14-14v-7.51l-56.3 10.77 56.3-33.37v-6.15c0-7.7 6.3-14 14-14z"/>
+  <text x="1203.9" y="413.4">
+    Solenoid coil
+  </text>
+  <a id="popup_solenoid_close" class="bttn_close" href="javascript:;">
+    <use x="1304.1" y="368.2" xlink:href="#popup_close"/>
+  </a>
+</g>
+
+<rect fill="url(#hor_bwb)" stroke="#000" stroke-width=".5" x="52" y="700" width="70" height="70" />
+<text x="150" y="740" class="label_txt">Oil-filled</text>
+
+<rect fill="url(#hor_red)" stroke="#000" stroke-width=".5" x="52" y="800" width="70" height="70" />
+<text x="150" y="830" class="label_txt">All passages
+  <tspan x="150" dy="30">at same pressure</tspan>
+</text>
+
+<script>
+<![CDATA[
+
+let animation_id;
+let arrows_shift = 1;
+
+function $(sel) {
+  return document.querySelector(sel);
+}
+
+$("#popup_oil_close").onclick = function() {
+  $("#popup_oil").classList.toggle("invis");
+  setTimeout(function(){$("#popup_oil").classList.toggle("none")}, 100);
+};
+$("#popup_seal_close").onclick = function() {
+  $("#popup_seal").classList.toggle("invis");
+  setTimeout(function(){$("#popup_seal").classList.toggle("none")}, 100);
+};
+$("#popup_lvdt_close").onclick = function() {
+  $("#popup_lvdt").classList.toggle("invis");
+  setTimeout(function(){$("#popup_lvdt").classList.toggle("none")}, 100);
+};
+$("#popup_inlet_close").onclick = function() {
+  $("#popup_inlet").classList.toggle("invis");
+  setTimeout(function(){$("#popup_inlet").classList.toggle("none")}, 100);
+};
+$("#popup_outlet_close").onclick = function() {
+  $("#popup_outlet").classList.toggle("invis");
+  setTimeout(function(){$("#popup_outlet").classList.toggle("none")}, 100);
+};
+$("#popup_piston_close").onclick = function() {
+  $("#popup_piston").classList.toggle("invis");
+  setTimeout(function(){$("#popup_piston").classList.toggle("none")}, 100);
+};
+$("#popup_cup_close").onclick = function() {
+  $("#popup_cup").classList.toggle("invis");
+  setTimeout(function(){$("#popup_cup").classList.toggle("none")}, 100);
+};
+$("#popup_seat_close").onclick = function() {
+  $("#popup_seat").classList.toggle("invis");
+  setTimeout(function(){$("#popup_seat").classList.toggle("none")}, 100);
+};
+$("#popup_solenoid_close").onclick = function() {
+  $("#popup_solenoid").classList.toggle("invis");
+  setTimeout(function(){$("#popup_solenoid").classList.toggle("none")}, 100);
+};
+
+function info_show() {
+if($("#popup_oil").classList.contains("none") || $("#popup_seal").classList.contains("none") || $("#popup_lvdt").classList.contains("none") || $("#popup_inlet").classList.contains("none") || $("#popup_outlet").classList.contains("none") || $("#popup_piston").classList.contains("none") || $("#popup_cup").classList.contains("none") || $("#popup_seat").classList.contains("none") || $("#popup_solenoid").classList.contains("none")) {
+  $("#popup_oil").classList.remove("none");
+  $("#popup_seal").classList.remove("none");
+  $("#popup_lvdt").classList.remove("none");
+  $("#popup_inlet").classList.remove("none");
+  $("#popup_outlet").classList.remove("none");
+  $("#popup_piston").classList.remove("none");
+  $("#popup_cup").classList.remove("none");
+  $("#popup_seat").classList.remove("none");
+  $("#popup_solenoid").classList.remove("none");
+  setTimeout(function(){
+    $("#popup_oil").classList.remove("invis");
+    $("#popup_seal").classList.remove("invis");
+    $("#popup_lvdt").classList.remove("invis");
+    $("#popup_inlet").classList.remove("invis");
+    $("#popup_outlet").classList.remove("invis");
+    $("#popup_piston").classList.remove("invis");
+    $("#popup_cup").classList.remove("invis");
+    $("#popup_seat").classList.remove("invis");
+    $("#popup_solenoid").classList.remove("invis");
+  }, 40);
+} else {
+  $("#popup_oil").classList.toggle("invis");
+  $("#popup_seal").classList.toggle("invis");
+  $("#popup_lvdt").classList.toggle("invis");
+  $("#popup_inlet").classList.toggle("invis");
+  $("#popup_outlet").classList.toggle("invis");
+  $("#popup_piston").classList.toggle("invis");
+  $("#popup_cup").classList.toggle("invis");
+  $("#popup_seat").classList.toggle("invis");
+  $("#popup_solenoid").classList.toggle("invis");
+  setTimeout(function(){
+    $("#popup_oil").classList.toggle("none");
+    $("#popup_seal").classList.toggle("none");
+    $("#popup_lvdt").classList.toggle("none");
+    $("#popup_inlet").classList.toggle("none");
+    $("#popup_outlet").classList.toggle("none");
+    $("#popup_piston").classList.toggle("none");
+    $("#popup_cup").classList.toggle("none");
+    $("#popup_seat").classList.toggle("none");
+    $("#popup_solenoid").classList.toggle("none");
+  }, 100);
+  }
+}
+
+$("#info").onclick = function() {
+  info_show();
+}
+
+setTimeout(function(){
+  info_show();
+}, 400);
+
+function animate() {
+  if(arrows_shift < 40) {
+    arrows_shift++;
+    $("#q_07").setAttribute("transform", "translate(0 " + arrows_shift * -0.75 + ")");
+    $("#q_08").setAttribute("transform", "translate(" + arrows_shift * -0.75 + " 0)");
+    $("#q_09").setAttribute("transform", "translate(0 " + arrows_shift * -0.75 + ")");
+    $("#q_10").setAttribute("transform", "translate(" + arrows_shift * -0.75 + " 0)");
+    $("#q_11").setAttribute("transform", "translate(0 " + arrows_shift * 0.75 + ")");
+  } else {
+    arrows_shift = 1;
+  }
+    animation_id = requestAnimationFrame(animate);
+}
+
+animation_id = requestAnimationFrame(animate);
+
+]]>
+</script>
+</svg>
