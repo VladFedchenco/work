@@ -282,6 +282,7 @@ h2 {
     top: 200px;
     width: 478px;
     height: auto;
+    pointer-events: none;
 }
 #nav_slide {
     position: fixed;
@@ -769,5 +770,8 @@ h2 {
     }
     #slide_left, #slide_right {
         display: block;
+    }
+    #nav_slide {
+        top: 54%;
     }
 }

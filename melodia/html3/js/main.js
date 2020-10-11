@@ -111,6 +111,31 @@ window.addEventListener('wheel', function(event) {
  }
 });
 
+let lastPoint = null; //global
+
+function touch_screen(e) {
+  let currentPoint = e.changedTouches[0].pageY;
+
+    if(lastPoint != null && lastPoint < currentPoint ){
+        if (section_num > 1) {
+          section_num--;
+          fsection_num(section_num);
+        }
+
+    }else if(lastPoint != null && lastPoint > currentPoint){
+        if (section_num < 3) {
+          section_num++;
+          fsection_num(section_num);
+        }
+    }
+
+    lastPoint = currentPoint;
+}
+
+window.addEventListener('touchend', e => {
+  touch_screen(e);
+});
+
 window.addEventListener('keyup' /* or keyup, see what feels better when you test it */, e => {
   switch (e.code) {
     case "ArrowUp":
