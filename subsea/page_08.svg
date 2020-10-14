@@ -78,7 +78,7 @@ text {
   font-size: 24px;
 }
 
-.popup_box.invis {
+.popup_box.invis, .popup_box.hidden {
   opacity: 0;
 }
 
@@ -139,6 +139,22 @@ text.label_txt {
   }
 }
 
+#label_1, #label_2, .to_green1, .to_green2, .to_green3, .to_green4, .to_green5, #arrows_1, #arrows_2 {
+  transition: opacity .2s linear;
+}
+
+#label_1.invis, #label_2.invis, #arrows_1.invis, #arrows_2.invis {
+  opacity: 0;
+}
+
+.to_green1, .to_green2, .to_green3, .to_green4, .to_green5 {
+  opacity: 0;
+}
+
+.to_green1.vis, .to_green2.vis, .to_green3.vis, .to_green4.vis, .to_green5.vis {
+  opacity: 1;
+}
+
 /* ]]> */
 </style>
 
@@ -162,6 +178,16 @@ text.label_txt {
     <stop offset="0" stop-color="#B80000"/>
     <stop offset=".6" stop-color="#D47F7F"/>
     <stop offset="1" stop-color="#B80000"/>
+  </linearGradient>
+  <linearGradient id="hor_grn" x2="1" y2="0">
+    <stop offset="0" stop-color="#908d00"/>
+    <stop offset=".6" stop-color="#cbca3b"/>
+    <stop offset="1" stop-color="#908d00"/>
+  </linearGradient>
+  <linearGradient id="ver_grn" x2="0" y2="1">
+    <stop offset="0" stop-color="#908d00"/>
+    <stop offset=".6" stop-color="#cbca3b"/>
+    <stop offset="1" stop-color="#908d00"/>
   </linearGradient>
   <filter id="c_color">
     <feColorMatrix
@@ -226,6 +252,7 @@ text.label_txt {
 <path fill="url(#hor_bwb)" stroke="#000" stroke-width=".5" d="M1171.11 648.72v-237.9a22.3 22.3 0 017.15-16.33l13.84-12.77a22.16 22.16 0 0115.07-5.89h102.79c5.6 0 10.96 2.09 15.07 5.89l13.84 12.77a22.3 22.3 0 017.15 16.33v237.9h-174.91z"/>
 <rect width="144.15" height="240.42" x="1186.49" y="460.88" fill="#9E9DA6" stroke="#000" stroke-width=".5"/>
 <rect width="89.11" height="157.92" x="1214.01" y="531" fill="url(#hor_red)" stroke="#000" stroke-width=".5"/>
+<rect class="to_green1" width="89.11" height="70" x="1214.01" y="531" fill="url(#hor_grn)" stroke="#000" stroke-width=".5"/>
 <g fill="#CC6601" stroke="#000" stroke-width=".5">
   <circle cx="1200.95" cy="402.72" r="3.8"/>
   <circle cx="1209.66" cy="402.72" r="3.8"/>
@@ -289,9 +316,11 @@ text.label_txt {
 <polygon fill="#929199" stroke="#000" stroke-width=".5" points="1280.54 460.87 1280.54 386.99 1236.59 386.99 1236.59 460.87 1194.96 460.87 1194.96 469.11 1322.17 469.11 1322.17 460.87"/>
 <rect width="32.53" height="38.27" x="1242.3" y="392.53" fill="url(#hor_bwb)" stroke="#000" stroke-width=".5"/>
 <polygon fill="url(#hor_red)" stroke="#000" stroke-width=".5" points="1196.41 469.11 1196.41 506.75 1247.88 506.75 1251.97 502.66 1265.15 502.66 1269.24 506.75 1320.72 506.75 1320.72 469.11"/>
-<polygon fill="url(#hor_bwb)" stroke="#000" stroke-width=".5" points="1272.58 482.43 1275.44 480.21 1272.58 477.99 1275.44 475.77 1272.58 473.55 1275.44 471.33 1272.58 469.11 1244.54 469.11 1241.68 471.33 1244.54 473.55 1241.68 475.77 1244.54 477.99 1241.68 480.21 1244.54 482.43"/>
-<polygon fill="#9E9DA6" stroke="#000" stroke-width=".5" points="1273.31 416.21 1273.31 394.25 1243.82 394.25 1243.82 416.21 1254.93 416.21 1254.93 481.92 1244.54 481.92 1244.54 494.17 1272.59 494.17 1272.59 481.92 1262.2 481.92 1262.2 416.21"/>
-<rect width="20.27" height="8.03" x="1248.43" y="488.04"/>
+<polygon id="bellow" fill="url(#hor_bwb)" stroke="#000" stroke-width=".5" points="1272.58 482.43 1275.44 480.21 1272.58 477.99 1275.44 475.77 1272.58 473.55 1275.44 471.33 1272.58 469.11 1244.54 469.11 1241.68 471.33 1244.54 473.55 1241.68 475.77 1244.54 477.99 1241.68 480.21 1244.54 482.43" transform="translate(1258.6 469.1) scale(1 1) translate(-1258.6 -469.1)"/>
+<g id="top_piston" transform="translate(0 0)">
+  <polygon fill="#9E9DA6" stroke="#000" stroke-width=".5" points="1273.31 421 1273.31 394.25 1243.82 394.25 1243.82 421 1254.93 421 1254.93 481.92 1244.54 481.92 1244.54 494.17 1272.59 494.17 1272.59 481.92 1262.2 481.92 1262.2 421"/>
+  <rect width="20.27" height="8.03" x="1248.43" y="488.04"/>
+</g>
 <g stroke="#000" fill="#CC6601" stroke-width=".5">
   <circle cx="1179.04" cy="541.06" r="3.8"/>
   <circle cx="1179.04" cy="549.48" r="3.8"/>
@@ -327,10 +356,14 @@ text.label_txt {
   <polyline points="1342.55 607.51 1332.66 607.51 1332.66 643.4 1342.55 643.4"/>
 </g>
 <polygon fill="url(#ver_red)" stroke="#000" stroke-width=".5" points="1320.72 517.44 1264.77 517.44 1252.36 528.6 1308.31 528.6"/>
+<polygon class="to_green2" fill="url(#ver_grn)" stroke="#000" stroke-width=".5" points="1320.72 517.44 1264.77 517.44 1252.36 528.6 1308.31 528.6"/>
 <polygon fill="url(#hor_red)" stroke="#000" stroke-width=".5" points="1264.77 502.66 1252.36 502.66 1252.36 528.6 1264.77 517.44"/>
+<polygon class="to_green3" fill="url(#hor_grn)" stroke="#000" stroke-width=".5" points="1264.77 502.66 1252.36 502.66 1252.36 528.6 1264.77 517.44"/>
 <rect width="12.4" height="194.56" x="1196.41" y="506.75" fill="url(#hor_red)" stroke="#000" stroke-width=".5"/>
 <polygon fill="url(#hor_red)" stroke="#000" stroke-width=".5" points="1320.72 701.5 1320.72 517.44 1308.31 528.6 1308.31 701.5"/>
+<polygon class="to_green4" fill="url(#hor_grn)" stroke="#000" stroke-width=".5" points="1320.72 701.5 1320.72 517.44 1308.31 528.6 1308.31 701.5"/>
 <rect width="5.19" height="10" x="1303.12" y="532" fill="url(#ver_red)" stroke="#000" stroke-width=".5"/>
+<rect class="to_green5" width="5.19" height="10" x="1303.12" y="532" fill="url(#ver_grn)" stroke="#000" stroke-width=".5"/>
 <rect width="5.19" height="11.17" x="1208.81" y="673.27" fill="url(#ver_red)" stroke="#000" stroke-width=".5"/>
 
 <g id="r_piston" transform="translate(0 0)">
@@ -359,6 +392,7 @@ text.label_txt {
 </g>
 </g>
 
+<g id="arrows_1"  class="">
 <clipPath id="arr_07_clp">
   <rect x="1308" y="517.5" width="13" height="220"/>
 </clipPath>
@@ -430,10 +464,92 @@ text.label_txt {
     <use x="1202.6" y="752" xlink:href="#arr_mb"/>
   </g>
 </g>
+</g>
+
+<g id="arrows_2" class="invis">
+<clipPath id="arr2_07_clp">
+  <rect x="1308" y="532.5" width="13" height="205"/>
+</clipPath>
+<g id="arr2_07" class="" clip-path="url(#arr2_07_clp)">
+  <g id="q2_07">
+    <use x="1314.574" y="813" xlink:href="#arr_mt"/>
+    <use x="1314.574" y="783" xlink:href="#arr_mt"/>
+    <use x="1314.574" y="753" xlink:href="#arr_mt"/>
+    <use x="1314.574" y="723" xlink:href="#arr_mt"/>
+    <use x="1314.574" y="693" xlink:href="#arr_mt"/>
+    <use x="1314.574" y="663" xlink:href="#arr_mt"/>
+    <use x="1314.574" y="633" xlink:href="#arr_mt"/>
+    <use x="1314.574" y="603" xlink:href="#arr_mt"/>
+    <use x="1314.574" y="573" xlink:href="#arr_mt"/>
+    <use x="1314.574" y="543" xlink:href="#arr_mt"/>
+    <use x="1314.574" y="513" xlink:href="#arr_mt"/>
+  </g>
+</g>
+
+<clipPath id="arr2_08_clp">
+  <rect x="1265.5" y="517.5" width="43" height="11.2"/>
+</clipPath>
+<g id="arr2_08" class="" clip-path="url(#arr2_08_clp)" transform="translate(0 14)">
+  <g id="q2_08">
+    <use x="1333" y="523" xlink:href="#arr_ml"/>
+    <use x="1303" y="523" xlink:href="#arr_ml"/>
+    <use x="1273" y="523" xlink:href="#arr_ml"/>
+    <use x="1243" y="523" xlink:href="#arr_ml"/>
+  </g>
+</g>
+
+<clipPath id="arr2_10_clp">
+  <rect x="1209" y="494.2" width="40" height="12.5"/>
+</clipPath>
+<g id="arr2_10" class="" clip-path="url(#arr2_10_clp)" transform="translate(0 178)">
+  <g id="q2_10">
+    <use x="1273" y="500.5" xlink:href="#arr_ml"/>
+    <use x="1243" y="500.5" xlink:href="#arr_ml"/>
+    <use x="1213" y="500.5" xlink:href="#arr_ml"/>
+    <use x="1183" y="500.5" xlink:href="#arr_ml"/>
+  </g>
+</g>
+
+<clipPath id="arr2_11_clp">
+  <rect x="1196.4" y="531.6" width="12.5" height="15"/>
+  <rect x="1196.4" y="629" width="12.5" height="52"/>
+</clipPath>
+<g id="arr2_11" class="" clip-path="url(#arr2_11_clp)" transform="translate(56 0)">
+  <g id="q2_11">
+    <use x="1202.6" y="482" xlink:href="#arr_mb"/>
+    <use x="1202.6" y="512" xlink:href="#arr_mb"/>
+    <use x="1202.6" y="542" xlink:href="#arr_mb"/>
+    <use x="1202.6" y="572" xlink:href="#arr_mb"/>
+    <use x="1202.6" y="602" xlink:href="#arr_mb"/>
+    <use x="1202.6" y="632" xlink:href="#arr_mb"/>
+    <use x="1202.6" y="662" xlink:href="#arr_mb"/>
+    <use x="1202.6" y="692" xlink:href="#arr_mb"/>
+    <use x="1202.6" y="722" xlink:href="#arr_mb"/>
+    <use x="1202.6" y="752" xlink:href="#arr_mb"/>
+  </g>
+</g>
+<clipPath id="arr3_11_clp">
+  <rect x="1196.4" y="673" width="12.5" height="60"/>
+</clipPath>
+<g id="arr3_11" class="" clip-path="url(#arr3_11_clp)">
+  <g id="q3_11">
+    <use x="1202.6" y="482" xlink:href="#arr_mb"/>
+    <use x="1202.6" y="512" xlink:href="#arr_mb"/>
+    <use x="1202.6" y="542" xlink:href="#arr_mb"/>
+    <use x="1202.6" y="572" xlink:href="#arr_mb"/>
+    <use x="1202.6" y="602" xlink:href="#arr_mb"/>
+    <use x="1202.6" y="632" xlink:href="#arr_mb"/>
+    <use x="1202.6" y="662" xlink:href="#arr_mb"/>
+    <use x="1202.6" y="692" xlink:href="#arr_mb"/>
+    <use x="1202.6" y="722" xlink:href="#arr_mb"/>
+    <use x="1202.6" y="752" xlink:href="#arr_mb"/>
+  </g>
+</g>
+</g>
 
 </g>
 
-<g id="popup_lvdt" class="popup_box invis none">
+<g id="popup_lvdt" class="popup_box invis none hidden">
 <path fill="#fff" opacity=".5" d="M744.84 673.28H556c-7.7 0-14 6.3-14 14v59.97c0 7.7 6.3 14 14 14h188.84c7.7 0 14-6.3 14-14v-30.24l44.45-31.97-44.45 5.18v-2.95c0-7.7-6.3-14-14-14v.01z"/>
   <text x="651.5" y="709">
     LVDT
@@ -464,18 +580,18 @@ text.label_txt {
   </a>
 </g>
 
-<g id="popup_piston" class="popup_box invis none">
+<g id="popup_piston" class="popup_box invis none hidden">
 <path fill="#fff" opacity=".5" d="M1153.42 608.98h136.74c7.7 0 14 6.3 14 14v59.97c0 7.7-6.3 14-14 14h-136.74c-7.7 0-14-6.3-14-14v-30.23l-80.17 9.14 80.17-35.93v-2.95c0-7.7 6.3-14 14-14z"/>
   <text x="1222.8" y="645.9">
     Piston
-    <tspan x="1222.8" dy="32">returning</tspan>
+    <tspan id="piston_text" x="1222.8" dy="32">moving</tspan>
   </text>
   <a id="popup_piston_close" class="bttn_close" href="javascript:;">
     <use x="1316" y="602" xlink:href="#popup_close"/>
   </a>
 </g>
 
-<g id="popup_solenoid" class="popup_box invis none">
+<g id="popup_solenoid" class="popup_box invis none hidden">
 <path fill="#fff" opacity=".5" d="M1153.42 341.12h136.74c7.7 0 14 6.3 14 14v59.97c0 7.7-6.3 14-14 14h-136.74c-7.7 0-14-6.3-14-14v-30.23l-80.17 9.14 80.17-35.93v-2.95c0-7.7 6.3-14 14-14z"/>
   <text x="1222.2" y="378">
     Solenoid
@@ -486,13 +602,20 @@ text.label_txt {
   </a>
 </g>
 
-<rect fill="url(#hor_bwb)" stroke="#000" stroke-width=".5" x="52" y="400" width="70" height="70" />
-<text x="150" y="440" class="label_txt">Oil-filled</text>
+<g id="label_1" class="">
+  <rect fill="url(#hor_red)" stroke="#000" stroke-width=".5" x="52" y="500" width="70" height="70" />
+  <text x="150" y="530" class="label_txt">All passages
+    <tspan x="150" dy="30">at same pressure</tspan>
+  </text>
+</g>
 
-<rect fill="url(#hor_red)" stroke="#000" stroke-width=".5" x="52" y="500" width="70" height="70" />
-<text x="150" y="530" class="label_txt">All passages
-  <tspan x="150" dy="30">at same pressure</tspan>
-</text>
+<g id="label_2" class="invis">
+  <rect fill="url(#hor_grn)" stroke="#000" stroke-width=".5" x="52" y="400" width="70" height="70" />
+  <text x="150" y="442" class="label_txt">Inlet Pressure</text>
+
+  <rect fill="url(#hor_red)" stroke="#000" stroke-width=".5" x="52" y="500" width="70" height="70" />
+  <text x="150" y="540" class="label_txt">Outlet Pressure</text>
+</g>
 
 <a id="bttn_replay" href="javascript:;">
   <path fill="#fff" fill-rule="evenodd" d="M1651.7 400.94a75.18 75.18 0 0175.14 75.14 75.18 75.18 0 01-75.14 75.14 75.18 75.18 0 01-75.14-75.14 75.18 75.18 0 0175.14-75.14zm-29.86 46.52a41.35 41.35 0 0130.22-13.08 41.48 41.48 0 0141.46 41.46 41.48 41.48 0 01-41.46 41.46 4 4 0 010-8c18.47 0 33.46-15 33.46-33.46a33.48 33.48 0 00-59.14-21.45h13.7v8h-26.25v-26.24h8v11.31z"/>
@@ -501,7 +624,7 @@ text.label_txt {
 
 <a id="bttn_pause" href="javascript:;">
   <path id="shape_play" class="invis" fill="#fff" d="M1651.7 628.54a75.18 75.18 0 0175.14 75.14 75.18 75.18 0 01-75.14 75.14 75.18 75.18 0 01-75.14-75.14 75.18 75.18 0 0175.14-75.14zm28.65 75.14l-38.94-38.94v77.88l38.94-38.94z"/>
-  <path id="shape_pause" fill="#fff" d="M1651.7 628.54a75.18 75.18 0 0175.14 75.14 75.18 75.18 0 01-75.14 75.14 75.18 75.18 0 01-75.14-75.14 75.18 75.18 0 0175.14-75.14zm-7.51 46.09h-16.97v58.1h16.97v-58.1zm32 0h-16.98v58.1h16.97v-58.1z"/>
+  <path id="shape_pause" class="" fill="#fff" d="M1651.7 628.54a75.18 75.18 0 0175.14 75.14 75.18 75.18 0 01-75.14 75.14 75.18 75.18 0 01-75.14-75.14 75.18 75.18 0 0175.14-75.14zm-7.51 46.09h-16.97v58.1h16.97v-58.1zm32 0h-16.98v58.1h16.97v-58.1z"/>
   <circle cx="1651.7" cy="703.7" r="75.15" opacity="0"/>
 </a>
 
@@ -597,20 +720,29 @@ function animate() {
     $("#q_09").setAttribute("transform", "translate(0 " + arrows_shift * -0.75 + ")");
     $("#q_10").setAttribute("transform", "translate(" + arrows_shift * -0.75 + " 0)");
     $("#q_11").setAttribute("transform", "translate(0 " + arrows_shift * 0.75 + ")");
+
+    $("#q2_07").setAttribute("transform", "translate(0 " + arrows_shift * -0.75 + ")");
+    $("#q2_08").setAttribute("transform", "translate(" + arrows_shift * -0.75 + " 0)");
+    $("#q2_10").setAttribute("transform", "translate(" + arrows_shift * -0.75 + " 0)");
+    $("#q2_11").setAttribute("transform", "translate(0 " + arrows_shift * 0.75 + ")");
+    $("#q3_11").setAttribute("transform", "translate(0 " + arrows_shift * 0.75 + ")");
   } else {
     arrows_shift = 1;
   }
     animation_id = requestAnimationFrame(animate);
 }
 
+let is_anim1 = true;
+let is_anim2 = true;
 let anim_lenght = 0;
 let string_num = 0;
 let monitor_text = ['Reading Requested', 'Measuring Flow', 'Reading Captured', '2.56GPD', 'Meter Dormant'];
 let blink = document.createElementNS("http://www.w3.org/2000/svg", 'tspan');
 blink.textContent = "|";
 blink.setAttribute("class", "blinked");
+
 function animate_text() {
-  if (anim_lenght < 1100) {
+  if (anim_lenght < 660) {
     anim_lenght++;
     if (anim_lenght % 4 == 0) {
       string_num++;
@@ -619,6 +751,24 @@ function animate_text() {
       $("#monitor_row1").textContent = monitor_text[0].substr(0, string_num);
     } else if (string_num == 18) {
       $("#monitor_row1").appendChild(blink);
+      $("#popup_solenoid").classList.remove("hidden");
+    } else if (string_num > 18 & string_num < 30) {
+      $("#bellow").setAttribute("transform", "translate(1258.6 469.1) scale(1 " + (1 + (string_num - 19) * 0.06) + ") translate(-1258.6 -469.1)");
+      $("#top_piston").setAttribute("transform", "translate(0 " + (string_num - 19) * 0.8 + ")");
+    } else if (string_num > 30 && string_num < 41) {
+      $("#arrows_1").classList.add("invis");
+      $("#arrows_2").classList.remove("invis");
+      $("#popup_lvdt").classList.remove("hidden");
+      $("#popup_piston").classList.remove("hidden");
+      $(".to_green1").classList.add("vis");
+      $(".to_green2").classList.add("vis");
+      $(".to_green3").classList.add("vis");
+      $(".to_green4").classList.add("vis");
+      $(".to_green5").classList.add("vis");
+      $("#label_1").classList.add("invis");
+      $("#label_2").classList.remove("invis");
+      $("#r_piston").setAttribute("transform", "translate(0 " + 1.8 * (string_num - 30) + ")")
+      $("#r_spring").setAttribute("transform", "translate(1258.5 683.9) scale(1 " + (1.1 - 0.03 * (string_num - 30)) + ") translate(-1258.5 -683.9)");
     } else if (string_num > 49 && string_num < 66) {
       $("#monitor_row1").textContent = monitor_text[0];
       $("#monitor_row2").textContent = monitor_text[1].substr(0, string_num - 51);
@@ -637,32 +787,113 @@ function animate_text() {
       $("#monitor_row4").textContent = monitor_text[3].substr(0, string_num - 129);
     } else if (string_num == 137) {
       $("#monitor_row4").appendChild(blink);
-    } else if (string_num > 179 && string_num < 194) {
+      $("#label_1").classList.remove("invis");
+      $("#label_2").classList.add("invis");
+      $("#popup_solenoid").classList.add("hidden");
+      $("#popup_lvdt").classList.add("hidden");
+      $("#piston_text").textContent = "returning";
+    } else if (string_num > 137 && string_num < 149) {
+      $("#arrows_1").classList.remove("invis");
+      $("#arrows_2").classList.add("invis");
+      $("#bellow").setAttribute("transform", "translate(1258.6 469.1) scale(1 " + (1 + (148 - string_num) * 0.06) + ") translate(-1258.6 -469.1)");
+      $("#top_piston").setAttribute("transform", "translate(0 " + (148 - string_num) * 0.8 + ")");
+      $("#r_piston").setAttribute("transform", "translate(0 " + 1.8 * (148 - string_num) + ")");
+      $("#r_spring").setAttribute("transform", "translate(1258.5 683.9) scale(1 " + (1.1 - 0.03 * (148 - string_num)) + ") translate(-1258.5 -683.9)");
+      $(".to_green1").classList.remove("vis");
+      $(".to_green2").classList.remove("vis");
+      $(".to_green3").classList.remove("vis");
+      $(".to_green4").classList.remove("vis");
+      $(".to_green5").classList.remove("vis");
+    } else if (string_num == 149) {
+      $("#popup_piston").classList.add("hidden");
+    } else if (string_num > 149 && string_num < 164) {
       $("#monitor_row1").textContent = monitor_text[0];
       $("#monitor_row2").textContent = monitor_text[1];
       $("#monitor_row3").textContent = monitor_text[2];
       $("#monitor_row4").textContent = monitor_text[3];
-      $("#monitor_row5").textContent = monitor_text[4].substr(0, string_num - 179);
-    } else if (string_num == 194) {
+      $("#monitor_row5").textContent = monitor_text[4].substr(0, string_num - 149);
+    } else if (string_num == 164) {
       $("#monitor_row5").appendChild(blink);
-    } else if (string_num == 270) {
-      $("#monitor_row1").textContent = "";
-      $("#monitor_row2").textContent = "";
-      $("#monitor_row3").textContent = "";
-      $("#monitor_row4").textContent = "";
-      $("#monitor_row5").textContent = "";
     }
-    console.log(string_num);
+    if(arrows_shift < 40) {
+      arrows_shift++;
+      $("#q_07").setAttribute("transform", "translate(0 " + arrows_shift * -0.75 + ")");
+      $("#q_08").setAttribute("transform", "translate(" + arrows_shift * -0.75 + " 0)");
+      $("#q_09").setAttribute("transform", "translate(0 " + arrows_shift * -0.75 + ")");
+      $("#q_10").setAttribute("transform", "translate(" + arrows_shift * -0.75 + " 0)");
+      $("#q_11").setAttribute("transform", "translate(0 " + arrows_shift * 0.75 + ")");
+
+      $("#q2_07").setAttribute("transform", "translate(0 " + arrows_shift * -0.75 + ")");
+      $("#q2_08").setAttribute("transform", "translate(" + arrows_shift * -0.75 + " 0)");
+      $("#q2_10").setAttribute("transform", "translate(" + arrows_shift * -0.75 + " 0)");
+      $("#q2_11").setAttribute("transform", "translate(0 " + arrows_shift * 0.75 + ")");
+      $("#q3_11").setAttribute("transform", "translate(0 " + arrows_shift * 0.75 + ")");
+    } else {
+      arrows_shift = 1;
+    }
+    animation_text = requestAnimationFrame(animate_text);
   } else {
     string_num = 0;
     anim_lenght = 0;
+    is_anim1 = false;
+    cancelAnimationFrame(animation_text);
+    animation_id = requestAnimationFrame(animate);
   }
+}
+
+$("#bttn_replay").onclick = function() {
+  cancelAnimationFrame(animation_text);
+  cancelAnimationFrame(animation_id);
+  string_num = 0;
+  anim_lenght = 0;
+  is_anim1 = true;
+  is_anim2 = true;
+  $("#monitor_row1").textContent = "";
+  $("#monitor_row2").textContent = "";
+  $("#monitor_row3").textContent = "";
+  $("#monitor_row4").textContent = "";
+  $("#monitor_row5").textContent = "";
+  $("#shape_play").classList.add("invis");
+  $("#shape_pause").classList.remove("invis");
+  $("#popup_solenoid").classList.add("hidden");
+  $("#popup_lvdt").classList.add("hidden");
+  $("#popup_piston").classList.add("hidden");
+  $("#piston_text").textContent = "moving";
+  $("#label_1").classList.remove("invis");
+  $("#label_2").classList.add("invis");
+  $("#bellow").setAttribute("transform", "");
+  $("#top_piston").setAttribute("transform", "");
+  $("#r_piston").setAttribute("transform", "");
+  $("#r_spring").setAttribute("transform", "translate(1258.5 683.9) scale(1 1.1) translate(-1258.5 -683.9)");
+  $(".to_green1").classList.remove("vis");
+  $(".to_green2").classList.remove("vis");
+  $(".to_green3").classList.remove("vis");
+  $(".to_green4").classList.remove("vis");
+  $(".to_green5").classList.remove("vis");
+  $("#arrows_1").classList.remove("invis");
+  $("#arrows_2").classList.add("invis");
   animation_text = requestAnimationFrame(animate_text);
 }
 
-animation_text = requestAnimationFrame(animate_text);
+$("#bttn_pause").onclick = function() {
+  $("#shape_play").classList.toggle("invis");
+  $("#shape_pause").classList.toggle("invis");
+  if (is_anim1 && is_anim2) {
+    cancelAnimationFrame(animation_text);
+    is_anim2 = false;
+  } else if (is_anim1 && !is_anim2) {
+    animation_text = requestAnimationFrame(animate_text);
+    is_anim2 = true;
+  } else if (!is_anim1 && is_anim2) {
+    cancelAnimationFrame(animation_id);
+    is_anim2 = false;
+  } else {
+    animation_id = requestAnimationFrame(animate);
+    is_anim2 = true;
+  }
+}
 
-//animation_id = requestAnimationFrame(animate);
+animation_text = requestAnimationFrame(animate_text);
 
 ]]>
 </script>
