@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1080" style="background: #444">
+  <defs>
+    <linearGradient id="b" x1="143.47" x2="151.33" y1="347.57" y2="317.06" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff" stop-opacity=".7"/>
+      <stop offset="1" stop-color="#fff" stop-opacity=".3"/>
+    </linearGradient>
+    <linearGradient id="d" x1="244.74" x2="285.54" y1="206.56" y2="111.38" xlink:href="#c"/>
+    <linearGradient id="e" x1="335.38" x2="262.76" y1="190.79" y2="304.41" xlink:href="#c"/>
+    <linearGradient id="h" x1="231.86" x2="209.87" y1="29.44" y2="95.43" xlink:href="#b"/>
+    <linearGradient id="i" x1="136.38" x2="149.55" y1="312.42" y2="261.3" xlink:href="#b"/>
+    <linearGradient id="j" x1="304.68" x2="291.71" y1="299.87" y2="284.46" xlink:href="#c"/>
+    <radialGradient id="a" cx="97.53" cy="117" r="47.13" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff" stop-opacity=".3"/>
+      <stop offset=".9" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="c" cx="126.8" cy="211.08" r="80.4" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff" stop-opacity=".4"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="f" cx="182" cy="182" r="182" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff" stop-opacity=".1"/>
+      <stop offset=".9" stop-color="#fff" stop-opacity=".1"/>
+      <stop offset="1" stop-color="#fff" stop-opacity=".25"/>
+    </radialGradient>
+    <radialGradient id="g" cx="58.48" cy="56.95" r="110.89" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff" stop-opacity=".3"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="bbl_blur">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2" />
+    </filter>
+    <g id="bubble" transform="scale(.4)">
+      <g filter="url(#bbl_blur)">
+        <path fill="url(#a)" opacity=".6" d="M112.5 151.5s-13 1-20 5-25-7-29-11 16-40 25-52 34-8 41-5 15 21 12 31-20 29-29 32z"/>
+        <path fill="url(#b)" d="M51.5 301.5c-2.77-4.98 5.1-24.32 16-11 9 11 36.24 32.83 86 44 49 11 97-10 97 6s-38.86 19.83-67 21c-48 2-112-24-132-60z" opacity=".4"/>
+        <path fill="url(#c)" d="M127.5 253.5c-11 7-37 0-42-15s-5-51-2-58 45-11 56-14 30 6 32 24 0 58-16 61a115.83 115.83 0 01-28 2z" opacity=".7"/>
+        <path fill="url(#d)" d="M241.5 114.5s14 19 24 13 42-10 44-2 2 50-5 57-54 15-69 9c-13.96-5.58-15-79 6-77z"/>
+        <path fill="url(#e)" d="M259.5 252.5s27-40 46-33 24 38 13 55-50 41-60 30-12-35 1-52z"/>
+      </g>
+      <g>
+        <circle cx="182" cy="182" r="182" fill="url(#f)"/>
+        <path fill="url(#g)" d="M184.5 5.77c-2.51-.1-5.04-.17-7.58-.17A170.42 170.42 0 006.5 176c0 2.55.07 5.07.18 7.58A194.33 194.33 0 01184.5 5.78z"/>
+        <path fill="url(#h)" d="M143.08 31.89a11.08 11.08 0 019.99-11.66c18.32-1.75 57.11-3.48 89.43 8.27 27.3 9.93 43.35 28.34 54 40 5.87 6.42 8.85 15.15 2.7 21.3l-22.3 22.3a13.06 13.06 0 01-17.1 1.21c-9.67-7.28-26.57-17.99-46.3-21.81-19.86-3.84-43.32-1.61-56.55.26a9.7 9.7 0 01-11.05-9.06z"/>
+        <path opacity=".8" fill="url(#i)" d="M61.5 275.5c-1 17 35.16 40.5 66 51 47 16 84 12 85 6s0-25 7-31 13-25 6-32-28-5-51-7-64-6-77-3-35.35 4.97-36 16z"/>
+        <path filter="url(#bbl_blur)" fill="url(#j)" d="M310.2 266.44c-15.67 8.19-46.75 47.38-42.12 54.49s25.8 8.5 36.77-9.64 44.4-65.25 5.36-44.85z"/>
+      </g>
+    </g>
+  </defs>
+  <use x="630" y="150" xlink:href="#bubble"/>
+  <use x="1800" y="300" transform="scale(.5)" xlink:href="#bubble"/>
+  <use x="1400" y="100" transform="scale(.8)" xlink:href="#bubble"/>
+  <use x="905" y="215" xlink:href="#bubble"/>
+  <use x="2280" y="700" transform="scale(.5)" xlink:href="#bubble"/>
+  <use x="1200" y="500" transform="scale(.8)" xlink:href="#bubble"/>
+  <use x="1150" y="650" transform="scale(.7)" xlink:href="#bubble"/>
+  <use x="725" y="540" xlink:href="#bubble"/>
+  <use x="3400" y="2200" transform="scale(.3)" xlink:href="#bubble"/>
+</svg>
