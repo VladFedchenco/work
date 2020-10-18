@@ -1,0 +1,575 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1080">
+
+<defs>
+<style>@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900');</style>
+</defs>
+
+<style>
+/* <![CDATA[ */
+
+@namespace svg url(http://www.w3.org/2000/svg);
+
+svg|a {
+  outline: none;
+}
+
+svg {
+  background: linear-gradient(#4a6785, #dbedff);
+}
+
+text {
+  font-family: 'Roboto', sans-serif;
+  text-anchor: middle;
+  font-size: 26px;
+}
+
+.bttn:hover use {
+  filter: url(#h_color);
+  transform: translate(0px, 0px);
+}
+
+.bttn:active use {
+  filter: url(#a_color);
+  transform: translate(0px, 2px);
+}
+
+.nav_button_bg {
+  fill: #fff;
+  fill-opacity: 0;
+  stroke: #fff;
+  transition: fill-opacity .1s linear;
+}
+
+.nav_button:hover .nav_button_bg {
+  fill-opacity: .3;
+}
+
+.nav_button text {
+  font-size: 32px;
+  font-weight: 700;
+  fill: #fff;
+}
+
+#page_num text {
+  font-size: 60px;
+  font-weight: 900;
+}
+
+.ttl {
+  font-size: 54px;
+  fill: #fff;
+  font-weight: 900;
+}
+
+.text_body {
+  font-size: 26px;
+  fill: #fff;
+}
+
+.text_body.dark {
+  fill: #000;
+}
+
+.bttn_close:hover use {
+  filter: url(#c_color);
+}
+
+#bttn_cutaway text {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+#bttn_cutaway:hover {
+  filter: url(#h_color);
+}
+
+#bttn_cutaway:active {
+  filter: url(#a_color);
+  transform: translate(0px, 2px);
+}
+
+.popup_box {
+  opacity: 1;
+  transition: all .2s linear;
+}
+
+.popup_box.invis {
+  opacity: 0;
+}
+
+#info:hover #info_bg {
+  fill-opacity: .3;
+}
+
+#full_part.invis {
+  display: none;
+}
+
+/* ]]> */
+</style>
+
+<defs>
+  <linearGradient id="pipe_grd1" x2="0" y2="1">
+    <stop offset="0" stop-color="#363636"/>
+    <stop offset=".05" stop-color="#4e4e4e"/>
+    <stop offset=".07" stop-color="#4d4d4d"/>
+    <stop offset=".16" stop-color="#6a6a6a"/>
+    <stop offset=".36" stop-color="#444"/>
+    <stop offset=".6" stop-color="#aaa"/>
+    <stop offset=".61" stop-color="#ccc"/>
+    <stop offset="1" stop-color="#999"/>
+  </linearGradient>
+  <linearGradient id="pipe_grd12" x1="1" x2="0" y2="0">
+    <stop offset="0" stop-color="#363636"/>
+    <stop offset=".05" stop-color="#4e4e4e"/>
+    <stop offset=".07" stop-color="#4d4d4d"/>
+    <stop offset=".16" stop-color="#6a6a6a"/>
+    <stop offset=".36" stop-color="#444"/>
+    <stop offset=".6" stop-color="#aaa"/>
+    <stop offset=".61" stop-color="#ccc"/>
+    <stop offset="1" stop-color="#999"/>
+  </linearGradient>
+  <linearGradient id="pipe_grd2" x2="1">
+    <stop offset="0" stop-color="#868686"/>
+    <stop offset="1" stop-color="#000"/>
+  </linearGradient>
+  <linearGradient id="pipe_grd3" x2="1">
+    <stop offset="0" stop-color="#878787"/>
+    <stop offset="1" stop-color="#c3c3c3"/>
+  </linearGradient>
+  <linearGradient id="pipe_grd4" x1="1" x2="0">
+    <stop offset="0" stop-color="#9f9f9f"/>
+    <stop offset=".04" stop-color="#9b9b9b"/>
+    <stop offset=".05" stop-color="#4e4e4e"/>
+    <stop offset=".07" stop-color="#4d4d4d"/>
+    <stop offset=".08" stop-color="#898989"/>
+    <stop offset=".15" stop-color="#8a8a8a"/>
+    <stop offset=".16" stop-color="#6a6a6a"/>
+    <stop offset=".36" stop-color="#5d5d5d"/>
+    <stop offset=".6" stop-color="#bdbdbd"/>
+    <stop offset=".61" stop-color="#e6e6e6"/>
+    <stop offset="1" stop-color="#b5b5b5"/>
+  </linearGradient>
+  <linearGradient id="pipe_grd5" x2="0" y1="1" y2="0">
+    <stop offset="0" stop-color="#363636"/>
+    <stop offset=".05" stop-color="#4e4e4e"/>
+    <stop offset=".07" stop-color="#4d4d4d"/>
+    <stop offset=".16" stop-color="#6a6a6a"/>
+    <stop offset=".36" stop-color="#5d5d5d"/>
+    <stop offset=".6" stop-color="#bdbdbd"/>
+    <stop offset=".61" stop-color="#e6e6e6"/>
+    <stop offset="1" stop-color="#b5b5b5"/>
+  </linearGradient>
+  <linearGradient id="stem_01" x2="1" y2="0">
+    <stop offset="0" stop-color="#191919"/>
+    <stop offset=".5" stop-color="#bebebe"/>
+    <stop offset="1" stop-color="#5c5c5c"/>
+  </linearGradient>
+  <linearGradient id="stem_02" x2="1" y2="0">
+    <stop offset="0" stop-color="#1d1d1d"/>
+    <stop offset=".5" stop-color="#666"/>
+    <stop offset="1" stop-color="#444"/>
+  </linearGradient>
+  <linearGradient id="stem_03" x2="1" y2="0">
+    <stop offset="0" stop-color="#555"/>
+    <stop offset=".5" stop-color="#bbb"/>
+    <stop offset=".75" stop-color="#505050"/>
+    <stop offset="1" stop-color="#191919"/>
+  </linearGradient>
+  <linearGradient id="stem_04" x2="0" y2="1">
+    <stop offset="0" stop-color="#333"/>
+    <stop offset=".5" stop-color="#666"/>
+    <stop offset="1" stop-color="#333"/>
+  </linearGradient>
+  <linearGradient id="stem_05" x2="1" y2="0">
+    <stop offset="0" stop-color="#9b9b9b"/>
+    <stop offset="1" stop-color="#1d1d1d"/>
+  </linearGradient>
+  <linearGradient id="stem_06" x1=".7" x2=".2" y2="1">
+    <stop offset="0" stop-color="#252525"/>
+    <stop offset=".6" stop-color="#666"/>
+    <stop offset="1" stop-color="#393939"/>
+  </linearGradient>
+  <linearGradient id="stem_07" x2="1" y2="0">
+    <stop offset="0" stop-color="#838383"/>
+    <stop offset="1" stop-color="#181818"/>
+  </linearGradient>
+  <linearGradient id="stem_08" x2="0" y2="1">
+    <stop offset="0" stop-color="#747474"/>
+    <stop offset=".6" stop-color="#999999"/>
+    <stop offset="1" stop-color="#747474"/>
+  </linearGradient>
+  <filter id="h_color">
+    <feColorMatrix
+      color-interpolation-filters="sRGB"
+      type="matrix"
+      values=".5 0 0 0 0
+              0 .7 0 0 0
+              0 0 1 0 0
+              0 0 0 1 0 "/>
+  </filter>
+  <filter id="a_color">
+    <feColorMatrix
+      color-interpolation-filters="sRGB"
+      type="matrix"
+      values="1 0 0 0 0
+              0 .7 0 0 0
+              0 0 .5 0 0
+              0 0 0 1 0 "/>
+  </filter>
+  <filter id="c_color">
+    <feColorMatrix
+      color-interpolation-filters="sRGB"
+      type="matrix"
+      values="0 0 0 0 0
+              0 .5 0 0 0
+              0 0 0 0 0
+              0 0 0 1 0 "/>
+  </filter>
+  <filter id="blur">
+    <feGaussianBlur in="SourceGraphic" stdDeviation="3"/>
+  </filter>
+  <g id="bttn_r">
+    <path fill-opacity=".5" d="M80.32 30.36A169.1 169.1 0 008.82 4.31 5.93 5.93 0 002.2 9.68L.8 25.77a5.96 5.96 0 005.2 6.4c20.3 2.6 40.3 9.62 58.55 21.35a5.95 5.95 0 008.1-1.56l9.27-13.24a5.92 5.92 0 00-1.6-8.36z"/>
+    <path fill="#e8e8e8" stroke="#757575" stroke-width="1" d="M79.55 26.1A169.1 169.1 0 008.05.05a5.93 5.93 0 00-6.62 5.38L.03 21.52a5.96 5.96 0 005.2 6.4c20.3 2.6 40.3 9.61 58.55 21.34a5.95 5.95 0 008.1-1.55l9.27-13.25a5.93 5.93 0 00-1.6-8.36z"/>
+    <g fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="4">
+      <path d="M19.53 15.85a129.58 129.58 0 0142.1 15.56"/>
+      <path d="M58.64 22.14l3 9.27-9.28 2.99"/>
+    </g>
+  </g>
+  <g id="bttn_l">
+    <path fill-opacity=".5" d="M2.68 30.36a169.1 169.1 0 0171.5-26.05 5.93 5.93 0 016.62 5.38l1.4 16.09c.29 3.18-2.02 6-5.2 6.4a141.07 141.07 0 00-58.55 21.35 5.95 5.95 0 01-8.1-1.56L1.08 38.73a5.92 5.92 0 011.6-8.36z"/>
+    <path fill="#e8e8e8" stroke="#757575" stroke-width="1" d="M3.46 26.1A169.1 169.1 0 0174.96.05a5.93 5.93 0 016.62 5.38l1.4 16.09c.29 3.19-2.02 6-5.2 6.4a141.07 141.07 0 00-58.55 21.34 5.95 5.95 0 01-8.1-1.55L1.86 34.45a5.92 5.92 0 011.6-8.36z"/>
+    <g fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="4">
+      <path d="M63.47 15.85a129.58 129.58 0 00-42.1 15.56"/>
+      <path d="M24.36 22.14l-3 9.27 9.28 2.99"/>
+    </g>
+  </g>
+  <path id="arrow_r" fill="#BC0000" d="M22.31 0L-.62-22.89v12.59h-21.69v20.6H-.62v12.59L22.31 0z"/>
+  <path id="arrow_o" fill="#F7931E" d="M22.31 0L-.62-22.89v12.59h-21.69v20.6H-.62v12.59L22.31 0z"/>
+  <path id="arrow_y" fill="#FFFF00" d="M22.31 0L-.62-22.89v12.59h-21.69v20.6H-.62v12.59L22.31 0z"/>
+  <g id="popup_close">
+    <rect fill-opacity="0" width="24" height="24" x="-12" y="-12" />
+    <path fill="#555" d="M3.72 0L9.3 5.58 5.58 9.3 0 3.72-5.58 9.3-9.3 5.58-3.72 0-9.3-5.58l3.72-3.72L0-3.72 5.58-9.3 9.3-5.58 3.72 0z"/>
+  </g>
+  <g id="ring">
+    <path fill="#333" d="M120 215.88a95.88 95.88 0 110-191.76A95.88 95.88 0 01215.88 120 95.88 95.88 0 01120 215.88M120 0C53.73 0 0 53.73 0 120c0 66.27 53.73 120 120 120 66.27 0 120-53.73 120-120C240 53.73 186.27 0 120 0"/>
+    <path fill="#828282" d="M120 219.56c-54.98 0-99.56-44.58-99.56-99.56 0-54.98 44.58-99.56 99.56-99.56 54.98 0 99.56 44.58 99.56 99.56 0 54.98-44.58 99.56-99.56 99.56m0-209.34C59.37 10.22 10.22 59.37 10.22 120S59.37 229.78 120 229.78 229.78 180.63 229.78 120 180.63 10.22 120 10.22"/>
+    <path fill="#707070" d="M214.8 50.5a117.98 117.98 0 00-48.16-38.43c-1.18-.47-2.46.23 5.71 4.65 7.28 3.93 17.74 10.7 21.65 13.86 8.75 7.04 13.68 14 17.62 18.75 4.28 5.17 4.23 2.62 3.18 1.16"/>
+    <path fill="#e6e6e6" d="M205.4 181.66c-16.23 20.91-44.47 45.07-84.67 45.07-17.36 0-54.67-4.44-83.07-36.01-26.52-29.47-27.44-63.27-27.44-72.68C10.22 57.4 59.37 8.26 120 8.26S229.78 57.4 229.78 118.04c0 13.65-3.84 37.16-24.38 63.62M233.71 120C233.71 57.2 182.8 6.29 120 6.29S7.02 56.59 7.02 119.39c0 28.64 16.28 60.84 33.31 76.74 17.04 15.91 37.06 33.5 87.22 33.5 41 0 81.05-36.3 91.15-58.76 7.25-16.1 21.15-47.92 5.06-92.46 5.61 12.16 13.46 38.98 4.3 72.06-7.89 28.48-24.78 44.26-30.5 50.16 14.37-12.32 36.15-38.37 36.15-80.63"/>
+    <path fill="#fff" d="M36.58 64.77c-4.89 6.51-9.14 13.45-10.22 7.13-1.07-6.32 4.44-13.71 8.81-21.32C19.91 69.2 11.4 92.85 11.4 118.96c0 24.08 8.93 46.84 22.12 64.9-4.9-9.54-8.68-16.18-5.6-16.28-1.2-3.27.5-5.85 2.48-2.78 1.98 3.08 11.1 17.55 17.8 22.81A98.28 98.28 0 0121.39 120c0-35.84 20.2-62.9 44.09-80.9-5.53 2.87-19.15 12.7-28.9 25.67"/>
+    <path fill="#5e5e5e" d="M238.75 120.94c1.35 10.1-4.78 42.01-17.67 61.98-12.9 19.96-26.8 32.83-51.16 44.71-1.04-1.25-4.37.62-4.37.62s3.74-3.12-2.29-1.87-9.77 1.66-9.77 1.66 28.43-9.62 47.41-28.07c17.01-16.53 27.26-37 31-55.62 3.96-19.62 3.35-29.2 3.35-29.2s2.67-.45 3.5 5.8"/>
+    <path fill="#5e5e5e" d="M64.74 224.38s-19.46-10.07-34.73-27.51c-15.27-17.45-25-48.16-25.17-53.02-.08-2.54 3.84 11.39 9.57 22.31 5.25 10 12.21 16.8 15.1 20.8 6.04 8.4 24.16 26.35 46.48 35.74-7.22-1.34-18.46-7.88-16.28-4.86 2.18 3.02 9.4 7.89 5.03 6.54"/>
+    <path fill="#d9d9d9" d="M206.9 172.09c10.23-15.29 14.4-30.6 14.4-50.35 0-55.94-45.36-101.29-101.3-101.29-29.25 0-55.6 12.4-74.1 32.22 5.26-5.36 34-29.8 73.89-29.8a97.31 97.31 0 0197.55 97.5c0 16.7-3.5 31.57-10.62 45.46-16.2 31.56-46.33 51-86.72 51.99 47.82 1.13 73.63-25.93 86.9-45.73"/>
+    <path fill="#fff" d="M119.6 216.35c-52.63 0-94.93-42.86-95.47-95.36v1a95.88 95.88 0 00191.75 0l-.02-1c-.53 52.5-43.65 95.36-96.27 95.36"/>
+    <path fill="#707070" d="M70.52 24.34c10.19-6.93 40.03-15.1 42.23-9.18 1.5 4.06-10.96 4.17-18.46 6.16-13.44 3.55-16.55 6.84-20.23 6.41-3.08-.35-6.12-1.63-3.54-3.4"/>
+    <path fill="#5c5c5c" d="M87.22 215.62s6.94 4.1 25.01 6.86c14.8 2.27 37.4 1.54 46.94-6.85 7.95-6.98-4.43-.8-9.47.57-18.23 4.97-34.26 6.14-62.48-.58"/>
+  </g>
+</defs>
+
+<a href="page_05.svg" id="bttn_prev" class="nav_button">
+  <path class="nav_button_bg" d="M184.5 119.66H63.98c-6.6 0-12-5.4-12-12V69.84c0-6.6 5.4-12 12-12H184.5c6.6 0 12 5.4 12 12v37.83c0 6.59-5.4 11.99-12 11.99z"/>
+  <text x="126" y="100">PREV</text>
+</a>
+<a href="page_07.svg" id="bttn_next" class="nav_button">
+  <path class="nav_button_bg" d="M1856.02 119.66H1735.5c-6.6 0-12-5.4-12-12V69.84c0-6.6 5.4-12 12-12h120.52c6.6 0 12 5.4 12 12v37.83c0 6.59-5.4 11.99-12 11.99z"/>
+  <text x="1798" y="100">NEXT</text>
+</a>
+<a href="javascript:;" id="bttn_tofc" class="nav_button">
+  <path class="nav_button_bg" d="M184.5 217.16H63.98c-6.6 0-12-5.4-12-12v-37.83c0-6.6 5.4-12 12-12H184.5c6.6 0 12 5.4 12 12v37.83c0 6.6-5.4 12-12 12z"/>
+  <text x="126" y="199">TofC</text>
+</a>
+<a href="javascript:;" id="bttn_cutaway">
+  <path fill-opacity=".5" d="M184.5 1033.21H63.98c-6.6 0-12-5.4-12-12v-37.83c0-6.6 5.4-12 12-12H184.5c6.6 0 12 5.4 12 12v37.83c0 6.6-5.4 12-12 12z"/>
+  <path fill="#FFF" stroke="#757575" d="M184.5 1029.43H63.98c-6.6 0-12-5.4-12-12V979.6c0-6.6 5.4-12 12-12H184.5c6.6 0 12 5.4 12 12v37.83c0 6.6-5.4 12-12 12z"/>
+  <text x="126" y="1008">CUTAWAY</text>
+</a>
+<g id="page_num">
+  <circle cx="1821.47" cy="984.85" r="41.88" fill="#fff"/>
+  <text x="1821.47" y="1005.44">6</text>
+</g>
+
+<text x="960" y="106" class="ttl">Low Flow RSTR Detail</text>
+<a id="info" class="popup_box" fill="#fff" href="javascript:;">
+  <path id="info_bg" fill-opacity="0" stroke="#fff" stroke-width="3" d="M1291 53.55a17.01 17.01 0 010 34 17.01 17.01 0 010-34h0z"/>
+  <path fill="#FFF" d="M1293.38 70.85a2.59 2.59 0 00-2.57-2.42 2.6 2.6 0 00-2.58 2.42v7.13a2.6 2.6 0 002.58 2.42 2.59 2.59 0 002.57-2.42v-7.13z"/>
+  <path fill="#FFF" d="M1293.38 63.39a2.59 2.59 0 00-2.57-2.42 2.6 2.6 0 00-2.58 2.42v.03a2.6 2.6 0 002.58 2.42 2.59 2.59 0 002.57-2.42v-.03z"/>
+</a>
+<text x="960" y="159" class="text_body">
+  The motor-driven stem adjusts the orifice area along with the pressure-balanced spring tension
+  <tspan x="960" dy="32">giving the SkoFlo Low Flow series its 250:1 turndown performance.</tspan>
+</text>
+
+<g id="pipes" transform="translate(300 0)">
+  <rect width="345.43" height="83.83" x="651.97" y="642.89" fill="url(#pipe_grd1)"/>
+  <rect width="350.43" height="10" x="651.97" y="641.89" fill="#CCC"/>
+  <rect width="275.6" height="10" x="651.97" y="716.72" fill="#555"/>
+  <rect width="424.33" height="83.83" x="922.57" y="727.25" fill="url(#pipe_grd1)"/>
+  <rect width="354.5" height="10" x="992.4" y="726.25" fill="#CCC"/>
+  <polygon points="992.4 651.89 992.4 736.25 927.57 801.08 927.57 716.72" fill="url(#pipe_grd12)"/>
+  <rect width="10" height="94.36" x="992.4" y="641.89" fill="#CCC"/>
+  <rect width="10" height="94.32" x="917.57" y="716.72" fill="#555"/>
+  <rect width="429.33" height="10" x="917.57" y="801.08" fill="#555"/>
+</g>
+
+<g id="white_bar" transform="translate(-200 0)">
+  <circle cx="1748.03" cy="763.27" r="101" fill="#FFF" fill-rule="evenodd" clip-rule="evenodd"/>
+  <path fill="#696969" stroke="#383838" stroke-width=".84" d="M1748.03 655.72c-59.4 0-107.56 48.15-107.56 107.56 0 59.4 48.15 107.56 107.56 107.56s107.56-48.15 107.56-107.56c-.01-59.41-48.16-107.56-107.56-107.56zm0 208.55c-55.78 0-101-45.22-101-101s45.22-101 101-101 101 45.22 101 101-45.22 101-101 101z"/>
+  <g id="white_dashes" fill="none" stroke="#000" stroke-linecap="round" stroke-width="1.68">
+    <path d="M1792.55 840.38l-6.6-11.43"/>
+    <path d="M1703.51 686.16l6.6 11.43"/>
+    <path d="M1816.23 820.5l-5.82-4.88"/>
+    <path d="M1679.82 706.04l5.82 4.88"/>
+    <path d="M1831.7 793.72l-7.14-2.59"/>
+    <path d="M1664.36 732.82l7.14 2.6"/>
+    <path d="M1837.07 763.27h-13.2"/>
+    <path d="M1658.99 763.27h13.2"/>
+    <path d="M1831.7 732.82l-7.14 2.6"/>
+    <path d="M1664.36 793.72l7.14-2.59"/>
+    <path d="M1816.23 706.04l-5.82 4.88"/>
+    <path d="M1679.82 820.5l5.82-4.88"/>
+    <path d="M1792.55 686.16l-6.6 11.43"/>
+    <path d="M1703.51 840.38l6.6-11.43"/>
+    <path d="M1763.49 675.59l-1.32 7.48"/>
+    <path d="M1732.57 675.59l1.32 7.48"/>
+  </g>
+  <path id="white_ttl" d="M1746.01 843.46v3.36h-1.96v-9.53h3.71c.72 0 1.35.13 1.9.4a2.91 2.91 0 011.68 2.76c0 .93-.32 1.67-.96 2.2-.63.54-1.52.81-2.65.81h-1.72zm7.55 3.36v-9.53h2.94c.83 0 1.58.2 2.24.57.66.38 1.18.91 1.55 1.6.37.7.56 1.5.56 2.38v.44c0 .88-.19 1.67-.55 2.36a3.9 3.9 0 01-1.54 1.6c-.66.38-1.41.58-2.24.58h-2.96zm-15.68-1.58h4.17v1.58h-6.13v-9.53h1.96v7.95zm17.65-6.36v6.36h.95c.76 0 1.35-.25 1.76-.75.4-.5.6-1.22.62-2.15v-.5c0-.97-.2-1.7-.6-2.2s-1-.76-1.76-.76h-.97zm-9.52 3h1.75c.52 0 .92-.13 1.2-.37.26-.25.4-.6.4-1.05 0-.47-.14-.84-.41-1.13-.3-.3-.71-.46-1.14-.45h-1.8v3zm23.75-22.93c-.81-1.4-1.12-2.66-.93-3.78a3.75 3.75 0 012-2.67 3.78 3.78 0 013.33-.4c1.07.4 2 1.29 2.8 2.68l1.1 1.89c.8 1.4 1.12 2.66.93 3.78a3.75 3.75 0 01-2 2.67c-.98.64-2.21.79-3.32.39-1.07-.4-2.01-1.29-2.81-2.69l-1.1-1.87zm3.66.81c.43.74.85 1.24 1.25 1.5.4.25.82.26 1.24.02.4-.24.6-.58.6-1.03a4.07 4.07 0 00-.6-1.72l-1.52-2.64c-.3-.6-.74-1.12-1.27-1.53a1.1 1.1 0 00-1.23 0c-.39.2-.62.61-.6 1.04 0 .46.22 1.06.65 1.81l1.48 2.55zm-58.54-7.4c.8-1.4 1.74-2.29 2.8-2.69a3.72 3.72 0 013.32.4 3.76 3.76 0 012 2.69c.2 1.13-.11 2.38-.91 3.77l-1.1 1.89c-.8 1.4-1.73 2.29-2.8 2.69-1.06.4-2.17.26-3.32-.4a3.75 3.75 0 01-2-2.68c-.2-1.13.12-2.39.92-3.78l1.09-1.89zm68.32 7.18l-1.1-1.88.12-.06a4.06 4.06 0 001.83-1.92c.33-.76.34-1.56.03-2.4-.23.84-.76 1.5-1.6 1.98-.88.52-1.8.6-2.7.25a4.57 4.57 0 01-2.27-2.11 4.23 4.23 0 01-.58-2.08c-.01-.73.18-1.41.56-2.04s.9-1.14 1.58-1.53a4.38 4.38 0 012.26-.63c.77 0 1.5.22 2.18.65a5.35 5.35 0 011.74 1.86l.55.96c.62 1.07.94 2.16.97 3.27a5.74 5.74 0 01-.8 3.13 6.52 6.52 0 01-2.4 2.35l-.37.2zm-67.2-3.6a4.31 4.31 0 00-.67 1.83c-.02.48.18.84.6 1.08.42.24.82.24 1.2.01.5-.36.91-.83 1.2-1.37l1.53-2.64c.45-.77.67-1.39.69-1.86 0-.47-.2-.83-.61-1.07a1.09 1.09 0 00-1.2 0c-.4.24-.81.72-1.24 1.46l-1.5 2.56zm66.27-2.99c.55-.29.88-.88.83-1.5l-.41-.72c-.75-1.31-1.58-1.7-2.5-1.18-.36.21-.57.55-.62 1.02-.06.47.06.95.34 1.44.29.51.66.85 1.09 1.02.44.18.86.15 1.27-.08zm-27.3-14.72a7.55 7.55 0 01-.64 3.25 4.92 4.92 0 01-4.66 2.91 4.95 4.95 0 01-4.68-2.89c-.46-1-.7-2.1-.68-3.2v-.62c0-1.24.22-2.32.67-3.26a4.95 4.95 0 014.68-2.91c2-.05 3.84 1.09 4.68 2.91.44.94.67 2.02.67 3.25v.56h-.04zm11.65 2.37l1.69-8.92h2.58l-2.78 12.54h-2.6l-2.04-8.39-2.04 8.39h-2.6l-2.78-12.54h2.58l1.7 8.91 2.07-8.91h2.19l2.03 8.92zm-28.36 1.54h5.49v2.08h-8.07v-12.54h2.58v10.46zm-4.7-3.05h-4.97v5.12h-2.58v-12.54h8.17v2.09h-5.58V797h4.96v2.09zm18.8-1.43c0-1.31-.24-2.31-.71-3a2.32 2.32 0 00-2.02-1.03c-.87 0-1.54.34-2.01 1.01-.53.9-.78 1.93-.71 2.97v.61c0 1.28.24 2.27.7 2.98a2.3 2.3 0 002.04 1.06c.87 0 1.53-.34 2-1.02.46-.68.7-1.67.7-2.98v-.6h.01zm58.63-25.61c-.58 0-1.1-.14-1.53-.43-.44-.29-.8-.68-1.07-1.18a3.47 3.47 0 01-1.14 1.35c-.48.33-1.06.5-1.72.5-.97.04-1.9-.36-2.53-1.1a4.62 4.62 0 01-.93-3.04c0-1.3.3-2.32.93-3.07a3.1 3.1 0 012.52-1.12 3 3 0 011.7.49c.49.33.88.79 1.17 1.39.27-.51.62-.91 1.07-1.2.45-.29.95-.43 1.53-.43 1.04 0 1.86.35 2.46 1.06s.9 1.66.9 2.85c0 1.21-.3 2.17-.9 2.87s-1.42 1.06-2.46 1.06zm-117.18-5.92v2.77h-8.83l.79 2.72h-2.1l-1.81-5.24v-.25h11.95zm111.94 3.38c.49 0 .87-.13 1.14-.38.26-.25.4-.59.4-1 0-.42-.13-.75-.4-1.01s-.64-.39-1.14-.39c-.48 0-.85.13-1.13.39s-.41.6-.41 1.02c0 .41.14.74.4.99.28.26.66.38 1.14.38zm6.47-1.39c0-.37-.12-.66-.37-.85a1.58 1.58 0 00-1.01-.29c-.43 0-.77.1-1.03.3s-.4.49-.4.87.14.66.4.85.6.28 1.03.28.76-.1 1-.29c.26-.19.38-.49.38-.87zm-118.41-13.93v8.34h-1.8l-4.04-3.84c-1.08-.95-1.93-1.42-2.57-1.42-.51 0-.91.11-1.17.34-.27.22-.4.55-.4.98 0 .42.18.76.54 1.03.36.26.8.39 1.34.39v2.77a3.91 3.91 0 01-3.5-2.08 4.58 4.58 0 01-.52-2.18c0-1.29.3-2.29.89-2.98.6-.7 1.45-1.05 2.57-1.05.47 0 .93.09 1.37.26s.9.45 1.4.82c.49.37 1.14.96 1.96 1.78l1.78 1.54v-4.7h2.15zm113.09 7.37v1.21h-2.13v-1.21h-2.54v-2.76h2.54v-4.62l1.69-.16 7.69 4.78h.02v2.76h-7.27zm0-4.91v2.15h3.67l-.28-.17-3.4-1.98h.01zm-86.56-40.01l-7.22 4.17-.9-1.56 1.3-5.42c.29-1.41.27-2.38-.04-2.93-.26-.45-.55-.73-.88-.85s-.68-.07-1.05.14c-.36.21-.57.54-.62.98s.06.89.33 1.36l-2.4 1.39a3.9 3.9 0 01.05-4.05c.39-.63.93-1.14 1.63-1.55a4.5 4.5 0 013.03-.72c.9.17 1.63.74 2.19 1.7.24.41.39.85.46 1.32.07.47.07 1.01 0 1.62-.08.61-.26 1.47-.56 2.59l-.45 2.31 4.07-2.35 1.06 1.85zm67.26-7.12l-1.1 1.88-.1-.06a4.12 4.12 0 00-2.58-.63 3.2 3.2 0 00-2.1 1.17 3.19 3.19 0 012.5.39 3 3 0 011.58 2.21 4.62 4.62 0 01-.7 3.03 4.1 4.1 0 01-1.5 1.54c-.63.37-1.31.55-2.04.54a4.26 4.26 0 01-2.12-.6 4.48 4.48 0 01-1.68-1.64 4.06 4.06 0 01-.52-2.21c.04-.81.28-1.62.74-2.43l.55-.96a6.95 6.95 0 012.34-2.48c.93-.58 2-.89 3.1-.87 1.14.01 2.22.31 3.25.9l.38.22zm-5.24 4.11c-.28-.17-.6-.25-.92-.24-.3.02-.56.11-.8.27l-.4.72c-.75 1.31-.68 2.22.23 2.74.37.21.76.22 1.2.04.43-.19.79-.53 1.07-1.02.29-.51.4-.99.34-1.46a1.35 1.35 0 00-.72-1.05zm-9.27-6.73l1.13.65c.9.52 1.6.34 2.1-.54.2-.34.25-.68.16-1.02a1.36 1.36 0 00-.72-.84c-.3-.18-.65-.25-1-.2a.96.96 0 00-.74.49l-2.4-1.38c.32-.54.76-.94 1.3-1.19a3.45 3.45 0 011.85-.27c.68.07 1.33.29 1.98.66 1 .5 1.8 1.34 2.26 2.36.35.91.27 1.82-.26 2.74-.26.45-.64.79-1.14 1.02a3.4 3.4 0 01-1.75.28c.43.52.69 1.07.77 1.65.07.62-.07 1.24-.4 1.77a3.08 3.08 0 01-2.35 1.6 5.12 5.12 0 01-3.28-.79 5.23 5.23 0 01-1.66-1.48 3.5 3.5 0 01-.7-1.83c-.04-.62.12-1.24.45-1.82l2.4 1.39c-.17.32-.2.67-.08 1.05s.37.68.74.89c.42.24.83.32 1.2.23.4-.09.69-.32.9-.68.3-.52.38-.97.25-1.33a1.9 1.9 0 00-.9-.95l-1.15-.67 1.04-1.79zm-47.55 1.35l1.05-.61 1.07 1.85-1.05.61 1.27 2.2-2.4 1.38-1.26-2.2-4 2.31-1-1.38.3-9.05-.01-.02 2.39-1.38 3.64 6.29zm-4.26 2.46l1.86-1.07-1.84-3.18-.01.33-.01 3.92z"/>
+  <g id="white_arrow" transform="rotate(-150 1748.044 763.201)">
+    <circle cx="1748.03" cy="763.27" r="9.28"/>
+    <polygon points="1745.38 786.57 1750.7 786.57 1748.6 682.96 1747.48 682.96"/>
+    <circle cx="1748.03" cy="763.27" r="4.98" fill="#FFF"/>
+  </g>
+  <use x="1628.024" y="643.327" xlink:href="#ring"/>
+</g>
+
+<g id="toggle" transform="translate(300 0)">
+  <line fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="5.6" x1="1142.66" x2="1142.66" y1="481.04" y2="498"/>
+  <circle cx="1143.4" cy="408.4" r="62.4" fill="#474644"/>
+  <circle cx="1143.4" cy="408.4" r="55.6" fill="#2E2D2C"/>
+  <circle cx="1143.4" cy="408.4" r="49.4" fill="#7D7876"/>
+  <path fill="#B3B3B3" d="M1095.7 408.4c0-27 21.7-49 48.6-49.4h-.9a49.4 49.4 0 100 98.8h.9a49.4 49.4 0 01-48.6-49.4z"/>
+  <path d="M1143.4 359h-.7a49.4 49.4 0 010 98.8h.7a49.4 49.4 0 100-98.8z"/>
+  <path fill="url(#pipe_grd5)" id="toggle_arrow" d="M1230.8 425.1s2-6.3 2-16.7c0-9-2-16.7-2-16.7H1056s-2 6.4-2 16.7 2 16.7 2 16.7h174.8z"/>
+  <a id="tgl_left" class="bttn" href="javascript:;">
+    <use x="1053.825" y="280" xlink:href="#bttn_l"/>
+  </a>
+  <a id="tgl_right" class="bttn" href="javascript:;">
+    <use x="1150.833" y="280" xlink:href="#bttn_r"/>
+  </a>
+</g>
+
+<g id="valve" transform="translate(300 0)">
+<g fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="5.6">
+  <path id="valve_top" transform="translate(0 20)" d="M712.46 641.92a68 68 0 0048.19 19.95 68 68 0 0048.19-19.95"/>
+  <path id="valve_bottom" transform="translate(0 -20)" d="M712.46 726.7a68 68 0 0148.19-19.95 68 68 0 0148.19 19.95"/>
+  <line x1="737.47" x2="783.85" y1="736.25" y2="629.5"/>
+  <polyline points="788.11 641.11 783.85 629.5 772.6 634.64"/>
+  <polyline id="valve_line" transform="translate(0 20)" stroke-dasharray="30 20" stroke-dashoffset="10" points="957.43 630.91 1142.66 630.91 1142.66 501.44 760.66 501.44 760.66 660"/>
+  <g id="spring">
+    <line id="spring_1" x1="932.43" x2="982.43" y1="576" y2="597"/>
+    <line id="spring_2" x1="932.43" x2="982.43" y1="618" y2="597"/>
+    <line id="spring_3" x1="932.43" x2="982.43" y1="618" y2="639"/>
+    <line id="spring_4" x1="957.43" x2="982.43" y1="650" y2="639"/>
+  </g>
+</g>
+
+<g id="valve_body">
+  <g fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="5.6">
+    <line x1="957.43" x2="957.43" y1="575.42" y2="730.89"/>
+    <path d="M912.51 575.42a47.49 47.49 0 1194.98 0h-94.98z"/>
+  </g>
+  <path d="M955.3 749.92l-13.81-21.28a2.55 2.55 0 012.14-3.94h27.63a2.55 2.55 0 012.14 3.94l-13.81 21.28a2.56 2.56 0 01-4.29 0z"/>
+</g>
+</g>
+
+<g id="stem_3d">
+  <g id="stem_move">
+    <path fill="#2F2F31" d="M589.35 331.91c-155.8 0-282.1 15.41-282.1 34.42s126.3 34.42 282.1 34.42l10.31-.02 143.1-5.51c77.46-6.14 128.69-16.78 128.69-28.89 0-19.01-126.3-34.42-282.1-34.42z"/>
+    <ellipse cx="589.35" cy="366.32" rx="219.26" ry="27.21" fill="url(#stem_01)"/>
+    <path d="M589.35 339.11c-121.09 0-219.26 12.18-219.26 27.21 0 2.59 2.91 5.09 8.35 7.46a3.6 3.6 0 01-.39-1.57c0-14.39 94.6-26.05 211.3-26.05s211.3 11.66 211.3 26.05a3.6 3.6 0 01-.39 1.57c5.44-2.37 8.35-4.88 8.35-7.46 0-15.02-98.16-27.21-219.26-27.21z" fill="url(#stem_02)"/>
+    <path d="M307.26 921.43c0 19.01 126.3 34.42 282.1 34.42l10.31-.02 143.1-5.51c77.46-6.14 128.69-16.78 128.69-28.89v-555.1c0 12.11-51.24 22.75-128.69 28.89l-143.1 5.51-10.31.02c-155.8 0-282.1-15.41-282.1-34.42v555.1z" fill="url(#stem_03)"/>
+    <polygon fill="#666" points="599.66 955.82 742.76 950.32 742.76 395.21 599.66 400.72"/>
+  </g>
+  <g id="full_part" class="">
+    <ellipse cx="670.55" cy="669.61" rx="180.12" ry="188.7" fill="url(#stem_04)"/>
+    <ellipse cx="691.87" cy="673.67" rx="180.12" ry="188.7" fill="url(#stem_05)"/>
+    <ellipse cx="694.78" cy="673.94" fill="#666" rx="174.55" ry="182.87"/>
+    <ellipse cx="744.14" cy="691.8" rx="89.03" ry="92" fill="url(#stem_06)"/>
+    <ellipse cx="684.76" cy="668.04" rx="64.57" ry="67.64" fill="url(#stem_08)"/>
+    <ellipse cx="684.76" cy="668.04" rx="40.5" ry="42.42" fill="#585858"/>
+    <path d="M693.55 626.63c12.35 7.27 20.71 21.11 20.71 37.01 0 23.43-18.13 42.42-40.5 42.42-3.02 0-5.96-.36-8.79-1.01a38.9 38.9 0 0019.79 5.41c22.36 0 40.5-18.99 40.5-42.42-.01-20.27-13.57-37.2-31.71-41.41z" fill="url(#stem_06)"/>
+    <path d="M668.66 694.42c0-47.06 36.41-85.21 81.33-85.21 6.26 0 12.35.77 18.21 2.17l2.3-7.46s-58.84-19.93-60.26-20.22a86.77 86.77 0 00-16.86-1.65c-49.17 0-89.03 41.19-89.03 92 0 37.06 21.21 69 51.77 83.58l60.37 21.65 1.94-6.31c-29.25-12.91-49.77-43.22-49.77-78.55z" fill="url(#stem_06)"/>
+    <path filter="url(#blur)" fill="#ddd" d="M604.17 674.21c0-50.81 39.86-92 89.03-92 11.9 0 23.24 2.42 33.62 6.79a86.37 86.37 0 00-36.86-8.23c-49.17 0-89.03 41.19-89.03 92 0 38.52 22.91 71.5 55.42 85.21-30.78-14.48-52.18-46.54-52.18-83.77z"/>
+    <path fill="url(#stem_07)" d="M744.14 599.81c-49.17 0-89.03 41.19-89.03 92s39.86 92 89.03 92 89.03-41.19 89.03-92-39.86-92-89.03-92zm0 168.1c-40.68 0-73.66-34.07-73.66-76.11s32.98-76.11 73.66-76.11 73.66 34.07 73.66 76.11-32.98 76.11-73.66 76.11z"/>
+    <path fill="#666" d="M749.99 609.22c-44.92 0-81.33 38.15-81.33 85.21s36.41 85.21 81.33 85.21 81.33-38.15 81.33-85.21-36.41-85.21-81.33-85.21zm0 152.84c-35.66 0-64.57-30.28-64.57-67.64s28.91-67.64 64.57-67.64 64.57 30.28 64.57 67.64-28.91 67.64-64.57 67.64z"/>
+  </g>
+</g>
+
+<g id="popup_demo" class="popup_box invis">
+  <path fill="#fff" opacity=".5" d="M1828.72 215.25h-255.11a22.29 22.29 0 00-22.17 22.17l-37.7 40.05 37.7-15.84v63.01a22.29 22.29 0 0022.17 22.17h255.11a22.29 22.29 0 0022.17-22.17v-87.22c0-12.16-10-22.17-22.16-22.17h-.01z"/>
+  <text x="1700" y="258">
+    To demonstrate, click
+    <tspan x="1700" dy="32">the arrows to adjust</tspan>
+    <tspan x="1700" dy="32">valve setpoint</tspan>
+  </text>
+  <a id="popup_demo_close" class="bttn_close" href="javascript:;">
+    <use x="1862.3" y="209.5" xlink:href="#popup_close"/>
+  </a>
+</g>
+
+<g id="popup_stem" class="popup_box invis">
+  <path fill="#fff" opacity=".5" d="M1062.8 459.24h210.11a22.29 22.29 0 0022.17-22.17l37.7-40.04-37.7 15.83v-9a22.29 22.29 0 00-22.17-22.18H1062.8a22.29 22.29 0 00-22.17 22.17v33.23c0 12.16 10 22.16 22.16 22.16h.01z"/>
+  <text x="1168" y="428">
+    Adjustment stem
+  </text>
+  <a id="popup_stem_close" class="bttn_close" href="javascript:;">
+    <use x="1304.3" y="374" xlink:href="#popup_close"/>
+  </a>
+</g>
+
+<g id="popup_stem3d" class="popup_box invis">
+  <path fill="#fff" opacity=".5" d="M1157.63 249H884.52a22.29 22.29 0 00-22.17 22.18l-37.7 40.04 37.7-15.83v30a22.29 22.29 0 0022.17 22.18h273.11a22.29 22.29 0 0022.17-22.17v-54.22-.01c0-12.16-10-22.16-22.16-22.16h-.01z"/>
+  <text x="1022" y="292">
+    Adjustment stem
+    <tspan x="1022" dy="32">powered by gear</tspan>
+  </text>
+  <a id="popup_stem3d_close" class="bttn_close" href="javascript:;">
+    <use x="1192.2" y="243.3" xlink:href="#popup_close"/>
+  </a>
+</g>
+
+<script>
+<![CDATA[
+let t_angle = 0;
+let w_angle = 0;
+let arrows_shift = 1;
+let animation_id;
+let allow_play = true;
+let cutaway = true;
+let setint;
+let spring_pos;
+
+function $(sel) {
+  return document.querySelector(sel);
+}
+
+// Popups
+
+$("#popup_demo_close").onclick = function() {
+  $("#popup_demo").classList.toggle("invis");
+};
+
+$("#popup_stem_close").onclick = function() {
+  $("#popup_stem").classList.toggle("invis");
+};
+
+$("#popup_stem3d_close").onclick = function() {
+  $("#popup_stem3d").classList.toggle("invis");
+};
+
+function info_show() {
+if($("#popup_demo").classList.contains("invis") || $("#popup_stem").classList.contains("invis") || $("#popup_stem3d").classList.contains("invis")) {
+  $("#popup_demo").classList.remove("invis");
+  $("#popup_stem").classList.remove("invis");
+  $("#popup_stem3d").classList.remove("invis");
+} else {
+  $("#popup_demo").classList.toggle("invis");
+  $("#popup_stem").classList.toggle("invis");
+  $("#popup_stem3d").classList.toggle("invis");
+  }
+}
+
+$("#info").onclick = function() {
+  info_show();
+}
+
+setTimeout(function(){
+  info_show();
+}, 400);
+
+// Gauges
+
+function gw_upd() {
+  w_angle = t_angle * 2.35;
+  spring_pos = $("#spring_3").getAttribute('y1');
+  $("#stem_move").setAttribute("transform", "translate(0 " + t_angle * -.9 + ")");
+  $("#white_arrow").setAttribute("transform", "rotate(" + (w_angle - 150) + " 1748.044 763.201)");
+  $("#valve_line").setAttribute("transform", "translate(0 " + (100 - t_angle) / 5 + ")");
+  $("#valve_top").setAttribute("transform", "translate(0 " + (100 - t_angle) / 5 + ")");
+  $("#valve_bottom").setAttribute("transform", "translate(0 " + (100 - t_angle) / -5 + ")");
+  $("#spring_4").setAttribute("y1", 630 + (100 - t_angle) / 5);
+  $("#spring_4").setAttribute("y2", 624 + (100 - t_angle) / 6.666);
+  $("#spring_3").setAttribute("y2", 624 + (100 - t_angle) / 6.666);
+  $("#spring_3").setAttribute("y1", 608 + (100 - t_angle) / 10);
+  $("#spring_2").setAttribute("y1", 608 + (100 - t_angle) / 10);
+  $("#spring_2").setAttribute("y2", 592 + (100 - t_angle) / 20);
+  $("#spring_1").setAttribute("y2", 592 + (100 - t_angle) / 20);
+
+  if (w_angle > 1) {
+    if(allow_play) {
+      animation_id = requestAnimationFrame(animate);
+    }
+    allow_play = false;
+  } else {
+    $("#white_arrow").setAttribute("transform", "rotate(-150 1748.044 763.201)");
+    cancelAnimationFrame(animation_id);
+    allow_play = true;
+  }
+}
+
+function tgl_dwn() {
+  if(t_angle > 0) {
+    t_angle -= 2;
+    $("#toggle_arrow").setAttribute("transform", "rotate(" + ((100 - t_angle) * 1.8 - 180) + " 1143.412 408.396)");
+  }
+  gw_upd();
+}
+
+function tgl_up() {
+  if(t_angle < 100) {
+    t_angle += 2;
+    $("#toggle_arrow").setAttribute("transform", "rotate(" + ((100 - t_angle) * 1.8 - 180) + " 1143.412 408.396)");
+  }
+  gw_upd();
+}
+
+$("#bttn_cutaway").onclick = function() {
+ if(cutaway) {
+  $("#bttn_cutaway text").textContent = "FULL";
+  $("#full_part").classList.add("invis");
+  cutaway = false;
+ } else {
+  $("#bttn_cutaway text").textContent = "CUTAWAY";
+  $("#full_part").classList.remove("invis");
+  cutaway = true;
+ }
+};
+
+$("#tgl_left").onmousedown = function() {
+  clearInterval(setint);
+  setint = setInterval(function(){tgl_up()}, 200);
+}
+$("#tgl_left").onclick = function() {tgl_up()};
+
+$("#tgl_right").onmousedown = function() {
+  clearInterval(setint);
+  setint = setInterval(function(){tgl_dwn()}, 200);
+}
+$("#tgl_right").onclick = function() {tgl_dwn()};
+
+window.onmouseup = function() {clearInterval(setint)};
+
+function animate() {
+  if(arrows_shift < 120) {
+    arrows_shift += w_angle / 30;
+    //$("#queue").setAttribute("transform", "translate(" + arrows_shift + " 0)");
+  } else {
+    arrows_shift = 1;
+    //$("#queue").setAttribute("transform", "translate(" + arrows_shift + " 0)");
+  }
+    animation_id = requestAnimationFrame(animate);
+}
+
+]]>
+</script>
+</svg>
