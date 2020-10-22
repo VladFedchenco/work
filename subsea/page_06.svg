@@ -101,7 +101,7 @@ text {
   fill-opacity: .3;
 }
 
-#full_part.invis {
+#full_part.invis, #half_part.invis {
   display: none;
 }
 
@@ -248,6 +248,11 @@ text {
   <path id="arrow_r" fill="#BC0000" d="M22.31 0L-.62-22.89v12.59h-21.69v20.6H-.62v12.59L22.31 0z"/>
   <path id="arrow_o" fill="#F7931E" d="M22.31 0L-.62-22.89v12.59h-21.69v20.6H-.62v12.59L22.31 0z"/>
   <path id="arrow_y" fill="#FFFF00" d="M22.31 0L-.62-22.89v12.59h-21.69v20.6H-.62v12.59L22.31 0z"/>
+  <path id="arrow_b" transform="rotate(-161.3 0 0)" d="M22.31 0L-.62-22.89v12.59h-21.69v20.6H-.62v12.59L22.31 0z"/>
+  <path id="arrow_sv" transform="scale(.26) rotate(90 0 0)" d="M22.31 0L-.62-22.89v12.59h-21.69v20.6H-.62v12.59L22.31 0z"/>
+  <path id="arrow_sr" transform="scale(.26)" d="M22.31 0L-.62-22.89v12.59h-21.69v20.6H-.62v12.59L22.31 0z"/>
+  <path id="arrow_sl" transform="scale(.26) rotate(-180 0 0)" d="M22.31 0L-.62-22.89v12.59h-21.69v20.6H-.62v12.59L22.31 0z"/>
+  <path id="arrow_sd" transform="scale(.26) rotate(-161.3 0 0)" d="M22.31 0L-.62-22.89v12.59h-21.69v20.6H-.62v12.59L22.31 0z"/>
   <g id="popup_close">
     <rect fill-opacity="0" width="24" height="24" x="-12" y="-12" />
     <path fill="#555" d="M3.72 0L9.3 5.58 5.58 9.3 0 3.72-5.58 9.3-9.3 5.58-3.72 0-9.3-5.58l3.72-3.72L0-3.72 5.58-9.3 9.3-5.58 3.72 0z"/>
@@ -389,19 +394,101 @@ text {
     <path d="M589.35 339.11c-121.09 0-219.26 12.18-219.26 27.21 0 2.59 2.91 5.09 8.35 7.46a3.6 3.6 0 01-.39-1.57c0-14.39 94.6-26.05 211.3-26.05s211.3 11.66 211.3 26.05a3.6 3.6 0 01-.39 1.57c5.44-2.37 8.35-4.88 8.35-7.46 0-15.02-98.16-27.21-219.26-27.21z" fill="url(#stem_02)"/>
     <path d="M307.26 921.43c0 19.01 126.3 34.42 282.1 34.42l10.31-.02 143.1-5.51c77.46-6.14 128.69-16.78 128.69-28.89v-555.1c0 12.11-51.24 22.75-128.69 28.89l-143.1 5.51-10.31.02c-155.8 0-282.1-15.41-282.1-34.42v555.1z" fill="url(#stem_03)"/>
     <polygon fill="#666" points="599.66 955.82 742.76 950.32 742.76 395.21 599.66 400.72"/>
+    <g transform="translate(674.7 759.9) scale(.8) translate(-690 -760)">
+      <rect fill="url(#pipe_grd1)" width="9.66" height="12.54" x="691.08" y="752.42"/>
+      <rect fill="url(#pipe_grd1)" width="9.66" height="12.54" x="716.58" y="710.44"/>
+      <rect fill="url(#pipe_grd1)" width="9.66" height="12.54" x="716.58" y="665.91"/>
+      <path fill="url(#stem_01)" d="M717.42 711.91a9 9 0 00-18 0v53a9 9 0 0018 0v-53z"/>
+      <path fill="url(#stem_01)" d="M717.42 567.01a9 9 0 00-18 0V676.8a9 9 0 0018 0V567z"/>
+      <path fill="url(#stem_01)" d="M742.58 668.4a9 9 0 00-18 0v50.4a9 9 0 0018 0v-50.4z"/>
+      <path fill="url(#stem_01)" d="M672.03 684.54a2.76 2.76 0 015.4 0l14.68 67.3h-34.76l14.68-67.3z"/>
+      <ellipse fill="#888" cx="674.71" cy="759.92" rx="18.86" ry="21.45"/>
+      <path fill="url(#stem_06)" d="M670.1 739.12c1.48-.42 3.02-.65 4.61-.65 10.41 0 18.87 9.61 18.87 21.45 0 11.83-8.46 21.44-18.87 21.44-6.12 0-11.56-3.32-15.01-8.46 8.18-2.35 14.25-10.77 14.25-20.8a23.3 23.3 0 00-3.85-12.98z"/>
+    </g>
+    <g clip-path="url(#arrow_clip5)">
+    <g id="queue5">
+      <use x="689" y="584" xlink:href="#arrow_sv"/>
+      <use x="689" y="614" xlink:href="#arrow_sv"/>
+      <use x="689" y="644" xlink:href="#arrow_sv"/>
+      <use x="689" y="674" xlink:href="#arrow_sv"/>
+      <use x="689" y="704" xlink:href="#arrow_sv"/>
+      <use x="689" y="734" xlink:href="#arrow_sv"/>
+      <use x="689" y="764" xlink:href="#arrow_sv"/>
+    </g>
+    </g>
+
+    <g clip-path="url(#arrow_clip6)">
+    <g id="queue6">
+      <use x="710" y="644" xlink:href="#arrow_sv"/>
+      <use x="710" y="674" xlink:href="#arrow_sv"/>
+      <use x="710" y="704" xlink:href="#arrow_sv"/>
+      <use x="710" y="734" xlink:href="#arrow_sv"/>
+    </g>
+    </g>
+
+    <g clip-path="url(#arrow_clip7)">
+    <g id="queue7">
+      <use x="663" y="674" xlink:href="#arrow_sv"/>
+      <use x="663" y="704" xlink:href="#arrow_sv"/>
+      <use x="663" y="734" xlink:href="#arrow_sv"/>
+    </g>
+    </g>
+
+    <g clip-path="url(#arrow_clip8)">
+    <g id="queue8">
+      <use x="680.8" y="765.8" xlink:href="#arrow_sd"/>
+      <use x="652.4" y="756.2" xlink:href="#arrow_sd"/>
+    </g>
+    </g>
+
+    <g clip-path="url(#arrow_clip9)">
+    <g id="queue9">
+      <use x="670" y="689.5" xlink:href="#arrow_sr"/>
+      <use x="700" y="689.5" xlink:href="#arrow_sr"/>
+    </g>
+    </g>
+
+    <g clip-path="url(#arrow_clip10)">
+    <g id="queue10">
+      <use x="700" y="725.5" xlink:href="#arrow_sl"/>
+      <use x="730" y="725.5" xlink:href="#arrow_sl"/>
+    </g>
+    </g>
+  </g>
+
+  <g clip-path="url(#arrow_clip11)">
+  <g id="queue11">
+    <use x="680" y="760" xlink:href="#arrow_sl"/>
+    <use x="710" y="760" xlink:href="#arrow_sl"/>
+  </g>
   </g>
   <g id="full_part" class="">
-    <ellipse cx="670.55" cy="669.61" rx="180.12" ry="188.7" fill="url(#stem_04)"/>
-    <ellipse cx="691.87" cy="673.67" rx="180.12" ry="188.7" fill="url(#stem_05)"/>
-    <ellipse cx="694.78" cy="673.94" fill="#666" rx="174.55" ry="182.87"/>
-    <ellipse cx="744.14" cy="691.8" rx="89.03" ry="92" fill="url(#stem_06)"/>
-    <ellipse cx="684.76" cy="668.04" rx="64.57" ry="67.64" fill="url(#stem_08)"/>
-    <ellipse cx="684.76" cy="668.04" rx="40.5" ry="42.42" fill="#585858"/>
+    <path fill-rule="evenodd" fill="url(#stem_04)" d="M670.55 480.91c99.411 0 180.12 84.554 180.12 188.7 0 104.146-80.709 188.7-180.12 188.7s-180.12-84.554-180.12-188.7c0-104.146 80.709-188.7 180.12-188.7zm-8.373 139.754c23.55 0 42.669 19.119 42.669 42.669 0 23.55-19.119 42.669-42.669 42.669-23.55 0-42.669-19.119-42.669-42.669 0-23.55 19.119-42.669 42.669-42.669z"/>
+    <path fill-rule="evenodd" fill="url(#stem_05)" d="M691.87 484.97c99.411 0 180.12 84.554 180.12 188.7 0 104.146-80.709 188.7-180.12 188.7s-180.12-84.554-180.12-188.7c0-104.146 80.709-188.7 180.12-188.7zm-29.693 135.694c23.55 0 42.669 19.119 42.669 42.669 0 23.55-19.119 42.669-42.669 42.669-23.55 0-42.669-19.119-42.669-42.669 0-23.55 19.119-42.669 42.669-42.669z"/>
+    <path fill-rule="evenodd" fill="#666" d="M694.78 491.07c96.337 0 174.55 81.941 174.55 182.87s-78.213 182.87-174.55 182.87c-96.337 0-174.55-81.941-174.55-182.87s78.213-182.87 174.55-182.87zm-32.603 129.594c23.55 0 42.669 19.119 42.669 42.669 0 23.55-19.119 42.669-42.669 42.669-23.55 0-42.669-19.119-42.669-42.669 0-23.55 19.119-42.669 42.669-42.669z"/>
+    <path fill="url(#stem_06)" d="M666.967 620.931a43.022 43.022 0 014.79-.267c23.55 0 42.669 19.119 42.669 42.669 0 23.55-19.119 42.669-42.669 42.669-1.62 0-3.219-.09-4.79-.266 21.3-2.386 37.879-20.473 37.879-42.403 0-21.929-16.579-40.017-37.879-42.402z"/>
+    <path fill="url(#stem_06)" d="M682.239 625.701c16.029-16.031 37.858-25.901 61.901-25.901 49.137 0 89.03 41.224 89.03 92s-39.893 92-89.03 92c-47.422 0-86.234-38.397-88.885-86.713 7.387 8.229 17.877 13.373 29.505 13.373 22.353 0 40.5-19.008 40.5-42.42 0-23.412-18.147-42.42-40.5-42.42-.847 0-1.688.027-2.521.081z"/>
+    <path fill-rule="evenodd" fill="url(#stem_08)" d="M684.76 600.4c35.637 0 64.57 30.308 64.57 67.64s-28.933 67.64-64.57 67.64c-35.637 0-64.57-30.308-64.57-67.64s28.933-67.64 64.57-67.64zm0 25.22c22.353 0 40.5 19.008 40.5 42.42 0 23.412-18.147 42.42-40.5 42.42s-40.5-19.008-40.5-42.42c0-23.412 18.147-42.42 40.5-42.42z"/>
     <path d="M693.55 626.63c12.35 7.27 20.71 21.11 20.71 37.01 0 23.43-18.13 42.42-40.5 42.42-3.02 0-5.96-.36-8.79-1.01a38.9 38.9 0 0019.79 5.41c22.36 0 40.5-18.99 40.5-42.42-.01-20.27-13.57-37.2-31.71-41.41z" fill="url(#stem_06)"/>
     <path d="M668.66 694.42c0-47.06 36.41-85.21 81.33-85.21 6.26 0 12.35.77 18.21 2.17l2.3-7.46s-58.84-19.93-60.26-20.22a86.77 86.77 0 00-16.86-1.65c-49.17 0-89.03 41.19-89.03 92 0 37.06 21.21 69 51.77 83.58l60.37 21.65 1.94-6.31c-29.25-12.91-49.77-43.22-49.77-78.55z" fill="url(#stem_06)"/>
     <path filter="url(#blur)" fill="#ddd" d="M604.17 674.21c0-50.81 39.86-92 89.03-92 11.9 0 23.24 2.42 33.62 6.79a86.37 86.37 0 00-36.86-8.23c-49.17 0-89.03 41.19-89.03 92 0 38.52 22.91 71.5 55.42 85.21-30.78-14.48-52.18-46.54-52.18-83.77z"/>
     <path fill="url(#stem_07)" d="M744.14 599.81c-49.17 0-89.03 41.19-89.03 92s39.86 92 89.03 92 89.03-41.19 89.03-92-39.86-92-89.03-92zm0 168.1c-40.68 0-73.66-34.07-73.66-76.11s32.98-76.11 73.66-76.11 73.66 34.07 73.66 76.11-32.98 76.11-73.66 76.11z"/>
     <path fill="#666" d="M749.99 609.22c-44.92 0-81.33 38.15-81.33 85.21s36.41 85.21 81.33 85.21 81.33-38.15 81.33-85.21-36.41-85.21-81.33-85.21zm0 152.84c-35.66 0-64.57-30.28-64.57-67.64s28.91-67.64 64.57-67.64 64.57 30.28 64.57 67.64-28.91 67.64-64.57 67.64z"/>
+  </g>
+  <g id="half_part" class="invis">
+    <path fill-rule="evenodd" fill="url(#stem_04)" d="M670.55 480.91c99.411 0 180.12 84.554 180.12 188.7 0 104.146-80.709 188.7-180.12 188.7s-180.12-84.554-180.12-188.7c0-104.146 80.709-188.7 180.12-188.7zm-8.373 139.754c23.55 0 42.669 19.119 42.669 42.669 0 23.55-19.119 42.669-42.669 42.669-23.55 0-42.669-19.119-42.669-42.669 0-23.55 19.119-42.669 42.669-42.669z"/>
+    <path fill="#444" fill-rule="evenodd" d="M680.963 484.429c99.411 0 180.12 83.953 180.12 187.359 0 103.407-80.709 187.36-180.12 187.36s-180.12-83.953-180.12-187.36c0-103.406 80.709-187.359 180.12-187.359zm-9.206 136.235c23.55 0 42.669 19.119 42.669 42.669 0 23.55-19.119 42.669-42.669 42.669-23.55 0-42.669-19.119-42.669-42.669 0-23.55 19.119-42.669 42.669-42.669z"/>
+    <path fill="url(#stem_06)" d="M666.967 620.931a43.022 43.022 0 014.79-.267c23.55 0 42.669 19.119 42.669 42.669 0 23.55-19.119 42.669-42.669 42.669-1.62 0-3.219-.09-4.79-.266 21.3-2.386 37.879-20.473 37.879-42.403 0-21.929-16.579-40.017-37.879-42.402z"/>
+    <path fill="#777" d="M671.76 620.664v-139.75s8.581 3.65 17.676 6.211c99.411 0 180.12 83.837 180.12 187.101s-80.709 187.101-180.12 187.101a92.256 92.256 0 01-4.766.1 2665.506 2665.506 0 01-12.91-2.512V706.002c23.547 0 42.666-19.119 42.666-42.669 0-23.55-19.119-42.669-42.666-42.669z"/>
+    <path fill="#666" d="M694.879 626.957V491.07c96.337 0 174.55 81.941 174.55 182.87s-78.213 182.87-174.55 182.87V709.123c17.463-4.712 30.381-21.33 30.381-41.083s-12.918-36.371-30.381-41.083z"/>
+    <path fill="url(#stem_06)" d="M671.76 741.58v-12.916c32.568-2.145 58.377-30.157 58.377-64.349 0-22.399-11.076-42.146-27.874-53.708 12.486-6.896 26.743-10.807 41.877-10.807 49.137 0 89.03 41.224 89.03 92s-39.893 92-89.03 92c-25.649-14.124-50.506-28.438-72.38-42.22z"/>
+    <path fill="url(#stem_08)" d="M684.76 600.4c35.637 0 64.57 30.308 64.57 67.64s-28.933 67.64-64.57 67.64v-25.22c22.353 0 40.5-19.008 40.5-42.42 0-23.412-18.147-42.42-40.5-42.42V600.4z"/>
+    <path fill="url(#stem_06)" d="M693.55 626.63c12.35 7.27 20.71 21.11 20.71 37.01 0 23.43-18.13 42.42-40.5 42.42-.671 0-1.338-.018-2-.053 1.776.623 9.95 3.429 13 4.453 22.36 0 40.5-18.99 40.5-42.42-.01-20.27-13.57-37.2-31.71-41.41z"/>
+    <path fill="url(#stem_06)" d="M693.351 582.05h.029a86.763 86.763 0 0116.86 1.65c1.42.29 60.26 20.22 60.26 20.22l-2.3 7.46c-5.86-1.4-11.95-2.17-18.21-2.17-1.276 0-2.545.031-3.813.092v-9.468l-52.826-17.784z"/>
+    <path fill="#444" d="M752.793 616.21c.596.072 2.815.395 3.329.482 34.982 5.912 61.678 37.284 61.678 75.108 0 28.738-15.411 53.752-38.159 66.704-3.078 2.505-29.544 20.96-35.501 25.306 49.17 0 89.03-41.19 89.03-92 0-50.106-38.764-90.857-86.993-91.976a692.883 692.883 0 006.616 16.376z"/>
+    <path fill="#666" d="M749.99 779.64c44.92 0 81.33-38.15 81.33-85.21 0-47.06-36.41-85.21-81.33-85.21v17.56c35.66 0 64.57 30.28 64.57 67.64s-28.91 67.64-64.57 67.64v17.58z"/>
+    <path fill="#333" d="M671.76 706.007v152.908l13 2.532 10.114-3.137.005-94.43 49.282 19.93 5.831-4.17-.002-17.58-65.23-26.38v-25.22"/>
+    <path fill="#333" d="M684.76 625.621v-20.795l65.23 21.973v-17.381l-3.811-9.584-51.19-17.232.04-91.573-12.492-6.069-10.777-3.237v139.526"/>
   </g>
 </g>
 
@@ -436,6 +523,79 @@ text {
   <a id="popup_stem3d_close" class="bttn_close" href="javascript:;">
     <use x="1192.2" y="243.3" xlink:href="#popup_close"/>
   </a>
+</g>
+
+<clipPath id="arrow_clip1">
+  <rect x="952" y="653" width="108" height="64"/>
+</clipPath>
+<clipPath id="arrow_clip2">
+  <rect x="1060" y="653" width="197" height="64"/>
+</clipPath>
+<clipPath id="arrow_clip3">
+  <rect x="1257" y="737" width="171" height="64"/>
+</clipPath>
+<clipPath id="arrow_clip4">
+  <rect x="1048.7" y="821.9" width="388" height="54.3" transform="rotate(-161.3 1048.7 821.9)"/>
+</clipPath>
+<clipPath id="arrow_clip5">
+  <rect x="682.2" y="598.3" width="15" height="100"/>
+  <rect x="682.2" y="714.2" width="15" height="57"/>
+</clipPath>
+<clipPath id="arrow_clip6">
+  <rect x="702.4" y="679.4" width="15" height="54"/>
+</clipPath>
+<clipPath id="arrow_clip7">
+  <rect x="648.6" y="697.8" width="28" height="45"/>
+</clipPath>
+<clipPath id="arrow_clip8">
+  <rect x="674.1" y="769" width="28.6" height="10.7" transform="rotate(-161.3 674.1 769)"/>
+</clipPath>
+<clipPath id="arrow_clip9">
+  <rect x="693.8" y="684" width="11.6" height="10.7"/>
+</clipPath>
+<clipPath id="arrow_clip10">
+  <rect x="693.8" y="720.2" width="11.6" height="10.7"/>
+</clipPath>
+<clipPath id="arrow_clip11">
+  <rect x="673.6" y="753.8" width="11.6" height="10.7"/>
+</clipPath>
+
+<g clip-path="url(#arrow_clip1)">
+<g id="queue1">
+  <use x="855" y="685" xlink:href="#arrow_r"/>
+  <use x="977" y="685" xlink:href="#arrow_r"/>
+  <use x="1099" y="685" xlink:href="#arrow_r"/>
+  <use x="1221" y="685" xlink:href="#arrow_r"/>
+</g>
+</g>
+
+<g clip-path="url(#arrow_clip2)">
+<g id="queue2">
+  <use x="977" y="685" xlink:href="#arrow_o"/>
+  <use x="1099" y="685" xlink:href="#arrow_o"/>
+  <use x="1221" y="685" xlink:href="#arrow_o"/>
+  <use x="1343" y="685" xlink:href="#arrow_o"/>
+</g>
+</g>
+
+<g clip-path="url(#arrow_clip3)">
+<g id="queue3">
+  <use x="1099" y="769" xlink:href="#arrow_y"/>
+  <use x="1221" y="769" xlink:href="#arrow_y"/>
+  <use x="1343" y="769" xlink:href="#arrow_y"/>
+  <use x="1465" y="769" xlink:href="#arrow_y"/>
+</g>
+</g>
+
+<g clip-path="url(#arrow_clip4)">
+<g id="queue4">
+  <use x="1150.2" y="826.9" xlink:href="#arrow_b"/>
+  <use x="1034.7" y="787.8" xlink:href="#arrow_b"/>
+  <use x="919.1" y="748.7" xlink:href="#arrow_b"/>
+  <use x="803.6" y="709.5" xlink:href="#arrow_b"/>
+  <use x="688" y="670.4" xlink:href="#arrow_b"/>
+  <use x="572.5" y="631.3" xlink:href="#arrow_b"/>
+</g>
 </g>
 
 <script>
@@ -537,10 +697,12 @@ $("#bttn_cutaway").onclick = function() {
  if(cutaway) {
   $("#bttn_cutaway text").textContent = "FULL";
   $("#full_part").classList.add("invis");
+  $("#half_part").classList.remove("invis");
   cutaway = false;
  } else {
   $("#bttn_cutaway text").textContent = "CUTAWAY";
   $("#full_part").classList.remove("invis");
+  $("#half_part").classList.add("invis");
   cutaway = true;
  }
 };
@@ -562,10 +724,30 @@ window.onmouseup = function() {clearInterval(setint)};
 function animate() {
   if(arrows_shift < 120) {
     arrows_shift += w_angle / 30;
-    //$("#queue").setAttribute("transform", "translate(" + arrows_shift + " 0)");
+    $("#queue1").setAttribute("transform", "translate(" + arrows_shift + " 0)");
+    $("#queue2").setAttribute("transform", "translate(" + arrows_shift + " 0)");
+    $("#queue3").setAttribute("transform", "translate(" + arrows_shift + " 0)");
+    $("#queue4").setAttribute("transform", "translate(" + arrows_shift * -.91 + " " + arrows_shift * -.31 + ")");
+    $("#queue5").setAttribute("transform", "translate(0 " + arrows_shift * .2521 + ")");
+    $("#queue6").setAttribute("transform", "translate(0 " + arrows_shift * .2521 + ")");
+    $("#queue7").setAttribute("transform", "translate(0 " + arrows_shift * .2521 + ")");
+    $("#queue8").setAttribute("transform", "translate(" + arrows_shift * -.2386 + " " + arrows_shift * -.08 + ")");
+    $("#queue9").setAttribute("transform", "translate(" + arrows_shift * .2521 + " 0)");
+    $("#queue10").setAttribute("transform", "translate(" + arrows_shift * -.2521 + " 0)");
+    $("#queue11").setAttribute("transform", "translate(" + arrows_shift * -.2521 + " 0)");
   } else {
     arrows_shift = 1;
-    //$("#queue").setAttribute("transform", "translate(" + arrows_shift + " 0)");
+    $("#queue1").setAttribute("transform", "translate(" + arrows_shift + " 0)");
+    $("#queue2").setAttribute("transform", "translate(" + arrows_shift + " 0)");
+    $("#queue3").setAttribute("transform", "translate(" + arrows_shift + " 0)");
+    $("#queue4").setAttribute("transform", "translate(" + arrows_shift * -1 + " " + arrows_shift * -.4 + ")");
+    $("#queue5").setAttribute("transform", "translate(0 " + arrows_shift * .2521 + ")");
+    $("#queue6").setAttribute("transform", "translate(0 " + arrows_shift * .2521 + ")");
+    $("#queue7").setAttribute("transform", "translate(0 " + arrows_shift * .2521 + ")");
+    $("#queue8").setAttribute("transform", "translate(" + arrows_shift * -.2386 + " " + arrows_shift * -.08 + ")");
+    $("#queue9").setAttribute("transform", "translate(" + arrows_shift * .2521 + " 0)");
+    $("#queue10").setAttribute("transform", "translate(" + arrows_shift * -.2521 + " 0)");
+    $("#queue11").setAttribute("transform", "translate(" + arrows_shift * -.2521 + " 0)");
   }
     animation_id = requestAnimationFrame(animate);
 }

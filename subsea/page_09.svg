@@ -707,6 +707,17 @@ text {
   </a>
 </g>
 
+<g id="popup_220" class="popup_box invis">
+  <path fill="#fff" fill-opacity=".5" d="M446.6 961.9H282.42a22.4 22.4 0 01-22.17-22.17v-52.22a22.4 22.4 0 0122.17-22.17h19.48l.78-49.96L337 865.34H446.6a22.4 22.4 0 0122.17 22.17v52.22a22.4 22.4 0 01-22.17 22.17z"/>
+  <text>
+    <tspan x="365.4" y="908.1">220 Micron</tspan>
+    <tspan x="365.4" dy="32">Catch Screen</tspan>
+  </text>
+  <a id="popup_220_close" class="bttn_close" href="javascript:;">
+    <use x="480.8" y="856.3" xlink:href="#popup_close"/>
+  </a>
+</g>
+
 <g id="info_labels" transform="translate(-240 6)">
 <rect x="920" y="1000" width="30" height="30" fill="#ffb8b8" stroke="#fff"/>
 <text id="red_label" x="960" y="1022">- 0 (BAR)</text>
@@ -775,19 +786,25 @@ $("#popup_stem_close").onclick = function() {
   $("#popup_stem").classList.toggle("invis");
 };
 
+$("#popup_220_close").onclick = function() {
+  $("#popup_220").classList.toggle("invis");
+};
+
 function info_show() {
-if($("#popup_demonstrate").classList.contains("invis") || $("#popup_restrictor").classList.contains("invis") || $("#popup_fixed_restrictor").classList.contains("invis") || $("#popup_spring").classList.contains("invis") || $("#popup_stem").classList.contains("invis")) {
+if($("#popup_demonstrate").classList.contains("invis") || $("#popup_restrictor").classList.contains("invis") || $("#popup_fixed_restrictor").classList.contains("invis") || $("#popup_spring").classList.contains("invis") || $("#popup_stem").classList.contains("invis") || $("#popup_220").classList.contains("invis")) {
   $("#popup_demonstrate").classList.remove("invis");
   $("#popup_restrictor").classList.remove("invis");
   $("#popup_fixed_restrictor").classList.remove("invis");
   $("#popup_spring").classList.remove("invis");
   $("#popup_stem").classList.remove("invis");
+  $("#popup_220").classList.remove("invis");
 } else {
   $("#popup_demonstrate").classList.toggle("invis");
   $("#popup_restrictor").classList.toggle("invis");
   $("#popup_fixed_restrictor").classList.toggle("invis");
   $("#popup_spring").classList.toggle("invis");
   $("#popup_stem").classList.toggle("invis");
+  $("#popup_220").classList.toggle("invis");
   }
 }
 
