@@ -1,0 +1,291 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1080">
+
+<defs>
+<style>@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900');</style>
+</defs>
+
+<style>
+/* <![CDATA[ */
+
+@namespace svg url(http://www.w3.org/2000/svg);
+
+svg|a {
+  outline: none;
+}
+
+svg {
+  background: linear-gradient(#4a6785, #dbedff);
+}
+
+text {
+  font-family: 'Roboto', sans-serif;
+  text-anchor: middle;
+  font-size: 26px;
+}
+
+.nav_button_bg {
+  fill: #fff;
+  fill-opacity: 0;
+  stroke: #fff;
+  transition: fill-opacity .1s linear;
+}
+
+.nav_button:hover .nav_button_bg {
+  fill-opacity: .3;
+}
+
+.nav_button text {
+  font-size: 32px;
+  font-weight: 700;
+  fill: #fff;
+}
+
+#page_num text {
+  font-size: 44px;
+  font-weight: 900;
+  text-anchor: middle;
+}
+
+.ttl {
+  font-size: 54px;
+  fill: #fff;
+  font-weight: 900;
+}
+
+.text_body {
+  font-size: 26px;
+  fill: #fff;
+}
+
+.text_body.dark {
+  fill: #000;
+}
+
+.bttn_close:hover use {
+  filter: url(#c_color);
+}
+
+.popup_box {
+  opacity: 1;
+  transition: all .1s linear;
+}
+
+.popup_box text {
+  font-size: 24px;
+}
+
+.popup_box.invis {
+  opacity: 0;
+}
+
+.popup_box.none {
+  display: none;
+}
+
+#info:hover #info_bg {
+  fill-opacity: .3;
+}
+
+#info_labels text {
+  font-size: 24px;
+  text-anchor: start;
+}
+
+text.label_txt {
+  text-anchor: start;
+}
+
+/* ]]> */
+</style>
+
+<defs>
+  <filter id="c_color">
+    <feColorMatrix
+      color-interpolation-filters="sRGB"
+      type="matrix"
+      values="0 0 0 0 0
+              0 .5 0 0 0
+              0 0 0 0 0
+              0 0 0 1 0 "/>
+  </filter>
+  <g id="popup_close">
+    <rect fill-opacity="0" width="24" height="24" x="-12" y="-12" />
+    <path fill="#555" d="M3.72 0L9.3 5.58 5.58 9.3 0 3.72-5.58 9.3-9.3 5.58-3.72 0-9.3-5.58l3.72-3.72L0-3.72 5.58-9.3 9.3-5.58 3.72 0z"/>
+  </g>
+</defs>
+
+<a href="javascript:;" id="bttn_prev" class="nav_button">
+  <path class="nav_button_bg" d="M184.5 119.66H63.98c-6.6 0-12-5.4-12-12V69.84c0-6.6 5.4-12 12-12H184.5c6.6 0 12 5.4 12 12v37.83c0 6.59-5.4 11.99-12 11.99z"/>
+  <text x="126" y="100">PREV</text>
+</a>
+<a href="javascript:;" id="bttn_tofc" class="nav_button">
+  <path class="nav_button_bg" d="M184.5 217.16H63.98c-6.6 0-12-5.4-12-12v-37.83c0-6.6 5.4-12 12-12H184.5c6.6 0 12 5.4 12 12v37.83c0 6.6-5.4 12-12 12z"/>
+  <text x="126" y="199">TofC</text>
+</a>
+<g id="page_num">
+  <circle cx="1821.47" cy="984.85" r="41.88" fill="#fff"/>
+  <text x="1820" y="1000">14</text>
+</g>
+
+<text x="960" y="106" class="ttl">Valve Core &amp; Flusher</text>
+<a id="info" fill="#fff" transform="translate(-40 0)" href="javascript:;">
+  <path id="info_bg" fill-opacity="0" stroke="#fff" stroke-width="3" d="M1291 53.55a17.01 17.01 0 010 34 17.01 17.01 0 010-34h0z"/>
+  <path fill="#FFF" d="M1293.38 70.85a2.59 2.59 0 00-2.57-2.42 2.6 2.6 0 00-2.58 2.42v7.13a2.6 2.6 0 002.58 2.42 2.59 2.59 0 002.57-2.42v-7.13z"/>
+  <path fill="#FFF" d="M1293.38 63.39a2.59 2.59 0 00-2.57-2.42 2.6 2.6 0 00-2.58 2.42v.03a2.6 2.6 0 002.58 2.42 2.59 2.59 0 002.57-2.42v-.03z"/>
+</a>
+<text x="960" y="159" class="text_body">
+  Valve Core with stab plate wet mate electrical connector,
+  <tspan x="960" dy="32">flushing loop and class 4 latch on junction plate.</tspan>
+</text>
+
+<image href="render.png" x="440" y="280" width="1000" height="650"/>
+
+<g id="popup_01" class="popup_box invis">
+<path d="M1087.34 393.57h160.99c7.7 0 14 6.3 14 14v36.25c0 7.7-6.3 14-14 14h-160.99c-7.7 0-14-6.3-14-14v-7.51l-56.3 10.77 56.3-33.37v-6.15c0-7.7 6.3-14 14-14v.01z" fill="#fff" opacity=".5"/>
+  <text x="1167.25" y="435">
+    Oil filled hose
+  </text>
+  <a id="popup_01_close" class="bttn_close" href="javascript:;">
+    <use x="1274.4" y="388.56" xlink:href="#popup_close"/>
+  </a>
+</g>
+
+<g id="popup_02" class="popup_box invis">
+<path d="M1133.5 504.4h65.35c7.7 0 14 6.3 14 14v29.25c0 7.7-6.3 14-14 14h-65.35c-7.7 0-14-6.3-14-14v-3.5l-156.7 13.21 156.7-35.81v-3.15c0-7.7 6.3-14 14-14z" fill="#fff" opacity=".5"/>
+  <text x="1165.8" y="540">
+    Seat
+  </text>
+  <a id="popup_02_close" class="bttn_close" href="javascript:;">
+    <use x="1224.5" y="499.4" xlink:href="#popup_close"/>
+  </a>
+</g>
+
+<g id="popup_03" class="popup_box invis">
+<path d="M1356.73 560.59h160.99c7.7 0 14 6.3 14 14v36.25c0 7.7-6.3 14-14 14h-160.99c-7.7 0-14-6.3-14-14v-7.51l-56.3 10.77 56.3-33.37v-6.15c0-7.7 6.3-14 14-14v.01z" fill="#fff" opacity=".5"/>
+  <text x="1437" y="601">
+    Flushing loop
+  </text>
+  <a id="popup_03_close" class="bttn_close" href="javascript:;">
+    <use x="1543.79" y="555.59" xlink:href="#popup_close"/>
+  </a>
+</g>
+
+<g id="popup_04" class="popup_box invis">
+<path d="M1457.76 702.02h170.99c7.7 0 14 6.3 14 14v36.25c0 7.7-6.3 14-14 14h-170.99c-7.7 0-14-6.3-14-14v-7.51l-56.3 10.77 56.3-33.37v-6.15c0-7.7 6.3-14 14-14v.01z" fill="#fff" opacity=".5"/>
+  <text x="1541.8" y="740">
+    Junction plate
+  </text>
+  <a id="popup_04_close" class="bttn_close" href="javascript:;">
+    <use x="1654.81" y="697" xlink:href="#popup_close"/>
+  </a>
+</g>
+
+<g id="popup_05" class="popup_box invis">
+<path d="M1483.72 890.57h189.74c7.7 0 14 6.3 14 14v59.97c0 7.7-6.3 14-14 14h-189.74c-7.7 0-14-6.3-14-14v-30.23l-95.4-54.59 95.4 27.8v-2.95c0-7.7 6.3-14 14-14z" fill="#fff" opacity=".5"/>
+  <text x="1580" y="928">
+    Stab plate wet
+    <tspan x="1580" dy="30">mate connector</tspan>
+  </text>
+  <a id="popup_05_close" class="bttn_close" href="javascript:;">
+    <use x="1701" y="883.7" xlink:href="#popup_close"/>
+  </a>
+</g>
+
+<g id="popup_06" class="popup_box invis">
+<path d="M1052.99 918.65H913.01c-7.7 0-14-6.3-14-14V868.4c0-7.7 6.3-14 14-14h139.98c7.7 0 14 6.3 14 14v7.51l56.31-10.77-56.3 33.37v6.14c0 7.7-6.3 14-14 14h-.01z" fill="#fff" opacity=".5"/>
+  <text x="981.28" y="894">
+    Valve core
+  </text>
+  <a id="popup_06_close" class="bttn_close" href="javascript:;">
+    <use x="1073.1" y="849.34" xlink:href="#popup_close"/>
+  </a>
+</g>
+
+<g id="popup_07" class="popup_box invis">
+<path d="M633.71 674.07H392.73c-7.7 0-14-6.3-14-14v-36.25c0-7.7 6.3-14 14-14h240.98c7.7 0 14 6.3 14 14v7.51l56.31-10.77-56.3 33.37v6.14c0 7.7-6.3 14-14 14h-.01z" fill="#fff" opacity=".5"/>
+  <text x="512.74" y="650">
+    Electronics canister
+  </text>
+  <a id="popup_07_close" class="bttn_close" href="javascript:;">
+    <use x="653.8" y="604.75" xlink:href="#popup_close"/>
+  </a>
+</g>
+
+<g id="popup_08" class="popup_box invis">
+<path d="M372.15 421.16H216.17c-7.7 0-14-6.3-14-14v-36.25c0-7.7 6.3-14 14-14h155.98c7.7 0 14 6.3 14 14v7.51l56.31-10.77-56.3 33.37v6.14c0 7.7-6.3 14-14 14h-.01z" fill="#fff" opacity=".5"/>
+  <text x="291.79" y="396">
+    Class 4 latch
+  </text>
+  <a id="popup_08_close" class="bttn_close" href="javascript:;">
+    <use x="392.29" y="351.85" xlink:href="#popup_close"/>
+  </a>
+</g>
+
+<script>
+<![CDATA[
+
+let animation_id;
+let arrows_shift = 1;
+
+function $(sel) {
+  return document.querySelector(sel);
+}
+
+$("#popup_01_close").onclick = function() {
+  $("#popup_01").classList.toggle("invis");
+};
+$("#popup_02_close").onclick = function() {
+  $("#popup_02").classList.toggle("invis");
+};
+$("#popup_03_close").onclick = function() {
+  $("#popup_03").classList.toggle("invis");
+};
+$("#popup_04_close").onclick = function() {
+  $("#popup_04").classList.toggle("invis");
+};
+$("#popup_05_close").onclick = function() {
+  $("#popup_05").classList.toggle("invis");
+};
+$("#popup_06_close").onclick = function() {
+  $("#popup_06").classList.toggle("invis");
+};
+$("#popup_07_close").onclick = function() {
+  $("#popup_07").classList.toggle("invis");
+};
+$("#popup_08_close").onclick = function() {
+  $("#popup_08").classList.toggle("invis");
+};
+
+function info_show() {
+if($("#popup_01").classList.contains("invis") || $("#popup_02").classList.contains("invis") || $("#popup_03").classList.contains("invis") || $("#popup_04").classList.contains("invis") || $("#popup_05").classList.contains("invis") || $("#popup_06").classList.contains("invis") || $("#popup_07").classList.contains("invis") || $("#popup_08").classList.contains("invis")) {
+  $("#popup_01").classList.remove("invis");
+  $("#popup_02").classList.remove("invis");
+  $("#popup_03").classList.remove("invis");
+  $("#popup_04").classList.remove("invis");
+  $("#popup_05").classList.remove("invis");
+  $("#popup_06").classList.remove("invis");
+  $("#popup_07").classList.remove("invis");
+  $("#popup_08").classList.remove("invis");
+} else {
+  $("#popup_01").classList.toggle("invis");
+  $("#popup_02").classList.toggle("invis");
+  $("#popup_03").classList.toggle("invis");
+  $("#popup_04").classList.toggle("invis");
+  $("#popup_05").classList.toggle("invis");
+  $("#popup_06").classList.toggle("invis");
+  $("#popup_07").classList.toggle("invis");
+  $("#popup_08").classList.toggle("invis");
+  }
+}
+
+$("#info").onclick = function() {
+  info_show();
+}
+
+setTimeout(function(){
+  info_show();
+}, 400);
+
+]]>
+</script>
+</svg>
