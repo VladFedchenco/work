@@ -64,9 +64,10 @@ svg|a {
 <defs>
   <linearGradient id="grd1" x2="0" y2="1">
     <stop offset="0" stop-color="#000" stop-opacity="0"/>
-    <stop offset="0.2" stop-color="#000" stop-opacity="0.07"/>
-    <stop offset="0.5" stop-color="#000" stop-opacity="0"/>
-    <stop offset="0.8" stop-color="#000" stop-opacity="0.07"/>
+    <stop offset="0.1" stop-color="#000" stop-opacity="0.2"/>
+    <stop offset="0.3" stop-color="#000" stop-opacity="0"/>
+    <stop offset="0.7" stop-color="#000" stop-opacity="0"/>
+    <stop offset="0.9" stop-color="#000" stop-opacity="0.2"/>
     <stop offset="1" stop-color="#000" stop-opacity="0"/>
   </linearGradient>
   <g id="middle_part" fill="none" stroke="#231F20" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3">
