@@ -1,0 +1,500 @@
+* {
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-anchor: none;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    color: #000;
+    background-color: #fff;
+}
+
+a {
+    color: #1616ef;
+    transition: all 0.3s ease;
+    overflow-wrap: break-word;
+}
+
+button,
+textarea,
+input,
+select,
+a{
+ -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+ -webkit-tap-highlight-color: transparent;
+ -webkit-user-select: none;
+ -khtml-user-select: none;
+ -moz-user-select: none;
+ -ms-user-select: none;
+  user-select: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+strong {
+    font-weight: 700;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: 700;
+    line-height: normal;
+    margin: 0 0 16px 0;
+    transition: all 0.3s ease;
+}
+
+h1 {
+    font-size: 56px;
+    margin-bottom: 56px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 21px;
+}
+
+form {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    border: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    display: block;
+}
+
+input:not([type=checkbox]):not([type=radio]),
+textarea,
+select {
+    border: none;
+    border-radius: 0px;
+    outline: none;
+    color: #000;
+    background: #fff;
+    cursor: default;
+    font-family: 'Montserrat', sans-serif;
+    padding: 16px 24px;
+    margin: 0;
+    font-size: 16px;
+    width: 100%;
+}
+
+textarea {
+    height: 100px;
+}
+
+input[type='number'] {
+    -moz-appearance: textfield;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+select {
+    text-overflow: '';
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: relative;
+    padding-right: 30px;
+    width: 100%;
+    color: #000;
+    background: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2236%22%20height%3D%2213%22%20viewBox%3D%220%200%2036%2013%22%3E%3Cpath%20fill%3D%22%23000%22%20d%3D%22M18.6%200l-8.1%208-8-8L0%202.4%2010.5%2013%2021%202.3%2018.6%200z%22/%3E%3C/svg%3E') no-repeat right center #fff;
+    background-size: auto 12px;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+input:not([type=checkbox]):not([type=radio]):focus,
+textarea:focus,
+select:focus {
+    border-color: #16ef16;
+}
+
+::-webkit-input-placeholder {
+    color: #000;
+    opacity: 1;
+    transition: opacity .2s;
+}
+
+:-moz-placeholder {
+    color: #000;
+    opacity: 1;
+    transition: opacity .2s;
+}
+
+::-moz-placeholder {
+    color: #000;
+    opacity: 1;
+    transition: opacity .2s;
+}
+
+:-ms-input-placeholder {
+    color: #000;
+    opacity: 1;
+    transition: opacity .2s;
+}
+
+:focus::-webkit-input-placeholder {opacity: 0;}
+:focus:-moz-placeholder {opacity: 0;}
+:focus::-moz-placeholder {opacity: 0;}
+:focus:-ms-input-placeholder {opacity: 0;}
+
+button,
+input[type=submit],
+.button {
+    background: #16ef16;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    color: #000;
+    padding: 32px 16px;
+    margin: 0;
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+    transition: all 0.3s ease;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+button:hover,
+input[type=submit]:hover,
+.button:hover {
+    background: #54ff54;
+}
+
+header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 8px;
+    text-align: center;
+    background-color: #191919;
+    z-index: 99;
+}
+
+#logo {
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    transition: none;
+    text-transform: uppercase;
+    user-select: none;
+}
+
+#section_circles {
+    position: absolute;
+    left: 50%;
+    top: 60px;
+    width: 50%;
+    transform: translateX(-50%);
+}
+
+#smoke {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    pointer-events: none;
+}
+
+#smoke.click_point_01, #smoke.click_point_02, #smoke.click_point_03 {
+    pointer-events: initial;
+}
+
+.click_point_01 #smoke_svg g,
+.click_point_03 #smoke_svg g {
+    transform: translate(300px, -220px);
+}
+
+.click_point_03 #smoke_svg {
+    transform: scale(-1, 1);
+}
+
+.click_point_02 #smoke_svg g {
+    transform: translate(1550px, -200px) rotate(90deg);
+}
+
+/* SVG Circles */
+
+@namespace svg url(http://www.w3.org/2000/svg);
+
+svg|a {
+  outline: none;
+}
+
+#l_path, #r_path, #m_path {
+  transition: stroke-dashoffset .3s ease;
+}
+
+#l_grad, #r_grad, #m_grad {
+  opacity: 0;
+  transition: opacity .2s linear;
+}
+
+#click_left:hover #l_path, #click_right:hover #r_path, #click_middle:hover #m_path {
+  stroke-dashoffset: 0;
+}
+
+#click_left:hover #l_grad, #click_right:hover #r_grad, #click_middle:hover #m_grad {
+  opacity: 1;
+}
+
+#bttn_bg, #bttn_text {
+  transition: stroke .2s easy, fill .2s easy;
+}
+
+#click_middle:hover #bttn_bg {
+  stroke: #333;
+  fill: #fff;
+}
+
+#click_middle:hover #bttn_text path {
+  fill: #333;
+}
+
+#logo_starbucks, #logo_tim {
+  transition: transform .2s ease;
+}
+
+#logo_starbucks {
+  transform: translate(178.175px, 270.188px) scale(1) translate(-178.175px, -270.188px);
+}
+
+#click_left:hover #logo_starbucks {
+  transform: translate(178.175px, 270.188px) scale(1.04) translate(-178.175px, -270.188px);
+}
+
+#logo_tim {
+  transform: translate(721.506px, 272.942px) scale(1) translate(-721.506px, -272.942px);
+}
+#click_right:hover #logo_tim {
+  transform: translate(721.506px, 272.942px) scale(1.04) translate(-721.506px, -272.942px);
+}
+
+/* End of SVG Circles */
+
+/* SVG Smoke */
+
+#smoke #img0, #smoke #img1, #smoke #img2, #smoke #img3, #smoke #img4, #smoke #img5, #smoke #img6 {
+    opacity: 0;
+}
+
+.click_point_01 #img0,
+.click_point_02 #img0,
+.click_point_03 #img0 {
+  animation: img0 2s linear forwards;
+}
+
+@keyframes img0 {
+  0% {
+    transform: translate(400px, 576px) scale(0.1) translate(-400px, -576px)
+  }
+  100% {
+    transform: translate(400px, 576px) scale(10) translate(-400px, -576px)
+  }
+  0%, 75%, 100% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 1;
+  }
+}
+
+.click_point_01 #img1,
+.click_point_02 #img1,
+.click_point_03 #img1 {
+  animation: img1 2s linear forwards;
+}
+
+@keyframes img1 {
+  0% {
+    transform: translate(400px, 576px) scale(0.1) translate(-400px, -576px)
+  }
+  100% {
+    transform: translate(400px, 576px) scale(10) translate(-400px, -576px)
+  }
+  0%, 75%, 100% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 1;
+  }
+}
+
+.click_point_01 #img2,
+.click_point_02 #img2,
+.click_point_03 #img2 {
+  animation: img2 2s linear forwards;
+}
+
+@keyframes img2 {
+  0% {
+    transform: translate(400px, 576px) scale(0.1) translate(-400px, -576px)
+  }
+  100% {
+    transform: translate(400px, 576px) scale(10) translate(-400px, -576px)
+  }
+  0%, 75%, 100% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 1;
+  }
+}
+
+.click_point_01 #img3,
+.click_point_02 #img3,
+.click_point_03 #img3 {
+  animation: img3 2s linear forwards;
+}
+
+@keyframes img3 {
+  0% {
+    transform: translate(400px, 576px) scale(0.1) translate(-400px, -576px)
+  }
+  100% {
+    transform: translate(400px, 576px) scale(10) translate(-400px, -576px)
+  }
+  0%, 50%, 100% {
+    opacity: 0;
+  }
+  75%, 90% {
+    opacity: 1;
+  }
+}
+
+.click_point_01 #img4,
+.click_point_02 #img4,
+.click_point_03 #img4 {
+  animation: img4 2s linear forwards;
+}
+
+@keyframes img4 {
+  0% {
+    transform: translate(400px, 576px) scale(0.1) translate(-400px, -576px)
+  }
+  100% {
+    transform: translate(400px, 576px) scale(10) translate(-400px, -576px)
+  }
+  0%, 100% {
+    opacity: 0;
+  }
+  25%, 90% {
+    opacity: 1;
+  }
+}
+
+.click_point_01 #img5,
+.click_point_02 #img5,
+.click_point_03 #img5 {
+  animation: img5 2s linear forwards;
+}
+
+@keyframes img5 {
+  0% {
+    transform: translate(400px, 576px) scale(0.1) translate(-400px, -576px)
+  }
+  100% {
+    transform: translate(400px, 576px) scale(10) translate(-400px, -576px)
+  }
+  0%, 25%, 100% {
+    opacity: 0;
+  }
+  50%, 90% {
+    opacity: 1;
+  }
+}
+
+.click_point_01 #img6,
+.click_point_02 #img6,
+.click_point_03 #img6 {
+  animation: img6 2s linear forwards;
+}
+
+@keyframes img6 {
+  0%, 85%, 100% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 1;
+  }
+}
+
+/* End of SVG Smoke */
+
+@media screen and (max-width: 990px) {
+    #section_circles {
+        left: 0;
+        top: 60px;
+        width: 100%;
+        transform: none;
+    }
+    #smoke {
+        height: 100vh;
+        overflow: hidden;
+    }
+    #smoke_svg {
+        position: absolute;
+        height: 100vh;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .click_point_03 #smoke_svg {
+        transform: translate(-50%) scale(-1, 1);
+    }
+}
+
+
