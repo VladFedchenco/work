@@ -743,6 +743,7 @@ let spring_pos;
 let osc_pos = 0;
 let osc_iter = 20;
 let setint2;
+let bttn_txt = true;
 
 function $(sel) {
   return document.querySelector(sel);
@@ -752,6 +753,13 @@ function $(sel) {
 
 $("#bttn_surface").onclick = function() {
   $("#surface").classList.toggle("invis");
+  if(bttn_txt) {
+    $("#bttn_surface text").textContent = "SUBSEA";
+    bttn_txt = false;
+  } else {
+    $("#bttn_surface text").textContent = "SURFACE";
+    bttn_txt = true;
+  }
 };
 
 $("#popup_flow_meter_close").onclick = function() {
