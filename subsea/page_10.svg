@@ -172,6 +172,14 @@ text {
   opacity: 1;
 }
 
+.surf_invis {
+  display: none;
+}
+
+.active .popup_box, .active .zoom_invis, .active #note, .active #note_text {
+  display: none;
+}
+
 /* ]]> */
 </style>
 
@@ -367,7 +375,9 @@ text {
   As the pressure drop across the valve increases the mating carbide trim produces a smaller opening to maintain
   <tspan x="960" dy="32">a constant pressure drop across the adjustable restrictor which in turn maintains constant flow</tspan>
 </text>
-<text x="591.69" y="249" fill="#fff" style="font-size:20px; text-anchor: start">
+
+<g id="zoom_hide" class="">
+<text id="note_text" x="591.69" y="249" fill="#fff" style="font-size:20px; text-anchor: start">
   Note: piston action
   <tspan x="591.69" dy="24">exaggerated for clarity</tspan>
 </text>
@@ -382,6 +392,7 @@ text {
     <text x="1486" y="222">Cancel Zoom</text>
   </a>
 </g>
+
 <g id="zoom_clip" clip-path="">
 <g id="zoom" class="" transform="">
 
@@ -391,17 +402,19 @@ text {
   <line x1="448.83" x2="664.7" y1="792.27" y2="792.27"/>
   <polyline points="1408.36 792.39 1408.36 354.12 1034.05 354.12 1034.05 340.24"/>
   <polyline points="1162.05 413.15 1005.21 413.15 1005.21 340.24"/>
-  <polyline points="1081.84 946.4 1097.07 946.4 1097.07 778.17 1016.34 778.17 1016.34 547.14 985.83 547.14"/>
-  <polyline points="841.82 946.4 825.97 946.4 825.97 778.17 878.87 778.17 878.87 639.4 947.84 639.4"/>
   <polyline points="515.3 792.39 515.3 354.12 889.61 354.12 889.61 340.24"/>
   <line x1="1365.69" x2="1489.3" y1="792.27" y2="792.27"/>
+</g>
+<g fill="none" stroke="#000" stroke-width="2">
+  <polyline points="1081.84 946.4 1097.07 946.4 1097.07 778.17 1016.34 778.17 1016.34 547.14 985.83 547.14"/>
+  <polyline points="841.82 946.4 825.97 946.4 825.97 778.17 878.87 778.17 878.87 639.4 947.84 639.4"/>
 </g>
 <g id="static_part">
   <rect width="196.39" height="20.28" x="741.86" y="468.81" fill="url(#ver_yllw)" stroke="#000" stroke-width=".5"/>
   <rect width="35.8" height="28.97" x="1154.75" y="737.93" fill="url(#hor_red)" stroke="#000" stroke-width=".5"/>
   <polygon fill="url(#hor_org)" stroke="#000" stroke-width=".5" points="1205.16 575.1 1205.16 528.82 1140.05 528.82 1140.05 575.1 1068.26 575.1 1068.26 737.93 1276.99 737.93 1276.99 575.1"/>
-  <rect width="38.57" height="85.1" x="1068.26" y="630.23" fill="url(#hor_yllw)" stroke="#000" stroke-width=".5"/>
-  <rect width="38.57" height="85.1" x="1238.41" y="630.23" fill="url(#hor_yllw)" stroke="#000" stroke-width=".5" transform="rotate(-180 1257.7 672.78)"/>
+  <rect width="38.57" height="80" x="1068.26" y="630.23" fill="url(#hor_yllw)" stroke="#000" stroke-width=".5"/>
+  <rect width="38.57" height="80" x="1238.41" y="630.23" fill="url(#hor_yllw)" stroke="#000" stroke-width=".5"/>
   <polygon fill="#666" stroke="#000" stroke-width=".5" points="1105.63 621.08 1105.63 604.57 1103.45 604.57 1103.45 611.72 1099.25 611.72 1099.25 604.57 1097.07 604.57 1097.07 621.08"/>
   <ellipse cx="1101.35" cy="608.15" fill="#666" stroke="#000" stroke-width=".5" rx="2.1" ry="3.57"/>
   <polygon fill="#FFF" stroke="#000" stroke-width=".5" points="1140.05 528.82 1140.05 545.63 1145.34 545.63 1145.34 554.33 1140.05 554.33 1140.05 569.43 1083.52 569.43 1083.52 585.51 1155.26 585.51 1162.47 573.95 1162.47 528.82"/>
@@ -489,8 +502,34 @@ text {
   <path fill="url(#hor_bwb)" stroke="#000" stroke-width=".5" d="M973.2 318.59l-21.1 4.46a2.93 2.93 0 01-3.46-2.25l-.08-.37a2.93 2.93 0 012.25-3.46l21.1-4.46a2.93 2.93 0 013.46 2.25l.08.37a2.92 2.92 0 01-2.25 3.46z"/>
   <path fill="url(#hor_bwb)" stroke="#000" stroke-width=".5" d="M973.2 330.53l-21.1 4.46a2.93 2.93 0 01-3.46-2.25l-.08-.37a2.93 2.93 0 012.25-3.46l21.1-4.46a2.93 2.93 0 013.46 2.25l.08.37a2.92 2.92 0 01-2.25 3.46z"/>
 </g>
+<clipPath id="arr_09_clp">
+  <rect x="1162.45" y="408.2" width="20.62" height="175"/>
+</clipPath>
+<g id="arr_09" class="" clip-path="url(#arr_09_clp)">
+  <g id="q_09">
+    <use x="1173" y="370" xlink:href="#arr_b"/>
+    <use x="1173" y="420" xlink:href="#arr_b"/>
+    <use x="1173" y="470" xlink:href="#arr_b"/>
+    <use x="1173" y="520" xlink:href="#arr_b"/>
+    <use x="1173" y="570" xlink:href="#arr_b"/>
+    <use x="1173" y="620" xlink:href="#arr_b"/>
+  </g>
+</g>
+<clipPath id="arr_10_clp">
+  <rect x="1096.67" y="585.51" width="59.21" height="10.91"/>
+</clipPath>
+<g id="arr_10" class="" clip-path="url(#arr_10_clp)">
+  <g id="q_10">
+    <use x="1177" y="591" xlink:href="#arr_sl"/>
+    <use x="1157" y="591" xlink:href="#arr_sl"/>
+    <use x="1137" y="591" xlink:href="#arr_sl"/>
+    <use x="1117" y="591" xlink:href="#arr_sl"/>
+    <use x="1097" y="591" xlink:href="#arr_sl"/>
+    <use x="1077" y="591" xlink:href="#arr_sl"/>
+  </g>
+</g>
 <g id="moving-part">
-  <g id="inner-spring">
+  <g id="inner-spring" transform="translate(1172.64 632.48) scale(1 1) translate(-1172.64 -632.48)">
     <polygon fill="#8A909C" stroke="#000" stroke-width=".5" points="1146.73 636.12 1132.62 638.69 1132.62 635.06 1146.73 632.49"/>
     <rect width="8.69" height="3.63" x="1146.73" y="632.49" fill="#4D4C4A" stroke="#000" stroke-width=".5"/>
     <polygon points="1132.62 638.69 1155.43 638.69 1155.43 636.12 1146.73 636.12"/>
@@ -566,20 +605,22 @@ text {
       <polygon fill="#333647" points="1212.67 700.73 1189.86 700.73 1189.86 703.31 1198.55 703.31"/>
     </g>
   </g>
-  <polygon fill="#666" stroke="#000" stroke-width=".5" points="1153.98 596.42 1106.83 596.42 1106.83 686.19 1070.22 686.19 1070.22 697.97 1081.04 697.97 1081.04 720.57 1132.62 720.57 1132.62 616.71 1153.98 616.71"/>
-  <polygon fill="#666" stroke="#000" stroke-width=".5" points="1191.32 596.42 1238.47 596.42 1238.47 686.19 1275.08 686.19 1275.08 697.97 1264.25 697.97 1264.25 720.57 1212.68 720.57 1212.68 616.71 1191.32 616.71"/>
-  <polygon fill="#999" stroke="#000" stroke-width=".5" points="1184.91 758.09 1184.91 743.65 1189.88 743.65 1189.88 630.99 1210.23 630.99 1210.23 618.68 1189.42 618.68 1189.42 587.44 1181.12 573.95 1164.17 573.95 1155.88 587.44 1155.88 618.68 1135.06 618.68 1135.06 630.99 1155.42 630.99 1155.42 743.65 1160.39 743.65 1160.39 758.09"/>
-  <rect width="19.65" height="12.82" x="1132.62" y="707.75" fill="#666" stroke="#000" stroke-width=".5"/>
-  <rect width="19.65" height="12.82" x="1193.02" y="707.75" fill="#666" stroke="#000" stroke-width=".5"/>
-  <polygon fill="#666" stroke="#000" stroke-width=".5" points="1070.22 698.97 1070.22 717.44 1072.97 717.44 1072.97 709.44 1077.68 709.44 1077.68 717.44 1079.8 717.44 1079.8 698.97"/>
-  <ellipse cx="1075.33" cy="713.44" fill="#666" stroke="#000" stroke-width=".5" rx="2.35" ry="4"/>
+  <g id="piston_move">
+    <polygon fill="#666" stroke="#000" stroke-width=".5" points="1153.98 596.42 1106.83 596.42 1106.83 686.19 1070.22 686.19 1070.22 697.97 1081.04 697.97 1081.04 720.57 1132.62 720.57 1132.62 616.71 1153.98 616.71"/>
+    <polygon fill="#666" stroke="#000" stroke-width=".5" points="1191.32 596.42 1238.47 596.42 1238.47 686.19 1275.08 686.19 1275.08 697.97 1264.25 697.97 1264.25 720.57 1212.68 720.57 1212.68 616.71 1191.32 616.71"/>
+    <polygon fill="#666" stroke="#000" stroke-width=".5" points="1070.22 698.97 1070.22 717.44 1072.97 717.44 1072.97 709.44 1077.68 709.44 1077.68 717.44 1079.8 717.44 1079.8 698.97"/>
+    <ellipse cx="1075.33" cy="713.44" fill="#666" stroke="#000" stroke-width=".5" rx="2.35" ry="4"/>
+    <polygon fill="#666" stroke="#000" stroke-width=".5" points="1265.5 698.97 1265.5 717.44 1268.25 717.44 1268.25 709.44 1272.96 709.44 1272.96 717.44 1275.08 717.44 1275.08 698.97"/>
+    <ellipse cx="1270.61" cy="713.44" fill="#666" stroke="#000" stroke-width=".5" rx="2.35" ry="4"/>
+    <rect width="19.65" height="12.82" x="1132.62" y="707.75" fill="#666" stroke="#000" stroke-width=".5"/>
+    <rect width="19.65" height="12.82" x="1193.02" y="707.75" fill="#666" stroke="#000" stroke-width=".5"/>
+  </g>
+  <polygon id="piston_body" fill="#999" stroke="#000" stroke-width=".5" points="1184.91 758.09 1184.91 743.65 1189.88 743.65 1189.88 630.99 1210.23 630.99 1210.23 618.68 1189.42 618.68 1189.42 587.44 1181.12 573.95 1164.17 573.95 1155.88 587.44 1155.88 618.68 1135.06 618.68 1135.06 630.99 1155.42 630.99 1155.42 743.65 1160.39 743.65 1160.39 758.09"/>
   <polygon fill="#666" stroke="#000" stroke-width=".5" points="1155.43 744.34 1155.43 755.1 1156.68 755.1 1156.68 751.45 1158.83 751.45 1158.83 755.1 1159.79 755.1 1159.79 744.34"/>
   <ellipse cx="1157.76" cy="753.28" fill="#666" stroke="#000" stroke-width=".5" rx="1.07" ry="1.82"/>
   <polygon fill="#666" stroke="#000" stroke-width=".5" points="1185.49 744.34 1185.49 755.1 1186.75 755.1 1186.75 751.45 1188.89 751.45 1188.89 755.1 1189.86 755.1 1189.86 744.34"/>
   <ellipse cx="1187.82" cy="753.28" fill="#666" stroke="#000" stroke-width=".5" rx="1.07" ry="1.82"/>
-  <polygon fill="#666" stroke="#000" stroke-width=".5" points="1265.5 698.97 1265.5 717.44 1268.25 717.44 1268.25 709.44 1272.96 709.44 1272.96 717.44 1275.08 717.44 1275.08 698.97"/>
-  <ellipse cx="1270.61" cy="713.44" fill="#666" stroke="#000" stroke-width=".5" rx="2.35" ry="4"/>
-  <g id="big-spring">
+  <g id="big-spring" transform="translate(1172.62 634.68) scale(1 1) translate(-1172.62 -634.68)">
     <polygon fill="#8B909C" stroke="#000" stroke-width=".5" points="1104.34 634.68 1069.26 640.01 1069.7 650.39 1104.78 645.06"/>
     <polygon fill="#4D4C4A" stroke="#000" stroke-width=".5" points="1106.83 634.68 1104.34 634.68 1104.78 645.06 1106.83 645.06"/>
     <polygon fill="#8B909C" stroke="#000" stroke-width=".5" points="1104.34 668.26 1069.26 662.93 1069.7 652.55 1104.78 657.88"/>
@@ -632,7 +673,7 @@ text {
   <polygon fill="url(#hor_red)" points="1355.74 387.92 1335.46 407.54 1335.46 718 1355.74 718"/>
 </g>
 <g id="piston_left_block" stroke="#000" stroke-width=".5">
-  <g id="piston_left_spring">
+  <g id="piston_left_spring" transform="translate(962 340.23) scale(1 1) translate(-962 -340.23)">
     <rect width="17.78" height="181.35" x="953.15" y="340.24" fill="url(#hor_bwb)"/>
     <rect width="10.41" height="181.35" x="956.84" y="340.24" fill="#9E9DA6"/>
     <path fill="url(#ver_bwb)" d="M949.8 512.61h7.04v-9.43h-7.04a4.71 4.71 0 00-4.71 4.71h0a4.7 4.7 0 004.71 4.72z"/>
@@ -656,12 +697,31 @@ text {
     <path fill="url(#ver_bwb)" d="M949.8 350.55h7.04v-9.43h-7.04a4.71 4.71 0 00-4.71 4.71h0a4.7 4.7 0 004.71 4.72z"/>
     <path fill="url(#ver_bwb)" d="M974.29 350.55h-7.04v-9.43h7.04c2.6 0 4.71 2.11 4.71 4.71h0a4.71 4.71 0 01-4.71 4.72z"/>
   </g>
-  <polygon id="piston_left" fill="#9E9DA6" points="977.15 569.52 962.04 581.17 946.94 569.52 946.94 521.59 977.15 521.59"/>
+  <clipPath id="arr_12_clp">
+    <rect x="946.94" y="556.05" width="29.31" height="133.25"/>
+  </clipPath>
+  <g id="arr_12" class="" clip-path="url(#arr_12_clp)">
+    <g id="q_12">
+      <use x="962" y="734" xlink:href="#arr_t"/>
+      <use x="962" y="684" xlink:href="#arr_t"/>
+      <use x="962" y="634" xlink:href="#arr_t"/>
+      <use x="962" y="584" xlink:href="#arr_t"/>
+      <use x="962" y="534" xlink:href="#arr_t"/>
+    </g>
+  </g>
+  <g id="piston_left">
+    <g id="piston_left_handler" class="surf_invis" fill="#444">
+      <rect x="953.7" y="284.3" width="17.8" height="237.8"/>
+      <rect stroke="#000" x="902.4" y="270.4" width="120.2" height="18.1"/>
+    </g>
+    <polygon transform="translate(0 0)" fill="#9E9DA6" points="977.15 569.52 962.04 581.17 946.94 569.52 946.94 521.59 977.15 521.59"/>
+  </g>
+
 </g>
 <g id="restrictor">
-  <path id="restrictor_left" fill="none" stroke="#000" stroke-linecap="round" stroke-width="1.5" d="M930.32 627.56c13.64-6.99 22.91-20.69 22.91-36.45 0-15.76-9.27-29.47-22.91-36.45"/>
-  <path id="restrictor_right" fill="none" stroke="#000" stroke-linecap="round" stroke-width="1.5" d="M993.77 627.56c-13.64-6.99-22.91-20.69-22.91-36.45 0-15.76 9.27-29.47 22.91-36.45"/>
-  <line x1="922.76" x2="999.28" y1="613.34" y2="569.18" fill="none" stroke="#000" stroke-linecap="round" stroke-width="1.5"/>
+  <path id="restrictor_left" fill="none" stroke="#000" stroke-linecap="round" stroke-width="2.4" d="M930.32 627.56c13.64-6.99 22.91-20.69 22.91-36.45 0-15.76-9.27-29.47-22.91-36.45"/>
+  <path id="restrictor_right" fill="none" stroke="#000" stroke-linecap="round" stroke-width="2.4" d="M993.77 627.56c-13.64-6.99-22.91-20.69-22.91-36.45 0-15.76 9.27-29.47 22.91-36.45"/>
+  <line x1="922.76" x2="999.28" y1="613.34" y2="569.18" fill="none" stroke="#000" stroke-linecap="round" stroke-width="2.4"/>
   <path d="M997.74 573.33l-3.03-4.9a1.31 1.31 0 011.11-2l5.51-.02a1.3 1.3 0 011.17 1.9l-2.48 4.92a1.3 1.3 0 01-2.28.1z"/>
 </g>
 <g id="note">
@@ -813,34 +873,6 @@ text {
   </g>
 </g>
 
-<clipPath id="arr_09_clp">
-  <rect x="1162.45" y="408.2" width="20.62" height="165.75"/>
-</clipPath>
-<g id="arr_09" class="" clip-path="url(#arr_09_clp)">
-  <g id="q_09">
-    <use x="1173" y="370" xlink:href="#arr_b"/>
-    <use x="1173" y="420" xlink:href="#arr_b"/>
-    <use x="1173" y="470" xlink:href="#arr_b"/>
-    <use x="1173" y="520" xlink:href="#arr_b"/>
-    <use x="1173" y="570" xlink:href="#arr_b"/>
-    <use x="1173" y="620" xlink:href="#arr_b"/>
-  </g>
-</g>
-
-<clipPath id="arr_10_clp">
-  <rect x="1096.67" y="585.51" width="59.21" height="10.91"/>
-</clipPath>
-<g id="arr_10" class="" clip-path="url(#arr_10_clp)">
-  <g id="q_10">
-    <use x="1177" y="591" xlink:href="#arr_sl"/>
-    <use x="1157" y="591" xlink:href="#arr_sl"/>
-    <use x="1137" y="591" xlink:href="#arr_sl"/>
-    <use x="1117" y="591" xlink:href="#arr_sl"/>
-    <use x="1097" y="591" xlink:href="#arr_sl"/>
-    <use x="1077" y="591" xlink:href="#arr_sl"/>
-  </g>
-</g>
-
 <clipPath id="arr_11_clp">
   <polygon fill-rule="evenodd" clip-rule="evenodd" stroke="#000000" stroke-width="0.5" stroke-miterlimit="10" points="
   1068.26,581.12 976.25,654.54 976.25,689.31 1068.26,615.89 "/>
@@ -851,19 +883,6 @@ text {
     <use x="1041.81" y="619" xlink:href="#arr_d"/>
     <use x="1002.68" y="650.15" xlink:href="#arr_d"/>
     <use x="963.56" y="681.28" xlink:href="#arr_d"/>
-  </g>
-</g>
-
-<clipPath id="arr_12_clp">
-  <rect x="946.94" y="576.05" width="29.31" height="113.25"/>
-</clipPath>
-<g id="arr_12" class="" clip-path="url(#arr_12_clp)">
-  <g id="q_12">
-    <use x="962" y="734" xlink:href="#arr_t"/>
-    <use x="962" y="684" xlink:href="#arr_t"/>
-    <use x="962" y="634" xlink:href="#arr_t"/>
-    <use x="962" y="584" xlink:href="#arr_t"/>
-    <use x="962" y="534" xlink:href="#arr_t"/>
   </g>
 </g>
 
@@ -993,20 +1012,20 @@ text {
   <use x="588.723" y="760.408" xlink:href="#ring"/>
 </g>
 
-<!-- <a id="zoom_01" class="" href="javascript:;">
-  <use x="1340" y="410" xlink:href="#zoom_tool"/>
-  <rect x="889" y="401" width="480" height="427"/>
+<a id="zoom_01" class="" href="javascript:;">
+  <use x="1364" y="380" xlink:href="#zoom_tool"/>
+  <rect x="1296.1" y="369.1" width="100.4" height="438.7"/>
 </a>
 
 <a id="zoom_02" class="" href="javascript:;">
-  <use x="1198" y="224" xlink:href="#zoom_tool"/>
-  <rect x="823" y="213" width="407" height="362"/>
+  <use x="1075" y="230" xlink:href="#zoom_tool"/>
+  <rect x="550.6" y="219.8" width="556.7" height="388.9"/>
 </a>
 
 <a id="zoom_03" class="" href="javascript:;">
-  <use x="1095" y="499" xlink:href="#zoom_tool"/>
-  <rect x="823" y="489" width="301" height="271"/>
-</a> -->
+  <use x="1260" y="526" xlink:href="#zoom_tool"/>
+  <rect x="1057.2" y="515.6" width="232.9" height="263.3"/>
+</a>
 
 </g>
 </g>
@@ -1276,6 +1295,28 @@ text {
   </a>
 </g>
 
+<g id="popup_react" class="popup_box invis none">
+<path opacity="0.5" fill="#fff" d="M1154.6,785.3h-14.1l29.8-63.5l-50.4,63.5h-53.6c-7.7,0-14,6.3-14,14v41c0,7.7,6.3,14,14,14h88.3c7.7,0,14-6.3,14-14v-41C1168.6,791.6,1162.3,785.3,1154.6,785.3z"/>
+<circle fill="none" stroke="#fff" stroke-width="3" cx="1211" cy="660.3" r="72.1"/>
+  <text x="1113" y="814">
+    Springs
+    <tspan x="1113" dy="28">react</tspan>
+  </text>
+  <a id="popup_react_close" class="bttn_close" href="javascript:;">
+    <use x="1178.19" y="778.36" xlink:href="#popup_close"/>
+  </a>
+</g>
+
+<g id="popup_stem" class="popup_box invis none surf_invis">
+<path opacity="0.5" fill="#fff" d="M908.8,404.8h-164c-7.7,0-14-6.3-14-14v-41c0-7.7,6.3-14,14-14h164c7.7,0,14,6.3,14,14v21l40.8,22l-40.8-5.9v3.9C922.8,398.5,916.5,404.8,908.8,404.8z"/>
+  <text x="827.14" y="363">
+    Stem Controls
+    <tspan x="827.14" dy="28">restrictor</tspan>
+  </text>
+  <a id="popup_stem_close" class="bttn_close" href="javascript:;">
+    <use x="928.64" y="329" xlink:href="#popup_close"/>
+  </a>
+</g>
 
 <g id="info_labels">
 <rect x="51" y="300" width="30" height="30" fill="#b1a7fa" stroke="#fff"/>
@@ -1286,6 +1327,8 @@ text {
 <text id="gray_label" x="94" y="422" font-size="24" fill="#fff">- 0 (BAR)</text>
 <rect x="51" y="450" width="30" height="30" fill="#fff" stroke="#fff"/>
 <text id="white_label" x="94" y="472" font-size="24" fill="#fff">- 0 (LPD)</text>
+</g>
+
 </g>
 
 <script>
@@ -1310,35 +1353,31 @@ function $(sel) {
 }
 
 $("#bttn_surface").onclick = function() {
-  /*$("#popup_nitro").classList.toggle("surf_vis");
-  $("#popup_ball").classList.toggle("surf_vis");
-  $("#popup_circuit").classList.toggle("surf_vis");
-  $("#popup_sensor").classList.toggle("surf_vis");
-  $("#popup_int_check").classList.toggle("surf_vis");
-  $("#popup_out_coupler").classList.toggle("surf_vis");
-  $("#popup_displacement").classList.toggle("surf_vis");
-  $("#popup_catch").classList.toggle("surf_vis");
-  $("#popup_in_coupler").classList.toggle("surf_vis");
-  $("#top_box").classList.toggle("surf_vis");
-  $("#top_box_sping").classList.toggle("surf_vis");
-  $("#top_box_wire").classList.toggle("surf_vis");
-  $("#inlets").classList.toggle("surf_vis");
-  $("#arr_01").classList.toggle("surf_vis");
-  $("#arr_02").classList.toggle("surf_vis");
-  $("#arr_03").classList.toggle("surf_vis");
-  $("#arr_04").classList.toggle("surf_vis");
-  $("#arr_05").classList.toggle("surf_vis");
-  $("#arr_06").classList.toggle("surf_vis");
-  $("#arr_07").classList.toggle("surf_vis");
-  $("#arr_08").classList.toggle("surf_vis");
-  $("#arr_09").classList.toggle("surf_vis");
-  $("#arr_10").classList.toggle("surf_vis");
-  $("#arr_11").classList.toggle("surf_vis");
-  $("#arr_12").classList.toggle("surf_vis");
-  $("#arr_23").classList.toggle("surf_vis");
-  $("#right_part").classList.toggle("surf_vis");
-  $("#surf_lines").classList.toggle("surf_vis");
-  $("#label_text").classList.toggle("surf_vis");*/
+  $("#popup_circuit").classList.toggle("surf_invis");
+  $("#popup_sensor").classList.toggle("surf_invis");
+  $("#popup_ball").classList.toggle("surf_invis");
+  $("#popup_catch").classList.toggle("surf_invis");
+  $("#popup_inlet").classList.toggle("surf_invis");
+  $("#popup_int_check").classList.toggle("surf_invis");
+  $("#popup_outlet").classList.toggle("surf_invis");
+  $("#popup_stem").classList.toggle("surf_invis");
+  $("#lines").classList.toggle("surf_invis");
+  $("#label_text").classList.toggle("surf_invis");
+  $("#round_shapes").classList.toggle("surf_invis");
+  $("#left_inlet").classList.toggle("surf_invis");
+  $("#arr_14").classList.toggle("surf_invis");
+  $("#arr_15").classList.toggle("surf_invis");
+  $("#top_box").classList.toggle("surf_invis");
+  $("#right_inlet").classList.toggle("surf_invis");
+  $("#arr_01").classList.toggle("surf_invis");
+  $("#arr_02").classList.toggle("surf_invis");
+  $("#arr_03").classList.toggle("surf_invis");
+  $("#arr_04").classList.toggle("surf_invis");
+  $("#arr_05").classList.toggle("surf_invis");
+  $("#arr_06").classList.toggle("surf_invis");
+  $("#arr_07").classList.toggle("surf_invis");
+  $("#piston_left_spring").classList.toggle("surf_invis");
+  $("#piston_left_handler").classList.toggle("surf_invis");
   if(bttn_txt) {
     $("#bttn_surface text").textContent = "SUBSEA";
     bttn_txt = false;
@@ -1413,8 +1452,18 @@ $("#popup_warn_close").onclick = function() {
   setTimeout(function(){$("#popup_warn").classList.toggle("none")}, 100);
 };
 
+$("#popup_react_close").onclick = function() {
+  $("#popup_react").classList.add("invis");
+  setTimeout(function(){$("#popup_react").classList.add("none")}, 100);
+};
+
+$("#popup_stem_close").onclick = function() {
+  $("#popup_stem").classList.add("invis");
+  setTimeout(function(){$("#popup_stem").classList.add("none")}, 100);
+};
+
 function info_show() {
-if($("#popup_piston").classList.contains("none") || $("#popup_circuit").classList.contains("none") || $("#popup_sensor").classList.contains("none") || $("#popup_demonstrate").classList.contains("none") || $("#popup_ball").classList.contains("none") || $("#popup_rest").classList.contains("none") || $("#popup_fixed").classList.contains("none") || $("#popup_carbide").classList.contains("none") || $("#popup_catch").classList.contains("none") || $("#popup_inlet").classList.contains("none") || $("#popup_int_check").classList.contains("none") || $("#popup_outlet").classList.contains("none")) {
+if($("#popup_piston").classList.contains("none") || $("#popup_circuit").classList.contains("none") || $("#popup_sensor").classList.contains("none") || $("#popup_demonstrate").classList.contains("none") || $("#popup_ball").classList.contains("none") || $("#popup_rest").classList.contains("none") || $("#popup_fixed").classList.contains("none") || $("#popup_carbide").classList.contains("none") || $("#popup_catch").classList.contains("none") || $("#popup_inlet").classList.contains("none") || $("#popup_int_check").classList.contains("none") || $("#popup_outlet").classList.contains("none") || $("#popup_stem").classList.contains("none")) {
   $("#popup_piston").classList.remove("none");
   $("#popup_circuit").classList.remove("none");
   $("#popup_sensor").classList.remove("none");
@@ -1427,6 +1476,7 @@ if($("#popup_piston").classList.contains("none") || $("#popup_circuit").classLis
   $("#popup_inlet").classList.remove("none");
   $("#popup_int_check").classList.remove("none");
   $("#popup_outlet").classList.remove("none");
+  $("#popup_stem").classList.remove("none");
   setTimeout(function(){
     $("#popup_piston").classList.remove("invis");
     $("#popup_circuit").classList.remove("invis");
@@ -1440,6 +1490,7 @@ if($("#popup_piston").classList.contains("none") || $("#popup_circuit").classLis
     $("#popup_inlet").classList.remove("invis");
     $("#popup_int_check").classList.remove("invis");
     $("#popup_outlet").classList.remove("invis");
+    $("#popup_stem").classList.remove("invis");
   }, 40);
 } else {
   $("#popup_piston").classList.toggle("invis");
@@ -1454,6 +1505,7 @@ if($("#popup_piston").classList.contains("none") || $("#popup_circuit").classLis
   $("#popup_inlet").classList.toggle("invis");
   $("#popup_int_check").classList.toggle("invis");
   $("#popup_outlet").classList.toggle("invis");
+  $("#popup_stem").classList.toggle("invis");
   setTimeout(function(){
     $("#popup_piston").classList.toggle("none");
     $("#popup_circuit").classList.toggle("none");
@@ -1467,6 +1519,7 @@ if($("#popup_piston").classList.contains("none") || $("#popup_circuit").classLis
     $("#popup_inlet").classList.toggle("none");
     $("#popup_int_check").classList.toggle("none");
     $("#popup_outlet").classList.toggle("none");
+    $("#popup_stem").classList.toggle("none");
   }, 100);
   }
 }
@@ -1513,11 +1566,10 @@ function gw_upd() {
     allow_play = true;
   }
 
-  //$("#r_piston").setAttribute("transform", "translate(0 " + w_angle / 5 * -0.234 + ")");
-  //$("#r_spring").setAttribute("transform", "translate(1258.5 683.9) scale(1 " + (1.1 + w_angle / 5 * 0.0042553) + ") translate(-1258.5 -683.9)");
-  //$("#bottom_spring").setAttribute("transform", "translate(961.8 690.5) scale(1 " + (1.3 - w_angle / 5 * 0.006383) + ") translate(-961.8 -690.5)");
-  //$("#top_spring").setAttribute("transform", "translate(961.8 338.3) scale(1 " + (1.14 - w_angle / 5 * 0.002978) + ") translate(-961.8 -338.3)");
-  //$("#l_piston").setAttribute("transform", "translate(0 " + (14 - w_angle / 5 * 0.2979) + ")");
+  $("#restrictor_left").setAttribute("transform", "translate(" + w_angle / 5 * -0.234 + " 0)");
+  $("#restrictor_right").setAttribute("transform", "translate(" + w_angle / 5 * 0.234 + " 0)");
+  $("#piston_left_spring").setAttribute("transform", "translate(962 340.23) scale(1 " + (1 - w_angle / 2000) + ") translate(-962 -340.23)");
+  $("#piston_left").setAttribute("transform", "translate(0 " + w_angle / 2.5 * -0.234 + ")");
 }
 
 function rarr_dwn() {
@@ -1577,6 +1629,8 @@ $("#rb_left").onmouseup = function() {
   clearInterval(setint);
   clearInterval(setint2);
   start_oscillate_up();
+  $("#popup_react").classList.remove("none");
+  setTimeout(function(){$("#popup_react").classList.remove("invis")}, 100);
 };
 
 $("#rb_right").onmousedown = function() {
@@ -1588,6 +1642,8 @@ $("#rb_right").onmouseup = function() {
   clearInterval(setint);
   clearInterval(setint2);
   start_oscillate_down();
+  $("#popup_react").classList.remove("none");
+  setTimeout(function(){$("#popup_react").classList.remove("invis")}, 100);
 };
 
 $("#tgl_left").onmousedown = function() {
@@ -1611,6 +1667,8 @@ $("#yb_left").onmouseup = function() {
   clearInterval(setint);
   clearInterval(setint2);
   start_oscillate_up();
+  $("#popup_react").classList.remove("none");
+  setTimeout(function(){$("#popup_react").classList.remove("invis")}, 100);
 };
 
 $("#yb_right").onmousedown = function() {
@@ -1622,6 +1680,8 @@ $("#yb_right").onmouseup = function() {
   clearInterval(setint);
   clearInterval(setint2);
   start_oscillate_down();
+  $("#popup_react").classList.remove("none");
+  setTimeout(function(){$("#popup_react").classList.remove("invis")}, 100);
 };
 
 window.onmouseup = function() {clearInterval(setint)};
@@ -1631,20 +1691,22 @@ function oscillate_up() {
     osc_iter--;
     if(osc_iter >= 10) {
       osc_pos++;
-        //$("#r_piston").setAttribute("transform", "translate(0 " + (w_angle / 5 * -0.234 - osc_pos) + ")");
-        //$("#big_piston").setAttribute("transform", "translate(0 " + osc_pos * -1 + ")");
-        //$("#r_spring").setAttribute("transform", "translate(1258.5 683.9) scale(1 " + (1.1 + w_angle / 5 * 0.0042553 + osc_pos/100) + ") translate(-1258.5 -683.9)");
-        //$("#bottom_spring").setAttribute("transform", "translate(961.8 690.5) scale(1 " + (1.3 - w_angle / 5 * 0.006383 - osc_pos/20) + ") translate(-961.8 -690.5)");
+      $("#big-spring").setAttribute("transform", "translate(1172.62 634.68) scale(1 " + (1 - osc_iter / 100) + ") translate(-1172.62 -634.68)");
+      $("#inner-spring").setAttribute("transform", "translate(1172.62 634.68) scale(1 " + (1 - osc_iter / 130) + ") translate(-1172.62 -634.68)");
+      $("#piston_move").setAttribute("transform", "translate(0 " + (osc_iter * -.5) + ")");
     } else {
       osc_pos--;
-      //$("#r_piston").setAttribute("transform", "translate(0 " + (w_angle / 5 * -0.234 - osc_pos) + ")");
-      //$("#big_piston").setAttribute("transform", "translate(0 " + osc_pos * -1 + ")");
-      //$("#r_spring").setAttribute("transform", "translate(1258.5 683.9) scale(1 " + (1.1 + w_angle / 5 * 0.0042553 + osc_pos/100) + ") translate(-1258.5 -683.9)");
-      //$("#bottom_spring").setAttribute("transform", "translate(961.8 690.5) scale(1 " + (1.3 - w_angle / 5 * 0.006383 - osc_pos/20) + ") translate(-961.8 -690.5)");
+      $("#big-spring").setAttribute("transform", "translate(1172.62 634.68) scale(1 " + (1 - osc_iter / 100) + ") translate(-1172.62 -634.68)");
+      $("#inner-spring").setAttribute("transform", "translate(1172.62 634.68) scale(1 " + (1 - osc_iter / 130) + ") translate(-1172.62 -634.68)");
+      $("#piston_move").setAttribute("transform", "translate(0 " + (osc_iter * -.5) + ")");
     }
   } else {
     clearInterval(setint2);
     osc_iter = 20;
+    setTimeout(function(){
+      $("#popup_react").classList.add("invis");
+      setTimeout(function(){$("#popup_react").classList.add("none")}, 100);
+    }, 300);
   }
 }
 
@@ -1653,20 +1715,24 @@ function oscillate_down() {
     osc_iter--;
     if(osc_iter >= 10) {
       osc_pos++;
-        //$("#r_piston").setAttribute("transform", "translate(0 " + (w_angle / 5 * -0.234 + osc_pos) + ")");
-        //$("#big_piston").setAttribute("transform", "translate(0 " + osc_pos + ")");
-        //$("#r_spring").setAttribute("transform", "translate(1258.5 683.9) scale(1 " + (1.1 + w_angle / 5 * 0.0042553 - osc_pos/100) + ") translate(-1258.5 -683.9)");
-        //$("#bottom_spring").setAttribute("transform", "translate(961.8 690.5) scale(1 " + (1.3 - w_angle / 5 * 0.006383 + osc_pos/20) + ") translate(-961.8 -690.5)");
+      $("#big-spring").setAttribute("transform", "translate(1172.62 634.68) scale(1 " + (1 + osc_iter / 100) + ") translate(-1172.62 -634.68)");
+      $("#inner-spring").setAttribute("transform", "translate(0 " + (osc_iter * .5) + ")");
+      $("#piston_move").setAttribute("transform", "translate(0 " + (osc_iter * .5) + ")");
+      $("#piston_body").setAttribute("transform", "translate(0 " + (osc_iter * .5) + ")");
     } else {
       osc_pos--;
-      //$("#r_piston").setAttribute("transform", "translate(0 " + (w_angle / 5 * -0.234 + osc_pos) + ")");
-      //$("#big_piston").setAttribute("transform", "translate(0 " + osc_pos + ")");
-      //$("#r_spring").setAttribute("transform", "translate(1258.5 683.9) scale(1 " + (1.1 + w_angle / 5 * 0.0042553 - osc_pos/100) + ") translate(-1258.5 -683.9)");
-      //$("#bottom_spring").setAttribute("transform", "translate(961.8 690.5) scale(1 " + (1.3 - w_angle / 5 * 0.006383 + osc_pos/20) + ") translate(-961.8 -690.5)");
+      $("#big-spring").setAttribute("transform", "translate(1172.62 634.68) scale(1 " + (1 + osc_iter / 100) + ") translate(-1172.62 -634.68)");
+      $("#inner-spring").setAttribute("transform", "translate(0 " + (osc_iter * .5) + ")");
+      $("#piston_move").setAttribute("transform", "translate(0 " + (osc_iter * .5) + ")");
+      $("#piston_body").setAttribute("transform", "translate(0 " + (osc_iter * .5) + ")");
     }
   } else {
     clearInterval(setint2);
     osc_iter = 20;
+    setTimeout(function(){
+      $("#popup_react").classList.add("invis");
+      setTimeout(function(){$("#popup_react").classList.add("none")}, 100);
+    }, 300);
   }
 }
 
@@ -1680,9 +1746,10 @@ function start_oscillate_down() {
   setint2 = setInterval(function(){oscillate_down()}, 10);
 }
 
-/*$("#zoom_close").onclick = function() {
+$("#zoom_close").onclick = function() {
   $("#zoom_clip").setAttribute("clip-path", "");
   $("#zoom").setAttribute("transform", "");
+  $("#zoom_hide").classList.remove("active");
   $("#zoom").classList.remove("active");
   $("#zoom_frame").classList.add("invis");
   $("#zoom_01").classList.toggle("invis");
@@ -1692,8 +1759,9 @@ function start_oscillate_down() {
 
 $("#zoom_01").onclick = function() {
   $("#zoom_clip").setAttribute("clip-path", "url(#zoom_clp)");
-  $("#zoom").setAttribute("transform", "translate(1280 560) scale(2.1) translate(-1280 -560)");
+  $("#zoom").setAttribute("transform", "translate(1400 540) scale(2) translate(-1400 -540)");
   $("#zoom").classList.add("active");
+  $("#zoom_hide").classList.add("active");
   $("#zoom_frame").classList.remove("invis");
   $("#zoom_01").classList.toggle("invis");
   $("#zoom_02").classList.toggle("invis");
@@ -1701,8 +1769,9 @@ $("#zoom_01").onclick = function() {
 }
 $("#zoom_02").onclick = function() {
   $("#zoom_clip").setAttribute("clip-path", "url(#zoom_clp)");
-  $("#zoom").setAttribute("transform", "translate(1050 200) scale(2.1) translate(-1050 -200)");
+  $("#zoom").setAttribute("transform", "translate(780 270) scale(2.1) translate(-780 -270)");
   $("#zoom").classList.add("active");
+  $("#zoom_hide").classList.add("active");
   $("#zoom_frame").classList.remove("invis");
   $("#zoom_01").classList.toggle("invis");
   $("#zoom_02").classList.toggle("invis");
@@ -1710,13 +1779,14 @@ $("#zoom_02").onclick = function() {
 }
 $("#zoom_03").onclick = function() {
   $("#zoom_clip").setAttribute("clip-path", "url(#zoom_clp)");
-  $("#zoom").setAttribute("transform", "translate(975 620) scale(2.5) translate(-975 -620)");
+  $("#zoom").setAttribute("transform", "translate(1280 650) scale(3) translate(-1280 -650)");
   $("#zoom").classList.add("active");
+  $("#zoom_hide").classList.add("active");
   $("#zoom_frame").classList.remove("invis");
   $("#zoom_01").classList.toggle("invis");
   $("#zoom_02").classList.toggle("invis");
   $("#zoom_03").classList.toggle("invis");
-}*/
+}
 
 function animate() {
   if(arrows_shift < 40) {
