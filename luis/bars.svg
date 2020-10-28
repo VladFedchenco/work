@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 100">
+  <text x="10" y="70" font-family="sans-serif" font-size="56" font-weight="bold">
+    <tspan id="percentage">60</tspan>
+    <tspan dx="-10">%</tspan>
+  </text>
+  <rect id="section_a1" width="400" height="100" x="200" fill="#002B8B"/>
+  <rect id="section_b1" width="200" height="100" x="600" fill="#E7009A"/>
+  <rect id="section_a2" width="400" height="100" x="800" fill="#002B8B"/>
+</svg>
