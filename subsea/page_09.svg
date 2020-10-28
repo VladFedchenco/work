@@ -851,13 +851,13 @@ function gw_upd() {
   $("#gray_label").textContent = "- " + (g_angle / 30).toFixed(2) + " (BAR)";
   $("#white_label").textContent = "- " + (w_angle / 5).toFixed(2) + " (LPD)";
 
-  if (w_angle > 1 && r_angle > 0 && y_angle < r_angle) {
+  if (w_angle > 1 && r_angle > 0 && y_angle < r_angle && (r_angle - y_angle) <= 20) {
     if(allow_play) {
       animation_id = requestAnimationFrame(animate);
     }
     allow_play = false;
   } else {
-    if(y_angle >= r_angle) {
+    if(y_angle >= r_angle || (r_angle - y_angle) > 20) {
       $("#popup_warn").classList.remove("invis");
     }
     $("#gray_arrow").setAttribute("transform", "rotate(-150 708.719 880.397)");
