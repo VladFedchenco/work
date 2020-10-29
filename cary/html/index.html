@@ -234,6 +234,16 @@
             </g>
         </svg>
     </section>
+    <section id="drop_down">
+        <div class="action_select">
+            <select>
+                <option>Book</option>
+                <option>Exercise</option>
+            </select>
+            <button>SUBMIT</button>
+        </div>
+        <a href="javascript:;" id="drop_down_close">X Close</a>
+    </section>
     <section id="helper">
         <div id="helper_arrow">
             <img src="imgs/arrow.svg">
@@ -270,36 +280,117 @@
         </div>
         <a href="javascript:;" id="more_details_close">X Close</a>
     </section>
-    <section id="rating" class="">
-        <h2 id="rating_text">I'm on Team Starbucks!</h2>
-        <img id="rating_logo" src="imgs/sb.svg">
+    <section id="rate_sb" class="rating">
+        <h2 class="rating_text">I'm on Team Starbucks!</h2>
+        <img class="rating_logo" src="imgs/sb.svg">
         <p>My Rating:
-            <a href="javascript:;" id="sb_rate1">
-                <svg xmlns="http://www.w3.org/2000/svg" width="49" height="47" viewBox="0 0 49 47">
-                    <polygon points="24.498 0 32.068 15.339 48.995 17.799 36.746 29.738 39.638 46.597 24.498 38.637 9.357 46.597 12.249 29.738 0 17.799 16.927 15.339 24.498 0" fill="#ccc" />
-                </svg>
-            </a>
-            <a href="javascript:;" id="sb_rate2">
-                <svg xmlns="http://www.w3.org/2000/svg" width="49" height="47" viewBox="0 0 49 47">
-                    <polygon points="24.498 0 32.068 15.339 48.995 17.799 36.746 29.738 39.638 46.597 24.498 38.637 9.357 46.597 12.249 29.738 0 17.799 16.927 15.339 24.498 0" fill="#ccc" />
-                </svg>
-            </a>
-            <a href="javascript:;" id="sb_rate3">
-                <svg xmlns="http://www.w3.org/2000/svg" width="49" height="47" viewBox="0 0 49 47">
-                    <polygon points="24.498 0 32.068 15.339 48.995 17.799 36.746 29.738 39.638 46.597 24.498 38.637 9.357 46.597 12.249 29.738 0 17.799 16.927 15.339 24.498 0" fill="#ccc" />
-                </svg>
-            </a>
-            <a href="javascript:;" id="sb_rate4">
-                <svg xmlns="http://www.w3.org/2000/svg" width="49" height="47" viewBox="0 0 49 47">
-                    <polygon points="24.498 0 32.068 15.339 48.995 17.799 36.746 29.738 39.638 46.597 24.498 38.637 9.357 46.597 12.249 29.738 0 17.799 16.927 15.339 24.498 0" fill="#ccc" />
-                </svg>
-            </a>
-            <a href="javascript:;" id="sb_rate5">
-                <svg xmlns="http://www.w3.org/2000/svg" width="49" height="47" viewBox="0 0 49 47">
-                    <polygon points="24.498 0 32.068 15.339 48.995 17.799 36.746 29.738 39.638 46.597 24.498 38.637 9.357 46.597 12.249 29.738 0 17.799 16.927 15.339 24.498 0" fill="#ccc" />
-                </svg>
-            </a>
+            <div class="starrating">
+                <input type="radio" id="sb_star5" name="rating" value="5" /><label for="sb_star5" id="sb_star5" title="5 star"></label>
+                <input type="radio" id="sb_star4" name="rating" value="4" /><label for="sb_star4" id="sb_star4" title="4 star"></label>
+                <input type="radio" id="sb_star3" name="rating" value="3" /><label for="sb_star3" id="sb_star3" title="3 star"></label>
+                <input type="radio" id="sb_star2" name="rating" value="2" /><label for="sb_star2" id="sb_star2" title="2 star"></label>
+                <input type="radio" id="sb_star1" name="rating" value="1" /><label for="sb_star1" id="sb_star1" title="1 star"></label>
+            </div>
+            <div class="thanks">
+                <h3>THANKS FOR YOUR VOTE!</h3>
+                <div><span>Share with your friends</span> <a href="javascript:;"><img src="imgs/twitter.svg"></a> <a href="javascript:;"><img src="imgs/facebook.svg"></a> <a href="javascript:;"><img src="imgs/instagram.svg"></a></div>
+                <a href="javascript:;" id="bttn_sb_ok" class="bttn">OK</a>
+            </div>
         </p>
+    </section>
+    <section id="rate_th" class="rating">
+        <h2 class="rating_text">I'm on Team Tim Hortons!</h2>
+        <img class="rating_logo" src="imgs/th.svg">
+        <p>My Rating:
+            <div class="starrating">
+                <input type="radio" id="th_star5" name="rating" value="5" /><label for="th_star5" id="th_star5" title="5 star"></label>
+                <input type="radio" id="th_star4" name="rating" value="4" /><label for="th_star4" id="th_star4" title="4 star"></label>
+                <input type="radio" id="th_star3" name="rating" value="3" /><label for="th_star3" id="th_star3" title="3 star"></label>
+                <input type="radio" id="th_star2" name="rating" value="2" /><label for="th_star2" id="th_star2" title="2 star"></label>
+                <input type="radio" id="th_star1" name="rating" value="1" /><label for="th_star1" id="th_star1" title="1 star"></label>
+            </div>
+            <div class="thanks">
+                <h3>THANKS FOR YOUR VOTE!</h3>
+                <div><span>Share with your friends</span> <a href="javascript:;"><img src="imgs/twitter.svg"></a> <a href="javascript:;"><img src="imgs/facebook.svg"></a> <a href="javascript:;"><img src="imgs/instagram.svg"></a></div>
+                <a href="javascript:;" id="bttn_th_ok" class="bttn">OK</a>
+            </div>
+        </p>
+    </section>
+    <section id="result">
+        <div id="result_percent" style="background: linear-gradient(90deg, #00a8ff 0%, #00a8ff 60%, #fff 60%, #fff 100%);">
+            <div class="result_section" id="result_left" style="width: 60%">
+                <h2>60%</h2>
+                <img src="imgs/sb.svg">
+                <a href="javascript:;" class="bttn">Buy from Starbucks</a>
+            </div>
+            <div class="result_section" id="result_right" style="width: 40%">
+                <h2>40%</h2>
+                 <img src="imgs/th.svg">
+                 <a href="javascript:;" class="bttn">Buy from Tim Hortons</a>
+            </div>
+        </div>
+        <div class="result_buttons">
+            <a href="javascript:;" class="bttn" id="result_skip">Skip</a>
+            <a href="javascript:;" class="bttn" id="result_tell" style="background-color: #007042">Tell Us why you love Starbucks!</a>
+        </div>
+    </section>
+    <section id="why">
+        <div id="why_form">
+            <h3>Why do you like Starbucks?</h3>
+            <img src="imgs/sb.svg">
+            <form id="tell_why">
+                <textarea placeholder="Tell us something"></textarea>
+                <button id="why_ok">OK</button>
+                <a href="javascript:;" id="bttn_cancel" class="bttn_cancel">Cancel</a>
+            </form>
+        </div>
+        <a href="javascript:;" id="why_close">X Close</a>
+    </section>
+    <section id="sign_up">
+        <h2>SIGN UP FOR DISCOUNTS AT STARBUCKS</h2>
+        <div class="clmns">
+            <div class="clmn clmn_40">
+                <h3>Sign up with social media login</h3>
+                <a href="javascript:;" class="sign_up_social"><img src="imgs/facebook.svg"></a>
+                <a href="javascript:;" class="sign_up_social"><img src="imgs/twitter.svg"></a>                
+                <a href="javascript:;" class="sign_up_social"><img src="imgs/instagram.svg"></a>
+            </div>
+            <div class="clmn clmn_60">
+                <h3>Or up with E-mail / Mobile Phone</h3>
+                <form>
+                    <div class="form_row">
+                        <label>E-mail</label>
+                        <input type="text" placeholder="E-mail address">
+                    </div>
+                    <div class="form_row">
+                        <label>Confirm E-mail</label>
+                        <input type="text" placeholder="E-mail address">
+                    </div>
+                    <hr>
+                    <div class="form_row">
+                        <label>Mobile Phone</label>
+                        <input type="text" placeholder="Mobile Phone number">
+                    </div>
+                    <div class="form_row">
+                        <label>Confirm Mobile Phone</label>
+                        <input type="text" placeholder="Mobile Phone number">
+                    </div>
+                    <hr>
+                    <div class="form_row">
+                        <label>Password</label>
+                        <input type="password" placeholder="Password">
+                    </div>
+                    <div class="form_row">
+                        <a href="javascript:;" id="form_skip">Skip</a>
+                        <a href="javascript:;" class="bttn" id="form_submit">OK</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section id="sign_up_thanks">
+        <h2>THANKS FOR SIGNING UP!</h2>
+        <a href="javascript:;" class="bttn" id="final_thanks">OK</a>
     </section>
     <script src="js/main.js"></script>
 </body>
