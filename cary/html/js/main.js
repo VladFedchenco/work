@@ -43,7 +43,7 @@ $("#more_details_close").onclick = function() {
 
 window.addEventListener('load', (event) => {
   $("#initial_screen").classList.add("active");
-  setTimeout(function(){ $("#initial_screen").classList.remove("active"); }, 7800);
+  setTimeout(function(){ $("#initial_screen").classList.remove("active"); }, 8000);
 });
 
 $("#sb_rate1").addEventListener("mouseover", function(){
