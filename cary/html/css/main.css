@@ -1292,4 +1292,8 @@ svg|a {
     #sign_up label {
         display: block;
     }
+    .result_buttons {
+        top: 60%;
+        bottom: auto;
+    }
 }
