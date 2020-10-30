@@ -600,10 +600,10 @@ svg|a {
 
 #initial_screen {
     position: fixed;
-    width: 100vw;
-    height: 100vh;
     left: 0;
     top: 0;
+    right: 0;
+    bottom: 0;
     background-color: rgba(0, 0, 0, 0);
     z-index: 999;
     pointer-events: none;
@@ -809,8 +809,8 @@ svg|a {
     position: fixed;
     left: 0;
     top: 0;
-    width: 100vw;
-    height: 100vh;
+    right: 0;
+    bottom: 0;
     color: #fff;
     background-color: rgba(0, 0, 0, .8);
     transition: opacity .3s linear;
@@ -903,9 +903,9 @@ svg|a {
 
 .rating h2 {
     text-transform: uppercase;
-    font-size: 36px;
+    font-size: 32px;
     display: block;
-    padding-top: 10%;
+    padding-top: 80px;
 }
 
 .rating p {
@@ -914,7 +914,7 @@ svg|a {
 }
 
 .rating_logo {
-    height: 260px;
+    height: 18vh;
     max-width: 30%;
 }
 
@@ -950,7 +950,7 @@ svg|a {
 }
 
 .thanks {
-    padding-top: 64px;
+    padding-top: 4vh;
 }
 
 .thanks img {
@@ -1021,17 +1021,15 @@ svg|a {
     z-index: 98;
     left: 0;
     top: 0;
-    width: 100vw;
-    height: 100vh;
+    right: 0;
+    bottom: 0;
     color: #000;
+    padding-top: 15vh;
 }
 
 #result_percent {
-    position: absolute;
-    left: 50%;
-    top: 50%;
     width: 80%;
-    transform: translate(-50%, -50%);
+    margin: 0 auto;
     border-radius: 150px;
     height: 300px;
     overflow: hidden;
@@ -1047,18 +1045,19 @@ svg|a {
 .result_section img {
     height: 140px;
     max-width: 300px;
+    display: block;
+    margin: 0 auto;
 }
 
 .result_section .bttn {
     margin-top: 8px;
+    display: inline-block;
+    width: initial;
 }
 
 .result_buttons {
-    position: absolute;
-    left: 0;
-    bottom: 0;
     width: 100%;
-    height: 150px;
+    padding-top: 5vh;
     text-align: center;
 }
 
@@ -1070,13 +1069,14 @@ svg|a {
 #why_form {
     width: 50%;
     margin: 0 auto;
-    padding: 150px 32px 32px 32px;
+    padding: 15vh 24px 24px 24px;
     text-align: center;
     color: #fff;
 }
 
 #why img {
     height: 140px;
+    max-width: 400px;
     margin: 16px;
 }
 
@@ -1092,16 +1092,22 @@ svg|a {
 
 #sign_up, #sign_up_thanks {
     position: fixed;
-    width: 100vw;
-    height: 100vh;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
     background-color: #fff;
     z-index: 98;
     text-align: center;
-    padding: 10%;
+    padding: 80px 10% 10% 10%;
+}
+
+#sign_up.active {
+    position: absolute;
 }
 
 #sign_up h2 {
-    margin-bottom: 96px;
+    margin-bottom: 8vh;
 }
 
 .sign_up_social {
@@ -1133,7 +1139,7 @@ svg|a {
 #form_submit {
     display: inline-block;
     width: initial;
-    margin-left: 16px;
+    margin-right: 16px;
 }
 
 #form_skip {
@@ -1141,10 +1147,17 @@ svg|a {
 }
 
 #sign_up_thanks {
-    padding-top: 20%;
+    padding-top: 40vh;
 }
 
 @media screen and (max-width: 990px) {
+    #initial_svg {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 50%;
+        transform: translate(0, -50%);
+    }
     .clmn {
         float: none;
         width: 100%;
@@ -1158,7 +1171,10 @@ svg|a {
     }
 
     #smoke {
-        height: 100vh;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
         overflow: hidden;
     }
 
@@ -1257,7 +1273,7 @@ svg|a {
         width: 96%;
         margin: 0 auto;
         transform: none;
-        border-radius: 30px;
+        border-radius: 60px;
         height: 200px;
     }
 
@@ -1280,10 +1296,14 @@ svg|a {
     }
     #sign_up.active {
         position: static;
-        padding-top: 100px;
+        padding: 80px 16px 16px 16px;
     }
     #sign_up h2 {
+        font-size: 25px;
         margin-bottom: 32px;
+    }
+    #sign_up h3 {
+        font-size: 21px;
     }
     #sign_up .clmn_60 {
         text-align: center;
@@ -1295,5 +1315,34 @@ svg|a {
     .result_buttons {
         top: 60%;
         bottom: auto;
+    }
+    #sign_up input {
+        margin-left: 0;
+        width: 90%;
+    }
+    .sign_up_social {
+        display: inline-block;
+        margin: 0 4px 16px 4px;
+        width: 44px;
+    }
+    .sign_up_social img {
+        width: 44px;
+    }
+    #why img {
+        height: 100px;
+        max-width: 80%;
+    }
+    #why_form h3 {
+        font-size: 21px;
+        margin: 0;
+    }
+    #form_submit {
+        margin-top: 8px;
+        padding: 16px 48px;
+    }
+    .result_buttons .bttn {
+        display: block;
+        margin: 16px auto 0 auto;
+        width: 90%;
     }
 }

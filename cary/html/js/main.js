@@ -72,6 +72,12 @@ $("#bttn_sb_ok").onclick = function() {
 $("#bttn_th_ok").onclick = function() {
   $("#rate_th").classList.remove("active");
   show_result()
+  $("#result_percent").setAttribute("style", "background: linear-gradient(90deg, #fff 0%, #fff 60%, #00a8ff 60%, #00a8ff 100%);");
+  $("#result_tell").innerHTML = "Tell us why you love Tim Hortons!";
+  $("#result_tell").setAttribute("style", "background-color: #dd0f2d");
+  $("#why_form h3").innerHTML = "Why do you like Tim Hortons?"
+  $("#why_form img").setAttribute("src", "imgs/th.svg");
+  $("#sign_up h2").innerHTML = "SIGN UP FOR DISCOUNTS AT TIM HORTONS";
 };
 
 $("#result_tell").onclick = function() {
