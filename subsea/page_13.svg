@@ -105,6 +105,10 @@ text {
 </style>
 
 <defs>
+  <linearGradient id="ver_gray" x2=".6" y2="1">
+    <stop offset="0" stop-color="#c5d6d9"/>
+    <stop offset="1" stop-color="#aac2c7"/>
+  </linearGradient>
   <linearGradient id="hor_red" x2="1" y2="0">
     <stop offset="0" stop-color="#B80000"/>
     <stop offset=".6" stop-color="#D47F7F"/>
@@ -230,6 +234,7 @@ text {
     </g>
   </g>
   <path id="arr_b" d="M0 7.51L7.71-.21H3.47v-7.3h-6.94v7.3h-4.24L0 7.51z"/>
+  <path id="arr_t" transform="scale(1 -1)" d="M0 7.51L7.71-.21H3.47v-7.3h-6.94v7.3h-4.24L0 7.51z"/>
   <path id="arr_r" transform="scale(-1 1)" d="M-7.51 0L.21 7.71V3.47h7.3v-6.94H.21v-4.24L-7.51 0z"/>
   <path id="arr_l" d="M-7.51 0L.21 7.71V3.47h7.3v-6.94H.21v-4.24L-7.51 0z"/>
   <g id="popup_close">
@@ -238,11 +243,11 @@ text {
   </g>
 </defs>
 
-<a href="page_11.svg" id="bttn_prev" class="nav_button">
+<a href="page_12.svg" id="bttn_prev" class="nav_button">
   <path class="nav_button_bg" d="M184.5 119.66H63.98c-6.6 0-12-5.4-12-12V69.84c0-6.6 5.4-12 12-12H184.5c6.6 0 12 5.4 12 12v37.83c0 6.59-5.4 11.99-12 11.99z"/>
   <text x="126" y="100">PREV</text>
 </a>
-<a href="page_13.svg" id="bttn_next" class="nav_button">
+<a href="page_14.svg" id="bttn_next" class="nav_button">
   <path class="nav_button_bg" d="M1856.02 119.66H1735.5c-6.6 0-12-5.4-12-12V69.84c0-6.6 5.4-12 12-12h120.52c6.6 0 12 5.4 12 12v37.83c0 6.59-5.4 11.99-12 11.99z"/>
   <text x="1798" y="100">NEXT</text>
 </a>
@@ -252,66 +257,83 @@ text {
 </a>
 <g id="page_num">
   <circle cx="1821.47" cy="984.85" r="41.88" fill="#fff"/>
-  <text x="1820" y="1000">12</text>
+  <text x="1820" y="1000">13</text>
 </g>
 
-<text x="960" y="100" class="ttl">SUBSEA BPR P&amp;ID</text>
-<a id="info" fill="#fff" transform="translate(-70 0)" href="javascript:;">
+<text x="860" y="106" class="ttl">SUBSEA BPR
+  <tspan x="860" dy="60">X-SELECTION</tspan>
+</text>
+<a id="info" fill="#fff" transform="translate(-240 0)" href="javascript:;">
   <path id="info_bg" fill-opacity="0" stroke="#fff" stroke-width="3" d="M1291 53.55a17.01 17.01 0 010 34 17.01 17.01 0 010-34h0z"/>
   <path fill="#FFF" d="M1293.38 70.85a2.59 2.59 0 00-2.57-2.42 2.6 2.6 0 00-2.58 2.42v7.13a2.6 2.6 0 002.58 2.42 2.59 2.59 0 002.57-2.42v-7.13z"/>
   <path fill="#FFF" d="M1293.38 63.39a2.59 2.59 0 00-2.57-2.42 2.6 2.6 0 00-2.58 2.42v.03a2.6 2.6 0 002.58 2.42 2.59 2.59 0 002.57-2.42v-.03z"/>
 </a>
-
-<g id="stroked_lines" fill="none" stroke="#B80000" stroke-dasharray="20 20" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3">
-  <line x1="433.46" x2="433.46" y1="786.739" y2="700.385"/>
-  <line x1="787.253" x2="787.253" y1="786.739" y2="734.645"/>
-  <line x1="1141.476" x2="1141.476" y1="786.739" y2="700.386"/>
-  <polyline points="661.451 686.861 814.877 686.861 814.877 510.051 921.318 510.051 921.318 526.3"/>
-  <line stroke="#73cfff" x1="433.4275" x2="433.4275" y1="289.1493" y2="304.8327"/>
+<g id="pump">
+  <circle cx="657.94" cy="346.78" r="42.28" fill="none" stroke="#000" stroke-width="3"/>
+  <circle id="pump_speed" stroke-dasharray="162.5" stroke-dashoffset="162.5" cx="657.94" cy="346.78" r="26" transform="rotate(-3 657.94 346.78)" opacity=".5" fill="none" stroke="#fff" stroke-width="26"/>
+  <path d="M652.75 304.83h-51.59v20.28h20.47c6.55-10.93 17.89-18.66 31.12-20.28z"/>
+  <line x1="735.93" x2="657.94" y1="346.78" y2="346.78" fill="none" stroke="#000" stroke-width="3"/>
 </g>
-
-<g id="red_pipe">
-  <rect fill="url(#ver_red)" width="385.476" height="20.284" x="275.975" y="680.101"/>
-  <rect id="pipe4" fill="url(#ver_yllw)" width="398.327" height="20.284" x="911.176" y="680.101"/>
-  <rect id="pipe5" fill="url(#ver_yllw)" width="196.707" height="20.284" x="1420.075" y="680.102"/>
-  <rect id="pipe2" fill="url(#ver_org)" width="290.294" height="20.284" x="641.166" y="714.361"/>
-  <polygon id="pipe1" fill="url(#hor_org)" points="661.451 680.101 641.167 700.385 641.167 734.646 661.451 714.361"/>
-  <polygon id="pipe3" fill="url(#hor_org)" points="931.46 700.385 911.176 680.101 911.176 714.361 931.46 734.646"/>
-  <polygon id="pipe6" fill="url(#hor_yllw)" points="1616.781 680.101 1596.497 700.386 1596.497 790.449 1616.782 790.449"/>
+<a id="pump_left" class="bttn" href="javascript:;">
+  <use x="567.8" y="430" xlink:href="#bttn_l_flpd"/>
+</a>
+<a id="pump_right" class="bttn" href="javascript:;">
+  <use x="664.8" y="430" xlink:href="#bttn_r_flpd"/>
+</a>
+<g id="arrow">
+  <polyline fill="none" stroke="#000" stroke-width="3" points="239.78 320.22 224.39 304.83 208.99 320.22"/>
+  <polyline fill="none" stroke="#000" stroke-width="3" points="239.78 649.29 224.39 664.69 208.99 649.29"/>
+  <line x1="224.39" x2="224.39" y1="664.69" y2="304.83" fill="none" stroke="#000" stroke-width="3"/>
 </g>
-<g id="blue_pipe">
-  <rect fill="url(#ver_blue)" width="167.465" height="20.284" x="1097.272" y="150.738"/>
-  <rect fill="url(#ver_blue)" width="167.465" height="20.284" x="1097.272" y="218.09"/>
-  <polygon fill="url(#ver_blue)" points="601.166 325.117 591.026 314.975 601.166 304.833 275.975 304.833 275.975 325.117"/>
-  <path fill="url(#hor_blue)" d="M1011.674 245.377c-3.638 0-7.082-.867-10.142-2.396v75.938h20.284v-75.938a22.622 22.622 0 01-10.142 2.396z"/>
-  <polygon fill="url(#hor_blue)" points="1097.272 150.737 1117.556 171.021 1117.556 318.918 1097.272 318.918"/>
-  <polygon fill="url(#ver_blue)" points="1191.012 325.117 1191.012 304.833 665.33 304.833 675.501 314.975 665.33 325.117"/>
+<text x="213.34" y="484.75" transform="rotate(-90 213.34 484.75)">275 Bar Head</text>
+<polygon fill="url(#ver_gray)" stroke="#000" stroke-width=".5" points="1785.55 740.68 1650.73 740.68 1650.73 767.67 1678.6 767.67 1678.6 877.54 1757.68 877.54 1757.68 767.67 1785.55 767.67"/>
+<polygon fill="url(#ver_gray)" stroke="#000" stroke-width=".5" points="1184.93 66.5 1184.93 235.34 837.87 235.34 837.87 782.61 1560.95 782.61 1560.95 66.5"/>
+<g stroke="#000" stroke-width=".5">
+  <rect fill="url(#hor_red)" width="129.9" height="407.8" x="878.1" y="292.79"/>
+  <polygon fill="url(#hor_red)" points="1285.12 225.72 1285.12 246.85 1239.25 246.85 1239.25 306.3 1296.97 306.3 1296.97 225.72"/>
+  <polygon fill="url(#hor_red)" points="1453 225.72 1453 246.85 1498.87 246.85 1498.87 306.3 1441.15 306.3 1441.15 225.72"/>
+  <rect fill="url(#ver_red)" width="602.12" height="28.26" x="275.98" y="628.73"/>
+  <rect fill="url(#ver_red)" width="81" height="17.71" x="1158.25" y="252.68"/>
+  <rect fill="url(#ver_red)" width="167.96" height="17.71" x="1008" y="648.13"/>
+  <polygon fill="url(#hor_red)" points="1158.25 648.13 1158.25 252.68 1175.96 270.4 1175.96 665.85"/>
+  <rect fill="url(#hor_red)" width="10.96" height="83.89" x="458.79" y="656.99"/>
 </g>
-
-<polygon id="pipe_transition" fill="url(#hor_blue)" points="275.975 700.385 296.26 680.013 296.259 325.117 275.975 304.833"/>
+<g id="pipe_blue">
+  <line x1="433.43" x2="433.43" y1="289.15" y2="304.83" fill="none" stroke="#60BFF0" stroke-width="3"/>
+  <rect width="325.19" height="20.28" x="275.98" y="304.83" fill="url(#ver_blue)"/>
+</g>
+<polygon id="pipe_transition" fill="url(#hor_blue)" points="275.98 656.99 296.26 628.73 296.26 325.12 275.98 304.83"/>
 <mask id="t_mask">
-  <rect fill="url(#mask_grad)" x="271" y="304" width="30" height="396" />
+  <polygon fill="url(#mask_grad)" points="275.98 656.99 296.26 628.73 296.26 325.12 275.98 304.83"/>
 </mask>
-<polygon mask="url(#t_mask)" id="pipe_transition" fill="url(#hor_red)" points="275.975 700.385 296.26 680.013 296.259 325.117 275.975 304.833"/>
+<polygon mask="url(#t_mask)" id="pipe_transition" fill="url(#hor_red)" points="275.98 656.99 296.26 628.73 296.26 325.12 275.98 304.83"/>
+
+<g id="pipe_yellow" stroke="#000" stroke-width=".5">
+  <polygon id="pipe11" fill="url(#hor_yllw)" points="1460.03 690.66 1278.07 690.66 1278.07 582.54 1296.97 582.54 1296.97 161.18 1441.13 161.18 1441.13 582.54 1460.03 582.54"/>
+  <rect id="pipe15" fill="url(#ver_yllw)" width="271.44" height="28.26" x="1459.83" y="637.12"/>
+  <polygon id="pipe12" fill="url(#hor_yllw)" points="1703.01 741.34 1703.01 665.38 1731.27 637.12 1731.27 741.34"/>
+  <rect id="pipe13" fill="url(#hor_yllw)" width="10.96" height="36.37" x="1692.6" y="600.75"/>
+  <rect id="pipe16" fill="url(#ver_yllw)" width="77.5" height="17.71" x="1200.57" y="649.14"/>
+  <rect id="pipe17" fill="url(#ver_yllw)" width="96.39" height="17.71" x="1200.57" y="163.04"/>
+  <polygon id="pipe14" fill="url(#hor_yllw)" points="1200.57 666.85 1200.57 163.04 1218.29 180.75 1218.29 649.14"/>
+</g>
+<g id="pipe_orange" stroke="#000" stroke-width=".5">
+  <polygon id="pipe1" fill="url(#hor_org)" points="1239.25 306.3 1239.25 495.75 1260.92 495.75 1260.92 561.81 1278.07 561.81 1278.07 306.3"/>
+  <polygon id="pipe2" fill="url(#hor_org)" points="1498.87 306.3 1498.87 495.75 1477.2 495.75 1477.2 561.81 1460.05 561.81 1460.05 306.3"/>
+  <rect id="pipe3" fill="url(#hor_org)" width="88.54" height="74.24" x="1324.79" y="81.13"/>
+  <rect id="pipe4" fill="url(#hor_org)" width="58.9" height="41.91" x="1339.6" y="690.66"/>
+  <rect id="pipe9" fill="url(#ver_org)" width="610.7" height="28.26" x="928.83" y="732.57"/>
+  <polygon id="pipe5" fill="url(#hor_org)" points="957.27 732.57 928.83 760.83 928.83 685.57 957.27 685.57"/>
+  <rect id="pipe6" fill="url(#hor_org)" width="10.96" height="33.07" x="1400.42" y="760.83"/>
+  <rect id="pipe10" fill="url(#ver_org)" width="126.2" height="17.71" x="1413.33" y="81.13"/>
+  <rect id="pipe7" fill="url(#ver_org)" width="22.95" height="17.71" x="1498.87" y="424.38"/>
+</g>
 
 <clipPath id="arr_01_clp">
-  <polygon points="601.166,325.117 591.026,314.975 601.166,304.833 275.975,304.833 275.975,325.117 "/>
-  <polygon points="1191.012,325.117 1191.012,304.833 665.33,304.833 675.501,314.975 665.33,325.117 "/>
+  <rect x="275.98" y="304.83" width="325.19" height="20.28"/>
 </clipPath>
 <g id="arr_01" class="" clip-path="url(#arr_01_clp)">
   <g id="q_01">
-    <use x="1220" y="315" xlink:href="#arr_l"/>
-    <use x="1170" y="315" xlink:href="#arr_l"/>
-    <use x="1120" y="315" xlink:href="#arr_l"/>
-    <use x="1070" y="315" xlink:href="#arr_l"/>
-    <use x="1020" y="315" xlink:href="#arr_l"/>
-    <use x="970" y="315" xlink:href="#arr_l"/>
-    <use x="920" y="315" xlink:href="#arr_l"/>
-    <use x="870" y="315" xlink:href="#arr_l"/>
-    <use x="820" y="315" xlink:href="#arr_l"/>
-    <use x="770" y="315" xlink:href="#arr_l"/>
-    <use x="720" y="315" xlink:href="#arr_l"/>
-    <use x="670" y="315" xlink:href="#arr_l"/>
     <use x="620" y="315" xlink:href="#arr_l"/>
     <use x="570" y="315" xlink:href="#arr_l"/>
     <use x="520" y="315" xlink:href="#arr_l"/>
@@ -324,7 +346,7 @@ text {
 </g>
 
 <clipPath id="arr_02_clp">
-  <rect x="275.975" y="325.369" width="20.285" height="354.645"/>
+  <rect x="275.975" y="325.369" width="20.285" height="330"/>
 </clipPath>
 <g id="arr_02" class="" clip-path="url(#arr_02_clp)">
   <g id="q_02">
@@ -336,155 +358,420 @@ text {
     <use x="286" y="536" xlink:href="#arr_b"/>
     <use x="286" y="586" xlink:href="#arr_b"/>
     <use x="286" y="636" xlink:href="#arr_b"/>
-    <use x="286" y="686" xlink:href="#arr_b"/>
-    <use x="286" y="736" xlink:href="#arr_b"/>
   </g>
 </g>
 
 <clipPath id="arr_03_clp">
-  <rect x="275.976" y="680.101" width="385.476" height="20.284"/>
+  <rect x="296.26" y="628.73" width="637" height="28.26"/>
 </clipPath>
 <g id="arr_03" class="" clip-path="url(#arr_03_clp)">
   <g id="q_03">
-    <use x="270" y="690" xlink:href="#arr_r"/>
-    <use x="320" y="690" xlink:href="#arr_r"/>
-    <use x="370" y="690" xlink:href="#arr_r"/>
-    <use x="420" y="690" xlink:href="#arr_r"/>
-    <use x="470" y="690" xlink:href="#arr_r"/>
-    <use x="520" y="690" xlink:href="#arr_r"/>
-    <use x="570" y="690" xlink:href="#arr_r"/>
-    <use x="620" y="690" xlink:href="#arr_r"/>
-    <use x="670" y="690" xlink:href="#arr_r"/>
+    <use x="270" y="643" xlink:href="#arr_r"/>
+    <use x="320" y="643" xlink:href="#arr_r"/>
+    <use x="370" y="643" xlink:href="#arr_r"/>
+    <use x="420" y="643" xlink:href="#arr_r"/>
+    <use x="470" y="643" xlink:href="#arr_r"/>
+    <use x="520" y="643" xlink:href="#arr_r"/>
+    <use x="570" y="643" xlink:href="#arr_r"/>
+    <use x="620" y="643" xlink:href="#arr_r"/>
+    <use x="670" y="643" xlink:href="#arr_r"/>
+    <use x="720" y="643" xlink:href="#arr_r"/>
+    <use x="770" y="643" xlink:href="#arr_r"/>
+    <use x="820" y="643" xlink:href="#arr_r"/>
+    <use x="870" y="643" xlink:href="#arr_r"/>
+    <use x="920" y="643" xlink:href="#arr_r"/>
   </g>
 </g>
 
 <clipPath id="arr_04_clp">
-  <rect x="641.166" y="714.361" width="290.294" height="20.284"/>
+  <rect x="928.83" y="628.73" width="28.44" height="132.11"/>
 </clipPath>
 <g id="arr_04" class="" clip-path="url(#arr_04_clp)">
   <g id="q_04">
-    <use x="620" y="724.5" xlink:href="#arr_r"/>
-    <use x="670" y="724.5" xlink:href="#arr_r"/>
-    <use x="720" y="724.5" xlink:href="#arr_r"/>
-    <use x="770" y="724.5" xlink:href="#arr_r"/>
-    <use x="820" y="724.5" xlink:href="#arr_r"/>
-    <use x="870" y="724.5" xlink:href="#arr_r"/>
-    <use x="920" y="724.5" xlink:href="#arr_r"/>
-    <use x="970" y="724.5" xlink:href="#arr_r"/>
-    </g>
+    <use x="943" y="610" xlink:href="#arr_b"/>
+    <use x="943" y="660" xlink:href="#arr_b"/>
+    <use x="943" y="710" xlink:href="#arr_b"/>
+    <use x="943" y="760" xlink:href="#arr_b"/>
+  </g>
 </g>
 
 <clipPath id="arr_05_clp">
-  <rect x="911.176" y="680.101" width="398.327" height="20.284"/>
-  <rect x="1420.075" y="680.102" width="196.707" height="20.284"/>
+  <rect x="957.27" y="732.57" width="426.24" height="28.26"/>
 </clipPath>
 <g id="arr_05" class="" clip-path="url(#arr_05_clp)">
   <g id="q_05">
-    <use x="870" y="690" xlink:href="#arr_r"/>
-    <use x="920" y="690" xlink:href="#arr_r"/>
-    <use x="970" y="690" xlink:href="#arr_r"/>
-    <use x="1020" y="690" xlink:href="#arr_r"/>
-    <use x="1070" y="690" xlink:href="#arr_r"/>
-    <use x="1120" y="690" xlink:href="#arr_r"/>
-    <use x="1170" y="690" xlink:href="#arr_r"/>
-    <use x="1220" y="690" xlink:href="#arr_r"/>
-    <use x="1270" y="690" xlink:href="#arr_r"/>
-    <use x="1320" y="690" xlink:href="#arr_r"/>
-    <use x="1370" y="690" xlink:href="#arr_r"/>
-    <use x="1420" y="690" xlink:href="#arr_r"/>
-    <use x="1470" y="690" xlink:href="#arr_r"/>
-    <use x="1520" y="690" xlink:href="#arr_r"/>
-    <use x="1570" y="690" xlink:href="#arr_r"/>
-    <use x="1620" y="690" xlink:href="#arr_r"/>
-    </g>
+    <use x="920" y="746.7" xlink:href="#arr_r"/>
+    <use x="970" y="746.7" xlink:href="#arr_r"/>
+    <use x="1020" y="746.7" xlink:href="#arr_r"/>
+    <use x="1070" y="746.7" xlink:href="#arr_r"/>
+    <use x="1120" y="746.7" xlink:href="#arr_r"/>
+    <use x="1170" y="746.7" xlink:href="#arr_r"/>
+    <use x="1220" y="746.7" xlink:href="#arr_r"/>
+    <use x="1270" y="746.7" xlink:href="#arr_r"/>
+    <use x="1320" y="746.7" xlink:href="#arr_r"/>
+    <use x="1370" y="746.7" xlink:href="#arr_r"/>
+    <use x="1420" y="746.7" xlink:href="#arr_r"/>
+  </g>
 </g>
 
 <clipPath id="arr_06_clp">
-  <rect x="1596.497" y="700.386" width="20.284" height="90.064"/>
+  <rect x="1348.55" y="636.5" width="40.49" height="96.07"/>
 </clipPath>
 <g id="arr_06" class="" clip-path="url(#arr_06_clp)">
   <g id="q_06">
-    <use x="1606" y="660" xlink:href="#arr_b"/>
-    <use x="1606" y="710" xlink:href="#arr_b"/>
-    <use x="1606" y="760" xlink:href="#arr_b"/>
-    <use x="1606" y="810" xlink:href="#arr_b"/>
-    <use x="1606" y="860" xlink:href="#arr_b"/>
-    </g>
-</g>
-
-<g id="top_right" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="3">
-  <path d="M1639.498 303.975a40.083 40.083 0 00-39.743 0 40.083 40.083 0 01-39.743 0c-12.338-7.03-27.405-7.03-39.743 0s-27.405 7.03-39.743 0-27.405-7.03-39.743 0"/>
-  <circle id="pump_speed" stroke-dasharray="162.5" stroke-dashoffset="162.5" cx="1247.791" cy="346.784" r="26" transform="rotate(-3 1247.791 346.784)" opacity=".5" stroke="#fff" stroke-width="26"/>
-  <circle cx="1247.791" cy="346.784" r="42.28"/>
-  <path stroke="none" fill="#000" d="M1242.601 304.833h-51.589v20.284h20.472c6.542-10.938 17.884-18.664 31.117-20.284z"/>
-  <line x1="1440.784" x2="1247.791" y1="346.784" y2="346.784"/>
-  <polyline points="1440.784 273.761 1440.784 376.277 1639.498 376.277 1639.498 273.761"/>
-  <rect width="72.182" height="57.919" x="1264.737" y="204.269"/>
-  <rect width="72.182" height="57.919" x="1264.737" y="131.92"/>
-  <polyline points="1297.086 294.96 1305.154 286.892 1297.086 278.823 1305.154 270.755 1297.086 262.686"/>
-  <polyline points="1292.772 190.343 1321.984 161.132 1292.772 131.92"/>
-  <polyline stroke-dasharray="13 13" points="1251.825 228.817 1251.825 286.799 1305.154 286.799"/>
-  <polyline points="1500.626 266.401 1500.626 230.707 1338.124 230.707"/>
-  <polyline points="1581.877 266.401 1581.877 162.504 1336.919 162.504"/>
-  <polyline points="1325.781 233.057 1333.849 224.988 1325.781 216.919"/>
-  <line x1="1264.737" x2="1333.849" y1="224.895" y2="224.895"/>
-  <path id="wave" d="M1868.024 436.671a97.273 97.273 0 01-95.428 0 97.273 97.273 0 00-95.428 0 97.273 97.273 0 01-95.428 0 97.273 97.273 0 00-95.428 0 97.273 97.273 0 01-95.428 0c-29.624-16.675-65.804-16.675-95.428 0s-65.804 16.675-95.428 0-65.804-16.675-95.428 0-65.804 16.675-95.428 0-65.804-16.675-95.428 0c-29.624 16.675-65.804 16.675-95.428 0s-65.804-16.675-95.428 0c-29.624 16.675-65.804 16.675-95.428 0s-65.804-16.675-95.428 0c-29.624 16.675-65.804 16.675-95.428 0s-65.804-16.675-95.428 0c-29.624 16.675-65.804 16.675-95.428 0s-65.804-16.675-95.428 0a97.273 97.273 0 01-95.428 0"/>
-</g>
-
-<a id="pump_left" class="bttn" href="javascript:;">
-  <use x="1157.7" y="426" xlink:href="#bttn_l_flpd"/>
-</a>
-<a id="pump_right" class="bttn" href="javascript:;">
-  <use x="1254.69" y="426" xlink:href="#bttn_r_flpd"/>
-</a>
-
-<g id="right_piston" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3">
-  <polygon points="1309.503 720.364 1420.074 660.122 1420.074 720.364 1309.503 660.122"/>
-  <path d="M1403.357 620.652c-2.469-19.108-18.788-33.873-38.568-33.873s-36.1 14.765-38.568 33.873h77.136z"/>
-  <line x1="1364.789" x2="1364.789" y1="620.652" y2="690.243"/>
-</g>
-<polygon fill="url(#gray_grad)" stroke="#000" stroke-miterlimit="10" points="1694.639 790.449 1518.64 790.449 1518.64 825.679 1555.022 825.679 1555.022 969.109 1658.257 969.109 1658.257 825.679 1694.639 825.679"/>
-
-<g id="spring_piston" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3">
-  <path d="M977.779 575.887c-3.614-27.972-27.505-49.587-56.46-49.587-28.956 0-52.847 21.615-56.46 49.587h112.92z"/>
-  <clipPath id="pst2_clp">
-    <rect x="894.875" y="575.887" width="54.588" height="124.498"/>
-  </clipPath>
-  <g clip-path="url(#pst2_clp)">
-    <g id="piston_02" transform="translate(0 15)">
-      <line x1="921.318" x2="921.318" y1="560.887" y2="648.448"/>
-      <polygon points="921.318 671.462 904.098 648.448 938.538 648.448"/>
-    </g>
+    <use x="1369" y="780" xlink:href="#arr_t"/>
+    <use x="1369" y="730" xlink:href="#arr_t"/>
+    <use x="1369" y="680" xlink:href="#arr_t"/>
+    <use x="1369" y="630" xlink:href="#arr_t"/>
+    <use x="1369" y="580" xlink:href="#arr_t"/>
   </g>
-  <polyline points="878.014 626.762 964.622 619.494 878.014 612.226 964.622 604.958 878.014 597.69 964.622 590.423 878.014 583.155 964.622 575.887"/>
 </g>
-<g id="left_piston" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="3">
-  <clipPath id="pst1_clp">
-    <rect x="624.526" y="632.347" width="51.519" height="68.038"/>
-  </clipPath>
-  <g clip-path="url(#pst1_clp)">
-    <g id="piston_01" transform="translate(0 15)">
-      <line x1="649.76" x2="649.76" y1="617.347" y2="648.448" stroke-linecap="round" stroke-linejoin="round"/>
-      <polygon stroke-linecap="round" stroke-linejoin="round" points="649.76 671.462 632.54 648.448 666.98 648.448"/>
-    </g>
+
+<clipPath id="arr_07_clp">
+  <rect x="1368.79" y="637.12" width="362.48" height="28.26"/>
+</clipPath>
+<g id="arr_07" class="" clip-path="url(#arr_07_clp)">
+  <g id="q_07">
+    <use x="1370" y="651.2" xlink:href="#arr_r"/>
+    <use x="1420" y="651.2" xlink:href="#arr_r"/>
+    <use x="1470" y="651.2" xlink:href="#arr_r"/>
+    <use x="1520" y="651.2" xlink:href="#arr_r"/>
+    <use x="1570" y="651.2" xlink:href="#arr_r"/>
+    <use x="1620" y="651.2" xlink:href="#arr_r"/>
+    <use x="1670" y="651.2" xlink:href="#arr_r"/>
+    <use x="1720" y="651.2" xlink:href="#arr_r"/>
   </g>
-  <path d="M685.591 632.347H613.93l-6.949-9.178c-.872-1.352-1.302-2.725-1.291-4.099.027-3.41 2.773-6.819 8.241-9.89 10.988-6.171 10.988-13.708 0-19.879-10.988-6.171-10.988-13.708 0-19.879 10.988-6.171 10.988-13.708 0-19.879-5.284-2.968-8.027-6.251-8.229-9.546-.091-1.487.335-2.977 1.279-4.441l6.95-9.257h71.661l6.95 9.257c.944 1.464 1.37 2.954 1.279 4.441-.202 3.295-2.945 6.579-8.229 9.546-10.988 6.171-10.988 13.708 0 19.879 10.988 6.171 10.988 13.708 0 19.879-10.988 6.171-10.988 13.708 0 19.879 5.467 3.07 8.214 6.479 8.241 9.89.011 1.373-.42 2.747-1.291 4.099l-6.951 9.178z"/>
 </g>
-<g id="arrow" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="3">
-  <polyline points="239.778 320.224 224.386 304.833 208.995 320.224"/>
-  <polyline points="239.778 686.861 224.386 702.253 208.995 686.861"/>
-  <line x1="224.386" x2="224.386" y1="702.253" y2="304.833"/>
+
+<clipPath id="arr_08_clp">
+  <rect x="1703.01" y="665.38" width="28.26" height="75.96"/>
+</clipPath>
+<g id="arr_08" class="" clip-path="url(#arr_08_clp)">
+  <g id="q_08">
+    <use x="1717.1" y="630" xlink:href="#arr_b"/>
+    <use x="1717.1" y="680" xlink:href="#arr_b"/>
+    <use x="1717.1" y="730" xlink:href="#arr_b"/>
+  </g>
 </g>
-<text x="213.3" y="526.3" transform="rotate(-90 213.3 526.3)">275 Bar Head</text>
-<g id="top" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="3">
-  <rect width="59.733" height="59.733" x="603.397" y="285.108" transform="rotate(45 633.3 314.97)"/>
-  <line x1="633.263" x2="633.263" y1="272.737" y2="357.213"/>
-  <path d="M1034.511 191.717c-1.969 0-3.937 1.057-5.709 3.17-3.545 4.227-7.874 4.227-11.419 0s-7.874-4.227-11.419 0-7.874 4.227-11.419 0c-1.772-2.113-3.741-3.17-5.709-3.17"/>
-  <path d="M1011.674 245.377h0c-12.561 0-22.838-10.277-22.838-22.838v-48.964c0-12.561 10.277-22.838 22.838-22.838h0c12.561 0 22.838 10.277 22.838 22.838v48.964c-.001 12.561-10.278 22.838-22.838 22.838z"/>
+
+<polygon id="pipe8" fill="url(#hor_org)" stroke="#000" stroke-width=".5" points="1539.53 81.13 1539.53 760.83 1521.82 732.57 1521.82 98.84"/>
+
+<g id="primary_top" transform="translate(943 293.24) scale(1 1.38) translate(-943 -293.24)">
+  <polygon fill="#999" points="1003.75 293.24 882.34 293.24 903.01 298.54 983.09 298.54"/>
+  <polygon fill="#666" points="983.09 298.54 903.01 298.54 882.34 303.84 1003.75 303.84"/>
+  <polygon fill="#999" points="1003.75 303.84 882.34 303.84 903.01 309.13 983.09 309.13"/>
+  <polygon fill="#666" points="983.09 309.13 903.01 309.13 882.34 314.43 1003.75 314.43"/>
+  <polygon fill="#999" points="1003.75 314.43 882.34 314.43 903.01 319.73 983.09 319.73"/>
+  <polygon fill="#666" points="983.09 319.73 903.01 319.73 882.34 325.02 1003.75 325.02"/>
+  <polygon fill="#999" points="1003.75 325.02 882.34 325.02 903.01 330.32 983.09 330.32"/>
+  <polygon fill="#666" points="983.09 330.32 903.01 330.32 882.34 335.62 1003.75 335.62"/>
+  <polygon fill="#999" points="1003.75 335.62 882.34 335.62 903.01 340.92 983.09 340.92"/>
+  <polygon fill="#666" points="983.09 340.92 903.01 340.92 882.34 346.21 1003.75 346.21"/>
+  <polygon fill="#999" points="1003.75 346.21 882.34 346.21 903.01 351.51 983.09 351.51"/>
+  <polygon fill="#666" points="983.09 351.51 903.01 351.51 882.34 356.81 1003.75 356.81"/>
+  <polygon fill="#999" points="1003.75 356.81 882.34 356.81 903.01 362.1 983.09 362.1"/>
+  <polygon fill="#666" points="983.09 362.1 903.01 362.1 882.34 367.4 1003.75 367.4"/>
+  <polygon fill="#999" points="1003.75 367.4 882.34 367.4 903.01 372.7 983.09 372.7"/>
+</g>
+<g id="primary_pin" transform="translate(0 30)">
+  <polygon fill="#999" stroke="#000" stroke-width=".5" points="885.04 372.7 885.04 565.26 918.42 565.26 918.42 556.15 904.22 556.15 904.22 427.15 981.87 427.15 981.87 556.15 967.68 556.15 967.68 565.26 1001.06 565.26 1001.06 372.7"/>
+  <polygon fill="#999" stroke="#000" stroke-width=".5" points="953.83 663.32 965.93 638.9 965.93 553 978.03 553 978.03 520.63 908.07 520.63 908.07 553 920.17 553 920.17 638.9 932.27 663.32"/>
+  <polygon fill="#57575B" points="972.31 519.08 911.82 508.62 913.78 499.14 974.28 509.6"/>
+  <circle cx="912.91" cy="503.9" r="4.84" fill="#999"/>
+  <circle cx="973.19" cy="514.31" r="4.84" fill="#999"/>
+  <polygon fill="#57575B" points="972.31 496.04 911.82 485.58 913.78 476.1 974.28 486.56"/>
+  <circle cx="912.91" cy="480.86" r="4.84" fill="#999"/>
+  <circle cx="973.19" cy="491.27" r="4.84" fill="#999"/>
+  <g>
+    <polygon fill="#57575B" points="972.31 473 911.82 462.54 913.78 453.06 974.28 463.52"/>
+    <circle cx="912.91" cy="457.82" r="4.84" fill="#999"/>
+    <circle cx="973.19" cy="468.24" r="4.84" fill="#999"/>
+  </g>
+  <g>
+    <polygon fill="#57575B" points="972.31 449.96 911.82 439.5 913.78 430.02 974.28 440.48"/>
+    <circle cx="912.91" cy="434.78" r="4.84" fill="#999"/>
+    <circle cx="973.19" cy="445.2" r="4.84" fill="#999"/>
+  </g>
+</g>
+<g fill="#999" stroke="#000" stroke-width=".5">
+  <polygon points="922.67 673.12 876.37 673.12 876.37 702.64 928.83 702.64 928.83 685.57"/>
+  <polygon points="963.42 673.12 1009.72 673.12 1009.72 702.64 957.27 702.64 957.27 685.57"/>
+</g>
+<g id="secondary_spring" transform="translate(1369 495) scale(1 .83) translate(-1369 -495)">
+  <polygon fill="#4E4E4A" stroke="#000" stroke-width=".5" points="1276.46 333.99 1274.13 333.99 1272.61 325.37 1276.46 325.37"/>
+  <polygon fill="#8A909C" stroke="#000" stroke-width=".5" points="1274.13 333.99 1242.08 339.53 1241.07 331.08 1272.61 325.37"/>
+  <polygon fill="#4E4E4A" stroke="#000" stroke-width=".5" points="1276.46 345.07 1274.13 345.07 1272.61 353.69 1276.46 353.69"/>
+  <polygon fill="#8A909C" stroke="#000" stroke-width=".5" points="1274.13 345.07 1242.08 339.53 1241.07 347.98 1272.61 353.69"/>
+  <polygon fill="#0E0F11" points="1242.08 339.53 1276.46 339.53 1276.46 333.99 1274.13 333.99"/>
+  <polygon fill="#20212A" points="1276.46 345.07 1274.13 345.07 1242.08 339.53 1276.46 339.53"/>
+  <polygon fill="#4E4E4A" stroke="#000" stroke-width=".5" points="1276.46 362.23 1274.13 362.23 1272.61 353.6 1276.46 353.6"/>
+  <polygon fill="#8A909C" stroke="#000" stroke-width=".5" points="1274.13 362.23 1242.08 367.76 1241.07 359.31 1272.61 353.6"/>
+  <polygon fill="#4E4E4A" stroke="#000" stroke-width=".5" points="1276.46 373.3 1274.13 373.3 1272.61 381.93 1276.46 381.93"/>
+  <polygon fill="#8A909C" stroke="#000" stroke-width=".5" points="1274.13 373.3 1242.08 367.76 1241.07 376.22 1272.61 381.93"/>
+  <polygon fill="#0E0F11" points="1242.08 367.76 1276.46 367.76 1276.46 362.23 1274.13 362.23"/>
+  <polygon fill="#20212A" points="1276.46 373.3 1274.13 373.3 1242.08 367.76 1276.46 367.76"/>
+  <polygon fill="#4E4E4A" stroke="#000" stroke-width=".5" points="1276.46 390.55 1274.13 390.55 1272.61 381.93 1276.46 381.93"/>
+  <polygon fill="#8A909C" stroke="#000" stroke-width=".5" points="1274.13 390.55 1242.08 396.09 1241.07 387.64 1272.61 381.93"/>
+  <polygon fill="#4E4E4A" stroke="#000" stroke-width=".5" points="1276.46 401.63 1274.13 401.63 1272.61 410.26 1276.46 410.26"/>
+  <polygon fill="#8A909C" stroke="#000" stroke-width=".5" points="1274.13 401.63 1242.08 396.09 1241.07 404.54 1272.61 410.26"/>
+  <polygon fill="#0E0F11" points="1242.08 396.09 1276.46 396.09 1276.46 390.55 1274.13 390.55"/>
+  <polygon fill="#20212A" points="1276.46 401.63 1274.13 401.63 1242.08 396.09 1276.46 396.09"/>
+  <polygon fill="#4E4E4A" stroke="#000" stroke-width=".5" points="1276.46 418.79 1274.13 418.79 1272.61 410.16 1276.46 410.16"/>
+  <polygon fill="#8A909C" stroke="#000" stroke-width=".5" points="1274.13 418.79 1242.08 424.33 1241.07 415.88 1272.61 410.16"/>
+  <polygon fill="#4E4E4A" stroke="#000" stroke-width=".5" points="1276.46 429.87 1274.13 429.87 1272.61 438.49 1276.46 438.49"/>
+  <polygon fill="#8A909C" stroke="#000" stroke-width=".5" points="1274.13 429.87 1242.08 424.33 1241.07 432.78 1272.61 438.49"/>
+  <polygon fill="#0E0F11" points="1242.08 424.33 1276.46 424.33 1276.46 418.79 1274.13 418.79"/>
+  <polygon fill="#20212A" points="1276.46 429.87 1274.13 429.87 1242.08 424.33 1276.46 424.33"/>
+  <polygon fill="#4E4E4A" stroke="#000" stroke-width=".5" points="1276.46 447.11 1274.13 447.11 1272.61 438.49 1276.46 438.49"/>
+  <polygon fill="#8A909C" stroke="#000" stroke-width=".5" points="1274.13 447.11 1242.08 452.65 1241.07 444.2 1272.61 438.49"/>
+  <polygon fill="#4E4E4A" stroke="#000" stroke-width=".5" points="1276.46 458.19 1274.13 458.19 1272.61 466.82 1276.46 466.82"/>
+  <polygon fill="#8A909C" stroke="#000" stroke-width=".5" points="1274.13 458.19 1242.08 452.65 1241.07 461.1 1272.61 466.82"/>
+  <polygon fill="#0E0F11" points="1242.08 452.65 1276.46 452.65 1276.46 447.11 1274.13 447.11"/>
+  <polygon fill="#20212A" points="1276.46 458.19 1274.13 458.19 1242.08 452.65 1276.46 452.65"/>
+  <polygon fill="#4E4E4A" stroke="#000" stroke-width=".5" points="1276.46 475.35 1274.13 475.35 1272.61 466.72 1276.46 466.72"/>
+  <polygon fill="#8A909C" stroke="#000" stroke-width=".5" points="1274.13 475.35 1242.08 480.89 1241.07 472.44 1272.61 466.72"/>
+  <polygon fill="#4E4E4A" stroke="#000" stroke-width=".5" points="1276.46 486.43 1274.13 486.43 1272.61 495.05 1276.46 495.05"/>
+  <polygon fill="#8A909C" stroke="#000" stroke-width=".5" points="1274.13 486.43 1242.08 480.89 1241.07 489.34 1272.61 495.05"/>
+  <polygon fill="#0E0F11" points="1242.08 480.89 1276.46 480.89 1276.46 475.35 1274.13 475.35"/>
+  <polygon fill="#20212A" points="1276.46 486.43 1274.13 486.43 1242.08 480.89 1276.46 480.89"/>
+  <g>
+    <polygon fill="#4E4E4A" stroke="#000" stroke-width=".5" points="1461.64 333.99 1463.96 333.99 1465.49 325.37 1461.64 325.37"/>
+    <polygon fill="#8A909C" stroke="#000" stroke-width=".5" points="1463.96 333.99 1496.02 339.53 1497.02 331.08 1465.49 325.37"/>
+    <polygon fill="#4E4E4A" stroke="#000" stroke-width=".5" points="1461.64 345.07 1463.96 345.07 1465.49 353.69 1461.64 353.69"/>
+    <polygon fill="#8A909C" stroke="#000" stroke-width=".5" points="1463.96 345.07 1496.02 339.53 1497.02 347.98 1465.49 353.69"/>
+    <polygon fill="#0E0F11" points="1496.02 339.53 1461.64 339.53 1461.64 333.99 1463.96 333.99"/>
+    <polygon fill="#20212A" points="1461.64 345.07 1463.96 345.07 1496.02 339.53 1461.64 339.53"/>
+    <polygon fill="#4E4E4A" stroke="#000" stroke-width=".5" points="1461.64 362.23 1463.96 362.23 1465.49 353.6 1461.64 353.6"/>
+    <polygon fill="#8A909C" stroke="#000" stroke-width=".5" points="1463.96 362.23 1496.02 367.76 1497.02 359.31 1465.49 353.6"/>
+    <polygon fill="#4E4E4A" stroke="#000" stroke-width=".5" points="1461.64 373.3 1463.96 373.3 1465.49 381.93 1461.64 381.93"/>
+    <polygon fill="#8A909C" stroke="#000" stroke-width=".5" points="1463.96 373.3 1496.02 367.76 1497.02 376.22 1465.49 381.93"/>
+    <polygon fill="#0E0F11" points="1496.02 367.76 1461.64 367.76 1461.64 362.23 1463.96 362.23"/>
+    <polygon fill="#20212A" points="1461.64 373.3 1463.96 373.3 1496.02 367.76 1461.64 367.76"/>
+    <polygon fill="#4E4E4A" stroke="#000" stroke-width=".5" points="1461.64 390.55 1463.96 390.55 1465.49 381.93 1461.64 381.93"/>
+    <polygon fill="#8A909C" stroke="#000" stroke-width=".5" points="1463.96 390.55 1496.02 396.09 1497.02 387.64 1465.49 381.93"/>
+    <polygon fill="#4E4E4A" stroke="#000" stroke-width=".5" points="1461.64 401.63 1463.96 401.63 1465.49 410.26 1461.64 410.26"/>
+    <polygon fill="#8A909C" stroke="#000" stroke-width=".5" points="1463.96 401.63 1496.02 396.09 1497.02 404.54 1465.49 410.26"/>
+    <polygon fill="#0E0F11" points="1496.02 396.09 1461.64 396.09 1461.64 390.55 1463.96 390.55"/>
+    <polygon fill="#20212A" points="1461.64 401.63 1463.96 401.63 1496.02 396.09 1461.64 396.09"/>
+    <polygon fill="#4E4E4A" stroke="#000" stroke-width=".5" points="1461.64 418.79 1463.96 418.79 1465.49 410.16 1461.64 410.16"/>
+    <polygon fill="#8A909C" stroke="#000" stroke-width=".5" points="1463.96 418.79 1496.02 424.33 1497.02 415.88 1465.49 410.16"/>
+    <polygon fill="#4E4E4A" stroke="#000" stroke-width=".5" points="1461.64 429.87 1463.96 429.87 1465.49 438.49 1461.64 438.49"/>
+    <polygon fill="#8A909C" stroke="#000" stroke-width=".5" points="1463.96 429.87 1496.02 424.33 1497.02 432.78 1465.49 438.49"/>
+    <polygon fill="#0E0F11" points="1496.02 424.33 1461.64 424.33 1461.64 418.79 1463.96 418.79"/>
+    <polygon fill="#20212A" points="1461.64 429.87 1463.96 429.87 1496.02 424.33 1461.64 424.33"/>
+    <polygon fill="#4E4E4A" stroke="#000" stroke-width=".5" points="1461.64 447.11 1463.96 447.11 1465.49 438.49 1461.64 438.49"/>
+    <polygon fill="#8A909C" stroke="#000" stroke-width=".5" points="1463.96 447.11 1496.02 452.65 1497.02 444.2 1465.49 438.49"/>
+    <polygon fill="#4E4E4A" stroke="#000" stroke-width=".5" points="1461.64 458.19 1463.96 458.19 1465.49 466.82 1461.64 466.82"/>
+    <polygon fill="#8A909C" stroke="#000" stroke-width=".5" points="1463.96 458.19 1496.02 452.65 1497.02 461.1 1465.49 466.82"/>
+    <polygon fill="#0E0F11" points="1496.02 452.65 1461.64 452.65 1461.64 447.11 1463.96 447.11"/>
+    <polygon fill="#20212A" points="1461.64 458.19 1463.96 458.19 1496.02 452.65 1461.64 452.65"/>
+    <polygon fill="#4E4E4A" stroke="#000" stroke-width=".5" points="1461.64 475.35 1463.96 475.35 1465.49 466.72 1461.64 466.72"/>
+    <polygon fill="#8A909C" stroke="#000" stroke-width=".5" points="1463.96 475.35 1496.02 480.89 1497.02 472.44 1465.49 466.72"/>
+    <polygon fill="#4E4E4A" stroke="#000" stroke-width=".5" points="1461.64 486.43 1463.96 486.43 1465.49 495.05 1461.64 495.05"/>
+    <polygon fill="#8A909C" stroke="#000" stroke-width=".5" points="1463.96 486.43 1496.02 480.89 1497.02 489.34 1465.49 495.05"/>
+    <polygon fill="#0E0F11" points="1496.02 480.89 1461.64 480.89 1461.64 475.35 1463.96 475.35"/>
+    <polygon fill="#20212A" points="1461.64 486.43 1463.96 486.43 1496.02 480.89 1461.64 480.89"/>
+  </g>
+</g>
+<g id="secondary_pin" transform="translate(0 30)" stroke="#000" stroke-width=".5">
+  <rect width="14.46" height="6.44" x="1324.97" y="301.34" fill="#4E4E4A"/>
+  <polygon fill="#8A909C" points="1324.97 307.78 1302.32 311.25 1302.32 304.81 1324.97 301.34"/>
+  <rect width="14.46" height="6.44" x="1324.97" y="314.66" fill="#4E4E4A"/>
+  <polygon fill="#8A909C" points="1324.97 321.1 1302.32 317.69 1302.32 311.25 1324.97 314.66"/>
+  <polygon fill="#0E0F11" points="1302.32 311.25 1339.43 311.25 1339.43 307.78 1324.97 307.78"/>
+  <polygon fill="#20212A" points="1339.43 311.25 1339.43 314.66 1324.97 314.66 1302.32 311.25"/>
+  <rect width="14.46" height="6.44" x="1324.97" y="321.1" fill="#4E4E4A"/>
+  <polygon fill="#8A909C" points="1324.97 327.54 1302.32 331.01 1302.32 324.57 1324.97 321.1"/>
+  <rect width="14.46" height="6.44" x="1324.97" y="334.43" fill="#4E4E4A"/>
+  <polygon fill="#8A909C" points="1324.97 340.87 1302.32 337.45 1302.32 331.01 1324.97 334.43"/>
+  <polygon fill="#0E0F11" points="1302.32 331.01 1339.43 331.01 1339.43 327.54 1324.97 327.54"/>
+  <polygon fill="#20212A" points="1339.43 331.01 1339.43 334.43 1324.97 334.43 1302.32 331.01"/>
+  <rect width="14.46" height="6.44" x="1324.97" y="340.87" fill="#4E4E4A"/>
+  <polygon fill="#8A909C" points="1324.97 347.31 1302.32 350.78 1302.32 344.34 1324.97 340.87"/>
+  <rect width="14.46" height="6.44" x="1324.97" y="354.19" fill="#4E4E4A"/>
+  <polygon fill="#8A909C" points="1324.97 360.63 1302.32 357.22 1302.32 350.78 1324.97 354.19"/>
+  <polygon fill="#0E0F11" points="1302.32 350.78 1339.43 350.78 1339.43 347.31 1324.97 347.31"/>
+  <polygon fill="#20212A" points="1339.43 350.78 1339.43 354.19 1324.97 354.19 1302.32 350.78"/>
+  <rect width="14.46" height="6.44" x="1324.97" y="360.63" fill="#4E4E4A"/>
+  <polygon fill="#8A909C" points="1324.97 367.07 1302.32 370.54 1302.32 364.1 1324.97 360.63"/>
+  <rect width="14.46" height="6.44" x="1324.97" y="373.95" fill="#4E4E4A"/>
+  <polygon fill="#8A909C" points="1324.97 380.39 1302.32 376.98 1302.32 370.54 1324.97 373.95"/>
+  <polygon fill="#0E0F11" points="1302.32 370.54 1339.43 370.54 1339.43 367.07 1324.97 367.07"/>
+  <polygon fill="#20212A" points="1339.43 370.54 1339.43 373.95 1324.97 373.95 1302.32 370.54"/>
+  <rect width="14.46" height="6.44" x="1324.97" y="380.39" fill="#4E4E4A"/>
+  <polygon fill="#8A909C" points="1324.97 386.83 1302.32 390.3 1302.32 383.86 1324.97 380.39"/>
+  <rect width="14.46" height="6.44" x="1324.97" y="393.71" fill="#4E4E4A"/>
+  <polygon fill="#8A909C" points="1324.97 400.16 1302.32 396.74 1302.32 390.3 1324.97 393.71"/>
+  <polygon fill="#0E0F11" points="1302.32 390.3 1339.43 390.3 1339.43 386.83 1324.97 386.83"/>
+  <polygon fill="#20212A" points="1339.43 390.3 1339.43 393.71 1324.97 393.71 1302.32 390.3"/>
+  <rect width="14.46" height="6.44" x="1324.97" y="400.16" fill="#4E4E4A"/>
+  <polygon fill="#8A909C" points="1324.97 406.6 1302.32 410.07 1302.32 403.62 1324.97 400.16"/>
+  <rect width="14.46" height="6.44" x="1324.97" y="413.48" fill="#4E4E4A"/>
+  <polygon fill="#8A909C" points="1324.97 419.92 1302.32 416.51 1302.32 410.06 1324.97 413.48"/>
+  <polygon fill="#0E0F11" points="1302.32 410.06 1339.43 410.06 1339.43 406.6 1324.97 406.6"/>
+  <polygon fill="#20212A" points="1339.43 410.06 1339.43 413.48 1324.97 413.48 1302.32 410.06"/>
+  <rect width="14.46" height="6.44" x="1324.97" y="419.92" fill="#4E4E4A"/>
+  <polygon fill="#8A909C" points="1324.97 426.36 1302.32 429.83 1302.32 423.39 1324.97 419.92"/>
+  <rect width="14.46" height="6.44" x="1324.97" y="433.24" fill="#4E4E4A"/>
+  <polygon fill="#8A909C" points="1324.97 439.68 1302.32 436.27 1302.32 429.83 1324.97 433.24"/>
+  <polygon fill="#0E0F11" points="1302.32 429.83 1339.43 429.83 1339.43 426.36 1324.97 426.36"/>
+  <polygon fill="#20212A" points="1339.43 429.83 1339.43 433.24 1324.97 433.24 1302.32 429.83"/>
+  <rect width="14.46" height="6.44" x="1324.97" y="439.68" fill="#4E4E4A"/>
+  <polygon fill="#8A909C" points="1324.97 446.12 1302.32 449.59 1302.32 443.15 1324.97 439.68"/>
+  <rect width="14.46" height="6.44" x="1324.97" y="453" fill="#4E4E4A"/>
+  <polygon fill="#8A909C" points="1324.97 459.45 1302.32 456.03 1302.32 449.59 1324.97 453"/>
+  <polygon fill="#0E0F11" points="1302.32 449.59 1339.43 449.59 1339.43 446.12 1324.97 446.12"/>
+  <polygon fill="#20212A" points="1339.43 449.59 1339.43 453 1324.97 453 1302.32 449.59"/>
+  <rect width="14.46" height="6.44" x="1324.97" y="459.44" fill="#4E4E4A"/>
+  <polygon fill="#8A909C" points="1324.97 465.89 1302.32 469.35 1302.32 462.91 1324.97 459.44"/>
+  <rect width="14.46" height="6.44" x="1324.97" y="472.77" fill="#4E4E4A"/>
+  <polygon fill="#8A909C" points="1324.97 479.21 1302.32 475.79 1302.32 469.35 1324.97 472.77"/>
+  <polygon fill="#0E0F11" points="1302.32 469.35 1339.43 469.35 1339.43 465.89 1324.97 465.89"/>
+  <polygon fill="#20212A" points="1339.43 469.35 1339.43 472.77 1324.97 472.77 1302.32 469.35"/>
+  <rect width="14.46" height="6.44" x="1324.97" y="479.21" fill="#4E4E4A"/>
+  <polygon fill="#8A909C" points="1324.97 485.65 1302.32 489.12 1302.32 482.68 1324.97 479.21"/>
+  <rect width="14.46" height="6.44" x="1324.97" y="492.53" fill="#4E4E4A"/>
+  <polygon fill="#8A909C" points="1324.97 498.97 1302.32 495.56 1302.32 489.12 1324.97 492.53"/>
+  <polygon fill="#0E0F11" points="1302.32 489.12 1339.43 489.12 1339.43 485.65 1324.97 485.65"/>
+  <polygon fill="#20212A" points="1339.43 489.12 1339.43 492.53 1324.97 492.53 1302.32 489.12"/>
+  <rect width="14.46" height="6.44" x="1324.97" y="498.97" fill="#4E4E4A"/>
+  <polygon fill="#8A909C" points="1324.97 505.41 1302.32 508.88 1302.32 502.44 1324.97 498.97"/>
+  <rect width="14.46" height="6.44" x="1324.97" y="512.29" fill="#4E4E4A"/>
+  <polygon fill="#8A909C" points="1324.97 518.73 1302.32 515.32 1302.32 508.88 1324.97 512.29"/>
+  <polygon fill="#0E0F11" points="1302.32 508.88 1339.43 508.88 1339.43 505.41 1324.97 505.41"/>
+  <polygon fill="#20212A" points="1339.43 508.88 1339.43 512.29 1324.97 512.29 1302.32 508.88"/>
+  <rect width="14.46" height="6.44" x="1324.97" y="518.73" fill="#4E4E4A"/>
+  <polygon fill="#8A909C" points="1324.97 525.18 1302.32 528.64 1302.32 522.2 1324.97 518.73"/>
+  <rect width="14.46" height="6.44" x="1324.97" y="532.06" fill="#4E4E4A"/>
+  <polygon fill="#8A909C" points="1324.97 538.5 1302.32 535.08 1302.32 528.64 1324.97 532.06"/>
+  <polygon fill="#0E0F11" points="1302.32 528.64 1339.43 528.64 1339.43 525.18 1324.97 525.18"/>
+  <polygon fill="#20212A" points="1339.43 528.64 1339.43 532.06 1324.97 532.06 1302.32 528.64"/>
+  <g>
+    <rect width="14.46" height="6.44" x="1398.67" y="301.34" fill="#43495F" transform="rotate(-180 1405.898 304.561)"/>
+    <polygon fill="#8A909C" points="1413.13 307.78 1435.78 311.25 1435.78 304.81 1413.13 301.34"/>
+    <rect width="14.46" height="6.44" x="1398.67" y="314.66" fill="#43495F" transform="rotate(-180 1405.898 317.883)"/>
+    <polygon fill="#8A909C" points="1413.13 321.1 1435.78 317.69 1435.78 311.25 1413.13 314.66"/>
+    <polygon fill="#0E0F11" points="1435.78 311.25 1398.67 311.25 1398.67 307.78 1413.13 307.78"/>
+    <polygon fill="#20212A" points="1398.67 311.25 1398.67 314.66 1413.13 314.66 1435.78 311.25"/>
+    <rect width="14.46" height="6.44" x="1398.67" y="321.1" fill="#43495F" transform="rotate(-180 1405.898 324.324)"/>
+    <polygon fill="#8A909C" points="1413.13 327.54 1435.78 331.01 1435.78 324.57 1413.13 321.1"/>
+    <rect width="14.46" height="6.44" x="1398.67" y="334.43" fill="#43495F" transform="rotate(-180 1405.898 337.646)"/>
+    <polygon fill="#8A909C" points="1413.13 340.87 1435.78 337.45 1435.78 331.01 1413.13 334.43"/>
+    <polygon fill="#0E0F11" points="1435.78 331.01 1398.67 331.01 1398.67 327.54 1413.13 327.54"/>
+    <polygon fill="#20212A" points="1398.67 331.01 1398.67 334.43 1413.13 334.43 1435.78 331.01"/>
+    <rect width="14.46" height="6.44" x="1398.67" y="340.87" fill="#43495F" transform="rotate(-180 1405.898 344.087)"/>
+    <polygon fill="#8A909C" points="1413.13 347.31 1435.78 350.78 1435.78 344.34 1413.13 340.87"/>
+    <rect width="14.46" height="6.44" x="1398.67" y="354.19" fill="#43495F" transform="rotate(-180 1405.898 357.409)"/>
+    <polygon fill="#8A909C" points="1413.13 360.63 1435.78 357.22 1435.78 350.78 1413.13 354.19"/>
+    <polygon fill="#0E0F11" points="1435.78 350.78 1398.67 350.78 1398.67 347.31 1413.13 347.31"/>
+    <polygon fill="#20212A" points="1398.67 350.78 1398.67 354.19 1413.13 354.19 1435.78 350.78"/>
+    <rect width="14.46" height="6.44" x="1398.67" y="360.63" fill="#43495F" transform="rotate(-180 1405.898 363.85)"/>
+    <polygon fill="#8A909C" points="1413.13 367.07 1435.78 370.54 1435.78 364.1 1413.13 360.63"/>
+    <rect width="14.46" height="6.44" x="1398.67" y="373.95" fill="#43495F" transform="rotate(-180 1405.898 377.172)"/>
+    <polygon fill="#8A909C" points="1413.13 380.39 1435.78 376.98 1435.78 370.54 1413.13 373.95"/>
+    <polygon fill="#0E0F11" points="1435.78 370.54 1398.67 370.54 1398.67 367.07 1413.13 367.07"/>
+    <polygon fill="#20212A" points="1398.67 370.54 1398.67 373.95 1413.13 373.95 1435.78 370.54"/>
+    <rect width="14.46" height="6.44" x="1398.67" y="380.39" fill="#43495F" transform="rotate(-180 1405.898 383.614)"/>
+    <polygon fill="#8A909C" points="1413.13 386.83 1435.78 390.3 1435.78 383.86 1413.13 380.39"/>
+    <rect width="14.46" height="6.44" x="1398.67" y="393.71" fill="#43495F" transform="rotate(-180 1405.898 396.935)"/>
+    <polygon fill="#8A909C" points="1413.13 400.16 1435.78 396.74 1435.78 390.3 1413.13 393.71"/>
+    <polygon fill="#0E0F11" points="1435.78 390.3 1398.67 390.3 1398.67 386.83 1413.13 386.83"/>
+    <polygon fill="#20212A" points="1398.67 390.3 1398.67 393.71 1413.13 393.71 1435.78 390.3"/>
+    <rect width="14.46" height="6.44" x="1398.67" y="400.16" fill="#43495F" transform="rotate(-180 1405.898 403.377)"/>
+    <polygon fill="#8A909C" points="1413.13 406.6 1435.78 410.07 1435.78 403.62 1413.13 400.16"/>
+    <rect width="14.46" height="6.44" x="1398.67" y="413.48" fill="#43495F" transform="rotate(-180 1405.898 416.698)"/>
+    <polygon fill="#8A909C" points="1413.13 419.92 1435.78 416.51 1435.78 410.06 1413.13 413.48"/>
+    <polygon fill="#0E0F11" points="1435.78 410.06 1398.67 410.06 1398.67 406.6 1413.13 406.6"/>
+    <polygon fill="#20212A" points="1398.67 410.06 1398.67 413.48 1413.13 413.48 1435.78 410.06"/>
+    <rect width="14.46" height="6.44" x="1398.67" y="419.92" fill="#43495F" transform="rotate(-180 1405.898 423.14)"/>
+    <polygon fill="#8A909C" points="1413.13 426.36 1435.78 429.83 1435.78 423.39 1413.13 419.92"/>
+    <rect width="14.46" height="6.44" x="1398.67" y="433.24" fill="#43495F" transform="rotate(-180 1405.898 436.462)"/>
+    <polygon fill="#8A909C" points="1413.13 439.68 1435.78 436.27 1435.78 429.83 1413.13 433.24"/>
+    <polygon fill="#0E0F11" points="1435.78 429.83 1398.67 429.83 1398.67 426.36 1413.13 426.36"/>
+    <polygon fill="#20212A" points="1398.67 429.83 1398.67 433.24 1413.13 433.24 1435.78 429.83"/>
+    <rect width="14.46" height="6.44" x="1398.67" y="439.68" fill="#43495F" transform="rotate(-180 1405.898 442.903)"/>
+    <polygon fill="#8A909C" points="1413.13 446.12 1435.78 449.59 1435.78 443.15 1413.13 439.68"/>
+    <rect width="14.46" height="6.44" x="1398.67" y="453" fill="#43495F" transform="rotate(-180 1405.898 456.225)"/>
+    <polygon fill="#8A909C" points="1413.13 459.45 1435.78 456.03 1435.78 449.59 1413.13 453"/>
+    <polygon fill="#0E0F11" points="1435.78 449.59 1398.67 449.59 1398.67 446.12 1413.13 446.12"/>
+    <polygon fill="#20212A" points="1398.67 449.59 1398.67 453 1413.13 453 1435.78 449.59"/>
+    <rect width="14.46" height="6.44" x="1398.67" y="459.44" fill="#43495F" transform="rotate(-180 1405.898 462.665)"/>
+    <polygon fill="#8A909C" points="1413.13 465.89 1435.78 469.35 1435.78 462.91 1413.13 459.44"/>
+    <rect width="14.46" height="6.44" x="1398.67" y="472.77" fill="#43495F" transform="rotate(-180 1405.898 475.987)"/>
+    <polygon fill="#8A909C" points="1413.13 479.21 1435.78 475.79 1435.78 469.35 1413.13 472.77"/>
+    <polygon fill="#0E0F11" points="1435.78 469.35 1398.67 469.35 1398.67 465.89 1413.13 465.89"/>
+    <polygon fill="#20212A" points="1398.67 469.35 1398.67 472.77 1413.13 472.77 1435.78 469.35"/>
+    <rect width="14.46" height="6.44" x="1398.67" y="479.21" fill="#43495F" transform="rotate(-180 1405.898 482.428)"/>
+    <polygon fill="#8A909C" points="1413.13 485.65 1435.78 489.12 1435.78 482.68 1413.13 479.21"/>
+    <rect width="14.46" height="6.44" x="1398.67" y="492.53" fill="#43495F" transform="rotate(-180 1405.898 495.75)"/>
+    <polygon fill="#8A909C" points="1413.13 498.97 1435.78 495.56 1435.78 489.12 1413.13 492.53"/>
+    <polygon fill="#0E0F11" points="1435.78 489.12 1398.67 489.12 1398.67 485.65 1413.13 485.65"/>
+    <polygon fill="#20212A" points="1398.67 489.12 1398.67 492.53 1413.13 492.53 1435.78 489.12"/>
+    <rect width="14.46" height="6.44" x="1398.67" y="498.97" fill="#43495F" transform="rotate(-180 1405.898 502.191)"/>
+    <polygon fill="#8A909C" points="1413.13 505.41 1435.78 508.88 1435.78 502.44 1413.13 498.97"/>
+    <rect width="14.46" height="6.44" x="1398.67" y="512.29" fill="#43495F" transform="rotate(-180 1405.898 515.513)"/>
+    <polygon fill="#8A909C" points="1413.13 518.73 1435.78 515.32 1435.78 508.88 1413.13 512.29"/>
+    <polygon fill="#0E0F11" points="1435.78 508.88 1398.67 508.88 1398.67 505.41 1413.13 505.41"/>
+    <polygon fill="#20212A" points="1398.67 508.88 1398.67 512.29 1413.13 512.29 1435.78 508.88"/>
+    <rect width="14.46" height="6.44" x="1398.67" y="518.73" fill="#43495F" transform="rotate(-180 1405.898 521.955)"/>
+    <polygon fill="#8A909C" points="1413.13 525.18 1435.78 528.64 1435.78 522.2 1413.13 518.73"/>
+    <rect width="14.46" height="6.44" x="1398.67" y="532.06" fill="#43495F" transform="rotate(-180 1405.898 535.276)"/>
+    <polygon fill="#8A909C" points="1413.13 538.5 1435.78 535.08 1435.78 528.64 1413.13 532.06"/>
+    <polygon fill="#0E0F11" points="1435.78 528.64 1398.67 528.64 1398.67 525.18 1413.13 525.18"/>
+    <polygon fill="#20212A" points="1398.67 528.64 1398.67 532.06 1413.13 532.06 1435.78 528.64"/>
+  </g>
+  <polygon fill="#999" points="1438.71 559.55 1438.71 539.97 1397.23 539.97 1397.23 95.63 1340.87 95.63 1340.87 539.97 1299.38 539.97 1299.38 559.55"/>
+  <polygon fill="#999" points="1438.71 559.55 1438.71 571.49 1417.22 571.49 1417.22 626.99 1388.91 676.02 1349.19 676.02 1320.87 626.99 1320.87 571.49 1299.38 571.49 1299.38 559.55"/>
+  <polygon fill="#999" points="1296.97 179.69 1324.79 179.69 1324.79 297.56 1299.38 297.56 1299.38 571.49 1320.87 571.49 1320.87 594.04 1278.07 594.04 1278.07 323.45 1239.25 323.45 1239.25 306.3 1254.56 306.3 1254.56 273.57 1296.97 273.57"/>
+  <polygon fill="#999" points="1441.15 179.69 1413.33 179.69 1413.33 297.56 1438.74 297.56 1438.74 571.49 1417.24 571.49 1417.24 594.04 1460.05 594.04 1460.05 323.45 1498.87 323.45 1498.87 306.3 1483.56 306.3 1483.56 273.57 1441.15 273.57"/>
+  <g fill="gray">
+    <rect width="15.31" height="27.68" x="1239.25" y="278.61"/>
+    <rect width="4.86" height="11.25" x="1244.47" y="278.61"/>
+    <ellipse cx="1246.9" cy="284.24" rx="2.43" ry="5.62"/>
+  </g>
+  <g fill="gray">
+    <rect width="15.31" height="27.68" x="1483.56" y="278.61"/>
+    <rect width="4.86" height="11.25" x="1488.78" y="278.61"/>
+    <ellipse cx="1491.21" cy="284.24" rx="2.43" ry="5.62"/>
+  </g>
+</g>
+<g stroke="#000" stroke-width=".5">
+  <g fill="gray">
+    <rect width="16.08" height="27.68" x="1324.79" y="127.69"/>
+    <rect width="5.11" height="11.25" x="1330.27" y="127.69"/>
+    <ellipse cx="1332.83" cy="133.31" rx="2.55" ry="5.62"/>
+  </g>
+  <g fill="gray">
+    <rect width="16.13" height="27.68" x="1261.94" y="561.81"/>
+    <rect width="5.13" height="11.25" x="1267.44" y="561.81"/>
+    <ellipse cx="1270" cy="567.43" rx="2.56" ry="5.62"/>
+  </g>
+  <g fill="gray">
+    <rect width="16.13" height="27.68" x="1460.05" y="561.81"/>
+    <rect width="5.13" height="11.25" x="1465.55" y="561.81"/>
+    <ellipse cx="1468.11" cy="567.43" rx="2.56" ry="5.62"/>
+  </g>
+  <g fill="gray">
+    <rect width="11.85" height="25.92" x="1285.12" y="199.8"/>
+    <rect width="4.68" height="10.53" x="1288.7" y="215.19"/>
+    <ellipse cx="1291.04" cy="220.46" rx="2.34" ry="5.27"/>
+  </g>
+  <g fill="gray">
+    <rect width="11.85" height="25.92" x="1441.15" y="199.8"/>
+    <rect width="4.68" height="10.53" x="1444.73" y="215.19"/>
+    <ellipse cx="1447.07" cy="220.46" rx="2.34" ry="5.27"/>
+  </g>
+  <g fill="gray">
+    <rect width="16.08" height="27.68" x="1397.25" y="127.69"/>
+    <rect width="5.11" height="11.25" x="1402.74" y="127.69"/>
+    <ellipse cx="1405.29" cy="133.31" rx="2.55" ry="5.62"/>
+  </g>
+  <polygon fill="#999" points="1331.35 675.32 1259.16 675.32 1259.16 718.61 1339.6 718.61 1339.6 690.66"/>
+  <polygon fill="#999" points="1406.75 675.32 1478.93 675.32 1478.93 718.61 1398.5 718.61 1398.5 690.66"/>
 </g>
 
 <g id="blue_bar">
-    <circle cx="433.458" cy="169.129" r="101" fill="#60BFF0" fill-rule="evenodd" clip-rule="evenodd"/>
+    <circle cx="433.458" cy="169.129" r="101" fill="#60BFF0"/>
     <path fill="#59B1DE" stroke="#4990B5" d="M433.458 61.579c-59.4 0-107.56 48.15-107.56 107.56s48.15 107.56 107.56 107.56c59.4 0 107.56-48.15 107.56-107.56s-48.16-107.56-107.56-107.56zm0 208.55c-55.78 0-101-45.22-101-101s45.22-101 101-101 101 45.22 101 101-45.22 101-101 101z"/>
     <g id="blue_dashes" fill="none" stroke="#000" stroke-linecap="round" stroke-width="1.68">
       <path d="M396.928 232.389l-7.99 13.85"/>
@@ -521,7 +808,7 @@ text {
     </g>
     <g id="blue_arrow" transform="rotate(20 433.39 169.16)">
       <path d="M427.125 176.006a9.316 9.316 0 01-1.739-11.467 9.314 9.314 0 0110.434-4.332l6.913-12.555 4.608 2.66-7.412 12.256a9.313 9.313 0 011.48 11.217 9.316 9.316 0 01-10.82 4.221l-36.872 60.984-.97-.56 34.378-62.424z"/>
-      <path fill="#60BFF0" fill-rule="evenodd" d="M430.906 173.478c-2.381-1.374-3.197-4.423-1.823-6.803s4.422-3.197 6.803-1.823a4.982 4.982 0 011.822 6.803 4.982 4.982 0 01-6.802 1.823z" clip-rule="evenodd"/>
+      <path fill="#60BFF0" d="M430.906 173.478c-2.381-1.374-3.197-4.423-1.823-6.803s4.422-3.197 6.803-1.823a4.982 4.982 0 011.822 6.803 4.982 4.982 0 01-6.802 1.823z"/>
     </g>
     <path d="M398.215 222.064c.807-1.397 1.743-2.293 2.808-2.688 1.065-.396 2.169-.264 3.31.395 1.151.665 1.822 1.56 2.011 2.687.19 1.126-.116 2.383-.917 3.771l-1.091 1.89c-.806 1.397-1.742 2.293-2.808 2.689-1.064.395-2.171.262-3.316-.399-1.146-.662-1.814-1.556-2.003-2.683-.19-1.126.117-2.385.921-3.777l1.085-1.885zm1.127 3.578c-.429.744-.652 1.355-.671 1.834-.018.479.184.84.606 1.083.411.238.811.241 1.194.008.384-.233.783-.691 1.196-1.375l1.526-2.643c.446-.771.675-1.393.688-1.862.012-.47-.192-.826-.614-1.07-.407-.235-.809-.235-1.203.002-.395.236-.811.724-1.244 1.465l-1.478 2.558z"/>
     <path d="M377.24 187.054l.481 2.73-8.692 1.533 1.257 2.543-2.068.365-2.696-4.847-.044-.25 11.762-2.074z"/>
@@ -566,8 +853,8 @@ text {
     <use x="313.4275" y="49.1493" xlink:href="#ring"/>
   </g>
 
-  <g id="red_bar1">
-    <circle cx="433.49" cy="906.719" r="101" fill="#FFB8B8" fill-rule="evenodd" clip-rule="evenodd"/>
+  <g id="red_bar1" transform="translate(30 -100)">
+    <circle cx="433.49" cy="906.719" r="101" fill="#FFB8B8"/>
     <path fill="#D16969" stroke="#994D4D" stroke-width="1.4" d="M433.49 799.169c-59.4 0-107.56 48.15-107.56 107.56 0 59.41 48.15 107.56 107.56 107.56 59.4 0 107.56-48.15 107.56-107.56 0-59.41-48.16-107.56-107.56-107.56zm0 208.55c-55.78 0-101-45.22-101-101s45.22-101 101-101 101 45.22 101 101-45.22 101-101 101z"/>
     <g id="red_dashes1" fill="none" stroke="#000" stroke-linecap="round" stroke-width="1.68">
       <path d="M396.96 969.979l-7.99 13.85"/>
@@ -604,7 +891,7 @@ text {
     </g>
     <g id="red_arrow1" transform="rotate(150 433.42 906.75)">
       <path d="M427.157 913.596a9.316 9.316 0 01-1.739-11.467 9.314 9.314 0 0110.434-4.332l6.913-12.555 4.608 2.66-7.412 12.256a9.313 9.313 0 011.48 11.217 9.316 9.316 0 01-10.82 4.221l-36.872 60.984-.97-.56 34.378-62.424z"/>
-      <path fill="#FFB8B8" fill-rule="evenodd" d="M430.938 911.068c-2.381-1.374-3.197-4.423-1.823-6.803s4.422-3.197 6.803-1.823a4.982 4.982 0 011.822 6.803 4.982 4.982 0 01-6.802 1.823z" clip-rule="evenodd"/>
+      <path fill="#FFB8B8" d="M430.938 911.068c-2.381-1.374-3.197-4.423-1.823-6.803s4.422-3.197 6.803-1.823a4.982 4.982 0 011.822 6.803 4.982 4.982 0 01-6.802 1.823z"/>
     </g>
     <path d="M398.247 959.654c.807-1.397 1.743-2.294 2.808-2.688 1.065-.396 2.169-.264 3.31.395 1.151.665 1.822 1.56 2.011 2.687.19 1.126-.116 2.383-.917 3.771l-1.091 1.89c-.806 1.397-1.742 2.293-2.808 2.689-1.064.395-2.171.262-3.316-.399-1.146-.662-1.814-1.557-2.003-2.683-.19-1.126.117-2.385.921-3.777l1.085-1.885zm1.127 3.577c-.429.744-.652 1.355-.671 1.834-.018.479.184.841.606 1.084.411.238.811.24 1.194.008.384-.233.783-.691 1.196-1.375l1.526-2.643c.446-.771.675-1.393.688-1.862.012-.47-.192-.826-.614-1.07-.407-.234-.809-.234-1.203.002-.395.236-.811.724-1.244 1.465l-1.478 2.557z"/>
     <path d="M377.272 924.644l.481 2.73-8.692 1.533 1.257 2.543-2.068.365-2.696-4.848-.044-.25 11.762-2.073z"/>
@@ -649,7 +936,7 @@ text {
     <use x="313.4598" y="786.7391" xlink:href="#ring"/>
   </g>
 
-  <g id="red_bar2">
+  <g id="red_bar2" transform="translate(620 4)">
     <circle id="bar2_circle" fill="#fbce27" cx="787.315" cy="906.719" r="101"/>
     <path fill="#D16969" stroke="#994D4D" stroke-width="1.4" d="M787.315 799.169c-59.4 0-107.56 48.15-107.56 107.56 0 59.41 48.15 107.56 107.56 107.56 59.4 0 107.56-48.15 107.56-107.56 0-59.41-48.16-107.56-107.56-107.56zm0 208.55c-55.78 0-101-45.22-101-101s45.22-101 101-101 101 45.22 101 101-45.22 101-101 101z"/>
     <g id="red_dashes2" fill="none" stroke="#000" stroke-linecap="round" stroke-width="1.68">
@@ -687,7 +974,7 @@ text {
     </g>
     <g id="red_arrow2" transform="rotate(50 787.2 906.75)">
       <path d="M780.982 913.596a9.316 9.316 0 01-1.739-11.467 9.314 9.314 0 0110.434-4.332l6.913-12.555 4.608 2.66-7.412 12.256a9.313 9.313 0 011.48 11.217 9.316 9.316 0 01-10.82 4.221l-36.872 60.984-.97-.56 34.378-62.424z"/>
-      <path id="bar2_arr" fill="#fbce27" d="M784.763 911.068c-2.381-1.374-3.197-4.423-1.823-6.803s4.422-3.197 6.803-1.823a4.982 4.982 0 011.822 6.803 4.982 4.982 0 01-6.802 1.823z" clip-rule="evenodd"/>
+      <path id="bar2_arr" fill="#fbce27" d="M784.763 911.068c-2.381-1.374-3.197-4.423-1.823-6.803s4.422-3.197 6.803-1.823a4.982 4.982 0 011.822 6.803 4.982 4.982 0 01-6.802 1.823z"/>
     </g>
     <path d="M752.072 959.654c.807-1.397 1.743-2.294 2.808-2.688 1.065-.396 2.169-.264 3.31.395 1.151.665 1.822 1.56 2.011 2.687.19 1.126-.116 2.383-.917 3.771l-1.091 1.89c-.806 1.397-1.742 2.293-2.808 2.689-1.064.395-2.171.262-3.316-.399-1.146-.662-1.814-1.557-2.003-2.683-.19-1.126.117-2.385.921-3.777l1.085-1.885zm1.127 3.577c-.429.744-.652 1.355-.671 1.834-.018.479.184.841.606 1.084.411.238.811.24 1.194.008.384-.233.783-.691 1.196-1.375l1.526-2.643c.446-.771.675-1.393.688-1.862.012-.47-.192-.826-.614-1.07-.407-.234-.809-.234-1.203.002-.395.236-.811.724-1.244 1.465l-1.478 2.557z"/>
     <path d="M731.097 924.644l.481 2.73-8.692 1.533 1.257 2.543-2.068.365-2.696-4.848-.044-.25 11.762-2.073z"/>
@@ -732,7 +1019,7 @@ text {
     <use x="667.2853" y="786.7391" xlink:href="#ring"/>
   </g>
 
-  <g id="red_bar3">
+  <g id="red_bar3" transform="translate(556 -410)">
     <circle id="bar3_circle" fill="#FFFF63" cx="1141.141" cy="906.719" r="101"/>
     <path fill="#D16969" stroke="#994D4D" stroke-width="1.4" d="M1141.141 799.169c-59.4 0-107.56 48.15-107.56 107.56 0 59.41 48.15 107.56 107.56 107.56 59.4 0 107.56-48.15 107.56-107.56 0-59.41-48.16-107.56-107.56-107.56zm0 208.55c-55.78 0-101-45.22-101-101s45.22-101 101-101 101 45.22 101 101-45.22 101-101 101z"/>
     <g id="red_dashes3" fill="none" stroke="#000" stroke-linecap="round" stroke-width="1.68">
@@ -770,7 +1057,7 @@ text {
     </g>
     <g id="red_arrow3">
       <path d="M1134.808 913.596a9.316 9.316 0 01-1.739-11.467 9.314 9.314 0 0110.434-4.332l6.913-12.555 4.608 2.66-7.412 12.256a9.313 9.313 0 011.48 11.217 9.316 9.316 0 01-10.82 4.221L1101.4 976.58l-.97-.56 34.378-62.424z"/>
-      <path id="bar3_arr" fill="#FFFF63" fill-rule="evenodd" d="M1138.589 911.068c-2.381-1.374-3.197-4.423-1.823-6.803s4.422-3.197 6.803-1.823a4.982 4.982 0 011.822 6.803 4.982 4.982 0 01-6.802 1.823z" clip-rule="evenodd"/>
+      <path id="bar3_arr" fill="#FFFF63" d="M1138.589 911.068c-2.381-1.374-3.197-4.423-1.823-6.803s4.422-3.197 6.803-1.823a4.982 4.982 0 011.822 6.803 4.982 4.982 0 01-6.802 1.823z"/>
     </g>
     <path d="M1105.897 959.654c.807-1.397 1.743-2.294 2.808-2.688 1.065-.396 2.169-.264 3.31.395 1.151.665 1.822 1.56 2.012 2.687.189 1.126-.116 2.383-.918 3.771l-1.091 1.89c-.807 1.397-1.742 2.293-2.808 2.689-1.064.395-2.171.262-3.316-.399-1.146-.662-1.814-1.557-2.004-2.683-.19-1.126.117-2.385.921-3.777l1.086-1.885zm1.127 3.577c-.429.744-.652 1.355-.671 1.834-.018.479.185.841.606 1.084.411.238.811.24 1.193.008.385-.233.783-.691 1.196-1.375l1.525-2.643c.446-.771.676-1.393.688-1.862s-.192-.826-.614-1.07c-.407-.234-.809-.234-1.203.002s-.811.724-1.244 1.465l-1.476 2.557z"/>
     <path d="M1084.923 924.644l.481 2.73-8.692 1.533 1.257 2.543-2.068.365-2.696-4.848-.044-.25 11.762-2.073z"/>
@@ -817,15 +1104,80 @@ text {
     </a>
   </g>
 
-
   <g id="popup_demo" class="popup_box invis none">
-  <path opacity="0.5" fill="#FFFFFF" d="M1787.163,574.43H1299.85c-12.244,0-22.17-9.926-22.17-22.17v-9.669l-106.09,187.241l95.214-210.703l-32.584-84.266l43.46,63.173c0-12.244,9.926-22.17,22.17-22.17h487.312c12.244,0,22.17,9.926,22.17,22.17v54.222C1809.333,564.504,1799.407,574.43,1787.163,574.43z"/>
-    <text x="1541.6" y="517.6">
-      To demonstrate, click the arrows to adjust
-      <tspan x="1541.6" dy="28">well pressure and pump speed</tspan>
+    <path fill="#FFF" d="M698.6 580.88H331.76c-7.7 0-14-6.3-14-14v-89.97c0-7.7 6.3-14 14-14h289.45l31.55-25.11-2.68 25.11h48.52c7.7 0 14 6.3 14 14v89.97c0 7.7-6.3 14-14 14z" opacity=".5"/>
+    <text x="515.23" y="501.74">
+      To demonstrate, click the
+      <tspan x="515.23" dy="28">arrows to adjust well pressure</tspan>
+      <tspan x="515.23" dy="28">and pump speed</tspan>
     </text>
     <a id="popup_demo_close" class="bttn_close" href="javascript:;">
-      <use x="1821.6" y="469" xlink:href="#popup_close"/>
+      <use x="723.29" y="456" xlink:href="#popup_close"/>
+    </a>
+  </g>
+
+  <g id="popup_prima_pin" class="popup_box invis none">
+    <path fill="#FFF" d="M879.58 668.49H762.74c-7.7 0-14-6.3-14-14v-48.97c0-7.7 6.3-14 14-14h116.84c7.7 0 14 6.3 14 14v2.98l39.67-7.34-39.67 27.38v25.95c0 7.7-6.3 14-14 14z" opacity=".5"/>
+    <text x="825" y="625">
+      Primary
+      <tspan x="826" dy="28">stage pin</tspan>
+    </text>
+    <a id="popup_prima_pin_close" class="bttn_close" href="javascript:;">
+      <use x="899.9" y="585.27" xlink:href="#popup_close"/>
+    </a>
+  </g>
+
+  <g id="popup_prima_stage" class="popup_box invis none">
+    <path fill="#FFF" d="M786.3 788.86H649.46c-7.7 0-14-6.3-14-14v-48.97c0-7.7 6.3-14 14-14H786.3c7.7 0 14 6.3 14 14v2.98l92.95-32.52-92.95 52.56v25.95c0 7.7-6.3 14-14 14z" opacity=".5"/>
+    <text x="717.4" y="744.38">
+      Primary
+      <tspan x="717.4" dy="28">stage seat</tspan>
+    </text>
+    <a id="popup_prima_stage_close" class="bttn_close" href="javascript:;">
+      <use x="806.64" y="705.64" xlink:href="#popup_close"/>
+    </a>
+  </g>
+
+  <g id="popup_balance" class="popup_box invis none">
+    <path fill="#FFF" d="M1219.93 307.8h-150.84c-7.7 0-14-6.3-14-14v-48.97c0-7.7 6.3-14 14-14h150.84c7.7 0 14 6.3 14 14v22.98l91.04 59.74-91.04-39.7v5.95c0 7.7-6.3 14-14 14z" opacity=".5"/>
+    <text x="1144.86" y="264">
+      Pin balancing
+      <tspan x="1144.86" dy="28">springs</tspan>
+    </text>
+    <a id="popup_balance_close" class="bttn_close" href="javascript:;">
+      <use x="1240.26" y="224.58" xlink:href="#popup_close"/>
+    </a>
+  </g>
+
+  <g id="popup_spring" class="popup_box invis none">
+    <path fill="#FFF" d="M1168.86 464.06h-124.84c-7.7 0-14-6.3-14-14v-28.97c0-7.7 6.3-14 14-14h124.84c7.7 0 14 6.3 14 14v2.98l121.88-9.53-121.88 29.57v5.95c0 7.7-6.3 14-14 14z" opacity=".5"/>
+    <text x="1107.28" y="442">
+      Pin springs
+    </text>
+    <a id="popup_spring_close" class="bttn_close" href="javascript:;">
+      <use x="1189.19" y="400.84" xlink:href="#popup_close"/>
+    </a>
+  </g>
+
+  <g id="popup_second_stage" class="popup_box invis none">
+    <path fill="#FFF" d="M1211.88 674.98h-116.84c-7.7 0-14-6.3-14-14v-48.97c0-7.7 6.3-14 14-14h116.84c7.7 0 14 6.3 14 14v2.98l121.88-9.53-121.88 29.57v25.95c0 7.7-6.3 14-14 14z" opacity=".5"/>
+    <text x="1156" y="630.78">
+      Secondary
+      <tspan x="1156" dy="28">stage pin</tspan>
+    </text>
+    <a id="popup_second_stage_close" class="bttn_close" href="javascript:;">
+      <use x="1232.2" y="591.7" xlink:href="#popup_close"/>
+    </a>
+  </g>
+
+  <g id="popup_second_seat" class="popup_box invis none">
+    <path fill="#FFF" d="M1221.47 909.47h-136.84c-7.7 0-14-6.3-14-14V846.5c0-7.7 6.3-14 14-14h82.48l107.03-120.88-73.56 120.88h20.9c7.7 0 14 6.3 14 14v48.97c-.01 7.7-6.31 14-14.01 14z" opacity=".5"/>
+    <text x="1156" y="865">
+      Secondary
+      <tspan x="1156" dy="28">stage seat</tspan>
+    </text>
+    <a id="popup_second_seat_close" class="bttn_close" href="javascript:;">
+      <use x="1241.8" y="835.5" xlink:href="#popup_close"/>
     </a>
   </g>
 
@@ -851,11 +1203,72 @@ $("#popup_demo_close").onclick = function() {
   setTimeout(function(){$("#popup_demo").classList.toggle("none")}, 100);
 };
 
+$("#popup_prima_pin_close").onclick = function() {
+  $("#popup_prima_pin").classList.toggle("invis");
+  setTimeout(function(){$("#popup_prima_pin").classList.toggle("none")}, 100);
+};
+
+$("#popup_prima_stage_close").onclick = function() {
+  $("#popup_prima_stage").classList.toggle("invis");
+  setTimeout(function(){$("#popup_prima_stage").classList.toggle("none")}, 100);
+};
+
+$("#popup_balance_close").onclick = function() {
+  $("#popup_balance").classList.toggle("invis");
+  setTimeout(function(){$("#popup_balance").classList.toggle("none")}, 100);
+};
+
+$("#popup_spring_close").onclick = function() {
+  $("#popup_spring").classList.toggle("invis");
+  setTimeout(function(){$("#popup_spring").classList.toggle("none")}, 100);
+};
+
+$("#popup_second_stage_close").onclick = function() {
+  $("#popup_second_stage").classList.toggle("invis");
+  setTimeout(function(){$("#popup_second_stage").classList.toggle("none")}, 100);
+};
+
+$("#popup_second_seat_close").onclick = function() {
+  $("#popup_second_seat").classList.toggle("invis");
+  setTimeout(function(){$("#popup_second_seat").classList.toggle("none")}, 100);
+};
+
 function info_show() {
-  $("#popup_demo").classList.toggle("invis");
-  setTimeout(function(){
-    $("#popup_demo").classList.toggle("none");
-  }, 100);
+if($("#popup_demo").classList.contains("none") || $("#popup_prima_pin").classList.contains("none") || $("#popup_prima_stage").classList.contains("none") || $("#popup_balance").classList.contains("none") || $("#popup_spring").classList.contains("none") || $("#popup_second_stage").classList.contains("none") || $("#popup_second_seat").classList.contains("none")) {
+    $("#popup_demo").classList.remove("invis");
+    $("#popup_prima_pin").classList.remove("invis");
+    $("#popup_prima_stage").classList.remove("invis");
+    $("#popup_balance").classList.remove("invis");
+    $("#popup_spring").classList.remove("invis");
+    $("#popup_second_stage").classList.remove("invis");
+    $("#popup_second_seat").classList.remove("invis");
+    setTimeout(function(){
+      $("#popup_demo").classList.remove("none");
+      $("#popup_prima_pin").classList.remove("none");
+      $("#popup_prima_stage").classList.remove("none");
+      $("#popup_balance").classList.remove("none");
+      $("#popup_spring").classList.remove("none");
+      $("#popup_second_stage").classList.remove("none");
+      $("#popup_second_seat").classList.remove("none");
+    }, 100);
+  } else {
+    $("#popup_demo").classList.toggle("invis");
+    $("#popup_prima_pin").classList.toggle("invis");
+    $("#popup_prima_stage").classList.toggle("invis");
+    $("#popup_balance").classList.toggle("invis");
+    $("#popup_spring").classList.toggle("invis");
+    $("#popup_second_stage").classList.toggle("invis");
+    $("#popup_second_seat").classList.toggle("invis");
+    setTimeout(function(){
+      $("#popup_demo").classList.toggle("none");
+      $("#popup_prima_pin").classList.toggle("none");
+      $("#popup_prima_stage").classList.toggle("none");
+      $("#popup_balance").classList.toggle("none");
+      $("#popup_spring").classList.toggle("none");
+      $("#popup_second_stage").classList.toggle("none");
+      $("#popup_second_seat").classList.toggle("none");
+    }, 100);
+  }
 }
 
 $("#info").onclick = function() {
@@ -874,48 +1287,86 @@ function bars_upd() {
   if(r_angle < 50) {
     $("#bar3_circle").setAttribute("fill", "#FFFF63");
     $("#bar3_arr").setAttribute("fill", "#FFFF63");
-    $("#pipe6").setAttribute("fill", "url(#hor_yllw)");
-    $("#pipe5").setAttribute("fill", "url(#ver_yllw)");
-    $("#pipe4").setAttribute("fill", "url(#ver_yllw)");
+    $("#pipe11").setAttribute("fill", "url(#hor_yllw)");
+    $("#pipe12").setAttribute("fill", "url(#hor_yllw)");
+    $("#pipe13").setAttribute("fill", "url(#hor_yllw)");
+    $("#pipe14").setAttribute("fill", "url(#hor_yllw)");
 
-    $("#piston_02").setAttribute("transform", "translate(0 15)")
+    $("#pipe15").setAttribute("fill", "url(#ver_yllw)");
+    $("#pipe16").setAttribute("fill", "url(#ver_yllw)");
+    $("#pipe17").setAttribute("fill", "url(#ver_yllw)");
+
+    $("#secondary_pin").setAttribute("transform", "translate(0 30)");
+    $("#secondary_spring").setAttribute("transform", "translate(1369 495) scale(1 .83) translate(-1369 -495)");
   }
   if(r_angle >= 50) {
     $("#red_arrow2").setAttribute("transform", "rotate(" + r_angle + " 787.2 906.75)");
 
     $("#bar3_circle").setAttribute("fill", "#fbce27");
     $("#bar3_arr").setAttribute("fill", "#fbce27");
+    $("#pipe1").setAttribute("fill", "url(#hor_org)");
+    $("#pipe2").setAttribute("fill", "url(#hor_org)");
+    $("#pipe3").setAttribute("fill", "url(#hor_org)");
+    $("#pipe4").setAttribute("fill", "url(#hor_org)");
+    $("#pipe5").setAttribute("fill", "url(#hor_org)");
     $("#pipe6").setAttribute("fill", "url(#hor_org)");
-    $("#pipe5").setAttribute("fill", "url(#ver_org)");
-    $("#pipe4").setAttribute("fill", "url(#ver_org)");
+    $("#pipe7").setAttribute("fill", "url(#ver_org)");
+    $("#pipe8").setAttribute("fill", "url(#hor_org)");
+
+    $("#pipe9").setAttribute("fill", "url(#ver_org)");
+    $("#pipe10").setAttribute("fill", "url(#ver_org)");
 
     $("#bar2_circle").setAttribute("fill", "#fbce27");
     $("#bar2_arr").setAttribute("fill", "#fbce27");
-    $("#pipe3").setAttribute("fill", "url(#hor_org)");
-    $("#pipe2").setAttribute("fill", "url(#ver_org)");
-    $("#pipe1").setAttribute("fill", "url(#hor_org)");
+    $("#pipe11").setAttribute("fill", "url(#hor_org)");
+    $("#pipe12").setAttribute("fill", "url(#hor_org)");
+    $("#pipe13").setAttribute("fill", "url(#hor_org)");
+    $("#pipe14").setAttribute("fill", "url(#hor_org)");
 
-    $("#piston_02").setAttribute("transform", "translate(0 0)")
-    $("#piston_01").setAttribute("transform", "translate(0 15)")
+    $("#pipe15").setAttribute("fill", "url(#ver_org)");
+    $("#pipe16").setAttribute("fill", "url(#ver_org)");
+    $("#pipe17").setAttribute("fill", "url(#ver_org)");
+
+    $("#secondary_pin").setAttribute("transform", "translate(0 0)");
+    $("#secondary_spring").setAttribute("transform", "translate(1369 495) scale(1 1) translate(-1369 -495)");
+
+    $("#primary_pin").setAttribute("transform", "translate(0 30)");
+    $("#primary_top").setAttribute("transform", "translate(943 293.24) scale(1 1.38) translate(-943 -293.24)");
+
   }
   if(r_angle >= 150) {
     $("#red_arrow1").setAttribute("transform", "rotate(" + r_angle + " 433.42 906.75)");
     $("#red_arrow2").setAttribute("transform", "rotate(" + r_angle + " 787.2 906.75)");
     $("#blue_arrow").setAttribute("transform", "rotate(" + (r_angle - 125) + " 433.39 169.16)");
 
-    $("#bar3_circle").setAttribute("fill", "#FFB8B8");
-    $("#bar3_arr").setAttribute("fill", "#FFB8B8");
-    $("#pipe6").setAttribute("fill", "url(#hor_red)");
-    $("#pipe5").setAttribute("fill", "url(#ver_red)");
-    $("#pipe4").setAttribute("fill", "url(#ver_red)");
-
     $("#bar2_circle").setAttribute("fill", "#FFB8B8");
     $("#bar2_arr").setAttribute("fill", "#FFB8B8");
-    $("#pipe3").setAttribute("fill", "url(#hor_red)");
-    $("#pipe2").setAttribute("fill", "url(#ver_red)");
-    $("#pipe1").setAttribute("fill", "url(#hor_red)");
+    $("#bar3_circle").setAttribute("fill", "#FFB8B8");
+    $("#bar3_arr").setAttribute("fill", "#FFB8B8");
 
-    $("#piston_01").setAttribute("transform", "translate(0 0)")
+    $("#pipe1").setAttribute("fill", "url(#hor_red)");
+    $("#pipe2").setAttribute("fill", "url(#hor_red)");
+    $("#pipe3").setAttribute("fill", "url(#hor_red)");
+    $("#pipe4").setAttribute("fill", "url(#hor_red)");
+    $("#pipe5").setAttribute("fill", "url(#hor_red)");
+    $("#pipe6").setAttribute("fill", "url(#hor_red)");
+    $("#pipe7").setAttribute("fill", "url(#ver_red)");
+    $("#pipe8").setAttribute("fill", "url(#hor_red)");
+
+    $("#pipe9").setAttribute("fill", "url(#ver_red)");
+    $("#pipe10").setAttribute("fill", "url(#ver_red)");
+
+    $("#pipe11").setAttribute("fill", "url(#hor_red)");
+    $("#pipe12").setAttribute("fill", "url(#hor_red)");
+    $("#pipe13").setAttribute("fill", "url(#hor_red)");
+    $("#pipe14").setAttribute("fill", "url(#hor_red)");
+
+    $("#pipe15").setAttribute("fill", "url(#ver_red)");
+    $("#pipe16").setAttribute("fill", "url(#ver_red)");
+    $("#pipe17").setAttribute("fill", "url(#ver_red)");
+
+    $("#primary_pin").setAttribute("transform", "translate(0 0)");
+    $("#primary_top").setAttribute("transform", "translate(943 293.24) scale(1 1) translate(-943 -293.24)");
   }
 }
 
@@ -993,9 +1444,11 @@ function animate() {
     $("#q_01").setAttribute("transform", "translate(" + arrows_shift * -1 + " 0)");
     $("#q_02").setAttribute("transform", "translate(0 " + arrows_shift + ")");
     $("#q_03").setAttribute("transform", "translate(" + arrows_shift + " 0)");
-    $("#q_04").setAttribute("transform", "translate(" + arrows_shift + " 0)");
+    $("#q_04").setAttribute("transform", "translate(0 " + arrows_shift + ")");
     $("#q_05").setAttribute("transform", "translate(" + arrows_shift + " 0)");
-    $("#q_06").setAttribute("transform", "translate(0 " + arrows_shift + ")");
+    $("#q_06").setAttribute("transform", "translate(0 " + arrows_shift * -1 + ")");
+    $("#q_07").setAttribute("transform", "translate(" + arrows_shift + " 0)");
+    $("#q_08").setAttribute("transform", "translate(0 " + arrows_shift + ")");
   } else {
     arrows_shift = 1;
   }
