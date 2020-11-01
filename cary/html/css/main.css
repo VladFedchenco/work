@@ -626,7 +626,7 @@ svg|a {
 }
 
 #initial_screen.active #text_clp1_rect {
-    animation: text_clp1_rect 4s ease-out forwards;
+    animation: text_clp1_rect 2.5s ease-out forwards;
 }
 
 @keyframes text_clp1_rect {
@@ -643,7 +643,7 @@ svg|a {
 }
 
 #initial_screen.active #initial_text1 {
-    animation: initial_text1 4s ease-out forwards;
+    animation: initial_text1 2.5s ease-out forwards;
 }
 
 @keyframes initial_text1 {
@@ -661,7 +661,7 @@ svg|a {
 }
 
 #initial_screen.active #text_clp2_rect {
-    animation: text_clp2_rect 4s .4s ease-out forwards;
+    animation: text_clp2_rect 2.5s .4s ease-out forwards;
 }
 
 @keyframes text_clp2_rect {
@@ -678,7 +678,7 @@ svg|a {
 }
 
 #initial_screen.active #initial_text2 {
-    animation: initial_text2 4s .4s ease-out forwards;
+    animation: initial_text2 2.5s .4s ease-out forwards;
 }
 
 @keyframes initial_text2 {
@@ -696,7 +696,7 @@ svg|a {
 }
 
 #initial_screen.active #text_clp3_rect {
-    animation: text_clp3_rect 4s 4s ease-out forwards;
+    animation: text_clp3_rect 2.5s 2.5s ease-out forwards;
 }
 
 @keyframes text_clp3_rect {
@@ -711,7 +711,7 @@ svg|a {
 }
 
 #initial_screen.active #initial_text3 {
-    animation: initial_text3 4s 4s ease-out forwards;
+    animation: initial_text3 2.5s 2.5s ease-out forwards;
 }
 
 @keyframes initial_text3 {
@@ -733,7 +733,7 @@ svg|a {
 }
 
 #initial_screen.active #text_clp4_rect {
-    animation: text_clp4_rect 4s 4.4s ease-out forwards;
+    animation: text_clp4_rect 2.5s 3s ease-out forwards;
 }
 
 @keyframes text_clp4_rect {
@@ -748,7 +748,7 @@ svg|a {
 }
 
 #initial_screen.active #initial_text4 {
-    animation: initial_text4 4s 4.4s ease-out forwards;
+    animation: initial_text4 2.5s 3s ease-out forwards;
 }
 
 @keyframes initial_text4 {
