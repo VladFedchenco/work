@@ -98,7 +98,7 @@ text {
 /* ]]> */
 </style>
 
-<a href="page_02.svg" id="bttn_next" class="nav_button">
+<a href="page_01.svg" id="bttn_next" class="nav_button">
   <path class="nav_button_bg" d="M1856.02 119.66H1735.5c-6.6 0-12-5.4-12-12V69.84c0-6.6 5.4-12 12-12h120.52c6.6 0 12 5.4 12 12v37.83c0 6.59-5.4 11.99-12 11.99z"/>
   <text x="1798" y="100">NEXT</text>
 </a>
