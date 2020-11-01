@@ -118,7 +118,7 @@ text.label_txt {
   <path class="nav_button_bg" d="M184.5 119.66H63.98c-6.6 0-12-5.4-12-12V69.84c0-6.6 5.4-12 12-12H184.5c6.6 0 12 5.4 12 12v37.83c0 6.59-5.4 11.99-12 11.99z"/>
   <text x="126" y="100">PREV</text>
 </a>
-<a href="javascript:;" id="bttn_tofc" class="nav_button">
+<a href="tofc.svg" id="bttn_tofc" class="nav_button">
   <path class="nav_button_bg" d="M184.5 217.16H63.98c-6.6 0-12-5.4-12-12v-37.83c0-6.6 5.4-12 12-12H184.5c6.6 0 12 5.4 12 12v37.83c0 6.6-5.4 12-12 12z"/>
   <text x="126" y="199">TofC</text>
 </a>

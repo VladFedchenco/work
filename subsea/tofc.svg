@@ -1,0 +1,197 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1080">
+
+<defs>
+<style>@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900');</style>
+</defs>
+
+<style>
+/* <![CDATA[ */
+
+@namespace svg url(http://www.w3.org/2000/svg);
+
+svg|a {
+  outline: none;
+}
+
+svg {
+  background: linear-gradient(#4a6785, #dbedff);
+}
+
+text {
+  font-family: 'Roboto', sans-serif;
+}
+
+.bttn:hover use {
+  filter: url(#h_color);
+  transform: translate(0px, 0px);
+}
+
+.bttn:active use {
+  filter: url(#a_color);
+  transform: translate(0px, 2px);
+}
+
+.nav_button_bg {
+  fill: #fff;
+  fill-opacity: 0;
+  stroke: #fff;
+  transition: fill-opacity .1s linear;
+}
+
+.nav_button:hover .nav_button_bg {
+  fill-opacity: .3;
+}
+
+.nav_button text {
+  font-size: 32px;
+  font-weight: 700;
+  text-anchor: middle;
+  fill: #fff;
+}
+
+#page_num text {
+  font-size: 60px;
+  font-weight: 900;
+  text-anchor: middle;
+}
+
+.ttl {
+  font-size: 54px;
+  fill: #fff;
+  font-weight: 900;
+  text-anchor: middle;
+}
+
+.text_body {
+  font-size: 26px;
+  fill: #fff;
+}
+
+.text_body.dark {
+  fill: #000;
+}
+
+.graph_label {
+  font-size: 40px;
+  font-weight: 700;
+  text-anchor: middle;
+}
+
+.itm_num {
+  text-anchor: middle;
+  font-weight: 900;
+  font-size: 26px;
+}
+
+.page_link:hover .text_body {
+  fill: #000;
+}
+
+.page_link:hover .itm_num {
+  fill: #fff;
+}
+
+.page_link:hover circle {
+  fill: #000;
+}
+
+/* ]]> */
+</style>
+
+<a href="page_02.svg" id="bttn_next" class="nav_button">
+  <path class="nav_button_bg" d="M1856.02 119.66H1735.5c-6.6 0-12-5.4-12-12V69.84c0-6.6 5.4-12 12-12h120.52c6.6 0 12 5.4 12 12v37.83c0 6.59-5.4 11.99-12 11.99z"/>
+  <text x="1798" y="100">NEXT</text>
+</a>
+
+<text x="960" y="126" class="ttl">Table of Contents</text>
+
+<a class="page_link" href="page_01.svg">
+<circle cx="295" cy="244" r="23" fill="#fff" opacity=".5"/>
+<text x="295" y="253" class="itm_num">1</text>
+<text x="340" y="252" class="text_body">Operational Theory</text>
+</a>
+
+<a class="page_link" href="page_02.svg" transform="translate(0 64)">
+<circle cx="295" cy="244" r="23" fill="#fff" opacity=".5"/>
+<text x="295" y="253" class="itm_num">2</text>
+<text x="340" y="252" class="text_body">Standard Valve</text>
+</a>
+
+<a class="page_link" href="page_03.svg" transform="translate(0 128)">
+<circle cx="295" cy="244" r="23" fill="#fff" opacity=".5"/>
+<text x="295" y="253" class="itm_num">3</text>
+<text x="340" y="252" class="text_body">Low Flow Core - P&amp;ID</text>
+</a>
+
+<a class="page_link" href="page_04.svg" transform="translate(0 192)">
+<circle cx="295" cy="244" r="23" fill="#fff" opacity=".5"/>
+<text x="295" y="253" class="itm_num">4</text>
+<text x="340" y="252" class="text_body">Low Flow Core - Cross-Section</text>
+</a>
+
+<a class="page_link" href="page_05.svg" transform="translate(0 256)">
+<circle cx="295" cy="244" r="23" fill="#fff" opacity=".5"/>
+<text x="295" y="253" class="itm_num">5</text>
+<text x="340" y="252" class="text_body">Low Flow Core - Pressure Drop vs Flow Graph</text>
+</a>
+
+<a class="page_link" href="page_06.svg" transform="translate(0 320)">
+<circle cx="295" cy="244" r="23" fill="#fff" opacity=".5"/>
+<text x="295" y="253" class="itm_num">6</text>
+<text x="340" y="252" class="text_body">Low Flow Core - Gate Operation</text>
+</a>
+
+<a class="page_link" href="page_07.svg" transform="translate(0 384)">
+<circle cx="295" cy="244" r="23" fill="#fff" opacity=".5"/>
+<text x="295" y="253" class="itm_num">7</text>
+<text x="340" y="252" class="text_body">PD Flowmeter - Dormant</text>
+</a>
+
+<a class="page_link" href="page_08.svg" transform="translate(770 0)">
+<circle cx="295" cy="244" r="23" fill="#fff" opacity=".5"/>
+<text x="295" y="253" class="itm_num">8</text>
+<text x="340" y="252" class="text_body">PD Flowmeter - Active</text>
+</a>
+
+<a class="page_link" href="page_09.svg" transform="translate(770 64)">
+<circle cx="295" cy="244" r="23" fill="#fff" opacity=".5"/>
+<text x="295" y="253" class="itm_num">9</text>
+<text x="340" y="252" class="text_body">High Flow Core - P&amp;ID</text>
+</a>
+
+<a class="page_link" href="page_10.svg" transform="translate(770 128)">
+<circle cx="295" cy="244" r="23" fill="#fff" opacity=".5"/>
+<text x="295" y="253" class="itm_num">10</text>
+<text x="340" y="252" class="text_body">High Flow Core - Cross-Section</text>
+</a>
+
+<a class="page_link" href="page_11.svg" transform="translate(770 192)">
+<circle cx="295" cy="244" r="23" fill="#fff" opacity=".5"/>
+<text x="295" y="253" class="itm_num">11</text>
+<text x="340" y="252" class="text_body">High Flow Core - Pressure Drop vs Flow Graph</text>
+</a>
+
+<a class="page_link" href="page_12.svg" transform="translate(770 256)">
+<circle cx="295" cy="244" r="23" fill="#fff" opacity=".5"/>
+<text x="295" y="253" class="itm_num">12</text>
+<text x="340" y="252" class="text_body">BPR Core - P&amp;ID</text>
+</a>
+
+<a class="page_link" href="page_13.svg" transform="translate(770 320)">
+<circle cx="295" cy="244" r="23" fill="#fff" opacity=".5"/>
+<text x="295" y="253" class="itm_num">13</text>
+<text x="340" y="252" class="text_body">BPR Core - Cross-Section</text>
+</a>
+
+<a class="page_link" href="page_14.svg" transform="translate(770 384)">
+<circle cx="295" cy="244" r="23" fill="#fff" opacity=".5"/>
+<text x="295" y="253" class="itm_num">14</text>
+<text x="340" y="252" class="text_body">Valve Core With Flusher on Junction Plate</text>
+</a>
+
+<script>
+<![CDATA[
+
+]]>
+</script>
+</svg>
