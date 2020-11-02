@@ -67,10 +67,12 @@ function show_result() {
 
 $("#bttn_sb_ok").onclick = function() {
   $("#rate_sb").classList.remove("active");
+  $("#rate_sb .thanks").classList.remove("active");
   show_result()
 };
 $("#bttn_th_ok").onclick = function() {
   $("#rate_th").classList.remove("active");
+  $("#rate_th .thanks").classList.remove("active");
   show_result()
   $("#result_percent").setAttribute("style", "background: linear-gradient(90deg, #fff 0%, #fff 60%, #00a8ff 60%, #00a8ff 100%);");
   $("#result_tell").innerHTML = "Tell us why you love Tim Hortons!";
