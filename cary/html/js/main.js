@@ -118,5 +118,5 @@ $("#final_thanks").onclick = function() {
 
 window.addEventListener('load', (event) => {
   $("#initial_screen").classList.add("active");
-  setTimeout(function(){ $("#initial_screen").classList.remove("active"); }, 5300);
+  setTimeout(function(){ $("#initial_screen").classList.remove("active"); }, 8000);
 });
