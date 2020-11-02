@@ -1,6 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1260 900" style="background: linear-gradient(#1e90ff, #61b1ff)">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1260 900">
 <style>
 /* <![CDATA[ */
+#main {
+  animation: main 9s linear forwards;
+}
+@keyframes main {
+  0%, 95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 #cloud {
   animation: cloud 2s linear 3;
 }
@@ -116,7 +128,7 @@
 }
 
 #globe {
-  animation: globe 8s ease-out forwards;
+  animation: globe 9s ease-out forwards;
 }
 
 @keyframes globe {
@@ -124,15 +136,24 @@
     transform: scale(1) translate(-800px, 1000px);
     opacity: 0;
   }
-  100% {
+  95%, 100% {
     transform: scale(3) translate(-220px, -370px);
-    opacity: .5;
+  }
+  60%, 95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 
 /* ]]> */
 </style>
 <defs>
+  <linearGradient id="grd_bg" x1="0" x2="0" y1=".33" y2=".66">
+    <stop offset="0" stop-color="#1e90ff"/>
+    <stop offset="1" stop-color="#61b1ff"/>
+  </linearGradient>
   <linearGradient id="grd" x1="0" x2="0" y1="0" y2="1">
     <stop offset="0" stop-color="#e2e2eb"/>
     <stop offset="1" stop-color="#f7f8fa"/>
@@ -151,6 +172,8 @@
     <stop offset="1" stop-color="#f7f8fa"/>
   </linearGradient>
 </defs>
+
+<rect x="-1260" y="-900" width="3780" height="2700" fill="url(#grd_bg)" id="main"/>
 
 <g id="globe" opacity=".5" transform="scale(1) translate(-800 1000)">
   <g fill="none" stroke="#fff" stroke-miterlimit="10">
