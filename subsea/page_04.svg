@@ -1424,6 +1424,21 @@ text {
   </a>
 </g>
 
+<g id="popup_warn" class="popup_box invis" transform="translate(-8 -36)">
+<path fill="#fff" fill-opacity=".5" stroke="#c72b2b" stroke-opacity=".5" stroke-width="3" d="M1754.23 1067.86h-395.88c-6.679-.022-12.168-5.511-12.19-12.19V928.16c0-6.71 5.49-12.19 12.19-12.19h395.88c6.71 0 12.19 5.49 12.19 12.19v127.51c0 6.71-5.48 12.19-12.19 12.19z"/>
+<path fill="#c72b2b" stroke="#fff" stroke-linecap="round" stroke-width="1.81" d="M1384.58 934.962a5.43 5.43 0 014.843-2.985 5.428 5.428 0 014.843 2.985l23.394 46.787a5.45 5.45 0 01.555 2.395c0 2.973-2.434 5.426-5.407 5.449-2.973.022 0 0 0 0h-46.778c-2.973-.023-5.407-2.476-5.407-5.449 0-.83.19-1.649.554-2.395l23.403-46.787z"/>
+<path fill="#fff" d="M1392.61 970.446h-6.262l-.994-22.825h8.241l-.985 22.825zm-7.482 7.111c0-1.13.407-2.06 1.229-2.783.813-.723 1.843-1.094 3.063-1.094 1.22 0 2.241.362 3.063 1.085.814.732 1.229 1.662 1.229 2.801 0 1.12-.406 2.051-1.229 2.783-.813.723-1.843 1.084-3.063 1.084-1.22 0-2.241-.361-3.063-1.084a3.582 3.582 0 01-1.229-2.792z"/>
+  <text x="1438" y="954" style="text-anchor:start">
+    Pressure drop across valve
+    <tspan x="1438" dy="30">is below specifications -</tspan>
+    <tspan x="1438" dy="30">please increase inlet or</tspan>
+    <tspan x="1438" dy="30">decrease outlet pressure</tspan>
+  </text>
+  <a id="popup_warn_close" class="bttn_close" href="javascript:;">
+    <use x="1780.5" y="901.6" xlink:href="#popup_close"/>
+  </a>
+</g>
+
 <g id="info_labels">
 <rect x="51" y="300" width="30" height="30" fill="#b1a7fa" stroke="#fff"/>
 <text id="red_label" x="94" y="322" font-size="24" fill="#fff">- 0 (BAR)</text>
@@ -1571,6 +1586,10 @@ $("#popup_demonstrate_close").onclick = function() {
   setTimeout(function(){$("#popup_demonstrate").classList.toggle("none")}, 100);
 };
 
+$("#popup_warn_close").onclick = function() {
+  $("#popup_warn").classList.toggle("invis");
+};
+
 function info_show() {
 if($("#popup_nitro").classList.contains("none") || $("#popup_piston").classList.contains("none") || $("#popup_circuit").classList.contains("none") || $("#popup_sensor").classList.contains("none") || $("#popup_tention").classList.contains("none") || $("#popup_displacement").classList.contains("none") || $("#popup_mating").classList.contains("none") || $("#popup_ball").classList.contains("none") || $("#popup_bellows").classList.contains("none") || $("#popup_adj_rest").classList.contains("none") || $("#popup_int_check").classList.contains("none") || $("#popup_catch").classList.contains("none") || $("#popup_out_coupler").classList.contains("none") || $("#popup_in_coupler").classList.contains("none") || $("#popup_demonstrate").classList.contains("none")) {
   $("#popup_nitro").classList.remove("none");
@@ -1651,6 +1670,10 @@ setTimeout(function(){
 
 
 function gw_upd() {
+  if(r_angle > y_angle) {
+    $("#popup_warn").classList.add("invis");
+  }
+
   g_angle = t_angle * 3;
   w_angle = t_angle * 2.35;
 
@@ -1662,12 +1685,15 @@ function gw_upd() {
   $("#gray_label").textContent = "- " + (g_angle / 30).toFixed(2) + " (BAR)";
   $("#white_label").textContent = "- " + (w_angle / 5).toFixed(2) + " (LPD)";
 
-  if (w_angle > 1 && r_angle > 0 && y_angle < r_angle && (r_angle - y_angle) <= 10) {
+  if (w_angle > 1 && r_angle > 0 && y_angle < r_angle && (r_angle - y_angle) >= 10) {
     if(allow_play) {
       animation_id = requestAnimationFrame(animate);
     }
     allow_play = false;
   } else {
+    if(y_angle >= r_angle || (r_angle - y_angle) < 10) {
+      $("#popup_warn").classList.remove("invis");
+    }
     $("#gray_arrow").setAttribute("transform", "rotate(-150 708.719 880.397)");
     $("#white_arrow").setAttribute("transform", "rotate(-150 1748.044 763.201)");
     cancelAnimationFrame(animation_id);

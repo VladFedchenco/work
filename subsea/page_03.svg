@@ -849,13 +849,13 @@ function gw_upd() {
 
   //console.log(r_angle - y_angle);
 
-  if (w_angle > 1 && r_angle > 0 && y_angle < r_angle && (r_angle - y_angle) <= 10) {
+  if (w_angle > 1 && r_angle > 0 && y_angle < r_angle && (r_angle - y_angle) >= 10) {
     if(allow_play) {
       animation_id = requestAnimationFrame(animate);
     }
     allow_play = false;
   } else {
-    if(y_angle >= r_angle || (r_angle - y_angle) > 10) {
+    if(y_angle >= r_angle || (r_angle - y_angle) < 10) {
       $("#popup_warn").classList.remove("invis");
     }
     $("#gray_arrow").setAttribute("transform", "rotate(-150 708.719 880.397)");
