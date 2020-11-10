@@ -1,0 +1,504 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 728 382" style="background: #02162d">
+<style>
+/* <![CDATA[ */
+
+/* ]]> */
+</style>
+<defs>
+<g id="paddle">
+  <polygon points="89 -6 89 -8 88 -8 88 -10 87 -10 87 -11 86 -11 86 -12 85 -12 85 -13 84 -13 84 -14 83 -14 83 -15 82 -15 82 -16 81 -16 81 -17 80 -17 80 -18 79 -18 79 -19 78 -19 78 -20 64 -20 64 -19 63 -19 63 -18 -63 -18 -63 -19 -64 -19 -64 -20 -78 -20 -78 -19 -79 -19 -79 -18 -80 -18 -80 -17 -81 -17 -81 -16 -82 -16 -82 -15 -83 -15 -83 -14 -84 -14 -84 -13 -85 -13 -85 -12 -86 -12 -86 -11 -87 -11 -87 -10 -88 -10 -88 -8 -89 -8 -89 -6 -90 -6 -90 6 -89 6 -89 8 -88 8 -88 10 -87 10 -87 11 -86 11 -86 12 -85 12 -85 13 -84 13 -84 14 -83 14 -83 15 -82 15 -82 16 -81 16 -81 17 -80 17 -80 18 -79 18 -79 19 -78 19 -78 20 -64 20 -64 19 -63 19 -63 18 63 18 63 19 64 19 64 20 78 20 78 19 79 19 79 18 80 18 80 17 81 17 81 16 82 16 82 15 83 15 83 14 84 14 84 13 85 13 85 12 86 12 86 11 87 11 87 10 88 10 88 8 89 8 89 6 90 6 90 -6"/>
+  <g fill="#5FF">
+    <polygon points="-85 -4 -86 -4 -86 -3 -87 -3 -87 -2 -85 -2 -85 -1 -82 -1 -82 -2 -83 -2 -83 -3 -84 -3 -84 -5 -85 -5"/>
+    <rect width="1" height="1" x="-84" y="-6"/>
+    <rect width="1" height="1" x="-83" y="-7"/>
+  </g>
+  <g fill="#0AF">
+    <polygon points="-87 -7 -87 -6 -88 -6 -88 -1 -87 -1 -87 0 -82 0 -82 -1 -85 -1 -85 -2 -87 -2 -87 -3 -86 -3 -86 -4 -85 -4 -85 -5 -84 -5 -84 -6 -83 -6 -83 -7"/>
+    <rect width="1" height="1" x="-83" y="-8"/>
+  </g>
+  <g fill="#FA0">
+    <rect width="1" height="1" x="-82" y="-9"/>
+    <rect width="1" height="1" x="-82" y="-3"/>
+    <polygon points="-79 -13 -79 -12 -80 -12 -80 -11 -81 -11 -81 -9 -80 -9 -80 -10 -79 -10 -79 -11 -64 -11 -64 -13"/>
+    <polygon points="-66 -5 -66 -6 -78 -6 -78 -5 -80 -5 -80 -4 -81 -4 -81 -3 -67 -3 -67 -2 -65 -2 -65 -1 -64 -1 -64 -5"/>
+  </g>
+  <g fill="#FFA">
+    <rect width="1" height="1" x="-81" y="-9"/>
+    <rect width="1" height="1" x="-80" y="-10"/>
+    <rect width="1" height="1" x="-82" y="-4"/>
+    <rect width="1" height="1" x="-81" y="-5"/>
+    <rect width="1" height="1" x="-82" y="-8"/>
+    <rect width="2" height="1" x="-80" y="-6"/>
+    <polygon points="-79 -11 -79 -10 -65 -10 -65 -9 -64 -9 -64 -11"/>
+    <polygon points="-65 -7 -78 -7 -78 -6 -66 -6 -66 -5 -64 -5 -64 -8 -65 -8"/>
+  </g>
+  <polygon fill="#FFF" points="-65 -10 -79 -10 -79 -9 -80 -9 -80 -8 -81 -8 -81 -7 -82 -7 -82 -6 -83 -6 -83 -5 -84 -5 -84 -3 -83 -3 -83 -2 -82 -2 -82 -4 -81 -4 -81 -5 -80 -5 -80 -6 -78 -6 -78 -7 -65 -7 -65 -8 -64 -8 -64 -9 -65 -9"/>
+  <g fill="#005">
+    <rect width="1" height="2" x="-88" y="8"/>
+    <rect width="1" height="1" x="-87" y="10"/>
+    <rect width="1" height="1" x="-86" y="11"/>
+    <rect width="1" height="2" x="-89" y="6"/>
+    <rect width="1" height="1" x="-81" y="16"/>
+    <rect width="1" height="1" x="-80" y="17"/>
+    <rect width="1" height="1" x="-79" y="18"/>
+    <rect width="1" height="1" x="-85" y="12"/>
+    <rect width="1" height="1" x="-84" y="13"/>
+    <rect width="1" height="1" x="-83" y="14"/>
+    <rect width="1" height="1" x="-82" y="15"/>
+  </g>
+  <g fill="#05F">
+    <polygon points="-84 -9 -84 -8 -86 -8 -86 -9 -85 -9 -85 -11 -86 -11 -86 -10 -88 -10 -88 -8 -89 -8 -89 0 -88 0 -88 1 -87 1 -87 2 -86 2 -86 4 -85 4 -85 3 -84 3 -84 2 -83 2 -83 0 -87 0 -87 -1 -88 -1 -88 -6 -87 -6 -87 -7 -83 -7 -83 -8 -82 -8 -82 -9"/>
+    <rect width="1" height="1" x="-85" y="-12"/>
+    <polygon points="-85 6 -87 6 -87 7 -86 7 -86 9 -85 9 -85 10 -84 10 -84 7 -85 7"/>
+  </g>
+  <g fill="#00A">
+    <rect width="1" height="1" x="-87" y="-11"/>
+    <rect width="1" height="1" x="-86" y="-12"/>
+    <polygon points="-83 -14 -84 -14 -84 -13 -85 -13 -85 -12 -84 -12 -84 -11 -85 -11 -85 -9 -86 -9 -86 -8 -84 -8 -84 -9 -82 -9 -82 -15 -83 -15"/>
+    <path d="M-83 2h-1v1h-1v1h-1V2h-1V1h-1V0h-1v-6h-1V6h2v2h1v2h1v1h1v1h1v1h1v1h1V0h-1v2zm-3 7V7h-1V6h2v1h1v3h-1V9h-1z"/>
+  </g>
+  <g fill="#F50">
+    <polygon points="-65 -15 -78 -15 -78 -14 -80 -14 -80 -13 -81 -13 -81 -12 -82 -12 -82 -9 -81 -9 -81 -11 -80 -11 -80 -12 -79 -12 -79 -13 -64 -13 -64 -14 -65 -14"/>
+    <polygon points="-65 -2 -67 -2 -67 -3 -81 -3 -81 -2 -82 -2 -82 -1 -80 -1 -80 0 -78 0 -78 1 -66 1 -66 2 -65 2 -65 0 -64 0 -64 -1 -65 -1"/>
+  </g>
+  <g fill="red">
+    <polygon points="-65 -18 -77 -18 -77 -17 -79 -17 -79 -16 -80 -16 -80 -15 -81 -15 -81 -13 -80 -13 -80 -14 -78 -14 -78 -15 -65 -15"/>
+    <rect width="1" height="1" x="-65" y="-15"/>
+    <polygon points="-66 12 -79 12 -79 11 -80 11 -80 10 -81 10 -81 12 -80 12 -80 14 -78 14 -78 15 -65 15 -65 13 -66 13"/>
+    <polygon points="-66 1 -78 1 -78 0 -80 0 -80 -1 -81 -1 -81 3 -80 3 -80 4 -79 4 -79 5 -75 5 -75 6 -66 6 -66 5 -65 5 -65 2 -66 2"/>
+  </g>
+  <g fill="#A00">
+    <polygon points="-79 -19 -79 -18 -80 -18 -80 -17 -81 -17 -81 -16 -82 -16 -82 -12 -81 -12 -81 -15 -80 -15 -80 -16 -79 -16 -79 -17 -77 -17 -77 -18 -65 -18 -65 -15 -64 -15 -64 -18 -63 -18 -63 -19"/>
+    <rect width="1" height="14" x="-64" y="-14"/>
+    <polygon points="-65 5 -66 5 -66 6 -75 6 -75 5 -79 5 -79 4 -80 4 -80 3 -81 3 -81 -1 -82 -1 -82 13 -81 13 -81 15 -80 15 -80 16 -79 16 -79 17 -66 17 -66 16 -65 16 -65 15 -78 15 -78 14 -80 14 -80 12 -81 12 -81 10 -80 10 -80 11 -79 11 -79 12 -66 12 -66 13 -65 13 -65 15 -64 15 -64 0 -65 0"/>
+  </g>
+  <g fill="#500">
+    <polygon points="-63 -18 -64 -18 -64 -14 -63 -14 -63 -16 -62 -16 -62 -17 -63 -17"/>
+    <rect width="1" height="1" x="-80" y="16"/>
+    <rect width="1" height="2" x="-82" y="13"/>
+    <rect width="1" height="1" x="-81" y="15"/>
+    <polygon points="-63 0 -64 0 -64 15 -65 15 -65 16 -66 16 -66 17 -79 17 -79 18 -78 18 -78 19 -63 19 -63 18 -62 18 -62 15 -63 15"/>
+  </g>
+  <rect width="1" height="2" x="-61" y="-7" fill="#AAA"/>
+  <rect width="1" height="2" x="-62" y="-7" fill="#555"/>
+  <rect width="14" height="1" x="-78" y="-20"/>
+  <rect width="14" height="1" x="-78" y="19"/>
+  <g fill="#5FF">
+    <polygon points="85 -4 86 -4 86 -3 87 -3 87 -2 85 -2 85 -1 82 -1 82 -2 83 -2 83 -3 84 -3 84 -5 85 -5"/>
+    <rect width="1" height="1" x="83" y="-6"/>
+    <rect width="1" height="1" x="82" y="-7"/>
+  </g>
+  <g fill="#0AF">
+    <polygon points="87 -7 87 -6 88 -6 88 -1 87 -1 87 0 82 0 82 -1 85 -1 85 -2 87 -2 87 -3 86 -3 86 -4 85 -4 85 -5 84 -5 84 -6 83 -6 83 -7"/>
+    <rect width="1" height="1" x="82" y="-8"/>
+  </g>
+  <g fill="#FA0">
+    <rect width="1" height="1" x="81" y="-9"/>
+    <rect width="1" height="1" x="81" y="-3"/>
+    <polygon points="79 -13 79 -12 80 -12 80 -11 81 -11 81 -9 80 -9 80 -10 79 -10 79 -11 64 -11 64 -13"/>
+    <polygon points="66 -5 66 -6 78 -6 78 -5 80 -5 80 -4 81 -4 81 -3 67 -3 67 -2 65 -2 65 -1 64 -1 64 -5"/>
+  </g>
+  <g fill="#FFA">
+    <rect width="1" height="1" x="80" y="-9"/>
+    <rect width="1" height="1" x="79" y="-10"/>
+    <rect width="1" height="1" x="81" y="-4"/>
+    <rect width="1" height="1" x="80" y="-5"/>
+    <rect width="1" height="1" x="81" y="-8"/>
+    <rect width="2" height="1" x="78" y="-6"/>
+    <polygon points="79 -11 79 -10 65 -10 65 -9 64 -9 64 -11"/>
+    <polygon points="65 -7 78 -7 78 -6 66 -6 66 -5 64 -5 64 -8 65 -8"/>
+  </g>
+  <g fill="#FFF">
+    <polygon points="83 -5 83 -6 82 -6 82 -7 81 -7 81 -8 80 -8 80 -9 79 -9 79 -10 65 -10 65 -9 64 -9 64 -8 65 -8 65 -7 78 -7 78 -6 80 -6 80 -5 81 -5 81 -4 82 -4 82 -2 83 -2 83 -3 84 -3 84 -5"/>
+    <polygon points="59 -13 -59 -13 -59 -7 -60 -7 -60 -5 -59 -5 -59 -3 59 -3 59 -5 60 -5 60 -7 59 -7"/>
+  </g>
+  <g fill="#005">
+    <rect width="1" height="2" x="87" y="8"/>
+    <rect width="1" height="1" x="86" y="10"/>
+    <rect width="1" height="1" x="85" y="11"/>
+    <rect width="1" height="2" x="88" y="6"/>
+    <rect width="1" height="1" x="80" y="16"/>
+    <rect width="1" height="1" x="79" y="17"/>
+    <rect width="1" height="1" x="78" y="18"/>
+    <rect width="1" height="1" x="84" y="12"/>
+    <rect width="1" height="1" x="83" y="13"/>
+    <rect width="1" height="1" x="82" y="14"/>
+    <rect width="1" height="1" x="81" y="15"/>
+  </g>
+  <g fill="#05F">
+    <polygon points="84 -9 84 -8 86 -8 86 -9 85 -9 85 -11 86 -11 86 -10 88 -10 88 -8 89 -8 89 0 88 0 88 1 87 1 87 2 86 2 86 4 85 4 85 3 84 3 84 2 83 2 83 0 87 0 87 -1 88 -1 88 -6 87 -6 87 -7 83 -7 83 -8 82 -8 82 -9"/>
+    <rect width="1" height="1" x="84" y="-12"/>
+    <polygon points="85 6 87 6 87 7 86 7 86 9 85 9 85 10 84 10 84 7 85 7"/>
+  </g>
+  <g fill="#00A">
+    <rect width="1" height="1" x="86" y="-11"/>
+    <rect width="1" height="1" x="85" y="-12"/>
+    <polygon points="83 -14 84 -14 84 -13 85 -13 85 -12 84 -12 84 -11 85 -11 85 -9 86 -9 86 -8 84 -8 84 -9 82 -9 82 -15 83 -15"/>
+    <path d="M83 2h1v1h1v1h1V2h1V1h1V0h1v-6h1V6h-2v2h-1v2h-1v1h-1v1h-1v1h-1v1h-1V0h1v2zm3 7V7h1V6h-2v1h-1v3h1V9h1z"/>
+  </g>
+  <g fill="#F50">
+    <polygon points="65 -15 78 -15 78 -14 80 -14 80 -13 81 -13 81 -12 82 -12 82 -9 81 -9 81 -11 80 -11 80 -12 79 -12 79 -13 64 -13 64 -14 65 -14"/>
+    <polygon points="65 -2 67 -2 67 -3 81 -3 81 -2 82 -2 82 -1 80 -1 80 0 78 0 78 1 66 1 66 2 65 2 65 0 64 0 64 -1 65 -1"/>
+  </g>
+  <g fill="red">
+    <polygon points="65 -18 77 -18 77 -17 79 -17 79 -16 80 -16 80 -15 81 -15 81 -13 80 -13 80 -14 78 -14 78 -15 65 -15"/>
+    <rect width="1" height="1" x="64" y="-15"/>
+    <polygon points="66 12 79 12 79 11 80 11 80 10 81 10 81 12 80 12 80 14 78 14 78 15 65 15 65 13 66 13"/>
+    <polygon points="66 1 78 1 78 0 80 0 80 -1 81 -1 81 3 80 3 80 4 79 4 79 5 75 5 75 6 66 6 66 5 65 5 65 2 66 2"/>
+  </g>
+  <g fill="#A00">
+    <polygon points="79 -19 79 -18 80 -18 80 -17 81 -17 81 -16 82 -16 82 -12 81 -12 81 -15 80 -15 80 -16 79 -16 79 -17 77 -17 77 -18 65 -18 65 -15 64 -15 64 -18 63 -18 63 -19"/>
+    <rect width="1" height="14" x="63" y="-14"/>
+    <polygon points="65 5 66 5 66 6 75 6 75 5 79 5 79 4 80 4 80 3 81 3 81 -1 82 -1 82 13 81 13 81 15 80 15 80 16 79 16 79 17 66 17 66 16 65 16 65 15 78 15 78 14 80 14 80 12 81 12 81 10 80 10 80 11 79 11 79 12 66 12 66 13 65 13 65 15 64 15 64 0 65 0"/>
+  </g>
+  <g fill="#500">
+    <polygon points="63 -18 64 -18 64 -14 63 -14 63 -16 62 -16 62 -17 63 -17"/>
+    <rect width="1" height="1" x="79" y="16"/>
+    <rect width="1" height="2" x="81" y="13"/>
+    <rect width="1" height="1" x="80" y="15"/>
+    <polygon points="63 0 64 0 64 15 65 15 65 16 66 16 66 17 79 17 79 18 78 18 78 19 63 19 63 18 62 18 62 15 63 15"/>
+  </g>
+  <g fill="#AAA">
+    <polygon points="-60 -15 -60 -7 -59 -7 -59 -13 59 -13 59 -7 60 -7 60 -15"/>
+    <polygon points="59 -5 59 -3 -59 -3 -59 -5 -60 -5 -60 2 60 2 60 -5"/>
+    <rect width="1" height="2" x="60" y="-7"/>
+  </g>
+  <g fill="#555">
+    <rect width="1" height="2" x="61" y="-7"/>
+    <polygon points="-63 -18 -63 -17 -62 -17 -62 -16 -61 -16 -61 -7 -60 -7 -60 -15 60 -15 60 -7 61 -7 61 -16 62 -16 62 -17 63 -17 63 -18"/>
+    <polygon points="60 2 -60 2 -60 -5 -61 -5 -61 5 -60 5 -60 6 60 6 60 5 61 5 61 -5 60 -5"/>
+    <polygon points="61 14 60 14 60 11 -60 11 -60 14 -61 14 -61 15 -62 15 -62 16 62 16 62 15 61 15"/>
+  </g>
+  <rect width="14" height="1" x="64" y="-20"/>
+  <rect width="14" height="1" x="64" y="19"/>
+  <rect width="124" height="2" x="-62" y="16"/>
+  <polygon points="61 -7 62 -7 62 -5 61 -5 61 5 60 5 60 6 -60 6 -60 5 -61 5 -61 -5 -62 -5 -62 -7 -61 -7 -61 -16 -63 -16 -63 15 -61 15 -61 14 -60 14 -60 11 60 11 60 14 61 14 61 15 63 15 63 -16 61 -16"/>
+</g>
+<polygon id="ball" fill="#F5F5F5" points="11 -3 11 -5 10 -5 10 -7 9 -7 9 -8 8 -8 8 -9 7 -9 7 -10 5 -10 5 -11 3 -11 3 -12 -3 -12 -3 -11 -5 -11 -5 -10 -7 -10 -7 -9 -8 -9 -8 -8 -9 -8 -9 -7 -10 -7 -10 -5 -11 -5 -11 -3 -12 -3 -12 3 -11 3 -11 5 -10 5 -10 7 -9 7 -9 8 -8 8 -8 9 -7 9 -7 10 -5 10 -5 11 -3 11 -3 12 3 12 3 11 5 11 5 10 7 10 7 9 8 9 8 8 9 8 9 7 10 7 10 5 11 5 11 3 12 3 12 -3"/>
+<g id="b1">
+  <rect width="64" height="24" x="-32" y="-12" fill="#DEDEDE"/>
+  <polygon fill="#545454" points="-31 11 -31 -12 -32 -12 -32 12 31 12 31 11"/>
+  <polygon fill="#6B6B6B" points="-30 10 -30 -11 -31 -11 -31 11 30 11 30 10"/>
+  <polygon fill="#C7C7C7" points="-28 8 -28 -9 -29 -9 -29 9 28 9 28 8"/>
+  <polygon fill="#EDEDED" points="-26 6 -26 -7 -27 -7 -27 7 27 7 27 6"/>
+  <g fill="#9D9D9D">
+    <polygon points="-29 9 -29 -10 -30 -10 -30 10 29 10 29 9"/>
+    <polygon points="27 -7 27 -6 27 7 28 7 28 -8 -27 -8 -27 -7"/>
+  </g>
+  <path fill="#DBDBDB" d="M-28-9V8h56v1h1V-9h-57zM28 7h-55V-8h55V7z"/>
+  <polygon fill="#E6E6E6" points="-29 -10 -29 -9 29 -9 29 10 30 10 30 -10"/>
+  <polygon fill="#EDEDED" points="-30 -11 -30 -10 30 -10 30 11 31 11 31 -11"/>
+  <polygon fill="#F2F2F2" points="-31 -12 -31 -11 31 -11 31 12 32 12 32 -12"/>
+</g>
+<g id="b2">
+  <rect width="64" height="24" x="-32" y="-12" fill="#ED4631"/>
+  <polygon fill="#540900" points="-31 11 -31 -12 -32 -12 -32 12 31 12 31 11"/>
+  <polygon fill="#6B0C00" points="-30 10 -30 -11 -31 -11 -31 11 30 11 30 10"/>
+  <polygon fill="#C74231" points="-28 8 -28 -9 -29 -9 -29 9 28 9 28 8"/>
+  <polygon fill="#E45A49" points="-26 6 -26 -7 -27 -7 -27 7 27 7 27 6"/>
+  <g fill="#9D1200">
+    <polygon points="-29 9 -29 -10 -30 -10 -30 10 29 10 29 9"/>
+    <polygon points="27 -7 27 -6 27 7 28 7 28 -8 -27 -8 -27 -7"/>
+  </g>
+  <path fill="#FF7A69" d="M-28-9V8h56v1h1V-9h-57zM28 7h-55V-8h55V7z"/>
+  <polygon fill="#FF8778" points="-29 -10 -29 -9 29 -9 29 10 30 10 30 -10"/>
+  <polygon fill="#FF9385" points="-30 -11 -30 -10 30 -10 30 11 31 11 31 -11"/>
+  <polygon fill="#FFB6AD" points="-31 -12 -31 -11 31 -11 31 12 32 12 32 -12"/>
+</g>
+<g id="b3">
+  <rect width="64" height="24" x="-32" y="-12" fill="#006FEC"/>
+  <polygon fill="#002854" points="-31 11 -31 -12 -32 -12 -32 12 31 12 31 11"/>
+  <polygon fill="#00326B" points="-30 10 -30 -11 -31 -11 -31 11 30 11 30 10"/>
+  <polygon fill="#3178C7" points="-28 8 -28 -9 -29 -9 -29 9 28 9 28 8"/>
+  <polygon fill="#4992E4" points="-26 6 -26 -7 -27 -7 -27 7 27 7 27 6"/>
+  <g fill="#004A9D">
+    <polygon points="-29 9 -29 -10 -30 -10 -30 10 29 10 29 9"/>
+    <polygon points="27 -7 27 -6 27 7 28 7 28 -8 -27 -8 -27 -7"/>
+  </g>
+  <path fill="#69B0FF" d="M-28-9V8h56v1h1V-9h-57zM28 7h-55V-8h55V7z"/>
+  <polygon fill="#78B7FF" points="-29 -10 -29 -9 29 -9 29 10 30 10 30 -10"/>
+  <polygon fill="#85BEFF" points="-30 -11 -30 -10 30 -10 30 11 31 11 31 -11"/>
+  <polygon fill="#ADD4FF" points="-31 -12 -31 -11 31 -11 31 12 32 12 32 -12"/>
+</g>
+<g id="b4">
+  <rect width="64" height="24" x="-32" y="-12" fill="#F2891F"/>
+  <polygon fill="#542A00" points="-31 11 -31 -12 -32 -12 -32 12 31 12 31 11"/>
+  <polygon fill="#6B3600" points="-30 10 -30 -11 -31 -11 -31 11 30 11 30 10"/>
+  <polygon fill="#C76D14" points="-28 8 -28 -9 -29 -9 -29 9 28 9 28 8"/>
+  <polygon fill="#F09335" points="-26 6 -26 -7 -27 -7 -27 7 27 7 27 6"/>
+  <g fill="#9D4F00">
+    <polygon points="-29 9 -29 -10 -30 -10 -30 10 29 10 29 9"/>
+    <polygon points="27 -7 27 -6 27 7 28 7 28 -8 -27 -8 -27 -7"/>
+  </g>
+  <path fill="#FFA347" d="M-28-9V8h56v1h1V-9h-57zM28 7h-55V-8h55V7z"/>
+  <polygon fill="#FFAE5C" points="-29 -10 -29 -9 29 -9 29 10 30 10 30 -10"/>
+  <polygon fill="#FFBB78" points="-30 -11 -30 -10 30 -10 30 11 31 11 31 -11"/>
+  <polygon fill="#FFD0A1" points="-31 -12 -31 -11 31 -11 31 12 32 12 32 -12"/>
+</g>
+<g id="b5">
+  <rect width="64" height="24" x="-32" y="-12" fill="#EB52A8"/>
+  <polygon fill="#54002F" points="-31 11 -31 -12 -32 -12 -32 12 31 12 31 11"/>
+  <polygon fill="#6B003C" points="-30 10 -30 -11 -31 -11 -31 11 30 11 30 10"/>
+  <polygon fill="#C73185" points="-28 8 -28 -9 -29 -9 -29 9 28 9 28 8"/>
+  <polygon fill="#E449A0" points="-26 6 -26 -7 -27 -7 -27 7 27 7 27 6"/>
+  <g fill="#9D0058">
+    <polygon points="-29 9 -29 -10 -30 -10 -30 10 29 10 29 9"/>
+    <polygon points="27 -7 27 -6 27 7 28 7 28 -8 -27 -8 -27 -7"/>
+  </g>
+  <path fill="#FF69BD" d="M-28-9V8h56v1h1V-9h-57zM28 7h-55V-8h55V7z"/>
+  <polygon fill="#FF78C4" points="-29 -10 -29 -9 29 -9 29 10 30 10 30 -10"/>
+  <polygon fill="#FF85CA" points="-30 -11 -30 -10 30 -10 30 11 31 11 31 -11"/>
+  <polygon fill="#FFADDB" points="-31 -12 -31 -11 31 -11 31 12 32 12 32 -12"/>
+</g>
+<g id="b6">
+  <rect width="64" height="24" x="-32" y="-12" fill="#7ECF16"/>
+  <polygon fill="#2F5400" points="-31 11 -31 -12 -32 -12 -32 12 31 12 31 11"/>
+  <polygon fill="#3C6B00" points="-30 10 -30 -11 -31 -11 -31 11 30 11 30 10"/>
+  <polygon fill="#85C731" points="-28 8 -28 -9 -29 -9 -29 9 28 9 28 8"/>
+  <polygon fill="#A0E449" points="-26 6 -26 -7 -27 -7 -27 7 27 7 27 6"/>
+  <g fill="#589D00">
+    <polygon points="-29 9 -29 -10 -30 -10 -30 10 29 10 29 9"/>
+    <polygon points="27 -7 27 -6 27 7 28 7 28 -8 -27 -8 -27 -7"/>
+  </g>
+  <path fill="#A7F248" d="M-28-9V8h56v1h1V-9h-57zM28 7h-55V-8h55V7z"/>
+  <polygon fill="#B0F755" points="-29 -10 -29 -9 29 -9 29 10 30 10 30 -10"/>
+  <polygon fill="#C6FA82" points="-30 -11 -30 -10 30 -10 30 11 31 11 31 -11"/>
+  <polygon fill="#DBFFAD" points="-31 -12 -31 -11 31 -11 31 12 32 12 32 -12"/>
+</g>
+</defs>
+
+<use id="brk0_0" x="34" y="14" xlink:href="#b1"/>
+<use id="brk1_0" x="100" y="14" xlink:href="#b1"/>
+<use id="brk2_0" x="166" y="14" xlink:href="#b1"/>
+<use id="brk3_0" x="232" y="14" xlink:href="#b1"/>
+<use id="brk4_0" x="298" y="14" xlink:href="#b1"/>
+<use id="brk5_0" x="364" y="14" xlink:href="#b1"/>
+<use id="brk6_0" x="430" y="14" xlink:href="#b1"/>
+<use id="brk7_0" x="496" y="14" xlink:href="#b1"/>
+<use id="brk8_0" x="562" y="14" xlink:href="#b1"/>
+<use id="brk9_0" x="628" y="14" xlink:href="#b1"/>
+<use id="brk10_0" x="694" y="14" xlink:href="#b1"/>
+
+<use id="brk0_1" x="34" y="40" xlink:href="#b2"/>
+<use id="brk1_1" x="100" y="40" xlink:href="#b2"/>
+<use id="brk2_1" x="166" y="40" xlink:href="#b2"/>
+<use id="brk3_1" x="232" y="40" xlink:href="#b2"/>
+<use id="brk4_1" x="298" y="40" xlink:href="#b2"/>
+<use id="brk5_1" x="364" y="40" xlink:href="#b2"/>
+<use id="brk6_1" x="430" y="40" xlink:href="#b2"/>
+<use id="brk7_1" x="496" y="40" xlink:href="#b2"/>
+<use id="brk8_1" x="562" y="40" xlink:href="#b2"/>
+<use id="brk9_1" x="628" y="40" xlink:href="#b2"/>
+<use id="brk10_1" x="694" y="40" xlink:href="#b2"/>
+
+<use id="brk0_2" x="34" y="66" xlink:href="#b3"/>
+<use id="brk1_2" x="100" y="66" xlink:href="#b3"/>
+<use id="brk2_2" x="166" y="66" xlink:href="#b3"/>
+<use id="brk3_2" x="232" y="66" xlink:href="#b3"/>
+<use id="brk4_2" x="298" y="66" xlink:href="#b3"/>
+<use id="brk5_2" x="364" y="66" xlink:href="#b3"/>
+<use id="brk6_2" x="430" y="66" xlink:href="#b3"/>
+<use id="brk7_2" x="496" y="66" xlink:href="#b3"/>
+<use id="brk8_2" x="562" y="66" xlink:href="#b3"/>
+<use id="brk9_2" x="628" y="66" xlink:href="#b3"/>
+<use id="brk10_2" x="694" y="66" xlink:href="#b3"/>
+
+<use id="brk0_3" x="34" y="92" xlink:href="#b4"/>
+<use id="brk1_3" x="100" y="92" xlink:href="#b4"/>
+<use id="brk2_3" x="166" y="92" xlink:href="#b4"/>
+<use id="brk3_3" x="232" y="92" xlink:href="#b4"/>
+<use id="brk4_3" x="298" y="92" xlink:href="#b4"/>
+<use id="brk5_3" x="364" y="92" xlink:href="#b4"/>
+<use id="brk6_3" x="430" y="92" xlink:href="#b4"/>
+<use id="brk7_3" x="496" y="92" xlink:href="#b4"/>
+<use id="brk8_3" x="562" y="92" xlink:href="#b4"/>
+<use id="brk9_3" x="628" y="92" xlink:href="#b4"/>
+<use id="brk10_3" x="694" y="92" xlink:href="#b4"/>
+
+<use id="brk0_4" x="34" y="118" xlink:href="#b5"/>
+<use id="brk1_4" x="100" y="118" xlink:href="#b5"/>
+<use id="brk2_4" x="166" y="118" xlink:href="#b5"/>
+<use id="brk3_4" x="232" y="118" xlink:href="#b5"/>
+<use id="brk4_4" x="298" y="118" xlink:href="#b5"/>
+<use id="brk5_4" x="364" y="118" xlink:href="#b5"/>
+<use id="brk6_4" x="430" y="118" xlink:href="#b5"/>
+<use id="brk7_4" x="496" y="118" xlink:href="#b5"/>
+<use id="brk8_4" x="562" y="118" xlink:href="#b5"/>
+<use id="brk9_4" x="628" y="118" xlink:href="#b5"/>
+<use id="brk10_4" x="694" y="118" xlink:href="#b5"/>
+
+<use id="brk0_5" x="34" y="144" xlink:href="#b6"/>
+<use id="brk1_5" x="100" y="144" xlink:href="#b6"/>
+<use id="brk2_5" x="166" y="144" xlink:href="#b6"/>
+<use id="brk3_5" x="232" y="144" xlink:href="#b6"/>
+<use id="brk4_5" x="298" y="144" xlink:href="#b6"/>
+<use id="brk5_5" x="364" y="144" xlink:href="#b6"/>
+<use id="brk6_5" x="430" y="144" xlink:href="#b6"/>
+<use id="brk7_5" x="496" y="144" xlink:href="#b6"/>
+<use id="brk8_5" x="562" y="144" xlink:href="#b6"/>
+<use id="brk9_5" x="628" y="144" xlink:href="#b6"/>
+<use id="brk10_5" x="694" y="144" xlink:href="#b6"/>
+
+<use id="pddl" x="364" y="360" xlink:href="#paddle"/>
+<use id="bl" x="364" y="310" xlink:href="#ball"/>
+
+<script>
+<![CDATA[
+
+let autoplaying = true;
+
+let ballRadius = 12;
+let x = 364;
+let y = 300;
+let dx = 2;
+let dy = -2;
+let animation_id;
+let paddleHeight = 40;
+let paddleWidth = 160;
+let paddleX = 364;
+let rightPressed = false;
+let leftPressed = false;
+let allow_to_play = true;
+let brickRowCount = 6;
+let brickColumnCount = 11;
+let brickWidth = 64;
+let brickHeight = 24;
+let brickPadding = 2;
+let brickOffsetTop = 2;
+let brickOffsetLeft = 2;
+
+let bricks = [];
+
+function $(sel) {
+  return document.querySelector(sel);
+}
+
+function randomIntFromInterval(min, max) {
+  return Math.floor(Math.random() * (max - min + 1) + min);
+}
+
+for (let c = 0; c < brickColumnCount; c++) {
+  bricks[c] = [];
+  for (let r = 0; r < brickRowCount; r++) {
+    bricks[c][r] = { x: 0, y: 0, status: 1 };
+  }
+}
+
+document.addEventListener("keydown", keyDownHandler, false);
+document.addEventListener("keyup", keyUpHandler, false);
+
+function keyDownHandler(e) {
+  if(e.key == "Right" || e.key == "ArrowRight") {
+    rightPressed = true;
+  }
+  else if(e.key == "Left" || e.key == "ArrowLeft") {
+    leftPressed = true;
+  }
+}
+
+function keyUpHandler(e) {
+  if(e.key == "Right" || e.key == "ArrowRight") {
+    rightPressed = false;
+  }
+  else if(e.key == "Left" || e.key == "ArrowLeft") {
+    leftPressed = false;
+  }
+}
+
+function collisionDetection() {
+  for (let c = 0; c < brickColumnCount; c++) {
+    for (let r = 0; r < brickRowCount; r++) {
+      let b = bricks[c][r];
+      if (b.status == 1) {
+        if (x > b.x && x < b.x + brickWidth && y > b.y && y < b.y + brickHeight) {
+          dy = -dy;
+          b.status = 0;
+        }
+        if ((x == b.x || x == b.x + brickWidth) && y > b.y && y < b.y + brickHeight) {
+          dx = -dx;
+        }
+      }
+    }
+  }
+}
+
+function drawBricks() {
+  for (let c = 0; c < brickColumnCount; c++) {
+    for (let r = 0; r < brickRowCount; r++) {
+      if (bricks[c][r].status == 1) {
+        let brickX = (c * (brickWidth + brickPadding)) + brickOffsetLeft;
+        let brickY = (r * (brickHeight + brickPadding)) + brickOffsetTop;
+        bricks[c][r].x = brickX;
+        bricks[c][r].y = brickY;
+      } else {
+        $("#brk" + c + "_" + r).setAttribute("display", "none");
+      }
+    }
+  }
+}
+
+function draw() {
+  drawBricks();
+  $("#bl").setAttribute("x", x);
+  $("#bl").setAttribute("y", y);
+  $("#pddl").setAttribute("x", paddleX);
+  collisionDetection();
+  
+  if(x + dx > 728-ballRadius || x + dx < ballRadius) {
+      dx = -dx;
+  }
+  if(y + dy < ballRadius) {
+      dy = -dy;
+  } else if (y + dy > 342-ballRadius) {
+    if(x > paddleX - 90 && x < paddleX + 90) {
+      dy = -dy;
+    } else {
+      allow_to_play = false;
+    }
+  }
+
+  if(rightPressed) {
+    paddleX += 7;
+    if (paddleX + 90 > 728){
+      paddleX = 638;
+    }
+  }
+  else if(leftPressed) {
+    paddleX -= 7;
+    if (paddleX < 90){
+      paddleX = 90;
+    }
+  }
+  
+  x += dx;
+  y += dy;
+
+  if (autoplaying) {
+    if (x >= 90 && x <= 638) {
+      paddleX = x;
+    } else if (x < 90) {
+      paddleX = 90;
+    } else {
+      paddleX = 638;
+    }
+  }
+
+  if (allow_to_play) {
+    animation_id = requestAnimationFrame(draw);
+  } else {
+    cancelAnimationFrame(animation_id);
+    alert("GAME OVER");
+    document.location.reload();
+  }
+
+}
+
+x = randomIntFromInterval(100, 600);
+
+dx = dx * (Math.random() < 0.5 ? -1 : 1);
+animation_id = requestAnimationFrame(draw);
+
+]]>
+</script>
+
+</svg>
