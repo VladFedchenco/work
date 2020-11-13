@@ -1029,7 +1029,7 @@ animation-timing-function: steps(1);
 
 const svg = $("#game");
 
-let autoplaying = true;
+let autoplaying = false;
 let award = true;
 
 let ballRadius = 12;
