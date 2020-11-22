@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Castello Del Poggio</title>
+</head>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  body {
+    background: linear-gradient(#8fcfc3 0px, #8fcfc3 27px, #fff 27px, #fff 100%);
+  }
+  #main {
+    min-height: 950px;
+    position: relative;
+  }
+  #flowers_left {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 400px;
+    height: 950px;
+    opacity: .3;
+  }
+  #flowers_right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 400px;
+    height: 950px;
+    opacity: .3;
+  }
+  #shield {
+    position: absolute;
+    left: 50%;
+    top: 110px;
+    transform: translateX(-50%);
+  }
+  #shield_left, #shield_right {
+    position: absolute;
+    width: 720px;
+    height: 600px;
+    left: 50%;
+    top: 0;
+    opacity: .5;
+    transform: translateX(-50%);
+  }
+</style>
+<body>
+  <img id="flowers_left" src="imgs/flowers_left.svg">
+  <img id="flowers_right" src="imgs/flowers_right.svg">
+  <img id="shield_left" src="imgs/shield_left.svg">
+  <img id="shield" src="imgs/shield.png">
+  <img id="shield_right" src="imgs/shield_right.svg">
+</body>
+</html>
