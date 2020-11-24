@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 85 53">
+<style>
+  /* <![CDATA[ */
+    #prevs {
+        animation: prevs 4s infinite;
+    }
+    @keyframes prevs {
+        0% {
+            transform: translate(0px, 0px);
+        }
+        16% {
+            transform: translate(0px, -10.8px);
+        }
+        33%, 100% {
+            transform: translate(0px, -21.62px);
+        }
+    }
+    #active {
+        animation: active 4s infinite;
+    }
+    @keyframes active {
+        0%, 33%, 66%, 100% {
+            opacity: 0;
+        }
+        35%, 65% {
+            opacity: 1;
+        }
+    }
+    #big {
+        animation: big 4s infinite;
+    }
+    @keyframes big {
+        0%, 40%, 100% {
+            opacity: 0;
+            transform: translate(42.7px, 33.5px) scale(0) translate(-42.7px, -33.5px);
+        }
+        55%, 85% {
+            opacity: 1;
+            transform: translate(42.7px, 33.5px) scale(1) translate(-42.7px, -33.5px);
+        }
+    }
+  /* ]]> */
+</style>
+  <g id="screen">
+    <path fill="#F7FFE2" stroke="#95D400" stroke-miterlimit="10" d="M17.626 37.903V11.972a2.448 2.448 0 012.447-2.447h45.24a2.448 2.448 0 012.447 2.447v25.931a2.448 2.448 0 01-2.447 2.447h-45.24a2.448 2.448 0 01-2.447-2.447z"/>
+    <path fill="#FFF" stroke="#95D400" stroke-miterlimit="10" d="M17.626 37.903v-2.192H67.76v2.192a2.448 2.448 0 01-2.447 2.447h-45.24a2.448 2.448 0 01-2.447-2.447z"/>
+    <rect width="9.671" height="4.888" x="37.858" y="40.35" fill="#FFF" stroke="#95D400" stroke-miterlimit="10"/>
+    <polygon fill="#95D400" points="50.693 45.237 47.529 44.143 37.858 44.143 34.694 45.237 34.694 46.474 50.693 46.474"/>
+    <circle cx="42.693" cy="38.03" r=".744" fill="#95D400"/>
+  </g>
+  <clipPath id="prev_clp">
+      <rect width="45" height="20" x="20.2" y="12.5"/>
+  </clipPath>
+  <g clip-path="url(#prev_clp)">
+  <g id="prevs">
+    <g fill="#FFF" stroke="#95D400" stroke-miterlimit="10">
+        <rect width="12.597" height="7.309" x="20.918" y="13.497"/>
+        <rect width="12.597" height="7.309" x="36.395" y="13.497"/>
+        <rect width="12.597" height="7.309" x="51.871" y="13.497"/>
+        <rect width="12.597" height="7.309" x="20.918" y="24.309"/>
+        <rect width="12.597" height="7.309" x="36.395" y="24.309"/>
+        <rect width="12.597" height="7.309" x="51.871" y="24.309"/>
+        <rect width="12.597" height="7.309" x="20.918" y="35.121"/>
+        <rect width="12.597" height="7.309" x="36.395" y="35.121"/>
+        <rect width="12.597" height="7.309" x="51.871" y="35.121"/>
+        <rect width="12.597" height="7.309" x="20.918" y="45.934"/>
+        <rect width="12.597" height="7.309" x="36.395" y="45.934"/>
+        <rect width="12.597" height="7.309" x="51.871" y="45.934"/>
+    </g>
+    <polygon fill="#95D400" points="26 19.064 26 15.281 28.717 17.173"/>
+    <polygon fill="#95D400" points="41.552 19.064 41.552 15.281 44.269 17.173"/>
+    <polygon fill="#95D400" points="57.25 19.064 57.25 15.281 59.967 17.173"/>
+    <polygon fill="#95D400" points="26 29.855 26 26.072 28.717 27.963"/>
+    <polygon fill="#95D400" points="41.552 29.855 41.552 26.072 44.269 27.963"/>
+    <polygon fill="#95D400" points="57.25 29.855 57.25 26.072 59.967 27.963"/>
+    <polygon fill="#95D400" points="26 40.689 26 36.906 28.717 38.797"/>
+    <polygon fill="#95D400" points="41.552 40.689 41.552 36.906 44.269 38.797"/>
+    <polygon fill="#95D400" points="57.25 40.689 57.25 36.906 59.967 38.797"/>
+    <polygon fill="#95D400" points="26 51.48 26 47.696 28.717 49.588"/>
+    <polygon fill="#95D400" points="41.552 51.48 41.552 47.696 44.269 49.588"/>
+    <polygon fill="#95D400" points="57.25 51.48 57.25 47.696 59.967 49.588"/>
+  </g>
+  </g>
+  <g id="active">
+    <rect width="12.597" height="7.309" x="36.395" y="24.309" fill="#95D400"/>
+    <polygon fill="#FFF" points="41.552 29.855 41.552 26.072 44.269 27.963"/>
+  </g>
+  <g id="big">
+    <rect width="43.567" height="21.208" x="20.918" y="12.299" fill="#FFF" stroke="#95D400" stroke-miterlimit="10"/>
+    <circle cx="42.911" cy="22.903" r="5.088" fill="#95D400"/>
+    <polygon fill="#FFF" points="41.7 25.609 41.7 20.196 45.587 22.903"/>
+  </g>
+</svg>
