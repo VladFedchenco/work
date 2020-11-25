@@ -784,6 +784,28 @@ svg|a {
         transform: translate(960px, 540px) scale(2) translate(-960px, -540px);
     }
 }
+#initial_mobile {
+    display: none;
+    opacity: 0;
+    padding: 60% 10% 50% 10%;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    animation: initial_mobile 3s 8s ease-in-out forwards;
+}
+
+@keyframes initial_mobile {
+    0%, 100% {
+        opacity: 0;
+        transform: scale(1.4);
+    }
+    20%, 80% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
 
 #bttn_more,
 #bttn_info {
@@ -1366,10 +1388,27 @@ svg|a {
     #cirlces_desktop {
         display: none;
     }
-
     #cirlces_mobile {
         display: block;
         width: 80%;
         margin: 0 auto;
+    }
+    #initial_mobile {
+        display: block;
+    }
+    #logo_starbucks {
+        transform: translate(270px, 240px) scale(1) translate(-270px, -240px);
+    }
+
+    #click_top:hover #logo_starbucks {
+        transform: translate(270px, 240px) scale(1.1) translate(-270px, -240px);
+    }
+
+    #logo_tim {
+        transform: translate(272px, 635.5px) scale(1) translate(-272px, -635.5px);
+    }
+
+    #click_bottom:hover #logo_tim {
+        transform: translate(272px, 635.5px) scale(1.1) translate(-272px, -635.5px);
     }
 }
