@@ -785,10 +785,14 @@ svg|a {
     }
 }
 #initial_mobile {
-    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
     opacity: 0;
-    padding: 60% 10% 50% 10%;
-    font-size: 18px;
+    padding: 40vh 10vw 20vh 10vw;
+    font-size: 4vw;
     font-weight: 700;
     text-transform: uppercase;
     color: #fff;
@@ -1394,7 +1398,7 @@ svg|a {
         margin: 0 auto;
     }
     #initial_mobile {
-        display: block;
+        padding: 60% 10% 50% 10%;
     }
     #logo_starbucks {
         transform: translate(270px, 240px) scale(1) translate(-270px, -240px);

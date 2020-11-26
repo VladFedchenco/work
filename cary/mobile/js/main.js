@@ -1,13 +1,6 @@
 function $(sel) {
   return document.querySelector(sel);
 }
-let is_desktop = true;
-if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
-  is_desktop = false;
-  $("#bttn_info").setAttribute("style", "display: none");
-}else{
-  $("#bttn_info").setAttribute("style", "display: inline-block");
-}
 let tmt;
 $("#click_left").onclick = function() {
   clearTimeout(tmt);
@@ -53,12 +46,6 @@ $("#click_bottom").onclick = function() {
   }, 2000);
 }
 
-$("#bttn_info").onclick = function() {
-  $("#helper").classList.add("active");
-}
-$("#helper_close").onclick = function() {
-  $("#helper").classList.remove("active");
-}
 $("#action_button").onclick = function() {
   $("#drop_down").classList.remove("active");
 }
@@ -149,9 +136,5 @@ $("#final_thanks").onclick = function() {
 
 window.addEventListener('load', (event) => {
   $("#initial_screen").classList.add("active");
-  if (is_desktop) {
-    setTimeout(function(){ $("#initial_screen").classList.remove("active"); }, 8000);
-  } else {
-    setTimeout(function(){ $("#initial_screen").classList.remove("active"); }, 11000);
-  }
+  setTimeout(function(){ $("#initial_screen").classList.remove("active"); }, 11000);
 });
