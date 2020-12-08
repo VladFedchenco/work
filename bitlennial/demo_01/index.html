@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bitlennial</title>
+</head>
+<style>
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background: #000;
+    color: #ccc;
+}
+
+#viewport {
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    perspective: 400;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#world {
+    height: 106vh;
+    position: absolute;
+    left: -3vw;
+    top: -3vh;
+    transform-style: preserve-3d;
+    width: 106vw;
+    background: url(imgs/bg_01.png) no-repeat center;
+    background-size: cover;
+}
+#rocket {
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform-style: preserve-3d;
+    width: 100vw;
+    background: url(imgs/rocket.png) no-repeat center;
+    background-size: cover;
+}
+#gradient {
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform-style: preserve-3d;
+    width: 100vw;
+    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.9));
+    background-size: cover;
+}
+#logo {
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform-style: preserve-3d;
+    width: 100vw;
+    background: url(imgs/logo.png) no-repeat center;
+    background-size: cover;
+}
+</style>
+
+<body>
+  <div id="viewport">
+    <div id="world"></div>
+    <div id="rocket"></div>
+    <div id="gradient"></div>
+    <div id="logo"></div>
+  </div>
+  <script>
+    var world = document.getElementById( 'world' ),
+    viewport = document.getElementById( 'viewport' ),
+    logo = document.getElementById( 'logo' ),
+    worldXAngle = 0,
+    worldYAngle = 0,
+    d = -1000;
+
+    window.addEventListener( 'mousemove', function( e ) {
+
+      worldYAngle = -( .5 - ( e.clientX / window.innerWidth ) ) * 18;
+      worldXAngle = ( .5 - ( e.clientY / window.innerHeight ) ) * 18;
+      updateView();
+
+    } );
+
+    function updateView() {
+
+      world.style.transform = 'translateZ( ' + d + 'px ) \
+      rotateX( ' + worldXAngle + 'deg) \
+      rotateY( ' + worldYAngle + 'deg)';
+
+      logo.style.transform = 'translateZ( ' + d + 'px ) \
+      rotateX( ' + worldXAngle + 'deg) \
+      rotateY( ' + worldYAngle + 'deg)';
+
+    }
+  </script>
+</body>
+
+</html>
