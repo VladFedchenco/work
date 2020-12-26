@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Demo</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/base.css">
+  <script src="js/three.min.js"></script>
+  <script src="js/EffectComposer.js"></script>
+  <script src="js/GLTFLoader.js"></script>
+  <script src="js/OrbitControls.js"></script>
+  <script src="js/RenderPass.js"></script>
+  <script src="js/ShaderPass.js"></script>
+  <script src="js/CopyShader.js"></script>s
+  <script src="js/FXAAShader.js"></script>
+  <script src="js/LuminosityHighPassShader.js"></script>
+  <script src="js/UnrealBloomPass.js"></script>
+</head>
+<body>
+  <script>
+      let scene = new THREE.Scene();
+      const skycube = new THREE.CubeTextureLoader();
+      const texture = skycube.load([
+          'imgs/posx.jpg',
+          'imgs/negx.jpg',
+          'imgs/posy.jpg',
+          'imgs/negy.jpg',
+          'imgs/posz.jpg',
+          'imgs/negz.jpg',
+      ]);
+      scene.background = texture;
+
+      let clock = new THREE.Clock();
+
+      let renderer = new THREE.WebGLRenderer();
+      renderer.setSize( window.innerWidth, window.innerHeight );
+      renderer.setPixelRatio( window.devidePixelRatio );
+      renderer.shadowMap.enabled = true;
+      renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+
+      document.body.appendChild( renderer.domElement );
+
+      let camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
+      let cam_y = 20;
+      let cam_x = 5;
+      let cam_z = -30;
+      camera.position.set(cam_x, cam_y, cam_z);
+
+      const composer = new THREE.EffectComposer( renderer );
+      const renderPass = new THREE.RenderPass( scene, camera );
+      composer.addPass( renderPass );
+      composer.addPass(new THREE.UnrealBloomPass({x: 1024, y: 1024}, 1.5, 1.2, .5));
+
+      let light = new THREE.DirectionalLight(0x333333, 1);
+      light.position.set(100, 100, 0);
+      light.target.position.set(60, 60, 0);
+      light.castShadow = true;
+      light.shadow.bias = -0.001;
+      light.shadow.mapSize.width = 2048;
+      light.shadow.mapSize.height = 2048;
+      light.shadow.camera.near = 0.5;
+      light.shadow.camera.far = 100.0;
+      light.shadow.camera.left = 100;
+      light.shadow.camera.right = -100;
+      light.shadow.camera.top = 100;
+      light.shadow.camera.bottom = -100;
+      scene.add(light);
+
+      let light2 = new THREE.DirectionalLight(0x333333, 1);
+      light2.position.set(-100, 100, 0);
+      light2.target.position.set(-60, 60, 0);
+      light2.castShadow = true;
+      light2.shadow.bias = -0.001;
+      light2.shadow.mapSize.width = 2048;
+      light2.shadow.mapSize.height = 2048;
+      light2.shadow.camera.near = 0.5;
+      light2.shadow.camera.far = 100.0;
+      light2.shadow.camera.left = 100;
+      light2.shadow.camera.right = -100;
+      light2.shadow.camera.top = 100;
+      light2.shadow.camera.bottom = -100;
+      scene.add(light2);
+
+      let light3 = new THREE.DirectionalLight(0x333333, 1);
+      light3.position.set(0, 100, 100);
+      light3.target.position.set(0, 60, 60);
+      light3.castShadow = true;
+      light3.shadow.bias = -0.001;
+      light3.shadow.mapSize.width = 2048;
+      light3.shadow.mapSize.height = 2048;
+      light3.shadow.camera.near = 0.5;
+      light3.shadow.camera.far = 100.0;
+      light3.shadow.camera.left = 100;
+      light3.shadow.camera.right = -100;
+      light3.shadow.camera.top = 100;
+      light3.shadow.camera.bottom = -100;
+      scene.add(light3);
+
+      let light4 = new THREE.DirectionalLight(0x333333, 1);
+      light4.position.set(0, 100, -100);
+      light4.target.position.set(0, 60, -60);
+      light4.castShadow = true;
+      light4.shadow.bias = -0.001;
+      light4.shadow.mapSize.width = 2048;
+      light4.shadow.mapSize.height = 2048;
+      light4.shadow.camera.near = 0.5;
+      light4.shadow.camera.far = 100.0;
+      light4.shadow.camera.left = 100;
+      light4.shadow.camera.right = -100;
+      light4.shadow.camera.top = 100;
+      light4.shadow.camera.bottom = -100;
+      scene.add(light4);
+
+
+      let controls = new THREE.OrbitControls(camera, renderer.domElement);
+      controls.target.set(0, 0, 0);
+      controls.autoRotate = true;
+      controls.autoRotateSpeed = .8;
+      controls.update();
+
+      let mixer;
+      let loader = new THREE.GLTFLoader();
+      loader.load('models/flame.gltf', function(gltf){
+
+          model = gltf.scene;
+          scene.add(model);
+
+          const animations = gltf.animations;
+
+          mixer = new THREE.AnimationMixer(model);
+          const action = mixer.clipAction( animations[0] );
+          const action1 = mixer.clipAction( animations[1] );
+
+          action.play();
+          action1.play();
+
+      });
+
+      loader.load('models/rocket.gltf', function(gltf){
+          model = gltf.scene;
+          scene.add(model);
+      });
+
+
+      function animate() {
+        requestAnimationFrame( animate );
+        let mixerUpdateDelta = clock.getDelta();
+        if (mixer) {
+          mixer.update( mixerUpdateDelta );
+        }
+        if (cam_y > -40) {
+          cam_y -= 0.06;
+          cam_x += 0.02;
+          cam_z += 0.02;
+          camera.position.set(cam_x, cam_y, cam_z);
+        }
+        controls.update();
+        composer.render();
+      }
+      animate();
+
+    </script>
+</body>
+</html>
