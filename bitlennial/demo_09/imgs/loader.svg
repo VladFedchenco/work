@@ -1,0 +1,255 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="556" height="140" fill="none" stroke-width="3" stroke="#04ecfe" stroke-linejoin="round" stroke-linecap="round" viewBox="0 0 556 140">
+<style>
+/* <![CDATA[ */
+
+.l1 {
+  animation: l1 2s ease infinite;
+}
+@keyframes l1 {
+  45%, 55% {
+    stroke-dashoffset: 94px;
+  }
+  0%, 30%, 70%, 100% {
+    stroke-dashoffset: 0px;
+  }
+}
+
+.l2 {
+  animation: l2 2s ease infinite;
+}
+@keyframes l2 {
+  45%, 55% {
+    stroke-dashoffset: 147.9px;
+  }
+  0%, 30%, 70%, 100% {
+    stroke-dashoffset: 0px;
+  }
+}
+
+.l3 {
+  animation: l3 2s ease infinite;
+}
+@keyframes l3 {
+  45%, 55% {
+    stroke-dashoffset: 102px;
+  }
+  0%, 30%, 70%, 100% {
+    stroke-dashoffset: 0px;
+  }
+}
+
+.l4 {
+  animation: l4 2s ease infinite;
+}
+@keyframes l4 {
+  45%, 55% {
+    stroke-dashoffset: 94.9px;
+  }
+  0%, 30%, 70%, 100% {
+    stroke-dashoffset: 0px;
+  }
+}
+
+.l5 {
+  animation: l5 2s ease infinite;
+}
+@keyframes l5 {
+  45%, 55% {
+    stroke-dashoffset: 83px;
+  }
+  0%, 30%, 70%, 100% {
+    stroke-dashoffset: 0px;
+  }
+}
+
+.l6 {
+  animation: l6 2s ease infinite;
+}
+@keyframes l6 {
+  45%, 55% {
+    stroke-dashoffset: 101.9px;
+  }
+  0%, 30%, 70%, 100% {
+    stroke-dashoffset: 0px;
+  }
+}
+
+.l7 {
+  animation: l7 2s ease infinite;
+}
+@keyframes l7 {
+  45%, 55% {
+    stroke-dashoffset: 196.9px;
+  }
+  0%, 30%, 70%, 100% {
+    stroke-dashoffset: 0px;
+  }
+}
+
+.l8 {
+  animation: l8 2s ease infinite;
+}
+@keyframes l8 {
+  45%, 55% {
+    stroke-dashoffset: 93.9px;
+  }
+  0%, 30%, 70%, 100% {
+    stroke-dashoffset: 0px;
+  }
+}
+
+.l9 {
+  animation: l9 2s ease infinite;
+}
+@keyframes l9 {
+  45%, 55% {
+    stroke-dashoffset: 310px;
+  }
+  0%, 30%, 70%, 100% {
+    stroke-dashoffset: 0px;
+  }
+}
+
+.l10 {
+  animation: l10 2s ease infinite;
+}
+@keyframes l10 {
+  45%, 55% {
+    stroke-dashoffset: 48.2px;
+  }
+  0%, 30%, 70%, 100% {
+    stroke-dashoffset: 0px;
+  }
+}
+
+.l11 {
+  animation: l11 2s ease infinite;
+}
+@keyframes l11 {
+  45%, 55% {
+    stroke-dashoffset: 310px;
+  }
+  0%, 30%, 70%, 100% {
+    stroke-dashoffset: 0px;
+  }
+}
+
+.l12 {
+  animation: l12 2s ease infinite;
+}
+@keyframes l12 {
+  45%, 55% {
+    stroke-dashoffset: 48.1px;
+  }
+  0%, 30%, 70%, 100% {
+    stroke-dashoffset: 0px;
+  }
+}
+
+.l13 {
+  animation: l13 2s ease infinite;
+}
+@keyframes l13 {
+  45%, 55% {
+    stroke-dashoffset: 147.8px;
+  }
+  0%, 30%, 70%, 100% {
+    stroke-dashoffset: 0px;
+  }
+}
+
+.l14 {
+  animation: l14 2s ease infinite;
+}
+@keyframes l14 {
+  45%, 55% {
+    stroke-dashoffset: 94px;
+  }
+  0%, 30%, 70%, 100% {
+    stroke-dashoffset: 0px;
+  }
+}
+
+.l15 {
+  animation: l15 2s ease infinite;
+}
+@keyframes l15 {
+  45%, 55% {
+    stroke-dashoffset: 50.3px;
+  }
+  0%, 30%, 70%, 100% {
+    stroke-dashoffset: 0px;
+  }
+}
+
+.l16 {
+  animation: l16 2s ease infinite;
+}
+@keyframes l16 {
+  45%, 55% {
+    stroke-dashoffset: 220.8px;
+  }
+  0%, 30%, 70%, 100% {
+    stroke-dashoffset: 0px;
+  }
+}
+
+.l17 {
+  animation: l17 2s ease infinite;
+}
+@keyframes l17 {
+  45%, 55% {
+    stroke-dashoffset: 101.9px;
+  }
+  0%, 30%, 70%, 100% {
+    stroke-dashoffset: 0px;
+  }
+}
+
+.l18 {
+  animation: l18 2s ease infinite;
+}
+@keyframes l18 {
+  45%, 55% {
+    stroke-dashoffset: 83.1px;
+  }
+  0%, 30%, 70%, 100% {
+    stroke-dashoffset: 0px;
+  }
+}
+
+.l19 {
+  animation: l19 2s ease infinite;
+}
+@keyframes l19 {
+  45%, 55% {
+    stroke-dashoffset: 749.7px;
+  }
+  0%, 30%, 70%, 100% {
+    stroke-dashoffset: 0px;
+  }
+}
+
+
+/* ]]> */
+</style>
+  <polygon class="l1" stroke-dasharray="94" stroke-dashoffset="94" points="109.4 49.5 144.7 49.6 144.6 61.3 109.4 61.2 109.4 49.5"/>
+  <path class="l2" stroke-dasharray="147.9" stroke-dashoffset="147.9" d="M133.1 101.7l-.1-26.9-12 .1v26.9l-11.6.1.1 11.7 35.3-.1-.1-11.7h-11.6v-.1z"/>
+  <path class="l3" stroke-dasharray="102" stroke-dashoffset="102" d="M165 74.8v38.7l12.3-.1V74.8H165z"/>
+  <polygon class="l4" stroke-dasharray="94.9" stroke-dashoffset="94.9" points="153.5 49.2 189 49.2 188.9 61.2 153.5 61.1 153.5 49.2"/>
+  <path class="l5" stroke-dasharray="83" stroke-dashoffset="83" d="M197.6 101.9v11.6h29.9v-11.6h-29.9z"/>
+  <polygon class="l6" stroke-dasharray="101.9" stroke-dashoffset="101.9" points="197.6 49.4 209.7 49.5 209.7 88.3 197.6 88.2 197.6 49.4"/>
+  <path class="l7" stroke-dasharray="196.9" stroke-dashoffset="196.9" d="M237.7 72.9v40.6l35-.1v-11.9l-22.9-.1V84.6l22.9-.1-.1-11.7h-34.9v.1z"/>
+  <polygon class="l8" stroke-dasharray="93.9" stroke-dashoffset="93.9" points="237.7 49.3 272.7 49.4 272.6 61.3 237.6 61.2 237.7 49.3"/>
+  <path class="l9" stroke-dasharray="310" stroke-dashoffset="310" d="M321.1 74.8l-.1 16.7-27.5-42.3-11.7.1.1 64.2 12.2-.1v-42l27.5 42.1 11.7-.1V74.9l-12.2-.1z"/>
+  <polygon class="l10" stroke-dasharray="48.2" stroke-dashoffset="48.2" points="321.1 49.2 333.2 49.3 333.2 61.2 321 61.1 321.1 49.2"/>
+  <path class="l11" stroke-dasharray="310" stroke-dashoffset="310" d="M381.9 74.8l-.1 16.7-27.5-42.3-11.7.1.1 64.2 12.2-.1V71.3l27.5 42.1 11.7-.1V74.9l-12.2-.1z"/>
+  <polygon class="l12" stroke-dasharray="48.1" stroke-dashoffset="48.1" points="381.9 49.2 394 49.3 393.9 61.2 381.8 61.1 381.9 49.2"/>
+  <path class="l13" stroke-dasharray="147.8" stroke-dashoffset="147.8" d="M427 101.7l-.1-26.9-12 .1v26.9l-11.6.1.1 11.7 35.3-.1-.1-11.7-11.6-.1z"/>
+  <polygon class="l14" stroke-dasharray="94" stroke-dashoffset="94" points="403.4 49.5 438.6 49.6 438.6 61.3 403.3 61.2 403.4 49.5"/>
+  <path class="l15" stroke-dasharray="50.3" stroke-dashoffset="50.3" d="M500.7 101.6h-12.5l4.2 11.9h12.5l-4.2-11.9z"/>
+  <path class="l16" stroke-dasharray="220.8" stroke-dashoffset="220.8" d="M482.2 49.3h-11.7l-23.1 64.1.1.1h12.4L476.2 68l8 22.5h12.5l-14.5-41.2z"/>
+  <polygon class="l17" stroke-dasharray="101.9" stroke-dashoffset="101.9" points="514.7 49.4 526.8 49.5 526.7 88.3 514.6 88.2 514.7 49.4"/>
+  <path class="l18" stroke-dasharray="83.1" stroke-dashoffset="83.1" d="M544.5 101.9l-29.9.1.1 11.5h29.9v-11.6h-.1z"/>
+  <path class="l19" stroke-dasharray="749.7" stroke-dashoffset="749.7" d="M75 28.6H57.7V15.5H49v13.1h-9.7V15.5h-8.8v13.1H12.1v11h54.8l2.4.2 2.7.8 2.1 1.1 2 1.6 1.3 1.5 1.5 2.6.7 2.3.3 2.7-.2 2.3-.7 2.4-1.1 2.2-1.4 1.9-1.8 1.8-2.2 1.3-2.7 1-3 .3H58v11.5h8.8l2.5.3 2.5.8 2.1 1.2 2 1.7 1.3 1.6 1.3 2.2.7 2.1.4 3.3-.2 2.2-.8 2.7-1 2-1.6 2-1.7 1.5-2 1.2-2.6.9-2.9.3h-34v-26h16.1V65.6H32.8V45.3H12.1v8.2h5.7l.8.1 1.1.3.8.4.8.7.5.6.4.7.3.9.2 1.3v42.3l-.1 1-.3 1-.5.8-.6.7-.7.6-.8.5-1 .3-1.1.1h-5.7v8.3h18.5v11.6h8.8V114H49v11.6h8.8V114H75l5.9-.7 5.4-2 3.8-2.5 3.3-3.1 2.5-3.4 1.9-3.8 1.3-4.3.5-4.6-.8-6.1-1.7-4.6-2.9-4.6-2.8-2.9 3.6-4 2.6-4.8 1.4-4.4.5-4.9-.8-6.3-1.7-4.7-2.2-3.6-2.8-3.3-3.8-3-3.7-1.9-4.1-1.4-5.4-.5z"/>
+</svg>
