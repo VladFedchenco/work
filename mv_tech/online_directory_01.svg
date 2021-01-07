@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 85 53">
+<style>
+/* <![CDATA[ */
+#zoom {
+  animation: zoom 5s ease-in-out infinite;
+}
+
+@keyframes zoom {
+  0%, 12.5%, 100% {
+    transform: translate(0px, 0px);
+  }
+  25%, 37.5%, 75%, 87.5%  {
+    transform: translate(0px, 10px);
+  }
+  50%, 62.5% {
+    transform: translate(0px, 20px);
+  }
+}
+
+#itm1 {
+  animation: itm1 5s ease-in-out infinite;
+}
+@keyframes itm1 {
+  0%, 12.5%, 100% {
+    transform: translate(58px, 12px) scale(1.2) translate(-58px, -12px);
+  }
+  25%, 87.5% {
+    transform: translate(58px, 12px) scale(1) translate(-58px, -12px);
+  }
+}
+
+#itm2 {
+  animation: itm2 5s ease-in-out infinite;
+}
+@keyframes itm2 {
+  0%, 12.5%, 50%, 62.5%, 100% {
+    transform: translate(58px, 26px) scale(1) translate(-58px, -26px);
+  }
+  25%, 37.5%, 75%, 87.5% {
+    transform: translate(58px, 26px) scale(1.2) translate(-58px, -26px);
+  }
+}
+
+#itm3 {
+  animation: itm3 5s ease-in-out infinite;
+}
+@keyframes itm3 {
+  0%, 37.5%, 75%, 100% {
+    transform: translate(58px, 41px) scale(1) translate(-58px, -41px);
+  }
+  50%, 62.5% {
+    transform: translate(58px, 41px) scale(1.2) translate(-58px, -41px);
+  }
+}
+
+/* ]]> */
+</style>
+<path id="bg" fill="#FFF" stroke="#95D400" stroke-miterlimit="10" d="M58.591 49.229H26.409a1.53 1.53 0 01-1.53-1.53V4.95c0-.845.685-1.53 1.53-1.53h32.182c.845 0 1.53.685 1.53 1.53v42.749a1.53 1.53 0 01-1.53 1.53z"/>
+<g id="itm1">
+  <path fill="#F7FFE2" d="M57.237 17.873H27.644a1.022 1.022 0 01-1.022-1.022V7.404c0-.564.457-1.022 1.022-1.022h29.593c.564 0 1.022.457 1.022 1.022v9.447c0 .565-.458 1.022-1.022 1.022z"/>
+  <path fill="#FFF" stroke="#95D400" stroke-miterlimit="10" d="M35.11 16.181h-5.367a1.37 1.37 0 01-1.369-1.369V9.444a1.37 1.37 0 011.369-1.369h5.367a1.37 1.37 0 011.369 1.369v5.367a1.37 1.37 0 01-1.369 1.37z"/>
+  <circle cx="32.426" cy="11.237" r="1.94" fill="#95D400"/>
+  <path fill="#95D400" d="M35.193 14.959a3.043 3.043 0 00-2.766-1.783 3.043 3.043 0 00-2.766 1.783h5.532z"/>
+  <line x1="38.705" x2="56.626" y1="9.92" y2="9.92" fill="none" stroke="#95D400" stroke-miterlimit="10"/>
+  <line x1="38.705" x2="56.626" y1="12.128" y2="12.128" fill="none" stroke="#95D400" stroke-miterlimit="10"/>
+  <line x1="38.705" x2="46.336" y1="14.336" y2="14.336" fill="none" stroke="#95D400" stroke-miterlimit="10"/>
+</g>
+<g id="itm2">
+  <path fill="#F7FFE2" d="M57.237 32.245H27.644a1.022 1.022 0 01-1.022-1.022v-9.447c0-.564.457-1.022 1.022-1.022h29.593c.564 0 1.022.457 1.022 1.022v9.447c0 .565-.458 1.022-1.022 1.022z"/>
+  <path fill="#FFF" stroke="#95D400" stroke-miterlimit="10" d="M35.11 30.553h-5.367a1.37 1.37 0 01-1.369-1.369v-5.367a1.37 1.37 0 011.369-1.369h5.367a1.37 1.37 0 011.369 1.369v5.367a1.37 1.37 0 01-1.369 1.369z"/>
+  <circle cx="32.426" cy="25.609" r="1.94" fill="#95D400"/>
+  <path fill="#95D400" d="M35.193 29.331a3.043 3.043 0 00-2.766-1.783 3.043 3.043 0 00-2.766 1.783h5.532z"/>
+  <line x1="38.705" x2="56.626" y1="24.292" y2="24.292" fill="none" stroke="#95D400" stroke-miterlimit="10"/>
+  <line x1="38.705" x2="56.626" y1="26.5" y2="26.5" fill="none" stroke="#95D400" stroke-miterlimit="10"/>
+  <line x1="38.705" x2="46.336" y1="28.708" y2="28.708" fill="none" stroke="#95D400" stroke-miterlimit="10"/>
+</g>
+<g id="itm3">
+  <path fill="#F7FFE2" d="M57.237 46.617H27.644a1.022 1.022 0 01-1.022-1.022v-9.447c0-.564.457-1.022 1.022-1.022h29.593c.564 0 1.022.457 1.022 1.022v9.447c0 .565-.458 1.022-1.022 1.022z"/>
+  <path fill="#FFF" stroke="#95D400" stroke-miterlimit="10" d="M35.11 44.925h-5.367a1.37 1.37 0 01-1.369-1.369v-5.367a1.37 1.37 0 011.369-1.369h5.367a1.37 1.37 0 011.369 1.369v5.367a1.37 1.37 0 01-1.369 1.369z"/>
+  <circle cx="32.426" cy="39.981" r="1.94" fill="#95D400"/>
+  <path fill="#95D400" d="M35.193 43.703a3.043 3.043 0 00-2.766-1.783 3.043 3.043 0 00-2.766 1.783h5.532z"/>
+  <line x1="38.705" x2="56.626" y1="38.664" y2="38.664" fill="none" stroke="#95D400" stroke-miterlimit="10"/>
+  <line x1="38.705" x2="56.626" y1="40.872" y2="40.872" fill="none" stroke="#95D400" stroke-miterlimit="10"/>
+  <line x1="38.705" x2="46.336" y1="43.08" y2="43.08" fill="none" stroke="#95D400" stroke-miterlimit="10"/>
+</g>
+<g id="zoom">
+  <circle cx="56.449" cy="14.025" r="7.558" fill="#FFF" stroke="#95D400" stroke-miterlimit="10"/>
+  <path fill="#95D400" d="M71.095 28.383l-.288.288a1.417 1.417 0 01-2.005 0l-5.618-5.618a1.417 1.417 0 010-2.005l.288-.288a1.417 1.417 0 012.005 0l5.618 5.618a1.419 1.419 0 010 2.005z"/>
+  <path fill="none" stroke="#95D400" stroke-linecap="round" stroke-miterlimit="10" d="M51.161 12.236a5.559 5.559 0 011.341-2.157 5.554 5.554 0 011.846-1.226"/>
+</g>
+</svg>
