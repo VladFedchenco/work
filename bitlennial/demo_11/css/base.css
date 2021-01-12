@@ -1,0 +1,263 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: #141214;
+  margin: 0;
+  padding: 0;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overscroll-behavior: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+canvas {
+  position: fixed;
+  left: 0;
+  top: 0;
+  -webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
+}
+
+a {
+  color: #fff;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+#logo {
+  position: absolute;
+  pointer-events: none;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: .5;
+}
+
+#loader {
+  position: fixed;
+  pointer-events: none;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 9;
+  background: url(../imgs/bg.jpg) no-repeat center #141214;
+  background-size: cover;
+  transition: all 1s linear;
+}
+
+#loader_animation {
+  position: absolute;
+  pointer-events: none;
+  left: 50%;
+  top: 50%;
+  width: 50%;
+  height: auto;
+  transform: translate(-50%, -50%);
+  transition: all .2s linear;
+}
+
+#start_bttn {
+  color: #04ecfe;
+  display: block;
+  width: 300px;
+  height: 64px;
+  font-family: sans-serif;
+  font-size: 32px;
+  line-height: 62px;
+  text-align: center;
+  text-decoration: none;
+  border: solid 1px #04ecfe;
+  text-transform: uppercase;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: all .2s linear;
+}
+
+#start_bttn:hover {
+  background: #04ecfe;
+  color: #141214;
+}
+
+#start_bttn.invis, #loader_animation.invis {
+  opacity: 0;
+  pointer-events: none;
+}
+
+#scene2_options {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#scene2_options.active {
+  pointer-events: initial;
+}
+
+#mouse_icon {
+  pointer-events: none;
+  position: absolute;
+  opacity: 0;
+  display: none;
+  width: 50px;
+  height: 50px;
+  left: 50%;
+  bottom: 10%;
+  transform: translateX(-50%);
+  transition: opacity .2s linear;
+}
+
+#mouse_icon.active {
+  opacity: 0.5;
+  display: block;
+}
+
+#space_music, .resources {
+  width: 80vw;
+  height: 45vw;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#space_music.inactive {
+  display: none;
+  pointer-events: none;
+}
+
+#close_bttn {
+  display: none;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  z-index: 9;
+}
+
+#close_bttn:hover polygon {
+  fill: #67e8fa;
+}
+
+#close_bttn.active {
+  display: block;
+}
+
+.resources {
+  background-color: #000;
+  padding: 32px;
+  font-family: sans-serif;
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+}
+
+.resources.inactive {
+  display: none;
+  pointer-events: none;
+}
+
+#watch {
+  padding-left: 180px;
+  background: url(../imgs/stop2_1.png) no-repeat 20px 20px #000;
+}
+
+#listen {
+  padding-left: 180px;
+  background: url(../imgs/stop2_2.png) no-repeat 20px 20px #000;
+}
+
+#read {
+  padding-left: 180px;
+  background: url(../imgs/stop2_3.png) no-repeat 20px 20px #000;
+}
+
+#subscribe {
+  padding-left: 180px;
+  background: url(../imgs/stop2_4.png) no-repeat 20px 20px #000;
+}
+
+#become {
+  background: url(../imgs/stop3_ttl.png) no-repeat center 100px #000;
+  background-size: 50% auto;
+  padding-top: 220px;
+}
+
+#why {
+  background: rgba(0,0,0,.8);
+  text-align: left;
+}
+
+#why h2 {
+  text-align: center;
+}
+
+#why h3 {
+  display: block;
+  padding-bottom: 8px;
+  border-bottom: solid 1px #fff;
+  margin-bottom: 24px;
+  color: #67e8fa;
+  font-size: 18px;
+}
+
+#why .why_block {
+  float: left;
+  width: 20%;
+  font-size: 16px;
+  line-height: 1.4;
+  padding: 16px;
+  color: #ddd;
+}
+
+#become input {
+  width: 60%;
+  background-color: #fff;
+  padding: 8px 16px;
+  border-radius: 0;
+  border: none;
+  font-size: 32px;
+  color: #000;
+  font-family: sans-serif;
+}
+
+#become button {
+  display: inline-block;
+  background: #67e8fa;
+  border: none;
+  padding: 8px 16px;
+  font-size: 32px;
+  color: #000;
+  font-family: sans-serif;
+  vertical-align: top;
+  cursor: pointer;
+}
+
+#become button:hover {
+  background: #ffffff;
+}
+
+#become input:focus, #become button:focus {
+  outline: none;
+}
+
+
+@media screen and (max-width: 750px) {
+  #loader_animation {
+    width: 90%;
+  }
+}

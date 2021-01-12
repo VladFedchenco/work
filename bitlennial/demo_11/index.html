@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Demo</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/base.css">
+  <script src="js/three.min.js"></script>
+  <script src="js/EffectComposer.js"></script>
+  <script src="js/RenderPass.js"></script>
+  <script src="js/ShaderPass.js"></script>
+  <script src="js/CopyShader.js"></script>
+  <script src="js/LuminosityHighPassShader.js"></script>
+  <script src="js/UnrealBloomPass.js"></script>
+  <script src="js/FXAAShader.js"></script>
+  <script src="js/GLTFLoader.js"></script>
+</head>
+<body>
+  <script src="js/OrbitControls.js"></script>
+  <script src="js/helper.js"></script>
+  <script src="js/main.js"></script>
+  <div id="loader">
+    <img src="imgs/loader.svg" id="loader_animation">
+  </div>
+  <div id="scene2_options">
+
+    <img src="imgs/mouse.gif" id="mouse_icon">
+
+    <iframe id="space_music" class="inactive" width="560" height="315" src="https://www.youtube.com/embed/NPjCwXyvTG8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <div id="watch" class="resources inactive">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/LszOt51OjXU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/watch?v=6jSm9vTBGKU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <div id="listen" class="resources inactive">
+      <a style="float: left;" href="https://www.audible.com/pd/The-Price-of-Tomorrow-Audiobook/B08724Y81K">
+      <img src="https://m.media-amazon.com/images/I/51cBM4qwuWL._SL500_.jpg"><br>
+      The Price of Tomorrow</a>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/fkmEfNNGMm8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <div id="read" class="resources inactive">
+      <a href="https://bitcoin.org/bitcoin.pdf">
+      <img style="width: 40%; height: auto; margin-bottom: 16px" src="https://bitcoin.org/img/home/bitcoin-img.svg"><br>
+      Bitcoin Whitepaper</a>
+    </div>
+
+    <div id="subscribe" class="resources inactive">
+      <a style="display: inline-block;" href="https://anthonypompliano.com/podcast/">
+      <img style="width: 300px" src="imgs/pomp_podcast.jpg"><br>
+      POMP Podcast</a>
+
+      <a style="display: inline-block;" href="http://podcast.banklesshq.com/">
+      <img style="width: 300px" src="imgs/bankless.jpg"><br>
+      Bankless Podcast</a>
+    </div>
+
+    <div id="become" class="resources inactive">
+      <form action="">
+        <input id="email" type="email">
+        <button>Submit</button>
+      </form>
+      <br>
+      <p style="font-size: 16px">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+    </div>
+
+    <div id="why" class="resources inactive">
+      <h2>Why Bitcoin</h2>
+      <div class="why_block">
+        <h3>Portable</h3>
+        <p>Your Bitcoin can be stored both physically and digitally.</p> 
+        <p>To access your Bitcoin you will need an internet connection.</p>
+        <p>To continue the journey search:</p>
+        <ul>
+          <li>Cold Wallet</li>
+          <li>Digital Wallets</li>
+          <li>Crypto Exchanges</li>
+          <li>Crypto Banks</li>
+          <li>#dropgold</li>
+        </ul>
+      </div>
+      <div class="why_block">
+        <h3>Divisible</h3>
+        <p>A whole Bitcoin is made up of 100 million Satoshi’s, or in other words, all the numbers after the decimal. Ex. 0.85478578.</p>
+        <p>To continue the journey search:</p>
+        <ul>
+          <li>Sack Sats</li>
+          <li>Stacking Satoshis</li>
+          <li>#stacksats</li>
+        </ul>
+      </div>
+      <div class="why_block">
+        <h3>Scarce</h3>
+        <p>21,000,000 Bitcoin will be created making Bitcoin deflationary over time.</p>
+        <p>To continue the journey search:</p>
+        <ul>
+          <li>Bitcoin Scarcity</li>
+          <li>21 million Bitcoin</li>
+          <li>Supply and Demand Bitcoin</li>
+        </ul>
+      </div>
+      <div class="why_block">
+        <h3>Censorship Resistance</h3>
+        <p>This is a very controversial topic in the digital world. Your Bitcoin lives on the Bitcoin Network.</p>
+        <p>To continue the journey search:</p>
+        <ul>
+          <li>Bitcoin Network</li>
+          <li>Bitcoin Network downtime</li>
+          <li>Bitcoin Censorship</li>
+          <li>Bitcoin Regulations</li>
+        </ul>
+      </div>
+      <div class="why_block">
+        <h3>Verifiability</h3>
+        <p>Your Bitcoin lives on a decentralized blockchain that can prove publicly how much Bitcoin you hold.</p>
+        <p>To continue the journey search:</p>
+        <ul>
+          <li>Bitcoin Blockchain</li>
+          <li>Bitcoin Security</li>
+          <li>Bitcoin Cryptography</li>
+        </ul>
+      </div>
+    </div>
+
+    <a href="javascript:;" id="close_bttn">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 42.426 42.426">
+        <polygon points="42.426 33.941 29.698 21.213 42.426 8.485 33.941 0 21.213 12.728 8.485 0 0 8.485 12.728 21.213 0 33.941 8.485 42.426 21.213 29.698 33.941 42.426 42.426 33.941" fill="#fff"/>
+      </svg>
+    </a>
+  </div>
+</body>
+</html>
