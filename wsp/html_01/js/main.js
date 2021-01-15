@@ -9,6 +9,9 @@ $("#start").onclick = function() {
     setTimeout(function(){
       $("#scene_01").classList.add("inactive");
       $("#scene_02").classList.remove("inactive");
+      setTimeout(function(){
+        $("#scene_02").classList.remove("paused");
+      }, 50);
     }, 1000);
   }, 3000);
 }

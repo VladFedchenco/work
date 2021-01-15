@@ -45,18 +45,18 @@ h2, h3 {
 }
 
 .blick1 {
-  animation: blick .2s linear infinite;
+  animation: blick .6s linear infinite;
 }
 
 .blick2 {
-  animation: blick .2s .1s linear infinite;
+  animation: blick .6s .3s linear infinite;
 }
 
 @keyframes blick {
-  0%, 49.9% {
-    opacity: .5;
+  0%, 33% {
+    opacity: .8;
   }
-  50.1%, 100% {
+  66%, 100% {
     opacity: 1;
   }
 }
@@ -205,7 +205,7 @@ h2, h3 {
 }
 
 #corner {
-  transform: translate(604px, 639px) scale(0) translate(-604px, -639px);
+  transform: translate(604px, 639px);
 }
 
 #corner.active {
@@ -214,10 +214,7 @@ h2, h3 {
 
 @keyframes corner {
   0% {
-    transform: translate(604px, 639px) scale(0) translate(-604px, -639px);
-  }
-  50% {
-    transform: translate(604px, 639px) scale(1) translate(-604px, -639px);
+    transform: translate(604px, 639px);
   }
   100% {
     transform: translate(-366px, -352px);
@@ -244,28 +241,49 @@ h2, h3 {
   text-align: center;
 }
 
+#scene_02.paused h2, #scene_02.paused h3, #scene_02.paused #gift_img, #scene_02.paused p, #scene_02.paused .bottom_button {
+  opacity: 0;
+}
+
 #scene_02 h2 {
   color: #1f5391;
   font-size: 42px;
   line-height: 1.1;
+  opacity: 1;
+  transition: opacity .4s .4s ease;
 }
 
 #scene_02 h3 {
   color: #3d90b8;
   margin-bottom: 16px;
+  opacity: 1;
+  transition: opacity .4s ease;
+}
+
+#gift_img {
+  position: relative;
+  opacity: 1;
+  transition: opacity .4s .2s ease;
 }
 
 #prize {
   position: absolute;
   left: 50%;
-  top: 256px;
+  top: 132px;
   transform: translateX(-50%);
+}
+
+#scene_02 p {
+  opacity: 1;
+  transition: opacity .4s .6s ease;
 }
 
 .bottom_button {
   border-top: solid 1px #aaa;
   padding-top: 8px;
   margin: 0 8px;
+  opacity: 1;
+  transition: opacity .4s .8s ease;
 }
 
 .bottom_button p {
@@ -282,4 +300,57 @@ h2, h3 {
   font-weight: 700;
   color: #000;
   text-shadow: 0px 1px 0px #fff;
+  transition: all .2s ease;
+}
+
+#bttn:hover {
+  color: #00305b;
+  background: linear-gradient(#f4da4a 0%, #f4da4a 50%, #f5ea6e 50%, #f5ea6e 100%);
+}
+
+#bttn svg {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin: 0px 4px -4px 0px;
+}
+
+#bttn:hover svg path {
+  fill: #00305b;;
+}
+
+@media screen and (max-width: 750px) {
+  #scene_01 {
+      position: static;
+      width: 100%;
+      max-width: 636px;
+      margin: 0 auto;
+      height: auto;
+      padding: 100px 16px 16px 16px;
+      transform: none;
+  }
+
+  #scene_02 {
+    width: 100%;
+    max-width: 454px;
+    margin: 0 auto;
+    padding: 80px 16px 16px 16px;
+  }
+
+  #gift_img svg {
+    max-width: 422px;
+    width: 100%;
+    height: auto;
+  }
+
+  #prize {
+    top: auto;
+    bottom: 36px;
+    max-width: 284px;
+    width: 70%;
+  }
+
+  #scene_02 h2 {
+    font-size: 32px;
+  }
 }
