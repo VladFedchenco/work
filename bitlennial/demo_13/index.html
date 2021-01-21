@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bitlennial</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/base.css">
+  <script src="js/three.min.js"></script>
+  <script src="js/EffectComposer.js"></script>
+  <script src="js/RenderPass.js"></script>
+  <script src="js/ShaderPass.js"></script>
+  <script src="js/CopyShader.js"></script>
+  <script src="js/LuminosityHighPassShader.js"></script>
+  <script src="js/UnrealBloomPass.js"></script>
+  <script src="js/FXAAShader.js"></script>
+  <script src="js/GLTFLoader.js"></script>
+</head>
+<body>
+  <div id="loader">
+    <img src="imgs/loader.svg" id="loader_animation">
+  </div>
+  <a href="javascript:;" id="skip" style="display: none;">SKIP INTRO</a>
+  <div id="scene2_options">
+
+    <img src="imgs/mouse.gif" id="mouse_icon">
+    <img src="imgs/mobile_pointer.svg" id="pointer_icon">
+
+    <iframe id="space_music" class="inactive" width="560" height="315" src="https://www.youtube.com/embed/NPjCwXyvTG8?enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <div id="become" class="resources inactive">
+      <form action="">
+        <input id="email" type="email" placeholder="Your Email">
+        <button>Submit</button>
+      </form>
+      <div id="mobile_blocks">
+        <div class="mobile_become">
+          <img src="imgs/stop_3_1.svg">
+          <p>Pre-Sale Access for 2021 Collection</p>
+        </div>
+        <div class="mobile_become">
+          <img src="imgs/stop_3_2.svg">
+          <p>Exclusive Airdrops (an airdrop is a giveaway)</p>
+        </div>
+        <div class="mobile_become">
+          <img src="imgs/stop_3_3.svg">
+          <p>Hard Fork (Community Newsletter)</p>
+        </div>
+        <div class="mobile_become">
+          <a href="javascript:;" onclick="OpenInNewTabWinBrowser('https://www.instagram.com/bitlennial/')">
+            <img src="imgs/stop_3_4.svg">
+            <p>For more Reel Talk education follow us on Instagram</p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <a href="javascript:;" id="close_bttn">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 42.426 42.426">
+        <polygon points="42.426 33.941 29.698 21.213 42.426 8.485 33.941 0 21.213 12.728 8.485 0 0 8.485 12.728 21.213 0 33.941 8.485 42.426 21.213 29.698 33.941 42.426 42.426 33.941" fill="#fff"/>
+      </svg>
+    </a>
+  </div>
+  <script src="js/OrbitControls.js"></script>
+  <script src="js/helper.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

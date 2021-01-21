@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: url(../imgs/bg.jpg) no-repeat center #141214;
+  background-size: cover;
+}
+
+a {
+  color: #fff;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h2 {
+  font-family: sans-serif;
+  font-weight: normal;
+  color: #fff;
+  text-align: center;
+  margin: 0 0 32px 0;
+}
+
+#logo {
+  margin-bottom: 8px;
+}
+
+.resources {
+  min-height: 100vh;
+  padding: 32px;
+  font-family: sans-serif;
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+}
+
+.resources.inactive {
+  display: none;
+  pointer-events: none;
+}
+
+#watch {
+  padding: 32px 180px;
+  background: url(../imgs/stop2_1.png) no-repeat 20px 20px;
+}
+
+#listen {
+  padding: 32px 180px;
+  background: url(../imgs/stop2_2.png) no-repeat 20px 20px;
+}
+
+#read {
+  padding: 32px 180px;
+  background: url(../imgs/stop2_3.png) no-repeat 20px 20px;
+}
+
+#subscribe {
+  padding: 32px 180px;
+  background: url(../imgs/stop2_4.png) no-repeat 20px 20px;
+}
+
+#become {
+  background: url(../imgs/stop3_ttl.png) no-repeat center 100px;
+  background-size: 50% auto;
+  padding-top: 220px;
+}
+
+#listen a, #read a, #subscribe a {
+  display: inline-block;
+  margin: 0 8px 32px 8px;
+}
+
+#listen a img, #read a img, #subscribe a img {
+  display: block;
+  margin: 0 auto 16px auto;
+}
+
+#listen a:hover, #read a:hover, #subscribe a:hover {
+  text-decoration: none;
+}
+
+#why {
+  text-align: left;
+}
+
+#why h2 {
+  text-align: center;
+}
+
+#why h3 {
+  text-align: center;
+  display: block;
+  padding-bottom: 8px;
+  border-bottom: solid 1px #fff;
+  margin-bottom: 24px;
+  color: #67e8fa;
+  font-size: 18px;
+}
+
+#why .why_block {
+  float: left;
+  width: 20%;
+  font-size: 16px;
+  line-height: 1.4;
+  padding: 16px;
+  color: #ddd;
+}
+
+.watch_section {
+  margin-bottom: 32px;
+}
+
+@media screen and (max-width: 750px) {
+  h2 {
+    font-size: 24px;
+    text-align: center;
+    display: block;
+    padding: 0 32px;
+  }
+  #watch, #listen, #read, #subscribe {
+    padding: 32px 0 0 0;
+    background: none;
+  }
+  #watch iframe, #listen iframe {
+    width: 100vw;
+    height: 56.25vw;
+  }
+  #listen a img, #why h2 img {
+    width: 100%;
+    height: auto;
+  }
+  #read a, #subscribe a {
+    font-size: 16px;
+  }
+  #read a img, #subscribe a img {
+    max-width: 150px;
+  }
+  #why h2 {
+    padding: 0;
+    margin-bottom: 8px;
+  }
+  #why .why_block {
+    float: none;
+    width: 100%;
+  }
+}
