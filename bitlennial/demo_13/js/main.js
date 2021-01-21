@@ -777,7 +777,9 @@ function close_all() {
   $("#become").classList.add("inactive");
 
   $("#space_music").contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
-  sound2.play();
+  if (!sound2.isPlaying) {
+    sound2.play();
+  }
 }
 
 document.addEventListener('scroll', function(e) {
@@ -800,14 +802,18 @@ function onWindowResize(){
 }
 
 function win_blur() {
+  sound.pause();
   sound2.pause();
   cancelAnimationFrame(req_af);
 }
 
 function win_focus() {
   if(music) {
+    cancelAnimationFrame(req_af);
     req_af = requestAnimationFrame(animate);
+    sound.play();
   } else {
+    cancelAnimationFrame(req_af);
     req_af = requestAnimationFrame(animate2);
     sound2.play();
   }
@@ -996,39 +1002,6 @@ function animate2() {
         $("#close_bttn").addEventListener("click", close_all);
         options_active();
         $("#close_bttn").classList.add("email_section");
-      }
-    } else if (raycaster2.intersectObject(stop3_1).length > 0) {
-      unselect_state();
-      selected_state(stop3_1);
-      $("canvas").onclick = function() {
-        $("#become").classList.remove("inactive");
-        $("#close_bttn").addEventListener("click", close_all);
-        options_active();
-        $("#close_bttn").classList.add("email_section");
-      }
-    } else if (raycaster2.intersectObject(stop3_2).length > 0) {
-      unselect_state();
-      selected_state(stop3_2)
-      $("canvas").onclick = function() {
-        $("#become").classList.remove("inactive");
-        $("#close_bttn").addEventListener("click", close_all);
-        options_active();
-        $("#close_bttn").classList.add("email_section");
-      }
-    } else if (raycaster2.intersectObject(stop3_3).length > 0) {
-      unselect_state();
-      selected_state(stop3_3)
-      $("canvas").onclick = function() {
-        $("#become").classList.remove("inactive");
-        $("#close_bttn").addEventListener("click", close_all);
-        options_active();
-        $("#close_bttn").classList.add("email_section");
-      }
-    } else if (raycaster2.intersectObject(stop3_4).length > 0) {
-      unselect_state();
-      selected_state(stop3_4)
-      $("canvas").onclick = function() {
-        OpenInNewTabWinBrowser("https://www.instagram.com/bitlennial/");
       }
     } else if (raycaster2.intersectObject(why.children[1]).length > 0) {
       unselect_state();

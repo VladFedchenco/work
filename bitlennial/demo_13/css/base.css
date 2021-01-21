@@ -283,6 +283,7 @@ a:hover {
 
 @media screen and (max-width: 750px) {
   #loader_animation {
+    top: 40%;
     width: 90%;
   }
   .resources {
@@ -340,5 +341,11 @@ a:hover {
   }
   .mobile_become p {
     font-size: 16px;
+  }
+  #skip {
+    bottom: 120px;
+  }
+  #pointer_icon {
+    bottom: 16%;
   }
 }
