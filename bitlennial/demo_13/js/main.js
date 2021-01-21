@@ -747,7 +747,7 @@ function selected_state(obj) {
 function unselect_state() {
   $("canvas").onclick = null;
   $("canvas").style.cursor = "default";
-  let all_obj = [stop1_1, stop1_2, stop1_3, stop1_4, stop2_1, stop2_2, stop2_3, stop2_4, stop3_email, stop3_1, stop3_2, stop3_3, stop3_4]
+  let all_obj = [stop1_1, stop1_2, stop1_3, stop1_4, stop2_1, stop2_2, stop2_3, stop2_4, stop3_email]
   for(let i = 0; i < all_obj.length; i++) {
     all_obj[i].material.color.set(0xffffff);
     all_obj[i].scale.set(1, 1, 1);
@@ -758,6 +758,7 @@ function unselect_state() {
   if(ismobile) {
     why.scale.set(5,5,5);
   }
+  console.log("working");
 }
 
 function options_active() {
@@ -786,6 +787,9 @@ function close_all() {
 
 document.addEventListener('scroll', function(e) {
   scene2_cam_pos = 620 * getScrollPercent();
+  if (!sound2.isPlaying) {
+    sound2.play();
+  }
 });
 
 // Window events
