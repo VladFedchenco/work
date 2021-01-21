@@ -5,6 +5,7 @@ let rocket, flame, logo, why, countdown, smoke;
 let sound, sound_init, audioLoader;
 
 let help_cam = false;
+let is_started = false; // to avoid window focus issues on mobile
 
 let is_scene2 = false;
 let scene2_cam_pos = 0;
@@ -715,6 +716,7 @@ function animate() {
       }
 
       $("canvas").onclick = function() {
+        is_started = true;
         $("#skip").style.display = "none";
         if(unlock) {
           camera_before_start_y = camera.position.y
@@ -808,14 +810,16 @@ function win_blur() {
 }
 
 function win_focus() {
-  if(music) {
-    cancelAnimationFrame(req_af);
-    req_af = requestAnimationFrame(animate);
-    sound.play();
-  } else {
-    cancelAnimationFrame(req_af);
-    req_af = requestAnimationFrame(animate2);
-    sound2.play();
+  if(is_started) {
+    if(music) {
+      cancelAnimationFrame(req_af);
+      req_af = requestAnimationFrame(animate);
+      sound.play();
+    } else {
+      cancelAnimationFrame(req_af);
+      req_af = requestAnimationFrame(animate2);
+      sound2.play();
+    }
   }
 }
 
