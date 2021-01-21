@@ -809,20 +809,20 @@ function win_blur() {
   } else {
     sound2.pause();
   }
-  cancelAnimationFrame(req_af);
+  //cancelAnimationFrame(req_af);
 }
 
 function win_focus() {
   if(is_started) {
     if(music) {
-      cancelAnimationFrame(req_af);
-      req_af = requestAnimationFrame(animate);
+      // cancelAnimationFrame(req_af);
+      // req_af = requestAnimationFrame(animate);
       if(!unlock && !sound2.isPlaying) {
         sound.play();
       }
     } else {
-      cancelAnimationFrame(req_af);
-      req_af = requestAnimationFrame(animate2);
+      // cancelAnimationFrame(req_af);
+      // req_af = requestAnimationFrame(animate2);
       if (!sound2.isPlaying) {
         sound2.play();
       }
