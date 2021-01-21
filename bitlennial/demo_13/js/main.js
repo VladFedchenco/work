@@ -56,6 +56,7 @@ manager.onLoad = function ( ) {
     $("#loader").style.opacity = 0;
     is_scene2 ? animate2() : animate() ;
     $("#skip").style.display = "block";
+    is_started = true;
     setTimeout(function(){
       $("#loader").style.display = "none";
     }, 1000);
@@ -716,7 +717,6 @@ function animate() {
       }
 
       $("canvas").onclick = function() {
-        is_started = true;
         $("#skip").style.display = "none";
         if(unlock) {
           camera_before_start_y = camera.position.y
@@ -773,7 +773,7 @@ function OpenInNewTabWinBrowser(url) {
 function close_all() {
   $("#scene2_options").classList.remove("active");
   $("#close_bttn").classList.remove("active");
-  $("#close_bttn").classList.add("email_section");
+  $("#close_bttn").classList.remove("email_section");
 
   $("#space_music").classList.add("inactive");
   $("#become").classList.add("inactive");
@@ -804,8 +804,11 @@ function onWindowResize(){
 }
 
 function win_blur() {
-  sound.pause();
-  sound2.pause();
+  if(music) {
+    sound.pause();
+  } else {
+    sound2.pause();
+  }
   cancelAnimationFrame(req_af);
 }
 
@@ -814,11 +817,15 @@ function win_focus() {
     if(music) {
       cancelAnimationFrame(req_af);
       req_af = requestAnimationFrame(animate);
-      sound.play();
+      if(!unlock && !sound2.isPlaying) {
+        sound.play();
+      }
     } else {
       cancelAnimationFrame(req_af);
       req_af = requestAnimationFrame(animate2);
-      sound2.play();
+      if (!sound2.isPlaying) {
+        sound2.play();
+      }
     }
   }
 }
@@ -974,31 +981,31 @@ function animate2() {
         $("#close_bttn").addEventListener("click", close_all);
         options_active();
       }
-    } else if (raycaster2.intersectObject(stop2_1).length > 0) {
+    } else if (raycaster2.intersectObject(stop2_1).length > 0 && scene2_cam_pos > 200 && scene2_cam_pos < 400) {
       unselect_state();
       selected_state(stop2_1);
       $("canvas").onclick = function() {
         OpenInNewTabWinBrowser("watch.html");
       }
-    } else if (raycaster2.intersectObject(stop2_2).length > 0) {
+    } else if (raycaster2.intersectObject(stop2_2).length > 0 && scene2_cam_pos > 200 && scene2_cam_pos < 400) {
       unselect_state();
       selected_state(stop2_2)
       $("canvas").onclick = function() {
         OpenInNewTabWinBrowser("listen.html");
       }
-    } else if (raycaster2.intersectObject(stop2_3).length > 0) {
+    } else if (raycaster2.intersectObject(stop2_3).length > 0 && scene2_cam_pos > 200 && scene2_cam_pos < 400) {
       unselect_state();
       selected_state(stop2_3)
       $("canvas").onclick = function() {
         OpenInNewTabWinBrowser("read.html");
       }
-    } else if (raycaster2.intersectObject(stop2_4).length > 0) {
+    } else if (raycaster2.intersectObject(stop2_4).length > 0 && scene2_cam_pos > 200 && scene2_cam_pos < 400) {
       unselect_state();
       selected_state(stop2_4)
       $("canvas").onclick = function() {
         OpenInNewTabWinBrowser("subscribe.html");
       }
-    } else if (raycaster2.intersectObject(stop3_email).length > 0) {
+    } else if (raycaster2.intersectObject(stop3_email).length > 0 && scene2_cam_pos > 400 && scene2_cam_pos < 600) {
       unselect_state();
       selected_state(stop3_email);
       $("canvas").onclick = function() {
@@ -1007,7 +1014,7 @@ function animate2() {
         options_active();
         $("#close_bttn").classList.add("email_section");
       }
-    } else if (raycaster2.intersectObject(why.children[1]).length > 0) {
+    } else if (raycaster2.intersectObject(why.children[1]).length > 0 && scene2_cam_pos > 600 && scene2_cam_pos < 630) {
       unselect_state();
       $("canvas").style.cursor = "pointer";
       why.children[0].material.emissiveIntensity = 1.2;
