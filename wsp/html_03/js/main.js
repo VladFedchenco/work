@@ -23,7 +23,7 @@ $("#start").onclick = function() {
 // let css_values = setInterval(get_css, 50);
 
 // function get_css() {
-//   console.log(getComputedStyle($("#corner")).getPropertyValue('transform'));
+//   console.log(getComputedStyle($("#hand_pointer")).getPropertyValue('transform'));
 // }
 
 // function stop_int() {

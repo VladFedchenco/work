@@ -240,18 +240,82 @@ animation-timing-function: steps(1);
 @keyframes corner_20 {95.00%, 100.00%{visibility: visible}}
 
 
-#main_star.rotation {
-  animation: star 1.5s ease-in-out forwards;
+.start_1, .start_2, .start_3, .start_4, .start_5, .start_6, .start_7, .start_8, .start_9, .start_10, .start_11, .start_12, .start_13, .start_14, .start_15, .start_16, .start_17, .start_18, .start_19, .start_20, .start_21, .start_22, .start_23, .start_24, .start_25, .start_26, .start_27, .start_28, .start_29, .start_30, .start_31, .start_32 {
+visibility: hidden;
+animation-duration: 1.5s;
+animation-fill-mode: forwards;
+animation-timing-function: steps(1);
 }
 
-@keyframes star {
-  0% {
-    transform: translate(306px, 390px) rotate(0deg) translate(-306px, -390px);
-  }
-  100% {
-    transform: translate(306px, 390px) rotate(720deg) translate(-306px, -390px);
-  }
+.start_1 {
+  visibility: visible;
 }
+
+.rotation .start_1 {animation-name: start_1}
+.rotation .start_2 {animation-name: start_2}
+.rotation .start_3 {animation-name: start_3}
+.rotation .start_4 {animation-name: start_4}
+.rotation .start_5 {animation-name: start_5}
+.rotation .start_6 {animation-name: start_6}
+.rotation .start_7 {animation-name: start_7}
+.rotation .start_8 {animation-name: start_8}
+.rotation .start_9 {animation-name: start_9}
+.rotation .start_10 {animation-name: start_10}
+.rotation .start_11 {animation-name: start_11}
+.rotation .start_12 {animation-name: start_12}
+.rotation .start_13 {animation-name: start_13}
+.rotation .start_14 {animation-name: start_14}
+.rotation .start_15 {animation-name: start_15}
+.rotation .start_16 {animation-name: start_16}
+.rotation .start_17 {animation-name: start_17}
+.rotation .start_18 {animation-name: start_18}
+.rotation .start_19 {animation-name: start_19}
+.rotation .start_20 {animation-name: start_20}
+.rotation .start_21 {animation-name: start_21}
+.rotation .start_22 {animation-name: start_22}
+.rotation .start_23 {animation-name: start_23}
+.rotation .start_24 {animation-name: start_24}
+.rotation .start_25 {animation-name: start_25}
+.rotation .start_26 {animation-name: start_26}
+.rotation .start_27 {animation-name: start_27}
+.rotation .start_28 {animation-name: start_28}
+.rotation .start_29 {animation-name: start_29}
+.rotation .start_30 {animation-name: start_30}
+.rotation .start_31 {animation-name: start_31}
+.rotation .start_32 {animation-name: start_32}
+
+@keyframes start_1 {0.00%{visibility: visible} 3.13%{visibility: hidden}}
+@keyframes start_2 {3.13%{visibility: visible} 6.25%{visibility: hidden}}
+@keyframes start_3 {6.25%{visibility: visible} 9.38%{visibility: hidden}}
+@keyframes start_4 {9.38%{visibility: visible} 12.50%{visibility: hidden}}
+@keyframes start_5 {12.50%{visibility: visible} 15.63%{visibility: hidden}}
+@keyframes start_6 {15.63%{visibility: visible} 18.75%{visibility: hidden}}
+@keyframes start_7 {18.75%{visibility: visible} 21.88%{visibility: hidden}}
+@keyframes start_8 {21.88%{visibility: visible} 25.00%{visibility: hidden}}
+@keyframes start_9 {25.00%{visibility: visible} 28.13%{visibility: hidden}}
+@keyframes start_10 {28.13%{visibility: visible} 31.25%{visibility: hidden}}
+@keyframes start_11 {31.25%{visibility: visible} 34.38%{visibility: hidden}}
+@keyframes start_12 {34.38%{visibility: visible} 37.50%{visibility: hidden}}
+@keyframes start_13 {37.50%{visibility: visible} 40.63%{visibility: hidden}}
+@keyframes start_14 {40.63%{visibility: visible} 43.75%{visibility: hidden}}
+@keyframes start_15 {43.75%{visibility: visible} 46.88%{visibility: hidden}}
+@keyframes start_16 {46.88%{visibility: visible} 50.00%{visibility: hidden}}
+@keyframes start_17 {50.00%{visibility: visible} 53.13%{visibility: hidden}}
+@keyframes start_18 {53.13%{visibility: visible} 56.25%{visibility: hidden}}
+@keyframes start_19 {56.25%{visibility: visible} 59.38%{visibility: hidden}}
+@keyframes start_20 {59.38%{visibility: visible} 62.50%{visibility: hidden}}
+@keyframes start_21 {62.50%{visibility: visible} 65.63%{visibility: hidden}}
+@keyframes start_22 {65.63%{visibility: visible} 68.75%{visibility: hidden}}
+@keyframes start_23 {68.75%{visibility: visible} 71.88%{visibility: hidden}}
+@keyframes start_24 {71.88%{visibility: visible} 75.00%{visibility: hidden}}
+@keyframes start_25 {75.00%{visibility: visible} 78.13%{visibility: hidden}}
+@keyframes start_26 {78.13%{visibility: visible} 81.25%{visibility: hidden}}
+@keyframes start_27 {81.25%{visibility: visible} 84.38%{visibility: hidden}}
+@keyframes start_28 {84.38%{visibility: visible} 87.50%{visibility: hidden}}
+@keyframes start_29 {87.50%{visibility: visible} 90.63%{visibility: hidden}}
+@keyframes start_30 {90.63%{visibility: visible} 93.75%{visibility: hidden}}
+@keyframes start_31 {93.75%{visibility: visible} 96.88%{visibility: hidden}}
+@keyframes start_32 {96.88%{visibility: visible} 100.00%{visibility: hidden}}
 
 #scene_02 {
   width: 422px;
@@ -369,39 +433,69 @@ animation-timing-function: steps(1);
   transition: opacity .2s linear;
 }
 
-#click_circles {
-  animation: click_circles 2.4s ease-in-out infinite;
-  transition: opacity .2s linear;
+#circles_1, #circles_2, #circles_3, #circles_4, #circles_5, #circles_6, #circles_7, #circles_8, #circles_9, #circles_10, #circles_11, #circles_12, #circles_13, #circles_14, #circles_15, #circles_16, #circles_17 {
+visibility: hidden;
+animation-duration: 2.2s;
+animation-iteration-count: infinite;
+animation-timing-function: steps(1);
 }
 
-@keyframes click_circles {
-  0%, 25% {
-    transform: translate(402px, 618px) scale(1) translate(-402px, -618px);
-    opacity: 0;
-  }
-  40% {
-    opacity: 1;
-  }
-  55%, 100% {
-    transform: translate(402px, 618px) scale(1.6) translate(-402px, -618px);
-    opacity: 0;
-  }
+#circles_1 {animation-name: circles_1}
+#circles_2 {animation-name: circles_2}
+#circles_3 {animation-name: circles_3}
+#circles_4 {animation-name: circles_4}
+#circles_5 {animation-name: circles_5}
+#circles_6 {animation-name: circles_6}
+#circles_7 {animation-name: circles_7}
+#circles_8 {animation-name: circles_8}
+#circles_9 {animation-name: circles_9}
+#circles_10 {animation-name: circles_10}
+#circles_11 {animation-name: circles_11}
+#circles_12 {animation-name: circles_12}
+#circles_13 {animation-name: circles_13}
+#circles_14 {animation-name: circles_14}
+#circles_15 {animation-name: circles_15}
+#circles_16 {animation-name: circles_16}
+#circles_17 {animation-name: circles_17}
+
+@keyframes circles_1 {0%{visibility: visible} 26.47%{visibility: hidden}}
+@keyframes circles_2 {26.47%{visibility: visible} 29.41%{visibility: hidden}}
+@keyframes circles_3 {29.41%{visibility: visible} 32.35%{visibility: hidden}}
+@keyframes circles_4 {32.35%{visibility: visible} 35.29%{visibility: hidden}}
+@keyframes circles_5 {35.29%{visibility: visible} 38.24%{visibility: hidden}}
+@keyframes circles_6 {38.24%{visibility: visible} 41.18%{visibility: hidden}}
+@keyframes circles_7 {41.18%{visibility: visible} 44.12%{visibility: hidden}}
+@keyframes circles_8 {44.12%{visibility: visible} 47.06%{visibility: hidden}}
+@keyframes circles_9 {47.06%{visibility: visible} 50.00%{visibility: hidden}}
+@keyframes circles_10 {50.00%{visibility: visible} 52.94%{visibility: hidden}}
+@keyframes circles_11 {52.94%{visibility: visible} 55.88%{visibility: hidden}}
+@keyframes circles_12 {55.88%{visibility: visible} 58.82%{visibility: hidden}}
+@keyframes circles_13 {58.82%{visibility: visible} 61.76%{visibility: hidden}}
+@keyframes circles_14 {61.76%{visibility: visible} 64.71%{visibility: hidden}}
+@keyframes circles_15 {64.71%{visibility: visible} 67.65%{visibility: hidden}}
+@keyframes circles_16 {67.65%{visibility: visible} 70.59%{visibility: hidden}}
+@keyframes circles_17 {70.59%{visibility: visible} 100%{visibility: hidden}}
+
+#hand_pointer_1, #hand_pointer_2, #hand_pointer_3, #hand_pointer_4, #hand_pointer_5, #hand_pointer_6 {
+visibility: hidden;
+animation-duration: 2.2s;
+animation-iteration-count: infinite;
+animation-timing-function: steps(1);
 }
 
-#hand_pointer {
-  animation: hand_pointer 2.4s ease-in-out infinite;
-  transition: opacity .2s linear;
-}
+#hand_pointer_1 {animation-name: hand_pointer_1}
+#hand_pointer_2 {animation-name: hand_pointer_2}
+#hand_pointer_3 {animation-name: hand_pointer_3}
+#hand_pointer_4 {animation-name: hand_pointer_4}
+#hand_pointer_5 {animation-name: hand_pointer_5}
+#hand_pointer_6 {animation-name: hand_pointer_6}
 
-@keyframes hand_pointer {
-  0%, 20%, 30%, 100% {
-    transform: translate(0px, 0px);
-  }
-  25% {
-    transform: translate(0px, 6px);
-  }
-
-}
+@keyframes hand_pointer_1 {0%{visibility: visible} 20.59%{visibility: hidden}}
+@keyframes hand_pointer_2 {20.59%{visibility: visible} 23.53%{visibility: hidden}}
+@keyframes hand_pointer_3 {23.53%{visibility: visible} 26.47%{visibility: hidden}}
+@keyframes hand_pointer_4 {26.47%{visibility: visible} 29.41%{visibility: hidden}}
+@keyframes hand_pointer_5 {29.41%{visibility: visible} 32.35%{visibility: hidden}}
+@keyframes hand_pointer_6 {32.35%{visibility: visible} 100%{visibility: hidden}}
 
 #pointer_text.hidden, #click_circles.hidden, #hand_pointer.hidden {
   animation: none;
