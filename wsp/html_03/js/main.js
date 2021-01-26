@@ -3,17 +3,18 @@ function $(sel) {
 }
 
 $("#start").onclick = function() {
-  $("#main_star").classList.add("rotation");
-  $("#click_circles").classList.add("hidden");
-  $("#hand_pointer").classList.add("hidden");
-  $("#pointer_text").classList.add("hidden");
+  $("#main_star").setAttribute("class", "rotation");
+  $("#click_circles").setAttribute("class", "hidden");
+  $("#hand_pointer").setAttribute("class", "hidden");
+  $("#pointer_text").setAttribute("class", "hidden");
+
   setTimeout(function(){
-    $("#corner_animation").classList.add("active");
+    $("#corner_animation").setAttribute("class", "active");
     setTimeout(function(){
-      $("#scene_01").classList.add("inactive");
-      $("#scene_02").classList.remove("inactive");
+      $("#scene_01").setAttribute("class", "inactive");
+      $("#scene_02").setAttribute("class", "paused");
       setTimeout(function(){
-        $("#scene_02").classList.remove("paused");
+        $("#scene_02").setAttribute("class", "");
       }, 50);
     }, 1000);
   }, 1500);
