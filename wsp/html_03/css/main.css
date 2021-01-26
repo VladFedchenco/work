@@ -1,0 +1,446 @@
+* {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
+}
+
+*:focus {
+    outline: none;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h2, h3 {
+  margin: 0;
+}
+
+.ttl_header {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding: 16px 0;
+  text-align: center;
+  background-color: #3d90b8;
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+}
+
+#scene_01 {
+  position: absolute;
+  left: 50%;
+  width: 604px;
+  height: 639px;
+  padding-top: 100px;
+  transform: translateX(-50%);
+}
+
+#scene_01.inactive, #scene_02.inactive {
+  display: none;
+}
+
+.blick1 {
+  animation: blick .6s linear infinite;
+}
+
+.blick2 {
+  animation: blick .6s .3s linear infinite;
+}
+
+@keyframes blick {
+  0%, 33% {
+    opacity: .8;
+  }
+  66%, 100% {
+    opacity: 1;
+  }
+}
+
+.st1_1, .st1_2, .st1_3, .st1_4, .st1_5, .st1_6, .st1_7, .st1_8, .st1_9, .st1_10, .st1_11, .st1_12, .st1_13, .st1_14, .st1_15, .st1_16 {
+visibility: hidden;
+animation-duration: 3s;
+animation-iteration-count: infinite;
+animation-timing-function: steps(1);
+}
+
+.st2_1, .st2_2, .st2_3, .st2_4, .st2_5, .st2_6, .st2_7, .st2_8, .st2_9, .st2_10, .st2_11, .st2_12, .st2_13, .st2_14, .st2_15, .st2_16 {
+visibility: hidden;
+animation-duration: 3s;
+animation-delay: -.5s;
+animation-iteration-count: infinite;
+animation-timing-function: steps(1);
+}
+
+.st3_1, .st3_2, .st3_3, .st3_4, .st3_5, .st3_6, .st3_7, .st3_8, .st3_9, .st3_10, .st3_11, .st3_12, .st3_13, .st3_14, .st3_15, .st3_16 {
+visibility: hidden;
+animation-duration: 3s;
+animation-delay: -.5s;
+animation-iteration-count: infinite;
+animation-timing-function: steps(1);
+}
+
+.st4_1, .st4_2, .st4_3, .st4_4, .st4_5, .st4_6, .st4_7, .st4_8, .st4_9, .st4_10, .st4_11, .st4_12, .st4_13, .st4_14, .st4_15, .st4_16 {
+visibility: hidden;
+animation-duration: 3s;
+animation-delay: -1s;
+animation-iteration-count: infinite;
+animation-timing-function: steps(1);
+}
+
+.st5_1, .st5_2, .st5_3, .st5_4, .st5_5, .st5_6, .st5_7, .st5_8, .st5_9, .st5_10, .st5_11, .st5_12, .st5_13, .st5_14, .st5_15, .st5_16 {
+visibility: hidden;
+animation-duration: 3s;
+animation-delay: -1s;
+animation-iteration-count: infinite;
+animation-timing-function: steps(1);
+}
+
+.st6_1, .st6_2, .st6_3, .st6_4, .st6_5, .st6_6, .st6_7, .st6_8, .st6_9, .st6_10, .st6_11, .st6_12, .st6_13, .st6_14, .st6_15, .st6_16 {
+visibility: hidden;
+animation-duration: 3s;
+animation-delay: -1.5s;
+animation-iteration-count: infinite;
+animation-timing-function: steps(1);
+}
+
+.st7_1, .st7_2, .st7_3, .st7_4, .st7_5, .st7_6, .st7_7, .st7_8, .st7_9, .st7_10, .st7_11, .st7_12, .st7_13, .st7_14, .st7_15, .st7_16 {
+visibility: hidden;
+animation-duration: 3s;
+animation-delay: -1.5s;
+animation-iteration-count: infinite;
+animation-timing-function: steps(1);
+}
+
+.st8_1, .st8_2, .st8_3, .st8_4, .st8_5, .st8_6, .st8_7, .st8_8, .st8_9, .st8_10, .st8_11, .st8_12, .st8_13, .st8_14, .st8_15, .st8_16 {
+visibility: hidden;
+animation-duration: 3s;
+animation-delay: -2s;
+animation-iteration-count: infinite;
+animation-timing-function: steps(1);
+}
+
+.st9_1, .st9_2, .st9_3, .st9_4, .st9_5, .st9_6, .st9_7, .st9_8, .st9_9, .st9_10, .st9_11, .st9_12, .st9_13, .st9_14, .st9_15, .st9_16 {
+visibility: hidden;
+animation-duration: 3s;
+animation-delay: -2s;
+animation-iteration-count: infinite;
+animation-timing-function: steps(1);
+}
+
+.st10_1, .st10_2, .st10_3, .st10_4, .st10_5, .st10_6, .st10_7, .st10_8, .st10_9, .st10_10, .st10_11, .st10_12, .st10_13, .st10_14, .st10_15, .st10_16 {
+visibility: hidden;
+animation-duration: 3s;
+animation-delay: -2.5s;
+animation-iteration-count: infinite;
+animation-timing-function: steps(1);
+}
+
+.st11_1, .st11_2, .st11_3, .st11_4, .st11_5, .st11_6, .st11_7, .st11_8, .st11_9, .st11_10, .st11_11, .st11_12, .st11_13, .st11_14, .st11_15, .st11_16 {
+visibility: hidden;
+animation-duration: 3s;
+animation-delay: -2.5s;
+animation-iteration-count: infinite;
+animation-timing-function: steps(1);
+}
+
+.st1_1, .st2_1, .st3_1, .st4_1, .st5_1, .st6_1, .st7_1, .st8_1, .st9_1, .st10_1, .st11_1 {animation-name: st1_1}
+.st1_2, .st2_2, .st3_2, .st4_2, .st5_2, .st6_2, .st7_2, .st8_2, .st9_2, .st10_2, .st11_2 {animation-name: st1_2}
+.st1_3, .st2_3, .st3_3, .st4_3, .st5_3, .st6_3, .st7_3, .st8_3, .st9_3, .st10_3, .st11_3 {animation-name: st1_3}
+.st1_4, .st2_4, .st3_4, .st4_4, .st5_4, .st6_4, .st7_4, .st8_4, .st9_4, .st10_4, .st11_4 {animation-name: st1_4}
+.st1_5, .st2_5, .st3_5, .st4_5, .st5_5, .st6_5, .st7_5, .st8_5, .st9_5, .st10_5, .st11_5 {animation-name: st1_5}
+.st1_6, .st2_6, .st3_6, .st4_6, .st5_6, .st6_6, .st7_6, .st8_6, .st9_6, .st10_6, .st11_6 {animation-name: st1_6}
+.st1_7, .st2_7, .st3_7, .st4_7, .st5_7, .st6_7, .st7_7, .st8_7, .st9_7, .st10_7, .st11_7 {animation-name: st1_7}
+.st1_8, .st2_8, .st3_8, .st4_8, .st5_8, .st6_8, .st7_8, .st8_8, .st9_8, .st10_8, .st11_8 {animation-name: st1_8}
+.st1_9, .st2_9, .st3_9, .st4_9, .st5_9, .st6_9, .st7_9, .st8_9, .st9_9, .st10_9, .st11_9 {animation-name: st1_9}
+.st1_10, .st2_10, .st3_10, .st4_10, .st5_10, .st6_10, .st7_10, .st8_10, .st9_10, .st10_10, .st11_10 {animation-name: st1_10}
+.st1_11, .st2_11, .st3_11, .st4_11, .st5_11, .st6_11, .st7_11, .st8_11, .st9_11, .st10_11, .st11_11 {animation-name: st1_11}
+.st1_12, .st2_12, .st3_12, .st4_12, .st5_12, .st6_12, .st7_12, .st8_12, .st9_12, .st10_12, .st11_12 {animation-name: st1_12}
+.st1_13, .st2_13, .st3_13, .st4_13, .st5_13, .st6_13, .st7_13, .st8_13, .st9_13, .st10_13, .st11_13 {animation-name: st1_13}
+.st1_14, .st2_14, .st3_14, .st4_14, .st5_14, .st6_14, .st7_14, .st8_14, .st9_14, .st10_14, .st11_14 {animation-name: st1_14}
+.st1_15, .st2_15, .st3_15, .st4_15, .st5_15, .st6_15, .st7_15, .st8_15, .st9_15, .st10_15, .st11_15 {animation-name: st1_15}
+.st1_16, .st2_16, .st3_16, .st4_16, .st5_16, .st6_16, .st7_16, .st8_16, .st9_16, .st10_16, .st11_16 {animation-name: st1_16}
+
+@keyframes st1_1 {0.00%, 98.33%{visibility: visible} 25%, 100.00%{visibility: hidden}}
+@keyframes st1_2 {25.00%, 96.67%{visibility: visible} 26.67%, 98.33%{visibility: hidden}}
+@keyframes st1_3 {26.67%, 95.00%{visibility: visible} 28.33%, 96.67%{visibility: hidden}}
+@keyframes st1_4 {28.33%, 93.33%{visibility: visible} 30.00%, 95.00%{visibility: hidden}}
+@keyframes st1_5 {30.00%, 91.67%{visibility: visible} 31.67%, 93.33%{visibility: hidden}}
+@keyframes st1_6 {31.67%, 90.00%{visibility: visible} 33.33%, 91.67%{visibility: hidden}}
+@keyframes st1_7 {33.33%, 88.33%{visibility: visible} 35.00%, 90.00%{visibility: hidden}}
+@keyframes st1_8 {35.00%, 86.67%{visibility: visible} 36.67%, 88.33%{visibility: hidden}}
+@keyframes st1_9 {36.67%, 85.00%{visibility: visible} 38.33%, 86.67%{visibility: hidden}}
+@keyframes st1_10 {38.33%, 83.33%{visibility: visible} 40.00%, 85.00%{visibility: hidden}}
+@keyframes st1_11 {40.00%, 81.67%{visibility: visible} 41.67%, 83.33%{visibility: hidden}}
+@keyframes st1_12 {41.67%, 80.00%{visibility: visible} 43.33%, 81.67%{visibility: hidden}}
+@keyframes st1_13 {43.33%, 78.33%{visibility: visible} 45.00%, 80.00%{visibility: hidden}}
+@keyframes st1_14 {45.00%, 76.67%{visibility: visible} 46.67%, 78.33%{visibility: hidden}}
+@keyframes st1_15 {46.67%, 75.00%{visibility: visible} 48.33%, 76.67%{visibility: hidden}}
+@keyframes st1_16 {48.33%{visibility: visible} 75.00%{visibility: hidden}}
+
+#corner_animation {
+  display: none;
+}
+
+#corner_animation.active {
+  display: block;
+}
+
+.corner_1, .corner_2, .corner_3, .corner_4, .corner_5, .corner_6, .corner_7, .corner_8, .corner_9, .corner_10, .corner_11, .corner_12, .corner_13, .corner_14, .corner_15, .corner_16, .corner_17, .corner_18, .corner_19, .corner_20 {
+visibility: hidden;
+animation-duration: 1s;
+animation-fill-mode: forwards;
+animation-timing-function: steps(1);
+}
+
+.active .corner_1 {animation-name: corner_1}
+.active .corner_2 {animation-name: corner_2}
+.active .corner_3 {animation-name: corner_3}
+.active .corner_4 {animation-name: corner_4}
+.active .corner_5 {animation-name: corner_5}
+.active .corner_6 {animation-name: corner_6}
+.active .corner_7 {animation-name: corner_7}
+.active .corner_8 {animation-name: corner_8}
+.active .corner_9 {animation-name: corner_9}
+.active .corner_10 {animation-name: corner_10}
+.active .corner_11 {animation-name: corner_11}
+.active .corner_12 {animation-name: corner_12}
+.active .corner_13 {animation-name: corner_13}
+.active .corner_14 {animation-name: corner_14}
+.active .corner_15 {animation-name: corner_15}
+.active .corner_16 {animation-name: corner_16}
+.active .corner_17 {animation-name: corner_17}
+.active .corner_18 {animation-name: corner_18}
+.active .corner_19 {animation-name: corner_19}
+.active .corner_20 {animation-name: corner_20}
+
+@keyframes corner_1 {0.00%{visibility: visible} 5.00%{visibility: hidden}}
+@keyframes corner_2 {5.00%{visibility: visible} 10.00%{visibility: hidden}}
+@keyframes corner_3 {10.00%{visibility: visible} 15.00%{visibility: hidden}}
+@keyframes corner_4 {15.00%{visibility: visible} 20.00%{visibility: hidden}}
+@keyframes corner_5 {20.00%{visibility: visible} 25.00%{visibility: hidden}}
+@keyframes corner_6 {25.00%{visibility: visible} 30.00%{visibility: hidden}}
+@keyframes corner_7 {30.00%{visibility: visible} 35.00%{visibility: hidden}}
+@keyframes corner_8 {35.00%{visibility: visible} 40.00%{visibility: hidden}}
+@keyframes corner_9 {40.00%{visibility: visible} 45.00%{visibility: hidden}}
+@keyframes corner_10 {45.00%{visibility: visible} 50.00%{visibility: hidden}}
+@keyframes corner_11 {50.00%{visibility: visible} 55.00%{visibility: hidden}}
+@keyframes corner_12 {55.00%{visibility: visible} 60.00%{visibility: hidden}}
+@keyframes corner_13 {60.00%{visibility: visible} 65.00%{visibility: hidden}}
+@keyframes corner_14 {65.00%{visibility: visible} 70.00%{visibility: hidden}}
+@keyframes corner_15 {70.00%{visibility: visible} 75.00%{visibility: hidden}}
+@keyframes corner_16 {75.00%{visibility: visible} 80.00%{visibility: hidden}}
+@keyframes corner_17 {80.00%{visibility: visible} 85.00%{visibility: hidden}}
+@keyframes corner_18 {85.00%{visibility: visible} 90.00%{visibility: hidden}}
+@keyframes corner_19 {90.00%{visibility: visible} 95.00%{visibility: hidden}}
+@keyframes corner_20 {95.00%, 100.00%{visibility: visible}}
+
+
+#main_star.rotation {
+  animation: star 1.5s ease-in-out forwards;
+}
+
+@keyframes star {
+  0% {
+    transform: translate(306px, 390px) rotate(0deg) translate(-306px, -390px);
+  }
+  100% {
+    transform: translate(306px, 390px) rotate(720deg) translate(-306px, -390px);
+  }
+}
+
+#scene_02 {
+  width: 422px;
+  margin: 0 auto;
+  padding-top: 80px;
+  text-align: center;
+}
+
+#scene_02.paused h2, #scene_02.paused h3, #scene_02.paused #gift_img, #scene_02.paused p, #scene_02.paused .bottom_button {
+  opacity: 0;
+}
+
+#scene_02 h2 {
+  color: #1f5391;
+  font-size: 42px;
+  line-height: 1.1;
+  opacity: 1;
+  transition: opacity .4s 2s ease;
+}
+
+#scene_02 h3 {
+  width: 100%;
+  position: absolute;
+  transform: translate(-50%, 0) scale(1);
+  top: 80px;
+  left: 50%;
+  color: #3d90b8;
+  margin-bottom: 16px;
+  opacity: 1;
+  transition: opacity .4s ease;
+  animation: wohoo 1.6s ease-in-out forwards;
+}
+
+@keyframes wohoo {
+  0% {
+    opacity: 0;
+    top: 50%;
+    transform: translate(-50%, 0) scale(0);
+  }
+  40%, 60% {
+    opacity: 1;
+    top: 50%;
+    transform: translate(-50%, 0) scale(1.6);
+  }
+  100% {
+    opacity: 1;
+    top: 80px;
+    transform: translate(-50%, 0) scale(1);
+  }
+}
+
+#gift_img {
+  margin-top: 32px;
+  position: relative;
+  opacity: 1;
+  transition: opacity .4s 1.8s ease;
+}
+
+#prize {
+  position: absolute;
+  left: 50%;
+  top: 132px;
+  transform: translateX(-50%);
+}
+
+#scene_02 p {
+  opacity: 1;
+  transition: opacity .4s 2.2s ease;
+}
+
+.bottom_button {
+  border-top: solid 1px #aaa;
+  padding-top: 8px;
+  margin: 0 8px;
+  opacity: 1;
+  transition: opacity .4s 2.4s ease;
+}
+
+.bottom_button p {
+  font-style: italic;
+}
+
+#bttn {
+  display: inline-block;
+  background: linear-gradient(#f5ea6e 0%, #f5ea6e 50%, #f4da4a 50%, #f4da4a 100%);
+  border-radius: 48px;
+  border: solid 1px #c89332;
+  padding: 12px 48px;
+  text-decoration: none;
+  font-weight: 700;
+  color: #000;
+  text-shadow: 0px 1px 0px #fff;
+  transition: all .2s ease;
+}
+
+#bttn:hover {
+  color: #00305b;
+  background: linear-gradient(#f4da4a 0%, #f4da4a 50%, #f5ea6e 50%, #f5ea6e 100%);
+}
+
+#bttn svg {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin: 0px 4px -4px 0px;
+}
+
+#bttn:hover svg path {
+  fill: #00305b;;
+}
+
+#pointer_text {
+  font-size: 28px;
+  fill: #005396;
+  transition: opacity .2s linear;
+}
+
+#click_circles {
+  animation: click_circles 2.4s ease-in-out infinite;
+  transition: opacity .2s linear;
+}
+
+@keyframes click_circles {
+  0%, 25% {
+    transform: translate(402px, 618px) scale(1) translate(-402px, -618px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  55%, 100% {
+    transform: translate(402px, 618px) scale(1.6) translate(-402px, -618px);
+    opacity: 0;
+  }
+}
+
+#hand_pointer {
+  animation: hand_pointer 2.4s ease-in-out infinite;
+  transition: opacity .2s linear;
+}
+
+@keyframes hand_pointer {
+  0%, 20%, 30%, 100% {
+    transform: translate(0px, 0px);
+  }
+  25% {
+    transform: translate(0px, 6px);
+  }
+
+}
+
+#pointer_text.hidden, #click_circles.hidden, #hand_pointer.hidden {
+  animation: none;
+  opacity: 0;
+  pointer-events: none;
+}
+
+@media screen and (max-width: 750px) {
+  #scene_01 {
+      position: static;
+      width: 100%;
+      max-width: 636px;
+      margin: 0 auto;
+      height: auto;
+      padding: 100px 16px 16px 16px;
+      transform: none;
+  }
+
+  #scene_02 {
+    width: 100%;
+    max-width: 454px;
+    margin: 0 auto;
+    padding: 80px 16px 16px 16px;
+  }
+
+  #gift_img svg {
+    max-width: 422px;
+    width: 100%;
+    height: auto;
+  }
+
+  #prize {
+    top: auto;
+    bottom: 36px;
+    max-width: 284px;
+    width: 70%;
+  }
+
+  #scene_02 h2 {
+    font-size: 32px;
+  }
+}
