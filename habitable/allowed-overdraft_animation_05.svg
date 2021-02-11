@@ -1,0 +1,166 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#45DBCC" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" viewBox="0 0 120 79">
+<style>
+/* <![CDATA[ */
+#border {
+  animation: border 2.8s ease-in-out forwards;
+}
+@keyframes border {
+  0% {
+    stroke-dashoffset: 267.3px;
+  }
+  33%, 100% {
+    stroke-dashoffset: 534.6px;
+  }
+}
+
+#dash1 {
+  animation: dash1 2.8s ease-in-out forwards;
+}
+@keyframes dash1 {
+  0%, 8% {
+    stroke-dashoffset: 2px;
+  }
+  13%, 100% {
+    stroke-dashoffset: 0px;
+  }
+}
+
+#dash2 {
+  animation: dash2 2.8s ease-in-out forwards;
+}
+@keyframes dash2 {
+  0%, 13% {
+    stroke-dashoffset: 2px;
+  }
+  18%, 100% {
+    stroke-dashoffset: 0px;
+  }
+}
+
+#dash3 {
+  animation: dash3 2.8s ease-in-out forwards;
+}
+@keyframes dash3 {
+  0%, 18% {
+    stroke-dashoffset: 2px;
+  }
+  23%, 100% {
+    stroke-dashoffset: 0px;
+  }
+}
+
+#dash4 {
+  animation: dash4 2.8s ease-in-out forwards;
+}
+@keyframes dash4 {
+  0%, 23% {
+    stroke-dashoffset: 2px;
+  }
+  28%, 100% {
+    stroke-dashoffset: 0px;
+  }
+}
+
+#dash5 {
+  animation: dash5 2.8s ease-in-out forwards;
+}
+@keyframes dash5 {
+  0%, 28% {
+    stroke-dashoffset: 2px;
+  }
+  33%, 100% {
+    stroke-dashoffset: 0px;
+  }
+}
+
+#arrow-base {
+  animation: arrow-base 2.8s ease-in-out forwards;
+}
+@keyframes arrow-base {
+  0%, 10% {
+    r: 0px;
+  }
+  18% {
+    r: 6px;
+  }
+  22%, 100% {
+    r: 5px;
+  }
+}
+
+#arrow1 {
+  animation: arrow1 4.2s cubic-bezier(1,.15,.7,.8) forwards;
+}
+@keyframes arrow1 {
+  0%, 15% {
+    stroke-dashoffset: 24.1px;
+  }
+  22%, 100% {
+    stroke-dashoffset: 0px;
+  }
+  0%, 20% {
+    transform: translate(60px, 68px) rotate(0deg) translate(-60px, -68px);
+  }
+  35%, 100% {
+    transform: translate(60px, 68px) rotate(176deg) translate(-60px, -68px);
+  }
+  0%, 35% {
+    opacity: 1;
+  }
+  35.1%, 100% {
+    opacity: 0;
+  }
+}
+
+#arrow2 {
+  animation: arrow2 4.2s cubic-bezier(.05,.55,.52,.98) forwards;
+}
+@keyframes arrow2 {
+  0%, 37% {
+    transform: translate(60px, 68px) rotate(176deg) translate(-60px, -68px);
+  }
+  40% {
+    transform: translate(60px, 68px) rotate(174deg) translate(-60px, -68px);
+  }
+  41% {
+    transform: translate(60px, 68px) rotate(176deg) translate(-60px, -68px);
+  }
+  51% {
+    transform: translate(60px, 68px) rotate(150deg) translate(-60px, -68px);
+  }
+  55%, 56% {
+    transform: translate(60px, 68px) rotate(176deg) translate(-60px, -68px);
+  }
+  63% {
+    transform: translate(60px, 68px) rotate(160deg) translate(-60px, -68px);
+  }
+  66%, 68% {
+    transform: translate(60px, 68px) rotate(176deg) translate(-60px, -68px);
+  }
+  100% {
+    transform: translate(60px, 68px) rotate(110deg) translate(-60px, -68px);
+  }
+  0%, 35% {
+    opacity: 0;
+  }
+  35.1%, 100% {
+    opacity: 1;
+  }
+}
+
+/* ]]> */
+</style>
+  <g stroke-width="5">
+    <path id="border" stroke-dasharray="267.3" stroke-dashoffset="267.3" d="M88.499 76.499h26.586A57.469 57.469 0 00117.5 60c0-31.756-25.744-57.5-57.5-57.5S2.5 28.244 2.5 60c0 5.736.851 11.271 2.415 16.499h26.587"/>
+    <circle id="arrow-base" cx="60" cy="68" r="5"/>
+    <line id="arrow1" stroke-dasharray="24.1" stroke-dashoffset="24.1" x1="53.15" x2="31.428" y1="66.79" y2="62.964"/>
+    <line id="arrow2" transform="translate(60, 68) rotate(176) translate(-60, -68)" x1="53.15" x2="31.428" y1="66.79" y2="62.964"/>
+  </g>
+  <g stroke-width="6" stroke-dasharray="2" stroke-dashoffset="2" >
+    <line id="dash1" x1="17.5" x2="19.5" y1="60" y2="60"/>
+    <line id="dash2" x1="29.948" x2="31.362" y1="29.948" y2="31.362"/>
+    <line id="dash3" x1="60" x2="60" y1="17.5" y2="19.5"/>
+    <line id="dash4" x1="90.052" x2="88.638" y1="29.948" y2="31.362"/>
+    <line id="dash5" x1="102.5" x2="100.5" y1="60" y2="60"/>
+  </g>
+</svg>
