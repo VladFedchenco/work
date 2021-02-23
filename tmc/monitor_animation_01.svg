@@ -60,6 +60,9 @@ svg|a {
   outline: none;
 }
 
+-webkit-tap-highlight-color: rgba(0,0,0,0);
+-webkit-tap-highlight-color: transparent;
+
 .menu {
   font-family: 'Europa-Light', sans-serif;
   font-size: 48px;
