@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="670" height="670" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 670 670">
+<style>
+/* <![CDATA[ */
+#small {
+  animation: small 50s linear infinite;
+}
+@keyframes small {
+  0% {
+    transform: translate(335px, 335px) rotate(0deg) translate(-335px, -335px);
+  }
+  100% {
+    transform: translate(335px, 335px) rotate(360deg) translate(-335px, -335px);
+  }
+}
+#small-pulse {
+  animation: smallpulse 3s ease-out infinite;
+}
+@keyframes smallpulse {
+  0% {
+    opacity: .5;
+    transform: translate(335px, 335px) rotate(0deg) scale(1) translate(-335px, -335px);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(335px, 335px) rotate(40deg) scale(2) translate(-335px, -335px);
+  }
+}
+#middle-pulse {
+  animation: middlepulse 6s 3s ease-out infinite;
+}
+@keyframes middlepulse {
+  0% {
+    opacity: .3;
+    transform: translate(335px, 335px) scale(1) translate(-335px, -335px);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(335px, 335px) scale(1.5) translate(-335px, -335px);
+  }
+}
+#big-pulse {
+  animation: bigpulse 1.5s ease-out infinite;
+}
+@keyframes bigpulse {
+  0% {
+    opacity: .3;
+    transform: translate(335px, 335px) scale(1) translate(-335px, -335px);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(335px, 335px) scale(1.1) translate(-335px, -335px);
+  }
+}
+/* ]]> */
+</style>
+<circle id="big-pulse" cx="335" cy="335" r="285" stroke="#501DBD" stroke-width="4"/>
+<circle id="big" cx="335" cy="335" r="285" fill="#501DBD" fill-opacity=".08" stroke="#501DBD" stroke-width="4"/>
+<circle id="middle-pulse" cx="335" cy="335" r="190" stroke="#501DBD" stroke-width="4"/>
+<circle id="middle" cx="335" cy="335" r="190" fill="#501DBD" fill-opacity=".08" stroke="#501DBD" stroke-width="4"/>
+<path id="lock" fill="#FFD789" d="M360.25 330.5h-3.375v-10.125c0-11.672-9.703-21.375-21.375-21.375-11.812 0-21.375 9.703-21.375 21.375V330.5h-3.375c-3.797 0-6.75 3.094-6.75 6.75v27c0 3.797 2.953 6.75 6.75 6.75h49.5c3.656 0 6.75-2.953 6.75-6.75v-27c0-3.656-3.094-6.75-6.75-6.75zm-14.625 0h-20.25v-10.125c0-5.484 4.5-10.125 10.125-10.125 5.484 0 10.125 4.641 10.125 10.125V330.5z"/>
+<circle id="small" cx="335" cy="335" r="95" stroke="#501DBD" stroke-dasharray="4 4" stroke-width="2"/>
+<circle id="small-pulse" cx="335" cy="335" r="95" stroke="#501DBD" stroke-dasharray="4 4" stroke-width="2"/>
+</svg>

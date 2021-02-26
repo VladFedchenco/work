@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="670" height="670" fill="none" viewBox="0 0 670 670">
+<style>
+/* <![CDATA[ */
+#big-path {
+  animation: bigpath 40s linear infinite;
+}
+@keyframes bigpath {
+  0% {
+    transform: translate(335px, 335px) rotate(0deg) translate(-335px, -335px);
+  }
+  100% {
+    transform: translate(335px, 335px) rotate(360deg) translate(-335px, -335px);
+  }
+}
+#middle-dots {
+  animation: middledots 50s linear infinite;
+}
+@keyframes middledots {
+  0% {
+    transform: translate(335px, 335px) rotate(0deg) translate(-335px, -335px);
+  }
+  100% {
+    transform: translate(335px, 335px) rotate(360deg) translate(-335px, -335px);
+  }
+}
+#middle-circle {
+  animation: middlecircle 40s linear infinite;
+}
+@keyframes middlecircle {
+  0% {
+    transform: translate(335px, 335px) rotate(0deg) translate(-335px, -335px);
+  }
+  100% {
+    transform: translate(335px, 335px) rotate(-360deg) translate(-335px, -335px);
+  }
+}
+#big-dots {
+  animation: bigdots 60s linear infinite;
+}
+@keyframes bigdots {
+  0% {
+    transform: translate(335px, 335px) rotate(0deg) translate(-335px, -335px);
+  }
+  100% {
+    transform: translate(335px, 335px) rotate(-360deg) translate(-335px, -335px);
+  }
+}
+/* ]]> */
+</style>
+<g clip-path="url(#clip0)">
+<circle id="big-path" cx="335" cy="335" r="285" stroke="#501DBD" stroke-dasharray="4 6" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+<g id="big-dots">
+<path stroke="#501DBD" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M537.113 536.576c111.3-111.3 111.3-291.752 0-403.051-111.299-111.299-291.751-111.299-403.051 0"/>
+<circle cx="536.406" cy="535.869" r="25" fill="#501DBD"/>
+<circle cx="133.355" cy="132.818" r="23" fill="#0A111A" stroke="#501DBD" stroke-width="4"/>
+</g>
+<circle id="middle-circle" cx="335" cy="335" r="190" fill="#501DBD" fill-opacity=".08" stroke="#501DBD" stroke-dasharray="4 4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+<g id="middle-dots">
+<path stroke="#501DBD" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M335 525c-104.934 0-190-85.066-190-190s85.066-190 190-190"/>
+<circle cx="335" cy="145" r="25" fill="#501DBD"/>
+<circle cx="335" cy="525.001" r="23" fill="#0A111A" stroke="#501DBD" stroke-width="4"/>
+</g>
+<circle id="small-circle" cx="335" cy="335" r="95" stroke="#501DBD" stroke-width="4"/>
+<path id="lightning" fill="#FFD789" d="M354.625 321.5h-16.313l6.047-18.141c.563-2.25-1.125-4.359-3.234-4.359h-20.25c-1.688 0-3.235 1.265-3.375 2.953l-4.5 33.75c-.281 2.109 1.265 3.797 3.375 3.797h16.594l-6.469 27.422c-.422 2.109 1.125 4.078 3.234 4.078 1.266 0 2.391-.563 2.953-1.688l24.75-42.75c1.407-2.109-.281-5.062-2.812-5.062z"/>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="670" height="670" fill="white"/>
+</clipPath>
+</defs>
+</svg>
