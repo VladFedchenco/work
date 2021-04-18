@@ -1,0 +1,505 @@
+* {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
+}
+
+*:focus {
+    outline: none;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h2, h3 {
+  margin: 0;
+}
+
+header {
+  position: relative;
+  height: 62px;
+  background-color: #EA0D2A;
+  box-shadow: 0px 2px 4px 2px #DF001F;
+}
+
+footer {
+  padding: 80px 0px 20px 0px;
+}
+
+#menu {
+  position: absolute;
+  top: 18px;
+  right: 24px;
+  display: block;
+  width: 28px;
+  height: 25px;
+  background: linear-gradient(to bottom, #fff 0px, #fff 5px, transparent 5px, transparent 10px, #fff 10px, #fff 15px, transparent 15px, transparent 20px, #fff 20px, #fff 25px)
+}
+
+#content {
+  min-height: 400px;
+}
+
+#main {
+  position: relative;
+  width: 375px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 30px;
+  opacity: 1;
+  transition: all .3s ease-in-out;
+}
+
+#main.hide {
+  opacity: 0;
+}
+
+#main.hide.invis {
+  display: none;
+}
+
+#main_banner img {
+  width: 302px;
+  height: auto;
+}
+
+#main_banner:hover h2 {
+  color: #000;
+}
+
+#pointer-block {
+  position: absolute;
+  right: 40px;
+  top: 294px;
+  pointer-events: none;
+  opacity: 1;
+  transition: all .3s ease;
+}
+
+#click_to_open {
+  position: absolute;
+  left: 47px;
+  top: 370px;
+  color: #EA0D2A;
+  font-size: 13px;
+  letter-spacing: .05em;
+  opacity: 1;
+  transition: all .3s ease;
+}
+
+#pointer-block.hidden, #click_to_open.hidden {
+  opacity: 0;
+}
+
+#p1, #p2, #p3, #p4, #p5, #p6, #p7, #p8, #p9, #p10, #p11, #p12, #p13, #p14, #p15, #p16, #p17, #p18, #p19 {
+visibility: hidden;
+animation-duration: 3.4s;
+animation-iteration-count: infinite;
+animation-timing-function: steps(1);
+}
+
+#p1 {animation-name: p1}
+#p2 {animation-name: p2}
+#p3 {animation-name: p3}
+#p4 {animation-name: p4}
+#p5 {animation-name: p5}
+#p6 {animation-name: p6}
+#p7 {animation-name: p7}
+#p8 {animation-name: p8}
+#p9 {animation-name: p9}
+#p10 {animation-name: p10}
+#p11 {animation-name: p11}
+#p12 {animation-name: p12}
+#p13 {animation-name: p13}
+#p14 {animation-name: p14}
+#p15 {animation-name: p15}
+#p16 {animation-name: p16}
+#p17 {animation-name: p17}
+#p18 {animation-name: p18}
+#p19 {animation-name: p19}
+
+@keyframes p1 {0.00%{visibility: visible} 1.33%{visibility: hidden}}
+@keyframes p2 {1.33%{visibility: visible} 2.67%{visibility: hidden}}
+@keyframes p3 {2.67%{visibility: visible} 4.00%{visibility: hidden}}
+@keyframes p4 {4.00%{visibility: visible} 5.33%{visibility: hidden}}
+@keyframes p5 {5.33%{visibility: visible} 6.67%{visibility: hidden}}
+@keyframes p6 {6.67%{visibility: visible} 8.00%{visibility: hidden}}
+@keyframes p7 {8.00%{visibility: visible} 9.33%{visibility: hidden}}
+@keyframes p8 {9.33%{visibility: visible} 10.67%{visibility: hidden}}
+@keyframes p9 {10.67%{visibility: visible} 12.00%{visibility: hidden}}
+@keyframes p10 {12.00%{visibility: visible} 26.67%{visibility: hidden}}
+@keyframes p11 {26.67%{visibility: visible} 28.00%{visibility: hidden}}
+@keyframes p12 {28.00%{visibility: visible} 29.33%{visibility: hidden}}
+@keyframes p13 {29.33%{visibility: visible} 30.67%{visibility: hidden}}
+@keyframes p14 {30.67%{visibility: visible} 32.00%{visibility: hidden}}
+@keyframes p15 {32.00%{visibility: visible} 33.33%{visibility: hidden}}
+@keyframes p16 {33.33%{visibility: visible} 34.67%{visibility: hidden}}
+@keyframes p17 {34.67%{visibility: visible} 36.00%{visibility: hidden}}
+@keyframes p18 {36.00%{visibility: visible} 37.33%{visibility: hidden}}
+@keyframes p19 {37.33%{visibility: visible} 100%{visibility: hidden}}
+
+#r1, #r2, #r3, #r4, #r5, #r6, #r7, #r8, #r9, #r10,  #r11 {
+visibility: hidden;
+animation-duration: 3.4s;
+animation-iteration-count: infinite;
+animation-timing-function: steps(1);
+}
+
+#r1 {animation-name: r1}
+#r2 {animation-name: r2}
+#r3 {animation-name: r3}
+#r4 {animation-name: r4}
+#r5 {animation-name: r5}
+#r6 {animation-name: r6}
+#r7 {animation-name: r7}
+#r8 {animation-name: r8}
+#r9 {animation-name: r9}
+#r10 {animation-name: r10}
+#r11 {animation-name: r10}
+
+@keyframes r1 {12.00%{visibility: visible} 13.33%{visibility: hidden}}
+@keyframes r2 {13.33%{visibility: visible} 14.67%{visibility: hidden}}
+@keyframes r3 {14.67%{visibility: visible} 16.00%{visibility: hidden}}
+@keyframes r4 {16.00%{visibility: visible} 17.33%{visibility: hidden}}
+@keyframes r5 {17.33%{visibility: visible} 18.67%{visibility: hidden}}
+@keyframes r6 {18.67%{visibility: visible} 20.00%{visibility: hidden}}
+@keyframes r7 {20.00%{visibility: visible} 21.33%{visibility: hidden}}
+@keyframes r8 {21.33%{visibility: visible} 22.67%{visibility: hidden}}
+@keyframes r9 {22.67%{visibility: visible} 24.00%{visibility: hidden}}
+@keyframes r10 {24.00%{visibility: visible} 25.33%{visibility: hidden}}
+@keyframes r11 {25.33%{visibility: visible} 100%{visibility: hidden}}
+
+#footer_logo img {
+  width: 183px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+#footer_icons {
+  padding-top: 8px;
+  text-align: center;
+}
+
+#footer_icons img {
+  width: 51px;
+  height: auto;
+  margin: 0 3px;
+}
+
+#footer_rules {
+  margin-top: 16px;
+  font-size: 16px;
+  text-align: center;
+}
+
+#footer_rules a {
+  color: #000;
+}
+
+#terms {
+  max-width: 375px;
+  padding-top: 16px;
+  font-size: 14px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#terms a {
+  color: #000;
+}
+
+#curl_animation {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+
+#c1, #c2, #c3, #c4, #c5, #c6, #c7, #c8, #c9, #c10, #c11, #c12, #c13, #c14, #c15, #c16, #c17, #c18, #c19, #c20 {
+visibility: hidden;
+}
+
+.c_play #c1, .c_play #c2, .c_play #c3, .c_play #c4, .c_play #c5, .c_play #c6, .c_play #c7, .c_play #c8, .c_play #c9, .c_play #c10, .c_play #c11, .c_play #c12, .c_play #c13, .c_play #c14, .c_play #c15, .c_play #c16, .c_play #c17, .c_play #c18, .c_play #c19, .c_play #c20 {
+animation-duration: 0.7s;
+animation-fill-mode: forwards;
+animation-timing-function: steps(1);
+}
+
+.c_play #c1 {animation-name: c1}
+.c_play #c2 {animation-name: c2}
+.c_play #c3 {animation-name: c3}
+.c_play #c4 {animation-name: c4}
+.c_play #c5 {animation-name: c5}
+.c_play #c6 {animation-name: c6}
+.c_play #c7 {animation-name: c7}
+.c_play #c8 {animation-name: c8}
+.c_play #c9 {animation-name: c9}
+.c_play #c10 {animation-name: c10}
+.c_play #c11 {animation-name: c11}
+.c_play #c12 {animation-name: c12}
+.c_play #c13 {animation-name: c13}
+.c_play #c14 {animation-name: c14}
+.c_play #c15 {animation-name: c15}
+.c_play #c16 {animation-name: c16}
+.c_play #c17 {animation-name: c17}
+.c_play #c18 {animation-name: c18}
+.c_play #c19 {animation-name: c19}
+.c_play #c20 {animation-name: c20}
+
+@keyframes c1 {0%{visibility: visible} 5%{visibility: hidden}}
+@keyframes c2 {5%{visibility: visible} 10%{visibility: hidden}}
+@keyframes c3 {10%{visibility: visible} 15%{visibility: hidden}}
+@keyframes c4 {15%{visibility: visible} 20%{visibility: hidden}}
+@keyframes c5 {20%{visibility: visible} 25%{visibility: hidden}}
+@keyframes c6 {25%{visibility: visible} 30%{visibility: hidden}}
+@keyframes c7 {30%{visibility: visible} 35%{visibility: hidden}}
+@keyframes c8 {35%{visibility: visible} 40%{visibility: hidden}}
+@keyframes c9 {40%{visibility: visible} 45%{visibility: hidden}}
+@keyframes c10 {45%{visibility: visible} 50%{visibility: hidden}}
+@keyframes c11 {50%{visibility: visible} 55%{visibility: hidden}}
+@keyframes c12 {55%{visibility: visible} 60%{visibility: hidden}}
+@keyframes c13 {60%{visibility: visible} 65%{visibility: hidden}}
+@keyframes c14 {65%{visibility: visible} 70%{visibility: hidden}}
+@keyframes c15 {70%{visibility: visible} 75%{visibility: hidden}}
+@keyframes c16 {75%{visibility: visible} 80%{visibility: hidden}}
+@keyframes c17 {80%{visibility: visible} 85%{visibility: hidden}}
+@keyframes c18 {85%{visibility: visible} 90%{visibility: hidden}}
+@keyframes c19 {90%{visibility: visible} 95%{visibility: hidden}}
+@keyframes c20 {95%, 100%{visibility: visible}}
+
+#eargings, #winning {
+  width: 302px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 30px;
+  display: none;
+  max-height: 0px;
+  opacity: 0;
+  transition: all .7s .1s ease-in;
+}
+
+#eargings.disp, #winning.disp {
+  display: block;
+}
+
+#eargings.disp.visible, #winning.disp.visible {
+  max-height: 1000px;
+  opacity: 1;
+}
+
+#eargings h3, #winning h3 {
+  color: #DF001F;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+#eargings h2, #winning h2, #popup h2 {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 24px;
+  color: #000;
+}
+
+#earn_subttl, #win_subttl {
+  font-size: 14px;
+  margin: 0;
+}
+
+#earn_ballot, #win_img {
+  display: block;
+  margin: 16px auto 24px auto;
+}
+
+#win_img {
+  max-height: 108px;
+  width: auto;
+}
+
+#win_note {
+  font-size: 12px;
+  font-style: italic;
+}
+
+#win_note a {
+  color: #000;
+}
+
+#win_note a:hover {
+  text-decoration: none;
+}
+
+#earn_plus, #win_plus {
+  width: 262px;
+  margin: 0 auto;
+  padding: 8px 0 16px 0;
+  border-top: 1px solid #707070;
+}
+
+#earn_plus h3, #win_plus h3 {
+  text-transform: none;
+  margin-bottom: 10px;
+}
+
+#earn_plus img, #win_plus img {
+  width: 204px;
+  height: auto;
+  margin: 4px 0;
+  box-shadow: 0px 3px 6px rgba(0,0,0,.3);
+}
+
+#earn_plus p, #win_plus p {
+  font-size: 14px;
+}
+
+.red_button {
+  font-size: 13px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: .65px;
+  font-weight: 700;
+  line-height: 46px;
+  width: 302px;
+  height: 48px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 8px;
+  background: transparent linear-gradient(180deg, #DF001F 0%, #9F051D 100%) 0% 0% no-repeat padding-box;
+  box-shadow: 0px 4px 6px rgba(0,0,0,.4);
+  cursor: pointer;
+}
+
+.red_button:hover {
+  background: transparent linear-gradient(180deg, #9F051D 0%, #DF001F 100%) 0% 0% no-repeat padding-box;
+}
+
+.red_button svg {
+  vertical-align: middle;
+  margin-right: 6px;
+}
+
+.white_button {
+  font-size: 13px;
+  color: #9F051D;
+  text-transform: uppercase;
+  letter-spacing: .65px;
+  font-weight: 700;
+  line-height: 46px;
+  width: 302px;
+  height: 48px;
+  border: 1px solid #9F051D;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0px 4px 6px rgba(0,0,0,.4);
+  cursor: pointer;
+}
+
+.white_button:hover {
+  background: #9F051D;
+  color: #fff
+}
+
+.white_button svg {
+  vertical-align: middle;
+  margin-right: 6px;
+}
+
+.white_button:hover svg {
+  fill: #fff;
+}
+
+#popup {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 20px);
+  top: 330px;
+  width: 375px;
+  padding: 24px 32px;
+  border: 4px solid #FFFFFF;
+  text-align: center;
+  background: #F6D926;
+  box-shadow: 0px 3px 6px rgba(0,0,0,.3);
+  display: none;
+  opacity: 0;
+  transition: all .3s ease;
+}
+
+#popup.disp {
+  display: block;
+}
+
+#popup.disp.visible {
+  opacity: 1;
+  transform: translate(-50%, 0px);
+}
+
+#popup_close {
+  position: absolute;
+  right: 8px;
+  top: 10px;
+  font-size: 12px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 300;
+  color: #000;
+  text-decoration: none;
+}
+
+#popup h2 {
+  margin-bottom: 8px;
+}
+
+#popup h3 {
+  font-size: 16px;
+}
+
+#popup p {
+  font-size: 14px;
+}
+
+#popup a {
+  color: #000;
+}
+
+#earn_h3, #earn_h2, #earn_subttl, #earn_ballot, #earn_plus_img1, #earn_plus_img2, #earn_plus, .red_button, .white_button {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity .3s linear, transform .3s ease-in-out;
+}
+
+.visible #earn_h3, .visible #earn_h2, .visible #earn_subttl, .visible #earn_ballot, .visible #earn_plus_img1, .visible #earn_plus_img2, .visible #earn_plus, .visible .red_button, .visible .white_button {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.visible #earn_h2 { transition-delay: .1s }
+.visible #earn_subttl { transition-delay: .2s }
+.visible #earn_ballot { transition-delay: .3s }
+.visible #earn_plus { transition-delay: .4s }
+.visible #earn_plus_img1 { transition-delay: .5s }
+.visible #earn_plus_img2 { transition-delay: .6s }
+.visible .red_button { transition-delay: .7s }
+.visible .white_button { transition-delay: .8s }
+
+#win_h3, #win_h2, #win_subttl, #win_ballot, #win_plus_img1, #win_plus_img2, #win_plus {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity .3s linear, transform .3s ease-in-out;
+}
+
+.visible #win_h3, .visible #win_h2, .visible #win_subttl, .visible #win_ballot, .visible #win_plus_img1, .visible #win_plus_img2, .visible #win_plus {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.visible #win_h2 { transition-delay: .1s }
+.visible #win_subttl { transition-delay: .2s }
+.visible #win_ballot { transition-delay: .3s }
+.visible #win_plus { transition-delay: .4s }
+.visible #win_plus_img1 { transition-delay: .5s }
+.visible #win_plus_img2 { transition-delay: .6s }
+
+@media screen and (max-width: 750px) {
+
+}
