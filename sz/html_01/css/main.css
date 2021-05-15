@@ -2,3 +2,11 @@ html, body {
   margin: 0;
   padding: 0;
 }
+.ui_element {
+  display: block;
+  position: absolute;
+  right: 32px;
+  top: 32px;
+  width: 100px;
+  height: auto;
+}
