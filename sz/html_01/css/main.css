@@ -19,3 +19,45 @@ html, body {
 #ui .ui_element:nth-child(4) {
   top: 210px;
 }
+#nav {
+  display: none;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 32px;
+  width: 320px;
+  height: 320px;
+}
+#nav.active {
+  display: block;
+}
+#move_forward, #move_right, #move_back, #move_left {
+  position: absolute;
+  opacity: .5;
+  border: none;
+  text-decoration: none;
+  transition: all .2s linear;
+}
+#move_forward:hover, #move_right:hover, #move_back:hover, #move_left:hover {
+  opacity: 1;
+}
+#move_forward {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#move_right {
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+#move_back {
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#move_left {
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
