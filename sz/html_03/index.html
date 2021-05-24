@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>3d Animals</title>
+    <link href="favicon.ico" rel="icon" type="image/x-icon" />
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <section id="area3d"></section>
+    <section id="nav">
+      <a id="move_forward" href="javascript:;"><img src="imgs/bttn_top.svg"></a>
+      <a id="move_right" href="javascript:;"><img src="imgs/bttn_right.svg"></a>
+      <a id="move_back" href="javascript:;"><img src="imgs/bttn_bottom.svg"></a>
+      <a id="move_left" href="javascript:;"><img src="imgs/bttn_left.svg"></a>
+    </section>
+    <section id="food">
+      <img src="imgs/banana_icn.svg">
+      <div id="food_counter">5</div>
+    </section>
+    <section id="hungry_level">
+      <div id="hungry_level_base">
+        <div id="hungry_level_value" style="width: 30%"></div>
+      </div>
+      <svg id="hungry_level_icon" xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 141 141">
+        <circle cx="70.49" cy="70.49" r="70.49" fill="#b9004a"/>
+        <path fill="#fff" d="M76.04 34l7.76 15.72a6.19 6.19 0 004.66 3.39l17.36 2.52a6.19 6.19 0 013.43 10.55L96.69 78.43a6.19 6.19 0 00-1.78 5.47l2.96 17.29a6.19 6.19 0 01-8.97 6.52l-15.53-8.16a6.19 6.19 0 00-5.76 0l-15.52 8.16a6.19 6.19 0 01-8.98-6.52l2.97-17.29a6.19 6.19 0 00-1.78-5.47L31.74 66.18a6.19 6.19 0 013.43-10.55l17.35-2.52a6.19 6.19 0 004.66-3.39L64.94 34a6.19 6.19 0 0111.1 0z"/>
+      </svg>
+    </section>
+    <section id="coins">
+      <img src="imgs/coin.svg">
+      <div id="coins_counter">200</div>
+      <div id="coins_timer">10:00</div>
+    </section>
+    <section id="store_bttn">
+      <a id="open_store" href="javascript:;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 310 310">
+        <circle id="hammer_bg" cx="155" cy="155" r="145" fill="#fff" stroke="#4a89dc" stroke-miterlimit="10" stroke-width="16"/>
+        <path fill="#5d9cec" d="M147.34 138.21l-79.7 79.69a17.87 17.87 0 0025.27 25.27l79.7-79.7z"/>
+        <polygon fill="#ccd1d9" points="203.46 119.99 190.83 107.36 153.65 144.53 166.29 157.16 203.46 119.99"/>
+        <g fill="#e6e9ed">
+          <path d="M201.05 128.75l-18.95-18.96 18.95-18.95c10.86-10.86-30.82-41.99-31.61-44.23-.53-1.52 87.72 1.91 75.83 63.18l-12.64 12.64s-16.77-8.6-31.58 6.32z"/>
+          <polygon points="251.58 154.01 238.95 141.38 264.22 116.11 276.85 128.75 251.58 154.01"/>
+        </g>
+        <polygon fill="#ccd1d9" points="245.26 135.06 232.63 122.43 245.26 109.79 257.9 122.43 245.26 135.06"/>
+        <path fill="#4a89dc" d="M159.96 150.84l-6.31-6.32-76.53 76.53a4.47 4.47 0 106.31 6.32z"/>
+        </svg>
+      </a>
+    </section>
+    <section class="inactive" id="store">
+      <a id="store_close" href="javascript:;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 58 58">
+        <polygon points="57.8,44.6 42,28.9 57.8,13.1 44.6,0 28.9,15.8 13.1,0 0,13.1 15.8,28.9 0,44.6 13.1,57.8 28.9,42 44.6,57.8 "/>
+      </svg>
+      </a>
+      <h2>Store</h2>
+      <div id="raw_material">
+        <div class="itm_row" id="wood">
+          <div class="item_info">
+            <span>50</span>
+            <img src="imgs/coin.svg">
+            <a class="bttn_buy" href="javascript:;">BUY</a>
+          </div>
+          <img class="item_img" src="imgs/wood.png">
+        </div>
+        <div class="itm_row" id="stone">
+          <div class="item_info">
+            <span>50</span>
+            <img src="imgs/coin.svg">
+            <a class="bttn_buy" href="javascript:;">BUY</a>
+          </div>
+          <img class="item_img" src="imgs/stone.png">
+        </div>
+        <div class="itm_row" id="rope">
+          <div class="item_info">
+            <span>50</span>
+            <img src="imgs/coin.svg">
+            <a class="bttn_buy" href="javascript:;">BUY</a>
+          </div>
+          <img class="item_img" src="imgs/rope.png">
+        </div>
+      </div>
+      <div class="inactive" id="buildings">
+        <div class="itm_row">
+          <div class="item_info">
+            <a id="building" class="bttn_buy" href="javascript:;">BUY</a>
+          </div>
+          <img class="item_img" src="imgs/wooden_home.png">
+        </div>
+        <div class="itm_row">
+          <div class="item_info">
+            <a id="pool" class="bttn_buy" href="javascript:;">BUY</a>
+          </div>
+          <img class="item_img" src="imgs/wooden_pool.png">
+        </div>
+        <div class="itm_row">
+          <div class="item_info">
+            <a id="swing" class="bttn_buy" href="javascript:;">BUY</a>
+          </div>
+          <img class="item_img" src="imgs/wooden_swing.png">
+        </div>
+        <div class="itm_row">
+          <div class="item_info">
+            <a id="trampoline" class="bttn_buy" href="javascript:;">BUY</a>
+          </div>
+          <img class="item_img" src="imgs/wooden_trampoline.png">
+        </div>
+      </div>
+      <div id="store_nav">
+        <a class="inactive" id="bttn_buildings" href="javascript:;"><img src="imgs/house.svg"></a>
+        <a id="bttn_materials" href="javascript:;"><img src="imgs/brick.svg"></a>
+      </div>
+    </section>
+    <script src="js/main.js"></script>
+  </body>
+</html>

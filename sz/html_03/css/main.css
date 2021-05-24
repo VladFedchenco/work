@@ -1,0 +1,223 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.ui_element {
+  display: block;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  width: 100px;
+  height: auto;
+}
+#ui .ui_element:nth-child(2) {
+  top: 90px;
+}
+#ui .ui_element:nth-child(3) {
+  top: 150px;
+}
+#ui .ui_element:nth-child(4) {
+  top: 210px;
+}
+#nav {
+  display: none;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 32px;
+  width: 320px;
+  height: 320px;
+}
+#nav.active {
+  display: block;
+}
+#move_forward, #move_right, #move_back, #move_left {
+  position: absolute;
+  opacity: .5;
+  border: none;
+  text-decoration: none;
+  transition: all .2s linear;
+}
+#move_forward:hover, #move_right:hover, #move_back:hover, #move_left:hover {
+  opacity: 1;
+}
+#move_forward {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#move_right {
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+#move_back {
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#move_left {
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+#food {
+  position: absolute;
+  left: 32px;
+  bottom: 56px;
+  pointer-events: none;
+}
+#food img {
+  width: 48px;
+  height: 48px;
+}
+#food_counter {
+  position: absolute;
+  right: -4px;
+  top: -4px;
+  display: block;
+  padding: 4px 8px;
+  border-radius: 4px;
+  background-color: #000;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  border: solid 1px #FFF6DE;
+}
+#hungry_level {
+  position: absolute;
+  left: 36px;
+  right: 136px;
+  bottom: 40px;
+  pointer-events: none;
+}
+#hungry_level_base {
+  width: 100%;
+  height: 12px;
+  background-color: rgba(0,0,0,.4);
+  border-radius: 6px;
+  overflow: hidden;
+}
+#hungry_level_value {
+  height: 12px;
+  background-color: #b9004a;
+}
+#hungry_level_icon {
+  position: absolute;
+  right: -12px;
+  top: -22px;
+}
+#coins {
+  position: absolute;
+  right: 32px;
+  bottom: 128px;
+}
+#coins img {
+  width: 64px;
+  height: 64px;
+}
+#coins_counter {
+  background-color: #000;
+  color: #fff;
+  padding: 4px;
+  border-radius: 4px;
+  text-align: center;
+  font-weight: bold;
+}
+#coins_timer {
+  padding: 4px;
+  text-align: center;
+}
+#store_bttn  {
+  position: absolute;
+  right: 32px;
+  bottom: 10px;
+}
+#store_close {
+  display: block;
+  position: absolute;
+  top: -32px;
+  right: -32px;
+}
+#store_close:hover polygon {
+  fill: #b9004a;
+}
+#open_store:hover #hammer_bg, #open_store.active #hammer_bg {
+  fill: #000;
+}
+#store {
+  padding: 16px;
+  color: #fff;
+  background-color: rgba(0,0,0,.9);
+  border-radius: 8px;
+  position: absolute;
+  width: 370px;
+  height: 470px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+#store h2 {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 8px 0;
+}
+#store .item_info {
+  float: right;
+  padding-top: 12px;
+  padding-right: 12px;
+}
+#store .item_info img {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  margin-right: 16px;
+}
+.item_img {
+  width: 100px;
+  height: auto;
+}
+.bttn_buy {
+  display: inline-block;
+  color: #fff;
+  background-color: #b9004a;
+  padding: 6px 10px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+.bttn_buy:hover {
+  background-color: #FFA708;
+}
+.itm_row {
+  clear: both;
+  border-bottom: solid 1px rgba(255,255,255,.2);
+  padding: 8px 0;
+}
+#store_nav {
+  position: absolute;
+  padding: 32px;
+  text-align: center;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+#store_nav img {
+  width: 56px;
+  height: auto;
+  margin-top: 8px;
+}
+#store_nav a {
+  display: inline-block;
+  padding:  16px;
+  width: 56px;
+  height: 56px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+#store_nav a.inactive {
+  opacity: .3;
+}
+#store.inactive, #buildings.inactive, #raw_material.inactive {
+  display: none;
+}
