@@ -194,6 +194,24 @@ html, body {
   border-bottom: solid 1px rgba(255,255,255,.2);
   padding: 8px 0;
 }
+.item_price {
+  display: inline-block;
+  margin: 0 8px;
+  padding-right: 6px;
+  border-radius: 10px;
+  background-color: rgba(255,255,255,.2);
+  font-size: 12px;
+}
+.item_name {
+  display: inline-block;
+  font-size: 21px;
+  padding-right: 16px;
+  color: #FFA708;
+}
+.item_name img {
+  vertical-align: middle;
+  margin-right: 8px;
+}
 #store_nav {
   position: absolute;
   padding: 32px;
@@ -218,6 +236,6 @@ html, body {
 #store_nav a.inactive {
   opacity: .3;
 }
-#store.inactive, #buildings.inactive, #raw_material.inactive {
+#store.inactive, #buildings.inactive, #raw_material.inactive, .item_info .inactive {
   display: none;
 }

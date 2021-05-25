@@ -20,7 +20,7 @@
     </section>
     <section id="hungry_level">
       <div id="hungry_level_base">
-        <div id="hungry_level_value" style="width: 30%"></div>
+        <div id="hungry_level_value"></div>
       </div>
       <svg id="hungry_level_icon" xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 141 141">
         <circle cx="70.49" cy="70.49" r="70.49" fill="#b9004a"/>
@@ -29,8 +29,8 @@
     </section>
     <section id="coins">
       <img src="imgs/coin.svg">
-      <div id="coins_counter">200</div>
-      <div id="coins_timer">10:00</div>
+      <div id="coins_counter"></div>
+      <div id="coins_timer">&nbsp;</div>
     </section>
     <section id="store_bttn">
       <a id="open_store" href="javascript:;">
@@ -57,53 +57,57 @@
       <div id="raw_material">
         <div class="itm_row" id="wood">
           <div class="item_info">
-            <span>50</span>
-            <img src="imgs/coin.svg">
-            <a class="bttn_buy" href="javascript:;">BUY</a>
+            <span id="wood_info"></span>
+            <div class="item_price"><img src="imgs/coin.svg"> 50</div>
+            <a id="wood_buy" class="bttn_buy" href="javascript:;">BUY</a>
           </div>
-          <img class="item_img" src="imgs/wood.png">
+          <div class="item_name"><img class="item_img" src="imgs/wood.png"> Wood</div>
         </div>
         <div class="itm_row" id="stone">
           <div class="item_info">
-            <span>50</span>
-            <img src="imgs/coin.svg">
-            <a class="bttn_buy" href="javascript:;">BUY</a>
+            <span id="stone_info"></span>
+            <div class="item_price"><img src="imgs/coin.svg"> 50</div>
+            <a id="stone_buy" class="bttn_buy" href="javascript:;">BUY</a>
           </div>
-          <img class="item_img" src="imgs/stone.png">
+          <div class="item_name"><img class="item_img" src="imgs/stone.png"> Stone</div>
         </div>
         <div class="itm_row" id="rope">
           <div class="item_info">
-            <span>50</span>
-            <img src="imgs/coin.svg">
-            <a class="bttn_buy" href="javascript:;">BUY</a>
+            <span id="rope_info"></span>
+            <div class="item_price"><img src="imgs/coin.svg"> 50</div>
+            <a id="rope_buy" class="bttn_buy" href="javascript:;">BUY</a>
           </div>
-          <img class="item_img" src="imgs/rope.png">
+          <div class="item_name"><img class="item_img" src="imgs/rope.png"> Rope</div>
         </div>
       </div>
       <div class="inactive" id="buildings">
         <div class="itm_row">
           <div class="item_info">
             <a id="building" class="bttn_buy" href="javascript:;">BUY</a>
+            <span class="inactive">Bought</span>
           </div>
-          <img class="item_img" src="imgs/wooden_home.png">
+          <div class="item_name"><img class="item_img" src="imgs/wooden_home.png"> House</div>
         </div>
         <div class="itm_row">
           <div class="item_info">
             <a id="pool" class="bttn_buy" href="javascript:;">BUY</a>
+            <span class="inactive">Bought</span>
           </div>
-          <img class="item_img" src="imgs/wooden_pool.png">
+          <div class="item_name"><img class="item_img" src="imgs/wooden_pool.png"> Pool</div>
         </div>
         <div class="itm_row">
           <div class="item_info">
             <a id="swing" class="bttn_buy" href="javascript:;">BUY</a>
+            <span class="inactive">Bought</span>
           </div>
-          <img class="item_img" src="imgs/wooden_swing.png">
+          <div class="item_name"><img class="item_img" src="imgs/wooden_swing.png"> Swing</div>
         </div>
         <div class="itm_row">
           <div class="item_info">
             <a id="trampoline" class="bttn_buy" href="javascript:;">BUY</a>
+            <span class="inactive">Bought</span>
           </div>
-          <img class="item_img" src="imgs/wooden_trampoline.png">
+          <div class="item_name"><img class="item_img" src="imgs/wooden_trampoline.png"> Trampoline</div>
         </div>
       </div>
       <div id="store_nav">
