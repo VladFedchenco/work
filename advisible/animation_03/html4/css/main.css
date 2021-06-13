@@ -1,0 +1,42 @@
+body{
+    background-color:#060D28;
+    margin: 0px;
+    height: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+#lottie{
+    background-color:#060D28;
+    width:668px;
+    height:589px;
+    margin: 0 auto;
+    display:block;
+    overflow: hidden;
+    transform: translate3d(0,0,0);
+    text-align: center;
+    opacity: 1;
+    margin-bottom: 64px;
+}
+.bttn {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    margin: 0 8px;
+    border-radius: 24px;
+    text-align: center;
+    line-height: 48px;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: #234EE4;
+    background-color: #f5f6fe;
+    text-decoration: none;
+    user-select: none;
+    transition: all .3s linear;
+}
+.bttn:hover, .bttn.selected {
+    background-color: #234EE4;
+    color: #fff;
+}
+.bttn.selected  {
+    pointer-events: none;
+}
