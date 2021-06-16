@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Advisable v02</title>
+  <link rel="icon" href="favicon.png" sizes="32x32" />
+  <link rel="stylesheet" type="text/css" href="css/main.css" />
+  <script src="js/lottie.js"></script>
+</head>
+<body>
+<div id="lottie"></div>
+<a href="javascript:;" class="bttn selected" id="sc1">1</a>
+<a href="javascript:;" class="bttn" id="sc2">2</a>
+<a href="javascript:;" class="bttn" id="sc3">3</a>
+</body>
+<script>
+  let params = {
+      container: document.getElementById('lottie'),
+      path: 'data.json',
+      renderer: 'svg',
+      loop: false,
+      autoplay: false
+  };
+
+  let anim;
+
+  anim = lottie.loadAnimation(params);
+
+  anim.addEventListener('DOMLoaded',function(){
+    anim.playSegments([0, 21], true);
+
+    let scene_selected = 0;
+
+    setTimeout(function(){
+      scene_selected = 1;
+    }, 700);
+
+    let scene2_sub = 1;
+
+    let allow_hover = true;
+
+    let bttn1 = document.getElementById('sc1');
+    let bttn2 = document.getElementById('sc2');
+    let bttn3 = document.getElementById('sc3');
+
+    let person1 = document.getElementById('person1');
+    let person2 = document.getElementById('person2');
+    let person3 = document.getElementById('person3');
+    let person4 = document.getElementById('person4');
+    let person5 = document.getElementById('person5');
+    let person6 = document.getElementById('person6');
+
+    function p_hovers(init, fin) {
+        anim.playSegments([init, fin], true);
+    }
+    person1.onmouseover = function() {
+      if (scene_selected == 1) {
+        p_hovers(21, 26);
+      }
+    }
+    person1.onmouseleave = function() {
+      if (scene_selected == 1) {
+        p_hovers(26, 31);
+      }
+    }
+    person2.onmouseover = function() {
+      if (scene_selected == 1) {
+        p_hovers(31, 36);
+      }
+      if (scene_selected == 2 && scene2_sub == 1 && allow_hover) {
+        p_hovers(101, 106);
+      }
+    }
+    person2.onmouseleave = function() {
+      if (scene_selected == 1) {
+        p_hovers(36, 41);
+      }
+      if (scene_selected == 2 && scene2_sub == 1 && allow_hover) {
+        p_hovers(105, 100);
+      }
+    }
+    person2.onclick = function() {
+      if(scene2_sub == 1 && scene_selected == 2 && allow_hover) {
+        allow_hover = false;
+        anim.setSpeed(.5);
+        scene2_sub = 2;
+        anim.playSegments([106, 116], true);
+        params.container.classList.remove("sub1", "sub2", "sub3");
+        params.container.classList.add("sub2");
+        setTimeout(function(){
+          allow_hover = true;
+        }, 700);
+      }
+    }
+    person3.onmouseover = function() {
+      if (scene_selected == 1) {
+        p_hovers(41, 46);
+      }
+    }
+    person3.onmouseleave = function() {
+      if (scene_selected == 1) {
+        p_hovers(46, 51);
+      }
+    }
+    person4.onmouseover = function() {
+      if (scene_selected == 1) {
+        p_hovers(51, 56);
+      }
+      if (scene_selected == 2 && scene2_sub == 3 && allow_hover) {
+        p_hovers(131, 136);
+      }
+    }
+    person4.onmouseleave = function() {
+      if (scene_selected == 1) {
+        p_hovers(56, 61);
+      }
+      if (scene_selected == 2 && scene2_sub == 3 && allow_hover) {
+        p_hovers(135, 130);
+      }
+    }
+    person4.onclick = function() {
+      if(scene2_sub == 3 && scene_selected == 2 && allow_hover) {
+        allow_hover = false;
+        scene2_sub = 1;
+        anim.playSegments([136, 146], true);
+        params.container.classList.remove("sub1", "sub2", "sub3");
+        params.container.classList.add("sub1");
+        setTimeout(function(){
+          allow_hover = true;
+        }, 700);
+      }
+    }
+    person5.onmouseover = function() {
+      if (scene_selected == 1) {
+        p_hovers(61, 66);
+      }
+    }
+    person5.onmouseleave = function() {
+      if (scene_selected == 1) {
+        p_hovers(66, 71);
+      }
+    }
+    person6.onmouseover = function() {
+      if (scene_selected == 1) {
+        p_hovers(71, 76);
+      }
+      if (scene_selected == 2 && scene2_sub == 2 && allow_hover) {
+        p_hovers(116, 121);
+      }
+    }
+    person6.onmouseleave = function() {
+      if (scene_selected == 1) {
+        p_hovers(76, 81);
+      }
+      if (scene_selected == 2 && scene2_sub == 2 && allow_hover) {
+        p_hovers(120, 115);
+      }
+    }
+    person6.onclick = function() {
+      if(scene2_sub == 2 && scene_selected == 2 && allow_hover) {
+        allow_hover = false;
+        scene2_sub = 3;
+        anim.playSegments([121, 131], true);
+        params.container.classList.remove("sub1", "sub2", "sub3");
+        params.container.classList.add("sub3");
+        setTimeout(function(){
+          allow_hover = true;
+        }, 700);
+      }
+    }
+
+    bttn1.onclick = function() {
+      if(scene_selected == 3) {
+        anim.playSegments([166, 191], false);
+        scene_selected = 1;
+      } else if(scene_selected == 2) {
+        if(scene2_sub == 1) {
+            anim.playSegments([100, 80], true);
+        }
+        if(scene2_sub == 2) {
+            anim.playSegments([250, 266], false);
+            anim.playSegments([85, 80], false);
+        }
+        if(scene2_sub == 3) {
+            anim.playSegments([270, 286], false);
+            anim.playSegments([85, 80], false);
+        }
+        scene_selected = 1;
+        scene2_sub = 1;
+      }
+      anim.setSpeed(1);
+      clearBttns();
+      bttn1.classList.add('selected');
+      params.container.classList.remove("s2", "s3", "sub1", "sub2", "sub3");
+    }
+    bttn2.onclick = function() {
+      if(scene_selected == 1) {
+        anim.playSegments([81, 101], true);
+        scene_selected = 2;
+      } else if(scene_selected == 3) {
+        anim.playSegments([165, 145], false);
+        scene_selected = 2;
+        scene2_sub = 1;
+      }
+      clearBttns();
+      bttn2.classList.add('selected');
+      params.container.classList.remove("s3", "sub1", "sub2", "sub3");
+      params.container.classList.add("s2", "sub1");
+    }
+    bttn3.onclick = function() {
+      if(scene_selected == 1) {
+        anim.playSegments([190, 165], false);
+        scene_selected = 3;
+      } else if(scene_selected == 2) {
+        if(scene2_sub == 1) {
+            anim.playSegments([146, 166], false);
+        }
+        if(scene2_sub == 2) {
+            anim.playSegments([196, 216], true);
+        }
+        if(scene2_sub == 3) {
+            anim.playSegments([226, 246], true);
+        }
+        scene_selected = 3;
+        scene2_sub = 1;
+      }
+      anim.setSpeed(1);
+      clearBttns();
+      bttn3.classList.add('selected');
+      params.container.classList.remove("s2", "sub1", "sub2", "sub3");
+      params.container.classList.add("s3");
+    }
+  });
+
+  function clearBttns() {
+    for(let i=1; i<4; i++) {
+      document.getElementById('sc' + i).classList.remove('selected');
+    }
+  }
+</script>
+</html>
