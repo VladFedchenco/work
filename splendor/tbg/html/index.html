@@ -22,8 +22,15 @@
   </style>
   <script>
     let anim_img = new Image();
-    anim_img.src = 'imgs/building_animation_01.svg';
+    anim_img.src = 'imgs/building_animation_01.svg?v=' + getRandomInt(1, 100000);
     anim_img.id = 'svg_anim';
+
+    function getRandomInt(min, max) {
+      min = Math.ceil(min);
+      max = Math.floor(max);
+      return Math.floor(Math.random() * (max - min) + min);
+    }
+
     document.addEventListener("DOMContentLoaded", function(event) {
 
       window.onscroll = function() {
