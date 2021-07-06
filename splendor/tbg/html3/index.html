@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TBG</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+    }
+    #bg {
+      display: block;
+      width: 100%;
+    }
+    #svg_anim {
+      position: absolute;
+      top: 116vw;
+      right: 0;
+      height: 40.7vw;
+      width: 73.32vw;
+    }
+  </style>
+  <script>
+    let anim_img = new Image();
+    anim_img.src = 'imgs/building_animation_03.svg?v=' + getRandomInt(1, 100000);
+    anim_img.id = 'svg_anim';
+
+    function getRandomInt(min, max) {
+      min = Math.ceil(min);
+      max = Math.floor(max);
+      return Math.floor(Math.random() * (max - min) + min);
+    }
+
+    document.addEventListener("DOMContentLoaded", function(event) {
+
+      window.onscroll = function() {
+        let svg_pos = window.innerWidth * 1.16;
+        if (window.pageYOffset > (svg_pos - window.innerWidth * 0.2)) {
+          document.body.appendChild(anim_img);
+        }
+      }
+
+      window.onbeforeunload = function () {
+        window.scrollTo(0, 0);
+      };
+    });
+  </script>
+</head>
+<body>
+  <img id="bg" src="imgs/bg.jpg">
+</body>
+</html>
