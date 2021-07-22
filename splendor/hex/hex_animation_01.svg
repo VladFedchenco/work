@@ -1,0 +1,708 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 687 311" style="background: #242262">
+
+<style>
+/* <![CDATA[ */
+
+#f1l1 {
+  animation: f1l1 6s ease-in-out forwards;
+}
+
+@keyframes f1l1 {
+  0% {
+    stroke-dashoffset: 204.8px;
+  }
+  7%, 100% {
+    stroke-dashoffset: 409.6px;
+  }
+}
+
+#f1l2 {
+  animation: f1l2 6s ease-in-out forwards;
+}
+
+@keyframes f1l2 {
+  0% {
+    stroke-dashoffset: 249.1px;
+  }
+  7%, 100% {
+    stroke-dashoffset: 498.2px;
+  }
+}
+
+#f1p1 {
+  animation: f1p1 6s ease-in-out forwards;
+}
+
+@keyframes f1p1 {
+  0%, 7% {
+    transform: translate(180.2px, 188.2px) scale(0) translate(-180.2px, -188.2px);
+  }
+  11% {
+    transform: translate(180.2px, 188.2px) scale(1.2) translate(-180.2px, -188.2px);
+  }
+  14%, 100% {
+    transform: translate(180.2px, 188.2px) scale(1) translate(-180.2px, -188.2px);
+  }
+}
+
+#f1p2 {
+  animation: f1p2 6s ease-in-out forwards;
+}
+
+@keyframes f1p2 {
+  0%, 7% {
+    transform: translate(471.7px, 303.8px) scale(0) translate(-471.7px, -303.8px);
+  }
+  11% {
+    transform: translate(471.7px, 303.8px) scale(1.2) translate(-471.7px, -303.8px);
+  }
+  14%, 100% {
+    transform: translate(471.7px, 303.8px) scale(1) translate(-471.7px, -303.8px);
+  }
+}
+
+#f2p1 {
+  animation: f2p1 6s ease-in-out forwards;
+}
+
+@keyframes f2p1 {
+  0%, 5% {
+    transform: translate(143.4px, 219.4px) scale(0) translate(-143.4px, -219.4px);
+  }
+  9% {
+    transform: translate(143.4px, 219.4px) scale(1.2) translate(-143.4px, -219.4px);
+  }
+  12%, 100% {
+    transform: translate(143.4px, 219.4px) scale(1) translate(-143.4px, -219.4px);
+  }
+}
+
+#f2p2 {
+  animation: f2p2 6s ease-in-out forwards;
+}
+
+@keyframes f2p2 {
+  0%, 5% {
+    transform: translate(610.2px, 119.3px) scale(0) translate(-610.2px, -119.3px);
+  }
+  9% {
+    transform: translate(610.2px, 119.3px) scale(1.2) translate(-610.2px, -119.3px);
+  }
+  12%, 100% {
+    transform: translate(610.2px, 119.3px) scale(1) translate(-610.2px, -119.3px);
+  }
+}
+
+#f2l1 {
+  animation: f2l1 6s ease-in-out forwards;
+}
+
+@keyframes f2l1 {
+  0%, 12% {
+    stroke-dashoffset: 263.2px;
+  }
+  19%, 100% {
+    stroke-dashoffset: 526.4px;
+  }
+}
+
+#f2l2 {
+  animation: f2l2 6s ease-in-out forwards;
+}
+
+@keyframes f2l2 {
+  0%, 12% {
+    stroke-dashoffset: 315.2px;
+  }
+  19%, 100% {
+    stroke-dashoffset: 630.4px;
+  }
+}
+
+#f2p3 {
+  animation: f2p3 6s ease-in-out forwards;
+}
+
+@keyframes f2p3 {
+  0%, 19% {
+    transform: translate(334.6px, 9.2px) scale(0) translate(-334.6px, -9.2px);
+  }
+  23% {
+    transform: translate(334.6px, 9.2px) scale(1.2) translate(-334.6px, -9.2px);
+  }
+  26%, 100% {
+    transform: translate(334.6px, 9.2px) scale(1) translate(-334.6px, -9.2px);
+  }
+}
+
+#f2p4 {
+  animation: f2p4 6s ease-in-out forwards;
+}
+
+@keyframes f2p4 {
+  0%, 19% {
+    transform: translate(362px, 255.4px) scale(0) translate(-362px, -255.4px);
+  }
+  23% {
+    transform: translate(362px, 255.4px) scale(1.2) translate(-362px, -255.4px);
+  }
+  26%, 100% {
+    transform: translate(362px, 255.4px) scale(1) translate(-362px, -255.4px);
+  }
+}
+
+#f3p1 {
+  animation: f3p1 6s ease-in-out forwards;
+}
+
+@keyframes f3p1 {
+  0%, 24% {
+    transform: translate(37.6px, 78.5px) scale(0) translate(-37.6px, -78.5px);
+  }
+  28% {
+    transform: translate(37.6px, 78.5px) scale(1.2) translate(-37.6px, -78.5px);
+  }
+  31%, 100% {
+    transform: translate(37.6px, 78.5px) scale(1) translate(-37.6px, -78.5px);
+  }
+}
+
+#f3p2 {
+  animation: f3p2 6s ease-in-out forwards;
+}
+
+@keyframes f3p2 {
+  0%, 24% {
+    transform: translate(600.9px, 285.5px) scale(0) translate(-600.9px, -285.5px);
+  }
+  28% {
+    transform: translate(600.9px, 285.5px) scale(1.2) translate(-600.9px, -285.5px);
+  }
+  31%, 100% {
+    transform: translate(600.9px, 285.5px) scale(1) translate(-600.9px, -285.5px);
+  }
+}
+
+#f3l1 {
+  animation: f3l1 6s ease-in-out forwards;
+}
+
+@keyframes f3l1 {
+  0%, 31% {
+    stroke-dashoffset: 181.2px;
+  }
+  38%, 100% {
+    stroke-dashoffset: 0px;
+  }
+}
+
+#f3l2 {
+  animation: f3l2 6s ease-in-out forwards;
+}
+
+@keyframes f3l2 {
+  0%, 31% {
+    stroke-dashoffset: 307.8px;
+  }
+  38%, 100% {
+    stroke-dashoffset: 615.6px;
+  }
+}
+
+#f3p3 {
+  animation: f3p3 6s ease-in-out forwards;
+}
+
+@keyframes f3p3 {
+  0%, 38% {
+    transform: translate(211.7px, 34.7px) scale(0) translate(-211.7px, -34.7px);
+  }
+  44% {
+    transform: translate(211.7px, 34.7px) scale(1.2) translate(-211.7px, -34.7px);
+  }
+  45%, 100% {
+    transform: translate(211.7px, 34.7px) scale(1) translate(-211.7px, -34.7px);
+  }
+}
+
+#f3p4 {
+  animation: f3p4 6s ease-in-out forwards;
+}
+
+@keyframes f3p4 {
+  0%, 38% {
+    transform: translate(349.1px, 157.8px) scale(0) translate(-349.1px, -157.8px);
+  }
+  44% {
+    transform: translate(349.1px, 157.8px) scale(1.2) translate(-349.1px, -157.8px);
+  }
+  45%, 100% {
+    transform: translate(349.1px, 157.8px) scale(1) translate(-349.1px, -157.8px);
+  }
+}
+
+#f4p1 {
+  animation: f4p1 6s ease-in-out forwards;
+}
+
+@keyframes f4p1 {
+  0%, 43% {
+    transform: translate(85.7px, 203.4px) scale(0) translate(-85.7px, -203.4px);
+  }
+  47% {
+    transform: translate(85.7px, 203.4px) scale(1.2) translate(-85.7px, -203.4px);
+  }
+  50%, 100% {
+    transform: translate(85.7px, 203.4px) scale(1) translate(-85.7px, -203.4px);
+  }
+}
+
+#f4p2 {
+  animation: f4p2 6s ease-in-out forwards;
+}
+
+@keyframes f4p2 {
+  0%, 43% {
+    transform: translate(596.3px, 175.2px) scale(0) translate(-596.3px, -175.2px);
+  }
+  47% {
+    transform: translate(596.3px, 175.2px) scale(1.2) translate(-596.3px, -175.2px);
+  }
+  50%, 100% {
+    transform: translate(596.3px, 175.2px) scale(1) translate(-596.3px, -175.2px);
+  }
+}
+
+#f4l1 {
+  animation: f4l1 6s ease-in-out forwards;
+}
+
+@keyframes f4l1 {
+  0%, 50% {
+    stroke-dashoffset: 150.8px;
+  }
+  57%, 100% {
+    stroke-dashoffset: 301.6px;
+  }
+}
+
+#f4l2 {
+  animation: f4l2 6s ease-in-out forwards;
+}
+
+@keyframes f4l2 {
+  0%, 50% {
+    stroke-dashoffset: 385.7px;
+  }
+  57%, 100% {
+    stroke-dashoffset: 771.4px;
+  }
+}
+
+#f4p3 {
+  animation: f4p3 6s ease-in-out forwards;
+}
+
+@keyframes f4p3 {
+  0%, 57% {
+    transform: translate(227.2px, 156px) scale(0) translate(-227.2px, -156px);
+  }
+  61% {
+    transform: translate(227.2px, 156px) scale(1.2) translate(-227.2px, -156px);
+  }
+  64%, 100% {
+    transform: translate(227.2px, 156px) scale(1) translate(-227.2px, -156px);
+  }
+}
+
+#f4p4 {
+  animation: f4p4 6s ease-in-out forwards;
+}
+
+@keyframes f4p4 {
+  0%, 57% {
+    transform: translate(278.1px, 136.6px) scale(0) translate(-278.1px, -136.6px);
+  }
+  61% {
+    transform: translate(278.1px, 136.6px) scale(1.2) translate(-278.1px, -136.6px);
+  }
+  64%, 100% {
+    transform: translate(278.1px, 136.6px) scale(1) translate(-278.1px, -136.6px);
+  }
+}
+
+#f5p1 {
+  animation: f5p1 6s ease-in-out forwards;
+}
+
+@keyframes f5p1 {
+  0%, 62% {
+    transform: translate(343.2px, 42.3px) scale(0) translate(-343.2px, -42.3px);
+  }
+  66% {
+    transform: translate(343.2px, 42.3px) scale(1.2) translate(-343.2px, -42.3px);
+  }
+  69%, 100% {
+    transform: translate(343.2px, 42.3px) scale(1) translate(-343.2px, -42.3px);
+  }
+}
+
+#f5p2 {
+  animation: f5p2 6s ease-in-out forwards;
+}
+
+@keyframes f5p2 {
+  0%, 62% {
+    transform: translate(216.7px, 241.7px) scale(0) translate(-216.7px, -241.7px);
+  }
+  66% {
+    transform: translate(216.7px, 241.7px) scale(1.2) translate(-216.7px, -241.7px);
+  }
+  69%, 100% {
+    transform: translate(216.7px, 241.7px) scale(1) translate(-216.7px, -241.7px);
+  }
+}
+
+#f5l1 {
+  animation: f5l1 6s ease-in-out forwards;
+}
+
+@keyframes f5l1 {
+  0%, 69% {
+    stroke-dashoffset: 173.5px;
+  }
+  76%, 100% {
+    stroke-dashoffset: 347px;
+  }
+}
+
+#f5l2 {
+  animation: f5l2 6s ease-in-out forwards;
+}
+
+@keyframes f5l2 {
+  0%, 69% {
+    stroke-dashoffset: 245.1px;
+  }
+  76%, 100% {
+    stroke-dashoffset: 490.2px;
+  }
+}
+
+#f5p3 {
+  animation: f5p3 6s ease-in-out forwards;
+}
+
+@keyframes f5p3 {
+  0%, 76% {
+    transform: translate(167.7px, 13.4px) scale(0) translate(-167.7px, -13.4px);
+  }
+  80% {
+    transform: translate(167.7px, 13.4px) scale(1.2) translate(-167.7px, -13.4px);
+  }
+  83%, 100% {
+    transform: translate(167.7px, 13.4px) scale(1) translate(-167.7px, -13.4px);
+  }
+}
+
+#f5p4 {
+  animation: f5p4 6s ease-in-out forwards;
+}
+
+@keyframes f5p4 {
+  0%, 76% {
+    transform: translate(356.3px, 287.7px) scale(0) translate(-356.3px, -287.7px);
+  }
+  80% {
+    transform: translate(356.3px, 287.7px) scale(1.2) translate(-356.3px, -287.7px);
+  }
+  83%, 100% {
+    transform: translate(356.3px, 287.7px) scale(1) translate(-356.3px, -287.7px);
+  }
+}
+
+#f6p1 {
+  animation: f6p1 6s ease-in-out forwards;
+}
+
+@keyframes f6p1 {
+  0%, 70% {
+    transform: translate(480.1px, 180.1px) scale(0) translate(-480.1px, -180.1px);
+  }
+  85% {
+    transform: translate(480.1px, 180.1px) scale(1.2) translate(-480.1px, -180.1px);
+  }
+  90%, 100% {
+    transform: translate(480.1px, 180.1px) scale(1) translate(-480.1px, -180.1px);
+  }
+  0%, 99.9% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#f6p2 {
+  animation: f6p2 6s ease-in-out forwards;
+}
+
+@keyframes f6p2 {
+  0%, 70% {
+    transform: translate(147.9px, 133.1px) scale(0) translate(-147.9px, -133.1px);
+  }
+  85% {
+    transform: translate(147.9px, 133.1px) scale(1.2) translate(-147.9px, -133.1px);
+  }
+  90%, 100% {
+    transform: translate(147.9px, 133.1px) scale(1) translate(-147.9px, -133.1px);
+  }
+  0%, 99.9% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#f6p3 {
+  animation: f6p3 6s ease-in-out forwards;
+}
+
+@keyframes f6p3 {
+  0%, 75% {
+    transform: translate(300.3px, 219.9px) scale(0) translate(-300.3px, -219.9px);
+  }
+  90% {
+    transform: translate(300.3px, 219.9px) scale(1.2) translate(-300.3px, -219.9px);
+  }
+  95%, 100% {
+    transform: translate(300.3px, 219.9px) scale(1) translate(-300.3px, -219.9px);
+  }
+  0%, 99.9% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#f6p4 {
+  animation: f6p4 6s ease-in-out forwards;
+}
+
+@keyframes f6p4 {
+  0%, 75% {
+    transform: translate(275.9px, 44.5px) scale(0) translate(-275.9px, -44.5px);
+  }
+  90% {
+    transform: translate(275.9px, 44.5px) scale(1.2) translate(-275.9px, -44.5px);
+  }
+  95%, 100% {
+    transform: translate(275.9px, 44.5px) scale(1) translate(-275.9px, -44.5px);
+  }
+  0%, 99.9% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#f6p5 {
+  animation: f6p5 6s ease-in-out forwards;
+}
+
+@keyframes f6p5 {
+  0%, 80% {
+    transform: translate(379.8px, 59.9px) scale(0) translate(-379.8px, -59.9px);
+  }
+  95% {
+    transform: translate(379.8px, 59.9px) scale(1.2) translate(-379.8px, -59.9px);
+  }
+  100% {
+    transform: translate(379.8px, 59.9px) scale(1) translate(-379.8px, -59.9px);
+  }
+  0%, 99.9% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#f7p1 {
+  animation: f7p1 60s 5.99s linear infinite;
+}
+
+@keyframes f7p1 {
+  0%, 100% {
+    opacity: 1;
+  }
+  0% {
+    transform: translate(480.1px, 180.1px) rotate(0deg) translate(-480.1px, -180.1px);
+  }
+  100% {
+    transform: translate(480.1px, 180.1px) rotate(360deg) translate(-480.1px, -180.1px);
+  }
+}
+
+#f7p2 {
+  animation: f7p2 60s 5.99s linear infinite;
+}
+
+@keyframes f7p2 {
+  0%, 100% {
+    opacity: 1;
+  }
+  0% {
+    transform: translate(147.9px, 133.1px) rotate(0deg) translate(-147.9px, -133.1px);
+  }
+  100% {
+    transform: translate(147.9px, 133.1px) rotate(360deg) translate(-147.9px, -133.1px);
+  }
+}
+
+#f7p3 {
+  animation: f7p3 60s 5.99s linear infinite;
+}
+
+@keyframes f7p3 {
+  0%, 100% {
+    opacity: 1;
+  }
+  0% {
+    transform: translate(300.3px, 219.9px) rotate(0deg) translate(-300.3px, -219.9px);
+  }
+  100% {
+    transform: translate(300.3px, 219.9px) rotate(360deg) translate(-300.3px, -219.9px);
+  }
+}
+
+#f7p4 {
+  animation: f7p4 60s 5.99s linear infinite;
+}
+
+@keyframes f7p4 {
+  0%, 100% {
+    opacity: 1;
+  }
+  0% {
+    transform: translate(275.9px, 44.5px) rotate(0deg) translate(-275.9px, -44.5px);
+  }
+  100% {
+    transform: translate(275.9px, 44.5px) rotate(360deg) translate(-275.9px, -44.5px);
+  }
+}
+
+#f7p5 {
+  animation: f7p5 60s 5.99s linear infinite;
+}
+
+@keyframes f7p5 {
+  0%, 100% {
+    opacity: 1;
+  }
+  0% {
+    transform: translate(379.8px, 59.9px) rotate(0deg) translate(-379.8px, -59.9px);
+  }
+  100% {
+    transform: translate(379.8px, 59.9px) rotate(360deg) translate(-379.8px, -59.9px);
+  }
+}
+
+/* ]]> */
+</style>
+
+<g id="f1" fill="none">
+<polyline id="f1l1" stroke="#8ED6F3" stroke-width="1.2" stroke-dasharray="204.8" stroke-dashoffset="204.8" points="173.7 188.2 115.8 188.2 84.1 134 0 134"/>
+<polyline id="f1l2" stroke="#FFF" stroke-width="1.2" stroke-dasharray="249.1" stroke-dashoffset="249.1" points="478.3 303.9 531.2 303.9 571.7 233.9 687 233.9"/>
+<polygon id="f1p1" stroke="#8ED6F3" stroke-width="2" transform="translate(180.2 188.2) scale(0) translate(-180.2 -188.2)" points="183.5 182.5 176.9 182.5 173.7 188.2 176.9 193.9 183.5 193.9 186.8 188.2"/>
+<polygon id="f1p2" stroke="#8ED6F3" stroke-width="2" transform="translate(471.7 303.8) scale(0) translate(-471.7 -303.8)" points="475 298.2 468.4 298.2 465.1 303.9 468.4 309.6 475 309.6 478.3 303.9"/>
+</g>
+
+<g id="f2" fill="none">
+<polyline id="f2l1" stroke="#8ED6F3" stroke-width="1.2" stroke-dasharray="263.2" stroke-dashoffset="263.2" points="357.5 263.3 342.3 289.7 260.9 289.7 220 219.5 150 219.5"/>
+<polyline id="f2l2" stroke="#FFF" stroke-width="1.2" stroke-dasharray="315.2" stroke-dashoffset="315.2" points="343.7 9.3 421.8 9.3 449.1 55.5 573.5 55.5 602.9 106.6"/>
+<polygon id="f2p1" stroke="#8ED6F3" stroke-width="2" transform="translate(143.4 219.4) scale(0) translate(-143.4 -219.4)" points="146.7 213.8 140.2 213.8 136.9 219.5 140.2 225.1 146.7 225.1 150 219.5"/>
+<polygon id="f2p2" stroke="#8ED6F3" stroke-width="4.5" transform="translate(610.2 119.3) scale(0) translate(-610.2 -119.3)" points="617.6 106.6 602.9 106.6 595.6 119.3 602.9 132 617.6 132 624.9 119.3"/>
+<polygon id="f2p3" stroke="#8ED6F3" stroke-width="2.8" transform="translate(334.6 9.2) scale(0) translate(-334.6 -9.2)" points="339.2 1.4 330.1 1.4 325.6 9.3 330.1 17.1 339.2 17.1 343.7 9.3"/>
+<polygon id="f2p4" stroke="#FFF" stroke-width="2.8" transform="translate(362 255.4) scale(0) translate(-362 -255.4)" points="366.6 247.6 357.5 247.6 353 255.4 357.5 263.3 366.6 263.3 371.1 255.4"/>
+</g>
+
+<g id="f3" fill="none" stroke="#FFF">
+<polyline id="f3l1" stroke-width="1.2" stroke-dasharray="181.2" stroke-dashoffset="181.2" points="46.8 78.5 186.4 78.5 207.3 42.6"/>
+<polyline id="f3l2" stroke-width="1.2" stroke-dasharray="307.8" stroke-dashoffset="307.8" points="353.7 165.8 422 285.6 591.8 285.5"/>
+<polygon id="f3p1" stroke-width="2.8" transform="translate(37.6 78.5) scale(0) translate(-37.6 -78.5)" points="42.2 70.7 33.1 70.7 28.6 78.5 33.1 86.4 42.2 86.4 46.8 78.5"/>
+<polygon id="f3p2" stroke-width="2.8" transform="translate(600.9 285.5) scale(0) translate(-600.9 -285.5)" points="605.4 277.7 596.4 277.7 591.8 285.5 596.4 293.4 605.4 293.4 610 285.5"/>
+<polygon id="f3p3" stroke-width="2.8" transform="translate(211.7 34.7) scale(0) translate(-211.7 -34.7)" points="216.3 26.9 207.3 26.9 202.7 34.8 207.3 42.6 216.3 42.6 220.8 34.8"/>
+<polygon id="f3p4" stroke-width="2.8" transform="translate(349.1 157.8) scale(0) translate(-349.1 -157.8)" points="353.7 150 344.6 150 340.1 157.9 344.6 165.8 353.7 165.8 358.2 157.9"/>
+</g>
+
+<g id="f4" fill="none" stroke="#FFF">
+<polyline id="f4l1" stroke-width="1.2" stroke-dasharray="150.8" stroke-dashoffset="150.8" points="222.7 163.9 200 203.4 94.8 203.4"/>
+<polyline id="f4l2" stroke-width="1.2" stroke-dasharray="385.7" stroke-dashoffset="385.7" points="287.2 136.6 381.3 136.6 414.7 79.2 540.4 79.2 590.5 165.1"/>
+<polygon id="f4p1" stroke-width="2.8" transform="translate(85.7 203.4) scale(0) translate(-85.7 -203.4)" points="90.3 195.6 81.2 195.6 76.7 203.4 81.2 211.3 90.3 211.3 94.8 203.4"/>
+<polygon id="f4p2" stroke-width="3.6" transform="translate(596.3 175.2) scale(0) translate(-596.3 -175.2)" points="602.2 165.1 590.5 165.1 584.6 175.3 590.5 185.4 602.2 185.4 608.1 175.3"/>
+<polygon id="f4p3" stroke-width="2.8" transform="translate(227.2 156) scale(0) translate(-227.2 -156)" points="231.8 148.2 222.7 148.2 218.2 156 222.7 163.9 231.8 163.9 236.3 156"/>
+<polygon id="f4p4" stroke-width="2.8" transform="translate(278.1 136.6) scale(0) translate(-278.1 -136.6)" points="282.7 128.8 273.6 128.8 269.1 136.6 273.6 144.5 282.7 144.5 287.2 136.6"/>
+</g>
+
+<g id="f5" fill="none">
+<polyline id="f5l1" stroke="#FFF" stroke-width="1.2" stroke-dasharray="173.5" stroke-dashoffset="173.5" points="353.1 293.5 346.2 305.6 254.2 305.6 220 247.4"/>
+<polyline id="f5l2" stroke="#8ED6F3" stroke-width="1.2" stroke-dasharray="245.1" stroke-dashoffset="245.1" points="171 19.1 218.6 99.6 310.9 99.6 340 48"/>
+<polygon id="f5p1" stroke="#8ED6F3" stroke-width="2" transform="translate(343.2 42.3) scale(0) translate(-343.2 -42.3)" points="346.6 36.7 340 36.7 336.7 42.4 340 48 346.6 48 349.8 42.4"/>
+<polygon id="f5p2" stroke="#8ED6F3" stroke-width="2" transform="translate(216.7 241.7) scale(0) translate(-216.7 -241.7)" points="220 236.1 213.5 236.1 210.2 241.7 213.5 247.4 220 247.4 223.3 241.7"/>
+<polygon id="f5p3" stroke="#8ED6F3" stroke-width="2" transform="translate(167.7 13.4) scale(0) translate(-167.7 -13.4)" points="171 7.8 164.5 7.8 161.2 13.5 164.5 19.1 171 19.1 174.3 13.5"/>
+<polygon id="f5p4" stroke="#FFF" stroke-width="2" transform="translate(356.3 287.7) scale(0) translate(-356.3 -287.7)" points="359.6 282.1 353 282.1 349.8 287.8 353 293.4 359.6 293.4 362.9 287.8"/>
+</g>
+
+<g id="f6">
+<g id="f6p1" transform="translate(480.1 180.1) scale(0) translate(-480.1 -180.1)">
+  <path fill="#8ED6F3" d="M431.3 239.3L404.6 193c-1.3.6-2.6 1-3.9 1.3l27.5 47.6c.9-1 2-2 3-2.6zm127-74.3l-26-45.2c-1 1-2 1.8-3.3 2.4l25.6 44.3c1.2-.7 2.4-1.1 3.8-1.5zm0 29c-1.3-.3-2.5-.8-3.7-1.4l-26 45.2c1.1.7 2.2 1.5 3 2.4l26.8-46.2zm-51.8 60.5c-.3-1-.5-2.2-.5-3.3h-51.5c0 1.3 0 2.6-.4 4h52.6l-.2-.7zm1.4-150.6h-54.4l.2 1c.3 1 .5 2 .5 3H507c0-1.4.4-2.7.9-4zm-77.3 17c-1.1-.8-2.2-1.8-3-2.8l-27 46.7c1.4.2 2.7.6 4 1.2l26-45.1z"/>
+  <path fill="#FFF" d="M515.5 260.2a10.8 10.8 0 01-5.5-9c-.1-2 .3-4.2 1.5-6a11 11 0 0115-4 11.1 11.1 0 015.4 9.5c0 1.9-.4 3.8-1.4 5.4a11 11 0 01-15 4z"/>
+  <path fill="#FFF" d="M562 190.5l-1.5-.1c-1.4-.2-2.7-.6-3.9-1.3h-.1a11 11 0 01.1-19.2c1.2-.6 2.5-1 3.9-1.2 2.3-.4 4.8 0 7 1.3a11 11 0 01-5.5 20.5z"/>
+  <path fill="#FFF" d="M439.3 119.7a11 11 0 01-6.7-2.3 10.8 10.8 0 01-2.8-14.2 11 11 0 0120.4 4.7v.9a11 11 0 01-11 11z"/>
+  <path fill="#FFF" d="M521.9 120a11 11 0 01-11-12.1 10.5 10.5 0 011.5-4.4c1.4-2.5 3.8-4.3 6.7-5a11 11 0 112.8 21.6z"/>
+  <path fill="#FFF" d="M439.6 262.6a11 11 0 01-9.6-16.5l.3-.5a11 11 0 0114.7-3.5 11 11 0 01-5.4 20.5z"/>
+  <path fill="#FFF" d="M398.5 190.5a11 11 0 110-22c1.4 0 2.8.4 4 1l1.3.5a11 11 0 014 15 10.8 10.8 0 01-9.3 5.5z"/>
+</g>
+<g id="f6p2" transform="translate(147.9 133.1) scale(0) translate(-147.9 -133.1)">
+  <path fill="#8ED6F3" d="M122.3 164.2l-14-24.3-2 .6 14.4 25c.5-.5 1-1 1.6-1.3zm66.8-39l-13.7-23.8c-.5.5-1 1-1.7 1.2L187 126l2-.8zm0 15.2l-2-.8-13.7 23.8a8 8 0 011.7 1.3l14-24.3zm-27.3 31.8a7 7 0 01-.2-1.8h-27.1c0 .7 0 1.4-.2 2.1h27.6v-.3zm.8-79.2H134l.1.5.3 1.6H162c0-.7.2-1.4.5-2zm-40.6 9l-1.6-1.5-14.2 24.5c.7.1 1.4.3 2 .6L122 102z"/>
+  <path fill="#FFF" d="M191 138.5h-.8a5.8 5.8 0 01-2-10.7 5.6 5.6 0 015.7 0 5.8 5.8 0 01-1.4 10.6l-1.5.1z"/>
+  <path fill="#FFF" d="M166.6 175.2c-1.1-.7-2-1.6-2.4-2.7a5.5 5.5 0 01.3-5.2c.7-1.4 2-2.3 3.5-2.7 1.5-.4 3-.2 4.3.6.7.3 1.3.8 1.7 1.4a5.7 5.7 0 01.4 6.4 5.8 5.8 0 01-7.8 2.2z"/>
+  <path fill="#FFF" d="M126.5 101.3a5.8 5.8 0 01-3.5-1.2 5.7 5.7 0 01-1.5-7.5 5.8 5.8 0 0110.8 2.5v.5c0 1-.3 2-.8 2.9-1 1.8-3 2.8-5 2.8z"/>
+  <path fill="#FFF" d="M170 101.5c-1 0-2-.3-3-.8a5.7 5.7 0 01-2.8-5.6 5.4 5.4 0 01.7-2.3 5.8 5.8 0 017.9-2 5.8 5.8 0 012.1 7.8l-.6.9c-.5.5-1 1-1.7 1.3-.8.5-1.7.7-2.7.7z"/>
+  <path fill="#FFF" d="M126.7 176.4a5.7 5.7 0 01-5.6-4.2 5.8 5.8 0 01.7-4.7c.4-.6 1-1.1 1.5-1.5a5.8 5.8 0 019 3.2l.1 1.2v.3c0 .6 0 1.2-.3 1.8 0 .4-.2.7-.4 1a5.8 5.8 0 01-5 3z"/>
+  <path fill="#FFF" d="M105.1 138.5c-1 0-2-.2-3-.7a5.8 5.8 0 013-10.8c.7 0 1.4.2 2.1.5l.6.3a5.8 5.8 0 01-2.7 10.7z"/>
+</g>
+<polygon id="f6p3" fill="none" stroke="#8ED6F3" stroke-width="9.6" transform="translate(300.3 219.9) scale(0) translate(-300.3 -219.9)" points="325.8 175.9 274.9 175.9 249.5 220 274.9 264 325.8 264 351.2 220"/>
+<polygon id="f6p4" fill="none" stroke="#8ED6F3" stroke-width="7.6" transform="translate(275.9 44.5) scale(0) translate(-275.9 -44.5)" points="296.3 9.3 255.6 9.3 235.3 44.5 255.6 79.7 296.3 79.7 316.6 44.5"/>
+<polygon id="f6p5" fill="none" stroke="#FFF" stroke-width="5" transform="translate(379.8 59.9) scale(0) translate(-379.8 -59.9)" points="393.1 37.1 366.6 37.1 353.4 60 366.6 82.9 393.1 82.9 406.3 60"/>
+</g>
+
+<g id="f7">
+<g id="f7p1" transform="rotate(0 480.1 180.1)" opacity="0">
+  <path fill="#8ED6F3" d="M431.3 239.3L404.6 193c-1.3.6-2.6 1-3.9 1.3l27.5 47.6c.9-1 2-2 3-2.6zm127-74.3l-26-45.2c-1 1-2 1.8-3.3 2.4l25.6 44.3c1.2-.7 2.4-1.1 3.8-1.5zm0 29c-1.3-.3-2.5-.8-3.7-1.4l-26 45.2c1.1.7 2.2 1.5 3 2.4l26.8-46.2zm-51.8 60.5c-.3-1-.5-2.2-.5-3.3h-51.5c0 1.3 0 2.6-.4 4h52.6l-.2-.7zm1.4-150.6h-54.4l.2 1c.3 1 .5 2 .5 3H507c0-1.4.4-2.7.9-4zm-77.3 17c-1.1-.8-2.2-1.8-3-2.8l-27 46.7c1.4.2 2.7.6 4 1.2l26-45.1z"/>
+  <path fill="#FFF" d="M515.5 260.2a10.8 10.8 0 01-5.5-9c-.1-2 .3-4.2 1.5-6a11 11 0 0115-4 11.1 11.1 0 015.4 9.5c0 1.9-.4 3.8-1.4 5.4a11 11 0 01-15 4z"/>
+  <path fill="#FFF" d="M562 190.5l-1.5-.1c-1.4-.2-2.7-.6-3.9-1.3h-.1a11 11 0 01.1-19.2c1.2-.6 2.5-1 3.9-1.2 2.3-.4 4.8 0 7 1.3a11 11 0 01-5.5 20.5z"/>
+  <path fill="#FFF" d="M439.3 119.7a11 11 0 01-6.7-2.3 10.8 10.8 0 01-2.8-14.2 11 11 0 0120.4 4.7v.9a11 11 0 01-11 11z"/>
+  <path fill="#FFF" d="M521.9 120a11 11 0 01-11-12.1 10.5 10.5 0 011.5-4.4c1.4-2.5 3.8-4.3 6.7-5a11 11 0 112.8 21.6z"/>
+  <path fill="#FFF" d="M439.6 262.6a11 11 0 01-9.6-16.5l.3-.5a11 11 0 0114.7-3.5 11 11 0 01-5.4 20.5z"/>
+  <path fill="#FFF" d="M398.5 190.5a11 11 0 110-22c1.4 0 2.8.4 4 1l1.3.5a11 11 0 014 15 10.8 10.8 0 01-9.3 5.5z"/>
+</g>
+<g id="f7p2" transform="rotate(0 147.9 133.1)" opacity="0">
+  <path fill="#8ED6F3" d="M122.3 164.2l-14-24.3-2 .6 14.4 25c.5-.5 1-1 1.6-1.3zm66.8-39l-13.7-23.8c-.5.5-1 1-1.7 1.2L187 126l2-.8zm0 15.2l-2-.8-13.7 23.8a8 8 0 011.7 1.3l14-24.3zm-27.3 31.8a7 7 0 01-.2-1.8h-27.1c0 .7 0 1.4-.2 2.1h27.6v-.3zm.8-79.2H134l.1.5.3 1.6H162c0-.7.2-1.4.5-2zm-40.6 9l-1.6-1.5-14.2 24.5c.7.1 1.4.3 2 .6L122 102z"/>
+  <path fill="#FFF" d="M191 138.5h-.8a5.8 5.8 0 01-2-10.7 5.6 5.6 0 015.7 0 5.8 5.8 0 01-1.4 10.6l-1.5.1z"/>
+  <path fill="#FFF" d="M166.6 175.2c-1.1-.7-2-1.6-2.4-2.7a5.5 5.5 0 01.3-5.2c.7-1.4 2-2.3 3.5-2.7 1.5-.4 3-.2 4.3.6.7.3 1.3.8 1.7 1.4a5.7 5.7 0 01.4 6.4 5.8 5.8 0 01-7.8 2.2z"/>
+  <path fill="#FFF" d="M126.5 101.3a5.8 5.8 0 01-3.5-1.2 5.7 5.7 0 01-1.5-7.5 5.8 5.8 0 0110.8 2.5v.5c0 1-.3 2-.8 2.9-1 1.8-3 2.8-5 2.8z"/>
+  <path fill="#FFF" d="M170 101.5c-1 0-2-.3-3-.8a5.7 5.7 0 01-2.8-5.6 5.4 5.4 0 01.7-2.3 5.8 5.8 0 017.9-2 5.8 5.8 0 012.1 7.8l-.6.9c-.5.5-1 1-1.7 1.3-.8.5-1.7.7-2.7.7z"/>
+  <path fill="#FFF" d="M126.7 176.4a5.7 5.7 0 01-5.6-4.2 5.8 5.8 0 01.7-4.7c.4-.6 1-1.1 1.5-1.5a5.8 5.8 0 019 3.2l.1 1.2v.3c0 .6 0 1.2-.3 1.8 0 .4-.2.7-.4 1a5.8 5.8 0 01-5 3z"/>
+  <path fill="#FFF" d="M105.1 138.5c-1 0-2-.2-3-.7a5.8 5.8 0 013-10.8c.7 0 1.4.2 2.1.5l.6.3a5.8 5.8 0 01-2.7 10.7z"/>
+</g>
+<polygon id="f7p3" fill="none" stroke="#8ED6F3" stroke-width="9.6" transform="rotate(0 300.3 219.9)" opacity="0" points="325.8 175.9 274.9 175.9 249.5 220 274.9 264 325.8 264 351.2 220"/>
+<polygon id="f7p4" fill="none" stroke="#8ED6F3" stroke-width="7.6" transform="rotate(0 275.9 44.5)" opacity="0" points="296.3 9.3 255.6 9.3 235.3 44.5 255.6 79.7 296.3 79.7 316.6 44.5"/>
+<polygon id="f7p5" fill="none" stroke="#FFF" stroke-width="5" transform="rotate(0 379.8 59.9)" opacity="0" points="393.1 37.1 366.6 37.1 353.4 60 366.6 82.9 393.1 82.9 406.3 60"/>
+</g>
+
+</svg>
