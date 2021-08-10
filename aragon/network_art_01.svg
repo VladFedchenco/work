@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 200 200">
+<style>
+/* <![CDATA[ */
+/* ]]> */
+</style>
+<defs>
+</defs>
+
+<script>
+<![CDATA[
+
+let dots = [];
+let dots_num = 7;
+let dots_radius = 5;
+let dots_x = [];
+let dots_y = [];
+let lines = [];
+let lines_x1 = [];
+let lines_x2 = [];
+let lines_y1 = [];
+let lines_y2 = [];
+
+let svg_el =  document.querySelector("svg");
+
+
+function getCoord(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  let num = Math.floor((Math.random() * (max - min + 1) + min)/10);
+  if(num % 2 === 0) {
+    return num * 10;
+  } else {
+    let plusOrMinus = Math.random() < 0.5 ? -1 : 1;
+    return (num + plusOrMinus) * 10;
+  }
+}
+
+for(let i=0; i<dots_num; i++) {
+  dots_x[i] = getCoord(20, 180);
+  dots_y[i] = getCoord(20, 180);
+
+  dots[i] = document.createElementNS( "http://www.w3.org/2000/svg", "circle");
+  dots[i].setAttribute("cx", dots_x[i]);
+  dots[i].setAttribute("cy", dots_y[i]);
+  dots[i].setAttribute("r", dots_radius);
+  dots[i].setAttribute("fill", "#000000");
+
+  svg_el.appendChild(dots[i]);
+}
+
+for(let i=0; i<dots_num; i++) {
+  lines_x1[i] = dots_x[i];
+  lines_y1[i] = dots_y[i];
+  if(i<(dots_num-1)) {
+    lines_x2[i] = dots_x[i+1];
+    lines_y2[i] = dots_y[i+1];
+  } else {
+    lines_x2[i] = dots_x[0];
+    lines_y2[i] = dots_y[0];
+  }
+  lines[i] = document.createElementNS( "http://www.w3.org/2000/svg", "line");
+  lines[i].setAttribute("x1", lines_x1[i]);
+  lines[i].setAttribute("x2", lines_x2[i]);
+  lines[i].setAttribute("y1", lines_y1[i]);
+  lines[i].setAttribute("y2", lines_y2[i]);
+  lines[i].setAttribute("stroke", "#000000");
+
+  svg_el.appendChild(lines[i]);
+}
+
+]]>
+</script>
+</svg>
