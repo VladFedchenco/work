@@ -1,0 +1,262 @@
+* {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
+}
+
+*:focus {
+    outline: none;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h2, h3 {
+  margin: 0;
+}
+
+header {
+  position: relative;
+  height: 62px;
+  padding: 16px;
+  background-color: #E33C1B;
+}
+
+footer {
+  padding: 24px 16px 170px 16px;
+  background-color: #E33C1B;
+  text-align: center;
+}
+
+input {
+  border: solid 1px #707070;
+  padding: 16px;
+  display: block;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+button, .bttn {
+  display: block;
+  width: 100%;
+  padding: 12px 8px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: #CF3D27;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 700;
+  background-color: #fff;
+  border: solid 1px #CF3D27;
+  border-radius: 6px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, .3);
+  cursor: pointer;
+  transition: all .2s linear;
+  text-decoration: none;
+}
+
+button svg, .bttn svg {
+  vertical-align: middle;
+  height: 28px;
+  margin-right: 4px;
+}
+
+button path, .bttn path {
+  fill: #CF3D27;
+  transition: all .2s linear;
+}
+
+button:hover, .bttn:hover {
+  color: #fff;
+  background-color: #CF3D27;
+}
+
+button:hover path, .bttn:hover path {
+  fill: #fff;
+}
+
+a {
+  color: #000;
+}
+
+::placeholder {
+  font-family: 'Open Sans', sans-serif;
+  opacity: 1;
+  color: #000;
+  font-size: 16px;
+  transition: all .2s linear;
+}
+
+:focus::placeholder {
+  opacity: 0;
+}
+
+#header_logo {
+  width: 68px;
+}
+
+#footer_logo {
+  width: 86px;
+}
+
+#menu {
+  position: absolute;
+  top: 18px;
+  right: 24px;
+  display: block;
+  width: 28px;
+  height: 25px;
+  background: linear-gradient(to bottom, #fff 0px, #fff 5px, transparent 5px, transparent 10px, #fff 10px, #fff 15px, transparent 15px, transparent 20px, #fff 20px, #fff 25px)
+}
+
+#content {
+  min-height: 80vh;
+  max-width: 302px;
+  padding: 45px 0 68px 0;
+  margin: 0 auto;
+}
+
+#main {
+  position: relative;
+  width: 302px;
+  min-height: 326px;
+  margin: 0 auto;
+  text-align: center;
+  opacity: 1;
+  transition: all .3s ease-in-out;
+}
+
+#tgp_container {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#main canvas {
+  opacity: 1;
+  display: block;
+  cursor: url(../imgs/hand.svg), pointer;
+  margin-bottom: 16px;
+}
+
+#click_text {
+  opacity: 1;
+  text-align: left;
+  width: 60%;
+  padding-top: 8px;
+  transition: all .4s linear;
+}
+
+#click_anim {
+  opacity: 1;
+  width: 102px;
+  position: absolute;
+  right: 10px;
+  bottom: 4px;
+  transition: all .4s linear;
+}
+
+#click_text.invis, #click_anim.invis {
+  opacity: 0;
+}
+
+#prize {
+  min-height: 326px;
+  opacity: 0;
+  border: solid 4px #CF3D27;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, .3);
+}
+
+#prize img {
+  height: 144px;
+}
+
+#prize h2 {
+  display: block;
+  padding-top: 8px;
+  font-size: 24px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 700;
+  color: #CF3D27;
+  margin: 0;
+}
+
+#prize h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+}
+
+#prize h4 {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0 0 16px 0;
+}
+
+#note {
+  font-size: 12px;
+  padding: 8px;
+}
+
+#note a {
+  color: #000;
+}
+
+#note a:hover {
+  text-decoration: none;
+}
+
+#info, #win_big {
+  padding-top: 20px;
+  text-align: center;
+  max-height: 1000px;
+  opacity: 1;
+  transition: all .5s ease;
+  pointer-events: initial;
+}
+
+#info.invis, #win_big.invis {
+  opacity: 0;
+  max-height: 0px;
+  pointer-events: none;
+}
+
+#info h2, #win_big h2 {
+  font-size: 20px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 700;
+  color: #CF3D27;
+  margin: 0;
+}
+
+.big_link {
+  font-size: 18px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: bold;
+  color: #000;
+}
+
+.more {
+  font-style: italic;
+  font-size: 14px;
+}
+
+.next_game {
+  background-color: #ff7502;
+  border-color: #ff7502;
+  color: #fff;
+}
+
+.next_game path {
+  fill: #fff;
+}
+
+#win_big strong {
+  color: #CF3D27;
+}
+
+.bttm_imgs {
+  width: 262px;
+}
