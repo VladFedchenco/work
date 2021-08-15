@@ -22,7 +22,18 @@ window.addEventListener('load', function () {
   sc.init();
 
   let ticket = document.querySelector(".sc__canvas");
+  
   ticket.onmousedown = function() {
+    document.getElementById('click_anim').setAttribute("class", "invis");
+    document.getElementById('click_text').setAttribute("class", "invis");
+    document.getElementById('prize').setAttribute("style", "opacity: 1");
+    setTimeout(function(){
+      document.getElementById('click_anim').style.display = "none";
+      document.getElementById('click_text').style.display = "none";
+    }, 400);
+  };
+
+  ticket.ontouchstart = function() {
     document.getElementById('click_anim').setAttribute("class", "invis");
     document.getElementById('click_text').setAttribute("class", "invis");
     document.getElementById('prize').setAttribute("style", "opacity: 1");
