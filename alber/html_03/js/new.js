@@ -19,7 +19,7 @@ function init() {
 
   container = document.getElementById("first-slide");
 
-  camera = new THREE.PerspectiveCamera( 60, window.innerWidth / window.innerHeight, 400, 10000 );
+  camera = new THREE.PerspectiveCamera( 60, window.innerWidth / window.innerHeight, 600, 10000 );
   camera.position.z = 1000;
 
   scene = new THREE.Scene();
@@ -129,8 +129,9 @@ function animate() {
 function render() {
 
   camera.position.x += ( mouseX - camera.position.x ) * .05;
-  camera.position.y += ( - mouseY - camera.position.y ) * .05 + 50;
-  camera.lookAt( scene.position );
+  camera.position.y += ( - mouseY - camera.position.y ) * .05 + 30;
+  camera.lookAt( 0, 300, 0 );
+
 
   const positions = particles.geometry.attributes.position.array;
   const scales = particles.geometry.attributes.scale.array;
