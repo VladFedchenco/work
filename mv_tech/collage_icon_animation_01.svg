@@ -1,0 +1,241 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 85 53">
+<style>
+/* <![CDATA[ */
+
+#frame1, #frame2, #frame3, #frame4, #person1, #person2, #person3, #person4, #baloon, #chart {
+  opacity: 0;
+}
+
+#frame1 {
+  animation: frame1 6s infinite;
+}
+
+@keyframes frame1 {
+  0% {
+    opacity: 0;
+    transform: translate(-10px, 0px);
+  }
+  7%, 90%, 100% {
+    opacity: 1;
+    transform: translate(0px, 0px);
+  }
+  95%, 100% {
+    opacity: 0;
+  }
+}
+
+#frame4 {
+  animation: frame4 6s infinite;
+}
+
+@keyframes frame4 {
+  0%, 3% {
+    opacity: 0;
+    transform: translate(10px, 0px);
+  }
+  10%, 90%, 100% {
+    opacity: 1;
+    transform: translate(0px, 0px);
+  }
+  95%, 100% {
+    opacity: 0;
+  }
+}
+
+#frame2 {
+  animation: frame2 6s infinite;
+}
+
+@keyframes frame2 {
+  0%, 6% {
+    opacity: 0;
+    transform: translate(0px, -6px);
+  }
+  13%, 90%, 100% {
+    opacity: 1;
+    transform: translate(0px, 0px);
+  }
+  95%, 100% {
+    opacity: 0;
+  }
+}
+
+#frame3 {
+  animation: frame3 6s infinite;
+}
+
+@keyframes frame3 {
+  0%, 9% {
+    opacity: 0;
+    transform: translate(0px, 6px);
+  }
+  16%, 90%, 100% {
+    opacity: 1;
+    transform: translate(0px, 0px);
+  }
+  95%, 100% {
+    opacity: 0;
+  }
+}
+
+#person1 {
+  animation: person1 6s infinite;
+}
+
+@keyframes person1 {
+  0%, 14% {
+    opacity: 0;
+    transform: translate(30px, 18px) scale(0) translate(-30px, -18px);
+  }
+  20% {
+    opacity: 1;
+    transform: translate(30px, 18px) scale(1.2) translate(-30px, -18px);
+  }
+  23%, 90%, 100% {
+    opacity: 1;
+    transform: translate(30px, 18px) scale(1) translate(-30px, -18px);
+  }
+  95%, 100% {
+    opacity: 0;
+  }
+}
+
+#person4 {
+  animation: person4 6s infinite;
+}
+
+@keyframes person4 {
+  0%, 18% {
+    opacity: 0;
+    transform: translate(56px, 43px) scale(0) translate(-56px, -43px);
+  }
+  24% {
+    opacity: 1;
+    transform: translate(56px, 43px) scale(1.2) translate(-56px, -43px);
+  }
+  27%, 90%, 100% {
+    opacity: 1;
+    transform: translate(56px, 43px) scale(1) translate(-56px, -43px);
+  }
+  95%, 100% {
+    opacity: 0;
+  }
+}
+
+#chart {
+  animation: chart 6s infinite;
+}
+
+@keyframes chart {
+  0%, 24% {
+    opacity: 0;
+    transform: translate(2px, 0px);
+  }
+  30% {
+    opacity: 1;
+    transform: translate(-.5px, 0px);
+  }
+  34%, 90%, 100% {
+    opacity: 1;
+    transform: translate(0px, 0px);
+  }
+  95%, 100% {
+    opacity: 0;
+  }
+}
+
+#person2 {
+  animation: person2 6s infinite;
+}
+
+@keyframes person2 {
+  0%, 26% {
+    opacity: 0;
+    transform: translate(53px, 25px) scale(0) translate(-53px, -25px);
+  }
+  32% {
+    opacity: 1;
+    transform: translate(53px, 25px) scale(1.1) translate(-53px, -25px);
+  }
+  35%, 90%, 100% {
+    opacity: 1;
+    transform: translate(53px, 25px) scale(1) translate(-53px, -25px);
+  }
+  95%, 100% {
+    opacity: 0;
+  }
+}
+
+#person3 {
+  animation: person3 6s infinite;
+}
+
+@keyframes person3 {
+  0%, 30% {
+    opacity: 0;
+    transform: translate(32px, 43px) scale(0) translate(-32px, -43px);
+  }
+  36% {
+    opacity: 1;
+    transform: translate(32px, 43px) scale(1.1) translate(-32px, -43px);
+  }
+  39%, 90%, 100% {
+    opacity: 1;
+    transform: translate(32px, 43px) scale(1) translate(-32px, -43px);
+  }
+  95%, 100% {
+    opacity: 0;
+  }
+}
+
+#baloon {
+  animation: baloon 6s ease-out infinite;
+}
+
+@keyframes baloon {
+  0%, 34% {
+    opacity: 0;
+    transform: translate(0px, 6px);
+  }
+  42%, 90%, 100% {
+    opacity: 1;
+    transform: translate(0px, 0px);
+  }
+  95%, 100% {
+    opacity: 0;
+  }
+}
+
+/* ]]> */
+</style>
+  <path id="frame1" fill="#FFF" stroke="#95D400" d="M24.78 5.88h11.15a2.5 2.5 0 012.5 2.5v11.15a2.5 2.5 0 01-2.5 2.5H24.78a2.5 2.5 0 01-2.5-2.5V8.38a2.5 2.5 0 012.5-2.5z"/>
+  <path id="frame2" fill="#F7FFE2" stroke="#95D400" d="M43.07 5.88h18.64a2 2 0 012 2v18.64a2 2 0 01-2 2H43.07a2 2 0 01-2-2V7.88c0-1.1.9-2 2-2z"/>
+  <path id="frame3" fill="#F7FFE2" stroke="#95D400" d="M24.29 24.97h12.14a2 2 0 012 2v17.14a2 2 0 01-2 2H24.29a2 2 0 01-2-2V26.97a2 2 0 012-2z"/>
+  <path id="frame4" fill="#FFF" stroke="#95D400" d="M43.07 31.37h18.64a2 2 0 012 2v10.75a2 2 0 01-2 2H43.07a2 2 0 01-2-2V33.37a2 2 0 012-2z"/>
+  <path id="person1" fill="#95D400" d="M31.05 14.35a2.44 2.44 0 001.76-2.34 2.46 2.46 0 10-4.92 0c0 1.11.75 2.04 1.76 2.34a4.14 4.14 0 00-3.44 4.01h8.27a4.1 4.1 0 00-3.43-4.01z"/>
+  <g id="person2">
+    <path fill="#95D400" d="M56.37 12.53h-7.21V9.96c0-.62.5-1.12 1.12-1.12h4.98c.62 0 1.12.5 1.12 1.12v2.57z"/>
+    <path fill="none" stroke="#95D400" stroke-linecap="round" stroke-linejoin="round" d="M49.85 13.67c-.2.42-.32.88-.32 1.37a3.23 3.23 0 006.47 0c0-.49-.12-.96-.32-1.37h-5.83z"/>
+    <line x1="57.12" x2="48.41" y1="13.67" y2="13.67" fill="none" stroke="#95D400" stroke-linecap="round" stroke-linejoin="round"/>
+    <path fill="none" stroke="#95D400" stroke-linecap="round" stroke-linejoin="round" d="M55.82 19.31l-3.06 4.28-3.06-4.28a6.2 6.2 0 00-2.35 5.46h10.81c.01-.16.03-.32.03-.49a6.2 6.2 0 00-2.37-4.97z"/>
+    <polygon fill="#95D400" points="51.8 19.1 52.25 19.75 52.03 20.88 52.73 21.83 53.43 20.88 53.2 19.75 53.65 19.1"/>
+  </g>
+  <g id="person3" fill="#95D400">
+    <path d="M34.85 36.79a2.43 2.43 0 10-4.87 0 2.43 2.43 0 004.87 0z"/>
+    <path d="M36.36 43.37V41.2c0-1.08-.82-1.95-1.83-1.95h-4.6c-.8 0-1.46.7-1.46 1.55v2.56h7.89z"/>
+  </g>
+  <g id="baloon">
+    <circle cx="26.87" cy="29.67" r="2.47" fill="none" stroke="#95D400"/>
+    <polygon fill="#95D400" points="25.68 33.4 26.87 31.77 28.06 33.4"/>
+    <path fill="none" stroke="#95D400" stroke-linecap="round" d="M27.11 39.14h0a1.44 1.44 0 010-2.03h0c.56-.56.56-1.47 0-2.03h0a1.44 1.44 0 010-2.03h0"/>
+  </g>
+  <g id="person4" fill="none" stroke="#95D400" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M55.57 39.14a4.14 4.14 0 00-3.44 4.01"/>
+    <path d="M60.4 43.15a4.14 4.14 0 00-3.44-4.01"/>
+    <circle cx="56.26" cy="36.79" r="2.45"/>
+  </g>
+  <g id="chart" fill="#FFF" stroke="#95D400" stroke-linecap="round">
+    <polyline stroke-linejoin="round" points="50.54 42.75 44.29 42.75 44.29 34.78 52.77 34.78"/>
+    <polyline points="46.19 40.67 48.06 38.09 49.92 39.76 52.25 37.39"/>
+  </g>
+</svg>
