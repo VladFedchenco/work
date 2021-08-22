@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 85 53">
+<style>
+/* <![CDATA[ */
+
+#bg, #bg2, #cam, #arrow, #sticker {
+  opacity: 0;
+}
+
+#cam {
+  animation: cam 6s infinite;
+}
+
+@keyframes cam {
+  0%, 33%, 100% {
+    opacity: 0;
+    transform: translate(26px, 15px) scale(0) translate(-26px, -15px);
+  }
+  4% {
+    opacity: 1;
+    transform: translate(26px, 15px) scale(1.2) translate(-26px, -15px);
+  }
+  6% {
+    transform: translate(26px, 15px) scale(.9) translate(-26px, -15px);
+  }
+  7%, 25% {
+    opacity: 1;
+    transform: translate(26px, 15px) scale(1) translate(-26px, -15px);
+  }
+}
+
+#bg {
+  animation: bg 6s infinite;
+}
+
+@keyframes bg {
+  0%, 25%, 50%, 100% {
+    opacity: 0;
+    transform: translate(56px, 15px) scale(0) translate(-56px, -15px);
+  }
+  33%, 43% {
+    opacity: 1;
+    transform: translate(56px, 15px) scale(1) translate(-56px, -15px);
+  }
+}
+
+#arrow {
+  animation: arrow 6s infinite;
+}
+
+@keyframes arrow {
+  0%, 40% {
+    opacity: 0;
+    transform: translate(56px, 27px) rotate(-30deg) translate(-56px, -27px);
+  }
+  47% {
+    opacity: 1;
+    transform: translate(56px, 27px) rotate(0deg) translate(-56px, -27px);
+  }
+  55%, 100% {
+    opacity: 0;
+  }
+}
+
+#bg2 {
+  animation: bg2 6s infinite;
+}
+
+@keyframes bg2 {
+  0%, 44%, 95%, 100% {
+    opacity: 0;
+  }
+  52%, 90% {
+    opacity: 1;
+  }
+}
+
+#sticker {
+  animation: sticker 6s infinite;
+}
+
+@keyframes sticker {
+  0%, 50%, 95%, 100% {
+    opacity: 0;
+    transform: translate(56px, 43px) scale(0) translate(-56px, -43px);
+  }
+  54% {
+    opacity: 1;
+    transform: translate(56px, 43px) scale(1.2) translate(-56px, -43px);
+  }
+  56% {
+    transform: translate(56px, 43px) scale(.9) translate(-56px, -43px);
+  }
+  57%, 90% {
+    opacity: 1;
+    transform: translate(56px, 43px) scale(1) translate(-56px, -43px);
+  }
+}
+
+/* ]]> */
+</style>
+
+  <path id="frame" fill="#F7FFE2" stroke="#95D400" d="M29.41 14.19h24.72a2 2 0 012 2v24.72a2 2 0 01-2 2H29.41a2 2 0 01-2-2V16.19a2 2 0 012-2z"/>
+  <g id="bg2" stroke="#95D400">
+    <!-- <path fill="#FFF" d="M29.41 14.19h24.72a2 2 0 012 2v24.72a2 2 0 01-2 2H29.41a2 2 0 01-2-2V16.19a2 2 0 012-2z"/> -->
+    <polyline fill="none" stroke-linecap="round" stroke-linejoin="round" points="46.42 29.2 47.51 28.09 53.55 35.37"/>
+    <polyline fill="none" stroke-linecap="round" stroke-linejoin="round" points="37.15 28.68 35.4 30.6 33.27 28.49 36.01 24.25"/>
+    <ellipse cx="50.34" cy="22.11" fill="#FFF" stroke-linecap="round" stroke-linejoin="round" rx="2.3" ry="2.13"/>
+    <line x1="28.83" x2="33.27" y1="35.37" y2="28.49" fill="none" stroke-linecap="round"/>
+  </g>
+  <path id="person" fill="#95D400" d="M43 29.26a4.35 4.35 0 00-1.24-8.54 4.36 4.36 0 00-1.24 8.54 7.35 7.35 0 00-6.12 7.13h14.71A7.32 7.32 0 0043 29.26z"/>
+  <g id="bg" stroke="#95D400">
+    <path fill="#FFF" d="M50.43 7.66h12.22c.72 0 1.31.59 1.31 1.31v12.22c0 .72-.59 1.31-1.31 1.31H50.43c-.72 0-1.31-.59-1.31-1.31V8.97c0-.72.59-1.31 1.31-1.31z"/>
+    <polyline fill="none" stroke-linecap="round" stroke-linejoin="round" points="57.14 16.96 58.95 15.12 61.66 18.38"/>
+    <polygon fill="#FFF" points="56.06 15.3 55.13 16.02 54.3 15.38 53.65 16.38 52.57 15.3 54.3 12.61"/>
+    <ellipse cx="60.21" cy="12.44" fill="#FFF" stroke-linecap="round" stroke-linejoin="round" rx="1.03" ry=".96"/>
+    <line x1="50.58" x2="52.57" y1="18.38" y2="15.3" fill="none" stroke-linecap="round"/>
+    <line x1="56.06" x2="58.07" y1="15.3" y2="18.38" fill="none" stroke-linecap="round"/>
+  </g>
+  <path id="arrow" fill="#95D400" d="M61.61 27.36l-2.22-3.61-2.22 3.61h1.21a3.01 3.01 0 01-4.48 1.67l.87-.87-4.12-.98.98 4.12.91-.91a4.93 4.93 0 007.8-3.03h1.27z"/>
+  <g id="cam" stroke="#95D400" stroke-linecap="round" stroke-linejoin="round">
+    <path fill="#FFF" d="M31.72 10.83H29.6v-.08c0-.59-.47-1.06-1.06-1.06h-4.25c-.59 0-1.06.47-1.06 1.06v.08H21.1c-.59 0-1.06.47-1.06 1.06v7.51c0 .59.47 1.06 1.06 1.06h10.62c.59 0 1.06-.47 1.06-1.06v-7.51c0-.58-.48-1.06-1.06-1.06z"/>
+    <circle cx="26.41" cy="15.45" r="2.69" fill="none"/>
+  </g>
+  <g id="sticker">
+    <path fill="#FFF" stroke="#95D400" stroke-linecap="round" stroke-linejoin="round" d="M60.2 38.72a5.72 5.72 0 10-4.65 9.72l6.26-6.26a5.58 5.58 0 00-1.61-3.46z"/>
+    <path fill="#95D400" stroke="#95D400" stroke-linecap="round" stroke-linejoin="round" d="M55.56 48.43a5.69 5.69 0 016.26-6.26l-6.26 6.26z"/>
+    <circle cx="53.89" cy="40.81" r=".92" fill="#95D400"/>
+    <circle cx="58.36" cy="40.81" r=".92" fill="#95D400"/>
+    <path fill="none" stroke="#95D400" stroke-linecap="round" stroke-linejoin="round" d="M53.89 44.5a2.84 2.84 0 002.24 1.08"/>
+  </g>
+</svg>
