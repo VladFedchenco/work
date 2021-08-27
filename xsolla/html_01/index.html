@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Babka 16x9 v01</title>
+  <link rel="stylesheet" type="text/css" href="css/main.css" />
+  <script src="js/lottie.js"></script>
+</head>
+<body>
+<div id="lottie"></div>
+<a href="javascript:;" class="bttn" id="nxt">Next</a>
+</body>
+<script>
+  let params = {
+      container: document.getElementById('lottie'),
+      path: 'data.json',
+      renderer: 'svg',
+      loop: false,
+      autoplay: false
+  };
+
+  let anim;
+
+  anim = lottie.loadAnimation(params);
+  anim.addEventListener('DOMLoaded',function(){
+    anim.goToAndStop(0, 1);
+
+    let scene_selected = 0;
+
+    let bttn1 = document.getElementById('nxt');
+
+    bttn1.onclick = function() {
+      if(scene_selected == 0) {
+        anim.playSegments([60, 130], true);
+        setTimeout(function(){
+          bttn1.classList.add("inactive");
+          scene_selected = 1;
+          setTimeout(function(){
+            bttn1.classList.remove("inactive");
+          }, 3000);
+        }, 50);
+      }
+      if(scene_selected == 1) {
+        anim.playSegments([188, 257], true);
+        setTimeout(function(){
+          bttn1.classList.add("inactive");
+          scene_selected = 2;
+          setTimeout(function(){
+            bttn1.classList.remove("inactive");
+          }, 3000);
+        }, 50);
+      }
+      if(scene_selected == 2) {
+        anim.playSegments([295, 360], true);
+        setTimeout(function(){
+          bttn1.classList.add("inactive");
+          scene_selected = 4;
+          setTimeout(function(){
+            bttn1.classList.remove("inactive");
+          }, 3000);
+        }, 50);
+      }
+      if(scene_selected == 4) {
+        anim.playSegments([390, 710], true);
+        setTimeout(function(){
+          bttn1.style.display = "none";
+        }, 50);
+      }
+    }
+
+  });
+</script>
+</html>
