@@ -1,0 +1,239 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 85 53">
+<style>
+/* <![CDATA[ */
+
+#frame {
+  animation: frame 6s ease-in-out infinite;
+}
+@keyframes frame {
+  0% {
+    opacity: 0;
+    transform: translate(35px, 0px) scale(0, 1) translate(-35px, 0px);
+  }
+  5%, 87% {
+    opacity: 1;
+    transform: translate(35px, 0px) scale(1, 1) translate(-35px, 0px);
+  }
+  92%, 100% {
+    opacity: 0;
+  }
+}
+
+#ornament-dark {
+  animation: ornament-dark 6s linear infinite;
+}
+
+@keyframes ornament-dark {
+  0%, 5%, 95%, 100% {
+    opacity: 0;
+  }
+  10%, 90% {
+    opacity: 1;
+  }
+}
+
+#ornament {
+  animation: ornament 6s linear infinite;
+}
+
+@keyframes ornament {
+  0%, 8%, 95%, 100% {
+    opacity: 0;
+  }
+  13%, 90% {
+    opacity: 1;
+  }
+}
+
+#logo {
+  animation: logo 6s ease-in-out infinite;
+}
+
+@keyframes logo {
+  0%, 8% {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  12% {
+    transform: translateY(2px);
+    opacity: 1;
+  }
+  14% {
+    transform: translateY(-1px);
+  }
+  16%, 100% {
+    transform: translateY(0px);
+  }
+  90% {
+    opacity: 1;
+  }
+  95%, 100% {
+    opacity: 0;
+  }
+}
+
+#headline {
+  animation: headline 6s ease-in-out infinite;
+}
+
+@keyframes headline {
+  0%, 11% {
+    transform: translate(42.5px, 0px) scale(0, 1) translate(-42.5px, 0px);
+    opacity: 0;
+  }
+  16% {
+    transform: translate(42.5px, 0px) scale(1.05, 1) translate(-42.5px, 0px);
+    opacity: 1;
+  }
+  18% {
+    transform: translate(42.5px, 0px) scale(1, 1) translate(-42.5px, 0px);
+  }
+  90% {
+    opacity: 1;
+  }
+  95%, 100% {
+    opacity: 0;
+  }
+}
+
+#subheadline {
+  animation: subheadline 6s ease-in-out infinite;
+}
+
+@keyframes subheadline {
+  0%, 16% {
+    transform: translate(42.5px, 0px) scale(0, 1) translate(-42.5px, 0px);
+    opacity: 0;
+  }
+  21% {
+    transform: translate(42.5px, 0px) scale(1.05, 1) translate(-42.5px, 0px);
+    opacity: 1;
+  }
+  23% {
+    transform: translate(42.5px, 0px) scale(1, 1) translate(-42.5px, 0px);
+  }
+  90% {
+    opacity: 1;
+  }
+  95%, 100% {
+    opacity: 0;
+  }
+}
+
+#date {
+  animation: date 6s ease-in-out infinite;
+}
+
+@keyframes date {
+  0%, 21% {
+    transform: translate(27.6px, 0px) scale(0, 1) translate(-27.6px, 0px);
+    opacity: 0;
+  }
+  28%, 100% {
+    transform: translate(27.6px, 0px) scale(1, 1) translate(-27.6px, 0px);
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  95%, 100% {
+    opacity: 0;
+  }
+}
+
+#sign {
+  stroke-dasharray: 15px;
+  stroke-dashoffset: 15px;
+  animation: sign 6s ease-in-out infinite;
+}
+
+@keyframes sign {
+  0%, 26% {
+    opacity: 0;
+    stroke-dashoffset: 15px;
+  }
+  32%, 100% {
+    opacity: 1;
+    stroke-dashoffset: 0px;
+  }
+  90% {
+    opacity: 1;
+  }
+  95%, 100% {
+    opacity: 0;
+  }
+}
+
+#download {
+  animation: download 6s ease-in-out infinite;
+}
+
+@keyframes download {
+  0%, 26% {
+    transform: translate(0px, -5px);
+    opacity: 0;
+  }
+  32%, 100% {
+    transform: translate(0px, 2px);
+    opacity: 1;
+  }
+  35% {
+    transform: translate(0px, -1px);
+  }
+  37%, 100% {
+    transform: translate(0px, 0px);
+  }
+  90% {
+    opacity: 1;
+  }
+  95%, 100% {
+    opacity: 0;
+  }
+}
+
+#arrow {
+  animation: arrow 6s ease-in-out infinite;
+}
+
+@keyframes arrow {
+  0%, 40%, 67% {
+    transform: translate(0px, 0px);
+  }
+  45%, 72% {
+    transform: translate(0px, -2px);
+  }
+  50%, 77% {
+    transform: translate(0px, 1px);
+  }
+  53%, 80% {
+    transform: translate(0px, -1px);
+  }
+  56%, 83%, 100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+/* ]]> */
+</style>
+  <rect id="frame" width="55" height="35" x="15" y="8.35" fill="#FFF" stroke="#95D400"/>
+  <g id="ornament-dark" fill="#95D400" stroke="#95D400">
+    <polygon points="19.41 21.87 15 23.9 15 17.72 19.41 15.69"/>
+    <polygon points="19.41 9.51 15 11.55 15 8.35 19.41 8.35"/>
+    <polygon points="23.82 13.66 19.41 15.69 19.41 9.51 21.93 8.35 23.82 8.35"/>
+  </g>
+  <g id="ornament" fill="#F7FFE2" stroke="#95D400">
+    <polygon points="19.41 28.05 15 30.08 15 23.9 19.41 21.87"/>
+    <polygon points="19.41 15.69 15 17.72 15 11.54 19.41 9.51"/>
+    <polygon points="23.82 19.84 19.41 21.87 19.41 15.69 23.82 13.66"/>
+    <polygon points="28.23 11.62 23.82 13.65 23.82 8.35 28.23 8.35"/>
+  </g>
+  <circle id="logo" cx="42.5" cy="16.03" r="3.33" fill="#95D400"/>
+  <rect id="headline" width="29.74" height="3.03" x="27.63" y="23.88" fill="#95D400"/>
+  <rect id="subheadline" width="22.19" height="2.33" x="31.4" y="28.52" fill="#95D400"/>
+  <line id="date" x1="27.63" x2="38.73" y1="36.8" y2="36.8" fill="#FFF" stroke="#95D400"/>
+  <path id="sign" fill="#FFF" stroke="#95D400" stroke-linecap="round" d="M46.23 36.97s1.04-2.65 1.26-1.4c.22 1.25 2.04 4.75 1.9 2.54s2.25-3.02 2.21-2.54c-.04.48 2.11 2.46 2.88.7"/>
+  <g id="download">
+    <circle cx="66.12" cy="38.43" r="8.75" fill="#F7FFE2" stroke="#95D400"/>
+    <polygon id="arrow" fill="#95D400" points="68.75 39.35 68.75 33.02 63.48 33.02 63.48 39.35 60.56 39.35 66.12 44.91 71.67 39.35"/>
+  </g>
+</svg>
