@@ -1,0 +1,36 @@
+{
+  "graph0": {
+    "cyl0": {
+      "x": "4",
+      "y": "0",
+      "h": "4",
+      "color": "#f1e14d",
+      "init_text": "Sour",
+      "updated_text": "2-Methylbutanoic Acid"
+    },
+    "cyl1": {
+      "x": "3",
+      "y": "3",
+      "h": "3.5",
+      "color": "#3d862d",
+      "init_text": "Green/Vegetative",
+      "updated_text": "3-(Methylthio)Propionaldehyde"
+    },
+    "cyl2": {
+      "x": "-0.5",
+      "y": "4",
+      "h": "3",
+      "color": "#c0d2d6",
+      "init_text": "Papery/Musty",
+      "updated_text": "1-Hydroxybutan-2-One"
+    },
+    "cyl3": {
+      "x": "-4",
+      "y": "0",
+      "h": "3.8",
+      "color": "#bc4549",
+      "init_text": "Brown spice",
+      "updated_text": "5-Methylhexane-2,3-Dione"
+    }
+  }
+}
