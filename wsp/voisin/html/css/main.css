@@ -1,0 +1,289 @@
+* {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
+}
+
+*:focus {
+    outline: none;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 62px;
+    background: #B30838;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+    background: #000;
+    padding: 48px 48px 64px 48px;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+}
+
+ul {
+    display: block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: block;
+    float: left;
+}
+
+h1, h2, h3, h4 {
+    color: #B30838;
+}
+
+input {
+    border: solid 1px #ccc;
+    display: block;
+    width: 300px;
+    margin: 0 auto 16px auto;
+    text-align: center;
+    font-size: 18px;
+    padding: 12px 16px;
+}
+
+input:focus::placeholder {
+    opacity: 0;
+}
+
+button {
+    width: 302px;
+    height: 48px;
+    background: #B30838;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    display: block;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 48px;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+button:hover {
+    background: #D82355;
+}
+
+button svg {
+    vertical-align: middle;
+    margin: -2px 4px 0 0;
+}
+
+button svg path {
+    fill: #fff;
+}
+
+#nav {
+    height: 62px;
+    position: relative;
+}
+
+#nav li {
+    height: 62px;
+    padding: 0 16px;
+}
+
+#nav a {
+    display: block;
+    line-height: 62px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+#nav a svg {
+    vertical-align: middle;
+    margin: -3px 4px 0 0;
+}
+
+#nav a svg path {
+    fill: #fff;
+}
+
+#wheel {
+    padding: 32px 0 16px 0;
+}
+
+#main_canvas {
+    display: block;
+    width: 380px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+#spin_button, #redeem_prize {
+    width: 302px;
+    height: 48px;
+    background: #B30838;
+    color: #fff;
+    border-radius: 4px;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    line-height: 48px;
+    margin: 0 auto;
+    transition: all .2s ease;
+}
+
+#redeem_prize {
+    margin-top: 16px;
+}
+
+#spin_button:hover, #redeem_prize:hover {
+    background: #D82355;
+}
+
+#spin_button svg, #redeem_prize svg {
+    vertical-align: middle;
+    margin: -2px 4px 0 0;
+}
+
+#spin_button svg path, #redeem_prize svg path {
+    fill: #fff;
+}
+
+#social {
+    padding: 32px 0 16px 0;
+    text-align: center;
+}
+
+#social svg {
+    margin: 0 8px;
+}
+
+#social svg path {
+    fill: #B30838;
+}
+
+#footer_links {
+    font-size: 14px;
+    padding: 0 0 24px 0;
+}
+
+#footer_links a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 16px;
+}
+
+#footer_links a:hover {
+    text-decoration: underline;
+}
+
+#footer_note {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#ready_to_play {
+    max-width: 680px;
+    margin: 0 auto;
+    text-align: center;
+    border-top: solid 1px #B30838;
+}
+
+#ready_to_play img {
+    width: 100%;
+    display: block;
+}
+
+#ready_to_play p {
+    display: block;
+    padding-top: 24px;
+    margin: 0;
+}
+
+.clmns {
+    display: flex;
+}
+
+.clmn {
+    flex: 50%;
+    padding: 0 16px;
+}
+
+#win_block {
+    max-width: 620px;
+    margin: 0 auto;
+    padding-bottom: 32px;
+    text-align: center;
+}
+
+#win_block h3, #headline4 {
+    margin: 0;
+}
+
+#win_block h3.icon {
+    display: inline-block;
+    padding-left: 42px;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='33' height='22' viewBox='0 0 33 22'%3E%3Cpath fill='%23B30838' d='M7.33 5.5h18.34v11H7.33ZM30.25 11A2.75 2.75 0 0 0 33 13.75v5.5A2.75 2.75 0 0 1 30.25 22H2.75A2.75 2.75 0 0 1 0 19.25v-5.5a2.75 2.75 0 0 0 0-5.5v-5.5A2.75 2.75 0 0 1 2.75 0h27.5A2.75 2.75 0 0 1 33 2.75v5.5A2.75 2.75 0 0 0 30.25 11ZM27.5 5a1.37 1.37 0 0 0-1.38-1.37H6.88A1.37 1.37 0 0 0 5.5 5v12a1.37 1.37 0 0 0 1.38 1.37h19.24A1.37 1.37 0 0 0 27.5 17Z'/%3E%3C/svg%3E") no-repeat left center;
+}
+
+#win_block h4 {
+    margin-top: 0;
+    color: #000;
+}
+
+#date {
+    padding: 24px 0;
+    font-size: 12px;
+}
+
+#date a {
+    color: #000;
+}
+
+#button_block {
+    overflow: visible;
+    max-height: 100px;
+    pointer-events: initial;
+    transition: max-height .2s ease-in-out;
+}
+
+#button_block.invisible {
+    overflow: hidden;
+    max-height: 0px;
+    pointer-events: none;
+}
+
+#result {
+    pointer-events: none;
+    overflow: hidden;
+    max-height: 0px;
+    transition: max-height .5s ease-in-out;
+}
+
+#result.visible {
+    max-height: 1400px;
+    overflow: visible;
+    pointer-events: initial;
+}
+
+@media (max-width: 768px) {
+    .clmns {
+    display: block;
+    }
+}
