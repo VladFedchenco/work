@@ -1,0 +1,280 @@
+* {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
+}
+
+*:focus {
+    outline: none;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+header {
+    height: 70px;
+    padding: 0px 16px;
+    line-height: 68px;
+    background: #00589C;
+    overflow: hidden;
+}
+
+header a {
+    display: inline-block;
+    margin-right: 16px;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+header a svg {
+    vertical-align: middle;
+    margin: -3px 8px 0 0;
+}
+
+header a.header_button, .bttn_spin {
+    background: linear-gradient(to bottom, #f7eb54 0%, #f7eb54 50%, #f8da08 50%, #f8da08 100%);
+    line-height: 36px;
+    padding: 0px 16px;
+    border-radius: 20px;
+    border-top: solid 1px #faf7b5;
+    border-bottom: solid 1px #f9f042;
+    box-shadow: 0px 0px 0px 1px #faba13;
+    color: #000;
+    font-size: 14px;
+}
+
+.bttn_spin {
+    display: inline-block;
+    min-width: 302px;
+    text-align: center;
+    padding: 4px 36px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.bttn_spin svg {
+    vertical-align: middle;
+    margin: -3px 4px 0 0;
+}
+
+#spin_area {
+    position: relative;
+    text-align: center;
+    padding: 8px 0px 32px 0px;
+    min-height: calc(100vh - 400px);
+}
+
+footer {
+    min-height: 330px;
+    padding: 30px 8px;
+    background: #00589C;
+    text-align: center;
+}
+
+.footer_logo {
+    margin: 0 8px;
+}
+
+.footer_logo img {
+    vertical-align: middle;
+}
+
+#logo_sof {
+    height: 32px;
+}
+
+#logo_sfl {
+    height: 36px;
+}
+
+#logo_uf {
+    height: 40px;
+}
+
+#social {
+    padding: 32px 0;
+    color: #fff;
+    font-size: 16px;
+}
+
+#social svg {
+    height: 18px;
+    margin: 0 8px;
+}
+
+#footer_links {
+    padding: 16px 0;
+    font-size: 14px;
+}
+
+#footer_links a {
+    color: #fff;
+}
+
+#footer_note {
+    font-size: 12px;
+    color: #fff;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+#main_canvas {
+    width: 375px;
+    height: 430px;
+}
+
+#intro_area {
+    color: #00589C;
+    max-height: 800px;
+    overflow: hidden;
+    pointer-events: initial;
+    transition: all .5s ease-in-out;
+}
+
+#intro_area.invis {
+    opacity: 0;
+    pointer-events: none;
+    max-height: 0px;
+}
+
+#intro_area h3 {
+    font-size: 22px;
+}
+
+#intro_area h4 {
+    font-size: 22px;
+    color: #008AD9;
+}
+
+#intro_area h5 {
+    font-size: 15px;
+    margin: 0;
+}
+
+#bonuses {
+    width: 368px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.bonus {
+    float: left;
+    width: 112px;
+    margin: 0 5px;
+    min-height: 190px;
+    text-align: center;
+}
+
+.bonus img {
+    width: 108px;
+}
+
+#prize_texts {
+    line-height: 1.6;
+    max-width: 375px;
+    margin: 0 auto;
+    max-height: 200px;
+    pointer-events: initial;
+    opacity: 1;
+    transition: all .3s ease-in-out;
+}
+
+#prize_texts.invis {
+    opacity: 0;
+    max-height: 0px;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+#headline1 {
+    font-size: 18px;
+    color: #008AD9;
+    margin: 0 0 12px 0;
+}
+
+#headline2 {
+    font-size: 22px;
+    color: #005396;
+    margin: 0;
+}
+
+#headline3, #headline4 {
+    font-size: 16px;
+}
+
+#remaining_spins {
+    max-width: 375px;
+    margin: 0 auto;
+    padding-top: 16px;
+    border-top: solid 1px #707070;
+    max-height: 180px;
+    pointer-events: initial;
+    opacity: 1;
+    transition: all .3s ease-in-out;
+}
+
+#remaining_spins.invis {
+    padding-top: 0px;
+    border-top: none;
+    opacity: 0;
+    max-height: 0px;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+#get_more_spins {
+    max-width: 375px;
+    margin: 0 auto;
+    max-height: 600px;
+    pointer-events: initial;
+    opacity: 1;
+    transition: all .3s ease-in-out;
+}
+
+#get_more_spins.invis {
+    opacity: 0;
+    max-height: 0px;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+#bonus_spins_info {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: solid 1px #707070;
+}
+
+#bonus_spins_info h3 {
+    color: #008AD9;
+    font-size: 22px;
+}
+
+#bonus_spins_info p {
+    line-height: 1.6;
+}
+
+#bonus_spins_info a {
+    color: #005396;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 0 12px;
+}
+
+#bonus_spins_info a svg {
+    vertical-align: middle;
+    margin: -4px 2px 0 0;
+}
+
+#get_more_spins img {
+    width: 176px;
+}
+
+
+@media (max-width: 768px) {
+
+}
