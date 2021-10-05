@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Market</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    svg {
+      max-height: 80vh;
+      margin-top: 32px;
+    }
+  </style>
+</head>
+<body>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 542">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+      @import url('https://api.fontshare.com/css?f[]=satoshi@400,700&display=swap');
+    </style>
+  </defs>
+  <style>
+  /* <![CDATA[ */
+    .font_satoshi {
+      font-family: 'Satoshi', sans-serif;
+    }
+    .font_inter {
+      font-family: 'Inter', sans-serif;
+      letter-spacing: -0.01em;
+    }
+    .inactive path {
+      opacity: 0;
+    }
+    .inactive:hover path {
+      opacity: .5;
+    }
+    .inactive text {
+      fill: #8F9BB7;
+    }
+  /* ]]> */
+  </style>
+  <path fill="none" d="M16 0h808a16 16 0 0 1 16 16v510a16 16 0 0 1-16 16H16a16 16 0 0 1-16-16V16A16 16 0 0 1 16 0z"/>
+  <path fill="#060B27" d="M16 0h808a16 16 0 0 1 16 16v510a16 16 0 0 1-16 16H16a16 16 0 0 1-16-16V16A16 16 0 0 1 16 0z"/>
+  <linearGradient id="grad_01" x1="-119" x2="-119" y1="1324.5" y2="782.5" gradientTransform="matrix(1 0 0 -1 539 1324.5)" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#fff"/>
+    <stop offset=".46" stop-color="#fff" stop-opacity=".2"/>
+    <stop offset="1" stop-color="#fff" stop-opacity=".52"/>
+  </linearGradient>
+  <path fill="url(#grad_01)" fill-opacity=".08" d="M16 0h808a16 16 0 0 1 16 16v510a16 16 0 0 1-16 16H16a16 16 0 0 1-16-16V16A16 16 0 0 1 16 0z"/>
+  <path fill="#FFF" fill-opacity=".1" d="M15.93 0H824a16 16 0 0 1 16 16v8H0v-8.07C0 7.13 7.13 0 15.93 0z"/>
+  <circle cx="17" cy="12" r="4" fill="#FFF"/>
+  <circle cx="31" cy="12" r="4" fill="#FFF"/>
+  <circle cx="45" cy="12" r="4" fill="#FFF"/>
+  <path fill="none" stroke="#FFF" stroke-opacity=".1" d="M16.5.5H824A15.5 15.5 0 0 1 839.5 16v510a15.5 15.5 0 0 1-15.5 15.5H16A15.5 15.5 0 0 1 .5 526V16.5a16 16 0 0 1 16-16z"/>
+  <line x1="840" y1="24" y2="24" fill="none" stroke="#FFF" stroke-opacity=".1"/>
+  <text font-size="16" x="40" y="74" fill="#D7DBE5" font-weight="400" class="font_inter">Market Summary</text>
+  <path fill="#FFF" transform="translate(180 64)" d="M5.66 4.24 1.41 8.49 0 7.07l2.83-2.83L0 1.41 1.41 0l4.25 4.24z"/>
+  <text id="company_name" font-size="16" x="199" y="74" fill="#fff" font-weight="400" class="font_inter"></text>
+  <text id="founder_name" font-size="12" x="40" y="96" fill="#D7DBE5" font-weight="500" class="font_inter"></text>
+  <text font-size="32" x="40" y="144" fill="#fff" font-weight="700" letter-spacing="-0.02" class="font_satoshi"><tspan id="current_price"></tspan><tspan font-size="14" fill="#8F9BB7"> USD</tspan></text>
+  <text id="total_top" font-size="14" x="186" y="144" fill="#3DEA6E" font-weight="700" letter-spacing="0.6" class="font_satoshi"><tspan id="total_change"></tspan> (<tspan id="percent_change"></tspan>%)</text>
+  <path id="arrow_down" fill="#F62847" transform="translate(315 134)" d="M5.08 9.13 1.06 5.11 0 6.17 5.83 12l5.83-5.83-1.06-1.06-4.02 4.02V0h-1.5v9.13z" display="none"/>
+  <path id="arrow_up" fill="#3DEA6E" transform="translate(315 134)" d="M5.08 2.87 1.06 6.89 0 5.83 5.83 0l5.83 5.83-1.06 1.06-4.02-4.02V12h-1.5V2.87z" display="none"/>
+  <text id="current_day" font-size="14" x="337" y="144" fill="#3DEA6E" font-weight="700" letter-spacing="0.6" class="font_satoshi">TODAY</text>
+
+  <a id="bttn_1h" href="javascript:;" transform="translate(0 0)">
+    <path transform="translate(516 128)" fill="#fff" fill-opacity=".1" d="M12 0h24a12 12 0 1 1 0 24H12a12 12 0 1 1 0-24z"/>
+    <text font-size="12" x="540" y="144" fill="#fff" font-weight="500" letter-spacing="0.6" text-anchor="middle" class="font_inter">1H</text>
+  </a>
+  <a id="bttn_24h" href="javascript:;" transform="translate(48 0)" class="inactive">
+    <path transform="translate(516 128)" fill="#fff" fill-opacity=".1" d="M12 0h24a12 12 0 1 1 0 24H12a12 12 0 1 1 0-24z"/>
+    <text font-size="12" x="540" y="144" fill="#fff" font-weight="500" letter-spacing="0.6" text-anchor="middle" class="font_inter">24H</text>
+  </a>
+  <a id="bttn_1w" href="javascript:;" transform="translate(96 0)" class="inactive">
+    <path transform="translate(516 128)" fill="#fff" fill-opacity=".1" d="M12 0h24a12 12 0 1 1 0 24H12a12 12 0 1 1 0-24z"/>
+    <text font-size="12" x="540" y="144" fill="#fff" font-weight="500" letter-spacing="0.6" text-anchor="middle" class="font_inter">1W</text>
+  </a>
+  <a id="bttn_1m" href="javascript:;" transform="translate(144 0)" class="inactive">
+    <path transform="translate(516 128)" fill="#fff" fill-opacity=".1" d="M12 0h24a12 12 0 1 1 0 24H12a12 12 0 1 1 0-24z"/>
+    <text font-size="12" x="540" y="144" fill="#fff" font-weight="500" letter-spacing="0.6" text-anchor="middle" class="font_inter">1M</text>
+  </a>
+  <a id="bttn_1y" href="javascript:;" transform="translate(192 0)" class="inactive">
+    <path transform="translate(516 128)" fill="#fff" fill-opacity=".1" d="M12 0h24a12 12 0 1 1 0 24H12a12 12 0 1 1 0-24z"/>
+    <text font-size="12" x="540" y="144" fill="#fff" font-weight="500" letter-spacing="0.6" text-anchor="middle" class="font_inter">1Y</text>
+  </a>
+  <a id="bttn_all" href="javascript:;" transform="translate(240 0)" class="inactive">
+    <path transform="translate(516 128)" fill="#fff" fill-opacity=".1" d="M12 0h24a12 12 0 1 1 0 24H12a12 12 0 1 1 0-24z"/>
+    <text font-size="12" x="540" y="144" fill="#fff" font-weight="500" letter-spacing="0.6" text-anchor="middle" class="font_inter">ALL</text>
+  </a>
+
+  <text font-size="14" x="40" y="177" fill="#D7DBE5" font-weight="400" class="font_inter">Closed: <tspan id="date"></tspan></text>
+  <text font-size="14" x="40" y="209" fill="#D7DBE5" font-weight="400" class="font_inter">After 24 hours <tspan id="volume_24h"></tspan></text>
+  <text id="total_bottom" font-size="14" x="200" y="209" fill="#3DEA6E" font-weight="700" letter-spacing="0.6" class="font_satoshi"><tspan id="total_24change"></tspan> (<tspan id="percent_24change"></tspan>%)</text>
+
+  <linearGradient id="grad_02" x2="0" y2="1">
+    <stop offset="0" stop-color="#7A38FF"/>
+    <stop offset="1" stop-color="#7A38FF" stop-opacity="0"/>
+  </linearGradient>
+  <polygon id="chart_bg" fill="url(#grad_02)" opacity=".1" transform="translate(40 232)" points="0,270 0,72 760,0 760,270" />
+  <linearGradient id="grad_03" x2="1" y2="0">
+    <stop offset="0" stop-color="#7A38FF"/>
+    <stop offset="1" stop-color="#38F3FF"/>
+  </linearGradient>
+  <polyline id="chart" fill="none" stroke-width="3" stroke="url(#grad_03)" transform="translate(40 232)" points="0,72 760,0"/>
+
+  <text font-size="14" x="40" y="427" fill="#fff" font-weight="700" letter-spacing="0.6" class="font_satoshi">MARKET STATS</text>
+  <g transform="translate(0 0)">
+    <text font-size="14" x="40" y="459" fill="#fff" font-weight="500" class="font_inter">Market Cap</text>
+    <text font-size="24" x="40" y="495" fill="#fff" font-weight="700" letter-spacing="0.6" class="font_satoshi" id="market_cap"></text>
+  </g>
+  <g transform="translate(190 0)">
+    <text font-size="14" x="40" y="459" fill="#fff" font-weight="500" class="font_inter">Circulating Supply</text>
+    <text font-size="24" x="40" y="495" fill="#fff" font-weight="700" letter-spacing="0.6" class="font_satoshi" id="circulating_supply"></text>
+  </g>
+  <g transform="translate(380 0)">
+    <text font-size="14" x="40" y="459" fill="#fff" font-weight="500" class="font_inter">Status</text>
+    <text font-size="24" x="40" y="495" fill="#fff" font-weight="700" letter-spacing="0.6" class="font_satoshi" id="status"></text>
+  </g>
+  <g transform="translate(570 0)">
+    <text font-size="14" x="40" y="459" fill="#fff" font-weight="500" class="font_inter">Type</text>
+    <text font-size="24" x="40" y="495" fill="#fff" font-weight="700" letter-spacing="0.6" class="font_satoshi" id="type"></text>
+  </g>
+</svg>
+<script>
+  let requestURL = 'data.json';
+  let request = new XMLHttpRequest();
+  request.open('GET', requestURL);
+  request.responseType = 'json';
+  request.send();
+
+  request.onload = function() {
+    const chartData = request.response;
+    document.getElementById('company_name').textContent = chartData.company_name;
+    document.getElementById('founder_name').textContent = chartData.founder_name;
+    document.getElementById('market_cap').textContent = chartData.market_cap;
+    document.getElementById('circulating_supply').textContent = chartData.circulating_supply;
+    document.getElementById('status').textContent = chartData.status;
+    document.getElementById('type').textContent = chartData.type;
+    change_data('graph_1h');
+  }
+
+  function change_data(period) {
+    const chartData = request.response;
+    let chart_path = document.getElementById('chart');
+    let chart_bg = document.getElementById('chart_bg');
+    let chart_points = chartData[period].price_points;
+    let chart_ready = '';
+    for(let i=0; i<chart_points.length; i++) {
+      for(let j=0; j<2; j++) {
+        if(j == 0) {
+          chart_ready += chart_points[i][j] + ',';
+        } else {
+          chart_ready += -1 * (chart_points[i][j] - 72) + ' ';
+        }
+      }
+    }
+    chart_path.setAttribute("points", chart_ready);
+    chart_bg.setAttribute("points", "0,270 " + chart_ready + " 760,270");
+    let market_up = chartData[period].market_up;
+    if(market_up) {
+      document.getElementById('arrow_down').setAttribute('display', 'none');
+      document.getElementById('arrow_up').setAttribute('display', '');
+      document.getElementById('total_top').setAttribute('fill', '#3DEA6E');
+      document.getElementById('total_bottom').setAttribute('fill', '#3DEA6E');
+      document.getElementById('current_day').setAttribute('fill', '#3DEA6E');
+    } else {
+      document.getElementById('arrow_up').setAttribute('display', 'none');
+      document.getElementById('arrow_down').setAttribute('display', '');
+      document.getElementById('total_top').setAttribute('fill', '#F62847');
+      document.getElementById('total_bottom').setAttribute('fill', '#F62847');
+      document.getElementById('current_day').setAttribute('fill', '#F62847');
+    }
+    document.getElementById('current_price').textContent = chartData[period].current_price;
+    document.getElementById('total_change').textContent = chartData[period].total_change;
+    document.getElementById('percent_change').textContent = chartData[period].percent_change;
+    document.getElementById('date').textContent = chartData[period].date;
+    document.getElementById('volume_24h').textContent = chartData[period].volume_24h;
+    document.getElementById('total_24change').textContent = chartData[period].total_24change;
+    document.getElementById('percent_24change').textContent = chartData[period].percent_24change;
+  }
+
+  document.getElementById("bttn_1h").onclick = function() {
+    change_data('graph_1h');
+    set_inactive();
+    this.setAttribute("class", "");
+  };
+
+  document.getElementById("bttn_24h").onclick = function() {
+    change_data('graph_24h');
+    set_inactive();
+    this.setAttribute("class", "");
+  };
+
+  document.getElementById("bttn_1w").onclick = function() {
+    change_data('graph_1w');
+    set_inactive();
+    this.setAttribute("class", "");
+  };
+
+  document.getElementById("bttn_1m").onclick = function() {
+    change_data('graph_1m');
+    set_inactive();
+    this.setAttribute("class", "");
+  };
+
+  document.getElementById("bttn_1y").onclick = function() {
+    change_data('graph_1y');
+    set_inactive();
+    this.setAttribute("class", "");
+  };
+
+  document.getElementById("bttn_all").onclick = function() {
+    change_data('all');
+    set_inactive();
+    this.setAttribute("class", "");
+  };
+
+  function set_inactive() {
+    document.getElementById("bttn_1h").setAttribute("class", "inactive")
+    document.getElementById("bttn_24h").setAttribute("class", "inactive")
+    document.getElementById("bttn_1w").setAttribute("class", "inactive")
+    document.getElementById("bttn_1m").setAttribute("class", "inactive")
+    document.getElementById("bttn_1y").setAttribute("class", "inactive")
+    document.getElementById("bttn_all").setAttribute("class", "inactive")
+  }
+</script>
+</body>
+</html>
