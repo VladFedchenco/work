@@ -1,0 +1,12 @@
+{ 
+  "win_sector": 0,
+  "initial_spins": 123,
+  "headline1": "You've earned:",
+  "headline2": "5 Sweepstakes Entries!",
+  "prize_info_part1": "More entries means more chances to",
+  "prize_info_part2": "WIN Free Groceries for a Year, Free Fuel for a Year, the Ultimate Mexico Getaway and more!",
+  "remaining_spins": true,
+  "spins_number": 123,
+  "get_more_spins": false,
+  "entries_number": 123
+}

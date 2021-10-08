@@ -1,0 +1,12 @@
+{ 
+  "win_sector": 3,
+  "initial_spins": 123,
+  "headline1": "Yippie! You've WON:",
+  "headline2": "100 More Rewards Points!",
+  "prize_info_part1": "Your points will be automatically added to your More Rewards account on",
+  "prize_info_part2": "November 24, 2021.",
+  "remaining_spins": false,
+  "spins_number": 123,
+  "get_more_spins": true,
+  "entries_number": 123
+}
