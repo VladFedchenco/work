@@ -52,14 +52,14 @@ function init() {
   ctx = cnvs.getContext('2d');
 
   wheel_base = new Image();
-  wheel_base.src = 'imgs/wheel_base.png';
+  wheel_base.src = 'imgs/wheel_base.png?v=' + getRandomInt(1, 10000);
   img_preload[0] = false;
   wheel_base.onload = function() {
     img_preload[0] = true;
   }
 
   wheel_sectors = new Image();
-  wheel_sectors.src = 'imgs/wheel_sectors.png';
+  wheel_sectors.src = 'imgs/wheel_sectors.png?v=' + getRandomInt(1, 10000);
   img_preload[1] = false;
   wheel_sectors.onload = function() {
     for (let i = 0; i < angles[win_sector].length; i++) {
@@ -76,70 +76,70 @@ function init() {
   }
 
   wheel_shadow = new Image();
-  wheel_shadow.src = 'imgs/wheel_shadow.png';
+  wheel_shadow.src = 'imgs/wheel_shadow.png?v=' + getRandomInt(1, 10000);
   img_preload[2] = false;
   wheel_shadow.onload = function() {
     img_preload[2] = true;
   }
 
   wheel_ridge = new Image();
-  wheel_ridge.src = 'imgs/wheel_ridge.png';
+  wheel_ridge.src = 'imgs/wheel_ridge.png?v=' + getRandomInt(1, 10000);
   img_preload[3] = false;
   wheel_ridge.onload = function() {
     img_preload[3] = true;
   }
 
   wheel_lamps_yellow = new Image();
-  wheel_lamps_yellow.src = 'imgs/wheel_lamps_yellow.png';
+  wheel_lamps_yellow.src = 'imgs/wheel_lamps_yellow.png?v=' + getRandomInt(1, 10000);
   img_preload[4] = false;
   wheel_lamps_yellow.onload = function() {
     img_preload[4] = true;
   }
 
   wheel_lamps_red = new Image();
-  wheel_lamps_red.src = 'imgs/wheel_lamps_red.png';
+  wheel_lamps_red.src = 'imgs/wheel_lamps_red.png?v=' + getRandomInt(1, 10000);
   img_preload[5] = false;
   wheel_lamps_red.onload = function() {
     img_preload[5] = true;
   }
 
   wheel_lamps_yellow2 = new Image();
-  wheel_lamps_yellow2.src = 'imgs/wheel_lamps_yellow2.png';
+  wheel_lamps_yellow2.src = 'imgs/wheel_lamps_yellow2.png?v=' + getRandomInt(1, 10000);
   img_preload[6] = false;
   wheel_lamps_yellow2.onload = function() {
     img_preload[6] = true;
   }
 
   wheel_lamps_red2 = new Image();
-  wheel_lamps_red2.src = 'imgs/wheel_lamps_red2.png';
+  wheel_lamps_red2.src = 'imgs/wheel_lamps_red2.png?v=' + getRandomInt(1, 10000);
   img_preload[7] = false;
   wheel_lamps_red2.onload = function() {
     img_preload[7] = true;
   }
 
   wheel_arrow = new Image();
-  wheel_arrow.src = 'imgs/wheel_arrow.png';
+  wheel_arrow.src = 'imgs/wheel_arrow.png?v=' + getRandomInt(1, 10000);
   img_preload[8] = false;
   wheel_arrow.onload = function() {
     img_preload[8] = true;
   }
 
   wheel_center = new Image();
-  wheel_center.src = 'imgs/wheel_center.png';
+  wheel_center.src = 'imgs/wheel_center.png?v=' + getRandomInt(1, 10000);
   img_preload[9] = false;
   wheel_center.onload = function() {
     img_preload[9] = true;
   }
 
   leprcn_01 = new Image();
-  leprcn_01.src = 'imgs/leprcn_00.png';
+  leprcn_01.src = 'imgs/leprcn_00.png?v=' + getRandomInt(1, 10000);
   img_preload[10] = false;
   leprcn_01.onload = function() {
     img_preload[10] = true;
   }
 
   leprcn_02 = new Image();
-  leprcn_02.src = 'imgs/leprcn_0' + (win_sector + 1) + '.png';
+  leprcn_02.src = 'imgs/leprcn_0' + (win_sector + 1) + '.png?v=' + getRandomInt(1, 10000);
   img_preload[11] = false;
   leprcn_02.onload = function() {
     img_preload[11] = true;
@@ -147,7 +147,7 @@ function init() {
 
   win_prize_counter = 0;
   win_prize = new Image();
-  win_prize.src = 'imgs/sector' + win_sector + '.png';
+  win_prize.src = 'imgs/sector' + win_sector + '.png?v=' + getRandomInt(1, 10000);
   img_preload[12] = false;
   win_prize.onload = function() {
     for (let i = 0; i < 36; i++) {
@@ -164,7 +164,7 @@ function init() {
 
   stars_counter = 0;
   stars = new Image();
-  stars.src = 'imgs/stars.png';
+  stars.src = 'imgs/stars.png?v=' + getRandomInt(1, 10000);
   img_preload[13] = false;
   stars.onload = function() {
     for (let i = 0; i < 36; i++) {
@@ -183,27 +183,33 @@ function init() {
   blink = 0;
 
   dust_frames[0] = new Image();
-  dust_frames[0].src = 'imgs/dust1.png';
+  dust_frames[0].src = 'imgs/dust1.png?v=' + getRandomInt(1, 10000);
   img_preload[14] = false;
   dust_frames[0].onload = function() {
     img_preload[14] = true;
   }
 
   dust_frames[1] = new Image();
-  dust_frames[1].src = 'imgs/dust2.png';
+  dust_frames[1].src = 'imgs/dust2.png?v=' + getRandomInt(1, 10000);
   img_preload[15] = false;
   dust_frames[1].onload = function() {
     img_preload[15] = true;
   }
 
   dust_frames[2] = new Image();
-  dust_frames[2].src = 'imgs/dust3.png';
+  dust_frames[2].src = 'imgs/dust3.png?v=' + getRandomInt(1, 10000);
   img_preload[16] = false;
   dust_frames[2].onload = function() {
     img_preload[16] = true;
   }
 
   draw();
+}
+
+function getRandomInt(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min) + min);
 }
 
 function draw() {
