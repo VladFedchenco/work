@@ -215,12 +215,12 @@ function getRandomInt(min, max) {
 function draw() {
 
   for( let i = 0; i<img_preload.length; i++) {
-    if (!img_preload[i]) {
-      imgs_loaded = false;
-      break;
-    } else {
+    // if (!img_preload[i]) {
+    //   imgs_loaded = false;
+    //   break;
+    // } else {
       imgs_loaded = true;
-    }
+    // }
   }
 
   if(imgs_loaded) {
