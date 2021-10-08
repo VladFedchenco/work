@@ -24,7 +24,7 @@ angles[7] = [0, 0.003, 0.012, 0.033, 0.072, 0.141, 0.252, 0.417, 0.651, 0.972, 1
 
 let scale = [0, 0.0001, 0.0007, 0.0023, 0.0055, 0.0107, 0.0185, 0.0294, 0.0439, 0.0625, 0.0857, 0.1141, 0.1481, 0.1884, 0.2353, 0.2894, 0.3512, 0.4212, 0.5, 0.5788, 0.6488, 0.7106, 0.7647, 0.8116, 0.8519, 0.8859, 0.9143, 0.9375, 0.9561, 0.9706, 0.9815, 0.9893, 0.9945, 0.9977, 0.9993, 1];
 
-let requestURL = 'js/data.json';
+let requestURL = 'js/data.json?v=' + getRandomInt(1, 10000);
 let request = new XMLHttpRequest();
 request.open('GET', requestURL);
 request.responseType = 'json';
@@ -47,19 +47,25 @@ request.onload = function() {
 
 }
 
+function getRandomInt(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min) + min);
+}
+
 function init() {
 
   ctx = cnvs.getContext('2d');
 
   wheel_base = new Image();
-  wheel_base.src = 'imgs/wheel_base.png?v=' + getRandomInt(1, 10000);
+  wheel_base.src = 'imgs/wheel_base.png';
   img_preload[0] = false;
   wheel_base.onload = function() {
     img_preload[0] = true;
   }
 
   wheel_sectors = new Image();
-  wheel_sectors.src = 'imgs/wheel_sectors.png?v=' + getRandomInt(1, 10000);
+  wheel_sectors.src = 'imgs/wheel_sectors.png';
   img_preload[1] = false;
   wheel_sectors.onload = function() {
     for (let i = 0; i < angles[win_sector].length; i++) {
@@ -76,70 +82,70 @@ function init() {
   }
 
   wheel_shadow = new Image();
-  wheel_shadow.src = 'imgs/wheel_shadow.png?v=' + getRandomInt(1, 10000);
+  wheel_shadow.src = 'imgs/wheel_shadow.png';
   img_preload[2] = false;
   wheel_shadow.onload = function() {
     img_preload[2] = true;
   }
 
   wheel_ridge = new Image();
-  wheel_ridge.src = 'imgs/wheel_ridge.png?v=' + getRandomInt(1, 10000);
+  wheel_ridge.src = 'imgs/wheel_ridge.png';
   img_preload[3] = false;
   wheel_ridge.onload = function() {
     img_preload[3] = true;
   }
 
   wheel_lamps_yellow = new Image();
-  wheel_lamps_yellow.src = 'imgs/wheel_lamps_yellow.png?v=' + getRandomInt(1, 10000);
+  wheel_lamps_yellow.src = 'imgs/wheel_lamps_yellow.png';
   img_preload[4] = false;
   wheel_lamps_yellow.onload = function() {
     img_preload[4] = true;
   }
 
   wheel_lamps_red = new Image();
-  wheel_lamps_red.src = 'imgs/wheel_lamps_red.png?v=' + getRandomInt(1, 10000);
+  wheel_lamps_red.src = 'imgs/wheel_lamps_red.png';
   img_preload[5] = false;
   wheel_lamps_red.onload = function() {
     img_preload[5] = true;
   }
 
   wheel_lamps_yellow2 = new Image();
-  wheel_lamps_yellow2.src = 'imgs/wheel_lamps_yellow2.png?v=' + getRandomInt(1, 10000);
+  wheel_lamps_yellow2.src = 'imgs/wheel_lamps_yellow2.png';
   img_preload[6] = false;
   wheel_lamps_yellow2.onload = function() {
     img_preload[6] = true;
   }
 
   wheel_lamps_red2 = new Image();
-  wheel_lamps_red2.src = 'imgs/wheel_lamps_red2.png?v=' + getRandomInt(1, 10000);
+  wheel_lamps_red2.src = 'imgs/wheel_lamps_red2.png';
   img_preload[7] = false;
   wheel_lamps_red2.onload = function() {
     img_preload[7] = true;
   }
 
   wheel_arrow = new Image();
-  wheel_arrow.src = 'imgs/wheel_arrow.png?v=' + getRandomInt(1, 10000);
+  wheel_arrow.src = 'imgs/wheel_arrow.png';
   img_preload[8] = false;
   wheel_arrow.onload = function() {
     img_preload[8] = true;
   }
 
   wheel_center = new Image();
-  wheel_center.src = 'imgs/wheel_center.png?v=' + getRandomInt(1, 10000);
+  wheel_center.src = 'imgs/wheel_center.png';
   img_preload[9] = false;
   wheel_center.onload = function() {
     img_preload[9] = true;
   }
 
   leprcn_01 = new Image();
-  leprcn_01.src = 'imgs/leprcn_00.png?v=' + getRandomInt(1, 10000);
+  leprcn_01.src = 'imgs/leprcn_00.png';
   img_preload[10] = false;
   leprcn_01.onload = function() {
     img_preload[10] = true;
   }
 
   leprcn_02 = new Image();
-  leprcn_02.src = 'imgs/leprcn_0' + (win_sector + 1) + '.png?v=' + getRandomInt(1, 10000);
+  leprcn_02.src = 'imgs/leprcn_0' + (win_sector + 1) + '.png';
   img_preload[11] = false;
   leprcn_02.onload = function() {
     img_preload[11] = true;
@@ -147,7 +153,7 @@ function init() {
 
   win_prize_counter = 0;
   win_prize = new Image();
-  win_prize.src = 'imgs/sector' + win_sector + '.png?v=' + getRandomInt(1, 10000);
+  win_prize.src = 'imgs/sector' + win_sector + '.png';
   img_preload[12] = false;
   win_prize.onload = function() {
     for (let i = 0; i < 36; i++) {
@@ -164,7 +170,7 @@ function init() {
 
   stars_counter = 0;
   stars = new Image();
-  stars.src = 'imgs/stars.png?v=' + getRandomInt(1, 10000);
+  stars.src = 'imgs/stars.png';
   img_preload[13] = false;
   stars.onload = function() {
     for (let i = 0; i < 36; i++) {
@@ -183,21 +189,21 @@ function init() {
   blink = 0;
 
   dust_frames[0] = new Image();
-  dust_frames[0].src = 'imgs/dust1.png?v=' + getRandomInt(1, 10000);
+  dust_frames[0].src = 'imgs/dust1.png';
   img_preload[14] = false;
   dust_frames[0].onload = function() {
     img_preload[14] = true;
   }
 
   dust_frames[1] = new Image();
-  dust_frames[1].src = 'imgs/dust2.png?v=' + getRandomInt(1, 10000);
+  dust_frames[1].src = 'imgs/dust2.png';
   img_preload[15] = false;
   dust_frames[1].onload = function() {
     img_preload[15] = true;
   }
 
   dust_frames[2] = new Image();
-  dust_frames[2].src = 'imgs/dust3.png?v=' + getRandomInt(1, 10000);
+  dust_frames[2].src = 'imgs/dust3.png';
   img_preload[16] = false;
   dust_frames[2].onload = function() {
     img_preload[16] = true;
@@ -206,21 +212,15 @@ function init() {
   draw();
 }
 
-function getRandomInt(min, max) {
-  min = Math.ceil(min);
-  max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min) + min);
-}
-
 function draw() {
 
   for( let i = 0; i<img_preload.length; i++) {
-    // if (!img_preload[i]) {
-    //   imgs_loaded = false;
-    //   break;
-    // } else {
+    if (!img_preload[i]) {
+      imgs_loaded = false;
+      break;
+    } else {
       imgs_loaded = true;
-    // }
+    }
   }
 
   if(imgs_loaded) {
