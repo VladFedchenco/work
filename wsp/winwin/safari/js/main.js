@@ -24,7 +24,7 @@ angles[7] = [0, 0.003, 0.012, 0.033, 0.072, 0.141, 0.252, 0.417, 0.651, 0.972, 1
 
 let scale = [0, 0.0001, 0.0007, 0.0023, 0.0055, 0.0107, 0.0185, 0.0294, 0.0439, 0.0625, 0.0857, 0.1141, 0.1481, 0.1884, 0.2353, 0.2894, 0.3512, 0.4212, 0.5, 0.5788, 0.6488, 0.7106, 0.7647, 0.8116, 0.8519, 0.8859, 0.9143, 0.9375, 0.9561, 0.9706, 0.9815, 0.9893, 0.9945, 0.9977, 0.9993, 1];
 
-let requestURL = 'js/data.json?v=' + getRandomInt(1, 10000);
+let requestURL = 'js/data.json';
 let request = new XMLHttpRequest();
 request.open('GET', requestURL);
 request.responseType = 'json';
@@ -42,15 +42,6 @@ request.onload = function() {
   $("#spins_number").innerHTML = prizeData.spins_number;
   section_get_more_spins = prizeData.get_more_spins;
   $("#entries_number").innerHTML = prizeData.entries_number;
-
-  init();
-
-}
-
-function getRandomInt(min, max) {
-  min = Math.ceil(min);
-  max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min) + min);
 }
 
 function init() {
@@ -372,4 +363,5 @@ document.addEventListener('DOMContentLoaded', (event) => {
   cnvs.addEventListener('pointerout', point_out, false);
   cnvs.addEventListener('pointerup', start_game, false);
   $("#start_bttn").addEventListener('pointerup', start_game, false);
+  setTimeout(function(){ init() }, 1000);
 })
