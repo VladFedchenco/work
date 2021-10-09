@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>NFT - Seed</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #E5E5E5;
+    }
+    body > svg {
+      display: block;
+      max-height: 80vh;
+      margin: 32px auto;
+    }
+  </style>
+</head>
+<body>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 538 412">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+      @import url('https://api.fontshare.com/css?f[]=satoshi@400,700&display=swap');
+    </style>
+  </defs>
+  <style>
+  /* <![CDATA[ */
+    .font_satoshi {
+      font-family: 'Satoshi', sans-serif;
+    }
+    .font_inter {
+      font-family: 'Inter', sans-serif;
+      letter-spacing: -0.01em;
+    }
+    .label {
+      font-weight: 500;
+      font-size: 14px;
+      fill: #8F8F8F;
+    }
+    .info_text {
+      font-weight: 700;
+      font-size: 24px;
+      fill: #ffffff;
+    }
+    #nft_summary {
+      display: inline-block;
+      padding: 4px 12px;
+      margin-bottom: 16px;
+      color: #fff;
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 4px;
+      white-space: nowrap;
+    }
+    #nft_summary svg {
+      margin: 0 12px;
+    }
+    #price_details {
+      color: #fff;
+      margin-bottom: 16px;
+    }
+    #current_price {
+      font-size: 32px;
+      font-weight: 700;
+    }
+    #currency {
+      font-size: 14px;
+      color: rgba(255, 255, 255, .72);
+    }
+    #current_percent {
+      font-size: 12px;
+      margin-left: 16px;
+    }
+    #current_shift {
+      font-size: 12px;
+      margin-left: 16px;
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 4px;
+      text-align: center;
+      padding: 4px 8px;
+      width: 83px;
+    }
+    #date {
+      font-size: 14px;
+      color: rgba(255, 255, 255, .72);
+    }
+    #arrow_down {
+      margin-bottom: -1px;
+    }
+  /* ]]> */
+  </style>
+  <g id="chart_bg">
+    <path fill="#060B27" d="M12 0h514a12 12 0 0 1 12 12v388a12 12 0 0 1-12 12H12a12 12 0 0 1-12-12V12A12 12 0 0 1 12 0z"/>
+    <path fill="#060B27" d="M12 0h514a12 12 0 0 1 12 12v20H0V12A12 12 0 0 1 12 0z"/>
+    <line x1="538" y1="32" y2="32" fill="none" stroke="#212121"/>
+    <circle cx="19" cy="16" r="3" fill="#EA695E"/>
+    <circle cx="33" cy="16" r="3" fill="#F2BE4F"/>
+    <circle cx="47" cy="16" r="3" fill="#66C454"/>
+    <radialGradient id="label_icn" gradientTransform="translate(0 .08)">
+      <stop offset="0.5" stop-color="#fff" stop-opacity=".04" />
+      <stop offset="0.8" stop-color="#fff" stop-opacity=".1" />
+      <stop offset="1" stop-color="#fff" stop-opacity=".2" />
+    </radialGradient>
+    <path  fill="url('#label_icn')" d="M48 256.5a23.5 23.5 0 1 1 0 47 23.5 23.5 0 1 1 0-47z"/>
+    <path fill="#fff" d="M38 288h20v2H38v-2zm2-8h2v7h-2v-7zm5 0h2v7h-2v-7zm4 0h2v7h-2v-7zm5 0h2v7h-2v-7zm-16-5 10-5 10 5v4H38v-4zm2 1.24v.76h16v-.76l-8-4-8 4zm8-.24a.99.99 0 0 1-1-1 .99.99 0 0 1 1-1 .99.99 0 0 1 1 1 .99.99 0 0 1-1 1z"/>
+    <path  fill="url('#label_icn')" d="M305 256.5a23.5 23.5 0 1 1 0 47 23.5 23.5 0 1 1 0-47z"/>
+    <path fill="#fff" d="M306 280h3l-5 7v-5h-3l5-7v5zm-2-6h-4v14h10v-14h-4v-2h-2v2zm-2-2v-1a.99.99 0 0 1 1-1h4a.99.99 0 0 1 1 1v1h3a.99.99 0 0 1 1 1v16a.99.99 0 0 1-1 1h-12a.99.99 0 0 1-1-1v-16a.99.99 0 0 1 1-1h3z"/>
+    <path  fill="url('#label_icn')" d="M48 336.5a23.5 23.5 0 1 1 0 47 23.5 23.5 0 1 1 0-47z"/>
+    <path fill="#fff" d="M53 361v1c0 2.77-.66 5.45-1.91 7.85l-.23.42-1.75-.97a14.88 14.88 0 0 0 1.88-6.84L51 362v-1h2zm-6-3h2v4l-.01.38a12.93 12.93 0 0 1-2.69 7.55l-.23.29-1.55-1.26a10.87 10.87 0 0 0 2.47-6.59L47 362v-4zm1-4c1.33 0 2.6.53 3.54 1.46A5.04 5.04 0 0 1 53 359h-2a3 3 0 0 0-6 0v3a9 9 0 0 1-2.27 5.98l-.21.23-1.45-1.38a7 7 0 0 0 1.93-4.52V359c0-1.33.53-2.6 1.46-3.54A5.04 5.04 0 0 1 48 354zm0-4a9 9 0 0 1 9 9v3c0 1.7-.2 3.37-.6 4.99l-.14.54-1.93-.53c.39-1.44.61-2.92.66-4.43L55 362v-3a7.04 7.04 0 0 0-3.86-6.26 6.97 6.97 0 0 0-7.33.66l-1.43-1.43A8.99 8.99 0 0 1 48 350zm-7.03 3.38 1.43 1.43a6.96 6.96 0 0 0-1.39 3.95V361c0 1.12-.26 2.2-.76 3.18l-.16.29-1.74-.99c.38-.67.6-1.41.65-2.18V359c0-2.04.69-4.02 1.97-5.62z"/>
+    <path  fill="url('#label_icn')" d="M305 336.5a23.5 23.5 0 1 1 0 47 23.5 23.5 0 1 1 0-47z"/>
+    <path fill="#fff" d="M305 370a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm-4.99-3.74a7.99 7.99 0 0 0 10.16-.15 6.9 6.9 0 0 0-5.01-2.11 6.98 6.98 0 0 0-5.15 2.26zm-1.39-1.44a9.14 9.14 0 0 1 2.98-2.09 9.02 9.02 0 0 1 9.92 1.9 7.98 7.98 0 0 0 .56-8.36 8.04 8.04 0 0 0-7.19-4.28 8 8 0 0 0-6.27 12.83zM305 361a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm0-2a2.03 2.03 0 0 0 2-2 2.03 2.03 0 0 0-2-2 2.03 2.03 0 0 0-2 2 2.03 2.03 0 0 0 2 2z"/>
+    <path fill="#060B27" d="M32 56h474a8 8 0 0 1 8 8v156a8 8 0 0 1-8 8H32a8 8 0 0 1-8-8V64a8 8 0 0 1 8-8z"/>
+    <clipPath id="grad_clip">
+      <path d="M32 56h474a8 8 0 0 1 8 8v156a8 8 0 0 1-8 8H32a8 8 0 0 1-8-8V64a8 8 0 0 1 8-8z"/>
+    </clipPath>
+    <g clip-path="url(#grad_clip)">
+      <radialGradient id="grad1">
+        <stop offset="0" stop-color="#00F0FF" stop-opacity="1" />
+        <stop offset="1" stop-color="#00F0FF" stop-opacity="0" />
+      </radialGradient>
+      <circle id="shape_grad1" cx="24" cy="56" r="100" fill="url('#grad1')"/>
+      <radialGradient id="grad2">
+        <stop offset="0" stop-color="#FF4161" stop-opacity="1" />
+        <stop offset="1" stop-color="#FF4161" stop-opacity="0" />
+      </radialGradient>
+      <circle id="shape_grad2" cx="24" cy="56" r="100" fill="url('#grad2')"/>
+      <radialGradient id="grad3">
+        <stop offset="0" stop-color="#FFB39B" stop-opacity="1" />
+        <stop offset="1" stop-color="#FFB39B" stop-opacity="0" />
+      </radialGradient>
+      <circle id="shape_grad3" cx="24" cy="56" r="100" fill="url('#grad3')"/>
+      <radialGradient id="grad4">
+        <stop offset="0" stop-color="#353197" stop-opacity="1" />
+        <stop offset="1" stop-color="#353197" stop-opacity="0" />
+      </radialGradient>
+      <circle id="shape_grad4" cx="24" cy="56" r="100" fill="url('#grad4')"/>
+      <radialGradient id="grad5">
+        <stop offset="0" stop-color="#353197" stop-opacity="1" />
+        <stop offset="1" stop-color="#353197" stop-opacity="0" />
+      </radialGradient>
+      <circle id="shape_grad5" cx="24" cy="56" r="100" fill="url('#grad5')"/>
+    </g>
+  </g>
+  <foreignObject x="48" y="80" width="440" height="140">
+    <div class="font_inter" id="nft_summary" xmlns="http://www.w3.org/1999/xhtml">
+      NFT Summary <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10"><path fill="#fff" d="M5.83 5.17 1.59 9.41.17 8 3 5.17.17 2.34 1.6.93l4.24 4.24Z"/></svg> <span id="company_name" xmlns="http://www.w3.org/1999/xhtml">#495</span>
+    </div>
+    <div id="price_details" xmlns="http://www.w3.org/1999/xhtml">
+      <span class="font_satoshi" id="current_price" xmlns="http://www.w3.org/1999/xhtml">736.27</span> <span class="font_inter" id="currency" xmlns="http://www.w3.org/1999/xhtml">USD</span> <span class="font_satoshi" id="current_percent" xmlns="http://www.w3.org/1999/xhtml"><span id="total_change" xmlns="http://www.w3.org/1999/xhtml">+18.59</span> (<span id="percent_change" xmlns="http://www.w3.org/1999/xhtml">2.46</span>%)</span> <span class="font_satoshi" id="current_shift" xmlns="http://www.w3.org/1999/xhtml"><svg id="arrow_up" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"><path fill="#fff" d="M4.37 2.4 1.02 5.74l-.88-.89L5 0l4.86 4.86-.88.88L5.62 2.4V10H4.37V2.4Z"/></svg><svg id="arrow_down" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"><path transform="rotate(180 5 5)" fill="#fff" d="M4.37 2.4 1.02 5.74l-.88-.89L5 0l4.86 4.86-.88.88L5.62 2.4V10H4.37V2.4Z"/></svg> TODAY</span>
+    </div>
+    <div class="font_inter" id="date">Updated: Sep 10, 7:59 PM EST</div>
+  </foreignObject>
+  <text class="font_inter label" x="89" y="269">Market Cap</text>
+  <text id="market_cap" class="font_satoshi info_text" x="89" y="303">$34M</text>
+  <text class="font_inter label" x="89" y="349">Status</text>
+  <text id="status" class="font_satoshi info_text" x="89" y="383">Seed</text>
+  <text class="font_inter label" x="346" y="269">Circulating Supply</text>
+  <text id="circ_supply" class="font_satoshi info_text" x="346" y="303">1.4M</text>
+  <text class="font_inter label" x="346" y="349">Type</text>
+  <text id="type" class="font_satoshi info_text" x="346" y="383">Social</text>
+</svg>
+<script>
+  let requestURL = 'data.json';
+  let request = new XMLHttpRequest();
+  request.open('GET', requestURL);
+  request.responseType = 'json';
+  request.send();
+
+  request.onload = function() {
+    const chartData = request.response;
+    $('#company_name').textContent = chartData.company_name;
+    $('#market_cap').textContent = chartData.market_cap;
+    $('#circ_supply').textContent = chartData.circulating_supply;
+    $('#status').textContent = chartData.status;
+    $('#type').textContent = chartData.type;
+    change_data('graph_1w');
+  }
+  for(let i = 1; i<6; i++) {
+    let color = randromHSL();
+    $("#grad" + i + " stop").setAttribute("stop-color", color);
+    $("#grad" + i + " stop").setAttribute("stop-opacity", getRandomIntInclusive(70, 90) / 100);
+    $("#grad" + i + " stop + stop").setAttribute("stop-color", color);
+    $("#shape_grad" + i).setAttribute("cx", getRandomIntInclusive(24, 514));
+    $("#shape_grad" + i).setAttribute("cy", getRandomIntInclusive(56, 228));
+    $("#shape_grad" + i).setAttribute("r", getRandomIntInclusive(100, 300));
+    $("#shape_grad" + i).setAttribute("opacity", getRandomIntInclusive(70, 90) / 100);
+    $("#shape_grad" + i).setAttribute("transform", "skewX(" + getRandomIntInclusive(-20, 20) + ")");
+  }
+
+  function change_data(period) {
+    const chartData = request.response;
+    let market_up = chartData[period].market_up;
+    if(market_up) {
+      $('#arrow_down').setAttribute('display', 'none');
+      $('#arrow_up').setAttribute('display', '');
+    } else {
+      $('#arrow_up').setAttribute('display', 'none');
+      $('#arrow_down').setAttribute('display', '');
+    }
+    $('#current_price').textContent = chartData[period].current_price;
+    $('#total_change').textContent = chartData[period].total_change;
+    $('#percent_change').textContent = chartData[period].percent_change;
+    $('#date').textContent = "Updated: " + chartData[period].date;
+  }
+
+  function getRandomIntInclusive(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1) + min);
+  }
+
+  function $(sel) {
+    return document.querySelector(sel);
+  }
+
+  function randromHSL() {
+    return "hsl(" + getRandomIntInclusive(0, 360) + ", " + getRandomIntInclusive(40, 100) + "%, " + getRandomIntInclusive(15, 75) + "%)";
+  }
+</script>
+</body>
+</html>
