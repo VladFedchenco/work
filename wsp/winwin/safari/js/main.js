@@ -24,7 +24,6 @@ angles[7] = [0, 0.003, 0.012, 0.033, 0.072, 0.141, 0.252, 0.417, 0.651, 0.972, 1
 
 let scale = [0, 0.0001, 0.0007, 0.0023, 0.0055, 0.0107, 0.0185, 0.0294, 0.0439, 0.0625, 0.0857, 0.1141, 0.1481, 0.1884, 0.2353, 0.2894, 0.3512, 0.4212, 0.5, 0.5788, 0.6488, 0.7106, 0.7647, 0.8116, 0.8519, 0.8859, 0.9143, 0.9375, 0.9561, 0.9706, 0.9815, 0.9893, 0.9945, 0.9977, 0.9993, 1];
 
-let requestURL = 'js/data.json';
 let request = new XMLHttpRequest();
 request.open('GET', requestURL);
 request.responseType = 'json';
@@ -62,16 +61,6 @@ function init() {
   wheel_sectors.src = 'imgs/wheel_sectors.png';
   img_preload[1] = false;
   wheel_sectors.onload = function() {
-    // for (let i = 0; i < angles[win_sector].length; i++) {
-    //   prerender[i] = document.createElement('canvas');
-    //   let pctx = prerender[i].getContext('2d');
-    //   prerender[i].width = 512;
-    //   prerender[i].height = 512;
-    //   pctx.translate(256, 256);
-    //   pctx.rotate(angles[win_sector][i] * Math.PI / 180);
-    //   pctx.translate(-256, -256);
-    //   pctx.drawImage(wheel_sectors, 0, 0, 512, 512);
-    // }
     img_preload[1] = true;
   }
 
@@ -251,11 +240,11 @@ function draw() {
       ctx.drawImage(wheel_base, 0, 0, 750, 860);
 
       rotate_counter < (angles[win_sector].length - 1) ? rotate_counter++ : rotate_counter = (angles[win_sector].length - 1);
-      ctx.translate(375, 366);
+      ctx.translate(374, 365);
       ctx.rotate(angles[win_sector][rotate_counter] * Math.PI / 180);
       ctx.drawImage(wheel_sectors, -256, -256, 512, 512);
       ctx.rotate(-angles[win_sector][rotate_counter] * Math.PI / 180);
-      ctx.translate(-375, -366);
+      ctx.translate(-374, -365);
 
       ctx.globalCompositeOperation = 'multiply';
       ctx.drawImage(wheel_shadow, 0, 0, 750, 860);
