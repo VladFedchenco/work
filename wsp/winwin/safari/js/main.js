@@ -58,150 +58,150 @@ function init() {
     img_preload[0] = true;
   }
 
-  // wheel_sectors = new Image();
-  // wheel_sectors.src = 'imgs/wheel_sectors.png';
-  // img_preload[1] = false;
-  // wheel_sectors.onload = function() {
-  //   for (let i = 0; i < angles[win_sector].length; i++) {
-  //     prerender[i] = document.createElement('canvas');
-  //     let pctx = prerender[i].getContext('2d');
-  //     prerender[i].width = 512;
-  //     prerender[i].height = 512;
-  //     pctx.translate(256, 256);
-  //     pctx.rotate(angles[win_sector][i] * Math.PI / 180);
-  //     pctx.translate(-256, -256);
-  //     pctx.drawImage(wheel_sectors, 0, 0, 512, 512);
-  //   }
-  //   img_preload[1] = true;
-  // }
+  wheel_sectors = new Image();
+  wheel_sectors.src = 'imgs/wheel_sectors.png';
+  img_preload[1] = false;
+  wheel_sectors.onload = function() {
+    // for (let i = 0; i < angles[win_sector].length; i++) {
+    //   prerender[i] = document.createElement('canvas');
+    //   let pctx = prerender[i].getContext('2d');
+    //   prerender[i].width = 512;
+    //   prerender[i].height = 512;
+    //   pctx.translate(256, 256);
+    //   pctx.rotate(angles[win_sector][i] * Math.PI / 180);
+    //   pctx.translate(-256, -256);
+    //   pctx.drawImage(wheel_sectors, 0, 0, 512, 512);
+    // }
+    img_preload[1] = true;
+  }
 
-  // wheel_shadow = new Image();
-  // wheel_shadow.src = 'imgs/wheel_shadow.png';
-  // img_preload[2] = false;
-  // wheel_shadow.onload = function() {
-  //   img_preload[2] = true;
-  // }
+  wheel_shadow = new Image();
+  wheel_shadow.src = 'imgs/wheel_shadow.png';
+  img_preload[2] = false;
+  wheel_shadow.onload = function() {
+    img_preload[2] = true;
+  }
 
-  // wheel_ridge = new Image();
-  // wheel_ridge.src = 'imgs/wheel_ridge.png';
-  // img_preload[3] = false;
-  // wheel_ridge.onload = function() {
-  //   img_preload[3] = true;
-  // }
+  wheel_ridge = new Image();
+  wheel_ridge.src = 'imgs/wheel_ridge.png';
+  img_preload[3] = false;
+  wheel_ridge.onload = function() {
+    img_preload[3] = true;
+  }
 
-  // wheel_lamps_yellow = new Image();
-  // wheel_lamps_yellow.src = 'imgs/wheel_lamps_yellow.png';
-  // img_preload[4] = false;
-  // wheel_lamps_yellow.onload = function() {
-  //   img_preload[4] = true;
-  // }
+  wheel_lamps_yellow = new Image();
+  wheel_lamps_yellow.src = 'imgs/wheel_lamps_yellow.png';
+  img_preload[4] = false;
+  wheel_lamps_yellow.onload = function() {
+    img_preload[4] = true;
+  }
 
-  // wheel_lamps_red = new Image();
-  // wheel_lamps_red.src = 'imgs/wheel_lamps_red.png';
-  // img_preload[5] = false;
-  // wheel_lamps_red.onload = function() {
-  //   img_preload[5] = true;
-  // }
+  wheel_lamps_red = new Image();
+  wheel_lamps_red.src = 'imgs/wheel_lamps_red.png';
+  img_preload[5] = false;
+  wheel_lamps_red.onload = function() {
+    img_preload[5] = true;
+  }
 
-  // wheel_lamps_yellow2 = new Image();
-  // wheel_lamps_yellow2.src = 'imgs/wheel_lamps_yellow2.png';
-  // img_preload[6] = false;
-  // wheel_lamps_yellow2.onload = function() {
-  //   img_preload[6] = true;
-  // }
+  wheel_lamps_yellow2 = new Image();
+  wheel_lamps_yellow2.src = 'imgs/wheel_lamps_yellow2.png';
+  img_preload[6] = false;
+  wheel_lamps_yellow2.onload = function() {
+    img_preload[6] = true;
+  }
 
-  // wheel_lamps_red2 = new Image();
-  // wheel_lamps_red2.src = 'imgs/wheel_lamps_red2.png';
-  // img_preload[7] = false;
-  // wheel_lamps_red2.onload = function() {
-  //   img_preload[7] = true;
-  // }
+  wheel_lamps_red2 = new Image();
+  wheel_lamps_red2.src = 'imgs/wheel_lamps_red2.png';
+  img_preload[7] = false;
+  wheel_lamps_red2.onload = function() {
+    img_preload[7] = true;
+  }
 
-  // wheel_arrow = new Image();
-  // wheel_arrow.src = 'imgs/wheel_arrow.png';
-  // img_preload[8] = false;
-  // wheel_arrow.onload = function() {
-  //   img_preload[8] = true;
-  // }
+  wheel_arrow = new Image();
+  wheel_arrow.src = 'imgs/wheel_arrow.png';
+  img_preload[8] = false;
+  wheel_arrow.onload = function() {
+    img_preload[8] = true;
+  }
 
-  // wheel_center = new Image();
-  // wheel_center.src = 'imgs/wheel_center.png';
-  // img_preload[9] = false;
-  // wheel_center.onload = function() {
-  //   img_preload[9] = true;
-  // }
+  wheel_center = new Image();
+  wheel_center.src = 'imgs/wheel_center.png';
+  img_preload[9] = false;
+  wheel_center.onload = function() {
+    img_preload[9] = true;
+  }
 
-  // leprcn_01 = new Image();
-  // leprcn_01.src = 'imgs/leprcn_00.png';
-  // img_preload[10] = false;
-  // leprcn_01.onload = function() {
-  //   img_preload[10] = true;
-  // }
+  leprcn_01 = new Image();
+  leprcn_01.src = 'imgs/leprcn_00.png';
+  img_preload[10] = false;
+  leprcn_01.onload = function() {
+    img_preload[10] = true;
+  }
 
-  // leprcn_02 = new Image();
-  // leprcn_02.src = 'imgs/leprcn_0' + (win_sector + 1) + '.png';
-  // img_preload[11] = false;
-  // leprcn_02.onload = function() {
-  //   img_preload[11] = true;
-  // }
+  leprcn_02 = new Image();
+  leprcn_02.src = 'imgs/leprcn_0' + (win_sector + 1) + '.png';
+  img_preload[11] = false;
+  leprcn_02.onload = function() {
+    img_preload[11] = true;
+  }
 
-  // win_prize_counter = 0;
-  // win_prize = new Image();
-  // win_prize.src = 'imgs/sector' + win_sector + '.png';
-  // img_preload[12] = false;
-  // win_prize.onload = function() {
-  //   for (let i = 0; i < 36; i++) {
-  //     win_frames[i] = document.createElement('canvas');
-  //     let pctx = win_frames[i].getContext('2d');
-  //     win_frames[i].width = 340;
-  //     win_frames[i].height = 444;
-  //     let x = 170 - scale[i] * 340 / 2;
-  //     let y = 444 - scale[i] * 444;
-  //     pctx.drawImage(win_prize, x, y, scale[i] * 340, scale[i] * 444);
-  //   }
-  //   img_preload[12] = true;
-  // }
+  win_prize_counter = 0;
+  win_prize = new Image();
+  win_prize.src = 'imgs/sector' + win_sector + '.png';
+  img_preload[12] = false;
+  win_prize.onload = function() {
+    for (let i = 0; i < 36; i++) {
+      win_frames[i] = document.createElement('canvas');
+      let pctx = win_frames[i].getContext('2d');
+      win_frames[i].width = 340;
+      win_frames[i].height = 444;
+      let x = 170 - scale[i] * 340 / 2;
+      let y = 444 - scale[i] * 444;
+      pctx.drawImage(win_prize, x, y, scale[i] * 340, scale[i] * 444);
+    }
+    img_preload[12] = true;
+  }
 
-  // stars_counter = 0;
-  // stars = new Image();
-  // stars.src = 'imgs/stars.png';
-  // img_preload[13] = false;
-  // stars.onload = function() {
-  //   for (let i = 0; i < 36; i++) {
-  //     stars_frames[i] = document.createElement('canvas');
-  //     let pctx = stars_frames[i].getContext('2d');
-  //     stars_frames[i].width = 614;
-  //     stars_frames[i].height = 390;
-  //     let x = 307 - scale[i] * 614 / 2;
-  //     let y = 390 - scale[i] * 390;
-  //     pctx.drawImage(stars, x, y, scale[i] * 614, scale[i] * 390);
-  //   }
-  //   img_preload[13] = true;
-  // }
+  stars_counter = 0;
+  stars = new Image();
+  stars.src = 'imgs/stars.png';
+  img_preload[13] = false;
+  stars.onload = function() {
+    for (let i = 0; i < 36; i++) {
+      stars_frames[i] = document.createElement('canvas');
+      let pctx = stars_frames[i].getContext('2d');
+      stars_frames[i].width = 614;
+      stars_frames[i].height = 390;
+      let x = 307 - scale[i] * 614 / 2;
+      let y = 390 - scale[i] * 390;
+      pctx.drawImage(stars, x, y, scale[i] * 614, scale[i] * 390);
+    }
+    img_preload[13] = true;
+  }
 
-  // dust_counter = 0;
-  // blink = 0;
+  dust_counter = 0;
+  blink = 0;
 
-  // dust_frames[0] = new Image();
-  // dust_frames[0].src = 'imgs/dust1.png';
-  // img_preload[14] = false;
-  // dust_frames[0].onload = function() {
-  //   img_preload[14] = true;
-  // }
+  dust_frames[0] = new Image();
+  dust_frames[0].src = 'imgs/dust1.png';
+  img_preload[14] = false;
+  dust_frames[0].onload = function() {
+    img_preload[14] = true;
+  }
 
-  // dust_frames[1] = new Image();
-  // dust_frames[1].src = 'imgs/dust2.png';
-  // img_preload[15] = false;
-  // dust_frames[1].onload = function() {
-  //   img_preload[15] = true;
-  // }
+  dust_frames[1] = new Image();
+  dust_frames[1].src = 'imgs/dust2.png';
+  img_preload[15] = false;
+  dust_frames[1].onload = function() {
+    img_preload[15] = true;
+  }
 
-  // dust_frames[2] = new Image();
-  // dust_frames[2].src = 'imgs/dust3.png';
-  // img_preload[16] = false;
-  // dust_frames[2].onload = function() {
-  //   img_preload[16] = true;
-  // }
+  dust_frames[2] = new Image();
+  dust_frames[2].src = 'imgs/dust3.png';
+  img_preload[16] = false;
+  dust_frames[2].onload = function() {
+    img_preload[16] = true;
+  }
 
   draw();
 }
@@ -222,36 +222,36 @@ function draw() {
     if(!game_start) {
 
       ctx.drawImage(wheel_base, 0, 0, 750, 860);
-      // ctx.drawImage(wheel_sectors, 118, 109, 512, 512);
+      ctx.drawImage(wheel_sectors, 118, 109, 512, 512);
 
-      // ctx.globalCompositeOperation = 'multiply';
-      // ctx.drawImage(wheel_shadow, 0, 0, 750, 860);
-      // ctx.globalCompositeOperation = 'source-over';
+      ctx.globalCompositeOperation = 'multiply';
+      ctx.drawImage(wheel_shadow, 0, 0, 750, 860);
+      ctx.globalCompositeOperation = 'source-over';
 
-      // ctx.drawImage(wheel_ridge, 0, 0, 750, 860);
-      // ctx.drawImage(wheel_lamps_yellow, 0, 0, 750, 860);
-      // ctx.drawImage(wheel_lamps_red, 0, 0, 750, 860);
+      ctx.drawImage(wheel_ridge, 0, 0, 750, 860);
+      ctx.drawImage(wheel_lamps_yellow, 0, 0, 750, 860);
+      ctx.drawImage(wheel_lamps_red, 0, 0, 750, 860);
 
-      // light_counter < 100 ? light_counter++ : light_counter = 0;
+      light_counter < 100 ? light_counter++ : light_counter = 0;
 
-      // if(light_counter < 50) {
-      //   ctx.drawImage(wheel_lamps_yellow2, 0, 0, 750, 860);
-      // }
+      if(light_counter < 50) {
+        ctx.drawImage(wheel_lamps_yellow2, 0, 0, 750, 860);
+      }
 
-      // if(light_counter >= 50 && light_counter < 100) {
-      //   ctx.drawImage(wheel_lamps_red2, 0, 0, 750, 860);
-      // }
+      if(light_counter >= 50 && light_counter < 100) {
+        ctx.drawImage(wheel_lamps_red2, 0, 0, 750, 860);
+      }
 
-      // ctx.drawImage(wheel_arrow, 0, 0, 750, 860);
-      // ctx.drawImage(wheel_center, 0, 0, 750, 860);
-      // ctx.drawImage(leprcn_01, 0, 0, 750, 860);
+      ctx.drawImage(wheel_arrow, 0, 0, 750, 860);
+      ctx.drawImage(wheel_center, 0, 0, 750, 860);
+      ctx.drawImage(leprcn_01, 0, 0, 750, 860);
 
     } else {
 
       ctx.drawImage(wheel_base, 0, 0, 750, 860);
 
       rotate_counter < (angles[win_sector].length - 1) ? rotate_counter++ : rotate_counter = (angles[win_sector].length - 1);
-      ctx.drawImage(prerender[rotate_counter], 118, 109, 512, 512);
+      ctx.drawImage(wheel_sectors, 118, 109, 512, 512);
 
       ctx.globalCompositeOperation = 'multiply';
       ctx.drawImage(wheel_shadow, 0, 0, 750, 860);
