@@ -251,7 +251,11 @@ function draw() {
       ctx.drawImage(wheel_base, 0, 0, 750, 860);
 
       rotate_counter < (angles[win_sector].length - 1) ? rotate_counter++ : rotate_counter = (angles[win_sector].length - 1);
-      ctx.drawImage(wheel_sectors, 118, 109, 512, 512);
+      ctx.translate(375, 366);
+      ctx.rotate(angles[win_sector][rotate_counter] * Math.PI / 180);
+      ctx.drawImage(wheel_sectors, -256, -256, 512, 512);
+      ctx.rotate(-angles[win_sector][rotate_counter] * Math.PI / 180);
+      ctx.translate(-375, -366);
 
       ctx.globalCompositeOperation = 'multiply';
       ctx.drawImage(wheel_shadow, 0, 0, 750, 860);
