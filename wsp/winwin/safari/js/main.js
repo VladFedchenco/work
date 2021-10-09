@@ -1,6 +1,11 @@
 let ctx, imgs_loaded, win_sector, light_counter, stars_counter, win_prize_counter, dust_counter, blink, section_remaining_spins, section_get_more_spins;
 
-let cnvs = $('#main_canvas');
+let cnvs = document.createElement('canvas');
+cnvs.width = 750;
+cnvs.height = 860;
+cnvs.setAttribute("id", "main_canvas");
+document.getElementById("canvas_area").appendChild(cnvs); 
+
 let anim_play = true;
 let game_start = false;
 let img_preload = [];
@@ -42,6 +47,9 @@ request.onload = function() {
   $("#spins_number").innerHTML = prizeData.spins_number;
   section_get_more_spins = prizeData.get_more_spins;
   $("#entries_number").innerHTML = prizeData.entries_number;
+
+  init();
+
 }
 
 function init() {
@@ -363,5 +371,4 @@ document.addEventListener('DOMContentLoaded', (event) => {
   cnvs.addEventListener('pointerout', point_out, false);
   cnvs.addEventListener('pointerup', start_game, false);
   $("#start_bttn").addEventListener('pointerup', start_game, false);
-  setTimeout(function(){ init() }, 1000);
 })

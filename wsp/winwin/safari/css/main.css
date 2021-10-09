@@ -47,6 +47,10 @@ header a.header_button, .bttn_spin {
     font-size: 14px;
 }
 
+#canvas_area {
+    height: 430px;
+}
+
 .bttn_spin {
     display: inline-block;
     min-width: 302px;
