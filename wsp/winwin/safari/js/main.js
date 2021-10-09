@@ -1,11 +1,6 @@
 let ctx, imgs_loaded, win_sector, light_counter, stars_counter, win_prize_counter, dust_counter, blink, section_remaining_spins, section_get_more_spins;
 
-let cnvs = document.createElement('canvas');
-cnvs.width = 750;
-cnvs.height = 860;
-cnvs.setAttribute("id", "main_canvas");
-document.getElementById("canvas_area").appendChild(cnvs); 
-
+let cnvs = $('#main_canvas');
 let anim_play = true;
 let game_start = false;
 let img_preload = [];
@@ -227,29 +222,29 @@ function draw() {
     if(!game_start) {
 
       ctx.drawImage(wheel_base, 0, 0, 750, 860);
-      ctx.drawImage(wheel_sectors, 118, 109, 512, 512);
+      // ctx.drawImage(wheel_sectors, 118, 109, 512, 512);
 
-      ctx.globalCompositeOperation = 'multiply';
-      ctx.drawImage(wheel_shadow, 0, 0, 750, 860);
-      ctx.globalCompositeOperation = 'source-over';
+      // ctx.globalCompositeOperation = 'multiply';
+      // ctx.drawImage(wheel_shadow, 0, 0, 750, 860);
+      // ctx.globalCompositeOperation = 'source-over';
 
-      ctx.drawImage(wheel_ridge, 0, 0, 750, 860);
-      ctx.drawImage(wheel_lamps_yellow, 0, 0, 750, 860);
-      ctx.drawImage(wheel_lamps_red, 0, 0, 750, 860);
+      // ctx.drawImage(wheel_ridge, 0, 0, 750, 860);
+      // ctx.drawImage(wheel_lamps_yellow, 0, 0, 750, 860);
+      // ctx.drawImage(wheel_lamps_red, 0, 0, 750, 860);
 
-      light_counter < 100 ? light_counter++ : light_counter = 0;
+      // light_counter < 100 ? light_counter++ : light_counter = 0;
 
-      if(light_counter < 50) {
-        ctx.drawImage(wheel_lamps_yellow2, 0, 0, 750, 860);
-      }
+      // if(light_counter < 50) {
+      //   ctx.drawImage(wheel_lamps_yellow2, 0, 0, 750, 860);
+      // }
 
-      if(light_counter >= 50 && light_counter < 100) {
-        ctx.drawImage(wheel_lamps_red2, 0, 0, 750, 860);
-      }
+      // if(light_counter >= 50 && light_counter < 100) {
+      //   ctx.drawImage(wheel_lamps_red2, 0, 0, 750, 860);
+      // }
 
-      ctx.drawImage(wheel_arrow, 0, 0, 750, 860);
-      ctx.drawImage(wheel_center, 0, 0, 750, 860);
-      ctx.drawImage(leprcn_01, 0, 0, 750, 860);
+      // ctx.drawImage(wheel_arrow, 0, 0, 750, 860);
+      // ctx.drawImage(wheel_center, 0, 0, 750, 860);
+      // ctx.drawImage(leprcn_01, 0, 0, 750, 860);
 
     } else {
 
