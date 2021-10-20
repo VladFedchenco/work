@@ -163,7 +163,7 @@ function createObjects() {
     //   new THREE.MeshBasicMaterial( { color: mat_color } )
     // ]
     materials[i] = new THREE.MeshPhysicalMaterial({
-      color: mat_color,
+      color: 0xffffff,
       alphaMap: texture[i],
       metalness: 0,
       roughness: .3,

@@ -38,3 +38,12 @@ body {
 #bttn_next {
   right: 32px;
 }
+
+#info {
+  position: absolute;
+  left: 50%;
+  top: 60px;
+  transform: translate(-50%, 0);
+  font-size: 21px;
+  font-family: sans-serif;
+}
