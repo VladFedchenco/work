@@ -1,0 +1,55 @@
+::focus {
+  outline: none;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: #000000;
+  margin: 0;
+  padding: 0;
+}
+
+#bttn_prev, #bttn_next {
+  display: block;
+  position: absolute;
+  top: 32px;
+  border: solid 1px #ccc;
+  border-radius: 8px;
+  background: #fff;
+  padding: 16px;
+  font-family: sans-serif;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all .2s ease;
+}
+
+#bttn_prev:hover, #bttn_next:hover {
+  background: #666;
+  color: #fff;
+}
+
+#bttn_prev {
+  left: 32px;
+}
+
+#bttn_next {
+  right: 32px;
+}
+
+#info {
+  position: absolute;
+  left: 50%;
+  top: 60px;
+  transform: translate(-50%, 0);
+  font-size: 21px;
+  font-family: sans-serif;
+}
+
+canvas + canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
