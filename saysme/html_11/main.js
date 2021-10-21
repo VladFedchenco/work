@@ -5,6 +5,7 @@ import {OrbitControls} from 'https://cdn.skypack.dev/three@0.133/examples/jsm/co
 
 let gData, gNumber, gNames, gIndex = [], camera, controls, scene, renderer, loader, wheel, geometry = [], cylinder = [], ctx = [], materials = [], texture = [], slctd;
 let gData_2, gNumber_2, gNames_2, gIndex_2 = [], geometry_2 = [], cylinder_2 = [], ctx_2 = [], materials_2 = [], texture_2 = [], slctd_2;
+let lab_tube, lab_tube_liquid;
 
 let requestURL = 'https://jbu8rgg856.execute-api.us-east-2.amazonaws.com/default/snobAiApi';
 let request = new XMLHttpRequest();
@@ -129,6 +130,64 @@ function init() {
       scene.add(wheel);
   });
 
+  loader.load('resources/lab_tube.gltf', function(gltf) {
+      lab_tube = gltf.scene;
+      lab_tube.position.set(0, .7, 0);
+      lab_tube.scale.set(0.07, 0.07, 0.07);
+      let lab_material = new THREE.MeshPhysicalMaterial({
+        color: 0xffffff,
+        clearcoat: .2,
+        metalness: 0,
+        roughness: .3,
+        transparent: false,
+        transmission: 1,
+        side: THREE.BackSide,
+        opacity: 1,
+        reflectivity: 0.3,
+        ior: 2.3
+      })
+      lab_tube.traverse((o) => {
+        if (o.isMesh) o.material = lab_material;
+      });
+      scene.add(lab_tube);
+  });
+
+  loader.load('resources/lab_tube_liquid.gltf', function(gltf) {
+      lab_tube_liquid = gltf.scene;
+      lab_tube_liquid.position.set(0, .65, 0);
+      lab_tube_liquid.scale.set(0.073, 0.073, 0.073);
+      let lab_material = new THREE.MeshPhysicalMaterial({
+        color: 0xff00ff,
+        clearcoat: .2,
+        metalness: 0,
+        roughness: .3,
+        transparent: false,
+        transmission: 1,
+        opacity: 1,
+        reflectivity: 0.3,
+        ior: 2.3
+      })
+      lab_tube_liquid.traverse((o) => {
+        if (o.isMesh) o.material = lab_material;
+      });
+      scene.add(lab_tube_liquid);
+  });
+
+  let liq_tube = new THREE.CylinderGeometry( .41, .41, 4, 16, 1, false, 0.3 );
+  let liq_material = new THREE.MeshPhysicalMaterial({
+        color: 0xff00ff,
+        metalness: 0,
+        roughness: .3,
+        transparent: true,
+        transmission: 1,
+        opacity: 1,
+        reflectivity: 0.3,
+        ior: 2.3
+      })
+  let liq_tube_mesh = new THREE.Mesh( liq_tube, liq_material );
+  liq_tube_mesh.position.set( 0, 3.4, 0 );
+  scene.add( liq_tube_mesh );
+
   //create graphs
 
   createObjects();
@@ -141,9 +200,9 @@ function init() {
   light.position.set( 50, 0, 50 );
   scene.add( light );
 
-  const light2 = new THREE.PointLight( 0xffffff, .1, 0 );
-  light2.position.set( -50, 0, -50 );
-  scene.add( light2 );
+  // const light2 = new THREE.PointLight( 0xffffff, .1, 0 );
+  // light2.position.set( -50, 0, -50 );
+  // scene.add( light2 );
 
 }
 
@@ -226,7 +285,7 @@ function createObjects2() {
   gIndex_2 = [];
   for(let i = 0; i < gNumber_2; i++) {
     texture_2[i] = new THREE.CanvasTexture(createText2(i, gNames_2[i], '#cccccc'));
-    geometry_2[i] = new THREE.CylinderGeometry( .28, .28, gData_2.position[gNames_2[i]].h * 1.5, 16, 1, false, 0.3 );
+    geometry_2[i] = new THREE.CylinderGeometry( .48, .48, gData_2.position[gNames_2[i]].h * 1.5, 16, 1, false, 0.3 );
     geometry_2[i].name = "scnd_tube" + i;
     gIndex_2.push(geometry_2[i].name);
     let mat_color = new THREE.Color(gData_2.colors[gNames_2[i]]);
@@ -237,7 +296,7 @@ function createObjects2() {
       roughness: .3,
       transparent: true,
       transmission: 1,
-      opacity: 1,
+      opacity: .7,
       reflectivity: 0.3,
       ior: 2.3
     }),
@@ -247,7 +306,7 @@ function createObjects2() {
       roughness: .3,
       transparent: true,
       transmission: 1,
-      opacity: 1,
+      opacity: .7,
       reflectivity: 0.3,
       ior: 2.3
     }),
@@ -257,7 +316,7 @@ function createObjects2() {
       roughness: .3,
       transparent: true,
       transmission: 1,
-      opacity: 1,
+      opacity: .7,
       reflectivity: 0.3,
       ior: 2.3
     })
