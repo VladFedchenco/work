@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WSP</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+  <link rel="icon" type="image/png" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+<header>
+  <a href="javascript:;" id="menu"></a>
+</header>
+<section id="content">
+  <section id="main">
+    <a id="main_banner" href="javascript:;"><img src="imgs/ticket@2x.jpg" alt=""></a>
+    <h2 id="click_to_open">CLICK TO OPEN GAME TICKET</h2>
+
+    <svg id="pointer-block" xmlns="http://www.w3.org/2000/svg" width="100" height="80" viewBox="0 0 200 160">
+    <style>
+    /* <![CDATA[ */
+    #p_hand {
+      transform: translate(5px, -10px);
+      animation: p_hand 3s ease-in-out infinite;
+    }
+    @keyframes p_hand {
+      0%, 50%, 100% {
+        transform: translate(5px, -10px);
+      }
+      10%, 40% {
+        transform: translate(0px, 0px);
+      }
+    }
+    #p_rays {
+      stroke-dashoffset: 45px;
+      animation: p_rays 3s ease-in-out infinite;
+    }
+    @keyframes p_rays {
+      0%, 5% {
+        stroke-dashoffset: 45px;
+      }
+      25%, 100% {
+        stroke-dashoffset: 135px;
+      }
+    }
+    /* ]]> */
+    </style>
+      <g id="p_rays" stroke-dasharray="45" stroke-dashoffset="45" fill="none" stroke="#FFC132" stroke-linecap="round" stroke-miterlimit="10" stroke-width="5">
+        <line x1="51.62" x2="51.62" y1="95.7" y2="50.67"/>
+        <line x1="19.78" x2="51.62" y1="82.51" y2="50.67"/>
+        <line x1="6.6" x2="51.63" y1="50.67" y2="50.67"/>
+        <line x1="19.51" x2="51.35" y1="18.83" y2="50.67"/>
+        <line x1="51.62" x2="51.62" y1="5.64" y2="50.67"/>
+        <line x1="83.47" x2="51.62" y1="18.83" y2="50.67"/>
+      </g>
+      <g id="p_hand">
+        <path fill="#FFF" d="M79.36 108.98c-4.22 3.96-3.3 11.75 1.99 14.27l42.85 21.65.12.05c38.19 20.27 85.52-35.92 55.11-67.86l-37.74-37.74c-7.33-7.01-18.73 1.98-14.11 10.92.33.36 14.96 14.99 15.28 15.3a1.5 1.5 0 0 1 0 2.12 1.5 1.5 0 0 1-2.12 0L121.8 48.75c-7.06-6.9-18.55 1.71-14.24 10.52l.13.36 17.32 17.32c1.37 1.39-.72 3.51-2.12 2.12l-21.3-21.3c-6.88-6.84-18.45 1.58-14.31 10.33l20.05 19.37c1.4 1.36-.68 3.52-2.08 2.16L58.16 44.15c-8.53-7.68-20.43 4.7-12.46 12.9l53.42 51.61c.5.48.59 1.24.24 1.85l-.04.12c-.37.66-1.29.97-1.98.59-5.9-2.68-11.93-8.08-17.98-2.24z"/>
+        <path fill="#FFC132" d="M126.39 36.73a13.08 13.08 0 0 0-3.74 7.58c-7.46-5.19-18.86.12-19.87 9.27-7.32-5.45-18.84-.5-20.16 8.63L60.93 41.27c-4.86-4.88-13.46-4.5-18.12.53-4.97 5.14-4.92 13.28.11 18.13l43.98 42.49c-13.92-1.34-19.81 17.98-7.34 24.41.08.03 43.96 22.23 44.05 22.25 41.91 20.44 91.28-39.12 59.27-74.17.04-.27-38.29-38.14-38.35-38.38-4.95-4.95-13.08-4.86-18.14.2zm47.34 97.08c-14.12 14.12-34.28 18.27-49.13 10.18l-42.8-21.63a7.49 7.49 0 0 1-3.77-4.5c-2.24-6.28 4.99-12.92 10.95-9.72l7.88 3.98a2.5 2.5 0 0 0 3.36-1.1c.53-.99.44-2.24-.42-3.07L46.38 56.34c-3.04-2.94-3.04-7.9.02-11.06 2.83-3.07 8.1-3.37 11.05-.4l47.09 45.48c2.37 2.27 5.81-1.32 3.47-3.6L88.1 67.53c-3.44-7.72 6.73-15.05 12.77-9.04l21.3 21.3c2.31 2.3 5.84-1.21 3.54-3.54l-17.17-17.17c-4.1-7.79 6.19-15.84 12.54-9.62l18.94 18.94a2.5 2.5 0 1 0 3.54-3.54l-15.1-15.1c-4.12-7.87 6.03-15.92 12.51-9.7l37.74 37.74c14.08 14.06 11.84 39.19-4.98 56.01z"/>
+      </g>
+    </svg>
+
+  <svg id="curl_animation" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="302" height="325" viewBox="0 0 604 650">
+  <defs>
+      <linearGradient id="curl1" x1="85.64" x2="320.728" y1="69.51" y2="304.598" gradientTransform="matrix(1 -.037 .038 1.011 -27.718 26.348)" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#d9d9d9"/>
+          <stop offset=".104" stop-color="#ebebeb"/>
+          <stop offset=".239" stop-color="#fff"/>
+          <stop offset=".777" stop-color="#605d5e"/>
+          <stop offset=".812" stop-color="#646162"/>
+          <stop offset=".847" stop-color="#6f6d6e"/>
+          <stop offset=".882" stop-color="#838081"/>
+          <stop offset=".916" stop-color="#9e9c9c"/>
+          <stop offset=".951" stop-color="#c0bfc0"/>
+          <stop offset=".984" stop-color="#ebeaea"/>
+          <stop offset=".999" stop-color="#fff"/>
+      </linearGradient>
+      <linearGradient id="curl2" x1="286.133" x2="318.889" y1="305.203" y2="335.44" gradientUnits="userSpaceOnUse">
+          <stop offset="0"/>
+          <stop offset=".355" stop-color="#656565"/>
+          <stop offset=".67" stop-color="#b8b8b8"/>
+          <stop offset=".891" stop-color="#ebebeb"/>
+          <stop offset=".999" stop-color="#fff"/>
+      </linearGradient>
+      <g id="corner">
+          <rect width="960" height="900" x="180" y="200" fill="#fff" transform="rotate(43.309 648.304 652.04)"/>
+          <path fill="url(#curl1)" d="M592.473 13.918C513.56 91.585 353.525 134.68 69 85.9c0 0 79.258 324.951-55.857 541.376C130.8 503.849 592.473 13.918 592.473 13.918z"/>
+          <path fill="url(#curl2)" d="M0 641.2L605.619 0S469.656 190.356 325.643 343.172 0 641.2 0 641.2z"/>
+      </g>
+  </defs>
+
+  <clipPath id="corner_clip">
+      <rect x="0" y="0" width="604" height="650"/>
+  </clipPath>
+  <g id="corner_animation" clip-path="url(#corner_clip)">
+      <use id="c1" href="#corner" transform="matrix(1, 0, 0, 1, 604, 639)"/>
+      <use id="c2" href="#corner" transform="matrix(1, 0, 0, 1, 555.502, 589.452)"/>
+      <use id="c3" href="#corner" transform="matrix(1, 0, 0, 1, 507.004, 539.904)"/>
+      <use id="c4" href="#corner" transform="matrix(1, 0, 0, 1, 458.506, 490.356)"/>
+      <use id="c5" href="#corner" transform="matrix(1, 0, 0, 1, 410.008, 440.808)"/>
+      <use id="c6" href="#corner" transform="matrix(1, 0, 0, 1, 361.51, 391.26)"/>
+      <use id="c7" href="#corner" transform="matrix(1, 0, 0, 1, 313.012, 341.712)"/>
+      <use id="c8" href="#corner" transform="matrix(1, 0, 0, 1, 264.514, 292.164)"/>
+      <use id="c9" href="#corner" transform="matrix(1, 0, 0, 1, 216.016, 242.616)"/>
+      <use id="c10" href="#corner" transform="matrix(1, 0, 0, 1, 167.517, 193.068)"/>
+      <use id="c11" href="#corner" transform="matrix(1, 0, 0, 1, 119.019, 143.52)"/>
+      <use id="c12" href="#corner" transform="matrix(1, 0, 0, 1, 70.5213, 93.9718)"/>
+      <use id="c13" href="#corner" transform="matrix(1, 0, 0, 1, 22.0233, 44.4238)"/>
+      <use id="c14" href="#corner" transform="matrix(1, 0, 0, 1, -26.4748, -5.12423)"/>
+      <use id="c15" href="#corner" transform="matrix(1, 0, 0, 1, -74.9728, -54.6723)"/>
+      <use id="c16" href="#corner" transform="matrix(1, 0, 0, 1, -123.471, -104.22)"/>
+      <use id="c17" href="#corner" transform="matrix(1, 0, 0, 1, -171.969, -153.768)"/>
+      <use id="c18" href="#corner" transform="matrix(1, 0, 0, 1, -220.467, -203.316)"/>
+      <use id="c19" href="#corner" transform="matrix(1, 0, 0, 1, -268.965, -252.864)"/>
+      <rect id="c20" fill="#ffffff" x="0" y="0" width="604" height="650"/>
+  </g>
+  </svg>
+  </section>
+  <section id="eargings">
+    <h3 id="earn_h3">YOU'VE EARNED:</h3>
+    <h2 id="earn_h2">3 Sweepstakes Ballots</h2>
+    <p id="earn_subttl">Every ballot is a chance to win a Rutter's $100 Gift Card!</p>
+    <img id="earn_ballot" src="imgs/ballot.svg">
+    <div id="earn_plus">
+      <h3>PLUS! You've received 2<br> Collect-to-WIN markers</h3>
+      <img id="earn_plus_img1" src="imgs/2k@2x.png" alt="">
+      <img id="earn_plus_img2" src="imgs/coffee@2x.png" alt="">
+      <p>Your markers have been automatically added to your digital collector card for chances to win BIG!</p>
+    </div>
+    <button class="red_button">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24">
+        <path fill="#FFFFFF" d="M12,0C5.373,0,0,5.373,0,12s5.373,12,12,12c6.627,0,12-5.373,12-12S18.627,0,12,0z M19.456,12.432l-6.839,6.839c-0.278,0.278-0.733,0.278-1.011,0l-1.156-1.156c-0.278-0.278-0.278-0.733,0-1.011l3.647-3.647H4.833c-0.393,0-0.715-0.322-0.715-0.715v-1.634c0-0.393,0.322-0.715,0.715-0.715h9.264L10.45,6.746c-0.278-0.278-0.278-0.733,0-1.011l1.156-1.156c0.278-0.278,0.733-0.278,1.011,0l6.839,6.839c0.139,0.139,0.209,0.323,0.208,0.507C19.665,12.109,19.595,12.293,19.456,12.432z"/>
+      </svg>
+      OPEN MY GAME TICKET
+    </button>
+    <button class="white_button">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="#9F051E" width="24px" height="24px" viewBox="0 0 24 24">
+        <path d="M15.418,16.807c0-0.788,0.641-1.429,1.429-1.429H24V1.143C24,0.514,23.486,0,22.857,0H1.143C0.514,0,0,0.514,0,1.143v21.714C0,23.486,0.514,24,1.143,24h14.275V16.807z"/>
+        <polygon points="24,17.833 24,17.093 17.132,17.093 17.132,24 17.833,24 "/>
+      </svg>
+      VIEW MY COLLECTOR CARD
+    </button>
+  </section>
+  <section id="winning">
+    <h3 id="win_h3">YOU'VE WON:</h3>
+    <h2 id="win_h2">Powerade</h2>
+    <p id="win_subttl">28 oz, Any flavor</p>
+    <img id="win_img" src="imgs/powerade@2x.png">
+    <p id="win_note">Expires 09/20/2021. <a id="full_details" href="javascript:;">See full details here.</a></p>
+    <div id="win_plus">
+      <h3>PLUS! You've received 2<br> Collect-to-WIN markers</h3>
+      <img id="win_plus_img1" src="imgs/5k@2x.png" alt="">
+      <img id="win_plus_img2" src="imgs/fuel@2x.png" alt="">
+      <p>Your markers have been automatically added to your digital collector card for chances to win BIG!</p>
+    </div>
+    <button class="red_button">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24">
+        <path fill="#FFFFFF" d="M12,0C5.373,0,0,5.373,0,12s5.373,12,12,12c6.627,0,12-5.373,12-12S18.627,0,12,0z M19.456,12.432l-6.839,6.839c-0.278,0.278-0.733,0.278-1.011,0l-1.156-1.156c-0.278-0.278-0.278-0.733,0-1.011l3.647-3.647H4.833c-0.393,0-0.715-0.322-0.715-0.715v-1.634c0-0.393,0.322-0.715,0.715-0.715h9.264L10.45,6.746c-0.278-0.278-0.278-0.733,0-1.011l1.156-1.156c0.278-0.278,0.733-0.278,1.011,0l6.839,6.839c0.139,0.139,0.209,0.323,0.208,0.507C19.665,12.109,19.595,12.293,19.456,12.432z"/>
+      </svg>
+      OPEN MY GAME TICKET
+    </button>
+    <button class="white_button">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="#9F051E" width="24px" height="24px" viewBox="0 0 24 24">
+        <path d="M15.418,16.807c0-0.788,0.641-1.429,1.429-1.429H24V1.143C24,0.514,23.486,0,22.857,0H1.143C0.514,0,0,0.514,0,1.143v21.714C0,23.486,0.514,24,1.143,24h14.275V16.807z"/>
+        <polygon points="24,17.833 24,17.093 17.132,17.093 17.132,24 17.833,24 "/>
+      </svg>
+      VIEW MY COLLECTOR CARD
+    </button>
+  </section>
+  <section id="popup">
+    <a id="popup_close" href="javascript:;">CLOSE</a>
+    <h2>Instant Win Prize Details</h2>
+    <h3>Expires September 20, 2021. Your prize has been automatically loaded onto your Rutter's Rewards card.</h3>
+    <p>To redeem: Visit a participating Rutter's location by September 20, 2021, pick up the product and checkout using your Rutter's Rewards Card.</p>
+    <p>See <a href="javascript:;">Official Rules</a> for complete details.</p>
+  </section>
+</section>
+<footer>
+  <a id="footer_logo" href="javascript:;"><img src="imgs/rutters_logo@2x.png"></a>
+  <div id="footer_icons">
+    <a href="javascript:;"><img src="imgs/icn_fb@2x.png"></a>
+    <a href="javascript:;"><img src="imgs/icn_tw@2x.png"></a>
+    <a href="javascript:;"><img src="imgs/icn_in@2x.png"></a>
+    <a href="javascript:;"><img src="imgs/icn_yt@2x.png"></a>
+    <a href="javascript:;"><img src="imgs/icn_ln@2x.png"></a>
+  </div>
+  <div id="footer_rules">
+    <a href="javascript:;">Official Rules</a>
+    <a href="javascript:;">Privacy & Security</a>
+  </div>
+  <div id="terms">
+    No purchase necessary. Must be a Rutter's VIP member to receive digital game tickets. Starts 04/26/21, ends 08/29/21, while supplies last. Prizes may not be exactly as illustrated. See <a href="javascript:;">Official Rules</a> here for complete details, eligibility requirements, available prizes, odds and no purchase entry means.
+  </div>
+</footer>
+<script src="js/main.js"></script>
+<script>
+  let win = true;
+</script>
+</body>
+</html>
