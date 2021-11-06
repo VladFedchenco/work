@@ -1,0 +1,337 @@
+* {
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: url(../imgs/swoosh.png) no-repeat left bottom;
+}
+
+#loader {
+    position: relative;
+    width: 470px;
+    padding-top: 100px;
+    margin: 0 auto;
+}
+
+#steps {
+    width: 85%;
+    margin: 0 auto 80px auto;
+    display: flex;
+}
+
+#steps div {
+    flex-basis: 50%;
+    font-size: 24px;
+}
+
+#steps span {
+    display: block;
+    color: #ccc;
+}
+
+#steps span::before {
+    content: '';
+    display: block;
+    width: 46px;
+    height: 46px;
+    border-radius: 23px;
+    background: #ccc;
+    float: left;
+    margin: -8px 16px 0 0;
+    text-align: center;
+    line-height: 46px;
+    font-size: 28px;
+    color: #fff;
+}
+
+c {
+    color: #000;
+}
+
+#step1 span::before {
+    content: '1';
+    background: #49a485;
+}
+
+#step2 {
+    padding-left: 40px;
+}
+
+#step2 span::before {
+    content: '2';
+}
+
+#step1_sub, #step2_sub {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    top: 144px;
+    left: 35px;
+    font-size: 18px;
+    text-align: center;
+    height: 60px;
+}
+
+#step2_sub {
+    opacity: 0;
+}
+
+#text_frame {
+    width: 470px;
+    height: 190px;
+    padding: 0;
+    border: solid 2px #e7e9f4;
+    background: #f9faff;
+}
+
+#result {
+    opacity: 0;
+}
+
+/*-------------------- Animations --------------------*/
+
+#mglass, #clip_view, #clip_bg, #zoomed, #result, #step1 span, #step2 span, #step1 span::before, #step2 span::before, #step1_sub, #step2_sub {
+    animation-duration: 15s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+#mglass, #clip_view, #clip_bg {
+    animation-name: mglass;
+}
+
+@keyframes mglass {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    16% {
+        transform: translate(412px, 0px);
+    }
+    21% {
+        transform: translate(0px, 0px);
+    }
+    22% {
+        transform: translate(0px, 20px);
+    }
+    35% {
+        transform: translate(368px, 20px);
+    }
+    40% {
+        transform: translate(0px, 20px);
+    }
+    41% {
+        transform: translate(0px, 40px);
+    }
+    57% {
+        transform: translate(412px, 40px);
+    }
+    62% {
+        transform: translate(0px, 40px);
+    }
+    63% {
+        transform: translate(0px, 60px);
+    }
+    74% {
+        transform: translate(328px, 60px);
+    }
+    79% {
+        transform: translate(0px, 60px);
+    }
+    80% {
+        transform: translate(0px, 80px);
+    }
+    87%, 100% {
+        transform: translate(137px, 80px);
+    }
+    0%, 87% {
+        opacity: 1;
+    }
+    90%, 100% {
+        opacity: 0;
+    }
+}
+
+#zoomed {
+    animation-name: zoomed;
+}
+
+@keyframes zoomed {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    16% {
+        transform: translate(-666px, 0px);
+    }
+    21% {
+        transform: translate(0px, 0px);
+    }
+    22% {
+        transform: translate(0px, -31px);
+    }
+    35% {
+        transform: translate(-594px, -31px);
+    }
+    40% {
+        transform: translate(0px, -31px);
+    }
+    41% {
+        transform: translate(0px, -62px);
+    }
+    57% {
+        transform: translate(-666px, -62px);
+    }
+    62% {
+        transform: translate(0px, -62px);
+    }
+    63% {
+        transform: translate(0px, -93px);
+    }
+    74% {
+        transform: translate(-530px, -93px);
+    }
+    79% {
+        transform: translate(0px, -93px);
+    }
+    80% {
+        transform: translate(0px, -124px);
+    }
+    87%, 100% {
+        transform: translate(-222px, -124px);
+    }
+    0%, 87% {
+        opacity: 1;
+    }
+    90%, 100% {
+        opacity: 0;
+    }
+}
+
+#step1_sub {
+    animation-name: sub;
+}
+
+@keyframes sub {
+    0%, 89% {
+        opacity: 1;
+    }
+    91%, 100% {
+        opacity: 0;
+    }
+}
+
+#result, #step2_sub {
+    animation-name: result;
+}
+
+@keyframes result {
+    0%, 89% {
+        opacity: 0;
+    }
+    91%, 100% {
+        opacity: 1;
+    }
+}
+
+#step1 span {
+    animation-name: step1_text;
+}
+
+@keyframes step1_text {
+    0%, 89% {
+        color: #000;
+    }
+    91%, 100% {
+        color: #ccc;
+    }
+}
+
+#step2 span {
+    animation-name: step2_text;
+}
+
+@keyframes step2_text {
+    0%, 89% {
+        color: #ccc;
+    }
+    91%, 100% {
+        color: #000;
+    }
+}
+
+#step1 span::before {
+    animation-name: step1_circle;
+}
+
+@keyframes step1_circle {
+    0%, 89% {
+        background: #49a485;
+    }
+    91%, 100% {
+        background: #ccc;
+    }
+}
+
+#step2 span::before {
+    animation-name: step2_circle;
+}
+
+@keyframes step2_circle {
+    0%, 89% {
+        background: #ccc;
+    }
+    91%, 100% {
+        background: #49a485;
+    }
+}
+
+@media screen and (max-width: 750px) {
+
+    #loader {
+        width: 320px;
+        padding-top: 50px;
+    }
+
+    #text_frame {
+        width: 320px;
+        height: 130px;
+    }
+
+    #steps {
+        width: 88%;
+    }
+
+    #steps div {
+        font-size: 20px;
+    }
+
+    #steps span::before {
+        width: 36px;
+        height: 36px;
+        border-radius: 18px;
+        line-height: 36px;
+        font-size: 21px;
+        margin: -8px 10px 0 0;
+    }
+
+    #step2 {
+        padding-left: 20px;
+    }
+    #step1_sub, #step2_sub {
+        width: 300px;
+        top: 86px;
+        left: 10px;
+        font-size: 16px;
+    }
+}
