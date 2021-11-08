@@ -1,0 +1,77 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <title>Loader</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div id="loader">
+  <div id="steps">
+    <div id="step1"><span>Check</span></div>
+    <div id="step2"><span>Report</span></div>
+  </div>
+  <div id="step1_sub">
+    <div>Deep-checking your text...</div>
+  </div>
+  <div id="step2_sub">
+    <svg id="progress" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 32 32">
+      <path id="p1" fill="#EAEAEA" d="M24 2.14c.65.38.88 1.22.5 1.87l-3.43 5.93c-.38.65-1.22.88-1.87.5a1.37 1.37 0 0 1-.5-1.87l3.43-5.93a1.38 1.38 0 0 1 1.87-.5z"/>
+      <path id="p2" fill="#DCDCDC" d="M29.86 8c.38.65.15 1.5-.5 1.87l-5.93 3.43a1.37 1.37 0 0 1-1.37-2.37l5.93-3.43a1.37 1.37 0 0 1 1.87.5z"/>
+      <path id="p3" fill="#CBCBCB" d="M32 16c0 .75-.62 1.37-1.37 1.37h-6.85c-.75 0-1.37-.62-1.37-1.37 0-.75.62-1.37 1.37-1.37h6.85c.75 0 1.37.62 1.37 1.37z"/>
+      <path id="p4" fill="#B7B7B7" d="M29.86 24c-.38.65-1.22.88-1.87.5l-5.93-3.43a1.37 1.37 0 0 1-.5-1.87 1.37 1.37 0 0 1 1.87-.5l5.93 3.43c.65.37.87 1.22.5 1.87z"/>
+      <path id="p5" fill="#A6A6A6" d="M24 29.86c-.65.38-1.5.15-1.87-.5l-3.43-5.93a1.37 1.37 0 0 1 2.37-1.37l3.43 5.93c.38.65.15 1.49-.5 1.87z"/>
+      <path id="p6" fill="#909090" d="M16 32c-.75 0-1.37-.62-1.37-1.37v-6.85c0-.75.62-1.37 1.37-1.37.75 0 1.37.62 1.37 1.37v6.85c0 .75-.62 1.37-1.37 1.37z"/>
+      <path id="p7" fill="#7F7F7F" d="M12.8 21.55c.65.38.88 1.22.5 1.87l-3.43 5.93c-.37.66-1.22.88-1.87.51a1.37 1.37 0 0 1-.5-1.87l3.43-5.93a1.36 1.36 0 0 1 1.87-.51z"/>
+      <path id="p8" fill="#696969" d="M10.45 19.2c.38.65.15 1.5-.5 1.87L4.02 24.5a1.37 1.37 0 0 1-1.37-2.37l5.93-3.43a1.38 1.38 0 0 1 1.87.5z"/>
+      <path id="p9" fill="#565656" d="M9.59 16c0 .75-.62 1.37-1.37 1.37H1.37C.62 17.37 0 16.75 0 16c0-.75.62-1.37 1.37-1.37h6.85c.76 0 1.37.62 1.37 1.37z"/>
+      <path id="p10" fill="#454545" d="M10.45 12.8c-.38.65-1.22.88-1.87.5L2.65 9.87A1.37 1.37 0 0 1 2.14 8a1.37 1.37 0 0 1 1.87-.5l5.93 3.43c.66.37.89 1.21.51 1.87z"/>
+      <path id="p11" fill="#333" d="M12.8 10.45c-.65.38-1.5.15-1.87-.5L7.5 4.02a1.37 1.37 0 1 1 2.37-1.38l3.43 5.93c.37.66.15 1.5-.5 1.88z"/>
+      <path id="p12" fill="#282828" d="M16 9.59c-.75 0-1.37-.62-1.37-1.37V1.37C14.63.62 15.25 0 16 0c.75 0 1.37.62 1.37 1.37v6.85c0 .76-.62 1.37-1.37 1.37z"/>
+    </svg>
+    <div>Report generated. Please wait...</div>
+  </div>  
+  <div id="text_frame">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 536 215">
+      <g id="init" fill="#CCC">
+        <rect width="412.25" height="7.54" x="62" y="66.1"/><rect width="367.75" height="7.54" x="62" y="84.68"/><rect width="412.21" height="7.54" x="62" y="103.26"/><rect width="137.55" height="7.54" x="62" y="140.51"/><rect width="327.97" height="7.54" x="62" y="121.94"/>
+      </g>
+      <g id="result">
+        <g fill="#58B279"><rect width="412.25" height="7.54" x="62" y="66.1"/><rect width="367.75" height="7.54" x="62" y="84.68"/><rect width="412.21" height="7.54" x="62" y="103.26"/><rect width="137.55" height="7.54" x="62" y="140.51"/><rect width="327.97" height="7.54" x="62" y="121.94"/></g>
+        <g fill="#DD5262"><path d="M299.54 73.73h-63.38V66.2h63.38v7.53z"/><path d="M201.93 92.31h-55.71v-7.54h55.71v7.54z"/><path d="M361.42 92.31h-35.26v-7.54h35.26v7.54z"/><path d="M174.9 129.47h35.26v-7.54H174.9v7.54z"/></g>
+      </g>
+      <circle id="clip_bg" fill="#f9faff" cx="61.7" cy="62.5" r="39"/>
+      <clipPath id="zoom_clip">
+        <circle id="clip_shape" cx="61.7" cy="62.5" r="39"/>
+      </clipPath>
+      <g id="clip_view" clip-path="url(#zoom_clip)">
+        <g id="zoomed" fill="#CCC"><rect width="666" height="12.18" x="62" y="63.66"/><rect width="594.11" height="12.17" x="62" y="93.67"/><rect width="665.93" height="12.18" x="62" y="123.69"/><rect width="222.22" height="12.17" x="62" y="183.87"/><rect width="529.84" height="12.17" x="62" y="153.87"/></g>
+      </g>
+      <g id="mglass">
+        <circle cx="61.69" cy="62.51" r="39.01" opacity=".04" transform="rotate(-45 61.7 62.51)"/>
+        <rect width="8.44" height="8.44" x="86.15" y="92.37" fill="gray" transform="rotate(-40.08 90.36 96.58)"/>
+        <path fill="#333" d="m120.2 130.78-1.25 1.05a4.99 4.99 0 0 1-7.04-.61L93.5 109.34l8.9-7.49 18.41 21.88a5 5 0 0 1-.61 7.05z"/>
+        <rect width="9.72" height="2.42" x="89.01" y="99.53" fill="#B3B3B3" transform="rotate(-40.08 93.86 100.74)"/>
+        <polygon fill="gray" points="101.56 102.56 94.34 108.64 91.42 104.39 97.87 98.95"/>
+        <path fill="#4D4D4D" d="m99.56 104.25 21.52 25.57a5.1 5.1 0 0 0 .87-2.24l-20.78-24.69-1.61 1.36z"/>
+        <rect width="1.28" height="8.44" x="87.81" y="93.98" fill="#999" transform="rotate(-40.08 88.44 98.2)"/>
+        <polygon fill="#999" points="96.34 106.96 95.24 107.88 92.24 103.7 93.21 102.87"/>
+        <rect width="1.05" height="2.42" x="90.93" y="101.56" fill="#CCC" transform="rotate(-40.08 91.45 102.77)"/>
+        <rect width="1.65" height="8.44" x="92.15" y="90.18" fill="#CCC" transform="rotate(-40.08 92.96 94.4)"/>
+        <rect width="1.46" height="2.42" x="96.29" y="96.87" fill="#CCC" transform="rotate(-40.08 97.01 98.08)"/>
+        <polygon fill="#CCC" points="97.87 98.95 96.73 99.92 100.26 103.66 101.56 102.56"/>
+        <path d="M61.69 103.51a40.94 40.94 0 0 1-24.98-73.42A41 41 0 0 0 16 65.69a41.02 41.02 0 0 0 40.97 40.97c9.4 0 18.06-3.19 24.98-8.53a40.67 40.67 0 0 1-20.26 5.38z" opacity=".1"/>
+        <g>
+          <path d="M61.69 104.02c-22.89 0-41.51-18.62-41.51-41.51S38.8 21 61.69 21c22.89 0 41.51 18.62 41.51 41.51s-18.62 41.51-41.51 41.51zm0-80.52a39.05 39.05 0 0 0-39.01 39.01c0 21.51 17.5 39.01 39.01 39.01s39.01-17.5 39.01-39.01A39.05 39.05 0 0 0 61.69 23.5z"/>
+        </g>
+        <path fill="#FFF" d="M61.69 25.76a36.58 36.58 0 0 0-20.38 6.18 36.82 36.82 0 0 1 18.76-5.13c20.4 0 36.99 16.6 36.99 36.99a36.86 36.86 0 0 1-10.62 25.9 36.68 36.68 0 0 0 12.01-27.17 36.79 36.79 0 0 0-36.76-36.77z" opacity=".8"/>
+      </g>
+    </svg>
+  </div>
+</div>
+</body>
+</html>
