@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+body{
+    background-color: #060d28;
+    font-family: sans-serif;
+    color: #fff;
+    margin: 0px;
+    height: 100%;
+    text-align: center;
+}
+
+#lottie{
+    background-color: #060d28;
+    width: 640px;
+    height: 640px;
+    display: block;
+    overflow: hidden;
+    transform: translate3d(0,-50%,0);
+    text-align: center;
+    opacity: 1;
+    margin-bottom: 64px;
+    position: absolute;
+    right: 100px;
+    top: 50%;
+}
+
+#top_section, #bottom_section {
+    height: 100vh;
+    text-align: center;
+    padding-top: 46vh;
+    font-size: 48px;
+    font-weight: bold;
+    background-color: #070d66;
+}
+
+#wrapper {
+    position: relative;
+}
+
+#middle_section {
+    background-color: #060d28;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+#middle_section.fixed {
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+#middle_section.fixed_bottom {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+#headline_01, #headline_02, #headline_03 {
+    position: absolute;
+    left:  100px;
+    top: 48%;
+    transform: translateY(-50%);
+    width: 40%;
+    text-align: left;
+    opacity: 0;
+    transition: opacity .4s linear;
+}
+
+#headline_01.vis, #headline_02.vis, #headline_03.vis {
+    opacity: 1;
+}
+
+#headline_texts h2 {
+    font-size: 56px;
+    font-weight: normal;
+}
+
+#headline_texts h3 {
+    font-weight: normal;
+}
