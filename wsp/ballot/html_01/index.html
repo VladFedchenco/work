@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BallotBox Animation</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
+</head>
+<style>
+  body{
+      background-color:#fff;
+      margin: 0px;
+      height: 100%;
+      overflow: hidden;
+  }
+  #lottie{
+      background-color:#fff;
+      width:600px;
+      height:600px;
+      display:block;
+      overflow: hidden;
+      margin: 0 auto;
+      transform: translate3d(0,0,0);
+      text-align: center;
+      opacity: 1;
+  }
+</style>
+<body>
+<div id="lottie"></div>
+<script>
+    let params = {
+        container: document.getElementById('lottie'),
+        path: 'data.json',
+        renderer: 'svg',
+        loop: false,
+        autoplay: true
+    };
+
+    let anim;
+
+    anim = lottie.loadAnimation(params);
+</script>
+</body>
+</html>
