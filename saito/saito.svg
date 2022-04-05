@@ -1259,6 +1259,8 @@ function animate2() {
     $("#node_glow2").classList.remove("h");
   }
   if(counter == 170) {
+    $("#beam1").setAttribute("class", "n");
+    $("#beam2").setAttribute("class", "n");
     $("#dots4").setAttribute("class", "b");
     $("#dots7").setAttribute("class", "");
     $("#dots10").setAttribute("class", "b");
