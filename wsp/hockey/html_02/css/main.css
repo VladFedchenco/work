@@ -1,0 +1,398 @@
+* {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+*:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab', serif;
+}
+
+header {
+    display: block;
+    height: 62px;
+    background: #20368B;
+    padding: 14px 24px;
+    text-align: right;
+}
+
+footer {
+    padding: 44px 32px 16px 32px;
+    background: #CDE0EE;
+    text-align: center;
+}
+
+#main {
+    max-width: 420px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#game {
+    cursor: pointer;
+}
+
+#start_game {
+    color: #20368B;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 24px 130px 24px 64px;
+    position: relative;
+}
+
+#social {
+    padding-bottom: 8px;
+}
+
+#social a {
+    margin:  0px 4px;
+}
+
+#footer_links a {
+    color: #20368B;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 0px 8px;
+}
+
+#copy {
+    font-size: 12px;
+    color: #20368B;
+}
+
+#copy a {
+    color: #20368B;
+}
+
+#hand {
+    width: 60px;
+    height: 91px;
+    position: absolute;
+    right: 68px;
+    top: -60px;
+    opacity: 1;
+    cursor: pointer;
+    transition: all .3s linear;
+}
+
+#hand.invis {
+    opacity: 0;
+}
+
+#alarm {
+    visibility: hidden;
+}
+
+#allonsy {
+    opacity: 1;
+}
+
+#etlebut {
+    opacity: 0;
+}
+
+#game.v1 #stick {
+    transform: translate(0px, 0px);
+    animation: stick1 2s ease-in-out forwards;
+}
+
+@keyframes stick1 {
+    0%, 5% {
+        transform: translate(0px, 0px);
+    }
+    27%, 43% {
+        transform: translate(0px, 140px);
+    }
+    46% {
+        transform: translate(-68px, -10px);
+    }
+    50%, 70% {
+        transform: translate(-68px, 0px);
+    }
+    100% {
+        transform: translate(-68px, 140px);
+    }
+}
+
+#game.v1 #puck {
+    transform: translate(0px, 0px);
+    animation: puck1 2s ease-in-out forwards;
+}
+
+@keyframes puck1 {
+    0%, 44% {
+        transform: translate(0px, 0px);
+    }
+    63% {
+        transform: translate(-33px, -532px);
+    }
+    70%, 100% {
+        transform: translate(-33px, -519px);
+    }
+}
+
+#game.v1 #goalie {
+    transform: translate(0px, 0px);
+    animation: goalie1 2s ease-in-out forwards;
+}
+
+@keyframes goalie1 {
+    0%, 44% {
+        transform: translate(0px, 0px);
+    }
+    63% {
+        transform: translate(126px, 0px);
+    }
+    70%, 100% {
+        transform: translate(119px, 0px);
+    }
+}
+
+#game.v1 #alarm,
+#game.v2 #alarm {
+    animation: alarm1 1s 1.25s linear infinite;
+}
+
+@keyframes alarm1 {
+    0%, 49.9% {
+        visibility: visible;
+    }
+    50%, 100% {
+        visibility: hidden;
+    }
+}
+
+#game.v1 #allonsy,
+#game.v2 #allonsy {
+    animation: allonsy 2.6s linear forwards;
+}
+
+@keyframes allonsy {
+    0%, 45% {
+        opacity: 1;
+    }
+    50%, 100% {
+        opacity: 0;
+    }
+}
+
+#game.v1 #etlebut,
+#game.v2 #etlebut {
+    animation: etlebut 2.6s linear forwards;
+}
+
+@keyframes etlebut {
+    0%, 45% {
+        opacity: 0;
+    }
+    50%, 100% {
+        opacity: 1;
+    }
+}
+
+
+
+#game.v2 #stick {
+    transform: translate(0px, 0px);
+    animation: stick2 2s ease-in-out forwards;
+}
+
+@keyframes stick2 {
+    0%, 5% {
+        transform: translate(0px, 0px);
+    }
+    27%, 42.9% {
+        transform: translate(0px, 140px);
+    }
+    43% {
+        transform: translate(468px, 1100px) scale(-1, 1) translate(-468px, -960px);
+    }
+    46% {
+        transform: translate(468px, 950px) scale(-1, 1) translate(-468px, -960px);
+    }
+    50%, 70% {
+        transform: translate(468px, 960px) scale(-1, 1) translate(-468px, -960px);
+    }
+    100% {
+        transform: translate(468px, 1100px) scale(-1, 1) translate(-468px, -960px);
+    }
+}
+
+#game.v2 #puck {
+    transform: translate(0px, 0px);
+    animation: puck2 2s ease-in-out forwards;
+}
+
+@keyframes puck2 {
+    0%, 44% {
+        transform: translate(0px, 0px);
+    }
+    63% {
+        transform: translate(154px, -532px);
+    }
+    70%, 100% {
+        transform: translate(154px, -519px);
+    }
+}
+
+#game.v2 #goalie {
+    transform: translate(0px, 0px);
+    animation: goalie2 2s ease-in-out forwards;
+}
+
+@keyframes goalie2 {
+    0%, 44% {
+        transform: translate(0px, 0px);
+    }
+    63% {
+        transform: translate(-140px, 0px);
+    }
+    70%, 100% {
+        transform: translate(-132px, 0px);
+    }
+}
+
+
+
+#game.v3 #stick {
+    transform: translate(0px, 0px);
+    animation: stick3 2s ease-in-out forwards;
+}
+
+@keyframes stick3 {
+    0%, 5% {
+        transform: translate(0px, 0px);
+    }
+    27%, 43% {
+        transform: translate(0px, 140px);
+    }
+    46% {
+        transform: translate(-68px, -10px);
+    }
+    50%, 70% {
+        transform: translate(-68px, 0px);
+    }
+    100% {
+        transform: translate(-68px, 140px);
+    }
+}
+
+#game.v3 #puck {
+    transform: translate(0px, 0px);
+    animation: puck3 2s ease-in-out forwards;
+}
+
+@keyframes puck3 {
+    0%, 44% {
+        transform: translate(0px, 0px);
+    }
+    63% {
+        transform: translate(-11px, -396px);
+    }
+    70%, 100% {
+        transform: translate(-11px, -389px);
+    }
+}
+
+#game.v3 #goalie {
+    transform: translate(0px, 0px);
+    animation: goalie3 2s ease-in-out forwards;
+}
+
+@keyframes goalie3 {
+    0%, 44% {
+        transform: translate(0px, 0px);
+    }
+    63% {
+        transform: translate(-117px, 0px);
+    }
+    70%, 100% {
+        transform: translate(-110px, 0px);
+    }
+}
+
+#game.v3 #allonsy,
+#game.v4 #allonsy {
+    animation: allonsy 2.6s linear forwards;
+}
+
+@keyframes allonsy {
+    0%, 45% {
+        opacity: 1;
+    }
+    50%, 100% {
+        opacity: 0;
+    }
+}
+
+
+
+#game.v4 #stick {
+    transform: translate(0px, 0px);
+    animation: stick4 2s ease-in-out forwards;
+}
+
+@keyframes stick4 {
+    0%, 5% {
+        transform: translate(0px, 0px);
+    }
+    27%, 42.9% {
+        transform: translate(0px, 140px);
+    }
+    43% {
+        transform: translate(468px, 1100px) scale(-1, 1) translate(-468px, -960px);
+    }
+    46% {
+        transform: translate(468px, 950px) scale(-1, 1) translate(-468px, -960px);
+    }
+    50%, 70% {
+        transform: translate(468px, 960px) scale(-1, 1) translate(-468px, -960px);
+    }
+    100% {
+        transform: translate(468px, 1100px) scale(-1, 1) translate(-468px, -960px);
+    }
+}
+
+#game.v4 #puck {
+    transform: translate(0px, 0px);
+    animation: puck4 2s ease-in-out forwards;
+}
+
+@keyframes puck4 {
+    0%, 44% {
+        transform: translate(0px, 0px);
+    }
+    63% {
+        transform: translate(187px, -396px);
+    }
+    70%, 100% {
+        transform: translate(187px, -389px);
+    }
+}
+
+#game.v4 #goalie {
+    transform: translate(0px, 0px);
+    animation: goalie4 2s ease-in-out forwards;
+}
+
+@keyframes goalie4 {
+    0%, 44% {
+        transform: translate(0px, 0px);
+    }
+    63% {
+        transform: translate(95px, 0px);
+    }
+    70%, 100% {
+        transform: translate(87px, 0px);
+    }
+}
+
+
+
+@media screen and (max-width: 750px) {}
