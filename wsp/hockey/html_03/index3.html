@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hockey Game</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+<header>
+  <a href="javascript:;"><img src="imgs/bars-solid.svg"></a>
+</header>
+
+<section id="main">
+  <svg id="game" class="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1000 1040">
+    <image href="imgs/background.svg" width="1000" height="1040"/>
+    <image id="allonsy" href="imgs/allonsy.svg" x="284" y="45" width="436" height="92"/>
+    <image id="etlebut" href="imgs/etlebut.svg" x="80" y="45" width="844" height="76"/>
+    <image id="alarm" href="imgs/alarm.svg" x="409" y="196" width="189" height="52"/>
+    <image id="goalie" href="imgs/goalie.svg" x="364" y="292" width="272" height="272"/>
+    <image id="stick" href="imgs/stick.svg" x="468" y="960" width="104" height="80"/>
+    <image id="puck" href="imgs/puck.svg" x="427" y="962" width="60" height="31"/>
+  </svg>
+  <div id="win_content" class="invis">
+    <h2>VOUS AVEZ ACCUMULÉ</h2>
+    <h3>5 inscription aux tirages</h3>
+    <p>Plus de participations signifie plus de chances de GAGNER une expérience de hockey à Montréal ou une Carte-cadeau Irving Oil de 50 $ !</p>
+  </div>
+  <audio id="sound_shot" xmlns="http://www.w3.org/1999/xhtml">
+    <source src="mp4/shot.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="sound_goal" xmlns="http://www.w3.org/1999/xhtml">
+    <source src="mp4/goal.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="sound_save" xmlns="http://www.w3.org/1999/xhtml">
+    <source src="mp4/save.mp3" type="audio/mpeg">
+  </audio>
+  <div id="start_game">
+    <div id="hand_ttl">Cliquez pour jouer et courir la chance de GAGNER !</div>
+    <img id="hand" src="imgs/hand.svg">
+    <div id="block_after" class="invis">
+      <p>Vous avez # chances de plus disponibles pour jouer !</p>
+      <a class="bttn" href="javascript:;">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="#fff" width="30" height="22" viewBox="0 0 30 22"><path d="M0 5.5C0 2.46 6.57 0 14.67 0s14.67 2.46 14.67 5.5S22.77 11 14.67 11 0 8.54 0 5.5Zm14.62 8.2C8.97 13.7 3.26 12.57 0 10.21v6.29C0 19.54 6.57 22 14.67 22s14.67-2.46 14.67-5.5v-6.29c-3.25 2.36-8.96 3.49-14.72 3.49Z"/></svg> JOUER ENCORE</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="social">
+    <a href="javascript:;"><img src="imgs/icon_fb.svg"></a>
+    <a href="javascript:;"><img src="imgs/icon_ig.svg"></a>
+    <a href="javascript:;"><img src="imgs/icon_tw.svg"></a>
+  </div>
+  <div id="footer_links">
+    <a href="javascript:;">Règlement officiel</a> <a href="javascript:;">Trouver un établissement</a> <a href="javascript:;">Confidentialité et sécurité</a>
+  </div>
+  <div id="copy">
+    <p>AUCUN ACHAT REQUIS. Commence le 14 sept. 2022 et se termine le 3 janv. 2023. Il faut être membre Récompenses Irving et résident légal de l’ON ou du QC, et avoir atteint l’âge de majorité. Obtenez des chances de jouer en ligne pour marquer et gagner des prix. Recevez 1 participation par transaction admissible au moyen d’une carte Récompenses Irving. Obtenez des participations additionnelles lorsque vous entrez les codes en prime des réseaux sociaux. 1 participation sur 5 permet de marquer et gagner un rabais sur l’essence allant de 0,01 $ à 0,48 $ par L (max. de 100 L). VDA de tous les rabais de 60 713 $. Toutes les participations s’accompagnent d’une inscription à un tirage de l’une de 4 expériences de hockey à Montréal ou de l’une de 16 cartes-cadeaux Irving Oil de 50 $. VDA de tous les prix de 6 600 $. Pour connaître toutes les règles, les exigences d’admissibilité, les façons de participer avec ou sans achat, les chances de gagner et les autres conditions, consultez <a href="javascript:;">le règlement officiel.</a></p>
+    <p>Commanditaire : Irving Oil Marketing, G.P., Saint John (N.-B.).</p>
+  </div>
+</footer>
+
+<script>
+  let cl = "v3";
+</script>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
