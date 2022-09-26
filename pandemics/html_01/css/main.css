@@ -1,0 +1,63 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+canvas:focus {
+  outline: none;
+}
+
+#start_bttn {
+  font-family: sans-serif;
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #000;
+  z-index: 9999;
+  text-decoration: none;
+  border:  solid 1px #ccc;
+  padding: 24px 48px;
+  background-color: #eee;
+  border-radius: 16px;
+  text-transform: uppercase;
+  transition: all .3s ease;
+}
+
+#start_bttn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+#state_buttons {
+  text-align: center;
+  display: block;
+  position: absolute;
+  left: 50%;
+  bottom: 16px;
+  transform: translate(-50%, -50%);
+}
+
+#state_buttons.hidden {
+  display: none;
+}
+
+.states {
+  font-family: sans-serif;
+  display: inline-block;
+  padding: 8px 16px;
+  margin: 8px 8px;
+  border:  solid 1px #ccc;
+  background-color: #eee;
+  color: #000;
+  text-decoration: none;
+  border-radius: 8px;
+  text-transform: uppercase;
+  transition: all .3s ease;
+}
+
+.states:hover, .states.current {
+  background-color: #000;
+  color: #fff;
+}
