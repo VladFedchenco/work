@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 85 53">
+
+<style>
+/* <![CDATA[ */
+
+#display {
+  transform: translate(44.46px, 42.57px) scale(0) translate(-44.46px, -42.57px);
+  animation: display 6s infinite;
+}
+
+@keyframes display {
+  0% {
+    opacity: 0;
+    transform: translate(44.46px, 42.57px) scale(0) translate(-44.46px, -42.57px);
+  }
+  6% {
+    opacity: 1;
+    transform: translate(44.46px, 42.57px) scale(1.1) translate(-44.46px, -42.57px);
+  }
+  8%, 100% {
+    transform: translate(44.46px, 42.57px) scale(1) translate(-44.46px, -42.57px);
+  }
+  96% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#app {
+  transform: translate(44.46px, 23.88px) scale(0) translate(-44.46px, -23.88px);
+  animation: app 6s infinite;
+}
+
+@keyframes app {
+  0%, 6% {
+    opacity: 0;
+    transform: translate(44.46px, 23.88px) scale(0) translate(-44.46px, -23.88px);
+  }
+  12% {
+    opacity: 1;
+    transform: translate(44.46px, 23.88px) scale(1.1) translate(-44.46px, -23.88px);
+  }
+  14%, 100% {
+    transform: translate(44.46px, 23.88px) scale(1) translate(-44.46px, -23.88px);
+  }
+  96% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#person {
+  transform: translate(24.11px, 44.88px) scale(0) translate(-24.11px, -44.88px);
+  animation: person 6s infinite;
+}
+
+@keyframes person {
+  0%, 12% {
+    opacity: 0;
+    transform: translate(0px, 44.88px) scale(0) translate(-24.11px, -44.88px);
+  }
+  18% {
+    opacity: 1;
+    transform: translate(24.11px, 44.88px) scale(1.1) translate(-24.11px, -44.88px);
+  }
+  20%, 100% {
+    transform: translate(24.11px, 44.88px) scale(1) translate(-24.11px, -44.88px);
+  }
+  96% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* ]]> */
+</style>
+
+
+<g id="display" stroke="#9AA8FF" stroke-miterlimit="10">
+  <line x1="37.78" x2="51.15" y1="42.57" y2="42.57" fill="none" stroke-width="1.05"/>
+  <polygon fill="#CFD4FF" points="39.61 42.57 40.52 38.15 48.41 38.15 49.32 42.57"/>
+  <path fill="none" stroke-linecap="round" stroke-width="1.05" d="M22.31 36.02c0 1.18.96 2.13 2.13 2.13h40.04c1.18 0 2.13-.96 2.13-2.13v-23.6c0-1.18-.96-2.13-2.13-2.13H24.44c-1.18 0-2.13.96-2.13 2.13v23.6z"/>
+  <path fill="none" stroke-linecap="round" d="M24.63 33.61c0 .59.48 1.07 1.07 1.07h37.54c.59 0 1.07-.48 1.07-1.07V13.72c0-.59-.48-1.07-1.07-1.07H25.7c-.59 0-1.07.48-1.07 1.07v19.89z"/>
+</g>
+<g id="app" stroke="#9AA8FF" stroke-miterlimit="10">
+  <rect width="24.02" height="13.76" x="32.46" y="18.41" fill="#CFD4FF"/>
+  <rect width="24.02" height="2.8" x="32.46" y="15.61" fill="#FFF"/>
+  <path fill="#FFF" stroke-linecap="round" stroke-linejoin="round" d="M49.22 25.49a4.83 4.83 0 1 1-9.65 0 4.83 4.83 0 0 1 9.65 0"/>
+  <polygon fill="#FFF" stroke-linecap="round" stroke-linejoin="round" points="43.58 23.19 46.62 25.48 43.54 27.8"/>
+  <line x1="51.18" x2="51.2" y1="17.01" y2="17.01" fill="none" stroke-linecap="round"/>
+  <line x1="52.65" x2="52.66" y1="17.01" y2="17.01" fill="none" stroke-linecap="round"/>
+  <line x1="54.12" x2="54.13" y1="17.01" y2="17.01" fill="none" stroke-linecap="round"/>
+</g>
+<g id="person" fill="#FFF" stroke="#9AA8FF" stroke-miterlimit="10" stroke-width="1.05">
+  <path d="M30.02 27.99a5.9 5.9 0 1 1-11.8 0 5.9 5.9 0 0 1 11.8 0"/>
+  <path stroke-linecap="round" stroke-linejoin="round" d="M35.11 44.89c0-6.07-4.92-10.99-10.99-10.99h0a10.99 10.99 0 0 0-10.99 10.99"/>
+</g>
+</svg>

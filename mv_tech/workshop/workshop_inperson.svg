@@ -1,0 +1,172 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 85 53">
+
+<style>
+/* <![CDATA[ */
+
+#whiteboard {
+  transform: translate(0px, 28px);
+  animation: whiteboard 6s infinite;
+}
+
+@keyframes whiteboard {
+  0% {
+    transform: translate(0px, 28px);
+  }
+  7% {
+    transform: translate(0px, -4px);
+  }
+  11%, 100% {
+    transform: translate(0px, 0px);
+  }
+  0%, 96% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#man_01 {
+  transform: translate(22.93px, 46.53px) scale(0) translate(-22.93px, -46.53px);
+  animation: man_01 6s infinite;
+}
+
+@keyframes man_01 {
+  0%, 10% {
+    opacity: 0;
+    transform: translate(22.93px, 46.53px) scale(0) translate(-22.93px, -46.53px);
+  }
+  15% {
+    opacity: 1;
+    transform: translate(22.93px, 46.53px) scale(1.1) translate(-22.93px, -46.53px);
+  }
+  17%, 100% {
+    transform: translate(22.93px, 46.53px) scale(1) translate(-22.93px, -46.53px);
+  }
+  96% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#man_02 {
+  transform: translate(33.3px, 40.64px) scale(0) translate(-33.3px, -40.64px);
+  animation: man_02 6s infinite;
+}
+
+@keyframes man_02 {
+  0%, 13% {
+    opacity: 0;
+    transform: translate(33.3px, 40.64px) scale(0) translate(-33.3px, -40.64px);
+  }
+  18% {
+    opacity: 1;
+    transform: translate(33.3px, 40.64px) scale(1.1) translate(-33.3px, -40.64px);
+  }
+  20%, 100% {
+    transform: translate(33.3px, 40.64px) scale(1) translate(-33.3px, -40.64px);
+  }
+  96% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#man_03 {
+  transform: translate(43.67px, 46.53px) scale(0) translate(-43.67px, -46.53px);
+  animation: man_03 6s infinite;
+}
+
+@keyframes man_03 {
+  0%, 15% {
+    opacity: 0;
+    transform: translate(43.67px, 46.53px) scale(0) translate(-43.67px, -46.53px);
+  }
+  20% {
+    opacity: 1;
+    transform: translate(43.67px, 46.53px) scale(1.1) translate(-43.67px, -46.53px);
+  }
+  22%, 100% {
+    transform: translate(43.67px, 46.53px) scale(1) translate(-43.67px, -46.53px);
+  }
+  96% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#person {
+  transform: translate(62.85px, 46.53px) scale(0) translate(-62.85px, -46.53px);
+  animation: person 6s infinite;
+}
+
+@keyframes person {
+  0%, 20% {
+    opacity: 0;
+    transform: translate(62.85px, 46.53px) scale(0) translate(-62.85px, -46.53px);
+  }
+  25% {
+    opacity: 1;
+    transform: translate(62.85px, 46.53px) scale(1.1) translate(-62.85px, -46.53px);
+  }
+  28%, 100% {
+    transform: translate(62.85px, 46.53px) scale(1) translate(-62.85px, -46.53px);
+  }
+  96% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* ]]> */
+</style>
+
+<defs>
+  <clipPath id="clp">
+    <rect width="41.62" height="32.89" x="12.6"/>
+  </clipPath>
+</defs>
+
+<g clip-path="url(#clp)">
+  <g id="whiteboard">
+    <path fill="none" stroke="#9AA8FF" stroke-miterlimit="10" d="M52.22 9.02H14.77a.82.82 0 0 1-.82-.82V7.1c0-.45.37-.82.82-.82h37.45c.45 0 .82.37.82.82v1.1c0 .45-.36.82-.82.82z"/>
+    <rect width="30.28" height="18.66" x="18.36" y="10.87" fill="#CFD4FF"/>
+    <rect width="34.06" height="23.34" x="16.47" y="9.02" fill="none" stroke="#9AA8FF" stroke-miterlimit="10"/>
+    <g stroke="#9AA8FF" stroke-miterlimit="10">
+      <rect width="6.78" height="5.99" x="25.01" y="15.85" fill="#FFF" transform="rotate(-6.33 28.4 18.84)"/>
+      <rect width="3.45" height="1.63" x="26.35" y="15.05" fill="#CFD4FF" transform="rotate(-6.33 28.08 15.87)"/>
+    </g>
+    <g stroke="#9AA8FF" stroke-miterlimit="10">
+      <rect width="6.78" height="5.99" x="36.98" y="18.14" fill="#FFF" transform="rotate(18.45 40.37 21.13)"/>
+      <rect width="3.45" height="1.63" x="39.6" y="17.48" fill="#CFD4FF" transform="rotate(18.45 41.32 18.3)"/>
+    </g>
+    <line x1="27.1" x2="34.74" y1="23.86" y2="23.86" fill="none" stroke="#9AA8FF" stroke-miterlimit="10"/>
+    <line x1="27.1" x2="33.31" y1="25.75" y2="25.75" fill="none" stroke="#9AA8FF" stroke-miterlimit="10"/>
+  </g>
+</g>
+<g id="man_01" stroke="#9AA8FF" stroke-miterlimit="10" stroke-width="1.05">
+  <path fill="#FFF" d="M26.86 35.29a3.93 3.93 0 1 1-7.86 0 3.93 3.93 0 0 1 7.86 0"/>
+  <path fill="none" stroke-linecap="round" stroke-linejoin="round" d="M30.25 46.53a7.3 7.3 0 0 0-7.31-7.31h0a7.3 7.3 0 0 0-7.31 7.31"/>
+</g>
+<g id="man_02" stroke="#9AA8FF" stroke-miterlimit="10" stroke-width="1.05">
+  <path fill="#FFF" d="M37.23 33.53a3.93 3.93 0 1 1-7.86 0 3.93 3.93 0 0 1 7.86 0"/>
+  <path fill="none" stroke-linecap="round" stroke-linejoin="round" d="M27.27 40.64a7.32 7.32 0 0 1 6.04-3.19h0a7.3 7.3 0 0 1 6.04 3.19"/>
+</g>
+<g id="man_03" stroke="#9AA8FF" stroke-miterlimit="10" stroke-width="1.05">
+  <path fill="#FFF" d="M47.6 35.29a3.93 3.93 0 1 1-7.86 0 3.93 3.93 0 0 1 7.86 0"/>
+  <path fill="none" stroke-linecap="round" stroke-linejoin="round" d="M50.99 46.53a7.3 7.3 0 0 0-7.31-7.31h0a7.3 7.3 0 0 0-7.31 7.31"/>
+</g>
+<g id="person" fill="#FFF" stroke="#9AA8FF" stroke-miterlimit="10">
+  <path d="M67.76 32.94V44.5c0 1.12-1.01 2.03-2.24 2.03a2 2 0 0 1-2.07-2.03V33.43h-1.21V44.5a2 2 0 0 1-2.07 2.03c-1.23 0-2.24-.91-2.24-2.03V32.94"/>
+  <path d="M66.83 13.8a3.97 3.97 0 1 1-7.95 0 3.97 3.97 0 0 1 7.95 0"/>
+  <path d="M66.83 24.44v7.02c0 .94.77 1.71 1.71 1.71s1.71-.77 1.71-1.71v-6.3a7.4 7.4 0 0 0-14.78 0v6.3c0 .94.77 1.71 1.71 1.71s1.71-.77 1.71-1.71v-7.02"/>
+</g>
+</svg>
