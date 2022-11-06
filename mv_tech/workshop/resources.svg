@@ -1,0 +1,219 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 85 53">
+
+<style>
+/* <![CDATA[ */
+
+#bg {
+  animation: bg 7s ease-in-out infinite;
+}
+
+@keyframes bg {
+  0% {
+    transform: translate(42.5px, 26.5px) scale(0) translate(-42.5px, -26.5px);
+  }
+  6% {
+    transform: translate(42.5px, 26.5px) scale(1.1) translate(-42.5px, -26.5px);
+  }
+  9% {
+    transform: translate(42.5px, 26.5px) scale(.97) translate(-42.5px, -26.5px);
+  }
+  12%, 100% {
+    transform: translate(42.5px, 26.5px) scale(1) translate(-42.5px, -26.5px);
+  }
+  0%, 96% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#links {
+  animation: links 7s ease-in-out infinite;
+}
+
+@keyframes links {
+  0%, 3% {
+    transform: translate(25.5px, 23.4px) scale(0) translate(-25.5px, -23.4px);
+  }
+  9% {
+    transform: translate(25.5px, 23.4px) scale(1.1) translate(-25.5px, -23.4px);
+  }
+  12% {
+    transform: translate(25.5px, 23.4px) scale(.97) translate(-25.5px, -23.4px);
+  }
+  15%, 100% {
+    transform: translate(25.5px, 23.4px) scale(1) translate(-25.5px, -23.4px);
+  }
+  0%, 96% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#acrobat {
+  animation: acrobat 7s ease-in-out infinite;
+}
+
+@keyframes acrobat {
+  0%, 6% {
+    transform: translate(61.8px, 33px) scale(0) translate(-61.8px, -33px);
+  }
+  12% {
+    transform: translate(61.8px, 33px) scale(1.1) translate(-61.8px, -33px);
+  }
+  15% {
+    transform: translate(61.8px, 33px) scale(.97) translate(-61.8px, -33px);
+  }
+  18%, 100% {
+    transform: translate(61.8px, 33px) scale(1) translate(-61.8px, -33px);
+  }
+  0%, 96% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#ppoint {
+  animation: ppoint 7s ease-in-out infinite;
+}
+
+@keyframes ppoint {
+  0%, 9% {
+    transform: translate(48.5px, 37.3px) scale(0) translate(-48.5px, -37.3px);
+  }
+  15% {
+    transform: translate(48.5px, 37.3px) scale(1.1) translate(-48.5px, -37.3px);
+  }
+  18% {
+    transform: translate(48.5px, 37.3px) scale(.97) translate(-48.5px, -37.3px);
+  }
+  21%, 100% {
+    transform: translate(48.5px, 37.3px) scale(1) translate(-48.5px, -37.3px);
+  }
+  0%, 96% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#word {
+  animation: word 7s ease-in-out infinite;
+}
+
+@keyframes word {
+  0%, 12% {
+    transform: translate(35.1px, 41.6px) scale(0) translate(-35.1px, -41.6px);
+  }
+  18% {
+    transform: translate(35.1px, 41.6px) scale(1.1) translate(-35.1px, -41.6px);
+  }
+  21% {
+    transform: translate(35.1px, 41.6px) scale(.97) translate(-35.1px, -41.6px);
+  }
+  24%, 100% {
+    transform: translate(35.1px, 41.6px) scale(1) translate(-35.1px, -41.6px);
+  }
+  0%, 96% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#video {
+  animation: video 7s ease-in-out infinite;
+}
+
+@keyframes video {
+  0%, 15% {
+    transform: translate(24px, 41.2px) scale(0) translate(-24px, -41.2px);
+  }
+  21% {
+    transform: translate(24px, 41.2px) scale(1.1) translate(-24px, -41.2px);
+  }
+  24% {
+    transform: translate(24px, 41.2px) scale(.97) translate(-24px, -41.2px);
+  }
+  27%, 100% {
+    transform: translate(24px, 41.2px) scale(1) translate(-24px, -41.2px);
+  }
+  0%, 96% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#arrow {
+  animation: arrow 7s ease-in-out infinite;
+}
+
+@keyframes arrow {
+  
+  21%, 58%, 97% {
+    transform: translate(0px, -1px);
+  }
+
+  25%, 62% {
+    transform: translate(0px, 1.5px);
+  }
+
+  30%, 67% {
+    transform: translate(0px, -.5px);
+  }
+
+  33%, 53%, 70%, 90%, 100% {
+    transform: translate(0px, 0px);
+  }
+
+  24%, 96% {
+    opacity: 1;
+  }
+  0%, 20%, 100% {
+    opacity: 0;
+  }
+}
+
+/* ]]> */
+</style>
+
+<path id="bg" fill="#CFD4FF" d="M64.87 44.13H20.13a1 1 0 0 1-1-1V9.87a1 1 0 0 1 1-1h44.74a1 1 0 0 1 1 1v33.26a1 1 0 0 1-1 1z"/>
+<g id="links" stroke="#9AA8FF" stroke-miterlimit="10">
+  <path fill="#FFF" stroke-linejoin="round" d="M35.16 23.36H15.95a1 1 0 0 1-1-1V6.56a1 1 0 0 1 1-1h19.21a1 1 0 0 1 1 1v15.8a1 1 0 0 1-1 1z"/>
+  <g fill="none" stroke-linecap="round">
+    <path d="m20.24 20.38-.78-.78a1.8 1.8 0 0 1 0-2.54l3.68-3.68c.7-.7 1.84-.7 2.54 0l.78.78c.7.7.7 1.84 0 2.54l-3.68 3.68c-.7.69-1.84.69-2.54 0z"/>
+    <path d="M23.95 16.67c.05-.53.27-1.05.68-1.45l.18-.18M27.35 12.49l.18-.18c.91-.91 2.4-.91 3.32 0h0c.91.91.91 2.4 0 3.32l-2.91 2.91c-.4.4-.92.63-1.45.68"/>
+  </g>
+  <line x1="14.95" x2="36.16" y1="8.87" y2="8.87" fill="none"/>
+  <line x1="16.94" x2="16.96" y1="7.22" y2="7.22" fill="none" stroke-linecap="round"/>
+  <line x1="18.76" x2="18.78" y1="7.22" y2="7.22" fill="none" stroke-linecap="round"/>
+  <line x1="20.58" x2="20.6" y1="7.22" y2="7.22" fill="none" stroke-linecap="round"/>
+</g>
+<g id="acrobat" stroke="#9AA8FF" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10">
+  <path fill="#FFF" d="M63.72 33.04h-8.2a1.2 1.2 0 0 1-1.21-1.21v-18.4c0-.67.54-1.21 1.21-1.21h12.53c.67 0 1.21.54 1.21 1.21V27.5l-5.54 5.54z"/>
+  <path fill="none" d="M69.26 27.5h-4.33a1.2 1.2 0 0 0-1.21 1.21v4.33l5.54-5.54zM61.57 20.57c-1.18-1.34-1.88-4.26-.26-4.52 1.62-.26 1.15 2.92.07 5.42-1.08 2.5-2.5 6.03-3.75 6.03s-1.69-1.08-.59-1.81c1.09-.73 4.33-1.85 7.04-2.88 2.29-.87 3.39-.06 3.07.73-.51 1.26-2.8.17-5.58-2.97z"/>
+</g>
+<g id="ppoint" stroke="#9AA8FF" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10">
+  <path fill="#FFF" d="M50.41 37.34h-8.2A1.2 1.2 0 0 1 41 36.13v-18.4c0-.67.54-1.21 1.21-1.21h12.53c.67 0 1.21.54 1.21 1.21V31.8l-5.54 5.54z"/>
+  <path fill="none" d="M55.94 31.8h-4.33a1.2 1.2 0 0 0-1.21 1.21v4.33l5.54-5.54zM45.9 26.99h2.9a2.24 2.24 0 0 0 2.23-2.23v0a2.24 2.24 0 0 0-2.23-2.23h-2.9v7.08"/>
+</g>
+<g id="word" stroke="#9AA8FF" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10">
+  <path fill="#FFF" d="M37.09 41.64h-8.2a1.2 1.2 0 0 1-1.21-1.21v-18.4c0-.67.54-1.21 1.21-1.21h12.53c.67 0 1.21.54 1.21 1.21V36.1l-5.54 5.54z"/>
+  <path fill="none" d="M42.63 36.1H38.3a1.2 1.2 0 0 0-1.21 1.21v4.33l5.54-5.54z"/>
+  <polyline fill="none" points="39.66 28.29 37.41 33.24 35.16 28.29 32.91 33.24 30.67 28.29"/>
+</g>
+<g id="video">
+  <path fill="#9AA8FF" d="M29.46 46.9h-11a3 3 0 0 1-3-3v-5.33a3 3 0 0 1 3-3h11a3 3 0 0 1 3 3v5.33a3 3 0 0 1-3 3z"/>
+  <path fill="#FFF" d="M22.47 43.27V39.2c0-.45.5-.72.88-.48l3.14 2.04c.34.22.34.73 0 .95l-3.14 2.04a.57.57 0 0 1-.88-.48z"/>
+</g>
+<polygon id="arrow" fill="#9AA8FF" stroke="#FFF" stroke-linejoin="round" stroke-miterlimit="10" points="70.14 40.13 70.14 35.57 61.6 35.57 61.6 40.13 58.52 40.13 65.87 48.67 73.22 40.13"/>
+</svg>
