@@ -1,6 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 127 168">
-
-<!-- width="127" height="168"  -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="127" height="168" viewBox="0 0 127 168">
 
 <style>
 /* <![CDATA[ */
@@ -53,8 +51,6 @@ svg {
     transform: translate(63.4px, 108.9px) scale(1) translate(-63.4px, -108.9px);
   }
 }
-
-
 
 /* ]]> */
 </style>
