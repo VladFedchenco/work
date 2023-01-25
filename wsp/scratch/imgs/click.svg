@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="118" height="140" viewBox="0 0 118 140">
+
+<style>
+/* <![CDATA[ */
+
+#hand {
+  animation: hand 3s ease-in-out infinite;
+}
+
+@keyframes hand {
+  0%, 45%, 100% {
+    transform: translate(92px, 130px) rotate(0deg) translate(-92px, -130px);
+  }
+  5% {
+    transform: translate(92px, 130px) rotate(7deg) translate(-92px, -130px);
+  }
+  15% {
+    transform: translate(92px, 130px) rotate(-7deg) translate(-92px, -130px);
+  }
+  25% {
+    transform: translate(92px, 130px) rotate(7deg) translate(-92px, -130px);
+  }
+  35% {
+    transform: translate(92px, 130px) rotate(-7deg) translate(-92px, -130px);
+  }
+}
+
+#s1 {
+  animation: s1 1.5s ease-in-out infinite;
+}
+
+@keyframes s1 {
+  0%, 100% {
+    transform: translate(40px, 16px) scale(1) translate(-40px, -16px);
+  }
+  50% {
+    transform: translate(40px, 16px) scale(.7) translate(-40px, -16px);
+  }
+}
+
+#s2 {
+  animation: s2 1.5s -1s ease-in-out infinite;
+}
+
+@keyframes s2 {
+  0%, 100% {
+    transform: translate(66px, 40px) scale(1) translate(-66px, -40px);
+  }
+  50% {
+    transform: translate(66px, 40px) scale(.7) translate(-66px, -40px);
+  }
+}
+
+#s3 {
+  animation: s3 1.5s -.5s ease-in-out infinite;
+}
+
+@keyframes s3 {
+  0%, 100% {
+    transform: translate(14px, 36px) scale(1) translate(-14px, -36px);
+  }
+  50% {
+    transform: translate(14px, 36px) scale(.7) translate(-14px, -36px);
+  }
+}
+
+/* ]]> */
+</style>
+
+  <polygon id="s1" fill="#FFDF00" stroke="#FFF" stroke-width="2" points="37.05 3.14 43.2 9.91 52.26 8.69 47.72 16.62 51.69 24.87 42.73 23 36.12 29.32 35.13 20.23 27.08 15.89 35.42 12.14"/>
+  <polygon id="s2" fill="#FFDF00" stroke="#FFF" stroke-width="2" points="68.12 29.86 69.36 36.6 75.61 39.41 69.58 42.67 68.85 49.48 63.88 44.75 57.17 46.16 60.14 39.98 56.73 34.03 63.52 34.94"/>
+  <polygon id="s3" fill="#FFDF00" stroke="#FFF" stroke-width="2" points="8.44 25.53 14.97 29.83 22.21 26.89 20.14 34.43 25.17 40.4 17.36 40.76 13.23 47.39 10.48 40.08 2.9 38.2 9 33.33"/>
+  <g id="hand" stroke="#222" stroke-width="4" >
+    <path fill="#FFF" d="M97.7 65.54a8.59 8.59 0 0 0-10.92-5.25 8.58 8.58 0 0 0-3.98 2.91l-.57-1.62a8.59 8.59 0 0 0-10.92-5.25 8.4 8.4 0 0 0-4.35 3.46 8.53 8.53 0 0 0-14.89.01l-5.72-16.33a8.6 8.6 0 0 0-11.6-4.98 8.6 8.6 0 0 0-4.57 10.65l16.81 47.95L35.12 88a7.99 7.99 0 0 0-11.18 1.49l-.48.63a7.99 7.99 0 0 0 1.49 11.18l36.5 27.94a22.45 22.45 0 0 0 21.37 3.26l14.41-5.27a21.15 21.15 0 0 0 12.69-26.86L97.7 65.54z"/>
+    <path fill="none" stroke-linecap="round" d="m56.21 71.59-4.14-11.81M71.1 71.59l-4.14-11.81M86.94 75 82.8 63.19"/>
+  </g>
+</svg>
