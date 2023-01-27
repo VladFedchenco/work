@@ -8,8 +8,8 @@ window.addEventListener('load', function () {
     containerHeight: 326,
     imageForwardSrc: 'imgs/ticket.png',
     imageBackgroundSrc: 'imgs/empty.png',
-    clearZoneRadius: 10,
-    percentToFinish: 30,
+    clearZoneRadius: 20,
+    percentToFinish: 15,
     nPoints: 200,
     pointSize: 3,
     callback: function () {
