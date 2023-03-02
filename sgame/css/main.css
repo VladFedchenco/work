@@ -1,0 +1,17 @@
+body{
+    background-color: #4b8ece;
+    margin: 0px;
+    height: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+#lottie{
+    width: 100vw;
+    height: 100vh;
+    display:block;
+    overflow: hidden;
+    transform: translate3d(0,0,0);
+    text-align: center;
+    opacity: 1;
+    margin-bottom: 64px;
+}

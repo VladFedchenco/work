@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Islands</title>
+  <link rel="icon" href="favicon.png" />
+  <link rel="stylesheet" type="text/css" href="css/main.css" />
+  <script src="js/lottie.js"></script>
+</head>
+<body>
+<div id="lottie"></div>
+</body>
+<script>
+
+  let anim_path;
+  let is_landscape;
+
+  if(check_aspect() > 1) {
+    anim_path = 'data.json';
+    is_landscape = true;
+  } else {
+    anim_path = 'data_m.json';
+    is_landscape = false;
+  }
+
+  function check_aspect() {
+    return  window.innerWidth / window.innerHeight;
+  }
+
+  function change_mode() {
+    if(is_landscape) {
+      if(check_aspect() <= 1) {
+        location.reload();
+      }
+    } else {
+      if(check_aspect() > 1) {
+        location.reload();
+      }
+    }
+  }
+
+  let params = {
+      container: document.getElementById('lottie'),
+      path: anim_path,
+      renderer: 'svg',
+      loop: true,
+      autoplay: false,
+      rendererSettings: {
+        preserveAspectRatio: 'xMidYMid slice'
+      }
+  };
+
+  let anim = lottie.loadAnimation(params);
+  anim.addEventListener('DOMLoaded', function(){
+    anim.play();
+
+    if(is_landscape) {
+      anim.playSegments([0, 99], true);
+      anim.playSegments([100, 549], false);
+    } else {
+      anim.playSegments([0, 29], true);
+      anim.playSegments([30, 480], false);
+    }
+
+  });
+
+  window.addEventListener('resize', change_mode);
+
+</script>
+</html>
