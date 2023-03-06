@@ -1,0 +1,253 @@
+* {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+*:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    display: block;
+    height: 62px;
+    background: #BA0C2F;
+    padding: 14px 24px;
+    text-align: right;
+}
+
+footer {
+    padding: 44px 32px 16px 32px;
+    text-align: center;
+}
+
+#main {
+    max-width: 420px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#game {
+    cursor: pointer;
+}
+
+#start_game {
+    min-height: 120px;
+    color: #BA0C2F;
+    font-size: 17px;
+    padding: 16px 48px;
+    position: relative;
+}
+
+.social {
+    padding-bottom: 8px;
+}
+
+.social a {
+    margin:  0px 4px;
+}
+
+#footer_links a {
+    color: #333F4B;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 0px 8px;
+}
+
+#irving_logo {
+    width: 103px;
+    height: 61px;
+    margin-bottom: 24px;
+}
+
+#copy {
+    font-size: 12px;
+    color: #333F4B;
+}
+
+#copy a {
+    color: #333F4B;
+}
+
+#hand {
+    width: 60px;
+    height: 91px;
+    position: absolute;
+    right: 48px;
+    top: -60px;
+    opacity: 1;
+    cursor: pointer;
+    transition: all .3s linear;
+}
+
+#hand_ttl {
+    text-align: center;
+    color: #BA0C2F;
+    padding: 0 48px;
+    font-weight: 700;
+    opacity: 1;
+    transition: all .3s linear;
+}
+
+#hand.invis, #hand_ttl.invis {
+    max-height: 0px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#win_content {
+    padding: 0px 24px 8px 24px;
+    text-align: center;
+    opacity: 1;
+    transition: all .3s linear;
+}
+
+#win_content.invis {
+    pointer-events: none;
+    opacity: 0;
+}
+
+#win_content.none {
+    display: none;
+}
+
+#win_content h2 {
+    display: block;
+    margin: 0px 0px 8px 0px;
+    color: #C1022F;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    max-height: 50px;
+    transition: all .3s;
+}
+
+#win_content h3 {
+    display: block;
+    margin: 0px 0px 12px 0px;
+    color: #20368B;
+    font-size: 20px;
+    font-weight: 700;
+    max-height: 50px;
+    transition: all .3s;
+}
+
+#win_content p {
+    display: block;
+    line-height: 1.5;
+    font-size: 13px;
+    margin: 0;
+    color: #000;
+    max-height: 120px;
+    transition: all .3s;
+}
+
+#win_content a {
+    color: #000;
+}
+
+#win_content.invis h2, #win_content.invis h3, #win_content.invis p {
+    max-height: 0px;
+}
+
+#block_after {
+    opacity: 1;
+    text-align: center;
+    max-height: 270px;
+    overflow: hidden;
+    transition: all .3s linear;
+}
+
+#block_after.alt {
+    max-height: 700px;
+}
+
+#block_after.invis {
+    max-height: 0px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#block_after p {
+    line-height: 1.6;
+    font-size: 16px;
+    font-weight: 400;
+    color: #333F4B;
+    margin: 24px 32px;
+}
+
+#block_after.alt p {
+    margin: 0 0px 24px 0px;
+}
+
+#block_after h3 {
+    font-size: 18px;
+    color: #C1022F;
+    margin: 0 0 12px 0;
+}
+
+.bttn {
+    font-size: 16px;
+    padding: 12px;
+    margin-bottom: 12px;
+    font-weight: 700;
+    border-radius: 6px;
+    display: block;
+    background: #BA0C2F;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.bttn svg {
+    width: 20px;
+    vertical-align: middle;
+    margin: -4px 4px 0px 0px;
+}
+
+#after_01.invis, #after_02.invis {
+    display: none;
+}
+
+#ball {
+    transform: translate(-40px, 250px);
+}
+
+#game.v1 #ball {
+    transform: translate(-40px, 250px);
+    animation: ball1 1s linear forwards;
+}
+
+@keyframes ball1 {
+    0%, 50% {
+        transform: translate(-40px, 250px);
+    }
+    70% {
+        transform: translate(0px, 0px);
+    }
+    100% {
+        transform: translate(520px, -190px);
+    }
+}
+
+#pose1.invis, #pose2.invis, #pose3.invis {
+    visibility: hidden;
+}
+
+#ready_to_play.invis, #here_comes_the_ball.invis, #you_hit_a_single.invis {
+    display: none;
+}
+
+#claim_prize.invis {
+    display: none;
+}
+
+@media screen and (min-width: 420px) {
+
+}

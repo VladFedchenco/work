@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Baseball Game</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+<header>
+  <a href="javascript:;"><img src="imgs/bars-solid.svg"></a>
+</header>
+
+<section id="main">
+  <svg id="game" class="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1024 770">
+    <image href="imgs/background.svg" width="1024" height="770"/>
+    <image id="ready_to_play" class="" href="imgs/ready_to_play.svg" x="106" y="53" width="829" height="64"/>
+    <image id="here_comes_the_ball" class="invis" href="imgs/here_comes_the_ball.svg" x="93" y="56" width="842" height="51"/>
+    <image id="you_hit_a_single" class="invis" href="imgs/you_hit_a_single.svg" x="57" y="60" width="900" height="64"/>
+    <!-- <image id="you_hit_a_double" href="imgs/you_hit_a_double.svg" x="37" y="54" width="944" height="64"/>
+    <image id="you_hit_a_triple" href="imgs/you_hit_a_triple.svg" x="63" y="60" width="891" height="64"/>
+    <image id="home_run" href="imgs/home_run.svg" x="237" y="60" width="553" height="64"/>
+    <image id="you_grounded_out" href="imgs/you_grounded_out.svg" x="86" y="65" width="848" height="54"/> -->
+    <image id="player" href="imgs/player.svg" x="397" y="118" width="398" height="527"/>
+    <image id="pose1" class="" href="imgs/pose1.svg" x="397" y="118" width="398" height="527"/>
+    <image id="pose2" class="invis" href="imgs/pose2.svg" x="397" y="118" width="398" height="527"/>
+    <image id="pose3" class="invis" href="imgs/pose3.svg" x="397" y="118" width="398" height="527"/>
+    <image id="ball" class="invis" href="imgs/ball.svg" x="511" y="526" width="118" height="113"/>
+  </svg>
+  <audio id="sound"></audio>
+  <div id="start_game">
+    <div id="hand_ttl">Click to play for your chance to WIN!</div>
+    <img id="hand" src="imgs/hand.svg">
+    <div id="win_content" class="invis none">
+      <h2 id="prize_h1"></h2>
+      <h3 id="prize_h2"></h3>
+      <p id="prize_h3"></p>
+    </div>
+    <div id="block_after" class="invis">
+      <div id="after_01" class="invis">
+        <p>You have <#2+> more plays available!</p>
+        <a class="bttn" href="javascript:;">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="#fff" viewBox="0 0 192 192">
+            <path d="M110.5 168c0 7.9 1.6 15.3 4.4 22.1a96.1 96.1 0 0 0 75.2-75.2 57.6 57.6 0 0 0-79.6 53.2Z"/>
+            <path d="M96 0h-4.1A71.6 71.6 0 0 1 0 91.9L0 96a96 96 0 0 0 100.6 95.9 71.6 71.6 0 0 1 91.3-91.3V96C192 43 149 0 96 0Z"/>
+            <path d="M82.2 24.6c0-8-1.7-15.8-4.7-22.8A96 96 0 0 0 1.8 77.5a57.6 57.6 0 0 0 80.4-52.8Z"/>
+          </svg> PLAY AGAIN
+        </a>
+
+        <div id="claim_prize" class="invis">
+          <a class="bttn" href="javascript:;">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="#fff" viewBox="0 0 505 512">
+              <path d="M416 0a46.5 46.5 0 0 0-33 13.7L225.7 171.2a200.3 200.3 0 0 0-27.7 34.6l-73.1 115.8a186 186 0 0 1-25.5 31.9L62 390.7l51.3 51.3 37.3-37.3c9.6-9.6 20.3-18.2 31.9-25.5l115.8-73.1a200.3 200.3 0 0 0 34.5-27.7L490.5 121a46.8 46.8 0 0 0 0-66L449 13.7A46.5 46.5 0 0 0 416 0Zm88 432a80 80 0 1 0-160 0 80 80 0 0 0 160 0ZM7 399a23.9 23.9 0 0 0 0 33.9l64 64A24 24 0 1 0 105 463l-63.8-64a23.9 23.9 0 0 0-34 0Z"/>
+            </svg> CLAIM PRIZE
+          </a>
+          <p id="note">See <a href="javascript:;">Official Rules</a> for details and expiry dates.</p>
+        </div>
+
+      </div>
+      <div id="after_02" class="invis">
+        <h3>You didn’t make it to the base this time, but…</h3>
+        <h2>YOU’VE EARNED:</h2>
+        <h3><#> sweepstakes entries!</h3>
+        <p>Every entry is a chance to WIN the Red Sox destination package.</p>
+
+        <h3>Ready to play again?</h3>
+        <p>Follow us on social and watch for Red Sox emails from Irving for more bonus codes. Every bonus code entered is another play for chances to WIN!</p>
+        <a class="bttn" href="javascript:;"><svg xmlns="http://www.w3.org/2000/svg" fill="#fff" width="22" height="22" viewBox="0 0 22 22"><path d="M21.93 8.05a1.32 1.32 0 0 0-1.07-.9l-5.99-.88L12.2.75a1.33 1.33 0 0 0-2.4 0L7.12 6.26l-5.98.88c-.5.07-.91.42-1.07.9-.16.48-.03 1.01.33 1.37l4.34 4.26-1.02 6.11c-.09.5.12 1.01.53 1.3.41.3.96.33 1.41.1L11 18.33l5.35 2.85c.45.24.99.2 1.4-.1.42-.3.62-.8.54-1.3l-1.02-6.11 4.34-4.26c.36-.36.49-.88.33-1.37ZM9.98 6.28c0-.56.46-1.02 1.02-1.02s1.02.46 1.02 1.02v4.64c0 .56-.46 1.02-1.02 1.02s-1.02-.46-1.02-1.02V6.27ZM11 15.93a1.3 1.3 0 1 1 1.29-1.29A1.3 1.3 0 0 1 11 15.93Z"/></svg>ENTER BONUS CODE</a>
+        <a class="bttn" href="javascript:;"><svg xmlns="http://www.w3.org/2000/svg" fill="#fff" width="22" height="22" viewBox="0 0 22 22"><path d="M11 0a11 11 0 1 0-.01 21.99A11 11 0 0 0 11 0Zm0 5.5a3.1 3.1 0 1 1 0 6.18 3.1 3.1 0 0 1 0-6.18Zm0 13.75a8.24 8.24 0 0 1-5.83-2.42 4.78 4.78 0 0 1 4.46-3.08h2.75a4.79 4.79 0 0 1 4.46 3.08 8.26 8.26 0 0 1-5.83 2.42Z"/></svg>MY GAME ACCOUNT</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <img id="irving_logo" src="imgs/irving_logo.svg">
+  <div class="social">
+    <a href="javascript:;"><img src="imgs/icon_fb.svg"></a>
+    <a href="javascript:;"><img src="imgs/icon_ig.svg"></a>
+    <a href="javascript:;"><img src="imgs/icon_tw.svg"></a>
+  </div>
+  <div id="footer_links">
+    <a href="javascript:;">Official Rules</a> <a href="javascript:;">Find a Location</a> <a href="javascript:;">Privacy & Security</a>
+  </div>
+  <div id="copy">
+    <p>NO PURCHASE NECESSARY. Starts Apr. 1, 2023, and ends Aug. 1, 2023. Must be an Irving Rewards member and legal resident of CT (except Fairfield County), ME, MA, NH, RI or VT and age of majority. Take a swing online to win prizes. Must be opted-in for Red Sox email communications with Irving Oil. Get 1 play with every valid Bonus Code entered. Bonus Codes included in Red Sox emails from Irving Oil. For complete rules, eligibility requirements, methods of entry, no purchase entry means, <a href="javascript:;">all prize details</a>, odds and all other terms, see <a href="javascript:;">Official Rules.</a></p>
+    <p>This Sweepstakes is not sponsored, administered, executed or produced by any MLB Entity. Major League Baseball trademarks, service marks and copyrights are proprietary to the MLB Entities. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+  let requestURL = 'js/data.json';
+</script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
