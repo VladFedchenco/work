@@ -165,7 +165,7 @@ footer {
 }
 
 #block_after.alt {
-    max-height: 700px;
+    max-height: 600px;
 }
 
 #block_after.invis {
@@ -215,11 +215,20 @@ footer {
     display: none;
 }
 
+#after_02 h2 {
+    font-size: 24px;
+    margin: 0;
+}
+
+#after_02 h3.blue, #after_02 p {
+    color: #005670;
+}
+
 #ball {
     transform: translate(-40px, 250px);
 }
 
-#game.v1 #ball {
+#game.v0 #ball, #game.v1 #ball, #game.v2 #ball, #game.v3 #ball {
     transform: translate(-40px, 250px);
     animation: ball1 1s linear forwards;
 }
@@ -236,16 +245,65 @@ footer {
     }
 }
 
+#game.v4 #ball {
+    transform: translate(-40px, 250px);
+    animation: ball2 2s linear forwards;
+}
+
+@keyframes ball2 {
+    0%, 25% {
+        transform: translate(-40px, 250px);
+    }
+    34% {
+        transform: translate(0px, 0px);
+    }
+    40% {
+        transform: translate(210px, 126px);
+    }
+    45% {
+        transform: translate(228px, 110px);
+    }
+    50% {
+        transform: translate(234px, 126px);
+    }
+    55% {
+        transform: translate(239px, 120px);
+    }
+    60% {
+        transform: translate(242px, 126px);
+    }
+    70% {
+        transform: translate(244px, 127px);
+    }
+    75%, 100% {
+        transform: translate(245px, 127px);
+    }
+}
+
 #pose1.invis, #pose2.invis, #pose3.invis {
     visibility: hidden;
 }
 
-#ready_to_play.invis, #here_comes_the_ball.invis, #you_hit_a_single.invis {
+#ready_to_play.invis, #here_comes_the_ball.invis, #you_hit_a_single.invis, #you_hit_a_double.invis, #you_hit_a_triple.invis, #home_run.invis, #you_grounded_out.invis {
     display: none;
 }
 
-#claim_prize.invis {
+#claim_prize.invis, #available_plays.invis {
     display: none;
+}
+
+#claim_prize {
+    padding-top: 24px;
+}
+
+#available_plays p {
+    margin: 24px 0;
+}
+
+p#note, p#note a {
+    font-size: 13px;
+    color: #000000;
+    margin: 24px 0;
 }
 
 @media screen and (min-width: 420px) {
