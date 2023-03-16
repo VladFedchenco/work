@@ -1,0 +1,275 @@
+* {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
+}
+
+*:focus {
+    outline: none;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, sans-serif;
+
+}
+
+header {
+    height: 128px;
+    background: url(../imgs/header.png) no-repeat center, url(../imgs/header_bg.png) repeat-x;
+    background-size: 944px 128px, 4px 128px;
+    position: relative;
+}
+
+#logo {
+    width: 140px;
+    height: 106px;
+    position: absolute;
+    left: 50%;
+    top: 10px;
+    transform: translateX(-50%);
+}
+
+.bttn_spin {
+    display: inline-block;
+    text-align: center;
+    padding: 8px 12px;
+    margin-bottom: 16px;
+    text-decoration: none;
+    font-weight: 700;
+    background-color: #ED1B2F;
+    color: #fff;
+    font-size: 14px;
+}
+
+.bttn_spin svg {
+    vertical-align: middle;
+    margin: -3px 4px 0 0;
+}
+
+#spin_area {
+    position: relative;
+    text-align: center;
+    padding: 8px 8px 32px 8px;
+    min-height: calc(100vh - 400px);
+}
+
+#ttl1, #ttl2 {
+    opacity: 1;
+    color: #ED1B2F;
+    font-size: 19px;
+    display: block;
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    top: 16px;
+    transform: translateX(-50%);
+    transition: all .2s;
+}
+
+#ttl1.invis, #ttl2.invis {
+    opacity: 0;
+}
+
+footer {
+    padding: 0 8px 30px 8px;
+    text-align: center;
+}
+
+#logos {
+    width: 300px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.footer_logo {
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+
+.footer_logo img {
+    max-width: 140px;
+}
+
+.social_icons a {
+    margin: 0 4px;
+}
+
+#footer_links {
+    padding: 16px 0;
+    font-size: 12px;
+}
+
+#footer_links a, #footer_note a {
+    color: #000;
+}
+
+#footer_note {
+    font-size: 11px;
+    color: #000;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+#main_canvas {
+    width: 375px;
+    height: 430px;
+}
+
+#intro_area {
+    margin-top: -20px;
+    color: #00589C;
+    max-height: 800px;
+    overflow: hidden;
+    pointer-events: initial;
+    transition: all .5s ease-in-out;
+}
+
+#intro_area.invis {
+    opacity: 0;
+    pointer-events: none;
+    max-height: 0px;
+}
+
+#intro_area h3 {
+    font-size: 22px;
+}
+
+#intro_area h4 {
+    font-size: 16px;
+    color: #000;
+    margin: 0;
+    display: block;
+    padding: 16px 0;
+}
+
+#intro_area h5 {
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0 0 16px 0;
+    color: #000;
+}
+
+#icn_prizes {
+    width: 270px;
+}
+
+#prize_texts {
+    font-size: 14px;
+    line-height: 1.6;
+    max-width: 750px;
+    margin: -20px auto 0 auto;
+    max-height: 200px;
+    pointer-events: initial;
+    opacity: 1;
+    overflow: hidden;
+    transition: all .3s ease-in-out;
+}
+
+#prize_texts.invis {
+    opacity: 0;
+    max-height: 0px;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+#prize_texts p {
+    margin: 0;
+}
+
+#headline1 {
+    font-size: 16px;
+    color: #000;
+    margin: 0;
+}
+
+#headline2 {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #ED1B2F;
+    margin: 0;
+}
+
+#headline3, #headline4 {
+    font-size: 16px;
+}
+
+#remaining_spins {
+    max-width: 375px;
+    margin: 0 auto;
+    padding: 24px 0;
+    max-height: 180px;
+    pointer-events: initial;
+    opacity: 1;
+    transition: all .3s ease-in-out;
+}
+
+#remaining_spins.invis {
+    padding-top: 0px;
+    border-top: none;
+    opacity: 0;
+    max-height: 0px;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+#remaining_spins h3 {
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+#get_more_spins {
+    max-width: 375px;
+    margin: 0 auto;
+    max-height: 600px;
+    pointer-events: initial;
+    opacity: 1;
+    transition: all .3s ease-in-out;
+}
+
+#get_more_spins.invis {
+    opacity: 0;
+    max-height: 0px;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+#bonus_spins_info {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: solid 1px #707070;
+}
+
+#bonus_spins_info h3 {
+    color: #008AD9;
+    font-size: 22px;
+}
+
+#bonus_spins_info p {
+    line-height: 1.6;
+}
+
+#bonus_spins_info a {
+    color: #005396;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 0 12px;
+}
+
+#bonus_spins_info a svg {
+    vertical-align: middle;
+    margin: -4px 2px 0 0;
+}
+
+#get_more_spins img {
+    width: 176px;
+}
+
+
+@media (max-width: 768px) {
+
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chase the Savings</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+  <header>
+    <img id="logo" src="imgs/logo.png">
+  </header>
+  <section id="spin_area">
+    <h2 id="ttl1" class="">SPIN FOR YOUR CHANCE TO WIN!</h2>
+    <h2 id="ttl2" class="invis">CONGRATULATIONS!</h2>
+    <canvas id="main_canvas" width="750" height="860"></canvas>
+    <div id="intro_area">
+      <h5>You have # spins</h5>
+      <a id="start_bttn" class="bttn_spin" href="javascript:;"><svg xmlns="http://www.w3.org/2000/svg" fill="#fff" width="18" height="18" viewBox="0 0 24 24"><path d="M17 5.9c-.7-.7-1.6-1.2-2.5-1.6-.9-.4-1.9-.5-2.9-.5A7.7 7.7 0 0 0 4 9.7c-.1.3-.3.4-.6.4H.7c-.3 0-.6-.2-.6-.6v-.1C.4 7.6 1.2 6 2.3 4.6S4.8 2 6.4 1.2C8 .4 9.8 0 11.6 0c3 0 5.9 1.1 8 3.2l1.7-1.7c.4-.4 1.2-.4 1.6 0 .2.2.3.5.3.8v6.3c0 .6-.5 1.1-1.1 1.1h-6.3c-.6 0-1.1-.5-1.1-1.1 0-.3.1-.6.3-.8l2-1.9zM1.1 13.5h6.3c.6 0 1.1.5 1.1 1.1 0 .3-.1.6-.3.8l-2 2c.8.7 1.6 1.2 2.5 1.6.9.4 1.9.5 2.9.5 3.6 0 6.8-2.4 7.6-6 .1-.3.3-.4.6-.4h2.7c.3 0 .6.2.6.6v.1c-.3 1.8-1.1 3.4-2.2 4.8s-2.5 2.6-4.1 3.4c-1.6.8-3.4 1.3-5.2 1.2-3 0-5.9-1.1-8-3.2l-1.7 1.7c-.4.4-1.2.4-1.6 0-.2-.2-.3-.5-.3-.8v-6.3c0-.6.5-1.1 1.1-1.1z"/></svg> SPIN TO WIN</a>
+      <h4>You could instantly win Race Tickets, Grocery or Gas Gift Cards and Race Merchandise!</h4>
+      <img id="icn_prizes" src="imgs/bigprizes.png">
+      <h4>Plus, earn sweepstakes entries for your chance to win $35,000 CASH, Groceries for a Year, Gas for a Year or Grocery Delivery for a Year!</h4>
+  </div>
+  <div class="invis" id="prize_texts">
+    <h3 id="headline1">You've earned:</h3>
+    <h2 id="headline2">5 Sweepstakes Entries!</h2>
+    <p>More entries means more chances to WIN $35,000 Cash, Groceries for a Year, Gas for a Year or Grocery Delivery for a Year!</p>
+  </div>
+  <div class="invis" id="remaining_spins">
+    <a class="bttn_spin" href="#!"><svg xmlns="http://www.w3.org/2000/svg" fill="#fff" width="18" height="18" viewBox="0 0 24 24"><path d="M17 5.9c-.7-.7-1.6-1.2-2.5-1.6-.9-.4-1.9-.5-2.9-.5A7.7 7.7 0 0 0 4 9.7c-.1.3-.3.4-.6.4H.7c-.3 0-.6-.2-.6-.6v-.1C.4 7.6 1.2 6 2.3 4.6S4.8 2 6.4 1.2C8 .4 9.8 0 11.6 0c3 0 5.9 1.1 8 3.2l1.7-1.7c.4-.4 1.2-.4 1.6 0 .2.2.3.5.3.8v6.3c0 .6-.5 1.1-1.1 1.1h-6.3c-.6 0-1.1-.5-1.1-1.1 0-.3.1-.6.3-.8l2-1.9zM1.1 13.5h6.3c.6 0 1.1.5 1.1 1.1 0 .3-.1.6-.3.8l-2 2c.8.7 1.6 1.2 2.5 1.6.9.4 1.9.5 2.9.5 3.6 0 6.8-2.4 7.6-6 .1-.3.3-.4.6-.4h2.7c.3 0 .6.2.6.6v.1c-.3 1.8-1.1 3.4-2.2 4.8s-2.5 2.6-4.1 3.4c-1.6.8-3.4 1.3-5.2 1.2-3 0-5.9-1.1-8-3.2l-1.7 1.7c-.4.4-1.2.4-1.6 0-.2-.2-.3-.5-.3-.8v-6.3c0-.6.5-1.1 1.1-1.1z"/></svg> SPIN TO WIN</a>
+    <h3>You have <span>< # ></span> spins</h3>
+  </div>
+  <div class="invis" id="get_more_spins">
+    <a class="bttn_spin" href="#!"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24"><path d="M17 5.9c-.7-.7-1.6-1.2-2.5-1.6-.9-.4-1.9-.5-2.9-.5A7.7 7.7 0 0 0 4 9.7c-.1.3-.3.4-.6.4H.7c-.3 0-.6-.2-.6-.6v-.1C.4 7.6 1.2 6 2.3 4.6S4.8 2 6.4 1.2C8 .4 9.8 0 11.6 0c3 0 5.9 1.1 8 3.2l1.7-1.7c.4-.4 1.2-.4 1.6 0 .2.2.3.5.3.8v6.3c0 .6-.5 1.1-1.1 1.1h-6.3c-.6 0-1.1-.5-1.1-1.1 0-.3.1-.6.3-.8l2-1.9zM1.1 13.5h6.3c.6 0 1.1.5 1.1 1.1 0 .3-.1.6-.3.8l-2 2c.8.7 1.6 1.2 2.5 1.6.9.4 1.9.5 2.9.5 3.6 0 6.8-2.4 7.6-6 .1-.3.3-.4.6-.4h2.7c.3 0 .6.2.6.6v.1c-.3 1.8-1.1 3.4-2.2 4.8s-2.5 2.6-4.1 3.4c-1.6.8-3.4 1.3-5.2 1.2-3 0-5.9-1.1-8-3.2l-1.7 1.7c-.4.4-1.2.4-1.6 0-.2-.2-.3-.5-.3-.8v-6.3c0-.6.5-1.1 1.1-1.1z"/></svg> GET MORE BONUS SPINS</a>
+    <div id="bonus_spins_info">
+      <h3>You now have <span>#</span> total entries!</h3>
+      <p>More entries means more chances to <strong>WIN Free Groceries for a Year, Free Gas for a Year, the Ultimate Mexico Getaway and more!</strong></p>
+      <p>Earn <strong>50 bonus entries</strong> with every featured product purchased!</p>
+      <img src="imgs/winwin_star.png">
+      <p><a href="#!"><svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 24 24"><path fill="#005396" d="M0 11.62a11.31 11.31 0 0 1 1.57-5.81 11.62 11.62 0 0 1 20.11 0 11.31 11.31 0 0 1 1.57 5.81 11.32 11.32 0 0 1-1.57 5.82 11.73 11.73 0 0 1-4.24 4.24 11.57 11.57 0 0 1-11.63 0 11.8 11.8 0 0 1-4.24-4.24A11.32 11.32 0 0 1 0 11.62Zm3.38 5.91a10.17 10.17 0 0 0 16.5 0 3.2 3.2 0 0 0-.78-1.66 2.94 2.94 0 0 0-1.57-1L16 14.48a6.73 6.73 0 0 1-8.81 0l-1.5.43a2.94 2.94 0 0 0-1.57 1 3.19 3.19 0 0 0-.74 1.62Zm3-8.16a5.25 5.25 0 1 0 7.88-4.54 5.24 5.24 0 0 0-7.18 1.92 5.12 5.12 0 0 0-.7 2.62Z"/></svg> SEE MY PRIZES</a> <a href="#!"><svg xmlns="http://www.w3.org/2000/svg" width="31" height="24" viewBox="0 0 40 31"><path fill="#005396" d="M33.33 19.21V29a1.64 1.64 0 0 1-1.63 1.65h-7.94a.82.82 0 0 1-.82-.82v-7.68a.82.82 0 0 0-.81-.82H17.2a.82.82 0 0 0-.82.81v7.66a.82.82 0 0 1-.82.82H7.63A1.64 1.64 0 0 1 6 29v-9.79a.9.9 0 0 1 .27-.68L19.11 8a.85.85 0 0 1 1.1 0l12.85 10.53a.9.9 0 0 1 .27.68ZM39.07 15l-5.74-4.72V.82a.82.82 0 0 0-.81-.82h-3.84a.82.82 0 0 0-.82.82v5L21.78.75A3.35 3.35 0 0 0 19.66 0a3.09 3.09 0 0 0-2.05.75L.24 15a.85.85 0 0 0-.23.55.8.8 0 0 0 .17.61l1.71 2.12a.62.62 0 0 0 .54.27 1.07 1.07 0 0 0 .62-.2L19.11 5.2a.83.83 0 0 1 1.1 0l16.06 13.19a1 1 0 0 0 .62.2.62.62 0 0 0 .54-.27l1.71-2.12a.79.79 0 0 0 .17-.61.87.87 0 0 0-.24-.59Z"/></svg> MY GAME HOME</a></p>
+    </div>
+  </div>
+  </section>
+  <footer>
+    <div id="logos">
+      <div class="footer_logo"><img src="imgs/save-mart-logo.svg">
+        <div class="social_icons">
+          <a href="#!"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="20" viewBox="0 0 18 32"><path fill="#000" d="m16 18 .88-5.79h-5.53V8.45c0-1.58.77-3.13 3.26-3.13h2.53V.39A30.88 30.88 0 0 0 12.65 0C8.08 0 5.09 2.77 5.09 7.8v4.41H0V18h5.09v14h6.26V18Z"/></svg></a>
+          <a href="#!"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32"><path fill="#000" d="M16 7.8a8.2 8.2 0 1 0 8.2 8.2A8.19 8.19 0 0 0 16 7.8Zm0 13.53A5.33 5.33 0 1 1 21.34 16 5.34 5.34 0 0 1 16 21.33ZM26.46 7.46a1.92 1.92 0 1 1-1.91-1.91 1.91 1.91 0 0 1 1.91 1.91Zm5.43 1.94a9.44 9.44 0 0 0-2.58-6.7A9.55 9.55 0 0 0 22.6.11C20 0 12 0 9.4.11a9.52 9.52 0 0 0-6.7 2.58A9.5 9.5 0 0 0 .11 9.4C0 12 0 20 .11 22.6a9.45 9.45 0 0 0 2.59 6.7 9.56 9.56 0 0 0 6.7 2.59c2.6.11 10.6.11 13.2 0a9.46 9.46 0 0 0 6.71-2.59 9.49 9.49 0 0 0 2.58-6.7C32 20 32 12 31.89 9.4Zm-3.41 16a5.38 5.38 0 0 1-3 3c-2.11.84-7.11.65-9.43.65s-7.34.18-9.44-.65a5.41 5.41 0 0 1-3-3c-.83-2.1-.64-7.1-.64-9.43s-.19-7.33.64-9.43a5.41 5.41 0 0 1 3-3c2.11-.84 7.11-.65 9.44-.65s7.33-.18 9.43.65a5.35 5.35 0 0 1 3 3c.84 2.1.64 7.1.64 9.43s.2 7.36-.64 9.46Z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer_logo"><img src="imgs/lucky-california-logo.svg">
+        <div class="social_icons">
+          <a href="#!"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="20" viewBox="0 0 18 32"><path fill="#000" d="m16 18 .88-5.79h-5.53V8.45c0-1.58.77-3.13 3.26-3.13h2.53V.39A30.88 30.88 0 0 0 12.65 0C8.08 0 5.09 2.77 5.09 7.8v4.41H0V18h5.09v14h6.26V18Z"/></svg></a>
+          <a href="#!"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32"><path fill="#000" d="M16 7.8a8.2 8.2 0 1 0 8.2 8.2A8.19 8.19 0 0 0 16 7.8Zm0 13.53A5.33 5.33 0 1 1 21.34 16 5.34 5.34 0 0 1 16 21.33ZM26.46 7.46a1.92 1.92 0 1 1-1.91-1.91 1.91 1.91 0 0 1 1.91 1.91Zm5.43 1.94a9.44 9.44 0 0 0-2.58-6.7A9.55 9.55 0 0 0 22.6.11C20 0 12 0 9.4.11a9.52 9.52 0 0 0-6.7 2.58A9.5 9.5 0 0 0 .11 9.4C0 12 0 20 .11 22.6a9.45 9.45 0 0 0 2.59 6.7 9.56 9.56 0 0 0 6.7 2.59c2.6.11 10.6.11 13.2 0a9.46 9.46 0 0 0 6.71-2.59 9.49 9.49 0 0 0 2.58-6.7C32 20 32 12 31.89 9.4Zm-3.41 16a5.38 5.38 0 0 1-3 3c-2.11.84-7.11.65-9.43.65s-7.34.18-9.44-.65a5.41 5.41 0 0 1-3-3c-.83-2.1-.64-7.1-.64-9.43s-.19-7.33.64-9.43a5.41 5.41 0 0 1 3-3c2.11-.84 7.11-.65 9.44-.65s7.33-.18 9.43.65a5.35 5.35 0 0 1 3 3c.84 2.1.64 7.1.64 9.43s.2 7.36-.64 9.46Z"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div id="footer_links">
+      <a href="#!">Official Rules</a> | <a href="#!">rivacy, Cookies and Security</a> | <a href="#!">Remove</a>
+    </div>
+    <div id="footer_note"><strong>*NO PURCHASE NECESSARY.</strong> Legal CA/NV residents 18+. Starts 04/19/23; ends 06/13/23, while supplies last. Enter pin online by 06/15/23. All deadlines are 11:59PM PT. Max 5 tickets per transaction. Every ticket opens to reveal an instant prize. Odds for online prizes depend on total number of entries received. See <a href="#!">Official Rules</a> in store; at <a href="#!">chasethesavings.com</a> or call <a href="#!">1-800-692-5710</a> for complete details, eligibility requirements, available prizes, how to redeem prizes, odds, and no purchase entry means. Total ARV of prizes is over $1,000,000. †Points subject to terms and conditions of Save Smart/Lucky You Rewards Program.</div>
+  </footer>
+  <script>
+    let win_sector = 0;
+
+    function outer_function() {
+      $("#ttl1").setAttribute("class", "invis");
+      $("#ttl2").setAttribute("class", "");
+      $("#prize_texts").setAttribute("class", "");
+      $("#remaining_spins").setAttribute("class", "");
+      // $("#get_more_spins").setAttribute("class", "");
+    }
+  </script>
+  <script src="js/main.js"></script>
+</body>
+</html>
