@@ -62,16 +62,6 @@ function init() {
   wheel_sectors.src = 'imgs/wheel_sectors.png';
   img_preload[1] = false;
   wheel_sectors.onload = function() {
-    for (let i = 0; i < angles[win_sector].length; i++) {
-      prerender[i] = document.createElement('canvas');
-      let pctx = prerender[i].getContext('2d');
-      prerender[i].width = 512;
-      prerender[i].height = 512;
-      pctx.translate(256, 256);
-      pctx.rotate(angles[win_sector][i] * Math.PI / 180);
-      pctx.translate(-256, -256);
-      pctx.drawImage(wheel_sectors, 0, 0, 512, 512);
-    }
     img_preload[1] = true;
   }
 
@@ -219,7 +209,12 @@ function draw() {
       ctx.drawImage(wheel_base, 0, 0, 750, 860);
 
       rotate_counter < (angles[win_sector].length - 1) ? rotate_counter++ : rotate_counter = (angles[win_sector].length - 1);
-      ctx.drawImage(prerender[rotate_counter], 118, 109, 512, 512);
+      ctx.translate(374, 365);
+      ctx.rotate(angles[win_sector][rotate_counter] * Math.PI / 180);
+      ctx.drawImage(wheel_sectors, -256, -256, 512, 512);
+      ctx.rotate(-angles[win_sector][rotate_counter] * Math.PI / 180);
+      ctx.translate(-374, -365);
+      console.log(rotate_counter);
 
       ctx.globalCompositeOperation = 'multiply';
       ctx.drawImage(wheel_shadow, 0, 0, 750, 860);
@@ -242,7 +237,7 @@ function draw() {
       ctx.drawImage(wheel_arrow, 0, 0, 750, 860);
       ctx.drawImage(wheel_center, 0, 0, 750, 860);
 
-      if(pause < 280) {
+      if(pause < 200) {
         pause++;
       } else {
         if(rotate_counter == (angles[win_sector].length - 1)) {
@@ -263,7 +258,9 @@ function draw() {
   }
 
   if(anim_play) {
-    window.requestAnimationFrame(draw);
+    const myTimeout = setTimeout(function() {
+      window.requestAnimationFrame(draw);
+    }, 15);
   }
 
 }
@@ -271,8 +268,6 @@ function draw() {
 function $(sel) {
   return document.querySelector(sel);
 }
-
-function easing(t) { return t<.5 ? 2*t*t : -1+2*(2-t)*t };
 
 function point_over() {
   if(!game_start) {
