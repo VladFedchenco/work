@@ -1,0 +1,241 @@
+* {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+*:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    display: block;
+    height: 62px;
+    background: #F47E1F;
+    padding: 14px 24px;
+    text-align: right;
+}
+
+footer {
+    padding: 44px 32px 16px 32px;
+    text-align: center;
+}
+
+.clmns {
+    padding: 16px 0 4px 0;
+    overflow: hidden;
+}
+
+.clmn_50 {
+    float: left;
+    width: 50%;
+}
+
+#main {
+    max-width: 420px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#info {
+    height: 90px;
+}
+
+#game {
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+#game.played {
+    cursor: default;
+}
+
+#bottom_info {
+    min-height: 80px;
+    text-align: center;
+}
+
+#badge {
+    width: 109px;
+}
+
+#yesway {
+    width: 54px;
+}
+
+#allsups {
+    width: 96px;
+}
+
+.social {
+    padding: 8px 0;
+}
+
+.social a {
+    margin:  0px 2px;
+}
+
+#footer_links {
+    padding-bottom: 6px;
+}
+
+#footer_links a {
+    color: #215192;
+    font-size: 14px;
+    margin: 0px 8px;
+}
+
+#copy {
+    font-size: 12px;
+    color: #215192;
+}
+
+#copy a {
+    color: #215192;
+}
+
+.invis {
+    display: none;
+}
+
+#light1 {
+    animation: light 1s linear infinite;
+}
+
+#light2 {
+    animation: light 1s -.5s linear infinite;
+}
+
+@keyframes light {
+    0%, 60%, 100% {
+        opacity: 0;
+    }
+    10%, 50% {
+        opacity: 1;
+    }
+
+}
+
+.a3010_1 { animation: a3010 5.5s ease-in-out forwards }
+.a3010_2 { animation: a3010 5.5s .3s ease-in-out forwards }
+@keyframes a3010 { 0% { transform: translateY(0px) } 100% { transform: translateY(7600px) }}
+
+.a3011_1 { animation: a3011 5.5s ease-in-out forwards }
+.a3011_2 { animation: a3011 5.5s .3s ease-in-out forwards }
+@keyframes a3011 { 0% { transform: translateY(0px) } 100% { transform: translateY(7752px) }}
+
+.a3012_1 { animation: a3012 5.5s ease-in-out forwards }
+.a3012_2 { animation: a3012 5.5s .3s ease-in-out forwards }
+@keyframes a3012 { 0% { transform: translateY(0px) } 100% { transform: translateY(7904px) }}
+
+.a3013_1 { animation: a3013 5.5s ease-in-out forwards }
+.a3013_2 { animation: a3013 5.5s .3s ease-in-out forwards }
+@keyframes a3013 { 0% { transform: translateY(0px) } 100% { transform: translateY(8056px) }}
+
+.a3014_1 { animation: a3014 5.5s ease-in-out forwards }
+.a3014_2 { animation: a3014 5.5s .3s ease-in-out forwards }
+@keyframes a3014 { 0% { transform: translateY(0px) } 100% { transform: translateY(8208px) }}
+
+.a3015_1 { animation: a3015 5.5s ease-in-out forwards }
+.a3015_2 { animation: a3015 5.5s .3s ease-in-out forwards }
+@keyframes a3015 { 0% { transform: translateY(0px) } 100% { transform: translateY(8360px) }}
+
+.a3016_1 { animation: a3016 5.5s ease-in-out forwards }
+.a3016_2 { animation: a3016 5.5s .3s ease-in-out forwards }
+@keyframes a3016 { 0% { transform: translateY(0px) } 100% { transform: translateY(8512px) }}
+
+.a3017_1 { animation: a3017 5.5s ease-in-out forwards }
+.a3017_2 { animation: a3017 5.5s .3s ease-in-out forwards }
+@keyframes a3017 { 0% { transform: translateY(0px) } 100% { transform: translateY(8664px) }}
+
+.a3018_1 { animation: a3018 5.5s ease-in-out forwards }
+.a3018_2 { animation: a3018 5.5s .3s ease-in-out forwards }
+@keyframes a3018 { 0% { transform: translateY(0px) } 100% { transform: translateY(8816px) }}
+
+.a3019_1 { animation: a3019 5.5s ease-in-out forwards }
+.a3019_2 { animation: a3019 5.5s .3s ease-in-out forwards }
+@keyframes a3019 { 0% { transform: translateY(0px) } 100% { transform: translateY(8968px) }}
+
+.a3020_1 { animation: a3020 5.5s ease-in-out forwards }
+.a3020_2 { animation: a3020 5.5s .3s ease-in-out forwards }
+@keyframes a3020 { 0% { transform: translateY(0px) } 100% { transform: translateY(9120px) }}
+
+.a3021_1 { animation: a3021 5.5s ease-in-out forwards }
+.a3021_2 { animation: a3021 5.5s .3s ease-in-out forwards }
+@keyframes a3021 { 0% { transform: translateY(0px) } 100% { transform: translateY(9272px) }}
+
+.a3022_1 { animation: a3022 5.5s ease-in-out forwards }
+.a3022_2 { animation: a3022 5.5s .3s ease-in-out forwards }
+@keyframes a3022 { 0% { transform: translateY(0px) } 100% { transform: translateY(9424px) }}
+
+.a3023_1 { animation: a3023 5.5s ease-in-out forwards }
+.a3023_2 { animation: a3023 5.5s .3s ease-in-out forwards }
+@keyframes a3023 { 0% { transform: translateY(0px) } 100% { transform: translateY(9576px) }}
+
+.a3024_1 { animation: a3024 5.5s ease-in-out forwards }
+.a3024_2 { animation: a3024 5.5s .3s ease-in-out forwards }
+@keyframes a3024 { 0% { transform: translateY(0px) } 100% { transform: translateY(9728px) }}
+
+.a3025_1 { animation: a3025 5.5s ease-in-out forwards }
+.a3025_2 { animation: a3025 5.5s .3s ease-in-out forwards }
+@keyframes a3025 { 0% { transform: translateY(0px) } 100% { transform: translateY(9880px) }}
+
+.a3026_1 { animation: a3026 5.5s ease-in-out forwards }
+.a3026_2 { animation: a3026 5.5s .3s ease-in-out forwards }
+@keyframes a3026 { 0% { transform: translateY(0px) } 100% { transform: translateY(10032px) }}
+
+.a3027_1 { animation: a3027 5.5s ease-in-out forwards }
+.a3027_2 { animation: a3027 5.5s .3s ease-in-out forwards }
+@keyframes a3027 { 0% { transform: translateY(0px) } 100% { transform: translateY(10184px) }}
+
+.a3028_1 { animation: a3028 5.5s ease-in-out forwards }
+.a3028_2 { animation: a3028 5.5s .3s ease-in-out forwards }
+@keyframes a3028 { 0% { transform: translateY(0px) } 100% { transform: translateY(10336px) }}
+
+.a3029_1 { animation: a3029 5.5s ease-in-out forwards }
+.a3029_2 { animation: a3029 5.5s .3s ease-in-out forwards }
+@keyframes a3029 { 0% { transform: translateY(0px) } 100% { transform: translateY(10488px) }}
+
+.a3030_1 { animation: a3030 5.5s ease-in-out forwards }
+.a3030_2 { animation: a3030 5.5s .3s ease-in-out forwards }
+@keyframes a3030 { 0% { transform: translateY(0px) } 100% { transform: translateY(10640px) }}
+
+.a3031_1 { animation: a3031 5.5s ease-in-out forwards }
+.a3031_2 { animation: a3031 5.5s .3s ease-in-out forwards }
+@keyframes a3031 { 0% { transform: translateY(0px) } 100% { transform: translateY(10792px) }}
+
+.a3032_1 { animation: a3032 5.5s ease-in-out forwards }
+.a3032_2 { animation: a3032 5.5s .3s ease-in-out forwards }
+@keyframes a3032 { 0% { transform: translateY(0px) } 100% { transform: translateY(10944px) }}
+
+.a3033_1 { animation: a3033 5.5s ease-in-out forwards }
+.a3033_2 { animation: a3033 5.5s .3s ease-in-out forwards }
+@keyframes a3033 { 0% { transform: translateY(0px) } 100% { transform: translateY(11096px) }}
+
+.a3034_1 { animation: a3034 5.5s ease-in-out forwards }
+.a3034_2 { animation: a3034 5.5s .3s ease-in-out forwards }
+@keyframes a3034 { 0% { transform: translateY(0px) } 100% { transform: translateY(11248px) }}
+
+.initial {
+    animation: init .2s linear forwards;
+}
+
+@keyframes init {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@media screen and (min-width: 420px) {
+
+}
