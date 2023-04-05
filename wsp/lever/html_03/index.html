@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Spin & Win</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,600&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+<header>
+  <a href="javascript:;"><img src="imgs/bars-solid.svg"></a>
+</header>
+
+<section id="main">
+  <div id="info" class="transp">
+    <h2>YOU’VE WON!</h2>
+    <h3>Your choice:</h3>
+  </div>
+  <svg id="game" class="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="342" height="397" viewBox="0 0 684 794">
+    <defs>
+      <clipPath id="clp">
+        <path fill="#FFF" d="M486.7 94.11H253.63a26.98 26.98 0 0 0-26.98 26.98v97.98a26.98 26.98 0 0 0 26.98 26.98H486.7a26.98 26.98 0 0 0 26.98-26.98v-97.98a26.98 26.98 0 0 0-26.98-26.98z"/>
+      </clipPath>
+    </defs>
+    <image id="pump" href="imgs/pump.png" width="684" height="794"/>
+    <image id="handle1" href="imgs/handle1.png" width="684" height="794"/>
+    <image id="handle2" class="invis" href="imgs/handle2.png" width="684" height="794"/>
+    <image id="frame" href="imgs/frame.svg" width="684" height="794"/>
+    <image id="light1" href="imgs/light1.svg" width="684" height="794"/>
+    <image id="light2" href="imgs/light2.svg" width="684" height="794"/>
+    <g clip-path="url(#clp)">
+      <g id="prize1">
+        <image href="imgs/prize_01.jpg" x="226" y="-3706" width="142" height="3952"/>
+        <image href="imgs/prize_01.jpg" x="226" y="-7506" width="142" height="3952"/>
+        <image href="imgs/prize_01.jpg" x="226" y="-11306" width="142" height="3952"/>
+      </g>
+      <g id="prize2">
+        <image href="imgs/prize_02.jpg" x="372" y="-3706" width="142" height="3952"/>
+        <image href="imgs/prize_02.jpg" x="372" y="-7506" width="142" height="3952"/>
+        <image href="imgs/prize_02.jpg" x="372" y="-11306" width="142" height="3952"/>
+      </g>
+    </g>
+    <image id="initial" href="imgs/initial.svg" width="684" height="794"/>
+    <image id="shadow" href="imgs/shadow.png" width="684" height="794"/>
+  </svg>
+  <div id="prizes">
+    <a id="bttn_prize1" href="javascript:;">
+      <div class="clmns">
+        <div class="clmn_40">
+          <img id="select_prize1" src="">
+        </div>
+        <div class="clmn_60">
+          <span>
+          <h2 id="prize_ttl1"></h2>
+          <h3 id="prize_sub1"></h3>
+          </span>
+        </div>
+      </div>
+    </a>
+    <p>or</p>
+    <a id="bttn_prize2" href="javascript:;">
+      <div class="clmns">
+        <div class="clmn_40">
+          <img id="select_prize2" src="">
+        </div>
+        <div class="clmn_60">
+          <span>
+          <h2 id="prize_ttl2"></h2>
+          <h3 id="prize_sub2"></h3>
+          </span>
+        </div>
+      </div>
+    </a>
+    <div id="prize_added">has now been added to your rewards account.</div>
+  </div>
+  <div id="bottom_info">
+    <p id="info_before">Pull the lever to Spin & Win!</p>
+    <p id="info_after" class="transp invis">Choose which prize you would like to have added to your Rewards account.</p>
+    <div id="vendors">
+      <h4>You have 3 plays remaining.</h4>
+      <a id="bttn_orange" href="javascript:;">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" width="18" height="18" viewBox="0 0 21 21">
+        <path d="M15.68 17.02a8.71 8.71 0 1 1 2.09-11.17"/>
+        <polyline points="19.37 1.5 19.37 7.36 13.51 7.36"/>
+      </svg> PLAY AGAIN</a>
+      <h3>Want more chances to win?</h3>
+      <h2>BUY THESE PRODUCTS TO EARN YOUR DIGITAL GAME PLAY.</h2>
+      <img src="imgs/prizes.jpg">
+      <p>Look for our participating products in-store and receive 1 new spin for every purchase made with your Yesway Rewards & Allsup’s Rewards card or app.</p>
+      <img src="imgs/vendor_logos.png">
+    </div>
+  </div>
+</section>
+
+<div id="loader" class="invis">
+    <img src="imgs/loader.svg">
+</div>
+
+<footer>
+  <img id="badge" src="imgs/badge.png">
+  <div class="clmns">
+    <div class="clmn_50">
+      <img id="yesway" src="imgs/logo_yesway.png">
+      <div class="social">
+        <a href="javascript:;"><img src="imgs/icon_fb.svg"></a>
+        <a href="javascript:;"><img src="imgs/icon_ig.svg"></a>
+        <a href="javascript:;"><img src="imgs/icon_tw.svg"></a>
+      </div>
+    </div>
+    <div class="clmn_50">
+      <img id="allsups" src="imgs/logo_allsups.png">
+      <div class="social">
+        <a href="javascript:;"><img src="imgs/icon_fb2.svg"></a>
+        <a href="javascript:;"><img src="imgs/icon_ig2.svg"></a>
+      </div>
+    </div>
+  </div>
+  <div id="footer_links">
+    <a href="javascript:;">Official Rules</a> <a href="javascript:;">Privacy & Security</a>
+  </div>
+  <div id="copy">
+    <p>NO PURCHASE NECESSARY. Open to legal residents of IA, KS, MO, NE, NM, OK, TX, SD and WY age of majority or older. Void elsewhere and were prohibited. Sweepstakes begins 5/3/23 and ends 7/4/23. Certain restrictions apply. Must be a registered Yesway Rewards & Allsup's Rewards member to earn digital game plays. Earn one play with qualifying product purchase. Every play wins, choice of two prize options. See <a href="javascript:;">Official Rules</a> for all details, odds of winning, prize descriptions and no purchase means.</p>
+    <p>Sponsored by BW Gas & Convenience Retail, LLC d/b/a Yesway.</p>
+  </div>
+</footer>
+
+<audio id="sound" src="mp3/slot.mp3"></audio>
+
+<script>
+  let requestURL = 'js/data.json';
+</script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
