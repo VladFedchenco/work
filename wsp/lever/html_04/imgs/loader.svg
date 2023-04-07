@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#FFF" stroke-linecap="round" stroke-width="13" width="150" height="150" viewBox="0 0 150 150">
+<style>
+/* <![CDATA[ */
+
+#l1 {
+  opacity: .2;
+  animation: rotate 1.2s -1.05s infinite;
+}
+
+#l2 {
+  opacity: .2;
+  animation: rotate 1.2s -.9s infinite;
+}
+
+#l3 {
+  opacity: .2;
+  animation: rotate 1.2s -.75s infinite;
+}
+
+#l4 {
+  opacity: .2;
+  animation: rotate 1.2s -.6s infinite;
+}
+
+#l5 {
+  opacity: .2;
+  animation: rotate 1.2s -.45s infinite;
+}
+
+#l6 {
+  opacity: .2;
+  animation: rotate 1.2s -.3s infinite;
+}
+
+#l7 {
+  opacity: .2;
+  animation: rotate 1.2s -.15s infinite;
+}
+
+#l8 {
+  opacity: .2;
+  animation: rotate 1.2s infinite;
+}
+
+@keyframes rotate {
+  0%, 50%, 100% {
+    opacity: .2;
+  }
+  25% {
+    opacity: 1;
+  }
+}
+
+/* ]]> */
+</style>
+<line id="l1" x1="75" x2="75" y1="7" y2="32.58"/>
+<line id="l2" x1="123.08" x2="104.99" y1="26.92" y2="45.01"/>
+<line id="l3" x1="143" x2="117.42" y1="75" y2="75"/>
+<line id="l4" x1="123.08" x2="104.99" y1="123.08" y2="104.99"/>
+<line id="l5" x1="75" x2="75" y1="117.42" y2="143"/>
+<line id="l6" x1="45.01" x2="26.92" y1="104.99" y2="123.08"/>
+<line id="l7" x1="32.58" x2="7" y1="75" y2="75"/>
+<line id="l8" x1="45.01" x2="26.92" y1="45.01" y2="26.92"/>
+</svg>
