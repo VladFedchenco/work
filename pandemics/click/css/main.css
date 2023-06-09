@@ -1,0 +1,21 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+canvas:focus {
+  outline: none;
+}
+
+#bttn {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+/*  border: solid 2px #00ff00;*/
+  width: 100px;
+  height: 100px;
+  text-decoration: none;
+  border-radius: 50px;
+}
