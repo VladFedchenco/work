@@ -1,0 +1,48 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta charset="UTF-8">
+
+<head>
+    <style>
+    body {
+        background: linear-gradient(250deg, #c6009d 20%, #ef036c);
+        margin: 0px;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    #lottie {
+        background: #fff;
+        width: 667px;
+        height: 500px;
+        display: block;
+        overflow: hidden;
+        transform: translate3d(0, 0, 0);
+        text-align: center;
+        opacity: 1;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin: -250px 0 0 -334px;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="lottie"></div>
+</body>
+
+<script src="lottie.js"></script>
+<script>
+let anim;
+let params = {
+    container: document.getElementById('lottie'),
+    path: 'data.json',
+    renderer: 'svg',
+    loop: true,
+    autoplay: true
+};
+
+anim = lottie.loadAnimation(params);
+</script>
+
+</html>
