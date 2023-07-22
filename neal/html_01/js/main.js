@@ -1,0 +1,86 @@
+let im_profile;
+
+let requestURL = 'js/data.json';
+let request = new XMLHttpRequest();
+request.open('GET', requestURL);
+request.responseType = 'json';
+request.send();
+
+request.onload = function() {
+  const AnimationData = request.response;
+  let im1 = AnimationData.scene1.im_profile;
+  $("#im_profile").setAttribute("href", im1.im_path);
+  $("#im_profile").setAttribute("width", im1.im_dimensions[0]);
+  $("#im_profile").setAttribute("height", im1.im_dimensions[1]);
+  $("#im_profile").setAttribute("x", 640 - im1.pos_eyes[0]);
+  $("#im_profile").setAttribute("y", 360 - im1.pos_eyes[1]);
+  let txt1 = AnimationData.scene1.txt_profile;
+  $("#avatar_text").textContent = txt1.content;
+  $("#avatar_text").setAttribute("font-size", txt1.size);
+  $("#avatar_text").setAttribute("fill", txt1.color);
+  $("#avatar_text").setAttribute("x", txt1.position[0]);
+  $("#avatar_text").setAttribute("y", txt1.position[1]);
+  let im2 = AnimationData.scene1.im_bg;
+  $("#im_bg").setAttribute("href", im2.im_path);
+  $("#im_bg").setAttribute("width", im2.im_dimensions[0]);
+  $("#im_bg").setAttribute("height", im2.im_dimensions[1]);
+  $("#im_bg").setAttribute("x", 1280 - im2.im_dimensions[0] / 2);
+  $("#im_bg").setAttribute("y", 360 - im2.im_dimensions[1] / 2);
+  let im3 = AnimationData.scene1.im_overlay;
+  $("#logo").setAttribute("href", im3.im_path);
+  $("#logo").setAttribute("width", im3.im_dimensions[0]);
+  $("#logo").setAttribute("height", im3.im_dimensions[1]);
+  $("#logo").setAttribute("x", im3.position[0]);
+  $("#logo").setAttribute("y", im3.position[1]);
+  let im4 = AnimationData.scene2.im;
+  $("#scene2_im").setAttribute("href", im4.im_path);
+  $("#scene2_im").setAttribute("width", im4.im_dimensions[0]);
+  $("#scene2_im").setAttribute("height", im4.im_dimensions[1]);
+  $("#scene2_im").setAttribute("x", im4.position[0]);
+  $("#scene2_im").setAttribute("y", im4.position[1]);
+  $("#scene2_im2").setAttribute("href", im4.im_path);
+  $("#scene2_im2").setAttribute("width", im4.im_dimensions[0]);
+  $("#scene2_im2").setAttribute("height", im4.im_dimensions[1]);
+  $("#scene2_im2").setAttribute("x", im4.position[0]);
+  $("#scene2_im2").setAttribute("y", im4.position[1]);
+  let txt2 = AnimationData.scene2.txt_line1;
+  $("#scene2_txt1").textContent = txt2.content;
+  $("#scene2_txt1").setAttribute("font-size", txt2.size);
+  $("#scene2_txt1").setAttribute("fill", txt2.color);
+  $("#scene2_txt1").setAttribute("x", txt2.position[0]);
+  $("#scene2_txt1").setAttribute("y", txt2.position[1]);
+  let txt3 = AnimationData.scene2.txt_line2;
+  $("#scene2_txt2").textContent = txt3.content;
+  $("#scene2_txt2").setAttribute("font-size", txt3.size);
+  $("#scene2_txt2").setAttribute("fill", txt3.color);
+  $("#scene2_txt2").setAttribute("x", txt3.position[0]);
+  $("#scene2_txt2").setAttribute("y", txt3.position[1]);
+  let im5 = AnimationData.scene3.im;
+  $("#scene3_bg").setAttribute("href", im5.im_path);
+  $("#scene3_bg").setAttribute("width", im5.im_dimensions[0]);
+  $("#scene3_bg").setAttribute("height", im5.im_dimensions[1]);
+  $("#scene3_bg").setAttribute("x", im5.position[0]);
+  $("#scene3_bg").setAttribute("y", im5.position[1]);
+  let txt4 = AnimationData.scene3.txt_line1;
+  $("#scene3_txt1").textContent = txt4.content;
+  $("#scene3_txt1").setAttribute("font-size", txt4.size);
+  $("#scene3_txt1").setAttribute("fill", txt4.color);
+  $("#scene3_txt1").setAttribute("x", txt4.position[0]);
+  $("#scene3_txt1").setAttribute("y", txt4.position[1]);
+  let txt5 = AnimationData.scene3.txt_line2;
+  $("#scene3_txt2").textContent = txt5.content;
+  $("#scene3_txt2").setAttribute("font-size", txt5.size);
+  $("#scene3_txt2").setAttribute("fill", txt5.color);
+  $("#scene3_txt2").setAttribute("x", txt5.position[0]);
+  $("#scene3_txt2").setAttribute("y", txt5.position[1]);
+  let txt6 = AnimationData.scene3.txt_sub;
+  $("#scene3_txt3").textContent = txt6.content;
+  $("#scene3_txt3").setAttribute("font-size", txt6.size);
+  $("#scene3_txt3").setAttribute("fill", txt6.color);
+  $("#scene3_txt3").setAttribute("x", txt6.position[0]);
+  $("#scene3_txt3").setAttribute("y", txt6.position[1]);
+}
+
+function $(sel) {
+  return document.querySelector(sel);
+}
