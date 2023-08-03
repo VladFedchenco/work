@@ -1,0 +1,72 @@
+{
+"scene1": {
+    "duration": 12.3,
+    "im_profile": {
+        "im_path": "imgs/mk-1-400.jpg",
+        "im_dimensions": [400, 400],
+        "pos_eyes": [184, 106]
+    },
+    "im_bg": {
+        "im_path": "imgs/vox-office.jpg",
+        "im_dimensions": [1200, 800]
+    },
+    "im_overlay": {
+        "im_path": "imgs/vox-logo.svg",
+        "im_dimensions": [420, 204],
+        "position": [744, 260]
+    },
+    "txt_profile": {
+        "content": "Miranda Kennedy",
+        "size": 28,
+        "color": "#fff",
+        "position": [328, 563]
+    } 
+},
+"scene2": {
+    "duration": 3.7,
+    "im":  {
+        "im_path": "imgs/charles-cop21.jpg",
+        "im_dimensions": [750, 906],
+        "position": [620, -70]
+    },
+    "txt_line1": {
+        "content": "Charlie",
+        "size": 110,
+        "color": "#fff",
+        "position": [94, 320]
+    },
+    "txt_line2": {
+        "content": "Windsor",
+        "size": 110,
+        "color": "#fff",
+        "position": [94, 445]
+    }
+},
+"scene3": {
+    "duration": 3.9,
+    "im": {
+        "im_path": "imgs/westminster.png",
+        "im_dimensions": [1350, 900],
+        "position": [-60, -90]
+    },
+    "txt_line1": {
+        "content": "Westminster",
+        "size": 110,
+        "color": "#1f1f1f",
+        "position": [94, 320]
+    },
+    "txt_line2": {
+        "content": "Abbey",
+        "size": 110,
+        "color": "#1f1f1f",
+        "position": [94, 445]
+    },
+    "txt_sub": {
+        "content": "London",
+        "size": 50,
+        "color": "#1f1f1f",
+        "position": [94, 524]
+    }
+},
+"combinations": [1, 2, 1, 3, 2, 1]
+}

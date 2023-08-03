@@ -1,0 +1,541 @@
+@font-face {
+  font-family: 'Aeonik-Medium';
+  src: url('../fonts/Aeonik-Medium.eot');
+  src: url('../fonts/Aeonik-Medium.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Aeonik-Medium.woff2') format('woff2'),
+       url('../fonts/Aeonik-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Aeonik-Black';
+  src: url('../fonts/Aeonik-Black.eot');
+  src: url('../fonts/Aeonik-Black.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Aeonik-Black.woff2') format('woff2'),
+       url('../fonts/Aeonik-Black.woff') format('woff');
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+*:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+html, body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #1f1f1f;
+    text-align: center;
+}
+
+#animation {
+    font-family: 'Aeonik-Medium', sans-serif;
+}
+
+#im_profile {
+    visibility: hidden;
+}
+
+.play #im_profile {
+    animation: im_profile var(--scene_01_duration) cubic-bezier(0, 1, 0.5, 1) forwards;
+}
+
+@keyframes im_profile {
+    0%, 7.46% {
+        transform: translate(640px, 360px) scale(4.5) translate(-640px, -360px);
+    }
+    11.87%, 100% {
+        transform: translate(306px, 290px) scale(.85) translate(-640px, -360px);
+    }
+    0%, 99.9% {
+        visibility: visible;
+    }
+    100% {
+        visibility: hidden;
+    }
+}
+
+#c1, #c2, #c3, #c4, #c5, #c6, #c7, #c8, #c9, #c10, #c11, #c12, #c13, #c14, #c15, #c16, #c17, #c18, #c19, #c20, #c21, #c22, #c23, #c24, #c25, #c26, #c27, #c28, #c29, #c30, #c31, #c32, #c33, #c34, #c35 {
+visibility: hidden;
+animation-duration: var(--scene_01_duration);
+animation-iteration-count: infinite;
+animation-timing-function: steps(1);
+}
+
+.play #c1 {animation-name: c1}
+.play #c2 {animation-name: c2}
+.play #c3 {animation-name: c3}
+.play #c4 {animation-name: c4}
+.play #c5 {animation-name: c5}
+.play #c6 {animation-name: c6}
+.play #c7 {animation-name: c7}
+.play #c8 {animation-name: c8}
+.play #c9 {animation-name: c9}
+.play #c10 {animation-name: c10}
+.play #c11 {animation-name: c11}
+.play #c12 {animation-name: c12}
+.play #c13 {animation-name: c13}
+.play #c14 {animation-name: c14}
+.play #c15 {animation-name: c15}
+.play #c16 {animation-name: c16}
+.play #c17 {animation-name: c17}
+.play #c18 {animation-name: c18}
+.play #c19 {animation-name: c19}
+.play #c20 {animation-name: c20}
+.play #c21 {animation-name: c21}
+.play #c22 {animation-name: c22}
+.play #c23 {animation-name: c23}
+.play #c24 {animation-name: c24}
+.play #c25 {animation-name: c25}
+.play #c26 {animation-name: c26}
+.play #c27 {animation-name: c27}
+.play #c28 {animation-name: c28}
+.play #c29 {animation-name: c29}
+.play #c30 {animation-name: c30}
+.play #c31 {animation-name: c31}
+.play #c32 {animation-name: c32}
+.play #c33 {animation-name: c33}
+.play #c34 {animation-name: c34}
+.play #c35 {animation-name: c35}
+
+@keyframes c1 {0.00%{visibility: visible} 0.24%{visibility: hidden}}
+@keyframes c2 {0.24%{visibility: visible} 0.48%{visibility: hidden}}
+@keyframes c3 {0.48%{visibility: visible} 0.72%{visibility: hidden}}
+@keyframes c4 {0.72%{visibility: visible} 0.96%{visibility: hidden}}
+@keyframes c5 {0.96%{visibility: visible} 1.20%{visibility: hidden}}
+@keyframes c6 {1.20%{visibility: visible} 1.45%{visibility: hidden}}
+@keyframes c7 {1.45%{visibility: visible} 1.69%{visibility: hidden}}
+@keyframes c8 {1.69%{visibility: visible} 1.93%{visibility: hidden}}
+@keyframes c9 {1.93%{visibility: visible} 2.17%{visibility: hidden}}
+@keyframes c10 {2.17%{visibility: visible} 2.41%{visibility: hidden}}
+@keyframes c11 {2.41%{visibility: visible} 2.65%{visibility: hidden}}
+@keyframes c12 {2.65%{visibility: visible} 2.89%{visibility: hidden}}
+@keyframes c13 {2.89%{visibility: visible} 3.13%{visibility: hidden}}
+@keyframes c14 {3.13%{visibility: visible} 3.37%{visibility: hidden}}
+@keyframes c15 {3.37%{visibility: visible} 3.61%{visibility: hidden}}
+@keyframes c16 {3.61%{visibility: visible} 3.86%{visibility: hidden}}
+@keyframes c17 {3.86%{visibility: visible} 4.10%{visibility: hidden}}
+@keyframes c18 {4.10%{visibility: visible} 4.34%{visibility: hidden}}
+@keyframes c19 {4.34%{visibility: visible} 4.58%{visibility: hidden}}
+@keyframes c20 {4.58%{visibility: visible} 4.82%{visibility: hidden}}
+@keyframes c21 {4.82%{visibility: visible} 5.06%{visibility: hidden}}
+@keyframes c22 {5.06%{visibility: visible} 5.30%{visibility: hidden}}
+@keyframes c23 {5.30%{visibility: visible} 5.54%{visibility: hidden}}
+@keyframes c24 {5.54%{visibility: visible} 5.78%{visibility: hidden}}
+@keyframes c25 {5.78%{visibility: visible} 6.02%{visibility: hidden}}
+@keyframes c26 {6.02%{visibility: visible} 6.27%{visibility: hidden}}
+@keyframes c27 {6.27%{visibility: visible} 6.51%{visibility: hidden}}
+@keyframes c28 {6.51%{visibility: visible} 6.75%{visibility: hidden}}
+@keyframes c29 {6.75%{visibility: visible} 6.99%{visibility: hidden}}
+@keyframes c30 {6.99%{visibility: visible} 7.23%{visibility: hidden}}
+@keyframes c31 {7.23%{visibility: visible} 7.47%{visibility: hidden}}
+@keyframes c32 {7.47%{visibility: visible} 7.71%{visibility: hidden}}
+@keyframes c33 {7.71%{visibility: visible} 7.95%{visibility: hidden}}
+@keyframes c34 {7.95%{visibility: visible} 8.19%{visibility: hidden}}
+@keyframes c35 {8.19%, 100%{visibility: visible}}
+
+#text_bg, #text_clp {
+    visibility: hidden;
+}
+
+.play #text_bg, .play #text_clp {
+    animation: text_bg var(--scene_01_duration) cubic-bezier(0, 1, 0.5, 1) forwards;
+}
+
+@keyframes text_bg {
+    0%, 10.84% {
+        transform: translate(324px, 554px) scale(0, 1) translate(-324px, -554px);
+    }
+    16.9%, 100% {
+        transform: translate(324px, 554px) scale(1, 1) translate(-324px, -554px);
+    }
+    0%, 99.9% {
+        visibility: visible;
+    }
+    100% {
+        visibility: hidden;
+    }
+}
+
+#avatar_text {
+    visibility: hidden;
+}
+
+.play #avatar_text {
+    animation: avatar_text var(--scene_01_duration) forwards;
+}
+
+@keyframes avatar_text {
+    0%, 99.9% {
+        visibility: visible;
+    }
+    100% {
+        visibility: hidden;
+    }
+}
+
+#white_bg {
+    visibility: hidden;
+}
+
+.play #white_bg {
+    visibility: visible;
+    animation: white_bg var(--scene_01_duration) cubic-bezier(0, 1, 0.5, 1) forwards;
+}
+
+@keyframes white_bg {
+    0%, 7.46% {
+        transform: scale(1, 1);
+    }
+    11.87%, 100% {
+        transform: scale(.5, 1);
+    }
+}
+
+#dark_bg {
+    visibility: hidden;
+}
+
+.play #dark_bg {
+    animation: dark_bg var(--scene_01_duration) cubic-bezier(0, 1, 0.5, 1) forwards;
+}
+
+@keyframes dark_bg {
+    0%, 9.43% {
+        transform: scale(1, 1);
+    }
+    14.92%, 100% {
+        transform: scale(.5, 1);
+    }
+    0%, 14.92% {
+        visibility: visible;
+    }
+    14.93%, 100% {
+        visibility: hidden;
+    }
+}
+
+#im_bg {
+    visibility: hidden;
+}
+
+.play #im_bg {
+    visibility: visible;
+    animation: im_bg var(--scene_01_duration) linear forwards;
+}
+
+@keyframes im_bg {
+    0% {
+        transform: translate(1280px, 360px) scale(1.3) translate(-1280px, -360px);
+    }
+    89.57%, 100% {
+        transform: translate(1040px, 360px) scale(1.3) translate(-1280px, -360px);
+    }
+}
+
+#im_bg_box {
+    visibility: hidden;
+}
+
+.play #im_bg_box {
+    visibility: visible;
+    animation: im_bg_box var(--scene_01_duration) cubic-bezier(0, 1, 0.5, 1) forwards;
+}
+
+@keyframes im_bg_box {
+    0%, 89.57% {
+        transform: translate(0px, 0px);
+    }
+    100% {
+        transform: translate(-362px, 0px);
+    }
+}
+
+#white_clp {
+    visibility: hidden;
+}
+
+.play #white_clp {
+    visibility: visible;
+    animation: white_clp var(--scene_01_duration) cubic-bezier(0, 1, 0.5, 1) forwards;
+}
+
+@keyframes white_clp {
+    0%, 89.43% {
+        transform: translate(0px, 0px) scale(1, 1);
+    }
+    89.57% {
+        transform: translate(0px, 0px) scale(.5, 1);
+    }
+    100% {
+        transform: translate(-640px, 0px) scale(.5, 1);
+    }
+}
+
+#logo, #sc1_dark_rect {
+    visibility: hidden;
+}
+
+.play #logo, .play #sc1_dark_rect {
+    visibility: visible;
+}
+
+#scene2_bg, #scene2_clp {
+    visibility: hidden;
+}
+
+.play #scene2_bg, .play #scene2_clp {
+    visibility: visible;
+    animation: scene2_bg var(--scene_02_duration) cubic-bezier(0, 1, 0.5, 1) forwards;
+}
+
+@keyframes scene2_bg {
+    0% {
+        transform: translate(1280px, 0px) scale(1, 1);
+    }
+    31.3%, 100% {
+        transform: translate(0px, 0px) scale(.5, 1);
+    }
+}
+
+#scene2_im {
+    visibility: hidden;
+}
+
+.play #scene2_im {
+    visibility: visible;
+    animation: scene2_im var(--scene_02_duration) linear forwards;
+}
+
+@keyframes scene2_im {
+    0%, 0.5%, 27%, 100% {
+        visibility: hidden;
+    }
+    0.6% {
+        visibility: visible;
+    }
+}
+
+#scene2_im2 {
+    visibility: hidden;
+}
+
+.play #scene2_im2 {
+    visibility: visible;
+    animation: scene2_im2 var(--scene_02_duration) cubic-bezier(0, 1, 0.5, 1) forwards;
+}
+
+@keyframes scene2_im2 {
+    0%, 26.5% {
+        visibility: hidden;
+    }
+    26.6%, 100% {
+        visibility: visible;
+    }
+    0%, 63.5% {
+        transform: translate(0px, 0px);
+    }
+    100% {
+        transform: translate(-640px, 0px);
+    }
+}
+
+#scene2_txt1, #scene2_txt2, #scene3_txt1, #scene3_txt2, #scene3_txt3 {
+    font-family: 'Aeonik-Black', sans-serif;
+}
+
+#scene2_txt {
+    visibility: hidden;
+}
+
+.play #scene2_txt {
+    visibility: visible;
+    animation: scene2_txt var(--scene_02_duration) cubic-bezier(0, 1, 0.5, 1) forwards;
+}
+
+@keyframes scene2_txt {
+    0%, 7.6% {
+        transform: translate(1200px, 0px);
+    }
+    55%, 100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+#scene3_bg {
+    visibility: hidden;
+}
+
+.play #scene3_bg {
+    visibility: visible;
+    animation: scene3_bg var(--scene_03_duration) cubic-bezier(0, 1, 0.5, 1) forwards;
+}
+
+@keyframes scene3_bg {
+    0% {
+        transform: translate(1340px, 0px);
+    }
+    15.2%, 100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+#scene3_txt {
+    visibility: hidden;
+}
+
+.play #scene3_txt {
+    visibility: visible;
+    animation: scene3_txt var(--scene_03_duration) linear forwards;
+}
+
+@keyframes scene3_txt {
+    0%, 14.4% {
+        visibility: hidden;
+    }
+    14.5%, 100% {
+        visibility: visible;
+    }
+}
+
+#scene3_txt1_wrp {
+    visibility: hidden;
+}
+
+.play #scene3_txt1_wrp {
+    visibility: visible;
+    animation: scene3_txt1_wrp var(--scene_03_duration) cubic-bezier(0, 1, 0.5, 1) forwards;
+}
+
+@keyframes scene3_txt1_wrp {
+    0%, 15.3% {
+        transform: translate(0px, 500px);
+    }
+    37.8%, 100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+#scene3_txt2_wrp {
+    visibility: hidden;
+}
+
+.play #scene3_txt2_wrp {
+    visibility: visible;
+    animation: scene3_txt2_wrp var(--scene_03_duration) cubic-bezier(0, 1, 0.5, 1) forwards;
+}
+
+@keyframes scene3_txt2_wrp {
+    0%, 27% {
+        transform: translate(0px, 480px);
+    }
+    50.85%, 100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+#scene3_txt3_wrp {
+    visibility: hidden;
+}
+
+.play #scene3_txt3_wrp {
+    visibility: visible;
+    animation: scene3_txt3_wrp var(--scene_03_duration) cubic-bezier(0, 1, 0.5, 1) forwards;
+}
+
+@keyframes scene3_txt3_wrp {
+    0%, 37.8% {
+        transform: translate(0px, 480px);
+    }
+    61.65%, 100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+#last_bg {
+    visibility: hidden;
+}
+
+.play #last_bg {
+    visibility: visible;
+    animation: last_bg .6s cubic-bezier(0, 1, 0.5, 1) forwards;
+}
+
+@keyframes last_bg {
+    0% {
+        transform: translate(640px, 0px) scale(0, 1) translate(-640px, 0px);
+    }
+    100% {
+        transform: translate(640px, 0px) scale(1, 1) translate(-640px, 0px);
+    }
+}
+
+#animation {
+    width: 100%;
+    position: relative;
+}
+
+#scene_01, #scene_02, #scene_03, #black_out, #transition {
+    left: 0;
+    top: 0;
+    width: 100%;
+    position: absolute;
+}
+
+#black_out {
+    z-index: 99;
+}
+
+#transition {
+    z-index: 98;
+}
+
+#transition_top {
+    visibility: hidden;
+}
+
+.play #transition_top {
+    visibility: visible;
+    animation: transition_top .8s cubic-bezier(0, 1, 0.5, 1) forwards;
+}
+
+@keyframes transition_top {
+    0% {
+        transform: translate(0px, 360px) scale(1, 0) translate(0px, -360px);
+    }
+    40%, 60% {
+        transform: translate(0px, 360px) scale(1, 1) translate(0px, -360px);
+    }
+    100% {
+        transform: translate(0px, 0px) scale(1, 0) translate(0px, 0px);
+    }
+}
+
+#transition_bottom {
+    visibility: hidden;
+}
+
+.play #transition_bottom {
+    visibility: visible;
+    animation: transition_bottom .8s cubic-bezier(0, 1, 0.5, 1) forwards;
+}
+
+@keyframes transition_bottom {
+    0% {
+        transform: translate(0px, 360px) scale(1, 0) translate(0px, -360px);
+    }
+    40%, 60% {
+        transform: translate(0px, 360px) scale(1, 1) translate(0px, -360px);
+    }
+    100% {
+        transform: translate(0px, 720px) scale(1, 0) translate(0px, -720px);
+    }
+}
+
+@media screen and (min-width: 420px) {
+
+}
