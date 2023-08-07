@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TGP</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+<header>
+  <a href="javascript:;" id="menu"></a>
+</header>
+<section id="content">
+  <div id="main">
+    <div id="prize">
+      <h2 id="prize_head" class="invis"></h2>
+      <div id="bllt_box">
+        <div class="clmn_40">
+          <img id="ballot" src="">
+        </div>
+        <div class="clmn_60">
+          <p id="entry_num"></p>
+          <p id="entry_text"></p>
+        </div>
+      </div>
+      <p id="bllt_text"></p>
+      <img id="giftcard" src="">
+      <h3 id="prize_name"></h3>
+      <h4 id="prize_underline"></h4>
+      <img id="prize_id" src="">
+      <div id="note"></div>
+    </div>
+    <div id="tgp_container"></div>
+    <img id="tickt2x" src="imgs/ticket.png">
+    <div id="click_text">Scratch ticket to reveal your prize.</div>
+    <img id="click_anim" src="imgs/click.svg">
+  </div>
+  <svg id="stars" xmlns="http://www.w3.org/2000/svg" fill="#FCD803" viewBox="0 0 800 800">
+    <polygon id="s1" points="192 383 195 376 191 369 199 370 203 364 205 372 212 375 205 378 205 386 199 381"/>
+    <polygon id="s2" points="263 380 253 375 243 381 245 369 237 362 248 361 253 350 258 361 269 362 260 369" opacity=".5"/>
+    <polygon id="s3" points="584 380 588 373 584 366 592 368 597 362 598 370 605 373 598 376 597 384 592 378"/>
+    <polygon id="s4" points="120 354 117 337 101 332 116 323 116 306 129 318 145 313 138 329 147 343 130 341" opacity=".5"/>
+    <polygon id="s5" points="206 291 222 294 233 281 236 298 252 304 237 312 235 329 223 317 207 321 215 306"/>
+    <polygon id="s6" points="314 292 330 286 334 270 344 283 361 282 351 296 358 311 341 306 329 317 329 300" opacity=".5"/>
+    <polygon id="s7" points="471 324 462 317 452 322 455 311 447 303 458 303 464 293 468 304 479 306 470 313" opacity=".5"/>
+    <polygon id="s8" points="507 346 508 338 502 334 510 332 513 325 516 332 524 332 519 338 521 345 514 342"/>
+    <polygon id="s9" points="520 295 534 285 532 268 546 278 562 271 557 287 568 300 551 300 542 314 537 298"/>
+    <polygon id="s10" points="618 280 635 295 656 288 647 309 660 327 638 325 625 343 620 321 599 314 618 303" opacity=".5"/>
+    <polygon id="s11" points="24 308 36 297 33 280 48 288 62 279 59 296 72 307 55 310 48 325 41 310"/>
+    <polygon id="s12" points="193 294 186 285 174 287 180 278 175 268 186 270 194 262 195 273 205 278 195 283"/>
+    <polygon id="s13" points="393 274 394 266 388 261 395 260 398 252 402 259 410 260 404 265 406 273 399 269"/>
+    <polygon id="s14" points="678 270 691 259 688 242 702 251 718 244 713 260 725 272 708 273 701 288 694 273" opacity=".5"/>
+    <polygon id="s15" points="0 233 15 224 14 207 27 218 44 212 37 228 47 242 30 240 20 254 16 238"/>
+    <polygon id="s16" points="111 269 113 252 100 242 116 238 122 222 130 237 147 238 136 250 141 266 125 259" opacity=".5"/>
+    <polygon id="s17" points="267 250 265 243 257 240 264 236 264 228 270 233 278 231 274 238 279 245 271 244" opacity=".5"/>
+    <polygon id="s18" points="438 234 452 226 452 208 465 220 481 214 475 230 485 244 468 242 458 256 454 239" opacity=".5"/>
+    <polygon id="s19" points="605 248 606 231 592 221 609 217 614 201 623 216 640 216 629 229 634 245 618 238"/>
+    <polygon id="s20" points="232 211 233 194 219 184 235 180 240 163 249 178 266 177 255 190 261 206 245 200"/>
+    <polygon id="s21" points="350 213 339 212 332 221 329 210 319 207 328 201 328 190 337 197 347 193 343 204" opacity=".5"/>
+    <polygon id="s22" points="390 195 388 188 381 185 387 181 387 173 393 179 401 176 398 183 402 190 394 189"/>
+    <polygon id="s23" points="509 159 519 180 542 182 525 198 530 220 510 209 490 221 494 199 477 183 500 180" opacity=".5"/>
+    <polygon id="s24" points="588 155 602 137 594 116 615 124 632 110 631 133 650 145 628 151 622 172 610 154"/>
+    <polygon id="s25" points="739 112 715 133 721 165 693 149 665 164 672 133 649 111 681 108 694 79 707 108" opacity=".5"/>
+    <polygon id="s26" points="759 238 757 214 735 203 757 194 760 169 776 188 800 183 788 204 799 225 775 220"/>
+    <polygon id="s27" points="63 101 61 132 87 149 57 157 49 186 32 161 2 162 21 138 10 109 39 120"/>
+    <polygon id="s28" points="90 170 103 148 91 127 115 132 131 114 134 138 156 148 134 159 131 183 115 165" opacity=".5"/>
+    <polygon id="s29" points="306 150 316 127 301 107 326 109 340 89 346 113 369 121 348 133 348 158 330 142" opacity=".5"/>
+    <polygon id="s30" points="420 159 425 143 413 131 430 130 439 115 444 132 461 135 448 145 450 162 436 152"/>
+    <polygon id="s31" points="535 77 537 94 552 101 536 108 534 125 523 112 506 115 515 100 507 85 523 89" opacity=".5"/>
+    <polygon id="s32" points="623 95 627 78 615 66 632 65 639 49 646 65 663 68 650 79 653 95 638 87"/>
+    <polygon id="s33" points="156 45 173 49 184 36 186 53 201 61 186 68 183 84 172 72 155 75 164 60"/>
+    <polygon id="s34" points="196 81 224 69 229 38 249 62 280 57 264 83 278 111 248 104 226 126 224 95"/>
+    <polygon id="s35" points="454 37 429 55 432 86 406 68 377 80 387 51 366 27 398 27 414 0 423 30" opacity=".5"/>
+  </svg>
+  <div id="info_block" class="invis">
+    <div id="info">
+      <h2>Redeem when you’re ready!</h2>
+      <p>Enter your mobile phone number to easily redeem your prize on your next visit to your local TGP Store.</p>
+      <form>
+        <input type="text" placeholder="Mobile Phone Number">
+        <button><svg xmlns="http://www.w3.org/2000/svg" width="20" height="32" viewBox="0 0 20 32"><path d="M16.94 0H3A2.99 2.99 0 000 2.99V28.9a2.99 2.99 0 002.99 2.99h13.95a2.99 2.99 0 003-2.99V2.99a2.99 2.99 0 00-3-2.99zm-3.98 28.16a.75.75 0 01-.75.74H7.72a.75.75 0 01-.74-.74v-.5a.75.75 0 01.74-.75h4.49a.75.75 0 01.75.75zm3.98-4.99a.75.75 0 01-.74.75H3.74a.75.75 0 01-.75-.75V3.74a.75.75 0 01.75-.75H16.2a.75.75 0 01.75.75z"/></svg> Send Prize To Phone</button>
+      </form>
+      <p>You can also always access your prizes on your Game Account page.</p>
+      <p><a href="#!" class="big_link">View Game Account</a></p>
+    </div>
+    <div id="next_ticket">
+      <p class="more">You have # digital tickets available to open.</p>
+      <p><a href="#!" class="bttn next_game"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26"><path d="M12.78 0A12.78 12.78 0 110 12.78 12.78 12.78 0 0112.78 0zM11.3 7.4l3.9 3.73H5.76a1.23 1.23 0 00-1.23 1.24v.83a1.23 1.23 0 001.23 1.24h9.41l-3.89 3.73a1.24 1.24 0 00-.02 1.77l.57.56a1.23 1.23 0 001.75 0l6.84-6.84a1.23 1.23 0 000-1.74l-6.84-6.85a1.23 1.23 0 00-1.75 0l-.57.56a1.25 1.25 0 00.02 1.77z"/></svg>NEXT GAME TICKET</a></p>
+    </div>
+    <div id="win_big" class="invis">
+      <h2>Ready to WIN BIG?</h2>
+      <p><a href="#!" class="bttn"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="29" viewBox="0 0 22 29"><path d="M19.98.18l-2.14 2.5L14.8.18a.89.89 0 00-1.07 0l-3.03 2.5L7.67.18a.89.89 0 00-1.07 0l-3.03 2.5L1.43.18A.9.9 0 000 .89v26.76a.9.9 0 001.43.71l2.14-2.5 3.03 2.5a.89.89 0 001.07 0l3.03-2.5 3.03 2.5a.89.89 0 001.07 0l3.04-2.5 2.14 2.5a.9.9 0 001.42-.71V.89a.9.9 0 00-1.42-.71zm-2.14 19.89a.45.45 0 01-.45.44H4.01a.45.45 0 01-.44-.44v-.9a.45.45 0 01.44-.44H17.4a.45.45 0 01.45.44zm0-5.35a.45.45 0 01-.45.44H4.01a.45.45 0 01-.44-.44v-.9a.45.45 0 01.44-.44H17.4a.45.45 0 01.45.44zm0-5.35a.45.45 0 01-.45.44H4.01a.45.45 0 01-.44-.44v-.9A.45.45 0 014 8.03H17.4a.45.45 0 01.45.44z"/></svg>Upload Receipt</a></p>
+      <p>Shop any TGP location and <strong>SNAP a photo of your receipt</strong> with a minimum $35 spend.</p>
+      <p>Every valid receipt uploaded earns you <strong>5 entries to win a ski-doo® Expedition or $25,000, Free Groceries for a Year or a Grocery Shopping Spree!</strong></p>
+      <p>PLUS - look for participating bonus items in-store to earn bonus entries!</p>
+      <img src="imgs/bottom_img.png" class="bttm_imgs">
+      <p><a href="#!" class="bttn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"><path d="M17.58 10.94l.65.64a.91.91 0 001.28 0L28.9 2.2a.91.91 0 000-1.29l-.65-.64a.91.91 0 00-1.29 0l-9.38 9.38a.91.91 0 000 1.29zM13.67 5.2a.91.91 0 001.29 0l3-3a.91.91 0 000-1.29l-.64-.64a.91.91 0 00-1.3 0l-3 3a.91.91 0 000 1.29zm14.58 6a.91.91 0 00-1.29 0l-3 3a.91.91 0 000 1.29l.65.64a.91.91 0 001.29 0l3-3a.91.91 0 000-1.29zm-7.5 4.02l-5.97-.87-2.67-5.42a1.3 1.3 0 00-2.35 0L7.1 14.35l-5.97.87a1.3 1.3 0 00-.72 2.24l4.32 4.21-1.02 5.96A1.3 1.3 0 005.6 29l5.34-2.82 5.34 2.82a1.3 1.3 0 001.9-1.38l-1.01-5.96 4.32-4.21a1.31 1.31 0 00-.74-2.24z"/></svg>Enter Bonus Code</a></p>
+      <p><strong>Find BONUS codes</strong> shared on our <a href="#!">Facebook</a> or <a href="#!">Instagram</a> and in your local store flyer and enter them to <strong>earn bonus scratch tickets!</strong></p>
+      <p><a href="#!" class="bttn_flyer"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="29" viewBox="0 0 32 29"><path d="M29.33 16.73l2.62-11.55a1.33 1.33 0 00-1.3-1.63H8.85l-.52-2.48A1.33 1.33 0 007.03 0h-5.7A1.33 1.33 0 000 1.33v.9a1.33 1.33 0 001.33 1.32h3.88l3.9 19.08a3.11 3.11 0 103.73.47h11.64a3.1 3.1 0 103.53-.58l.3-1.34a1.33 1.33 0 00-1.3-1.63h-14.9l-.36-1.78h16.28a1.33 1.33 0 001.3-1.04z"/></svg>View Flyer</a></p>
+    </div>
+  </div>
+</section>
+<footer>
+  <div id="social">
+    <a href="#!"><img src="imgs/icn_fb.svg"></a>
+    <a href="#!"><img src="imgs/icn_ig.svg"></a>
+  </div>
+  <div id="footer_nav">
+    <a href="#!">Official Rules</a>  |  <a href="#!">Privacy & Security</a>  |  <a href="#!">Remove</a>
+  </div>
+  <a href="#!"><img id="footer_logo" src="imgs/tgp_logo.svg"></a>
+  <div id="policy">
+    NO PURCHASE NECESSARY. Starts September 8, 2022 and ends November 2, 2022, while supplies last. Must be a legal resident of BC, AB, SK, MB, ON, YT or NT and over the age of majority. Void elsewhere and were prohibited. For complete rules, eligibility requirements, methods of entry, no purchase entry means, odds, prize details and other terms, see <a href="#!">Official Rules</a> at <a href="#!">tgpwin.ca</a>.
+  </div>
+</footer>
+<script src="js/scratchcard.min.js"></script>
+<script>
+  let requestURL = 'js/data.json';
+</script>
+<script src="js/main.js"></script>
+</body>
+</html>

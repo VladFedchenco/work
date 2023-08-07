@@ -1,0 +1,437 @@
+* {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
+}
+
+*:focus {
+    outline: none;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h2, h3 {
+  margin: 0;
+}
+
+header {
+  position: relative;
+  height: 62px;
+  padding: 16px;
+  background-color: #b2304a;
+}
+
+footer {
+  padding: 24px 16px;
+  text-align: center;
+}
+
+input {
+  border: solid 1px #707070;
+  padding: 16px;
+  font-size: 16px;
+  display: block;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+button, .bttn {
+  display: block;
+  width: 100%;
+  padding: 12px 8px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: #C21D47;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 700;
+  background-color: #fff;
+  border: solid 1px #C21D47;
+  border-radius: 6px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, .3);
+  cursor: pointer;
+  transition: all .2s linear;
+  text-decoration: none;
+}
+
+button svg, .bttn svg {
+  vertical-align: middle;
+  height: 28px;
+  margin-right: 6px;
+}
+
+button path, .bttn path {
+  fill: #C21D47;
+  transition: all .2s linear;
+}
+
+button:hover, .bttn:hover {
+  color: #fff;
+  background-color: #C21D47;
+}
+
+button:hover path, .bttn:hover path {
+  fill: #fff;
+}
+
+a {
+  color: #000;
+}
+
+::-webkit-input-placeholder {
+  font-family: 'Open Sans', sans-serif;
+  opacity: 1;
+  color: #707070;
+  font-size: 16px;
+  transition: all .2s linear;
+}
+
+::placeholder {
+  font-family: 'Open Sans', sans-serif;
+  opacity: 1;
+  color: #707070;
+  font-size: 16px;
+  transition: all .2s linear;
+}
+
+:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+:focus::placeholder {
+  opacity: 0;
+}
+
+#footer_logo {
+  width: 86px;
+}
+
+#social {
+  padding-bottom: 8px;
+}
+
+#social a {
+  margin: 0px 10px;
+}
+
+#footer_nav {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  padding-bottom: 32px;
+}
+
+#policy {
+  font-size: 11px;
+  padding: 32px 0;
+  text-align: left;
+}
+
+#menu {
+  position: absolute;
+  top: 18px;
+  right: 24px;
+  display: block;
+  width: 28px;
+  height: 25px;
+  background: linear-gradient(to bottom, #fff 0px, #fff 5px, transparent 5px, transparent 10px, #fff 10px, #fff 15px, transparent 15px, transparent 20px, #fff 20px, #fff 25px)
+}
+
+#content {
+  max-width: 302px;
+  min-height: 422px;
+  padding: 45px 0 0 0;
+  margin: 0 auto;
+}
+
+#main {
+  position: relative;
+  width: 302px;
+  min-height: 326px;
+  margin: 0 auto;
+  text-align: center;
+  opacity: 1;
+  transition: all .3s ease-in-out;
+}
+
+#tgp_container, #tickt2x {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#tickt2x {
+  opacity: 1;
+  width: 302px;
+  height: 326px;
+  pointer-events: none;
+  transition: opacity .2s linear;
+}
+
+#tickt2x.invis {
+  opacity: 0;
+}
+
+#tgp_container img {
+  display: none;
+}
+
+#main canvas {
+  opacity: 1;
+  display: block;
+  cursor: url(../imgs/hand.svg), pointer;
+  margin-bottom: 16px;
+}
+
+#click_text {
+  opacity: 1;
+  text-align: left;
+  width: 60%;
+  padding-top: 8px;
+  transition: all .4s linear;
+}
+
+#click_anim {
+  opacity: 1;
+  width: 102px;
+  position: absolute;
+  right: 10px;
+  bottom: 4px;
+  transition: all .4s linear;
+}
+
+#click_text.invis, #click_anim.invis {
+  opacity: 0;
+}
+
+#prize {
+  min-height: 326px;
+  opacity: 0;
+  padding: 0 8px;
+  border: solid 4px rgba(253, 217, 11, .2);
+  transition: border-color .6s .4s linear;
+}
+
+#prize.ready {
+  border-color: rgba(253, 217, 11, 1);
+}
+
+#prize_id {
+  height: 159px;
+}
+
+#prize h2 {
+  display: block;
+  padding-top: 4px;
+  font-size: 24px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 700;
+  color: #C21D47;
+  margin: 0;
+}
+
+#prize h3 {
+  font-size: 20px;
+  line-height: 1.1;
+  font-weight: 700;
+  margin: 0;
+}
+
+#prize h4 {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0 0 4px 0;
+}
+
+#note {
+  font-size: 12px;
+  padding: 8px;
+}
+
+#note a {
+  color: #000;
+}
+
+#note a:hover {
+  text-decoration: none;
+}
+
+#bllt_box {
+  width: 140px;
+  overflow: hidden;
+  text-align: left;
+  margin: 0 auto;
+  padding: 16px 0 0 0;
+}
+
+#bllt_text {
+  font-size: 18px;
+  display: block;
+  margin: 0 auto;
+  width: 180px;
+  padding: 0 0 16px 0;
+}
+
+#giftcard {
+  height: 96px;
+  margin: 0 auto;
+}
+
+.clmn_40 {
+  float: left;
+  width: 40%;
+}
+
+.clmn_60 {
+  float: left;
+  width: 60%;
+}
+
+#bllt_box p {
+  margin: 0;
+  line-height: 1.1;
+}
+
+#entry_num {
+  font-weight: 700;
+  font-size: 36px;
+}
+
+#entry_text {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+#info_block {
+  line-height: 1.6;
+  padding-top: 20px;
+  text-align: center;
+  max-height: 900px;
+  opacity: 1;
+  transition: all .5s ease;
+  pointer-events: initial;
+}
+
+#info_block.invis {
+  opacity: 0;
+  max-height: 0px;
+  pointer-events: none;
+  padding-top: 0;
+  overflow: hidden;
+}
+
+#info.invis, #next_ticket.invis, #win_big.invis {
+  display: none;
+}
+
+#info h2, #win_big h2 {
+  font-size: 20px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 700;
+  color: #C21D47;
+  margin: 0;
+}
+
+#info p {
+  margin: 16px 0;
+}
+
+.big_link {
+  font-size: 18px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: bold;
+  color: #000;
+}
+
+.more {
+  font-style: italic;
+  font-size: 14px;
+}
+
+.next_game {
+  background-color: #FDD90B;
+  border-color: #FDD90B;
+  color: #000;
+}
+
+.next_game:hover {
+  border-color: #C21D47;
+}
+
+.next_game path {
+  fill: #000;
+}
+
+#win_big strong {
+  color: #C21D47;
+}
+
+.bttm_imgs {
+  width: 234px;
+}
+
+.bttn_flyer {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 16px;
+  color: #000;
+  font-weight: 700;
+}
+
+.bttn_flyer svg {
+  vertical-align: middle;
+  margin-right: 6px;
+}
+
+#stars {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+}
+
+#stars.play {
+  display: block;
+}
+
+.play #s3, .play #s5, .play #s8, .play #s12, .play #s16, .play #s19, .play #s23, .play #s26, .play #s30, .play #s32 {
+  animation: star_animation1 .85s ease-in-out forwards;
+}
+
+.play #s1, .play #s4, .play #s7, .play #s10, .play #s14, .play #s17, .play #s21, .play #s24, .play #s28, .play #s34 { 
+  animation: star_animation2 .9s ease-in-out forwards;
+}
+
+.play #s2, .play #s6, .play #s9, .play #s11, .play #s13, .play #s15, .play #s18, .play #s20, .play #s22, .play #s25, .play #s27, .play #s29, .play #s31, .play #s33, .play #s35 {
+  animation: star_animation3 .95s ease-in-out forwards;
+}
+
+@keyframes star_animation1 {
+  0% { transform: translate(400px, 400px) scale(.1) translate(-400px, -400px); }
+  30% { transform: translate(400px, 300px) scale(1) translate(-400px, -400px); opacity: 1; }
+  100% { transform: translate(400px, 600px) scale(1.2) translate(-400px, -400px); opacity: 0; }
+}
+
+@keyframes star_animation2 {
+  0% { transform: translate(400px, 400px) scale(.1) translate(-400px, -400px); }
+  30% { transform: translate(400px, 300px) rotate(-3deg) scale(1) translate(-400px, -400px); opacity: 1; }
+  100% { transform: translate(400px, 600px) rotate(-5deg) scale(1.2) translate(-400px, -400px); opacity: 0; }
+}
+
+@keyframes star_animation3 {
+  0% { transform: translate(400px, 400px) scale(.1) translate(-400px, -400px); }
+  30% { transform: translate(400px, 300px) rotate(3deg) scale(1) translate(-400px, -400px); opacity: 1; }
+  100% { transform: translate(400px, 600px) rotate(5deg) scale(1.2) translate(-400px, -400px); opacity: 0; }
+}
+
+#prize_head {
+  opacity: 1;
+  transition: opacity .6s .2s linear;
+}
+
+#prize_head.invis {
+  opacity: 0;
+}
