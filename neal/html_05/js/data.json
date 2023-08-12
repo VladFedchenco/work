@@ -1,0 +1,143 @@
+{
+"p1": {
+    "type": 1,
+    "duration": 12.3,
+    "im_profile": {
+        "im_path": "imgs/mk-1-400.jpg",
+        "im_dimensions": [400, 400],
+        "pos_eyes": [184, 106]
+    },
+    "im_bg": {
+        "im_path": "imgs/vox-office.jpg",
+        "im_dimensions": [1200, 800]
+    },
+    "im_overlay": {
+        "im_path": "imgs/vox-logo.svg",
+        "im_dimensions": [420, 204],
+        "position": [744, 260]
+    },
+    "txt_profile": {
+        "content": "Miranda Kennedy",
+        "size": 28,
+        "color": "#fff",
+        "position": [328, 563]
+    } 
+},
+"p2": {
+    "type": 2,
+    "duration": 3.7,
+    "im":  {
+        "im_path": "imgs/bezos.jpg",
+        "im_dimensions": [750, 906],
+        "position": [620, -70]
+    },
+    "txt_line1": {
+        "content": "Jeffrey",
+        "size": 110,
+        "color": "#fff",
+        "position": [94, 320]
+    },
+    "txt_line2": {
+        "content": "Bezos",
+        "size": 110,
+        "color": "#fff",
+        "position": [94, 445]
+    }
+},
+"p3": {
+    "type": 1,
+    "duration": 12.3,
+    "im_profile": {
+        "im_path": "imgs/norman.jpg",
+        "im_dimensions": [400, 400],
+        "pos_eyes": [222, 135]
+    },
+    "im_bg": {
+        "im_path": "imgs/office2.jpg",
+        "im_dimensions": [1200, 800]
+    },
+    "im_overlay": {
+        "im_path": "imgs/logo2.svg",
+        "im_dimensions": [460, 139],
+        "position": [744, 280]
+    },
+    "txt_profile": {
+        "content": "Norman Carmichael",
+        "size": 28,
+        "color": "#fff",
+        "position": [328, 563]
+    } 
+},
+"p4": {
+    "type": 3,   
+    "duration": 3.9,
+    "im": {
+        "im_path": "imgs/westminster.png",
+        "im_dimensions": [1350, 900],
+        "position": [-60, -90]
+    },
+    "txt_line1": {
+        "content": "Westminster",
+        "size": 110,
+        "color": "#1f1f1f",
+        "position": [94, 320]
+    },
+    "txt_line2": {
+        "content": "Abbey",
+        "size": 110,
+        "color": "#1f1f1f",
+        "position": [94, 445]
+    },
+    "txt_sub": {
+        "content": "London",
+        "size": 50,
+        "color": "#1f1f1f",
+        "position": [94, 524]
+    }
+},
+"p5": {
+    "type": 2,
+    "duration": 3.7,
+    "im":  {
+        "im_path": "imgs/charles-cop21.jpg",
+        "im_dimensions": [750, 906],
+        "position": [620, -70]
+    },
+    "txt_line1": {
+        "content": "Charlie",
+        "size": 110,
+        "color": "#fff",
+        "position": [94, 320]
+    },
+    "txt_line2": {
+        "content": "Windsor",
+        "size": 110,
+        "color": "#fff",
+        "position": [94, 445]
+    }
+},
+"p6": {
+    "type": 1,
+    "duration": 12.3,
+    "im_profile": {
+        "im_path": "imgs/pearlie.jpg",
+        "im_dimensions": [500, 500],
+        "pos_eyes": [270, 154]
+    },
+    "im_bg": {
+        "im_path": "imgs/office3.jpg",
+        "im_dimensions": [1200, 800]
+    },
+    "im_overlay": {
+        "im_path": "imgs/logo3.svg",
+        "im_dimensions": [400, 320],
+        "position": [780, 210]
+    },
+    "txt_profile": {
+        "content": "Pearlie Starr",
+        "size": 28,
+        "color": "#fff",
+        "position": [328, 563]
+    }
+}
+}

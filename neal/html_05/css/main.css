@@ -1,0 +1,497 @@
+@font-face {
+  font-family: 'Aeonik-Medium';
+  src: url('../fonts/Aeonik-Medium.eot');
+  src: url('../fonts/Aeonik-Medium.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Aeonik-Medium.woff2') format('woff2'),
+       url('../fonts/Aeonik-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Aeonik-Black';
+  src: url('../fonts/Aeonik-Black.eot');
+  src: url('../fonts/Aeonik-Black.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Aeonik-Black.woff2') format('woff2'),
+       url('../fonts/Aeonik-Black.woff') format('woff');
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+*:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+html, body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #1f1f1f;
+    text-align: center;
+}
+
+#animation {
+    font-family: 'Aeonik-Medium', sans-serif;
+}
+
+#animation svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.im_profile {
+    visibility: hidden;
+}
+
+@keyframes im_profile {
+    0%, 7.46% {
+        transform: translate(640px, 360px) scale(4.5) translate(-640px, -360px);
+    }
+    11.87%, 100% {
+        transform: translate(306px, 290px) scale(.85) translate(-640px, -360px);
+    }
+    0.1%, 99.9% {
+        visibility: visible;
+    }
+    0%, 100% {
+        visibility: hidden;
+    }
+}
+
+@keyframes c1 {0.00%{visibility: visible} 0.24%{visibility: hidden}}
+@keyframes c2 {0.24%{visibility: visible} 0.48%{visibility: hidden}}
+@keyframes c3 {0.48%{visibility: visible} 0.72%{visibility: hidden}}
+@keyframes c4 {0.72%{visibility: visible} 0.96%{visibility: hidden}}
+@keyframes c5 {0.96%{visibility: visible} 1.20%{visibility: hidden}}
+@keyframes c6 {1.20%{visibility: visible} 1.45%{visibility: hidden}}
+@keyframes c7 {1.45%{visibility: visible} 1.69%{visibility: hidden}}
+@keyframes c8 {1.69%{visibility: visible} 1.93%{visibility: hidden}}
+@keyframes c9 {1.93%{visibility: visible} 2.17%{visibility: hidden}}
+@keyframes c10 {2.17%{visibility: visible} 2.41%{visibility: hidden}}
+@keyframes c11 {2.41%{visibility: visible} 2.65%{visibility: hidden}}
+@keyframes c12 {2.65%{visibility: visible} 2.89%{visibility: hidden}}
+@keyframes c13 {2.89%{visibility: visible} 3.13%{visibility: hidden}}
+@keyframes c14 {3.13%{visibility: visible} 3.37%{visibility: hidden}}
+@keyframes c15 {3.37%{visibility: visible} 3.61%{visibility: hidden}}
+@keyframes c16 {3.61%{visibility: visible} 3.86%{visibility: hidden}}
+@keyframes c17 {3.86%{visibility: visible} 4.10%{visibility: hidden}}
+@keyframes c18 {4.10%{visibility: visible} 4.34%{visibility: hidden}}
+@keyframes c19 {4.34%{visibility: visible} 4.58%{visibility: hidden}}
+@keyframes c20 {4.58%{visibility: visible} 4.82%{visibility: hidden}}
+@keyframes c21 {4.82%{visibility: visible} 5.06%{visibility: hidden}}
+@keyframes c22 {5.06%{visibility: visible} 5.30%{visibility: hidden}}
+@keyframes c23 {5.30%{visibility: visible} 5.54%{visibility: hidden}}
+@keyframes c24 {5.54%{visibility: visible} 5.78%{visibility: hidden}}
+@keyframes c25 {5.78%{visibility: visible} 6.02%{visibility: hidden}}
+@keyframes c26 {6.02%{visibility: visible} 6.27%{visibility: hidden}}
+@keyframes c27 {6.27%{visibility: visible} 6.51%{visibility: hidden}}
+@keyframes c28 {6.51%{visibility: visible} 6.75%{visibility: hidden}}
+@keyframes c29 {6.75%{visibility: visible} 6.99%{visibility: hidden}}
+@keyframes c30 {6.99%{visibility: visible} 7.23%{visibility: hidden}}
+@keyframes c31 {7.23%{visibility: visible} 7.47%{visibility: hidden}}
+@keyframes c32 {7.47%{visibility: visible} 7.71%{visibility: hidden}}
+@keyframes c33 {7.71%{visibility: visible} 7.95%{visibility: hidden}}
+@keyframes c34 {7.95%{visibility: visible} 8.19%{visibility: hidden}}
+@keyframes c35 {8.19%, 100%{visibility: visible}}
+
+.text_bg, .text_clp {
+    visibility: hidden;
+}
+
+@keyframes text_bg {
+    0%, 10.84% {
+        transform: translate(324px, 554px) scale(0, 1) translate(-324px, -554px);
+    }
+    16.9%, 100% {
+        transform: translate(324px, 554px) scale(1, 1) translate(-324px, -554px);
+    }
+    0.1%, 99.9% {
+        visibility: visible;
+    }
+    0%, 100% {
+        visibility: hidden;
+    }
+}
+
+.avatar_text {
+    visibility: hidden;
+}
+
+@keyframes avatar_text {
+    0.1%, 99.9% {
+        visibility: visible;
+    }
+    0%, 100% {
+        visibility: hidden;
+    }
+}
+
+.white_bg {
+    visibility: hidden;
+}
+
+@keyframes white_bg {
+    0%, 7.46% {
+        transform: scale(1, 1);
+    }
+    11.87%, 100% {
+        transform: scale(.5, 1);
+    }
+    0.1%, 99.9% {
+        visibility: visible;
+    }
+    0%, 100% {
+        visibility: hidden;
+    }
+}
+
+.dark_bg {
+    visibility: hidden;
+}
+
+@keyframes dark_bg {
+    0%, 9.43% {
+        transform: scale(1, 1);
+    }
+    14.92%, 100% {
+        transform: scale(.5, 1);
+    }
+    0.1%, 14.92% {
+        visibility: visible;
+    }
+    0%, 14.93%, 100% {
+        visibility: hidden;
+    }
+}
+
+.im_bg {
+    visibility: hidden;
+}
+
+@keyframes im_bg {
+    0% {
+        transform: translate(1280px, 360px) scale(1.3) translate(-1280px, -360px);
+    }
+    89.57%, 100% {
+        transform: translate(1040px, 360px) scale(1.3) translate(-1280px, -360px);
+    }
+    0.1%, 99.9% {
+        visibility: visible;
+    }
+    0%, 100% {
+        visibility: hidden;
+    }
+}
+
+.im_bg_box {
+    visibility: hidden;
+}
+
+@keyframes im_bg_box {
+    0%, 89.57% {
+        transform: translate(0px, 0px);
+    }
+    100% {
+        transform: translate(-362px, 0px);
+    }
+    0.1%, 99.9% {
+        visibility: visible;
+    }
+    0%, 100% {
+        visibility: hidden;
+    }
+}
+
+.white_clp {
+    visibility: hidden;
+}
+
+@keyframes white_clp {
+    0%, 89.43% {
+        transform: translate(0px, 0px) scale(1, 1);
+    }
+    89.57% {
+        transform: translate(0px, 0px) scale(.5, 1);
+    }
+    100% {
+        transform: translate(-640px, 0px) scale(.5, 1);
+    }
+    0.1%, 99.9% {
+        visibility: visible;
+    }
+    0%, 100% {
+        visibility: hidden;
+    }
+}
+
+.logo, .sc1_dark_rect {
+    visibility: hidden;
+}
+
+@keyframes logo {
+    0.1%, 99.9% {
+        visibility: visible;
+    }
+    0%, 100% {
+        visibility: hidden;
+    }
+}
+
+.play .logo, .play .sc1_dark_rect {
+    visibility: visible;
+}
+
+.scene2_bg, .scene2_clp {
+    visibility: hidden;
+}
+
+@keyframes scene2_bg {
+    0% {
+        transform: translate(1280px, 0px) scale(1, 1);
+    }
+    31.3%, 100% {
+        transform: translate(0px, 0px) scale(.5, 1);
+    }
+    0.1%, 99.9% {
+        visibility: visible;
+    }
+    0%, 100% {
+        visibility: hidden;
+    }
+}
+
+.scene2_im {
+    visibility: hidden;
+}
+
+@keyframes scene2_im {
+    0%, 0.5%, 27%, 100% {
+        visibility: hidden;
+    }
+    0.6% {
+        visibility: visible;
+    }
+}
+
+.scene2_im2 {
+    visibility: hidden;
+}
+
+@keyframes scene2_im2 {
+    0%, 26.5%, 100% {
+        visibility: hidden;
+    }
+    26.6%, 99.9% {
+        visibility: visible;
+    }
+    0%, 63.5% {
+        transform: translate(0px, 0px);
+    }
+    100% {
+        transform: translate(-640px, 0px);
+    }
+}
+
+.scene2_txt1, .scene2_txt2, .scene3_txt1, .scene3_txt2, .scene3_txt3 {
+    font-family: 'Aeonik-Black', sans-serif;
+}
+
+.scene2_txt {
+    visibility: hidden;
+}
+
+@keyframes scene2_txt {
+    0%, 7.6% {
+        transform: translate(1200px, 0px);
+    }
+    55%, 100% {
+        transform: translate(0px, 0px);
+    }
+    0.1%, 99.9% {
+        visibility: visible;
+    }
+    0%, 100% {
+        visibility: hidden;
+    }
+}
+
+.scene3_bg {
+    visibility: hidden;
+}
+
+@keyframes scene3_bg {
+    0% {
+        transform: translate(1340px, 0px);
+    }
+    15.2%, 100% {
+        transform: translate(0px, 0px);
+    }
+    0.1%, 99.9% {
+        visibility: visible;
+    }
+    0%, 100% {
+        visibility: hidden;
+    }
+}
+
+.scene3_txt {
+    visibility: hidden;
+}
+
+@keyframes scene3_txt {
+    0%, 14.4% {
+        visibility: hidden;
+    }
+    14.5%, 100% {
+        visibility: visible;
+    }
+    0.1%, 99.9% {
+        visibility: visible;
+    }
+    0%, 100% {
+        visibility: hidden;
+    }
+}
+
+.scene3_txt1_wrp {
+    visibility: hidden;
+}
+
+@keyframes scene3_txt1_wrp {
+    0%, 15.3% {
+        transform: translate(0px, 500px);
+    }
+    37.8%, 100% {
+        transform: translate(0px, 0px);
+    }
+    0.1%, 99.9% {
+        visibility: visible;
+    }
+    0%, 100% {
+        visibility: hidden;
+    }
+}
+
+.scene3_txt2_wrp {
+    visibility: hidden;
+}
+
+@keyframes scene3_txt2_wrp {
+    0%, 27% {
+        transform: translate(0px, 480px);
+    }
+    50.85%, 100% {
+        transform: translate(0px, 0px);
+    }
+    0.1%, 99.9% {
+        visibility: visible;
+    }
+    0%, 100% {
+        visibility: hidden;
+    }
+}
+
+.scene3_txt3_wrp {
+    visibility: hidden;
+}
+
+@keyframes scene3_txt3_wrp {
+    0%, 37.8% {
+        transform: translate(0px, 480px);
+    }
+    61.65%, 100% {
+        transform: translate(0px, 0px);
+    }
+    0.1%, 99.9% {
+        visibility: visible;
+    }
+    0%, 100% {
+        visibility: hidden;
+    }
+}
+
+#last_bg {
+    visibility: hidden;
+}
+
+@keyframes last_bg {
+    0% {
+        transform: translate(640px, 0px) scale(0, 1) translate(-640px, 0px);
+    }
+    100% {
+        transform: translate(640px, 0px) scale(1, 1) translate(-640px, 0px);
+    }
+    0.1%, 100% {
+        visibility: visible;
+    }
+    0% {
+        visibility: hidden;
+    }
+}
+
+.animation {
+    width: 100%;
+    position: relative;
+}
+
+.scene_01, .scene_02, .scene_03, .black_out, .transition {
+    left: 0;
+    top: 0;
+    width: 100%;
+    position: absolute;
+}
+
+.black_out {
+    z-index: 99;
+}
+
+.transition_top {
+    visibility: hidden;
+}
+
+@keyframes transition_top {
+    0% {
+        transform: translate(0px, 360px) scale(1, 0) translate(0px, -360px);
+    }
+    40%, 60% {
+        transform: translate(0px, 360px) scale(1, 1) translate(0px, -360px);
+    }
+    100% {
+        transform: translate(0px, 0px) scale(1, 0) translate(0px, 0px);
+    }
+    0.1%, 99.9% {
+        visibility: visible;
+    }
+    0%, 100% {
+        visibility: hidden;
+    }
+}
+
+.transition_bottom {
+    visibility: hidden;
+}
+
+@keyframes transition_bottom {
+    0% {
+        transform: translate(0px, 360px) scale(1, 0) translate(0px, -360px);
+    }
+    40%, 60% {
+        transform: translate(0px, 360px) scale(1, 1) translate(0px, -360px);
+    }
+    100% {
+        transform: translate(0px, 720px) scale(1, 0) translate(0px, -720px);
+    }
+    0.1%, 99.9% {
+        visibility: visible;
+    }
+    0%, 100% {
+        visibility: hidden;
+    }
+}
+
+@media screen and (min-width: 420px) {
+
+}
