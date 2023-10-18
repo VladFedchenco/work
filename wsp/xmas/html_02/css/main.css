@@ -1,0 +1,679 @@
+* {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+*:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Figtree', sans-serif;
+}
+
+header {
+    display: block;
+    height: 62px;
+    background: #8FC946;
+    padding: 14px 24px;
+    text-align: right;
+}
+
+footer {
+    background-color: #8FC946;
+    color: #fff;
+    padding: 16px 24px;
+    text-align: center;
+}
+
+#main {
+    max-width: 356px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#main_ttl {
+    height: 53px;
+}
+
+#footer_links {
+    padding: 16px 0;
+    text-align: center;
+}
+
+#footer_links a {
+    color: #333F4B;
+    text-decoration: none;
+    font-size: 12px;
+    margin: 0px 8px;
+    text-decoration: underline;
+}
+
+#footer_links a:hover {
+    text-decoration: none;
+}
+
+#copy {
+    max-width: 1160px;
+    margin: 0 auto;
+    font-size: 12px;
+    color: #fff;
+}
+
+#copy a {
+    color: #fff;
+}
+
+#start_bttn {
+    display: block;
+    width: 266px;
+    padding: 12px 24px;
+    margin: 0 auto;
+    text-align: center;
+    text-decoration: none;
+    background-color: #8FC946;
+    border-radius: 48px;
+    font-size: 15px;
+    line-height: 1.2;
+    color: #fff;
+    font-weight: bold;
+}
+
+#start_bttn:hover {
+    background-color: #98d54a;
+}
+
+#start_bttn.invis {
+    display: none;
+}
+
+#main_logos {
+    text-align: center;
+    margin: 48px 0 32px 0;
+    padding: 12px 0;
+    border: solid 1px #000;
+    border-left: none;
+    border-right: none;
+}
+
+#logo_udf {
+    display: inline-block;
+    height: 42px;
+    margin: 4px 12px 4px 0;
+}
+
+#logo_xmas {
+    display: inline-block;
+    height: 52px;
+    margin: 0px 12px 0px 12px;
+}
+
+#logo_udrive {
+    display: inline-block;
+    height: 50px;
+    margin: 2px 12px 0px 12px;
+}
+
+#bottom_logos {
+    text-align: center;
+}
+
+#logo_pepsi {
+    display: inline-block;
+    height: 52px;
+    margin: 2px 6px 0px 6px;
+}
+
+#logo_monster {
+    display: inline-block;
+    height: 38px;
+    margin: 4px 6px 8px 6px;
+}
+
+#logo_cola {
+    display: inline-block;
+    height: 26px;
+    margin: 4px 4px 10px 4px;
+}
+
+#logo_mars {
+    display: inline-block;
+    height: 12px;
+    margin: 0px 4px 14px 4px;
+}
+
+#logo_chexmix {
+    display: inline-block;
+    height: 42px;
+    margin: 0px 4px 0px 4px;
+}
+
+#logo_mondelez {
+    display: inline-block;
+    height: 22px;
+    margin: 4px 4px 10px 4px;
+}
+
+#snow {
+    transform: translate(0px, 836px);
+}
+
+.play #snow {
+    animation: snow 6.5s ease-out;
+}
+
+#animation {
+    pointer-events: none;
+    cursor: default;
+}
+
+.static #animation {
+    pointer-events: initial;
+    cursor: pointer;
+}
+
+@keyframes snow {
+    0% {
+        transform: translate(0px, 836px);
+    }
+    80%, 100% {
+        transform: translate(0px, 0px);
+    }
+    0%, 80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.static #sf1 {
+    animation: sf1 10s -5s linear infinite;
+}
+
+.play #sf1 {
+    animation: sf1 2s -.5s linear infinite;
+}
+
+@keyframes sf1 {
+    0% {
+        transform: translate(720px, 0px) rotate(-30deg) scale(.88);
+    }
+    100% {
+        transform: translate(720px, 800px) rotate(-30deg) scale(.88);
+    }
+}
+
+.static #sf2 {
+    animation: sf2 9s -2s linear infinite;
+}
+
+.play #sf2 {
+    animation: sf2 1.5s -5s linear infinite;
+}
+
+@keyframes sf2 {
+    0% {
+        transform: translate(776px, 0px) rotate(12deg) scale(.3);
+    }
+    100% {
+        transform: translate(776px, 800px) rotate(12deg) scale(.3);
+    }
+}
+
+.static #sf3 {
+    animation: sf3 11s -.5s linear infinite;
+}
+
+.play #sf3 {
+    animation: sf3 1s -.25s linear infinite;
+}
+
+@keyframes sf3 {
+    0% {
+        transform: translate(775px, 0px) rotate(12deg) scale(.38);
+    }
+    100% {
+        transform: translate(775px, 800px) rotate(12deg) scale(.38);
+    }
+}
+
+.static #sf4 {
+    animation: sf4 12s -.5s linear infinite;
+}
+
+.play #sf4 {
+    animation: sf4 2s -1.25s linear infinite;
+}
+
+@keyframes sf4 {
+    0% {
+        transform: translate(602px, 0px) rotate(12deg) scale(.38);
+    }
+    100% {
+        transform: translate(602px, 800px) rotate(12deg) scale(.38);
+    }
+}
+
+.static #sf5 {
+    animation: sf5 8s -2s linear infinite;
+}
+
+.play #sf5 {
+    animation: sf5 1s -.5s linear infinite;
+}
+
+@keyframes sf5 {
+    0% {
+        transform: translate(393px, 0px) rotate(12deg) scale(.36);
+    }
+    100% {
+        transform: translate(393px, 800px) rotate(12deg) scale(.36);
+    }
+}
+
+.static #sf6 {
+    animation: sf6 13s -2s linear infinite;
+}
+
+.play #sf6 {
+    animation: sf6 1.5s -1.1s linear infinite;
+}
+
+@keyframes sf6 {
+    0% {
+        transform: translate(701px, 0px) rotate(12deg) scale(.8);
+    }
+    100% {
+        transform: translate(701px, 800px) rotate(12deg) scale(.8);
+    }
+}
+
+.static #sf7 {
+    animation: sf7 11s -3s linear infinite;
+}
+
+.play #sf7 {
+    animation: sf7 2s -1.5s linear infinite;
+}
+
+@keyframes sf7 {
+    0% {
+        transform: translate(265px, 0px) rotate(-30deg) scale(.82);
+    }
+    100% {
+        transform: translate(265px, 800px) rotate(-30deg) scale(.82);
+    }
+}
+
+.static #sf8 {
+    animation: sf8 7s -7s linear infinite;
+}
+
+.play #sf8 {
+    animation: sf8 1.5s -.5s linear infinite;
+}
+
+@keyframes sf8 {
+    0% {
+        transform: translate(260px, 0px) rotate(12deg);
+    }
+    100% {
+        transform: translate(260px, 800px) rotate(12deg);
+    }
+}
+
+#light2 {
+    animation: light2 1.4s linear infinite;
+}
+
+@keyframes light2 {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+#shake_flakes {
+    opacity: 1;
+    display: none;
+}
+
+.play #shake_flakes {
+    display: block;
+}
+
+.play #sf9 {
+    animation: sf9 2s -.5s linear infinite;
+}
+
+@keyframes sf9 {
+    0% {
+        transform: translate(500px, 0px) rotate(-30deg) scale(.88);
+    }
+    100% {
+        transform: translate(500px, 800px) rotate(-30deg) scale(.88);
+    }
+}
+
+.play #sf10 {
+    animation: sf10 2.5s -1s linear infinite;
+}
+
+@keyframes sf10 {
+    0% {
+        transform: translate(110px, 0px) rotate(12deg) scale(.3);
+    }
+    100% {
+        transform: translate(110px, 800px) rotate(12deg) scale(.3);
+    }
+}
+
+.play #sf11 {
+    animation: sf11 1s -.7s linear infinite;
+}
+
+@keyframes sf11 {
+    0% {
+        transform: translate(326px, 0px) rotate(12deg) scale(.38);
+    }
+    100% {
+        transform: translate(326px, 800px) rotate(12deg) scale(.38);
+    }
+}
+
+.play #sf12 {
+    animation: sf12 2s -1.2s linear infinite;
+}
+
+@keyframes sf12 {
+    0% {
+        transform: translate(429px, 0px) rotate(12deg) scale(.38);
+    }
+    100% {
+        transform: translate(429px, 800px) rotate(12deg) scale(.38);
+    }
+}
+
+.play #sf13 {
+    animation: sf13 2.4s -2s linear infinite;
+}
+
+@keyframes sf13 {
+    0% {
+        transform: translate(610px, 0px) rotate(12deg) scale(.36);
+    }
+    100% {
+        transform: translate(610px, 800px) rotate(12deg) scale(.36);
+    }
+}
+
+.play #sf14 {
+    animation: sf14 2s -.5s linear infinite;
+}
+
+@keyframes sf14 {
+    0% {
+        transform: translate(450px, 0px) rotate(12deg) scale(.8);
+    }
+    100% {
+        transform: translate(450px, 800px) rotate(12deg) scale(.8);
+    }
+}
+
+.play #sf15 {
+    animation: sf15 1.8s -1.5s linear infinite;
+}
+
+@keyframes sf15 {
+    0% {
+        transform: translate(520px, 0px) rotate(-30deg) scale(.82);
+    }
+    100% {
+        transform: translate(520px, 800px) rotate(-30deg) scale(.82);
+    }
+}
+
+
+.play #sf16 {
+    animation: sf16 2.5s -2s linear infinite;
+}
+
+@keyframes sf16 {
+    0% {
+        transform: translate(290px, 0px) rotate(12deg);
+    }
+    100% {
+        transform: translate(290px, 800px) rotate(12deg);
+    }
+}
+
+.play #ball {
+    animation: ball 5s ease-in-out forwards;
+}
+
+@keyframes ball {
+    0%, 100% {
+        transform: translate(510px, 1100px) rotate(0deg) translate(-510px, -1100px);
+    }
+    10%, 30%, 50%, 70%, 90% {
+        transform: translate(510px, 1080px) rotate(5deg) translate(-510px, -1100px);
+    }
+    20%, 40%, 60%, 80% {
+        transform: translate(510px, 1080px) rotate(-5deg) translate(-510px, -1100px);
+    }
+}
+
+.play #shadow {
+    animation: shadow 5s ease-in-out forwards;
+}
+
+@keyframes shadow {
+    0%, 100% {
+        opacity: 1;
+        transform: translate(556px, 1100px) rotate(0deg) scale(1, 1) translate(-556px, -1100px);
+    }
+    10%, 30%, 50%, 70%, 90% {
+        opacity: .5;
+        transform: translate(440px, 1130px) rotate(-3deg) scale(.9, .5) translate(-556px, -1100px);
+    }
+    20%, 40%, 60%, 80% {
+        opacity: .5;
+        transform: translate(556px, 1130px) rotate(1deg) scale(.9, .5) translate(-556px, -1100px);
+    }
+}
+
+#dollar {
+    display: none;
+}
+
+.static #dollar, .play #dollar {
+    display: block;
+}
+
+.play #dollar {
+    animation: dollar 5s linear forwards;
+}
+
+@keyframes dollar {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+#prize.invis {
+    display: none;
+}
+
+#snowflakes {
+    opacity: 1;
+}
+
+#snowflakes.invis, #shake_flakes.invis {
+    opacity: 0;
+    transition: opacity 1s linear;
+}
+
+#prize_h1 {
+    opacity: 0;
+    user-select: none;
+    pointer-events: none;
+    font-size: 22px;
+    margin: 0;
+    color: #8FC946;
+    text-align: center;
+    display: block;
+    padding: 20px 0 0 0;
+    transition: opacity .3s linear;
+}
+
+#prize_h1.vis {
+    opacity: 1;
+}
+
+#prize_name {
+    font-size: 20px;
+    margin: 0;
+    color: #8FC946;
+    text-align: center;
+    display: block;
+    padding: 0 12px;
+}
+
+#content_section {
+    min-height: 60px;
+}
+
+#size {
+    font-size: 14px;
+    text-align: center;
+    color: #8FC946;
+    display: block;
+    margin: 0;
+    padding: 12px 12px 0 12px;
+}
+
+#chance {
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    color: #000;
+    display: block;
+    margin: 0;
+    padding: 24px 12px 12px 12px;
+}
+
+#again_bttn {
+    display: block;
+    width: 266px;
+    padding: 12px 24px;
+    margin: 0 auto;
+    text-align: center;
+    text-decoration: none;
+    background-color: #8FC946;
+    border-radius: 48px;
+    font-size: 15px;
+    line-height: 1.2;
+    color: #fff;
+    font-weight: bold;
+}
+
+#again_bttn.invis {
+    display: none;
+}
+
+#again_bttn svg {
+    vertical-align: middle;
+}
+
+#again_bttn:hover {
+    box-shadow: 0px 2px 4px rgba(0,0,0,.2);
+}
+
+#again_bttn:active {
+    box-shadow: 0px 4px 6px rgba(0,0,0,.2) inset;
+}
+
+#parize_h3 {
+    font-size: 15px;
+    text-align: center;
+    display: block;
+    margin: 0;
+    padding: 12px 8px 0px 8px;
+}
+
+#more_chances {
+    text-align: center;
+}
+
+#more_chances.invis {
+    display: none;
+}
+
+#more_chances img {
+    width: 358px;
+    display: block;
+    margin: 0 auto;
+}
+
+#more_chances p {
+    font-size: 15px;
+    text-align: center;
+    display: block;
+    margin: 0;
+    padding: 12px 8px 24px 8px;
+}
+
+#more_chances a {
+    font-size: 12px;
+    color: #000;
+    margin: 0px 8px;
+}
+
+#more_chances a svg {
+    vertical-align: middle;
+    margin-right: 4px;
+}
+
+#hidden_content {
+    display: none;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height .8s ease-in-out;
+}
+
+#hidden_content.vis {
+    display: block;
+}
+
+#hidden_content.vis.open {
+    max-height: 550px;
+}
+
+@media screen and (min-width: 640px) {
+    #main {
+        max-width: 600px;
+    }
+    #main #animation {
+        width: 356px;
+        display: block;
+        margin: 0 auto;
+    }
+    #bottom_logos div {
+        display: inline-block;
+    }
+    #logo_pepsi {
+        margin-bottom: -4px;
+    }
+    #logo_monster {
+        margin-bottom: 2px;
+    }
+}
