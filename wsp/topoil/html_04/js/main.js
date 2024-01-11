@@ -23,6 +23,7 @@ function gstart() {
   $("#animated_parts").classList.add("animated");
   $("#start").classList.add("invis");
   $("#animation").style.cursor = "default";
+  $("#animation").style.pointerEvents = "none";
   setTimeout(function(){
     $("#content").classList.remove("invis");
   }, 7000);
