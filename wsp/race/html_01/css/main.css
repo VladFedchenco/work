@@ -244,7 +244,6 @@ footer h3 {
     max-width: 1238px;
     min-height: 900px;
     text-align: center;
-    transition: all .4s linear;
     position: relative;
 }
 
@@ -403,6 +402,8 @@ footer h3 {
 
     #mobile_menu {
         display: block;
+        top: 15px;
+        right: 16px;
     }
 
     #main_header .clmns {
@@ -410,13 +411,35 @@ footer h3 {
     }
 
     header {
-        min-height: 62px;
+        min-height: 44px;
     }
 
     .footer_logo {
         width: 100%;
         float: none;
         margin-bottom: 16px;
+    }
+
+    #main {
+        padding: 48px 0 8px 0;
+        min-height: inherit;
+    }
+
+    #game {
+        width: 284px;
+        height: auto;
+    }
+
+    #start_race {
+        top: 570px;
+        width: 200px;
+        height: 44px;
+        font-size: 16px;
+        line-height: 44px;
+    }
+
+    #skip {
+        top: 626px;
     }
 
 }
