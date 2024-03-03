@@ -1,0 +1,445 @@
+@font-face {
+    font-family: 'Bourton';
+    src: url('../fonts/bourton.woff2') format('woff2'),
+         url('../fonts/bourton.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
+}
+
+*:focus {
+    outline: none;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Verdana', sans-serif;
+  background: linear-gradient(#000, #fff) repeat-x;
+  min-height: 100%;
+
+}
+
+header {
+    background: #EC1F31;
+    min-height: 85px;
+    padding: 20px 24px 0 24px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    z-index: 99;
+}
+
+header a {
+    display: inline-block;
+    height: 28px;
+    line-height: 28px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: .07em;
+    margin: 0px 12px;
+}
+
+header .clmn_70 a {
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+header .clmn_70 a:hover {
+    color: #000;
+}
+
+header .clmn_70 a:hover svg path {
+    fill: #000;
+}
+
+header .clmn_30 {
+    text-align: right;
+}
+
+header svg {
+    vertical-align: middle;
+    margin-top: -3px;
+}
+
+a {
+    color: #00B1DF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: normal;
+    margin: 0;
+    line-height: 1.6;
+}
+
+h4 span {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 24px;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.clmns {
+    overflow: hidden;
+    position: relative;
+}
+
+.clmn_70 {
+    float: left;
+    width: 70%;
+    padding: 4px 8px 16px 8px;
+}
+
+.clmn_50 {
+    float: left;
+    width: 50%;
+    padding: 8px 16px;
+}
+
+.clmn_30 {
+    float: left;
+    width: 30%;
+    padding: 4px 16px;
+}
+
+a.bttn_pin {
+    display: inline-block;
+    height: auto;
+    background: #fff;
+    color: #000;
+    border: solid 1px transparent;
+    border-radius: 4px;
+    padding: 2px 16px 2px 12px;
+    margin-bottom: 8px;
+}
+
+a.bttn_pin:hover {
+    color: #fff;
+    border: solid 1px #fff;
+    background: transparent;
+    text-decoration: none;
+}
+
+a.bttn_pin:hover svg path {
+    fill: #fff;
+}
+
+a.bttn_log {
+    display: inline-block;
+    height: auto;
+    background: none;
+    color: #fff;
+    border-radius: 4px;
+    border: solid 1px #fff;
+    padding: 2px 16px 2px 12px;
+    margin-bottom: 8px;
+}
+
+a.bttn_log:hover {
+    background: #fff;
+    color: #000;
+    text-decoration: none;
+}
+
+a.bttn_log:hover svg path {
+    fill: #000;
+}
+
+footer {
+    background: #fff;
+    width: 100%;
+    max-width: 1238px;
+    padding: 16px 20px 30px 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: underline;
+}
+
+footer a:hover {
+    text-decoration: none;
+}
+
+footer h3 {
+    font-size: 22px;
+    color: #00863F;
+    font-weight: normal;
+}
+
+#logos {
+    width: 300px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.footer_logo {
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+
+.footer_logo img {
+    max-width: 140px;
+}
+
+.social_icons a {
+    margin: 0 4px;
+}
+
+#footer_links {
+    padding: 16px 0;
+    font-size: 14px;
+}
+
+#footer_links a, #footer_note a {
+    color: #000;
+}
+
+#footer_links a {
+    margin: 0 6px;
+}
+
+#footer_note {
+    font-size: 11px;
+    color: #000;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.social {
+    padding: 32px 8px 8px 8px;
+}
+
+.social a {
+    margin: 0 8px;
+}
+
+#main {
+    background: #fff;
+    padding: 100px 0px 48px 0px;
+    margin: 0 auto;
+    opacity: 1;
+    width: 100%;
+    max-width: 1238px;
+    min-height: 900px;
+    text-align: center;
+    position: relative;
+}
+
+#mobile_menu {
+    display: none;
+    margin: 0;
+    position: absolute;
+    cursor: pointer;
+    top: 26px;
+    right: 24px;
+    width: 21px;
+    height: 12px;
+    background: linear-gradient(to bottom, #fff 0px, #fff 2px, transparent 2px, transparent 5px, #fff 5px, #fff 7px, transparent 7px, transparent 10px, #fff 10px, #fff 12px);
+}
+
+#start_race {
+    display: block;
+    position: absolute;
+    width: 200px;
+    height: 48px;
+    line-height: 48px;
+    left: 50%;
+    top: 780px;
+    background: #97c254;
+    color: #fff;
+    transform: translateX(-50%);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: opacity .2s linear;
+}
+
+#start_race:hover {
+    color: #000;
+    background: #fff;
+}
+
+#skip {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 840px;
+    color: #fff;
+    transform: translateX(-50%);
+    transition: opacity .2s linear;
+}
+
+#start_race.invisible, #skip.invisible {
+    display: none;
+}
+
+#start_race.semitransparent, #skip.semitransparent {
+    pointer-events: none;
+    opacity: .5;
+}
+
+#car_orange, #car_red, #car_blue {
+    transform: translate(0px, 0px);
+    transition: all .3s ease-in-out;
+}
+
+#car_orange.car_selected, #car_red.car_selected, #car_blue.car_selected {
+    transform: translate(0px, -108px);
+}
+
+#bttn_car_orange:hover #car_orange:not(.car_selected), #bttn_car_red:hover #car_red:not(.car_selected), #bttn_car_blue:hover #car_blue:not(.car_selected) {
+    transform: translate(0px, -10px);
+}
+
+#bttn_car_orange.disabled, #bttn_car_red.disabled, #bttn_car_blue.disabled {
+    pointer-events: none;
+}
+
+#smoke1, #smoke2, #smoke3 {
+    display: none;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity .4s linear;
+}
+
+#smoke1.visible, #smoke2.visible, #smoke3.visible {
+    display: block;
+} 
+
+#smoke1.opaque, #smoke2.opaque, #smoke3.opaque {
+    opacity: 1;
+}
+
+#countdown, #top_logo {
+    transition: opacity .3s linear;
+}
+
+#countdown.invisible, #top_logo.invisible {
+    opacity: 0;
+}
+
+#c3, #c2, #c1 {
+    opacity: 0;
+}
+
+.play #c3 {
+    opacity: 0;
+    animation: countdown 1.1s linear forwards;
+}
+
+.play #c2 {
+    opacity: 0;
+    animation: countdown 1.1s 1s linear forwards;
+}
+
+.play #c1 {
+    opacity: 0;
+    animation: countdown 1.1s 2s linear forwards;
+}
+
+#track {
+    opacity: 1;
+    transition: opacity .3s linear;
+}
+
+#track.invisible {
+    opacity: 0;
+    pointer-events: none;
+}
+
+@keyframes countdown {
+    0%, 100% {
+        opacity: 0;
+    }
+    5%, 95% {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 1390px) {
+    header a {
+        font-size: 12px;
+        letter-spacing: initial;
+        margin: 0px 2px;
+    }
+    .clmn_70 {
+        padding: 8px 4px;
+    }
+    .clmn_30 {
+        padding: 4px;
+    }
+    header a svg {
+        width: 21px;
+        height: 21px;
+    }
+}
+
+@media (max-width: 998px) {
+
+    #mobile_menu {
+        display: block;
+        top: 15px;
+        right: 16px;
+    }
+
+    #main_header .clmns {
+        display: none;
+    }
+
+    header {
+        min-height: 44px;
+    }
+
+    .footer_logo {
+        width: 100%;
+        float: none;
+        margin-bottom: 16px;
+    }
+
+    #main {
+        padding: 46px 0 0 0;
+        min-height: inherit;
+    }
+
+    #game {
+        width: 100%;
+        height: 560px;
+    }
+
+    #start_race {
+        top: 520px;
+        width: 200px;
+        height: 44px;
+        font-size: 16px;
+        line-height: 44px;
+    }
+
+    #skip {
+        top: 575px;
+    }
+
+}
