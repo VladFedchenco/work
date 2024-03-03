@@ -421,17 +421,17 @@ footer h3 {
     }
 
     #main {
-        padding: 48px 0 8px 0;
+        padding: 46px 0 0 0;
         min-height: inherit;
     }
 
     #game {
-        width: 284px;
-        height: auto;
+        width: 100%;
+        height: 560px;
     }
 
     #start_race {
-        top: 570px;
+        top: 520px;
         width: 200px;
         height: 44px;
         font-size: 16px;
@@ -439,7 +439,7 @@ footer h3 {
     }
 
     #skip {
-        top: 626px;
+        top: 575px;
     }
 
 }
