@@ -1019,11 +1019,16 @@ footer h3 {
     }
 
     #start_race {
-        top: 520px;
-        width: 200px;
-        height: 44px;
+        top: 474px;
+        width: 180px;
+        height: 90px;
         font-size: 16px;
         line-height: 44px;
+    }
+
+    #start_race img {
+        width: 180px;
+        height: 90px;
     }
 
     #enter_pin, #claim_prize {
