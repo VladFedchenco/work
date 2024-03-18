@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>Peetchr</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.7/lottie.min.js" integrity="sha512-HDCfX3BneBQMfloBfluMQe6yio+OfXnbKAbI0SnfcZ4YfZL670nc52Aue1bBhgXa+QdWsBdhMVR2hYROljf+Fg==" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<div id="container"></div>
+<script>
+   var animation = bodymovin.loadAnimation({
+      // animationData: { /* ... */ },
+      container: document.getElementById('container'), // required
+      path: 'data.json', // required
+      renderer: 'svg', // required
+      loop: true, // optional
+      autoplay: true, // optional
+   });
+</script>
+</body>
+</html>
