@@ -109,6 +109,8 @@
   let url = new URL(url_string);
   let v = url.searchParams.get("v");
 
+  !v ? v = 18010 : console.log(v);
+
   let requestURL = 'js/' + v + '.json';
 </script>
 <script src="js/main.js"></script>
