@@ -18,8 +18,7 @@ window.addEventListener('load', function () {
     nPoints: 200,
     pointSize: 3,
     callback: function () {
-      $("#sound").loop = false;
-      $("#sound").play();
+      play_sound();
       window.removeEventListener('mousemove', moveCursor);
       window.removeEventListener('touchmove', moveCursorMobile);
       custom_cursor.classList.add("invis");
@@ -91,7 +90,6 @@ const moveCursorMobile = (e)=> {
 
 function play_sound() {
   $("#sound").play();
-  $("#sound").loop = true;
 }
 
 function ticket_reveal(e) {
