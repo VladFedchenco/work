@@ -18,11 +18,13 @@ window.addEventListener('load', function () {
     nPoints: 200,
     pointSize: 3,
     callback: function () {
-      play_sound();
       window.removeEventListener('mousemove', moveCursor);
       window.removeEventListener('touchmove', moveCursorMobile);
       custom_cursor.classList.add("invis");
       $("body").classList.remove("hide_cursor");
+
+      $("#sound").play();
+      $("#sound").loop = false;
 
       ticket.setAttribute("style", "display: none");
       $('#prize_head').classList.remove("invis");
@@ -86,10 +88,6 @@ const moveCursorMobile = (e)=> {
   const mouseX = e.touches[0].clientX;
   custom_cursor.style.left = `${mouseX}px`;
   custom_cursor.style.top = `${mouseY}px`;
-}
-
-function play_sound() {
-  $("#sound").play();
 }
 
 function ticket_reveal(e) {
