@@ -71,17 +71,15 @@ const moveCursorMobile = (e)=> {
 }
 
 document.body.addEventListener("mousedown", function () {
-  if(body_event) {
-    body_event = false;
     play_sound();
-  }
+})
+
+document.body.addEventListener("touchstart", function () {
+    play_sound();
 })
 
 document.body.addEventListener("touchend", function () {
-  if(body_event) {
-    body_event = false;
     play_sound();
-  }
 })
 
 function start_scratching() {
