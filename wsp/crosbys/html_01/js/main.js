@@ -24,9 +24,9 @@ const sc = new ScratchCard('#card', {
   scratchType: SCRATCH_TYPE.BRUSH,
   containerWidth: 302,
   containerHeight: 326,
-  brushSrc: '../imgs/brush.png',
-  imageForwardSrc: '../imgs/campfire.png',
-  imageBackgroundSrc: '../imgs/empty.png',
+  brushSrc: 'imgs/brush.png',
+  imageForwardSrc: 'imgs/campfire.png',
+  imageBackgroundSrc: 'imgs/empty.png',
   enabledPercentUpdate: true,
   percentToFinish: 70,
   callback: function () {
