@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+*:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+header {
+    display: block;
+    height: 62px;
+    background: #EB1E45;
+    padding: 18px 24px 0 24px;
+    text-align: right;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    letter-spacing: .15em;
+    margin-right: 18px;
+}
+
+a#mobile_menu {
+    margin: 0;
+}
+
+header a:hover {
+    opacity: .9;
+}
+
+footer {
+    font-size: 14px;
+    padding: 36px;
+    text-align: center;
+}
+
+footer a {
+    color: #000;
+}
+
+footer a:hover {
+    text-decoration: none;
+}
+
+footer #footer_links a {
+    font-size: 16px;
+    margin: 0 8px;
+}
+
+h1 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #EB1E45;
+    display: block;
+    height: 70px;
+    width: 290px;
+    margin: 16px auto;
+    padding: 16px 0 0 0;
+    text-align: center;
+}
+
+#logo_footer {
+    display: block;
+    width: 310px;
+    margin: 0 auto 16px auto;
+}
+
+#main {
+    max-width: 375px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#card {
+    margin: 0 auto;
+    width: 302px;
+    height: 326px;
+}
+
+#card.no_pointer {
+    cursor: none;
+}
+
+#card img {
+    display: none;
+}
+
+#bonfire {
+    position: absolute;
+    left: 36px;
+    top: 86px;
+    pointer-events: none;
+}
+
+#marshmallow {
+    opacity: 1;
+    position: absolute;
+    left: 50%;
+    top: 260px;
+    transform: translate(-50%, 0);
+    pointer-events: none;
+    animation: float 2s ease-in-out infinite;
+    transition: opacity .3s linear;
+}
+
+#marshmallow.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+#pointer {
+    opacity: 1;
+    position: absolute;
+    left: calc(50% + 90px);
+    top: 440px;
+    transform: translate(-50%, 0);
+    pointer-events: none;
+    animation: float 2s ease-in-out infinite;
+}
+
+#pointer.invis {
+    display: none;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translate(-50%, 0px);
+    }
+    50% {
+        transform: translate(-50%, 10px);
+    }
+}
+
+@media screen and (max-width: 750px) {
+
+}

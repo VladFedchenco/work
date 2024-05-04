@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Crosby's Rewards</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+<header>
+  <a id="mobile_menu" href="javascript:;"><img src="imgs/bars-solid.svg"></a>
+</header>
+
+<section id="main">
+  <h1>Toast Your Marshmallows to Reveal Your Prize!</h1>
+  <div id="card"></div>
+  <img id="bonfire" src="imgs/bonfire.svg">
+</section>
+
+<footer>
+  <img id="logo_footer" src="imgs/logo_mcr.png">
+  <div id="footer_links"><a href="#!">Official Rules</a> <a href="#!">Privacy & Security</a></div>
+  <p>No purchase necessary. Starts May 23, 2024; ends Sept. 5, 2024, while supplies last. Must be legal resident of NY or PA and age of majority. Earn a digital game ticket with a qualifying transaction when you are a registered My Crosby's Rewards member. Every digital ticket reveals an instant win prize, BOGO, fuel discount or rewards point. Prizes may not be exactly as illustrated. Over $450,000 in prizes, fuel discounts and rewards points available to be won. See <a href="#!">Official Rules</a> for complete details, eligibility requirements, available prizes, odds and no purchase entry means.</p>
+</footer>
+
+<img id="marshmallow" src="imgs/stick.svg">
+<img id="pointer" src="imgs/hand.svg">
+
+<audio id="sound" src="mp3/bonfire.mp3"></audio>
+<audio id="sound2" src="mp3/win.mp3"></audio>
+<script type="text/javascript">
+  let requestURL = 'js/data.json';
+</script>
+<script src="js/scratchcard.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
