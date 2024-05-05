@@ -28,6 +28,7 @@ const sc = new ScratchCard('#card', {
   enabledPercentUpdate: true,
   percentToFinish: 50,
   callback: function () {
+    $("#big_fire").setAttribute("src", "imgs/big_fire.svg");
     document.body.removeEventListener("mousedown", play_sound);
     document.body.removeEventListener("touchstart", play_sound);
     document.body.removeEventListener("touchend", play_sound);
