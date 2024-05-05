@@ -74,6 +74,25 @@ h1 {
     text-align: center;
 }
 
+#main_title {
+    opacity: 1;
+    transition: opacity .3s linear;
+}
+
+#main_title.semitransparent {
+    opacity: .3;
+}
+
+#main_title.invis {
+    opacity: 0;
+}
+
+#main_title.ttl1 {
+    font-size: 0;
+    background: url(../imgs/ttl_won.png) no-repeat;
+    background-size: cover;
+}
+
 #logo_footer {
     display: block;
     width: 310px;
@@ -87,6 +106,9 @@ h1 {
 }
 
 #card {
+    position: absolute;
+    left: 36px;
+    top: 86px;
     margin: 0 auto;
     width: 302px;
     height: 326px;
@@ -94,6 +116,10 @@ h1 {
 
 #card.no_pointer {
     cursor: none;
+}
+
+#card.inactive {
+    pointer-events: none;
 }
 
 #card img {
@@ -135,6 +161,133 @@ h1 {
 
 #pointer.invis {
     display: none;
+}
+
+#prize {
+    width: 302px;
+    height: 326px;
+    border: solid 1px #065EAB;
+    margin: 0 auto;
+    user-select: none;
+}
+
+#prize_img {
+    display: block;
+    width: 156px;
+    height: 156px;
+    margin: 24px auto 16px auto;
+}
+
+#prize_ttl {
+    font-size: 24px;
+    font-weight: normal;
+    color: #101f89;
+    display: block;
+    margin: 0;
+    padding: 0 8px;
+    text-align: center;
+}
+
+#subtitle {
+    font-size: 18px;
+    font-weight: normal;
+    display: block;
+    margin: 0 0 24px 0;
+    padding: 0 8px;
+    text-align: center;
+}
+
+#prize_info {
+    font-size: 12px;
+    text-align: center;
+    display: block;
+    padding: 0 8px;
+}
+
+#more_info {
+    overflow: hidden;
+    max-height: 600px;
+    transition: all .4s ease-in-out;
+}
+
+#more_info.hidden {
+    max-height: 0px;
+    pointer-events: none;
+}
+
+#sweepstakes_wrapper {
+    width: 302px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#ttl_sweepstakes {
+    font-size: 0;
+    display: block;
+    height: 70px;
+    width: 290px;
+    margin: 16px auto;
+    padding: 16px 0 0 0;
+    background: url(../imgs/ttl_sweepstakes.png) no-repeat;
+    background-size: cover;
+}
+
+#ballot {
+    height: 60px;
+    margin-right: 8px;
+}
+
+#chances {
+    display: inline-block;
+    color: #101f89;
+    font-size: 44px;
+    vertical-align: top;
+}
+
+.red {
+    color: #EB1E45;
+}
+
+#bbq {
+    position: relative;
+    width: 302px;
+    height: 191px;
+    background: url(../imgs/bbq.png) no-repeat;
+    background-size: cover;
+    margin: 16px 0;
+}
+
+#bbq p {
+    position: absolute;
+    display: block;
+    margin: 0;
+    padding: 0;
+    left: 128px;
+    top: 78px;
+    width: 70px;
+    text-align: center;
+}
+
+#bttn {
+    display: block;
+    background: #065EAB;
+    padding: 12px 8px;
+    text-transform: uppercase;
+    box-shadow: 0px 6px 0px #084D80;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+#bttn img {
+    vertical-align: middle;
+    margin: -2px 4px 0 0;
+}
+
+#bttn:hover {
+    background: #EB1E45;
+    box-shadow: 0px 6px 0px #bc1134;
 }
 
 @keyframes float {

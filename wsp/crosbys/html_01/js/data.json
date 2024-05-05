@@ -1,10 +1,9 @@
 {
-  "prize_ID": 18010,
-  "game_type": 1,
   "headline": "YOU’VE WON:",
-  "img": "imgs/18010.png",
-  "title": "STARBUCKS COLD BREW",
-  "subtitle": "Select varieties,<br> 16 oz Can",
-  "note": "Expires 9/22/2024. See <a href='#!'>full details here.</a>",
-  "info": "YOU HAVE 1 SPIN REMAINING."
+  "img": "imgs/8010.png",
+  "title": "Red Bull",
+  "subtitle": "All Varieties, 8.4 oz. Can",
+  "note": "Your prize has been loaded onto your My Crosby’s Rewards account. Expires 09/19/2024.",
+  "sweepstakes": 10,
+  "banner_item": "Kayak"
 }

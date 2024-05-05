@@ -17,9 +17,28 @@
 </header>
 
 <section id="main">
-  <h1>Toast Your Marshmallows to Reveal Your Prize!</h1>
+  <h1 id="main_title">Toast Your Marshmallows to Reveal Your Prize!</h1>
+  <div id="prize">
+    <img id="prize_img" src="">
+    <h2 id="prize_ttl"></h2>
+    <h3 id="subtitle"></h3>
+    <p id="prize_info"></p>
+  </div>
   <div id="card"></div>
   <img id="bonfire" src="imgs/bonfire.svg">
+</section>
+
+<section id="more_info" class="hidden">
+  <div id="sweepstakes_wrapper">
+    <h2 id="ttl_sweepstakes">Sweepstakes</h2>
+    <p>Plus, you’ve earned:</p>
+    <img id="ballot" src="imgs/ballot.png"><span id="chances"></span>
+    <p>for your chance to <strong class="red">WIN a Vacation or $5,000 Cash and more!</strong></p>
+    <div id="bbq">
+      <p id="banner_item"></p>
+    </div>
+    <a id="bttn" href="#!"><img src="imgs/icn_arrow.svg"> OPEN MY NEXT GAME TICKET</a>
+  </div>
 </section>
 
 <footer>
@@ -32,7 +51,7 @@
 <img id="pointer" src="imgs/hand.svg">
 
 <audio id="sound" src="mp3/bonfire.mp3"></audio>
-<audio id="sound2" src="mp3/win.mp3"></audio>
+<audio src="mp3/win.mp3"></audio>
 <script type="text/javascript">
   let requestURL = 'js/data.json';
 </script>

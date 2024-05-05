@@ -1,5 +1,6 @@
 let fire_visible = true;
 let body_event = true;
+let prize_headline;
 
 let request = new XMLHttpRequest();
 request.open('GET', requestURL);
@@ -8,16 +9,13 @@ request.send();
 
 request.onload = function() {
   const prizeData = request.response;
-  //$("#info").innerHTML =  prizeData.info;
-}
-
-function $(sel) {
-  return document.querySelector(sel);
-}
-
-function play_sound() {
-  $("#sound").play();
-  $("#sound").loop = true;
+  prize_headline = prizeData.headline;
+  $("#prize_img").setAttribute("src", prizeData.img);
+  $("#prize_ttl").innerHTML = prizeData.title;
+  $("#subtitle").innerHTML = prizeData.subtitle;
+  $("#prize_info").innerHTML = prizeData.note;
+  $("#chances").innerHTML = prizeData.sweepstakes;
+  $("#banner_item").innerHTML = prizeData.banner_item;
 }
 
 const sc = new ScratchCard('#card', {
@@ -30,12 +28,24 @@ const sc = new ScratchCard('#card', {
   enabledPercentUpdate: true,
   percentToFinish: 70,
   callback: function () {
+    document.body.removeEventListener("mousedown", play_sound);
+    document.body.removeEventListener("touchstart", play_sound);
+    document.body.removeEventListener("touchend", play_sound);
     $("#sound").pause();
     $("#sound").currentTime = 0;
     $("#sound").setAttribute('src', 'mp3/win.mp3');
     $("#sound").loop = false;
     $("#sound").play();
+    $("#card").classList.add("inactive");
     $("#marshmallow").classList.add("hidden");
+    $('#main_title').classList.remove("semitransparent");
+    $("#main_title").classList.add("invis");
+    setTimeout(function(){
+      $("#main_title").innerHTML = prize_headline;
+      $("#main_title").classList.remove("invis");
+      $("#main_title").classList.add("ttl1");
+      $("#more_info").classList.remove("hidden");
+    }, 400);
   }
 })
 
@@ -47,6 +57,7 @@ sc.init().then(() => {
       $("#card").classList.add("no_pointer");
       $("#marshmallow").setAttribute("src", "imgs/flames.svg");
       $("#pointer").classList.add("invis");
+      $('#main_title').classList.add("semitransparent");
       start_scratching();
     }
   })
@@ -70,20 +81,21 @@ const moveCursorMobile = (e)=> {
   custom_cursor.style.top = `${mouseY - 100}px`;
 }
 
-document.body.addEventListener("mousedown", function () {
-    play_sound();
-})
-
-document.body.addEventListener("touchstart", function () {
-    play_sound();
-})
-
-document.body.addEventListener("touchend", function () {
-    play_sound();
-})
+document.body.addEventListener("mousedown", play_sound);
+document.body.addEventListener("touchstart", play_sound);
+document.body.addEventListener("touchend", play_sound);
 
 function start_scratching() {
   let ticket = $(".sc__canvas");
   ticket.addEventListener("mousemove", moveCursor);
   ticket.addEventListener("touchmove", moveCursorMobile);
+}
+
+function $(sel) {
+  return document.querySelector(sel);
+}
+
+function play_sound() {
+  $("#sound").play();
+  $("#sound").loop = true;
 }
