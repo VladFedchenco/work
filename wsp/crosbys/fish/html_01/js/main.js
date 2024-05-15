@@ -87,8 +87,8 @@ const moveCursor = (e)=> {
 const moveCursorMobile = (e)=> {
   const mouseY = e.touches[0].clientY;
   const mouseX = e.touches[0].clientX;
-  custom_cursor.style.left = `${mouseX}px`;
-  custom_cursor.style.top = `${mouseY - 100}px`;
+  custom_cursor.style.left = `${mouseX + 70}px`;
+  custom_cursor.style.top = `${mouseY - 230}px`;
 }
 
 document.body.addEventListener("mousedown", play_sound);
