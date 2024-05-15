@@ -35,7 +35,7 @@ const sc = new ScratchCard('#card', {
     document.body.removeEventListener("touchend", play_sound);
     $("#sound").pause();
     $("#sound").currentTime = 0;
-    $("#sound").setAttribute('src', 'mp3/win.mp3');
+    $("#sound").setAttribute('src', 'mp3/reveal.mp3');
     $("#sound").loop = false;
     $("#sound").play();
     $("#card").classList.add("inactive");
@@ -80,15 +80,15 @@ const custom_cursor = $('#rod');
 const moveCursor = (e)=> {
   const mouseY = e.clientY;
   const mouseX = e.clientX;
-  custom_cursor.style.left = `${mouseX + 70}px`;
-  custom_cursor.style.top = `${mouseY - 230}px`;
+  custom_cursor.style.left = `${mouseX - 10}px`;
+  custom_cursor.style.top = `${mouseY - 165}px`;
 }
 
 const moveCursorMobile = (e)=> {
   const mouseY = e.touches[0].clientY;
   const mouseX = e.touches[0].clientX;
-  custom_cursor.style.left = `${mouseX + 70}px`;
-  custom_cursor.style.top = `${mouseY - 230}px`;
+  custom_cursor.style.left = `${mouseX - 10}px`;
+  custom_cursor.style.top = `${mouseY - 165}px`;
 }
 
 document.body.addEventListener("mousedown", play_sound);
