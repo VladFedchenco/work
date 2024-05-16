@@ -188,6 +188,7 @@ footer a {
 }
 
 #game {
+    position: relative;
     width: 376px;
     height: 712px;
     margin: 0 auto;
@@ -225,6 +226,7 @@ footer a {
 
 #sign_beach.invis, #sign_park.invis, #sign_camping.invis {
     opacity: 0;
+    pointer-events: none;
 }
 
 #sign_beach.moved, #sign_park.moved, #sign_camping.moved {
@@ -321,6 +323,155 @@ footer a {
     100% {
         transform: translate(376px, 870px) scale(.42) translate(-376px, -890px);
     }
+}
+
+#big_circle {
+    opacity: 0;
+    transform: translate(376px, 390px) scale(0) translate(-376px, -390px);
+}
+
+#big_circle.active {
+    animation: big_circle 1.7s ease-in-out forwards;
+}
+
+@keyframes big_circle {
+    0% {
+        opacity: 0;
+        transform: translate(376px, 390px) scale(0) translate(-376px, -390px);
+    }
+    20%, 100% {
+        opacity: 1;
+    }
+    80% {
+        transform: translate(376px, 390px) scale(1.06) translate(-376px, -390px);
+    }
+    100% {
+        transform: translate(376px, 390px) scale(1) translate(-376px, -390px);
+    }
+}
+
+#circle_text {
+    opacity: 1;
+    position: absolute;
+    top: 64px;
+    left: calc(50% - 83px);
+    width: 166px;
+    color: #fff;
+    text-align: center;
+    transition: all .3s linear;
+}
+
+#circle_text.invis {
+    opacity: 0;
+    pointer-events: none;
+}
+
+#circle_top {
+    font-size: 18px;
+    margin: 0;
+}
+
+#circle_mdl {
+    font-size: 78px;
+    line-height: 80px;
+    margin: 0 0 4px 0;
+}
+
+#circle_bttm {
+    font-size: 18px;
+    margin: 0;
+}
+
+#ballot_wrapper {
+    opacity: 1;
+    position: absolute;
+    top: 250px;
+    left: calc(50% - 170px);
+    width: 340px;
+    color: #fff;
+    text-align: center;
+    transition: all .3s linear;
+}
+
+#ballot_wrapper.invis {
+    pointer-events: none;
+    opacity: 0;
+}
+
+#note {
+    font-size: 12px;
+    margin: 0;
+}
+
+#ballots {
+    font-size: 21px;
+    font-weight: normal;
+    margin: 12px 0 6px 0;
+}
+
+#ballot_enter {
+    font-size: 18px;
+    margin: 0 0 16px 0;
+    font-weight: normal;
+}
+
+#ballot_frame {
+    background: #fff;
+    padding: 16px;
+    border-radius: 24px;
+}
+
+#counters_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.counter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.counter_center {
+    font-size: 56px;
+    font-weight: 700;
+    text-align: center;
+    min-width: 32px;
+    color: #ce153e;
+}
+
+.counter_left, .counter_right {
+    padding: 22px 4px 0 4px;
+}
+
+.counter_left a:hover rect, .counter_right a:hover rect {
+    fill: #ce153e;
+}
+
+.counter_left a:hover path, .counter_right a:hover path {
+    fill: #fff;
+}
+
+#enter_ballots {
+    display: block;
+    margin: 0 auto;
+    width: 136px;
+    height: 36px;
+    border-radius: 18px;
+    background: #ce153e;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 36px;
+    text-decoration: none;
+    box-shadow: 0px 3px 6px #B4CFDB;
+    transition: all .3s ease;
+}
+
+#enter_ballots:hover {
+    background: #000;
 }
 
 @media (max-width: 998px) {
