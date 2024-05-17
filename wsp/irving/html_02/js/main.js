@@ -84,7 +84,7 @@ $("#enter_ballots").addEventListener("click", function(){
     $("#clmn2_ballots_img").setAttribute("src", "imgs/ballot_fuel_year.svg");
   }
   if(clmn3_amount == 1) {
-    $("#clmn3_ballots_img").setAttribute("src", "imgs/ballot_travel.svg");
+    $("#clmn3_ballots_img").setAttribute("src", "imgs/ballot_red_sox.svg");
   }
   $("#congrats").classList.remove("invis");
 }, false);
