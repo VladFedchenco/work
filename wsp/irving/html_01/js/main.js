@@ -39,11 +39,11 @@ $("#sign_beach_a").addEventListener("click", function(){
     $("#sign_beach").classList.add("shifted");
   }, 500);
   setTimeout(function(){
-    $("#sign_beach").classList.add("invis");
-  }, 2000);
-  setTimeout(function(){
     $("#confetti_beach").setAttribute("href", "imgs/confetti_beach.svg?" + randomNumber);
   }, 2300);
+  setTimeout(function(){
+    $("#sign_beach").classList.add("invis");
+  }, 2500);
 }, false);
 
 $("#sign_park_a").addEventListener("click", function(){
@@ -54,11 +54,11 @@ $("#sign_park_a").addEventListener("click", function(){
     $("#sign_park").classList.add("shifted");
   }, 500);
   setTimeout(function(){
-    $("#sign_park").classList.add("invis");
-  }, 2000);
-  setTimeout(function(){
     $("#confetti_beach").setAttribute("href", "imgs/confetti_park.svg?" + randomNumber);
   }, 2300);
+  setTimeout(function(){
+    $("#sign_park").classList.add("invis");
+  }, 2500);
 }, false);
 
 $("#sign_camping_a").addEventListener("click", function(){
@@ -66,11 +66,11 @@ $("#sign_camping_a").addEventListener("click", function(){
   $("#sign_beach").classList.add("moved");
   $("#sign_park").classList.add("moved");
   setTimeout(function(){
-    $("#sign_camping").classList.add("invis");
-  }, 2000);
-  setTimeout(function(){
     $("#confetti_beach").setAttribute("href", "imgs/confetti_camping.svg?" + randomNumber);
   }, 2300);
+  setTimeout(function(){
+    $("#sign_camping").classList.add("invis");
+  }, 2500);
 }, false);
 
 $("#enter_ballots").addEventListener("click", function(){
@@ -155,19 +155,19 @@ function start_game() {
     $("#car").classList.add("moved");
   }, 900);
   setTimeout(function(){
-    $("#car").classList.add("invis");
-    $("#road_cars").classList.add("invis");
-  }, 2000);
-  setTimeout(function(){
     $("#confetti").setAttribute("href", "imgs/confetti.svg?" + randomNumber);
     $("#big_circle").classList.add("active");
   }, 2300);
   setTimeout(function(){
+    $("#car").classList.add("invis");
+    $("#road_cars").classList.add("invis");
+  }, 2500);
+  setTimeout(function(){
     $("#circle_text").classList.remove("invis");
-  }, 3000);
+  }, 3500);
   setTimeout(function(){
     $("#ballot_wrapper").classList.remove("invis");
-  }, 3200);
+  }, 3700);
 }
 
 function amount_plus(num) {

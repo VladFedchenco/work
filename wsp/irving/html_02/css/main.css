@@ -313,7 +313,7 @@ footer a {
 }
 
 #car.moved {
-    animation: car_move 1s ease-in-out forwards;
+    animation: car_move 1.5s ease-out forwards;
 }
 
 @keyframes car_move {
