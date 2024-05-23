@@ -1,0 +1,10 @@
+{ 
+  "username": "Mike",
+  "ballots_amount": 3,
+  "circle_top": "You've won a",
+  "circle_mdl": "3¢/L",
+  "circle_bttm": "fuel discount",
+  "note": "Your prize will be applied to your account within 24 hours.",
+  "ballots": "Plus, you’ve earned <strong>3 ballots!</strong>",
+  "ballot_enter": "Enter your ballots<br> into the prize draws below:"
+}

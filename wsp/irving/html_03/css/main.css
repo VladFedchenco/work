@@ -1,0 +1,584 @@
+@font-face {
+    font-family: 'Volte';
+    src: url('../fonts/volte.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Volte Semibold';
+    src: url('../fonts/volte_semibold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Volte Bold';
+    src: url('../fonts/volte_bold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
+}
+
+*:focus {
+    outline: none;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header {
+    background: #fff;
+    min-height: 62px;
+    padding: 16px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    z-index: 99;
+}
+
+header a {
+    font-family: 'Volte Semibold', sans-serif;
+    color: #005670;
+    display: inline-block;
+    height: 28px;
+    line-height: 28px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: .07em;
+    margin: 0px 12px;
+}
+
+header a:hover {
+    color: #CD163F;
+}
+
+header a:hover path {
+    fill: #CD163F;
+}
+
+header a.bttn {
+    color: #fff;
+    background: #005670;
+    padding: 3px 12px;
+    margin: 0 0 0 8px;
+    height: auto;
+    border-radius: 4px;
+}
+
+header svg {
+    vertical-align: middle;
+    margin-top: -3px;
+}
+
+header a.bttn:hover {
+    background: #CD163F;
+}
+
+header a.bttn:hover path {
+    fill: #fff;
+}
+
+a {
+    text-decoration: underline;
+}
+
+a:hover, svg a {
+    text-decoration: none;
+}
+
+svg a:hover text {
+    fill: #fdb80f;
+}
+
+@namespace svg url(http://www.w3.org/2000/svg);
+
+svg|a:link,
+svg|a:visited {
+  cursor: pointer;
+}
+
+svg|a text,
+text svg|a {
+  fill: #fff;
+  text-decoration: none;
+}
+
+svg|a:hover text,
+svg|a:active text {
+  fill: #fdb80f;
+}
+
+#header_button {
+    float: right;
+}
+
+#header_links {
+    padding-top: 4px;
+}
+
+#mobile_menu {
+    display: none;
+    margin: 0;
+    position: absolute;
+    cursor: pointer;
+    top: 26px;
+    right: 24px;
+    width: 21px;
+    height: 12px;
+    background: linear-gradient(to bottom, #005670 0px, #005670 2px, transparent 2px, transparent 5px, #005670 5px, #005670 7px, transparent 7px, transparent 10px, #005670 10px, #005670 12px);
+}
+
+#mobile_menu:hover {
+    background: linear-gradient(to bottom, #CD163F 0px, #CD163F 2px, transparent 2px, transparent 5px, #CD163F 5px, #CD163F 7px, transparent 7px, transparent 10px, #CD163F 10px, #CD163F 12px);
+}
+
+#main {
+    background: #fff;
+    position: relative;
+    padding: 66px 0 48px 0;
+}
+
+footer {
+    color: #fff;
+    font-size: 12px;
+    background: #CD163F;
+    padding: 50px 20px 30px 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#social {
+    padding-bottom: 16px;
+}
+
+#social a {
+    margin: 0 10px;
+}
+
+#footer_nav a {
+    margin: 0 12px;
+    font-size: 14px;
+}
+
+#footer_nav a:hover {
+    text-decoration: underline;
+}
+
+#footer_note {
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+#game {
+    position: relative;
+    width: 376px;
+    height: 712px;
+    margin: 0 auto;
+    background: linear-gradient(180deg, #0D6BAC 0%, #0D6BAC 66%, #358ECC 100%);
+}
+
+#hand_animation {
+    opacity: 1;
+    pointer-events: none;
+    animation: hand_animation 8s ease-in-out infinite;
+    transition: opacity .3s linear;
+}
+
+@keyframes hand_animation {
+    0%, 87.5%, 100% {
+        transform: translateY(0px);
+    }
+    12.5%, 25%, 62.5%, 75% {
+        transform: translateY(190px);
+    }
+    37.5%, 50% {
+        transform: translateY(380px);
+    }
+}
+
+#hand_animation.invis {
+    opacity: 0;
+}
+
+#sign_beach, #sign_park, #sign_camping {
+    opacity: 1;
+    transform: translate(0px, 0px);
+    transition: opacity .4s linear;
+}
+
+#sign_beach.invis, #sign_park.invis, #sign_camping.invis {
+    opacity: 0;
+    pointer-events: none;
+}
+
+#sign_beach.moved, #sign_park.moved, #sign_camping.moved {
+    animation: moved .5s ease-in-out forwards;
+}
+
+@keyframes moved {
+    0% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(-752px);
+    }
+}
+
+#sign_beach.shifted {
+    animation: beach_shift .5s ease-in-out forwards;
+}
+
+@keyframes beach_shift {
+    0% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(380px);
+    }
+}
+
+#sign_park.shifted {
+    animation: park_shift .5s ease-in-out forwards;
+}
+
+@keyframes park_shift {
+    0% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(190px);
+    }
+}
+
+#top_text {
+    opacity: 1;
+    transition: opacity .3s linear;
+}
+
+#top_text.invis {
+    opacity: 0;
+}
+
+#head, #tongue {
+    transform: translateY(4px);
+}
+
+#head.jump, #tongue.jump {
+    animation: jump .5s ease-in-out forwards;
+}
+
+@keyframes jump {
+    0%, 100% {
+        transform: translateY(4px);
+    }
+    30% {
+        transform: translateY(0px);
+    }
+    80% {
+        transform: translateY(8px);
+    }
+}
+
+#car {
+    opacity: 1;
+    transform: translate(376px, 890px) scale(1) translate(-376px, -890px);
+    transition: opacity .4s linear;
+}
+
+#road_cars {
+    opacity: 1;
+    transition: opacity .4s linear;
+}
+
+#car.invis, #road_cars.invis {
+    opacity: 0;
+}
+
+#car.moved {
+    animation: car_move 1.5s ease-out forwards;
+}
+
+@keyframes car_move {
+    0% {
+        transform: translate(376px, 890px) scale(1) translate(-376px, -890px);
+    }
+    100% {
+        transform: translate(376px, 870px) scale(.42) translate(-376px, -890px);
+    }
+}
+
+#big_circle {
+    opacity: 0;
+    transform: translate(376px, 390px) scale(0) translate(-376px, -390px);
+}
+
+#big_circle.active {
+    animation: big_circle 1.7s ease-in-out forwards;
+}
+
+@keyframes big_circle {
+    0% {
+        opacity: 0;
+        transform: translate(376px, 390px) scale(0) translate(-376px, -390px);
+    }
+    20%, 100% {
+        opacity: 1;
+    }
+    80% {
+        transform: translate(376px, 390px) scale(1.06) translate(-376px, -390px);
+    }
+    100% {
+        transform: translate(376px, 390px) scale(1) translate(-376px, -390px);
+    }
+}
+
+#circle_text {
+    opacity: 1;
+    position: absolute;
+    top: 64px;
+    left: calc(50% - 83px);
+    width: 166px;
+    color: #fff;
+    text-align: center;
+    transition: all .3s linear;
+}
+
+#circle_text.invis {
+    opacity: 0;
+    pointer-events: none;
+}
+
+#circle_top {
+    font-size: 18px;
+    margin: 0;
+}
+
+#circle_mdl {
+    font-size: 78px;
+    line-height: 80px;
+    margin: 0 0 4px 0;
+}
+
+#circle_bttm {
+    font-size: 18px;
+    margin: 0;
+}
+
+#ballot_wrapper {
+    opacity: 1;
+    position: absolute;
+    top: 250px;
+    left: calc(50% - 170px);
+    width: 340px;
+    color: #fff;
+    text-align: center;
+    transition: all .3s linear;
+}
+
+#ballot_wrapper.invis {
+    pointer-events: none;
+    opacity: 0;
+}
+
+#note {
+    font-size: 12px;
+    margin: 0;
+}
+
+#ballots {
+    font-size: 21px;
+    font-weight: normal;
+    margin: 12px 0 6px 0;
+}
+
+#ballot_enter {
+    font-size: 18px;
+    margin: 0 0 16px 0;
+    font-weight: normal;
+}
+
+#ballot_frame, #congrats_frame {
+    background: #fff;
+    padding: 16px;
+    border-radius: 24px;
+}
+
+#counters_wrapper, #congrats_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#counters_wrapper img {
+    user-select: none;
+}
+
+.counter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.counter_center {
+    user-select: none;
+    font-family: 'Volte Bold';
+    font-size: 56px;
+    text-align: center;
+    min-width: 44px;
+    color: #ce153e;
+}
+
+.counter_center.small {
+    font-size: 40px;
+    padding-top: 8px;
+}
+
+.counter_left, .counter_right {
+    padding: 22px 4px 0 4px;
+}
+
+.counter_left a:hover rect, .counter_right a:hover rect {
+    fill: #ce153e;
+}
+
+.counter_left a:hover path, .counter_right a:hover path {
+    fill: #fff;
+}
+
+#enter_ballots, #next_ticket {
+    display: block;
+    margin: 0 auto;
+    width: 136px;
+    height: 36px;
+    border-radius: 18px;
+    background: #ce153e;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 36px;
+    text-decoration: none;
+    box-shadow: 0px 3px 6px #B4CFDB;
+    transition: all .3s ease;
+}
+
+#enter_ballots:hover, #next_ticket:hover {
+    background: #000;
+}
+
+#congrats {
+    opacity: 1;
+    position: absolute;
+    top: 30px;
+    left: calc(50% - 170px);
+    width: 340px;
+    color: #fff;
+    text-align: center;
+    transition: all .3s linear;
+}
+
+#congrats.invis, #next_ticket.invis, #more_ballots.invis {
+    pointer-events: none;
+    opacity: 0;
+}
+
+#congrats h2 {
+    font-size: 21px;
+    margin: 12px 0 6px 0;
+}
+
+#congrats h3 {
+    font-size: 18px;
+    margin: 0 0 16px 0;
+    font-weight: normal;
+}
+
+#congrats_frame h4 {
+    font-family: 'Volte Bold';
+    font-size: 24px;
+    text-align: center;
+    color: #ce153e;
+    margin: 0 0 16px 0;
+}
+
+#clmn1_ballots, #clmn2_ballots, #clmn3_ballots {
+    font-family: 'Volte Bold';
+    font-size: 48px;
+    line-height: 40px;
+    text-align: center;
+    color: #ce153e;
+}
+
+#congrats_wrapper img {
+    width: 90px;
+    height: 90px;
+}
+
+#congrats_frame {
+    margin-bottom: 24px;
+}
+
+#next_ticket {
+    width: 160px;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, .2);
+}
+
+#more_ballots a {
+    display: inline-block;
+    color: #fff;
+    font-family: 'Volte Bold';
+    text-transform: uppercase;
+    margin: 0 0 6px 0;
+}
+
+#more_ballots a svg {
+    vertical-align: middle;
+    margin-right: 4px;
+}
+
+#game_container {
+    opacity: 1;
+    transition: all .3s linear;
+}
+
+#game_container.invis {
+    opacity: 0;
+    pointer-events: none;
+}
+
+@media (max-width: 998px) {
+    #mobile_menu {
+        display: block;
+        top: 15px;
+        right: 16px;
+    }
+
+    #header_button, #header_links {
+        display: none;
+    }
+
+    header {
+        min-height: 44px;
+    }
+    #main {
+        padding: 44px 0 0 0;
+    }
+}

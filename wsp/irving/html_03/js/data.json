@@ -1,0 +1,10 @@
+{ 
+  "username": "Mike",
+  "ballots_amount": 7,
+  "circle_top": "You’ve earned",
+  "circle_mdl": "5",
+  "circle_bttm": "ballots!",
+  "note": "",
+  "ballots": "You have <strong>2 ballots!</strong>",
+  "ballot_enter": "Enter your ballots<br> into the prize draws below:"
+}
