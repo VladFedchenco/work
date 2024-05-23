@@ -1,0 +1,10 @@
+{ 
+  "username": "Mike",
+  "ballots_amount": 7,
+  "circle_top": "You’ve won",
+  "circle_mdl": "5",
+  "circle_bttm": "AIR MILES<sup style='font-size:12px'>&copy;</sup><br> Bonus Miles&trade;",
+  "note": "Your prize will be loaded to your Hometown<br> Rewards account within 24 hours",
+  "ballots": "You have <strong>2 ballots!</strong>",
+  "ballot_enter": "Enter your ballots<br> into the prize draws below:"
+}
