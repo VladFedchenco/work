@@ -1,0 +1,10 @@
+{ 
+  "username": "Mike",
+  "ballots_amount": 7,
+  "circle_top": "Vous avez<br> gagné un rabais sur l’essence de",
+  "circle_mdl": "3¢/L",
+  "circle_bttm": "",
+  "note": "Votre prix sera versé à votre compte d’ici 24 heures.",
+  "ballots": "De plus, vous avez obtenu <strong># inscriptions!</strong>",
+  "ballot_enter": "Entrez vos inscriptions aux tirages ci-dessous :"
+}
