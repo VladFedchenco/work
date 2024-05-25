@@ -1,0 +1,10 @@
+{ 
+  "username": "Mike",
+  "ballots_amount": 7,
+  "circle_top": "Vous avez gagné",
+  "circle_mdl": "#",
+  "circle_bttm": "milles AIR MILES<sup style='font-size:10px'>md</sup><br> en prime<sup style='font-size:10px'>mc</sup>",
+  "note": "Votre prix sera versé à votre compte Hometown Rewards d’ici 24 heures.",
+  "ballots": "Vous avez <strong># inscriptions!</strong>",
+  "ballot_enter": "Entrez vos inscriptions aux tirages ci-dessous :"
+}
