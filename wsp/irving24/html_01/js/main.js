@@ -28,7 +28,14 @@ function start_game() {
   }, 300);
   setTimeout(function(){
     $("#prize_wrapper").classList.remove("invis");
+    $("#content").classList.remove("invis");
   }, 3000);
+  setTimeout(function(){
+    $("#bonus").classList.remove("invis");
+  }, 3400);
+  setTimeout(function(){
+    $("#more_info").classList.remove("invis");
+  }, 3600);
 }
 
 $("#start_bttn").addEventListener("click", start_game, false);
