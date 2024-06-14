@@ -23,14 +23,12 @@ function start_game() {
   $("#start_bttn").classList.add("invis");
   $("#hand").classList.add("invis");
   setTimeout(function(){
+    play_sound();
     $("#game_circle").classList.remove("invis");
   }, 300);
   setTimeout(function(){
-    play_sound();
-  }, 800);
-  setTimeout(function(){
     $("#prize_wrapper").classList.remove("invis");
-  }, 3300);
+  }, 3000);
 }
 
 $("#start_bttn").addEventListener("click", start_game, false);
