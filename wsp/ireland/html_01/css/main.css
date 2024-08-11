@@ -489,7 +489,29 @@ footer a:hover {
     header {
         min-height: 44px;
     }
+    
     #main {
         padding: 44px 0 0 0;
+    }
+
+    #info_box h3 {
+        font-size: 22px;
+        line-height: 1.1;
+        margin: 0 0 10px 0;
+    }
+
+    #info_box h4 {
+        font-size: 17px;
+        line-height: 1.1;
+    }
+
+    #info_box p {
+        font-size: 17px;
+        line-height: 1.2;
+    }
+
+    #info_box {
+        top: 325px;
+        padding: 16px 16px 8px 16px;
     }
 }
