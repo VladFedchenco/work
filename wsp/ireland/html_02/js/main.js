@@ -55,7 +55,6 @@ function start_game() {
   }, 2300);
   setTimeout(function(){
     $("#car").classList.add("invis");
-    $("#road_cars").classList.add("invis");
   }, 2500);
   setTimeout(function(){
     $("#circle_text").classList.remove("invis");
