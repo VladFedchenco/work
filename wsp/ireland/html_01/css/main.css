@@ -447,6 +447,28 @@ footer a:hover {
     margin: 0;
 }
 
+#info_box h4.code {
+    font-size: 24px;
+    line-height: 44px;
+}
+
+.code_icon {
+    margin: 0 0 -3px 8px;
+}
+
+#info_box h4.code a {
+    color: #000;
+    text-decoration: none;
+}
+
+#info_box h4.code a:hover {
+    color: #ED1B30;
+}
+
+#info_box h4.code a:hover svg path {
+    fill: #ED1B30;
+}
+
 #info_box p {
     font-size: 18px;
     line-height: 1.4;
@@ -464,6 +486,10 @@ footer a:hover {
     background: #ED1B30;
     padding: 10px 16px 12px 16px;
     text-decoration: none;
+}
+
+#info_box .bttn.wide {
+    width: 190px;
 }
 
 #info_box .bttn:hover {
