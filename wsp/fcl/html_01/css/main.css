@@ -1,0 +1,840 @@
+* {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
+}
+
+*:focus {
+    outline: none;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "Be Vietnam Pro", system-ui;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+header {
+    background: #CB2026;
+    min-height: 74px;
+    padding: 12px 24px 0 24px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+header a {
+    display: inline-block;
+    height: 28px;
+    line-height: 28px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0px 12px;
+}
+
+header .clmn_60 a {
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+header .clmn_60 a:hover {
+    color: #FFDA98;
+    text-decoration: none;
+}
+
+header .clmn_60 a:hover svg path {
+    fill: #FFDA98;
+}
+
+header .clmn_40 {
+    text-align: right;
+}
+
+header svg {
+    vertical-align: middle;
+    margin-top: -3px;
+}
+
+a {
+    color: #CB2026;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h3 {
+    font-size: 19px;
+    margin: 0 0 21px 0;
+    line-height: 1.6;
+    font-weight: 500;
+    font-style: normal;
+    color: #CB2026;
+}
+
+strong {
+    font-weight: 700;
+    font-style: normal;
+}
+
+.clmns {
+    overflow: hidden;
+    position: relative;
+}
+
+.clmn_60 {
+    float: left;
+    width: 70%;
+    padding: 8px 16px;
+}
+
+.clmn_60 {
+    float: left;
+    width: 60%;
+    padding: 8px 16px;
+}
+
+.clmn_50 {
+    float: left;
+    width: 50%;
+    padding: 8px 16px;
+}
+
+.clmn_40 {
+    float: left;
+    width: 40%;
+    padding: 8px 16px;
+}
+
+.clmn_30 {
+    float: left;
+    width: 30%;
+    padding: 4px 16px;
+}
+
+a.bttn_receipt {
+    font-size: 13px;
+    text-align: center;
+    display: inline-block;
+    width: 198px;
+    height: auto;
+    line-height: 28px;
+    font-weight: 700;
+    background: #FFDA98;
+    color: #CB2026;
+    border-radius: 4px;
+    padding: 4px 8px 2px 4px;
+    margin-top: 2px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+a.bttn_receipt.another {
+    width: auto;
+    padding: 8px 24px;
+}
+
+a.bttn_receipt svg {
+    vertical-align: middle;
+    margin-top: -3px;
+}
+
+a.bttn_receipt:hover {
+    color: #FFDA98;
+    background: #DD3A4E;
+    text-decoration: none;
+}
+
+a.bttn_receipt:hover svg path {
+    fill: #FFDA98;
+}
+
+a.bttn_log {
+    font-size: 13px;
+    text-align: center;
+    display: inline-block;
+    width: 198px;
+    height: auto;
+    background: #FFDA98;
+    color: #CB2026;
+    border-radius: 4px;
+    padding: 4px 8px 2px 4px;
+    margin-top: 2px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+a.bttn_log:hover {
+    background: #DD3A4E;
+    color: #FFDA98;
+    text-decoration: none;
+}
+
+a.bttn_log:hover svg path {
+    fill: #FFDA98;
+}
+
+a.bttn_receipt svg, a.bttn_log svg {
+    margin-right: 4px;
+}
+
+footer {
+    background: #CB2026;
+    color: #FEE3C0;
+    padding: 16px 8px 30px 8px;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: underline;
+}
+
+footer a:hover {
+    text-decoration: none;
+}
+
+#footer_links {
+    padding: 16px 0;
+    font-size: 12px;
+}
+
+#footer_links a, #footer_note a {
+    color: #FEE3C0;
+}
+
+#footer_links a {
+    margin: 0 6px;
+}
+
+#footer_note {
+    font-family: "Be Vietnam Pro", system-ui;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 11px;
+    text-align: left;
+    color: #FEE3C0;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+#market_buttons {
+    padding: 16px 0 8px 0;
+}
+
+#market_buttons a {
+    margin: 0 4px;
+}
+
+.social {
+    padding: 32px 8px 8px 8px;
+}
+
+.social a {
+    margin: 0 8px;
+}
+
+#main {
+    padding: 74px 0px 0px 0px;
+    color: #000000;
+    min-height: 700px;
+    background: #FFF3E5;
+    text-align: center;
+    transition: all .4s linear;
+}
+
+#mobile_menu {
+    display: none;
+    margin: 0;
+    position: absolute;
+    cursor: pointer;
+    top: 26px;
+    left: 24px;
+    width: 21px;
+    height: 12px;
+    background: linear-gradient(to bottom, #fff 0px, #fff 2px, transparent 2px, transparent 5px, #fff 5px, #fff 7px, transparent 7px, transparent 10px, #fff 10px, #fff 12px);
+}
+
+#animation {
+    display: block;
+    margin: 0 auto;
+}
+
+#content {
+    max-width: 980px;
+    margin: 0 auto;
+    padding-top: 0px;
+    overflow: hidden;
+    max-height: 0px;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+#content.vis {
+    opacity: 1;
+    max-height: 1000px;
+    padding-top: 16px;
+}
+
+.feature {
+    max-width: 375px;
+    padding: 0 16px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.feature p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+#one_winner {
+    padding-bottom: 32px;
+}
+
+#more_entries {
+    padding: 32px 0;
+}
+
+#bottom_links {
+    padding: 21px 0 32px 0;
+}
+
+#bottom_links a {
+    font-size: 13px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 12px;
+}
+
+#bottom_links a svg {
+    vertical-align: middle;
+    margin-top: -3px;
+}
+
+#entry, #entries {
+    display: none;
+}
+
+#entry.vis, #entries.vis {
+    display: block;
+    opacity: 0;
+    animation: entry .3s ease-in-out forwards;
+}
+
+@keyframes entry {
+    0% {
+        opacity: 0;
+    }
+    50%, 100% {
+        opacity: 1;
+    }
+    0% {
+        transform: translate(241px, 338px) scale(.5) translate(-241px, -338px);
+    }
+    70% {
+        transform: translate(241px, 338px) scale(1.1) translate(-241px, -338px);
+    }
+    100% {
+        transform: translate(241px, 338px) scale(1) translate(-241px, -338px);
+    }
+}
+
+#d1, #d2, #d3, #d4, #d5, #d6, #d7, #d8, #d9, #d10, #d11 {
+    visibility: hidden;
+}
+
+.num1 #d1, .num1 #d2 {
+    visibility: hidden;
+    animation-duration: .2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: steps(1);
+}
+
+.num1 #d1 {animation-name: d01}
+.num1 #d2 {animation-name: d02}
+
+@keyframes d01 {0.00%{visibility: visible} 50.00%{visibility: hidden}}
+@keyframes d02 {50.00%, 100.00%{visibility: visible}}
+
+.num2 #d1, .num2 #d2, .num2 #d3 {
+    visibility: hidden;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: steps(1);
+}
+
+.num2 #d1 {animation-name: d11}
+.num2 #d2 {animation-name: d12}
+.num2 #d3 {animation-name: d13}
+
+@keyframes d11 {0.00%{visibility: visible} 33.33%{visibility: hidden}}
+@keyframes d12 {33.33%{visibility: visible} 66.67%{visibility: hidden}}
+@keyframes d13 {66.67%, 100.00%{visibility: visible}}
+
+.num3 #d1, .num3 #d2, .num3 #d3, .num3 #d4 {
+    visibility: hidden;
+    animation-duration: .4s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: steps(1);
+}
+
+.num3 #d1 {animation-name: d21}
+.num3 #d2 {animation-name: d22}
+.num3 #d3 {animation-name: d23}
+.num3 #d4 {animation-name: d24}
+
+@keyframes d21 {0.00%{visibility: visible} 25.00%{visibility: hidden}}
+@keyframes d22 {25.00%{visibility: visible} 50.00%{visibility: hidden}}
+@keyframes d23 {50.00%{visibility: visible} 75.00%{visibility: hidden}}
+@keyframes d24 {75.00%, 100.00%{visibility: visible}}
+
+.num4 #d1, .num4 #d2, .num4 #d3, .num4 #d4, .num4 #d5 {
+    visibility: hidden;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: steps(1);
+}
+
+.num4 #d1 {animation-name: d31}
+.num4 #d2 {animation-name: d32}
+.num4 #d3 {animation-name: d33}
+.num4 #d4 {animation-name: d34}
+.num4 #d5 {animation-name: d35}
+
+@keyframes d31 {0.00%{visibility: visible} 20.00%{visibility: hidden}}
+@keyframes d32 {20.00%{visibility: visible} 40.00%{visibility: hidden}}
+@keyframes d33 {40.00%{visibility: visible} 60.00%{visibility: hidden}}
+@keyframes d34 {60.00%{visibility: visible} 80.00%{visibility: hidden}}
+@keyframes d35 {80.00%, 100.00%{visibility: visible}}
+
+.num5 #d1, .num5 #d2, .num5 #d3, .num5 #d4, .num5 #d5, .num5 #d6 {
+    visibility: hidden;
+    animation-duration: .6s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: steps(1);
+}
+
+.num5 #d1 {animation-name: d41}
+.num5 #d2 {animation-name: d42}
+.num5 #d3 {animation-name: d43}
+.num5 #d4 {animation-name: d44}
+.num5 #d5 {animation-name: d45}
+.num5 #d6 {animation-name: d46}
+
+@keyframes d41 {0.00%{visibility: visible} 16.67%{visibility: hidden}}
+@keyframes d42 {16.67%{visibility: visible} 33.33%{visibility: hidden}}
+@keyframes d43 {33.33%{visibility: visible} 50.00%{visibility: hidden}}
+@keyframes d44 {50.00%{visibility: visible} 66.67%{visibility: hidden}}
+@keyframes d45 {66.67%{visibility: visible} 83.33%{visibility: hidden}}
+@keyframes d46 {83.33%, 100.00%{visibility: visible}}
+
+.num6 #d1, .num6 #d2, .num6 #d3, .num6 #d4, .num6 #d5, .num6 #d6, .num6 #d7 {
+    visibility: hidden;
+    animation-duration: .7s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: steps(1);
+}
+
+.num6 #d1 {animation-name: d51}
+.num6 #d2 {animation-name: d52}
+.num6 #d3 {animation-name: d53}
+.num6 #d4 {animation-name: d54}
+.num6 #d5 {animation-name: d55}
+.num6 #d6 {animation-name: d56}
+.num6 #d7 {animation-name: d57}
+
+@keyframes d51 {0.00%{visibility: visible} 14.29%{visibility: hidden}}
+@keyframes d52 {14.29%{visibility: visible} 28.57%{visibility: hidden}}
+@keyframes d53 {28.57%{visibility: visible} 42.86%{visibility: hidden}}
+@keyframes d54 {42.86%{visibility: visible} 57.14%{visibility: hidden}}
+@keyframes d55 {57.14%{visibility: visible} 71.43%{visibility: hidden}}
+@keyframes d56 {71.43%{visibility: visible} 85.71%{visibility: hidden}}
+@keyframes d57 {85.71%, 100.00%{visibility: visible}}
+
+.num7 #d1, .num7 #d2, .num7 #d3, .num7 #d4, .num7 #d5, .num7 #d6, .num7 #d7, .num7 #d8 {
+    visibility: hidden;
+    animation-duration: .8s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: steps(1);
+}
+
+.num7 #d1 {animation-name: d61}
+.num7 #d2 {animation-name: d62}
+.num7 #d3 {animation-name: d63}
+.num7 #d4 {animation-name: d64}
+.num7 #d5 {animation-name: d65}
+.num7 #d6 {animation-name: d66}
+.num7 #d7 {animation-name: d67}
+.num7 #d8 {animation-name: d68}
+
+@keyframes d61 {0.00%{visibility: visible} 12.50%{visibility: hidden}}
+@keyframes d62 {12.50%{visibility: visible} 25.00%{visibility: hidden}}
+@keyframes d63 {25.00%{visibility: visible} 37.50%{visibility: hidden}}
+@keyframes d64 {37.50%{visibility: visible} 50.00%{visibility: hidden}}
+@keyframes d65 {50.00%{visibility: visible} 62.50%{visibility: hidden}}
+@keyframes d66 {62.50%{visibility: visible} 75.00%{visibility: hidden}}
+@keyframes d67 {75.00%{visibility: visible} 87.50%{visibility: hidden}}
+@keyframes d68 {87.50%, 100.00%{visibility: visible}}
+
+.num8 #d1, .num8 #d2, .num8 #d3, .num8 #d4, .num8 #d5, .num8 #d6, .num8 #d7, .num8 #d8, .num8 #d9 {
+    visibility: hidden;
+    animation-duration: .9s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: steps(1);
+}
+
+.num8 #d1 {animation-name: d71}
+.num8 #d2 {animation-name: d72}
+.num8 #d3 {animation-name: d73}
+.num8 #d4 {animation-name: d74}
+.num8 #d5 {animation-name: d75}
+.num8 #d6 {animation-name: d76}
+.num8 #d7 {animation-name: d77}
+.num8 #d8 {animation-name: d78}
+.num8 #d9 {animation-name: d79}
+
+@keyframes d71 {0.00%{visibility: visible} 11.11%{visibility: hidden}}
+@keyframes d72 {11.11%{visibility: visible} 22.22%{visibility: hidden}}
+@keyframes d73 {22.22%{visibility: visible} 33.33%{visibility: hidden}}
+@keyframes d74 {33.33%{visibility: visible} 44.44%{visibility: hidden}}
+@keyframes d75 {44.44%{visibility: visible} 55.56%{visibility: hidden}}
+@keyframes d76 {55.56%{visibility: visible} 66.67%{visibility: hidden}}
+@keyframes d77 {66.67%{visibility: visible} 77.78%{visibility: hidden}}
+@keyframes d78 {77.78%{visibility: visible} 88.89%{visibility: hidden}}
+@keyframes d79 {88.89%, 100.00%{visibility: visible}}
+
+.num9 #d1, .num9 #d2, .num9 #d3, .num9 #d4, .num9 #d5, .num9 #d6, .num9 #d7, .num9 #d8, .num9 #d9, .num9 #d10 {
+    visibility: hidden;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: steps(1);
+}
+
+.num9 #d1 {animation-name: d81}
+.num9 #d2 {animation-name: d82}
+.num9 #d3 {animation-name: d83}
+.num9 #d4 {animation-name: d84}
+.num9 #d5 {animation-name: d85}
+.num9 #d6 {animation-name: d86}
+.num9 #d7 {animation-name: d87}
+.num9 #d8 {animation-name: d88}
+.num9 #d9 {animation-name: d89}
+.num9 #d10 {animation-name: d810}
+
+@keyframes d81 {0.00%{visibility: visible} 10.00%{visibility: hidden}}
+@keyframes d82 {10.00%{visibility: visible} 20.00%{visibility: hidden}}
+@keyframes d83 {20.00%{visibility: visible} 30.00%{visibility: hidden}}
+@keyframes d84 {30.00%{visibility: visible} 40.00%{visibility: hidden}}
+@keyframes d85 {40.00%{visibility: visible} 50.00%{visibility: hidden}}
+@keyframes d86 {50.00%{visibility: visible} 60.00%{visibility: hidden}}
+@keyframes d87 {60.00%{visibility: visible} 70.00%{visibility: hidden}}
+@keyframes d88 {70.00%{visibility: visible} 80.00%{visibility: hidden}}
+@keyframes d89 {80.00%{visibility: visible} 90.00%{visibility: hidden}}
+@keyframes d810 {90.00%, 100.00%{visibility: visible}}
+
+.num10 #d1, .num10 #d2, .num10 #d3, .num10 #d4, .num10 #d5, .num10 #d6, .num10 #d7, .num10 #d8, .num10 #d9, .num10 #d10, .num10 #d11 {
+    visibility: hidden;
+    animation-duration: 1.1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: steps(1);
+}
+
+.num10 #d1 {animation-name: d91}
+.num10 #d2 {animation-name: d92}
+.num10 #d3 {animation-name: d93}
+.num10 #d4 {animation-name: d94}
+.num10 #d5 {animation-name: d95}
+.num10 #d6 {animation-name: d96}
+.num10 #d7 {animation-name: d97}
+.num10 #d8 {animation-name: d98}
+.num10 #d9 {animation-name: d99}
+.num10 #d10 {animation-name: d910}
+.num10 #d11 {animation-name: d911}
+
+@keyframes d91 {0.00%{visibility: visible} 9.09%{visibility: hidden}}
+@keyframes d92 {9.09%{visibility: visible} 18.18%{visibility: hidden}}
+@keyframes d93 {18.18%{visibility: visible} 27.27%{visibility: hidden}}
+@keyframes d94 {27.27%{visibility: visible} 36.36%{visibility: hidden}}
+@keyframes d95 {36.36%{visibility: visible} 45.45%{visibility: hidden}}
+@keyframes d96 {45.45%{visibility: visible} 54.55%{visibility: hidden}}
+@keyframes d97 {54.55%{visibility: visible} 63.64%{visibility: hidden}}
+@keyframes d98 {63.64%{visibility: visible} 72.73%{visibility: hidden}}
+@keyframes d99 {72.73%{visibility: visible} 81.82%{visibility: hidden}}
+@keyframes d910 {81.82%{visibility: visible} 90.91%{visibility: hidden}}
+@keyframes d911 {90.91%, 100.00%{visibility: visible}}
+
+#rotor {
+    animation: rotor 60s linear infinite;
+}
+
+@keyframes rotor {
+    0% {
+        transform: translate(198px, 214px) rotate(0deg) translate(-198px, -214px);
+    }
+    100% {
+        transform: translate(198px, 214px) rotate(-360deg) translate(-198px, -214px);
+    }
+}
+
+#stars {
+    opacity: 0;
+    transition: opacity .2s linear;
+}
+
+#stars.star_go {
+    opacity: 1;
+}
+
+.star_go #star1 {
+    animation: star1 3s ease-in-out infinite;
+}
+
+@keyframes star1 {
+    0%, 100% {
+        transform: translate(364px, 81px) scale(.5) translate(-364px, -81px);
+    }
+    50% {
+        transform: translate(364px, 81px) scale(1) translate(-364px, -81px);
+    }
+}
+
+.star_go #star2 {
+    animation: star2 3.2s -1s ease-in-out infinite;
+}
+
+@keyframes star2 {
+    0%, 100% {
+        transform: translate(371px, 248px) scale(.5) translate(-371px, -248px);
+    }
+    50% {
+        transform: translate(371px, 248px) scale(1) translate(-371px, -248px);
+    }
+}
+
+.star_go #star3 {
+    animation: star3 2.8s -.5s ease-in-out infinite;
+}
+
+@keyframes star3 {
+    0%, 100% {
+        transform: translate(35px, 248px) scale(.5) translate(-35px, -248px);
+    }
+    50% {
+        transform: translate(35px, 248px) scale(1) translate(-35px, -248px);
+    }
+}
+
+.star_go #star4 {
+    animation: star4 3.3s -2s ease-in-out infinite;
+}
+
+@keyframes star4 {
+    0%, 100% {
+        transform: translate(261px, 277px) scale(.5) translate(-261px, -277px);
+    }
+    50% {
+        transform: translate(261px, 277px) scale(1) translate(-261px, -277px);
+    }
+}
+
+.star_go #star5 {
+    animation: star5 2.9s -2.5s ease-in-out infinite;
+}
+
+@keyframes star5 {
+    0%, 100% {
+        transform: translate(67px, 260px) scale(.5) translate(-67px, -260px);
+    }
+    50% {
+        transform: translate(67px, 260px) scale(1) translate(-67px, -260px);
+    }
+}
+
+.star_go #star6 {
+    animation: star6 3.5s ease-in-out infinite;
+}
+
+@keyframes star6 {
+    0%, 100% {
+        transform: translate(93px, 382px) scale(.5) translate(-93px, -382px);
+    }
+    50% {
+        transform: translate(93px, 382px) scale(1) translate(-93px, -382px);
+    }
+}
+
+#title {
+    opacity: 0;
+    transform: translate(0px, -130px);
+}
+
+#title.move {
+    animation: title .5s ease-in-out forwards;
+}
+
+@keyframes title {
+    0% {
+        opacity: 0;
+    }
+
+    20%, 100% {
+        opacity: 1;
+    }
+
+    0% {
+        transform: translate(0px, -130px);
+    }
+
+    70% {
+        transform: translate(0px, 20px);
+    }
+
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+#entry_plate {
+    opacity: 0;
+    transform: translate(-20px, -100px);
+}
+
+#entry_plate.move {
+    animation: entry_plate .5s ease-in-out forwards;
+}
+
+@keyframes entry_plate {
+    0% {
+        opacity: 0;
+    }
+
+    20%, 100% {
+        opacity: 1;
+    }
+
+    0% {
+        transform: translate(-20px, -100px);
+    }
+
+    70% {
+        transform: translate(0px, 10px);
+    }
+
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+#big_plate {
+    opacity: 0;
+    transform: translate(196px, 256px) scale(.5) translate(-196px, -256px);
+}
+
+#big_plate.vis {
+    animation: big_plate .5s ease-in-out forwards;
+}
+
+@keyframes big_plate {
+    0% {
+        opacity: 0;
+    }
+
+    20%, 100% {
+        opacity: 1;
+    }
+
+    0% {
+        transform: translate(196px, 256px) scale(.5) translate(-196px, -256px);
+    }
+
+    70% {
+        transform: translate(196px, 256px) scale(1.1) translate(-196px, -256px);
+    }
+
+    100% {
+        transform: translate(196px, 256px) scale(1) translate(-196px, -256px);
+    }
+}
+
+@media (max-width: 1500px) {
+    header a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1390px) {
+    header a {
+        font-size: 12px;
+        letter-spacing: initial;
+        margin: 0px 2px;
+    }
+    .clmn_60 {
+        padding: 8px 4px;
+    }
+    .clmn_40 {
+        padding: 4px;
+    }
+    header a svg {
+        width: 21px;
+        height: 21px;
+    }
+    a.bttn_receipt, a.bttn_log {
+        width: 164px;
+        margin: 2px 8px 0 8px;
+    }
+    header .clmn_60 a {
+        margin: 0 16px 8px 0;
+    }
+}
+
+@media (max-width: 998px) {
+    #mobile_menu {
+        display: block;
+    }
+    #main_header .clmns {
+        display: none;
+    }
+    #main {
+        padding-top: 62px;
+    }
+    header {
+        min-height: 62px;
+    }
+    #one_winner {
+        padding: 0 16px;
+    }
+    h3 {
+        padding: 0px 16px;
+        margin-bottom: 0;
+    }
+    .feature {
+        padding-top: 32px;
+    }
+    #more_entries {
+        padding: 32px 16px;
+    }
+    footer {
+        padding: 16px 16px 30px 16px;
+    }
+}
+
+@media (max-width: 750px) {
+    #animation {
+        width: 375px;
+        height: 406px;
+    }
+}
