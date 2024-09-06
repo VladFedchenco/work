@@ -834,7 +834,7 @@ footer a:hover {
 
 @media (max-width: 750px) {
     #animation {
-        width: 375px;
-        height: 406px;
+        width: 100%;
+        height: 129.6vw;
     }
 }
