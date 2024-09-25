@@ -1,5 +1,7 @@
 { 
   "circle_top": "You’ve<br> earned",
   "circle_mdl": "4",
-  "circle_bttm": "entries"
+  "circle_bttm": "entries",
+  "bonus": false,
+  "bonus_amount": ""
 }

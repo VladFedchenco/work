@@ -2,6 +2,8 @@ let place;
 
 let clmn1_amount = 0, clmn2_amount = 0, clmn3_amount = 0, total_amount, ballots_amount;
 
+let bonus = false;
+
 let request = new XMLHttpRequest();
 request.open('GET', requestURL);
 request.responseType = 'json';
@@ -11,9 +13,14 @@ request.onload = function() {
   const prizeData = request.response;
   ballots_amount = prizeData.ballots_amount;
   total_amount = ballots_amount;
+  bonus = prizeData.bonus;
   $("#circle_top").innerHTML = prizeData.circle_top;
   $("#circle_mdl").innerHTML = prizeData.circle_mdl;
   $("#circle_bttm").innerHTML = prizeData.circle_bttm;
+  if (bonus) {
+    $("#big_circle").classList.add("blue");
+    $("#circle_bonus").innerHTML = prizeData.bonus_amount;
+  }
 }
 
 function play_sound() {
@@ -60,6 +67,13 @@ function start_game() {
     $("#circle_text").classList.remove("invis");
     $("#info_box").classList.remove("invis");
   }, 3500);
+  if (bonus) {
+    setTimeout(function(){
+      $("#messaging").classList.add("vis");
+      $("#circle_mdl").classList.add("hidden");
+      $("#circle_bonus").classList.remove("hidden");
+    }, 4800);
+  }
 }
 
 let s2 = $("#sign_02"), s3 = $("#sign_03");
