@@ -71,9 +71,11 @@ function start_game() {
   if (bonus) {
     setTimeout(function(){
       $("#messaging").classList.add("vis");
+    }, 4800);
+    setTimeout(function(){
       $("#circle_mdl").classList.add("hidden");
       $("#circle_bonus").classList.remove("hidden");
-    }, 4800);
+    }, 5800);
   }
 }
 

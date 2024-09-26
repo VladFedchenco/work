@@ -514,7 +514,7 @@ footer a:hover {
     top: 48px;
     left: 50%;
     transform: translateX(-50%);
-    transition: opacity .3s linear;
+    transition: opacity .5s linear;
 }
 
 #messaging {
@@ -527,7 +527,7 @@ footer a:hover {
 }
 
 #circle_mdl {
-    transition: opacity .3s linear;
+    transition: opacity .5s linear;
 }
 
 #circle_mdl.hidden, #circle_bonus.hidden {
