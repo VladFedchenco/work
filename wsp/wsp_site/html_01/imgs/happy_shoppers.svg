@@ -1,0 +1,226 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150">
+<style>
+/* <![CDATA[ */
+
+#c1, #c2, #l1, #l2, #w1, #w2, #s1, #s2, #p1 {
+  opacity: 0;
+  transform: translate(75px, 90px) scale(.1) rotate(0deg) translate(-75px, -90px);
+}
+
+#c1 {
+  animation: c1 3s ease infinite;
+}
+
+@keyframes c1 {
+  0%, 20% {
+    transform: translate(75px, 90px) scale(.1) rotate(5deg) translate(-75px, -90px);
+  }
+  35% {
+    transform: translate(75px, 90px) scale(1.1) rotate(0deg) translate(-75px, -90px);
+  }
+  80%, 100% {
+    transform: translate(70px, 120px) scale(1) rotate(-5deg) translate(-75px, -90px);
+  }
+  0%, 20%, 80%, 100% {
+    opacity: 0;
+  }
+  25%, 55% {
+    opacity: 1;
+  }
+}
+
+#c2 {
+  animation: c2 3s .2s ease infinite;
+}
+
+@keyframes c2 {
+  0%, 20% {
+    transform: translate(75px, 90px) scale(.1) rotate(5deg) translate(-75px, -90px);
+  }
+  35% {
+    transform: translate(75px, 90px) scale(1.1) rotate(0deg) translate(-75px, -90px);
+  }
+  80%, 100% {
+    transform: translate(80px, 170px) scale(1) rotate(-5deg) translate(-75px, -90px);
+  }
+  0%, 20%, 80%, 100% {
+    opacity: 0;
+  }
+  25%, 55% {
+    opacity: 1;
+  }
+}
+
+#l1 {
+  animation: l1 3s ease infinite;
+}
+
+@keyframes l1 {
+  0%, 20% {
+    transform: translate(75px, 90px) scale(.1) rotate(20deg) translate(-75px, -90px);
+  }
+  35% {
+    transform: translate(80px, 90px) scale(1) rotate(0deg) translate(-75px, -90px);
+  }
+  80%, 100% {
+    transform: translate(90px, 100px) scale(1) rotate(-55deg) translate(-75px, -90px);
+  }
+  0%, 20%, 80%, 100% {
+    opacity: 0;
+  }
+  25%, 55% {
+    opacity: 1;
+  }
+}
+
+#l2 {
+  animation: l2 3s .2s ease infinite;
+}
+
+@keyframes l2 {
+  0%, 20% {
+    transform: translate(75px, 90px) scale(.1) rotate(-20deg) translate(-75px, -90px);
+  }
+  35% {
+    transform: translate(70px, 90px) scale(1) rotate(0deg) translate(-75px, -90px);
+  }
+  80%, 100% {
+    transform: translate(60px, 110px) scale(1) rotate(35deg) translate(-75px, -90px);
+  }
+  0%, 20%, 80%, 100% {
+    opacity: 0;
+  }
+  25%, 55% {
+    opacity: 1;
+  }
+}
+
+#w1 {
+  animation: w1 3s .1s ease infinite;
+}
+
+@keyframes w1 {
+  0%, 20% {
+    transform: translate(75px, 90px) scale(.1) rotate(20deg) translate(-75px, -90px);
+  }
+  35% {
+    transform: translate(80px, 90px) scale(1) rotate(0deg) translate(-75px, -90px);
+  }
+  85%, 100% {
+    transform: translate(90px, 140px) scale(1) rotate(-25deg) translate(-75px, -90px);
+  }
+  0%, 20%, 80%, 100% {
+    opacity: 0;
+  }
+  25%, 55% {
+    opacity: 1;
+  }
+}
+
+#w2 {
+  animation: w2 3s ease infinite;
+}
+
+@keyframes w2 {
+  0%, 20% {
+    transform: translate(75px, 90px) scale(.1) rotate(-20deg) translate(-75px, -90px);
+  }
+  35% {
+    transform: translate(70px, 90px) scale(1) rotate(0deg) translate(-75px, -90px);
+  }
+  85%, 100% {
+    transform: translate(60px, 160px) scale(1) rotate(20deg) translate(-75px, -90px);
+  }
+  0%, 20%, 80%, 100% {
+    opacity: 0;
+  }
+  25%, 55% {
+    opacity: 1;
+  }
+}
+
+#s1 {
+  animation: s1 3s .1s ease infinite;
+}
+
+@keyframes s1 {
+  0%, 20% {
+    transform: translate(75px, 90px) scale(.1) rotate(-5deg) translate(-75px, -90px);
+  }
+  35% {
+    transform: translate(75px, 90px) scale(1.1) rotate(0deg) translate(-75px, -90px);
+  }
+  76%, 100% {
+    transform: translate(70px, 150px) scale(1) rotate(5deg) translate(-75px, -90px);
+  }
+  0%, 20%, 80%, 100% {
+    opacity: 0;
+  }
+  25%, 55% {
+    opacity: 1;
+  }
+}
+
+#s2 {
+  animation: s2 3s ease infinite;
+}
+
+@keyframes s2 {
+  0%, 20% {
+    transform: translate(75px, 90px) scale(.1) rotate(5deg) translate(-75px, -90px);
+  }
+  35% {
+    transform: translate(75px, 90px) scale(1.1) rotate(0deg) translate(-75px, -90px);
+  }
+  84%, 100% {
+    transform: translate(90px, 130px) scale(1) rotate(-15deg) translate(-75px, -90px);
+  }
+  0%, 20%, 80%, 100% {
+    opacity: 0;
+  }
+  25%, 55% {
+    opacity: 1;
+  }
+}
+
+#p1 {
+  animation: p1 3s .1s ease infinite;
+}
+
+@keyframes p1 {
+  0%, 20% {
+    transform: translate(75px, 90px) scale(.1) rotate(20deg) translate(-75px, -90px);
+  }
+  35% {
+    transform: translate(80px, 90px) scale(1) rotate(0deg) translate(-75px, -90px);
+  }
+  85%, 100% {
+    transform: translate(90px, 130px) scale(1) rotate(-25deg) translate(-75px, -90px);
+  }
+  0%, 20%, 80%, 100% {
+    opacity: 0;
+  }
+  25%, 55% {
+    opacity: 1;
+  }
+}
+
+/* ]]> */
+</style>
+<g id="box" fill="#76BC43">
+  <path d="m50.2 103.7 22.1-7.9v44.1l-39-14.4V97.6z"/>
+  <path d="m72.2 90.4-22.2 8L8.7 83.6l21.8-8.2zM99.8 103.7l-22.1-7.9v44.1l39-14.4V97.6z"/>
+  <path d="m77.8 90.4 22.2 8 41.3-14.8-21.8-8.2zM45.4 48.9 8.7 62.3l21.9 8.1L52 62.5c-1.3-4.8-3.6-9.4-6.6-13.6zM104.5 49c-3 4.2-5.2 8.8-6.5 13.6l21.5 7.7 21.9-8.1L104.5 49z"/>
+</g>
+<g fill="#005DA6">
+  <path id="c1" d="M28 46.8a5.2 5.2 0 0 1 .4-7.3 5.2 5.2 0 0 1 7.3.4 5.2 5.2 0 0 1-.4 7.3 5.2 5.2 0 0 1-7.3-.4z"/>
+  <path id="c2" d="M76.2 48.1a5.2 5.2 0 0 1 .4-7.3 5.2 5.2 0 0 1 7.3.4 5.2 5.2 0 0 1-.4 7.3 5.2 5.2 0 0 1-7.3-.4z"/>
+  <path id="l1" d="M24.2 21.5c19.2 8.2 35.6 28 34.2 50.4-.4-21.1-16.1-38.7-35.9-45.7l1.7-4.7z"/>
+  <path id="l2" d="M125.8 21.5c-19.2 8.2-35.6 28-34.2 50.4.4-21.1 16.1-38.7 35.8-45.6l-1.6-4.8z"/>
+  <path id="w1" d="M40.1 18.5a35 35 0 0 1 3.5-2.3c1.2-.7 2.5-1.3 4-1.8.7-.2 1.5-.4 2.5-.5.9 0 2.1.1 3.2.9.5.4.9.9 1.2 1.4.3.6.4 1.2.5 1.7 0 1.1-.2 1.9-.5 2.7-.6 1.4-1.3 2.6-2 3.7-.8 1.2-1.5 2.2-2 3.2-.2.5-.3 1-.3 1.1s.1.1.2.1c.3.1.8.1 1.3 0s1.1-.2 1.7-.4c1.2-.4 2.4-.8 3.7-1.2.6-.2 1.3-.4 2-.3s1.5-.2 2.4.1c.4.2.9.5 1.2.9s.4 1 .4 1.4c0 .9-.3 1.6-.6 2.2-.6 1.2-1.3 2.3-2 3.4-.6 1.1-1.3 2.2-1.2 3.3 0 .2.1.5.3.7.1.2.4.3.6.5.5.2 1.1.3 1.7.2 1.2-.2 2.4-.8 3.5-1.4 1.1-.7 2.1-1.4 3.1-2.3-.9.9-1.9 1.8-2.9 2.6-1.1.7-2.2 1.5-3.5 1.8-.7.2-1.4.2-2.1-.1-.3-.2-.7-.4-.9-.7-.3-.3-.4-.7-.5-1.1-.1-.8 0-1.5.2-2.2s.5-1.3.8-1.9c.6-1.2 1.2-2.3 1.7-3.4.2-.6.4-1.1.3-1.5 0-.4-.2-.5-.5-.6s-.9 0-1.4.1-1.1.3-1.7.6c-1.2.5-2.3 1-3.6 1.5-.6.2-1.3.5-2 .6-.7.2-1.5.3-2.5.1-.5-.1-1-.4-1.5-.8s-.8-1.1-.9-1.7c-.2-1.2.1-2 .4-2.7.5-1.4 1.2-2.6 1.7-3.7.6-1.1 1.1-2.3 1.4-3.2.1-.5.2-.9.1-1.1-.1-.2-.1-.1-.1-.1h-.5c-.3 0-.8.2-1.3.4-1.9.8-4.1 2.3-5.8 3.8l-3.3-3.8z"/>
+  <path id="w2" d="M107.4 9.9c.9 1 1.6 1.9 2.4 3 .7 1 1.4 2.1 2 3.4.3.7.5 1.4.7 2.2.1.8.1 2-.5 3.1-.3.5-.7.9-1.2 1.3a5 5 0 0 1-4.1.4c-1.4-.4-2.5-.9-3.5-1.4s-2.1-1-3-1.3c-.4-.2-.9-.2-.9-.2v-.1s-.1 0-.1.1c-.1.2 0 .6.1 1.1s.3 1 .5 1.5c.4 1 .9 2.1 1.4 3.2.2.6.5 1.1.6 1.8.1.6.3 1.4.1 2.3a2.33 2.33 0 0 1-2.1 1.7c-.8.1-1.5-.2-2.1-.4-1.2-.4-2.2-1-3.2-1.3s-2.1-.9-3-.8c-.2.1-.4.1-.6.3-.2.1-.3.4-.4.6-.1.4-.2 1 0 1.5.3 1.1.9 2 1.6 3 .7.9 1.5 1.8 2.3 2.6-.9-.7-1.8-1.5-2.6-2.4-.8-.9-1.5-1.8-2-3-.2-.6-.3-1.3-.1-1.9.1-.3.3-.6.5-.9.3-.3.6-.5.9-.6.7-.2 1.4-.1 2 0s1.2.3 1.8.5c1.1.4 2.2.9 3.2 1.1.5.1 1 .2 1.4.1.3-.1.4-.2.4-.4.1-.2-.1-.7-.2-1.2-.2-.5-.4-1-.7-1.5-.5-1-1.1-2-1.7-3.1-.3-.5-.6-1.1-.8-1.8-.2-.6-.4-1.4-.3-2.3.1-.5.3-1 .6-1.5.4-.5.9-.9 1.5-1 1.1-.3 1.8-.1 2.5.1 1.3.3 2.4.8 3.5 1.2 1.1.4 2.1.8 3 .9.4.1.8.1 1 0 .1-.1 0 0 0 0 0 .1 0 0-.1-.3s-.2-.7-.5-1.1c-.9-1.6-2.5-3.3-4-4.7l3.7-3.6z"/>
+  <path id="s1" d="m71.1 7.4 4.7 4.7 6.5 1.4-4.7 4.7-1.4 6.4-4.7-4.6-6.5-1.4 4.7-4.7z"/>
+  <path id="s2" d="m119.6 36.9 6 2.8 6.5-.8-2.8 6 .8 6.6-6-2.9-6.6.8 2.9-6z"/>
+  <path id="p1" d="m79.9 60.6-1.8-4.7-4.9 1.8-1.8-4.9-4.7 1.7 1.8 5-4.9 1.8 1.7 4.7 4.9-1.9 1.8 5 4.7-1.7-1.8-5z"/>
+</g>
+</svg>

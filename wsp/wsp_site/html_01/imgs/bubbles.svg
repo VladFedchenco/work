@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="#ECEEF2" viewBox="0 0 720 570">
+<style>
+/* <![CDATA[ */
+
+#b1 {
+  animation: bubble 6s -4s linear infinite;
+}
+
+#b2 {
+  animation: bubble 7s -1s linear infinite;
+}
+
+#b3 {
+  animation: bubble 8s -6s linear infinite;
+}
+
+#b4 {
+  animation: bubble 5s -2s linear infinite;
+}
+
+#b5 {
+  animation: bubble 6.5s -3s linear infinite;
+}
+
+#b6 {
+  animation: bubble 9s -5s linear infinite;
+}
+
+#b7 {
+  animation: bubble 6s -2s linear infinite;
+}
+
+#b8 {
+  animation: bubble 7.5s -4s linear infinite;
+}
+
+#b9 {
+  animation: bubble 6.5s -5s linear infinite;
+}
+
+@keyframes bubble {
+  0% {
+    transform: translateY(0px);
+  }
+  50%, 100% {
+    transform: translateY(-630px);
+  }
+  0%, 40% {
+    opacity: 1;
+  }
+  45%, 100% {
+    opacity: 0;
+  }
+}
+
+/* ]]> */
+</style>
+<circle id="b1" cx="69.16" cy="583.44" r="13.94"/>
+<circle id="b2" cx="65.3" cy="596.02" r="26.52"/>
+<circle id="b3" cx="118.33" cy="577.76" r="8.26"/>
+<circle id="b4" cx="121.55" cy="583.94" r="14.44"/>
+<circle id="b5" cx="504.91" cy="583.94" r="14.44"/>
+<circle id="b6" cx="629.19" cy="578.02" r="8.52"/>
+<circle id="b7" cx="576.22" cy="595.65" r="26.15"/>
+<circle id="b8" cx="637.71" cy="583.47" r="13.97"/>
+<circle id="b9" cx="659.55" cy="595.93" r="26.43"/>
+</svg>
