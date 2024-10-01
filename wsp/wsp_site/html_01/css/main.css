@@ -205,31 +205,187 @@ ul {
 }
 
 #b1 {
-    animation: bubbles 10s -5s linear infinite;
+    animation: b1 25s -21s ease infinite;
+}
+
+@keyframes b1 {
+    0%, 100% {
+        transform: translate(0px, 0px);
+    }
+    10% {
+        transform: translate(858px, -960px);
+    }
+    20% {
+        transform: translate(217px, -776px);
+    }
+    30% {
+        transform: translate(-145px, -551px);
+    }
+    40% {
+        transform: translate(-386px, -830px);
+    }
+    50% {
+        transform: translate(471px, -398px);
+    }
+    60% {
+        transform: translate(346px, -815px);
+    }
+    70% {
+        transform: translate(767px, -487px);
+    }
+    80% {
+        transform: translate(554px, -873px);
+    }
+    90% {
+        transform: translate(-220px, -535px);
+    }
 }
 
 #b2 {
-    animation: bubbles 12s -3s linear infinite;
+    animation: b2 27s -16s linear infinite;
+}
+
+@keyframes b2 {
+    0%, 100% {
+        transform: translate(0px, 0px);
+    }
+    10% {
+        transform: translate(-936px, -562px);
+    }
+    20% {
+        transform: translate(581px, -1015px);
+    }
+    30% {
+        transform: translate(36px, -508px);
+    }
+    40% {
+        transform: translate(36px, -508px);
+    }
+    50% {
+        transform: translate(-715px, -838px);
+    }
+    60% {
+        transform: translate(-1026px, -308px);
+    }
+    70% {
+        transform: translate(45px, -955px);
+    }
+    80% {
+        transform: translate(440px, -562px);
+    }
+    90% {
+        transform: translate(-487px, -452px);
+    }
 }
 
 #b3 {
-    animation: bubbles 11s -8s linear infinite;
+    animation: b3 23s -9s linear infinite;
+}
+
+@keyframes b3 {
+    0%, 100% {
+        transform: translate(0px, 0px);
+    }
+    10% {
+        transform: translate(-577px, -782px);
+    }
+    20% {
+        transform: translate(723px, -969px);
+    }
+    30% {
+        transform: translate(1192px, -678px);
+    }
+    40% {
+        transform: translate(222px, -486px);
+    }
+    50% {
+        transform: translate(444px, -852px);
+    }
+    60% {
+        transform: translate(-136px, -452px);
+    }
+    70% {
+        transform: translate(-607px, -852px);
+    }
+    80% {
+        transform: translate(534px, -496px);
+    }
+    90% {
+        transform: translate(-302px, -603px);
+    }
 }
 
 #b4 {
-    animation: bubbles 13s -10s linear infinite;
+    animation: b4 27s -14s linear infinite;
+}
+
+@keyframes b4 {
+    0%, 100% {
+        transform: translate(0px, 0px);
+    }
+    10% {
+        transform: translate(-131px, -858px);
+    }
+    20% {
+        transform: translate(683px, -522px);
+    }
+    30% {
+        transform: translate(-499px, -921px);
+    }
+    40% {
+        transform: translate(-957px, -348px);
+    }
+    50% {
+        transform: translate(-68px, -784px);
+    }
+    60% {
+        transform: translate(695px, -1051px);
+    }
+    70% {
+        transform: translate(-699px, -789px);
+    }
+    80% {
+        transform: translate(-280px, -313px);
+    }
+    90% {
+        transform: translate(242px, -734px);
+    }
 }
 
 #b5 {
-    animation: bubbles 11s -1s linear infinite;
+    animation: b5 31s -6s linear infinite;
 }
 
-@keyframes bubbles {
-    0% {
+@keyframes b5 {
+    0%, 100% {
         transform: translate(0px, 0px);
     }
-    70%, 100% {
-        transform: translate(0px, -1200px);
+    10% {
+        transform: translate(-1747px, -408px);
+    }
+    20% {
+        transform: translate(-367px, -1055px);
+    }
+    30% {
+        transform: translate(40px, -452px);
+    }
+    40% {
+        transform: translate(-1115px, -1053px);
+    }
+    50% {
+        transform: translate(-1483px, -187px);
+    }
+    60% {
+        transform: translate(-1752px, -1047px);
+    }
+    70% {
+        transform: translate(-267px, -426px);
+    }
+    80% {
+        transform: translate(-1773px, -690px);
+    }
+    90% {
+        transform: translate(-417px, -429px);
     }
 }
 
@@ -321,7 +477,7 @@ ul {
 }
 
 .button:hover {
-    background-color: #000;
+    background-color: #054A80;
 }
 
 #circles {

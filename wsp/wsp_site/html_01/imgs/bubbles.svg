@@ -3,53 +3,200 @@
 /* <![CDATA[ */
 
 #b1 {
-  animation: bubble 6s -4s linear infinite;
+  animation: b1 11s -4s ease infinite;
+}
+
+@keyframes b1 {
+  0%, 100% {
+    transform: translate(0px, 0px);
+  }
+  20% {
+    transform: translate(609px, -302px);
+  }
+  40% {
+    transform: translate(176px, -550px);
+  }
+  60% {
+    transform: translate(-49px, -239px);
+  }
+  80% {
+    transform: translate(338px, -346px);
+  }
 }
 
 #b2 {
-  animation: bubble 7s -1s linear infinite;
+  animation: b2 13s -8s ease infinite;
+}
+
+@keyframes b2 {
+  0%, 100% {
+    transform: translate(0px, 0px);
+  }
+  20% {
+    transform: translate(-37px, -554px);
+  }
+  40% {
+    transform: translate(595px, -90px);
+  }
+  60% {
+    transform: translate(175px, -330px);
+  }
+  80% {
+    transform: translate(629px, -419px);
+  }
 }
 
 #b3 {
-  animation: bubble 8s -6s linear infinite;
+  animation: b3 16s -6s ease infinite;
+}
+
+@keyframes b3 {
+  0%, 100% {
+    transform: translate(0px, 0px);
+  }
+  20% {
+    transform: translate(130px, -441px);
+  }
+  40% {
+    transform: translate(582px, -124px);
+  }
+  60% {
+    transform: translate(457px, -569px);
+  }
+  80% {
+    transform: translate(-110px, -219px);
+  }
 }
 
 #b4 {
-  animation: bubble 5s -2s linear infinite;
+  animation: b4 15s -2s ease infinite;
+}
+
+@keyframes b4 {
+  0%, 100% {
+    transform: translate(0px, 0px);
+  }
+  20% {
+    transform: translate(564px, -50px);
+  }
+  40% {
+    transform: translate(-97px, -261px);
+  }
+  60% {
+    transform: translate(579px, -425px);
+  }
+  80% {
+    transform: translate(-106px, -569px);
+  }
 }
 
 #b5 {
-  animation: bubble 6.5s -3s linear infinite;
+  animation: b5 15s -3s ease infinite;
+}
+
+@keyframes b5 {
+  0%, 100% {
+    transform: translate(0px, 0px);
+  }
+  20% {
+    transform: translate(201px, -570px);
+  }
+  40% {
+    transform: translate(-137px, -29px);
+  }
+  60% {
+    transform: translate(-368px, -570px);
+  }
+  80% {
+    transform: translate(-490px, -209px);
+  }
 }
 
 #b6 {
-  animation: bubble 9s -5s linear infinite;
+  animation: b 19s -5s ease infinite;
+}
+
+@keyframes b6 {
+  0%, 100% {
+    transform: translate(0px, 0px);
+  }
+  20% {
+    transform: translate(-537px, -102px);
+  }
+  40% {
+    transform: translate(-465px, -548px);
+  }
+  60% {
+    transform: translate(56px, -531px);
+  }
+  80% {
+    transform: translate(-269px, -312px);
+  }
 }
 
 #b7 {
-  animation: bubble 6s -2s linear infinite;
+  animation: b7 16s -9s ease infinite;
+}
+
+@keyframes b7 {
+  0%, 100% {
+    transform: translate(0px, 0px);
+  }
+  20% {
+    transform: translate(-550px, -142px);
+  }
+  40% {
+    transform: translate(-97px, -510px);
+  }
+  60% {
+    transform: translate(-550px, -407px);
+  }
+  80% {
+    transform: translate(-316px, -146px);
+  }
 }
 
 #b8 {
-  animation: bubble 7.5s -4s linear infinite;
+  animation: b8 17s -1s ease infinite;
+}
+
+@keyframes b8 {
+  0%, 100% {
+    transform: translate(0px, 0px);
+  }
+  20% {
+    transform: translate(68px, -491px);
+  }
+  40% {
+    transform: translate(-329px, -538px);
+  }
+  60% {
+    transform: translate(-180px, -212px);
+  }
+  80% {
+    transform: translate(-612px, -298px);
+  }
 }
 
 #b9 {
-  animation: bubble 6.5s -5s linear infinite;
+  animation: b9 18s -5s ease infinite;
 }
 
-@keyframes bubble {
-  0% {
-    transform: translateY(0px);
+@keyframes b9 {
+  0%, 100% {
+    transform: translate(0px, 0px);
   }
-  50%, 100% {
-    transform: translateY(-630px);
+  20% {
+    transform: translate(-631px, -567px);
   }
-  0%, 40% {
-    opacity: 1;
+  40% {
+    transform: translate(-482px, -53px);
   }
-  45%, 100% {
-    opacity: 0;
+  60% {
+    transform: translate(33px, -510px);
+  }
+  80% {
+    transform: translate(-467px, -570px);
   }
 }
 
