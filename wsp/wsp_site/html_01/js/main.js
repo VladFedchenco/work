@@ -11,3 +11,7 @@ window.addEventListener("scroll", function() {
     $("#logo_big").classList.remove("hidden");
   }
 });
+
+$("#mobile_menu").addEventListener("click", function() {
+  $("body").classList.toggle("menu_active");
+});

@@ -10,10 +10,19 @@
 <body>
 <header>
     <a id="logo" class="hidden" href="javascript:;"><img src="imgs/wsp_logo.svg"></a>
-    <div id="nav">
-        <a class="selected" href="javascript:;">Home</a> <a href="javascript:;">Games, Contests and Sweepstakes</a> <a href="javascript:;">Premium Promotional Products</a> <a href="javascript:;">About Us</a>
+    <a id="mobile_menu" href="javascript:;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 14">
+          <path id="m1" d="M.16 2.41A.54.54 0 0 1 0 2V.57C0 .4.05.27.16.16S.4 0 .57 0h14.86c.17 0 .3.05.41.16s.16.24.16.41V2c0 .17-.05.3-.16.41s-.24.16-.41.16H.57a.54.54 0 0 1-.41-.16Z"/>
+          <path id="m2" d="M.16 8.12A.54.54 0 0 1 0 7.71V6.28c0-.17.05-.3.16-.41s.24-.16.41-.16h14.86c.17 0 .3.05.41.16s.16.24.16.41v1.43c0 .17-.05.3-.16.41s-.24.16-.41.16H.57a.54.54 0 0 1-.41-.16Z"/>
+          <path id="m3" d="M.16 13.84a.54.54 0 0 1-.16-.41V12c0-.17.05-.3.16-.41s.24-.16.41-.16h14.86c.17 0 .3.05.41.16s.16.24.16.41v1.43c0 .17-.05.3-.16.41s-.24.16-.41.16H.57a.54.54 0 0 1-.41-.16Z"/>
+        </svg>
+    </a>
+    <div id="menu_wrapper">
+        <div id="nav">
+            <a class="selected" href="javascript:;">Home</a> <a href="javascript:;">Games, Contests and Sweepstakes</a> <a href="javascript:;">Premium Promotional Products</a> <a href="javascript:;">About Us</a>
+        </div>
+        <a id="contact_us" href="javascript:;">Contact Us Today</a>
     </div>
-    <a id="contact_us" href="javascript:;">Contact Us Today</a>
 </header>
 <section id="hero">
     <div id="hero_wrapper">
@@ -58,7 +67,7 @@
         <img id="circle_04" src="imgs/top_circle_04.png">
     </div>
     <div id="logos">
-        <img src="imgs/logo_rutters.png"><img src="imgs/logo_crosbys.png"><img src="imgs/logo_irving.png"><img src="imgs/logo_top.png"><img src="imgs/logo_yes.png"><img src="imgs/logo_udf.png"><img src="imgs/logo_coop.png"><img src="imgs/logo_savemart.png"><img src="imgs/logo_lucky.png"><img src="imgs/logo_enmarket.png"><img src="imgs/logo_needs.png"><img src="imgs/logo_couchetard.png"><img src="imgs/logo_circlek.png"><img src="imgs/logo_clorox.png"><img src="imgs/logo_hersheys.png"><img src="imgs/logo_amarula.png">
+        <span><img class="row1" src="imgs/logo_rutters.png"><img class="row1" src="imgs/logo_crosbys.png"><img class="row1" src="imgs/logo_irving.png"><img class="row1" src="imgs/logo_top.png"></span><span><img class="row2" src="imgs/logo_yes.png"><img class="row2" src="imgs/logo_udf.png"><img class="row2" src="imgs/logo_coop.png"><img class="row2" src="imgs/logo_savemart.png"></span><span><img class="row3" src="imgs/logo_lucky.png"><img class="row3" src="imgs/logo_enmarket.png"><img class="row3" src="imgs/logo_needs.png"></span><span><img class="row4" src="imgs/logo_couchetard.png"><img class="row4" src="imgs/logo_circlek.png"><img class="row4" src="imgs/logo_clorox.png"></span><span><img class="row5" src="imgs/logo_hersheys.png"><img class="row5" src="imgs/logo_amarula.png"></span>
     </div>
 </section>
 <section id="sales">
@@ -68,7 +77,7 @@
     <div class="clmn_60">
         <h2>DRIVING SALES ONE SMILE AT A TIME</h2>
         <h3>Unleashing the Power of Happiness to Build Your Business</h3>
-        <p>Since 1956, WSP International Limited has harnessed our passion for promotions to create dynamic, results-driven campaigns for retailers and brands. We’ve unlocked the incredible marketing potential of consumer happiness—because a happy customer not only shops more often but spends more with each visit. We grow your business by delivering promotions that surprise and delight customers and keep them coming back.</p>
+        <p>Since 1956, WSP International Limited has harnessed our passion for promotions to create dynamic, results-driven campaigns for retailers and brands. We’ve unlocked the incredible marketing potential of consumer happiness—because a happy customer not only shops more often but spends more with each visit. We grow your business by delivering promotions that surprise and delight customers and keep them coming back. <img class="smile" src="imgs/smile.png"></p>
         <p>With over 65 years of expertise, we combine proven strategies with the innovative power of Happiness Marketing to create cutting-edge programs that drive sales and strengthen loyalty—all through the simple, effective power of a smile. Let us help you win, one happy customer at a time!</p>
         <p><a class="button" href="javascript:;">More About Games</a> <a class="button" href="javascript:;">More About Products</a></p>
     </div>
@@ -128,6 +137,7 @@
         100 Allstate Parkway, Suite 604<br>
         Markham, Ontario L3R 6H3<br>
         1-800-979-9793
+        <p id="copy_mobile">&copy; 2024 All rights reserved.</p>
     </div>
 </footer>
 <script src="js/main.js"></script>

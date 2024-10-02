@@ -121,14 +121,14 @@ ul {
 #nav {
     position: absolute;
     right: 300px;
-    top: 36px;
+    top: 32px;
 }
 
 #nav a {
     font-family: 'Century Gothic Regular', sans-serif;
     color: #005DA6;
     text-decoration: none;
-    font-style: 18px;
+    font-size: 18px;
     margin-left: 24px;
 }
 
@@ -580,10 +580,10 @@ ul {
     display: inline-block;
     height: 100px;
     padding: 16px 0 0 120px;
-    margin-right: 100px;
 }
 
 #prizes {
+    margin-right: 100px;
     background: url(../imgs/happy_winners.svg) no-repeat left center;
 }
 
@@ -654,8 +654,13 @@ footer p {
     color: #fff;
 }
 
-#copy {
+#copy, #copy_mobile {
     font-size: 12px;
+}
+
+#copy_mobile {
+    display: none;
+    margin-top: 24px;
 }
 
 #footer_logo {
@@ -668,6 +673,560 @@ footer p {
     margin-top: 8px;
 }
 
-@media (max-width: 998px) {
+#mobile_menu {
+    display: none;
+    position: absolute;
+    top: 22px;
+    right: 22px;
+}
 
+.smile {
+    display: inline-block;
+    vertical-align: middle;
+    width: 21px;
+    height: 21px;
+}
+
+@media (max-width: 1680px) {
+    #circles {
+        right: 62px;
+    }
+
+    #hero_content {
+        left: 62px;
+        max-width: 60%;
+    }
+
+    #logo_big {
+        left: 32px;
+    }
+
+    #logos {
+        left: 62px;
+        right: 62px;
+    }
+
+    #sales, #roi {
+        padding: 90px 62px;
+    }
+
+    #sales_picture {
+        width: 480px;
+    }
+
+    #roi_picture {
+        width: 413px;
+    }
+
+@media (max-width: 1370px) {
+    #nav {
+        top: 36px;
+        right: 240px;
+    }
+
+    #nav a {
+        font-size: 16px;
+        margin-left: 20px;
+    }
+
+    #contact_us {
+        font-size: 12px;
+        width: 180px;
+        right: 22px;
+    }
+
+    #logo {
+        left: 22px;
+    }
+
+    #logo_big img {
+        width: 220px;
+    }
+
+    #hero_content {
+        top: 290px;
+    }
+
+    #hero_content h2 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    #hero_content h3 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    #circles, #circle_01, #circle_02, #circle_03, #circle_04 {
+        width: 340px;
+        height: 380px;
+    }
+
+    #hero_wrapper {
+        height: 740px;
+    }
+
+    #hero_wrapper svg {
+        min-width: 1600px;
+    }
+
+    #logos {
+        top: 740px;
+    }
+
+    .button {
+        margin-bottom: 16px;
+    }
+
+    #logos img {
+        max-height: 40px;
+        margin: 8px 16px;
+    }
+
+    #sales_picture {
+        width: 380px;
+    }
+
+    #roi_picture {
+        width: 313px;
+    }
+
+    #prizes {
+        margin-right: 60px;
+        margin-bottom: 32px;
+    }
+
+    #get_started, footer {
+        padding: 60px 90px;
+    }
+
+    .clmn_25 {
+        width: 30%;
+    }
+    .clmn_15 {
+        width: 20%;
+    }
+}
+
+@media (max-width: 1190px) {
+    header {
+        height: 62px;
+    }
+
+    #nav {
+        top: 20px;
+        right: 220px;
+    }
+
+    #nav a {
+        font-size: 14px;
+        margin-left: 16px;
+    }
+
+    #contact_us {
+        top: 13px;
+        height: 36px;
+        line-height: 36px;
+        padding: 0 16px;
+        width: 170px;
+        background-position: 16px center;
+    }
+
+    #logo {
+        top: 0px;
+    }
+
+    #hero {
+        padding-top: 62px;
+    }
+
+    #hero_content h2 {
+        font-size: 28px;
+        margin-bottom: 18px;
+        line-height: 1.3;
+    }
+
+    #hero_content {
+        top: 260px;
+    }
+
+    #hero_content h3 {
+        font-size: 21px;
+        margin-bottom: 8px;
+    }
+
+    #logo_big {
+        left: 22px;
+    }
+
+    #hero_content {
+        left: 42px;
+    }
+
+    #circles {
+        top: 190px;
+        right: 42px;
+    }
+
+    #hero_wrapper svg {
+        min-width: 1480px;
+    }
+
+    #logos {
+        top: 630px;
+        left: 22px;
+        right: 22px;
+    }
+
+    #hero_wrapper {
+        height: 680px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    h3 {
+        font-size: 21px;
+    }
+
+    p {
+        color: #2D3748;
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    #sales_picture {
+        width: 330px;
+    }
+
+    #roi_picture {
+        width: 263px;
+    }
+
+    #sales, #roi {
+        padding: 90px 42px;
+    }
+}
+
+@media (max-width: 1080px) {
+    .menu_active header {
+        z-index: 1001;
+    }
+
+    .menu_active #logo {
+        opacity: 1;
+        pointer-events: initial;
+    }
+
+    .menu_active #logo_big {
+        opacity: 1;
+        pointer-events: initial;
+        transform: scale(.5);
+    }
+
+    #mobile_menu {
+        display: block;
+    }
+
+    #m1, #m3 {
+        transition: all .3s ease-in-out;
+    }
+
+    .menu_active #m2 {
+        display: none;
+    }
+
+    .menu_active #m1 {
+        transform: translate(8px, 7.5px) rotate(45deg) scale(1.2) translate(-8px, -1.3px);
+    }
+
+    .menu_active #m3 {
+        transform: translate(8px, 7.5px) rotate(-45deg) scale(1.2) translate(-8px, -12.7px);
+    }
+
+    #menu_wrapper {
+        background: #fff;
+        position: absolute;
+        left: 0;
+        top: 62px;
+        width: 100%;
+        padding: 0px 22px;
+        box-shadow: 0px 3px 6px rgba(0, 0, 0, .2);
+        max-height: 0px;
+        overflow: hidden;
+        pointer-events: none;
+        transition: all .4s ease-in-out;
+    }
+
+    .menu_active #menu_wrapper {
+        padding: 26px 22px 40px 22px;
+        max-height: 400px;
+        pointer-events: initial;
+    }
+
+    #menu_wrapper:before {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 10px;
+        box-shadow: 0px 3px 6px inset rgba(0, 0, 0, .2);
+    }
+
+    #nav {
+        position: static;
+        margin-bottom: 12px;
+    }
+
+    #nav a {
+        display: block;
+        text-align: center;
+        font-size: 18px;
+        padding: 10px;
+        margin-left: 0px;
+    }
+
+    #contact_us {
+        position: static;
+        margin: 0 auto;
+        font-size: 14px;
+        line-height: 42px;
+        width: 210px;
+        height: 42px;
+        padding: 0px 24px;
+        background-position: 20px center;
+    }
+
+    #hero_content {
+        width: 50%;
+    }
+
+    #hero_content h2 {
+        font-size: 24px;
+    }
+
+    #hero_content h3 {
+        font-size: 19px;
+    }
+
+    #footer_logo img {
+        width: 180px;
+    }
+}
+
+@media (max-width: 940px) {
+    #logo_big {
+        top: 90px;
+    }
+
+    #hero_content h2 {
+        font-size: 20px;
+    }
+
+    #hero_content h3 {
+        font-size: 16px;
+        line-height: 1.3;
+    }
+
+    #circles, #circle_01, #circle_02, #circle_03, #circle_04 {
+        width: 254px;
+        height: 284px;
+    }
+
+    #hero_content {
+        top: 230px;
+    }
+
+    #hero_wrapper {
+        height: 550px;
+    }
+
+    #hero_wrapper svg {
+        min-width: 1200px;
+    }
+
+    #logos {
+        top: 540px;
+    }
+
+    #logos img {
+        max-height: 36px;
+        margin: 6px 10px;
+    }
+
+    #sales_picture {
+        width: 250px;
+    }
+
+    #roi_picture {
+        width: 183px;
+    }
+
+    footer {
+        padding: 36px;
+    }
+
+    #footer_logo img {
+        width: 136px;
+    }
+
+    .footer_link {
+        font-size: 16px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 750px) {
+    #hero_wrapper {
+        height: 900px;
+    }
+
+    #logos {
+        top: 840px;
+    }
+
+    #circles {
+        top: 530px;
+        right: auto;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #hero {
+        padding-top: 0;
+    }
+
+    #hero_content {
+        max-width: initial;
+        width: auto;
+        top: 190px;
+        right: 42px;
+    }
+
+    #hero_wrapper svg {
+        min-width: 1400px;
+    }
+
+    #logo_big {
+        top: 80px;
+    }
+
+    #logo_big img {
+        width: 150px;
+    }
+
+    #logos img {
+        max-height: 30px;
+    }
+
+    .row1, .row2, .row3, .row4, .row5 {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    #logos span {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .row1 {
+        animation: logos 10s linear infinite;
+    }
+
+    .row2 {
+        animation: logos 10s 2s linear infinite;
+    }
+
+    .row3 {
+        animation: logos 10s 4s linear infinite;
+    }
+
+    .row4 {
+        animation: logos 10s 6s linear infinite;
+    }
+
+    .row5 {
+        animation: logos 10s 8s linear infinite;
+    }
+
+    @keyframes logos {
+        0%, 20%, 100% {
+            opacity: 0;
+            transform: scale(0);
+        }
+        5%, 15% {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+
+    .clmn_40 {
+        display: none;
+    }
+
+    .clmn_60 {
+        width: 100%;
+    }
+
+    #sales, #roi {
+        padding: 48px 36px;
+    }
+
+     h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    #prizes {
+        margin: 16px 0;
+    }
+
+    #get_started {
+        padding: 60px 36px;
+    }
+
+    #cta {
+        padding: 32px 16px 24px 16px;
+    }
+
+    footer .clmn_25 {
+        width: 100%;
+    }
+
+    footer .clmn_15 {
+        width: 50%;
+        margin-bottom: 32px;
+    }
+
+    #footer_logo {
+        margin-bottom: 40px;
+    }
+
+    #copy {
+        display: none;
+    }
+
+    #copy_mobile {
+        display: block;
+    }
+
+    #link_in img {
+        width: 24px;
+    }
 }
