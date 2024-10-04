@@ -43,11 +43,13 @@ h3, h4, h5 {
 }
 
 h2 {
-    font-size: 32px;
+    color: #005DA6;
+    font-size: 31px;
 }
 
 h3 {
-    font-size: 26px;
+    color: #005DA6;
+    font-size: 24px;
 }
 
 p {
@@ -81,6 +83,10 @@ ul {
     list-style: none;
 }
 
+.clmns {
+    overflow: hidden;
+}
+
 .clmn_15 {
     float: left;
     width: 15%;
@@ -91,14 +97,39 @@ ul {
     width: 25%;
 }
 
+.clmn_30 {
+    float: left;
+    width: 30%;
+}
+
+.clmn_33 {
+    float: left;
+    width: 33%;
+}
+
 .clmn_40 {
     float: left;
     width: 40%;
 }
 
+.clmn_50 {
+    float: left;
+    width: 50%;
+}
+
 .clmn_60 {
     float: left;
     width: 60%;
+}
+
+.clmn_65 {
+    float: left;
+    width: 65%;
+}
+
+.clmn_70 {
+    float: left;
+    width: 70%;
 }
 
 #logo {
@@ -546,10 +577,6 @@ ul {
     width: 510px;
 }
 
-#sales h2, #sales h3 {
-    color: #005DA6;
-}
-
 #sales .button {
     margin-right: 16px;
 }
@@ -562,10 +589,6 @@ ul {
     overflow: hidden;
     padding: 90px 160px;
     background: linear-gradient(#fff, #eceef2);
-}
-
-#roi h2, #roi h3 {
-    color: #005DA6;
 }
 
 #roi_picture {
@@ -596,6 +619,11 @@ ul {
     padding: 80px 360px;
 }
 
+#get_started_wide {
+    background: #76BC43;
+    padding: 80px 62px;
+}
+
 #cta {
     text-align: center;
     background: #fff;
@@ -604,8 +632,13 @@ ul {
     box-shadow: 0px 3px 6px rgba(0, 0, 0, .2);
 }
 
+#get_started_wide #cta {
+    padding: 48px 24px;
+    max-width: 1294px;
+    margin: 0 auto;
+}
+
 #cta h2, #cta h3 {
-    color: #005DA6;
     margin-bottom: 16px;
 }
 
@@ -687,6 +720,100 @@ footer p {
     height: 21px;
 }
 
+.internal_content {
+    overflow: hidden;
+    padding: 90px 62px;
+    background: linear-gradient(#fff, #eceef2);
+}
+
+.internal_content.top {
+    padding: 130px 62px 90px 62px;
+}
+
+.white_box {
+    background: #fff;
+    max-width: 1198px;
+    border-radius: 15px;
+    margin: 0 auto;
+    padding: 56px 48px 24px 48px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, .2);
+}
+
+.white_box h2, .white_box h3 {
+    text-align: center;
+}
+
+.white_box h3 {
+    margin-bottom: 32px;
+}
+
+#game_types {
+    background: url(../imgs/bubbles.svg) no-repeat left center;
+    overflow: hidden;
+    padding: 100px 62px 8px 62px;
+}
+
+.semi_white_box {
+    max-width: 599px;
+}
+
+#game_img {
+    max-width: 500px;
+    display: block;
+    margin: 0 auto;
+}
+
+.content_narrow {
+    max-width: 1180px;
+    margin: 0 auto;
+    font-size: 18px;
+}
+
+.content_narrow li {
+    display: block;
+    padding: 8px 0px 8px 32px;
+    background: url(../imgs/bullet.svg) left center no-repeat;
+}
+
+#about_top {
+    padding: 170px 62px 62px 62px;
+    background: #76BC43;
+}
+
+#about_top p, #about_top h2, #about_top h3 {
+    color: #fff;
+}
+
+#about_img {
+    width: 567px;
+    position: absolute;
+    right: 100px;
+    top: 160px;
+}
+
+.contact_item {
+    min-height: 50px;
+    display: block;
+    padding: 16px 0 0 64px;
+    margin: 0 0 21px 0;
+}
+
+.icn_phone {
+    background: url(../imgs/icn_phone.svg) left top no-repeat;
+}
+
+.icn_email {
+    background: url(../imgs/icn_email.svg) left top no-repeat;
+}
+
+.icn_location {
+    background: url(../imgs/icn_location.svg) left top no-repeat;
+}
+
+.space .content_narrow, .space .content_narrow h3 {
+    margin-bottom: 32px;
+}
+
 @media (max-width: 1680px) {
     #circles {
         right: 62px;
@@ -716,6 +843,11 @@ footer p {
 
     #roi_picture {
         width: 413px;
+    }
+
+    #about_img {
+        width: 480px;
+        right: 42px;
     }
 
 @media (max-width: 1370px) {
@@ -803,8 +935,18 @@ footer p {
     .clmn_25 {
         width: 30%;
     }
+
     .clmn_15 {
         width: 20%;
+    }
+
+    #game_img {
+        max-width: 400px;
+        margin: 0;
+    }
+
+    #about_top .clmn_65 {
+        width: 55%;
     }
 }
 
@@ -906,6 +1048,16 @@ footer p {
 
     #sales, #roi {
         padding: 90px 42px;
+    }
+
+    #about_top {
+        padding-top: 130px;
+    }
+
+    #about_img {
+        top: 120px;
+        right: 22px;
+        width: 440px;
     }
 }
 
@@ -1015,6 +1167,30 @@ footer p {
     #footer_logo img {
         width: 180px;
     }
+
+    #game_types {
+        padding: 48px 0 8px 0;
+    }
+
+    .internal_content.top {
+        padding: 100px 42px 42px 42px;
+    }
+
+    .internal_content {
+        padding: 64px 42px;
+    }
+
+    .content_narrow {
+        font-size: 16px;
+    }
+
+    #about_top {
+        padding: 110px 42px 36px 42px;
+    }
+
+    #about_top .clmn_65 {
+        width: 50%;
+    }
 }
 
 @media (max-width: 940px) {
@@ -1079,6 +1255,32 @@ footer p {
 
     footer {
         font-size: 14px;
+    }
+
+    #game_img {
+        max-width: 300px;
+        margin-bottom: 48px;
+    }
+
+    #about_img {
+        width: 360px;
+    }
+
+    .internal_content.space {
+        padding-bottom: 24px;
+    }
+
+    .internal_content.space .clmn_65 {
+        width: 100%;
+    }
+
+    .internal_content.space .clmn_40 {
+        width: 50%;
+    }
+
+    .internal_content.space .clmn_25 {
+        width: 40%;
+        margin-bottom: 16px;
     }
 }
 
@@ -1173,7 +1375,7 @@ footer p {
         display: none;
     }
 
-    .clmn_60 {
+    .clmn_50, .clmn_60 {
         width: 100%;
     }
 
@@ -1197,8 +1399,12 @@ footer p {
         margin: 16px 0;
     }
 
-    #get_started {
+    #get_started, #get_started_wide, .internal_content {
         padding: 60px 36px;
+    }
+
+    .internal_content.top {
+        padding: 90px 36px 36px 36px;
     }
 
     #cta {
@@ -1228,5 +1434,32 @@ footer p {
 
     #link_in img {
         width: 24px;
+    }
+
+    .content_narrow {
+        font-size: 15px;
+    }
+
+    .white_box {
+        padding: 36px 36px 24px 36px;
+    }
+
+    #about_top .clmn_65 {
+        width: 100%;
+    }
+
+    #about_img {
+        width: 290px;
+        position: static;
+        margin-top: 24px;   
+    }
+
+    .internal_content.space .clmn_40 {
+        display: block;
+        width: 100%;
+    }
+
+    .internal_content.space .clmn_25 {
+        width: 100%;
     }
 }
