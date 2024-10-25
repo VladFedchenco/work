@@ -1,4 +1,6 @@
-let clmn1_amount = 0, clmn2_amount = 0, clmn3_amount = 0, total_amount, entries_amount;
+let total_amount, entries_amount;
+let fields = [$("#field_groceries"), $("#field_gas"), $("#field_gift")];
+let entries = [$("#clmn1_entries"), $("#clmn2_entries"), $("#clmn3_entries")];
 
 let request = new XMLHttpRequest();
 request.open('GET', requestURL);
@@ -35,6 +37,7 @@ request.onload = function() {
       default:
         $("#prize").setAttribute("xlink:href", "");
     }
+
     $("#result_ballot").innerHTML = prizeData.ballot;
     $("#prize_name").innerHTML = prizeData.prize_name;
     $("#grocery_entries").innerHTML = prizeData.grocery_entries;
@@ -60,8 +63,6 @@ function gstart() {
   // }, 3900);
 }
 
-let fields = [$("#field_groceries"), $("#field_gas"), $("#field_gift")];
-
 for (i=0; i<=2; i++) {
   fields[i].addEventListener('change', validateMax);
   fields[i].addEventListener('input', validateMax);
@@ -69,60 +70,74 @@ for (i=0; i<=2; i++) {
   fields[i].addEventListener('paste', validateMax);
 }
 
+for (i=0; i<=2; i++) {
+  fields[i].addEventListener('focus', setZero);
+}
+
+for (i=0; i<=2; i++) {
+  fields[i].addEventListener('blur', updateEntries);
+}
+
 function validateMax() {
- if (this.max) this.value = Math.min(parseInt(this.max), parseInt(this.value) || 0);
+    this.value = Math.min(entries_amount, parseInt(this.value) || 0);
+    updateResults();
+}
+
+function setZero() {
+  this.value = 0;
+  updateEntries();
+}
+
+function updateEntries() {
+  let entered_amount = parseInt(fields[0].value) + parseInt(fields[1].value) + parseInt(fields[2].value);
+  entries_amount = total_amount - entered_amount;
 }
 
 $("#clear_entries").addEventListener('click', function(){
   for (i=0; i<=2; i++) {
     fields[i].value = fields[i].defaultValue;
+    entries[i].innerHTML = 0;
+    entries_amount = total_amount;
   }
 });
 
-let entry1 = $("#clmn1_entries"), entry2 = $("#clmn2_entries"), entry3 = $("#clmn3_entries");
-
-function counterBttnPlus(a, f, b) {
+function updateFields(a, f, b) {
   f.value = a;
   b.innerHTML = a;
 }
 
-function counterBttnMinus(a, f, b) {
-  f.value = a;
-  b.innerHTML = a;
+function updateResults() {
+  for (i=0; i<=2; i++) {
+    entries[i].innerHTML = parseInt(fields[i].value);
+  }
 }
 
 $("#c1_plus").addEventListener("click", () => {
-  clmn1_amount = amount_plus(clmn1_amount);
-  counterBttnPlus(clmn1_amount, fields[0], entry1);
+  updateFields(amount_plus(parseInt(fields[0].value)), fields[0], entries[0]);
 }, false);
 
 $("#c1_minus").addEventListener("click", () => {
-  clmn1_amount = amount_minus(clmn1_amount);
-  counterBttnMinus(clmn1_amount, fields[0], entry1);
+  updateFields(amount_minus(parseInt(fields[0].value)), fields[0], entries[0]);
 }, false);
 
 $("#c2_plus").addEventListener("click", () => {
-  clmn2_amount = amount_plus(clmn2_amount);
-  counterBttnPlus(clmn2_amount, fields[1], entry2);
+  updateFields(amount_plus(parseInt(fields[1].value)), fields[1], entries[1]);
 }, false);
 
 $("#c2_minus").addEventListener("click", () => {
-  clmn2_amount = amount_minus(clmn2_amount);
-  counterBttnMinus(clmn2_amount, fields[1], entry2);
+  updateFields(amount_minus(parseInt(fields[1].value)), fields[1], entries[1]);
 }, false);
 
 $("#c3_plus").addEventListener("click", () => {
-  clmn3_amount = amount_plus(clmn3_amount);
-  counterBttnPlus(clmn3_amount, fields[2], entry3);
+  updateFields(amount_plus(parseInt(fields[2].value)), fields[2], entries[2]);
 }, false);
 
 $("#c3_minus").addEventListener("click", () => {
-  clmn3_amount = amount_minus(clmn3_amount);
-  counterBttnMinus(clmn3_amount, fields[2], entry3);
+  updateFields(amount_minus(parseInt(fields[2].value)), fields[2], entries[2]);
 }, false);
 
 function amount_plus(num) {
-  if(num < 30) {
+  if(num < 100) {
     if(entries_amount > 0) {
       num++;
       entries_amount--;
