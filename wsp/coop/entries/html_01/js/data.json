@@ -1,7 +1,8 @@
 {
+  "game_type": 1,
   "username": "Fname",
   "entries_amount": 10,
-  "ballot": "10 entries",
-  "prize_id": 1,
+  "box_message": "10 entries",
+  "prize": "",
   "team_entries": ""
 }

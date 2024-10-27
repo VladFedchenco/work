@@ -11,8 +11,9 @@ request.send();
 
 request.onload = function() {
   const prizeData = request.response;
-    game_type = prizeData.prize_id;
-    $("#gift_text").textContent = prizeData.ballot;
+    game_type = prizeData.game_type;
+    $("#gift_text").textContent = prizeData.box_message;
+    $("#giftcard_text").innerHTML = prizeData.prize;
     entries_amount = prizeData.entries_amount;
     total_amount = entries_amount;
     if (game_type != 5) {
@@ -34,8 +35,13 @@ function $(sel) {
 function gstart() {
   $("#content").classList.add("play");
   setTimeout(function(){
-    $("#assign").classList.remove("invis");
-    $("#info_entries").classList.remove("invis");
+    if(game_type == 2) {
+      $("#info_giftcard").classList.remove("invis");
+      $("#redeem_prizes").classList.remove("invis");
+    } else {
+      $("#assign").classList.remove("invis");
+      $("#info_entries").classList.remove("invis");
+    }
   }, 3500);
 }
 

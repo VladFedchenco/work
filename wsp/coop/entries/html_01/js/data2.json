@@ -1,7 +1,8 @@
 {
-  "username": "YOU’VE WON!",
+  "game_type": 2,
+  "username": "Fname",
   "entries_amount": 10,
-  "ballot": "10 entries",
-  "prize_id": 1,
+  "box_message": "YOU’VE WON!",
+  "prize": "$50 Co-op Gift Card",
   "team_entries": ""
 }
