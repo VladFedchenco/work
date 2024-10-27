@@ -14,6 +14,7 @@ request.onload = function() {
     game_type = prizeData.game_type;
     $("#gift_text").textContent = prizeData.box_message;
     $("#giftcard_text").innerHTML = prizeData.prize;
+    $("#team_congrats_entries").innerHTML = prizeData.team_entries;
     entries_amount = prizeData.entries_amount;
     total_amount = entries_amount;
     if (game_type == 3) {
@@ -41,6 +42,9 @@ function gstart() {
     if(game_type == 2) {
       $("#info_giftcard").classList.remove("invis");
       $("#redeem_prizes").classList.remove("invis");
+    } else if (game_type == 4) {
+      $("#team_congrats").classList.remove("invis");
+      $("#red_area").classList.remove("invis");
     } else {
       $("#assign").classList.remove("invis");
       $("#info_entries").classList.remove("invis");

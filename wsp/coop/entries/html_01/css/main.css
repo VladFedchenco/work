@@ -456,7 +456,7 @@ h4 {
     font-size: 23px;
 }
 
-#bttn_code, #submit_entries, #bttn_redeem {
+#bttn_code, #bttn_code2, #submit_entries, #bttn_redeem {
     display: inline-block;
     background-color: #fff;
     font-family: 'Open Sans', sans-serif;
@@ -475,12 +475,12 @@ h4 {
     transition: all .2s;
 }
 
-#bttn_code svg {
+#bttn_code svg, #bttn_code2 svg {
     vertical-align: middle;
     margin: -2px 4px 0 0;
 }
 
-#bttn_code:hover, #submit_entries:hover, #bttn_redeem:hover {
+#bttn_code:hover, #bttn_code2:hover, #submit_entries:hover, #bttn_redeem:hover {
     background-color: rgba(255, 255, 255, .9);
 }
 
@@ -555,7 +555,7 @@ h4 {
     display: none;
 }
 
-#assign, #congrats, #redeem_prizes {
+#assign, #congrats, #redeem_prizes, #team_congrats {
     opacity: 1;
     text-align: center;
     overflow: hidden;
@@ -568,11 +568,15 @@ h4 {
     padding-bottom: 24px;
 }
 
-#assign.invis, #congrats.invis, #redeem_prizes.invis {
+#assign.invis, #congrats.invis, #redeem_prizes.invis, #team_congrats.invis {
     margin: 0;
     padding: 0;
     opacity: 0;
     max-height: 0px;
+}
+
+#team_congrats h3 {
+    margin-bottom: 16px;
 }
 
 .clmns {
