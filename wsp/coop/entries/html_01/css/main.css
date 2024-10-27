@@ -122,7 +122,7 @@ footer {
 
 #content {
     max-width: 302px;
-    min-height: 470px;
+    min-height: 400px;
     margin: 0 auto;
     color: #fff;
     line-height: 1.6;
@@ -382,13 +382,22 @@ h1 {
     fill: #fff;
 }
 
+#main_animation {
+    opacity: 1;
+    transition: all .3s ease;
+}
+
+#main_animation.fadeout {
+    opacity: 0;
+}
+
 #main_animation.invis {
     display: none;
 }
 
 #red_area {
     background: url(../imgs/footer_bg.svg) no-repeat center top;
-    padding: 100px 32px 32px 32px;
+    padding: 80px 32px 24px 32px;
     color: #fff;
     overflow: hidden;
     opacity: 1;
@@ -411,19 +420,6 @@ h1 {
     text-align: center;
 }
 
-#result {
-    opacity: 1;
-    text-align: center;
-    overflow: hidden;
-    max-height: 300px;
-    transition: max-height .4s ease-in-out;
-}
-
-#result.invis {
-    opacity: 0;
-    max-height: 0px;
-}
-
 h1 {
     margin: 0 0 4px 0;
     font-size: 28px;
@@ -442,7 +438,7 @@ h3 {
 
 h4 {
     font-size: 18px;
-    margin: 0;
+    margin: 0 0 8px 0;
 }
 
 #result p {
@@ -462,6 +458,9 @@ h4 {
     text-transform: uppercase;
     font-size: 14px;
     color: #CB2026;
+    width: 100%;
+    max-width: 360px;
+    margin-bottom: 12px;
     text-decoration: none;
     border-radius: 2px;
     border: solid 3px #CB2026;
@@ -469,12 +468,6 @@ h4 {
     white-space: nowrap;
     letter-spacing: .05em;
     transition: all .2s;
-}
-
-#submit_entries {
-    width: 100%;
-    max-width: 360px;
-    margin-bottom: 12px;
 }
 
 #bttn_code svg {
@@ -534,8 +527,10 @@ h4 {
 }
 
 #chances li img {
-    margin: -2px 6px 0 6px;
+    margin: -2px 4px 0 4px;
     vertical-align: middle;
+    width: 20px;
+    height: 20px;
 }
 
 #chances a {
@@ -551,13 +546,28 @@ h4 {
     transform: translate(-50%, -50%);
 }
 
-#ttl1.invis, #ttl2.invis {
+#team_ttl.invis {
     display: none;
 }
 
-#assign {
+#assign, #congrats {
+    opacity: 1;
     text-align: center;
+    overflow: hidden;
+    max-height: 400px;
+    transition: max-height .4s ease-in-out;
+}
+
+#assign {
     margin-top: -36px;
+    padding-bottom: 24px;
+}
+
+#assign.invis, #congrats.invis {
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    max-height: 0px;
 }
 
 .clmns {
@@ -647,6 +657,31 @@ input[type=number] {
     text-align: left;
     width: 100px;
     margin-bottom: 16px;
+}
+
+#congrats {
+    text-align: center;
+}
+
+.result_number {
+    font-size: 21px;
+}
+
+.result_icons {
+    padding: 16px 0;
+}
+
+#game_entries {
+    font-size: 14px;
+    color: #fff;
+}
+
+#game_entries:hover {
+    text-decoration: none;
+}
+
+#game_entries svg {
+    margin: 0 6px -3px 0;
 }
 
 @media screen and (min-width: 640px) {
