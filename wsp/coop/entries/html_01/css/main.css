@@ -349,11 +349,11 @@ h1 {
 }
 
 .bonus #cap #bow {
-    fill: #fbb040;
+    fill: #fbb040 !important;
 }
 
 .bonus #cap #cap_body, .bonus #box #box_body {
-    fill: #b34c26;
+    fill: #b34c26 !important;
 }
 
 #pattern {
@@ -361,7 +361,7 @@ h1 {
 }
 
 .bonus #pattern {
-    display: block;
+    display: block !important;
 }
 
 #info_entries, #info_giftcard {
