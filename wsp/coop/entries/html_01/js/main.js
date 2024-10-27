@@ -17,7 +17,7 @@ request.onload = function() {
     entries_amount = prizeData.entries_amount;
     total_amount = entries_amount;
     if (game_type == 3) {
-      $("#content").classList.add("bonus");
+      $("#main_animation").classList.add("bonus");
     }
     if (game_type != 4) {
       $("#team_sweepstakes").classList.add("invis");
