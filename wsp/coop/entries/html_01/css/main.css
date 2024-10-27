@@ -364,21 +364,26 @@ h1 {
     display: block;
 }
 
-#info_entries {
-    font-size: 18px;
+#info_entries, #info_giftcard {
     font-weight: 700;
+    opacity: 1;
+    transition: opacity .3s linear;
 }
 
-#info_entries text {
-    fill: #fff;
+#info_entries.invis, #info_giftcard.invis {
+    opacity: 0;
+    pointer-events: none;
+}
+
+#info_entries {
+    font-size: 18px;   
 }
 
 #info_giftcard {
     font-size: 26px;
-    font-weight: 700;
 }
 
-#info_giftcard text {
+#info_entries text, #info_giftcard text {
     fill: #fff;
 }
 

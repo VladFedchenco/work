@@ -1,4 +1,4 @@
-let total_amount, entries_amount;
+let game_type, total_amount, entries_amount;
 let fields = [$("#field_groceries"), $("#field_gas"), $("#field_gift")];
 let entries = [$("#clmn1_entries"), $("#clmn2_entries"), $("#clmn3_entries")];
 let pbttns = [$("#c1_plus"), $("#c2_plus"), $("#c3_plus")];
@@ -11,10 +11,11 @@ request.send();
 
 request.onload = function() {
   const prizeData = request.response;
+    game_type = prizeData.prize_id;
     $("#gift_text").textContent = prizeData.ballot;
     entries_amount = prizeData.entries_amount;
     total_amount = entries_amount;
-    if (prizeData.prize_id != 5) {
+    if (game_type != 5) {
       $("#team_sweepstakes").classList.add("invis");
     } else {
       $("#prize").setAttribute("xlink:href", "#coop");
@@ -34,6 +35,7 @@ function gstart() {
   $("#content").classList.add("play");
   setTimeout(function(){
     $("#assign").classList.remove("invis");
+    $("#info_entries").classList.remove("invis");
   }, 3500);
 }
 
@@ -65,6 +67,7 @@ function updateEntries() {
 }
 
 $("#submit_entries").addEventListener('click', function(){
+  window.scrollTo({top: 0, behavior: 'smooth'});
   $("#main_animation").classList.add("fadeout");
   $("#assign").classList.add("invis");
   setTimeout(function(){
