@@ -38,6 +38,9 @@ function $(sel) {
 function gstart() {
   $("#content").classList.add("play");
   setTimeout(function(){
+      $("#superbonus").classList.add("invis");
+  }, 2730);
+  setTimeout(function(){
     if(game_type == 2) {
       $("#info_giftcard").classList.remove("invis");
       $("#redeem_prizes").classList.remove("invis");
