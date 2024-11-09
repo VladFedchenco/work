@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Demo</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.6.6/lottie.min.js"></script>
+  <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+  <style>
+
+    body {
+      background-color: #000;
+      overflow-x: hidden;
+    }
+
+    body,
+    html {
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    #animationWindow {
+      width: 100%;
+      height: 100%;
+      max-height: 100%;
+    }
+
+    svg {
+      display: block;
+      width: 305px !important;
+      height: 900px !important;
+      margin: 0 auto;
+    }
+
+  </style>
+</head>
+
+<body>
+<div id="animationWindow"></div>
+<script>
+  LottieScrollTrigger({
+ target: "#animationWindow",
+ path: "data.json",
+ speed: "medium",
+ scrub: 2 // seconds it takes for the playhead to "catch up"
+ // you can also add ANY ScrollTrigger values here too, like trigger, start, end, onEnter, onLeave, onUpdate, etc. See https://greensock.com/docs/v3/Plugins/ScrollTrigger
+ // you can pass in a "timeline" that has existing animations in it, and LottieScrollTrigger will play that alongside the Lottie animation
+ // you can pass a startFrameOffset and/or endFrameOffset to cause the playhead to start/end at a different frame. 
+});
+
+function LottieScrollTrigger(vars) {
+  let playhead = { frame: vars.startFrameOffset || 0 },
+    target = gsap.utils.toArray(vars.target)[0],
+    speeds = { slow: "+=2000", medium: "+=1000", fast: "+=500" },
+    st = {
+      trigger: target,
+      pin: true,
+      start: "top top",
+      end: speeds[vars.speed] || "+=1000",
+      scrub: 1
+    },
+    ctx = gsap.context && gsap.context(),
+    animation = lottie.loadAnimation({
+      container: target,
+      renderer: vars.renderer || "svg",
+      loop: false,
+      autoplay: false,
+      path: vars.path,
+      rendererSettings: vars.rendererSettings || {
+        preserveAspectRatio: "xMidYMid slice"
+      }
+    }),
+    frameAnimation;
+  for (let p in vars) {
+    // let users override the ScrollTrigger defaults
+    st[p] = vars[p];
+  }
+  frameAnimation = vars.timeline || gsap.timeline({ scrollTrigger: st });
+  if (vars.timeline && !vars.timeline.vars.scrollTrigger) {
+    // if the user passed in a timeline that didn't have a ScrollTrigger attached, create one.
+    st.animation = frameAnimation;
+    ScrollTrigger.create(st);
+  }
+  animation.addEventListener("DOMLoaded", function () {
+    let createTween = function () {
+      animation.goToAndStop(playhead.frame, true);
+      frameAnimation.to(playhead, {
+          frame: animation.totalFrames - 1 - (vars.endFrameOffset || 0),
+          ease: "none",
+          duration: frameAnimation.duration() || 1,
+          onUpdate: () => {
+            animation.goToAndStop(playhead.frame, true);
+          }
+        }, 0);
+      return () => animation.destroy && animation.destroy();
+    };
+    ctx && ctx.add ? ctx.add(createTween) : createTween();
+    // in case there are any other ScrollTriggers on the page and the loading of this Lottie asset caused layout changes
+    ScrollTrigger.sort();
+    ScrollTrigger.refresh();
+  });
+  animation.frameAnimation = frameAnimation;
+  return animation;
+}
+
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+}
+
+</script>
+</body>
+</html>
