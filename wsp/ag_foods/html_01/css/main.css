@@ -1,0 +1,463 @@
+@font-face {
+    font-family: 'Pixel Font';
+    src: url('../fonts/pixel-font.woff2') format('woff2'),
+         url('../fonts/pixel-font.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
+}
+
+*:focus {
+    outline: none;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background: #fff;
+}
+
+header {
+    height: 86px;
+    padding: 0px 16px;
+    background: #0F2053;
+    overflow: hidden;
+    border-bottom: solid 1px #1F3772;
+}
+
+header a {
+    display: inline-block;
+    margin: 28px 16px 0 0;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+header a svg {
+    vertical-align: middle;
+    margin: -3px 8px 0 0;
+}
+
+header a.home svg {
+    margin: -12px 0 0 0;
+}
+
+header a.header_button {
+    float: right;
+    background: #FFCB2B;
+    line-height: 36px;
+    margin: 24px 0 0 32px;
+    padding: 0px 24px;
+    border-radius: 20px;
+    border: solid 2px #FFCB2B;
+    box-shadow: 0px 0px 0px 1px #faba13;
+    color: #0F2053;
+    font-size: 18px;
+}
+
+header a.header_button:hover {
+    background: #0F2053;
+}
+
+header a.header_button.outlined {
+    background: #0F2053;
+    color: #FFCB2B;
+}
+
+header a.header_button.outlined:hover {
+    background: #FFCB2B;
+    color: #0F2053;
+}
+
+header a:hover {
+    color: #FFCB2B;
+}
+
+header a:hover svg path {
+    fill: #FFCB2B;
+}
+
+#mobile_menu {
+    display: none;
+}
+
+footer {
+    padding: 16px 8px 48px 8px;
+    text-align: center;
+}
+
+#footer_logos {
+    padding: 24px 0;
+}
+
+#footer_logos img {
+    vertical-align: middle;
+    margin: 0 8px;
+}
+
+#social {
+    font-size: 16px;
+}
+
+#social svg {
+    height: 18px;
+    margin: 0 8px;
+}
+
+#social a {
+    font-size: 16px;
+    font-weight: 700;
+    color: #3A2077;
+}
+
+#footer_links {
+    padding: 16px 0;
+    font-size: 14px;
+}
+
+#footer_links a {
+    margin: 0 8px;
+    color: #000;
+}
+
+#footer_note {
+    font-size: 16px;
+    color: #000;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+#main {
+    position: relative;
+    background: #0F2053;
+    min-height: 800px;
+    padding: 32px;
+}
+
+#animation {
+    display: block;
+    margin: 0 auto;
+}
+
+svg text {
+    font-family: 'Pixel Font', sans-serif;
+    font-size: 270px;
+}
+
+.font1 {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 17px;
+}
+
+.font2 {
+    fill: none;
+    stroke: #232A65;
+    stroke-width: 11px;
+}
+
+.font3 {
+    fill: #fff;
+}
+
+#sweepstakes {
+    opacity: 1;
+    pointer-events: initial;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.4;
+    position: absolute;
+    left: 50%;
+    top: 430px;
+    transform: translateX(-50%);
+    width: 330px;
+    text-align: center;
+    transition: all .3s linear;
+}
+
+#freeitems {
+    display: block;
+    margin: 8px auto;
+    width: 330px;
+}
+
+#sweepstakes sup {
+    font-size: 12px;
+}
+
+.pin_button {
+    opacity: 1;
+    pointer-events: initial;
+    display: block;
+    width: 230px;
+    background: #FFCB2B;
+    text-align: center;
+    text-decoration: none;
+    line-height: 32px;
+    margin: 24px auto 0 auto;
+    padding: 0px 24px;
+    border-radius: 20px;
+    border: solid 2px #FFCB2B;
+    box-shadow: 0px 0px 0px 1px #faba13;
+    color: #0F2053;
+    font-size: 18px;
+    font-weight: 700;
+    transition: all .3s linear;
+}
+
+.pin_button.invis, #sweepstakes.invis {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.pin_button:hover {
+    color: #FFCB2B;
+    background: #0F2053;
+}
+
+#details {
+    opacity: 1;
+    text-align: center;
+    padding: 32px 24px 16px 24px;
+    color: #0F2053;
+    max-height: 650px;
+    overflow: hidden;
+    transition: all .5s ease-in-out;
+}
+
+#details.invis {
+    opacity: 0;
+    padding: 0px 24px 0px 24px;
+    max-height: 0;
+}
+
+#details a {
+    color: #0F2053;
+}
+
+#details a:hover {
+    text-decoration: none;
+}
+
+#details svg {
+    vertical-align: middle;
+    margin: -2px 4px 0 0;
+}
+
+#details h2 {
+    font-size: 22px;
+    margin: 32px 0 0 0;
+}
+
+#details h3 {
+    font-size: 20px;
+    margin: 32px 0 0 0;
+}
+
+#details h4 {
+    font-size: 18px;
+    margin: 24px 0 0 0;
+}
+
+#solid-purple {
+    opacity: 0;
+}
+
+#num {
+    opacity: 0;
+}
+
+#sky {
+    transform: translate(0, -190px);
+}
+
+.play #sky {
+    animation: sky 3s ease-in-out forwards;
+}
+
+@keyframes sky {
+    0% {
+        transform: translate(0, -190px);
+    }
+    100% {
+        transform: translate(0, 0px);
+    }
+}
+
+#star {
+    transform: translate(292px, 943px) scale(1) translate(-292px, -943px);
+}
+
+.play #star {
+    animation: star 3s ease-in-out forwards;
+}
+
+@keyframes star {
+    0% {
+        transform: translate(292px, 943px) scale(1) translate(-292px, -943px);
+        opacity: 1;
+    }
+    80% {
+        transform: translate(292px, 943px) scale(2.65) translate(-292px, -943px);
+        opacity: 1;
+    }
+    85%, 100% {
+        transform: translate(292px, 1000px) scale(3) translate(-292px, -943px);
+        opacity: 0;
+    }
+}
+
+#yellow-px, #white-px, #yellow-sq, #yellow-big-sq, #white-big-sq, #thin-waves, #thik-waves, #small-cross, #big-cross, #corners, #stars, #swirl1, #swirl2, #swirl3, #num {
+    transform: translate(263px, 268px) scale(0) translate(-263px, -268px);
+    opacity: 0;
+}
+
+.play #yellow-px {
+    animation: explosion .6s 2.5s ease-out forwards;
+}
+.play #white-px {
+    animation: explosion .6s 2.4s ease-out forwards;
+}
+.play #yellow-sq {
+    animation: explosion .6s 2.6s ease-out forwards;
+}
+.play #yellow-big-sq {
+    animation: explosion .6s 2.7s ease-out forwards;
+}
+.play #white-big-sq {
+    animation: explosion .6s 2.3s ease-out forwards;
+}
+.play #thin-waves {
+    animation: explosion .6s 21s ease-out forwards;
+}
+.play #thik-waves {
+    animation: explosion .6s 2.9s ease-out forwards;
+}
+.play #small-cross {
+    animation: explosion .6s 3s ease-out forwards;
+}
+.play #big-cross {
+    animation: explosion .6s 2.45s ease-out forwards;
+}
+.play #corners {
+    animation: explosion .6s 2.65s ease-out forwards;
+}
+.play #stars {
+    animation: explosion .6s 2.4s ease-out forwards;
+}
+.play #swirl1 {
+    animation: explosion .7s 2.5s ease-out forwards;
+}
+.play #swirl2 {
+    animation: explosion .7s 2.6s ease-out forwards;
+}
+.play #swirl3 {
+    animation: explosion .7s 2.7s ease-out forwards;
+}
+
+@keyframes explosion {
+    0% {
+        transform: translate(263px, 268px) scale(0) translate(-263px, -268px);
+        opacity: 0;
+    }
+    20%, 100% {
+        opacity: 1;
+    }
+    100% {
+        transform: translate(263px, 268px) scale(1) translate(-263px, -268px);
+    }
+}
+
+.play #num {
+    animation: num 1s 2.4s ease-in-out forwards;
+}
+
+@keyframes num {
+    0% {
+        transform: translate(263px, 268px) scale(0) translate(-263px, -268px);
+        opacity: 0;
+    }
+    20%, 100% {
+        opacity: 1;
+    }
+    80% {
+        transform: translate(263px, 268px) scale(1.2) translate(-263px, -268px);
+    }
+    100% {
+        transform: translate(263px, 268px) scale(1) translate(-263px, -268px);
+    }
+}
+
+@media (max-width: 1070px) {
+    header {
+        height: 60px;
+    }
+    header a {
+        margin-top: 20px;
+    }
+    #mobile_menu {
+        display: block;
+    }
+    #desktop_menu {
+        display: none;
+    }
+    #main {
+        min-height: initial;
+        padding: 16px 8px 28px 8px;
+    }
+    #animation {
+        width: 346px;
+        height: auto;
+    }
+    #social a {
+        font-size: 14px;
+    }
+    #footer_links, #footer_note {
+        font-size: 12px;
+    }
+    #footer_note {
+        padding: 0px 16px;
+    }
+    #social svg {
+        margin: 0 4px -4px 0;
+    }
+    #footer_logos {
+        padding: 16px 0;
+    }
+    #footer_logos img {
+        margin: 0 4px;
+    }
+    .logo1 {
+        max-height: 32px;
+        width: auto;
+    }
+    .logo2 {
+        max-height: 20px;
+        width: auto;
+    }
+    .logo3 {
+        max-height: 30px;
+        width: auto;
+    }
+    .logo4 {
+        max-height: 12px;
+        width: auto;
+    }
+    #sweepstakes {
+        top: 350px;
+    }
+}
+
+@media (max-width: 768px) {
+
+}
