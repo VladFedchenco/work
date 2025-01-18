@@ -1,0 +1,1133 @@
+* {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
+}
+
+*:focus {
+    outline: none;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  min-height: 100%;
+  font-family: sans-serif;
+  background: #fff;
+  font-size: 21px;
+}
+
+body {
+  padding-top: 32px;
+}
+
+/* UI */
+
+#ui {
+  padding: 32px;
+}
+
+label {
+  color: #666;
+  display: inline-block;
+}
+
+.ui_section {
+  width: 400px;
+  margin: 0 auto;
+  padding: 32px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0px 0px 32px rgba(0, 0, 0, .1);
+}
+
+svg {
+  max-width: 200px;
+  display: block;
+  margin: 0 auto 16px auto;
+}
+
+input {
+  display: block;
+  font-size: 21px;
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 24px;
+  border-radius: 8px;
+  border: solid 1px #ccc;
+}
+
+button {
+  display: block;
+  font-size: 21px;
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: solid 1px #ccc;
+  background: #53ab8b;
+  color: #fff;
+}
+
+@media (max-width: 1168px) {
+
+}
+
+/* Colors */
+
+.line {
+  stroke: #3a5e77;
+  fill: none;
+}
+
+.legs {
+  fill: #f9bc35;
+}
+
+.eye {
+  fill: #3a5e77;
+}
+
+.feather {
+  fill: #3a5e77;
+}
+
+.blick {
+  fill: #fff;
+}
+
+.beak {
+  fill: #3a5e77;
+}
+
+.mouth {
+  fill: #9a473e;
+}
+
+.tongue {
+  fill: #902634;
+}
+
+.main {
+  fill: #a2fdd9;
+}
+
+.dark {
+  fill: #53ab8b;
+}
+
+.light {
+  fill: #eafff9;
+}
+
+
+/* Email Animation */
+
+.email #left-wing {
+  animation: left-wing_01 .5s ease-in-out forwards;
+}
+
+.email_static #left-wing {
+  transform: translate(213px, 383px) rotate(-3.2deg) translate(-213px, -383px);
+}
+
+.email_reverse #left-wing {
+  animation: left-wing_01 .5s ease-in-out forwards reverse;
+}
+
+@keyframes left-wing_01 {
+  0% {
+    transform: translate(213px, 383px) rotate(0deg) translate(-213px, -383px);
+  }
+  100% {
+    transform: translate(213px, 383px) rotate(-3.2deg) translate(-213px, -383px);
+  }
+}
+
+.email #right-wing {
+  animation: right-wing_01 .5s ease-in-out forwards;
+}
+
+.email_static #right-wing {
+  transform: translate(867px, 383px) rotate(-2.4deg) translate(-867px, -383px);
+}
+
+.email_reverse #right-wing {
+  animation: right-wing_01 .5s ease-in-out forwards reverse;
+}
+
+@keyframes right-wing_01 {
+  0% {
+    transform: translate(867px, 383px) rotate(0deg) translate(-867px, -383px);
+  }
+  100% {
+    transform: translate(867px, 383px) rotate(-2.4deg) translate(-867px, -383px);
+  }
+}
+
+.email #left-ear {
+  animation: left-ear_01 .5s ease-in-out forwards;
+}
+
+.email_static #left-ear {
+  transform: translate(11px, 19px);
+}
+
+.email_reverse #left-ear {
+  animation: left-ear_01 .5s ease-in-out forwards reverse;
+}
+
+@keyframes left-ear_01 {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  100% {
+    transform: translate(11px, 19px);
+  }
+}
+
+.email #right-ear {
+  animation: right-ear_01 .5s ease-in-out forwards;
+}
+
+.email_static #right-ear {
+  transform: translate(16px, 0px);
+}
+
+.email_reverse #right-ear {
+  animation: right-ear_01 .5s ease-in-out forwards reverse;
+}
+
+@keyframes right-ear_01 {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  100% {
+    transform: translate(16px, 0px);
+  }
+}
+
+.email #belly {
+  animation: belly_01 .5s ease-in-out forwards;
+}
+
+.email_static #belly {
+  transform: translate(-40px, 36px);
+}
+
+.email_reverse #belly {
+  animation: belly_01 .5s ease-in-out forwards reverse;
+}
+
+@keyframes belly_01 {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  100% {
+    transform: translate(-40px, 36px);
+  }
+}
+
+.email #eye-circles {
+  animation: eye-circles_01 .5s ease-in-out forwards;
+}
+
+.email_static #eye-circles {
+  transform: translate(-36px, 36px);
+}
+
+.email_reverse #eye-circles {
+  animation: eye-circles_01 .5s ease-in-out forwards reverse;
+}
+
+@keyframes eye-circles_01 {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  100% {
+    transform: translate(-36px, 36px);
+  }
+}
+
+.email #eyes {
+  animation: eyes_01 .5s ease-in-out forwards;
+}
+
+.email_static #eyes {
+  transform: translate(-57px, 60px);
+}
+
+.email_reverse #eyes {
+  animation: eyes_01 .5s ease-in-out forwards reverse;
+}
+
+@keyframes eyes_01 {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  100% {
+    transform: translate(-57px, 60px);
+  }
+}
+
+.email #opened-eyes {
+  animation: opened-eyes_01 .5s ease-in-out forwards;
+}
+
+.email_reverse #opened-eyes {
+  animation: opened-eyes_01 .5s ease-in-out forwards reverse;
+}
+
+@keyframes opened-eyes_01 {
+  0%, 33%, 67%, 100% {
+    visibility: visible;
+  }
+  34%, 66% {
+    visibility: hidden;
+  }
+}
+
+#closed-eyes {
+  visibility: hidden;
+}
+
+.email #closed-eyes {
+  animation: closed-eyes_01 .5s ease-in-out forwards;
+}
+
+.email_reverse #closed-eyes {
+  animation: closed-eyes_01 .5s ease-in-out forwards reverse;
+}
+
+@keyframes closed-eyes_01 {
+  0%, 33%, 67%, 100% {
+    visibility: hidden;
+  }
+  34%, 66% {
+    visibility: visible;
+  }
+}
+
+.email #beak {
+  animation: beak_01 .5s ease-in-out forwards;
+}
+
+.email_static #beak {
+  transform: translate(-52px, 36px);
+}
+
+.email_reverse #beak {
+  animation: beak_01 .5s ease-in-out forwards reverse;
+}
+
+@keyframes beak_01 {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  100% {
+    transform: translate(-52px, 36px);
+  }
+}
+
+
+/* Read Animation */
+
+#b1, #b2, #b3, #b4, #b5, #b6, #b7, #b8, #b9 {
+  visibility: hidden;
+}
+
+.read #left-wing {
+  animation: left-wing_02 .35s ease-in-out forwards;
+}
+
+@keyframes left-wing_02 {
+  0%, 100% {
+    transform: translate(213px, 383px) rotate(-3.2deg) translate(-213px, -383px);
+  }
+  50% {
+    transform: translate(213px, 383px) rotate(-5.3deg) translate(-213px, -383px);
+  }
+}
+
+.read #right-wing {
+  animation: right-wing_02 .35s ease-in-out forwards;
+}
+
+@keyframes right-wing_02 {
+  0%, 100% {
+    transform: translate(867px, 383px) rotate(-2.4deg) translate(-867px, -383px);
+  }
+  50% {
+    transform: translate(867px, 383px) rotate(3.8deg) translate(-867px, -383px);
+  }
+}
+
+.read #left-ear {
+  animation: left-ear_02 .35s ease-in-out forwards;
+}
+
+@keyframes left-ear_02 {
+  0%, 100% {
+    transform: translate(11px, 19px);
+  }
+  50% {
+    transform: translate(20px, 25px);
+  }
+}
+
+.read #right-ear {
+  animation: right-ear_02 .35s ease-in-out forwards;
+}
+
+@keyframes right-ear_02 {
+  0%, 100% {
+    transform: translate(16px, 0px);
+  }
+  50% {
+    transform: translate(-6px, 9px);
+  }
+}
+
+.read #belly {
+  transform: translate(-40px, 36px);
+}
+
+.read #eye-circles {
+  animation: eye-circles_02 .35s ease-in-out forwards;
+}
+
+@keyframes eye-circles_02 {
+  0%, 100% {
+    transform: translate(-36px, 36px);
+  }
+  50% {
+    transform: translate(-36px, 20px);
+  }
+}
+
+.read #eyes {
+  animation: eyes_02 .35s ease-in-out forwards;
+}
+
+@keyframes eyes_02 {
+  0%, 100% {
+    transform: translate(-57px, 60px);
+  }
+  50% {
+    transform: translate(-57px, 44px);
+  }
+}
+
+.read #opened-eyes {
+  animation: opened-eyes_02 .35s ease-in-out forwards;
+}
+
+@keyframes opened-eyes_02 {
+  0%, 49%, 100% {
+    visibility: visible;
+  }
+  50%, 99% {
+    visibility: hidden;
+  }
+}
+
+#closed-eyes {
+  visibility: hidden;
+}
+
+.read #closed-eyes {
+  animation: closed-eyes_02 .35s ease-in-out forwards;
+}
+
+@keyframes closed-eyes_02 {
+  0%, 49%, 100% {
+    visibility: hidden;
+  }
+  50%, 99% {
+    visibility: visible;
+  }
+}
+
+.read #beak {
+  visibility: hidden;
+}
+
+.read #b1, .read #b2, .read #b3, .read #b4, .read #b5, .read #b6, .read #b7, .read #b8, .read #b9 {
+visibility: hidden;
+animation-duration: 0.35s;
+animation-fill-mode: forwards;
+animation-timing-function: steps(1);
+}
+
+.read #b1 {animation-name: b1}
+.read #b2 {animation-name: b2}
+.read #b3 {animation-name: b3}
+.read #b4 {animation-name: b4}
+.read #b5 {animation-name: b5}
+.read #b6 {animation-name: b6}
+.read #b7 {animation-name: b7}
+.read #b8 {animation-name: b8}
+.read #b9 {animation-name: b9}
+
+@keyframes b1 {0.00%{visibility: visible} 9.09%{visibility: hidden}}
+@keyframes b2 {9.09%{visibility: visible} 18.18%{visibility: hidden}}
+@keyframes b3 {18.18%{visibility: visible} 27.27%{visibility: hidden}}
+@keyframes b4 {27.27%{visibility: visible} 36.36%{visibility: hidden}}
+@keyframes b5 {36.36%{visibility: visible} 45.45%{visibility: hidden}}
+@keyframes b6 {45.45%{visibility: visible} 54.55%{visibility: hidden}}
+@keyframes b7 {54.55%{visibility: visible} 63.64%{visibility: hidden}}
+@keyframes b8 {63.64%{visibility: visible} 72.73%{visibility: hidden}}
+@keyframes b9 {72.73%, 100%{visibility: visible}}
+
+.mouse #b1, .mouse #b2, .mouse #b3, .mouse #b4, .mouse #b5, .mouse #b6, .mouse #b7, .mouse #b8, .mouse #b9 {
+  visibility: hidden;
+  animation-duration: 5s;
+  animation-timing-function: steps(1);
+  animation-iteration-count: infinite;
+  transform: translate(54px, -40px);
+}
+
+.mouse #b1, .mouse #b7 {
+  transform: translate(54px, -34px);
+}
+
+.mouse #b2, .mouse #b6 {
+  transform: translate(54px, -28px);
+}
+
+.mouse #b3, .mouse #b4, .mouse #b5 {
+  transform: translate(54px, -20px);
+}
+
+.mouse #b1 {animation-name: mb1}
+.mouse #b2 {animation-name: mb2}
+.mouse #b3 {animation-name: mb3}
+.mouse #b4 {animation-name: mb4}
+.mouse #b5 {animation-name: mb5}
+.mouse #b6 {animation-name: mb6}
+.mouse #b7 {animation-name: mb7}
+.mouse #b8 {animation-name: mb8}
+.mouse #b9 {animation-name: mb9}
+
+@keyframes mb1 {0%, 38%{visibility: visible} 1%, 39%{visibility: hidden}}
+@keyframes mb2 {1%, 36%{visibility: visible} 2%, 37%{visibility: hidden}}
+@keyframes mb3 {2%, 35%{visibility: visible} 3%, 36%{visibility: hidden}}
+@keyframes mb4 {3%, 34%{visibility: visible} 4%, 35%{visibility: hidden}}
+@keyframes mb5 {4%, 33%{visibility: visible} 5%, 34%{visibility: hidden}}
+@keyframes mb6 {5%, 32%{visibility: visible} 6%, 33%{visibility: hidden}}
+@keyframes mb7 {6%, 31%{visibility: visible} 7%, 32%{visibility: hidden}}
+@keyframes mb8 {7%, 30%{visibility: visible} 8%, 31%{visibility: hidden}}
+@keyframes mb9 {8%{visibility: visible} 30%{visibility: hidden}}
+
+
+/* Write Animation */
+
+.write #left-wing {
+  animation: left-wing_03 .5s ease-in-out forwards;
+}
+
+@keyframes left-wing_03 {
+  0% {
+    transform: translate(213px, 383px) rotate(-3.2deg) translate(-213px, -383px);
+  }
+  100% {
+    transform: translate(213px, 383px) rotate(1deg) translate(-213px, -383px);
+  }
+}
+
+.write #right-wing {
+  animation: right-wing_03 .5s ease-in-out forwards;
+}
+
+@keyframes right-wing_03 {
+  0% {
+    transform: translate(867px, 383px) rotate(-2.4deg) translate(-867px, -383px);
+  }
+  100% {
+    transform: translate(867px, 383px) rotate(5deg) translate(-867px, -383px);
+  }
+}
+
+.write #left-ear {
+  animation: left-ear_03 .5s ease-in-out forwards;
+}
+
+@keyframes left-ear_03 {
+  0% {
+    transform: translate(11px, 19px);
+  }
+  100% {
+    transform: translate(-11px, 1px);
+  }
+}
+
+.write #right-ear {
+  animation: right-ear_03 .5s ease-in-out forwards;
+}
+
+@keyframes right-ear_03 {
+  0% {
+    transform: translate(16px, 0px);
+  }
+  100% {
+    transform: translate(-18px, 14px);
+  }
+}
+
+.write #belly {
+  animation: belly_03 .5s ease-in-out forwards;
+}
+
+@keyframes belly_03 {
+  0% {
+    transform: translate(-40px, 36px);
+  }
+  100% {
+    transform: translate(52px, 36px);
+  }
+}
+
+.write #eye-circles {
+  animation: eye-circles_03 .5s ease-in-out forwards;
+}
+
+@keyframes eye-circles_03 {
+  0% {
+    transform: translate(-36px, 36px);
+  }
+  100% {
+    transform: translate(34px, 36px);
+  }
+}
+
+.write #eyes {
+  animation: eyes_03 .5s ease-in-out forwards;
+}
+
+@keyframes eyes_03 {
+  0% {
+    transform: translate(-57px, 60px);
+  }
+  100% {
+    transform: translate(73px, 60px);
+  }
+}
+
+.write #opened-eyes {
+  animation: opened-eyes_03 .5s ease-in-out forwards;
+}
+
+@keyframes opened-eyes_03 {
+  0%, 33%, 67%, 100% {
+    visibility: visible;
+  }
+  34%, 66% {
+    visibility: hidden;
+  }
+}
+
+.write #closed-eyes {
+  animation: closed-eyes_03 .5s ease-in-out forwards;
+}
+
+@keyframes closed-eyes_03 {
+  0%, 33%, 67%, 100% {
+    visibility: hidden;
+  }
+  34%, 66% {
+    visibility: visible;
+  }
+}
+
+.write #beak {
+  visibility: hidden;
+}
+
+.write #b9 {
+  visibility: visible;
+  animation: b9_03 .5s ease-in-out forwards;
+}
+
+@keyframes b9_03 {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  100% {
+    transform: translate(114px, 0px);
+  }
+}
+
+/* Turns */
+
+.transition #left-wing, .transition #right-wing, .transition #left-ear, .transition #right-ear, .transition #belly, .transition #eye-circles, .transition #eyes, .transition #b9 {
+  transition: all .2s linear;
+}
+
+.turn1 #left-wing {transform: translate(213px, 383px) rotate(-3.2deg) translate(-213px, -383px)}
+.turn2 #left-wing {transform: translate(213px, 383px) rotate(-3.0deg) translate(-213px, -383px)}
+.turn3 #left-wing {transform: translate(213px, 383px) rotate(-2.9deg) translate(-213px, -383px)}
+.turn4 #left-wing {transform: translate(213px, 383px) rotate(-2.7deg) translate(-213px, -383px)}
+.turn5 #left-wing {transform: translate(213px, 383px) rotate(-2.5deg) translate(-213px, -383px)}
+.turn6 #left-wing {transform: translate(213px, 383px) rotate(-2.3deg) translate(-213px, -383px)}
+.turn7 #left-wing {transform: translate(213px, 383px) rotate(-2.2deg) translate(-213px, -383px)}
+.turn8 #left-wing {transform: translate(213px, 383px) rotate(-2.0deg) translate(-213px, -383px)}
+.turn9 #left-wing {transform: translate(213px, 383px) rotate(-1.8deg) translate(-213px, -383px)}
+.turn10 #left-wing {transform: translate(213px, 383px) rotate(-1.6deg) translate(-213px, -383px)}
+.turn11 #left-wing {transform: translate(213px, 383px) rotate(-1.5deg) translate(-213px, -383px)}
+.turn12 #left-wing {transform: translate(213px, 383px) rotate(-1.3deg) translate(-213px, -383px)}
+.turn13 #left-wing {transform: translate(213px, 383px) rotate(-1.1deg) translate(-213px, -383px)}
+.turn14 #left-wing {transform: translate(213px, 383px) rotate(-0.9deg) translate(-213px, -383px)}
+.turn15 #left-wing {transform: translate(213px, 383px) rotate(-0.8deg) translate(-213px, -383px)}
+.turn16 #left-wing {transform: translate(213px, 383px) rotate(-0.6deg) translate(-213px, -383px)}
+.turn17 #left-wing {transform: translate(213px, 383px) rotate(-0.4deg) translate(-213px, -383px)}
+.turn18 #left-wing {transform: translate(213px, 383px) rotate(-0.2deg) translate(-213px, -383px)}
+.turn19 #left-wing {transform: translate(213px, 383px) rotate(-0.1deg) translate(-213px, -383px)}
+.turn20 #left-wing {transform: translate(213px, 383px) rotate(0.1deg) translate(-213px, -383px)}
+.turn21 #left-wing {transform: translate(213px, 383px) rotate(0.3deg) translate(-213px, -383px)}
+.turn22 #left-wing {transform: translate(213px, 383px) rotate(0.5deg) translate(-213px, -383px)}
+.turn23 #left-wing {transform: translate(213px, 383px) rotate(0.7deg) translate(-213px, -383px)}
+.turn24 #left-wing {transform: translate(213px, 383px) rotate(0.8deg) translate(-213px, -383px)}
+.turn25 #left-wing {transform: translate(213px, 383px) rotate(1deg) translate(-213px, -383px)}
+.turn1 #right-wing {transform: translate(867px, 383px) rotate(-2.4deg) translate(-867px, -383px)}
+.turn2 #right-wing {transform: translate(867px, 383px) rotate(-2.1deg) translate(-867px, -383px)}
+.turn3 #right-wing {transform: translate(867px, 383px) rotate(-1.8deg) translate(-867px, -383px)}
+.turn4 #right-wing {transform: translate(867px, 383px) rotate(-1.5deg) translate(-867px, -383px)}
+.turn5 #right-wing {transform: translate(867px, 383px) rotate(-1.2deg) translate(-867px, -383px)}
+.turn6 #right-wing {transform: translate(867px, 383px) rotate(-0.9deg) translate(-867px, -383px)}
+.turn7 #right-wing {transform: translate(867px, 383px) rotate(-0.6deg) translate(-867px, -383px)}
+.turn8 #right-wing {transform: translate(867px, 383px) rotate(-0.2deg) translate(-867px, -383px)}
+.turn9 #right-wing {transform: translate(867px, 383px) rotate(0.1deg) translate(-867px, -383px)}
+.turn10 #right-wing {transform: translate(867px, 383px) rotate(0.4deg) translate(-867px, -383px)}
+.turn11 #right-wing {transform: translate(867px, 383px) rotate(0.7deg) translate(-867px, -383px)}
+.turn12 #right-wing {transform: translate(867px, 383px) rotate(1.0deg) translate(-867px, -383px)}
+.turn13 #right-wing {transform: translate(867px, 383px) rotate(1.3deg) translate(-867px, -383px)}
+.turn14 #right-wing {transform: translate(867px, 383px) rotate(1.6deg) translate(-867px, -383px)}
+.turn15 #right-wing {transform: translate(867px, 383px) rotate(1.9deg) translate(-867px, -383px)}
+.turn16 #right-wing {transform: translate(867px, 383px) rotate(2.2deg) translate(-867px, -383px)}
+.turn17 #right-wing {transform: translate(867px, 383px) rotate(2.5deg) translate(-867px, -383px)}
+.turn18 #right-wing {transform: translate(867px, 383px) rotate(2.8deg) translate(-867px, -383px)}
+.turn19 #right-wing {transform: translate(867px, 383px) rotate(3.1deg) translate(-867px, -383px)}
+.turn20 #right-wing {transform: translate(867px, 383px) rotate(3.5deg) translate(-867px, -383px)}
+.turn21 #right-wing {transform: translate(867px, 383px) rotate(3.8deg) translate(-867px, -383px)}
+.turn22 #right-wing {transform: translate(867px, 383px) rotate(4.1deg) translate(-867px, -383px)}
+.turn23 #right-wing {transform: translate(867px, 383px) rotate(4.4deg) translate(-867px, -383px)}
+.turn24 #right-wing {transform: translate(867px, 383px) rotate(4.7deg) translate(-867px, -383px)}
+.turn25 #right-wing {transform: translate(867px, 383px) rotate(5deg) translate(-867px, -383px)}
+.turn1 #left-ear {transform: translate(11px, 19px)}
+.turn2 #left-ear {transform: translate(10.1px, 18.3px)}
+.turn3 #left-ear {transform: translate(9.2px, 17.5px)}
+.turn4 #left-ear {transform: translate(8.2px, 16.8px)}
+.turn5 #left-ear {transform: translate(7.3px, 16.0px)}
+.turn6 #left-ear {transform: translate(6.4px, 15.3px)}
+.turn7 #left-ear {transform: translate(5.5px, 14.5px)}
+.turn8 #left-ear {transform: translate(4.6px, 13.8px)}
+.turn9 #left-ear {transform: translate(3.7px, 13.0px)}
+.turn10 #left-ear {transform: translate(2.7px, 12.3px)}
+.turn11 #left-ear {transform: translate(1.8px, 11.5px)}
+.turn12 #left-ear {transform: translate(0.9px, 10.8px)}
+.turn13 #left-ear {transform: translate(-0.0px, 10.0px)}
+.turn14 #left-ear {transform: translate(-0.9px, 9.3px)}
+.turn15 #left-ear {transform: translate(-1.8px, 8.5px)}
+.turn16 #left-ear {transform: translate(-2.8px, 7.8px)}
+.turn17 #left-ear {transform: translate(-3.7px, 7.0px)}
+.turn18 #left-ear {transform: translate(-4.6px, 6.3px)}
+.turn19 #left-ear {transform: translate(-5.5px, 5.5px)}
+.turn20 #left-ear {transform: translate(-6.4px, 4.8px)}
+.turn21 #left-ear {transform: translate(-7.3px, 4.0px)}
+.turn22 #left-ear {transform: translate(-8.3px, 3.3px)}
+.turn23 #left-ear {transform: translate(-9.2px, 2.5px)}
+.turn24 #left-ear {transform: translate(-10.1px, 1.8px)}
+.turn25 #left-ear {transform: translate(-11px, 1px)}
+.turn1 #right-ear {transform: translate(16px, 0px)}
+.turn2 #right-ear {transform: translate(14.6px, 0.6px)}
+.turn3 #right-ear {transform: translate(13.2px, 1.2px)}
+.turn4 #right-ear {transform: translate(11.7px, 1.7px)}
+.turn5 #right-ear {transform: translate(10.3px, 2.3px)}
+.turn6 #right-ear {transform: translate(8.9px, 2.9px)}
+.turn7 #right-ear {transform: translate(7.5px, 3.5px)}
+.turn8 #right-ear {transform: translate(6.1px, 4.1px)}
+.turn9 #right-ear {transform: translate(4.7px, 4.7px)}
+.turn10 #right-ear {transform: translate(3.2px, 5.2px)}
+.turn11 #right-ear {transform: translate(1.8px, 5.8px)}
+.turn12 #right-ear {transform: translate(0.4px, 6.4px)}
+.turn13 #right-ear {transform: translate(-1.0px, 7.0px)}
+.turn14 #right-ear {transform: translate(-2.4px, 7.6px)}
+.turn15 #right-ear {transform: translate(-3.8px, 8.2px)}
+.turn16 #right-ear {transform: translate(-5.3px, 8.7px)}
+.turn17 #right-ear {transform: translate(-6.7px, 9.3px)}
+.turn18 #right-ear {transform: translate(-8.1px, 9.9px)}
+.turn19 #right-ear {transform: translate(-9.5px, 10.5px)}
+.turn20 #right-ear {transform: translate(-10.9px, 11.1px)}
+.turn21 #right-ear {transform: translate(-12.3px, 11.7px)}
+.turn22 #right-ear {transform: translate(-13.8px, 12.2px)}
+.turn23 #right-ear {transform: translate(-15.2px, 12.8px)}
+.turn24 #right-ear {transform: translate(-16.6px, 13.4px)}
+.turn25 #right-ear {transform: translate(-18px, 14px)}
+.turn1 #belly {transform: translate(-40px, 36px)}
+.turn2 #belly {transform: translate(-36.2px, 36px)}
+.turn3 #belly {transform: translate(-32.3px, 36px)}
+.turn4 #belly {transform: translate(-28.5px, 36px)}
+.turn5 #belly {transform: translate(-24.7px, 36px)}
+.turn6 #belly {transform: translate(-20.8px, 36px)}
+.turn7 #belly {transform: translate(-17.0px, 36px)}
+.turn8 #belly {transform: translate(-13.2px, 36px)}
+.turn9 #belly {transform: translate(-9.3px, 36px)}
+.turn10 #belly {transform: translate(-5.5px, 36px)}
+.turn11 #belly {transform: translate(-1.7px, 36px)}
+.turn12 #belly {transform: translate(2.2px, 36px)}
+.turn13 #belly {transform: translate(6.0px, 36px)}
+.turn14 #belly {transform: translate(9.8px, 36px)}
+.turn15 #belly {transform: translate(13.7px, 36px)}
+.turn16 #belly {transform: translate(17.5px, 36px)}
+.turn17 #belly {transform: translate(21.3px, 36px)}
+.turn18 #belly {transform: translate(25.2px, 36px)}
+.turn19 #belly {transform: translate(29.0px, 36px)}
+.turn20 #belly {transform: translate(32.8px, 36px)}
+.turn21 #belly {transform: translate(36.7px, 36px)}
+.turn22 #belly {transform: translate(40.5px, 36px)}
+.turn23 #belly {transform: translate(44.3px, 36px)}
+.turn24 #belly {transform: translate(48.2px, 36px)}
+.turn25 #belly {transform: translate(52px, 36px)}
+.turn1 #eye-circles {transform: translate(-36px, 36px)}
+.turn2 #eye-circles {transform: translate(-33.1px, 36px)}
+.turn3 #eye-circles {transform: translate(-30.2px, 36px)}
+.turn4 #eye-circles {transform: translate(-27.2px, 36px)}
+.turn5 #eye-circles {transform: translate(-24.3px, 36px)}
+.turn6 #eye-circles {transform: translate(-21.4px, 36px)}
+.turn7 #eye-circles {transform: translate(-18.5px, 36px)}
+.turn8 #eye-circles {transform: translate(-15.6px, 36px)}
+.turn9 #eye-circles {transform: translate(-12.7px, 36px)}
+.turn10 #eye-circles {transform: translate(-9.7px, 36px)}
+.turn11 #eye-circles {transform: translate(-6.8px, 36px)}
+.turn12 #eye-circles {transform: translate(-3.9px, 36px)}
+.turn13 #eye-circles {transform: translate(-1.0px, 36px)}
+.turn14 #eye-circles {transform: translate(1.9px, 36px)}
+.turn15 #eye-circles {transform: translate(4.8px, 36px)}
+.turn16 #eye-circles {transform: translate(7.8px, 36px)}
+.turn17 #eye-circles {transform: translate(10.7px, 36px)}
+.turn18 #eye-circles {transform: translate(13.6px, 36px)}
+.turn19 #eye-circles {transform: translate(16.5px, 36px)}
+.turn20 #eye-circles {transform: translate(19.4px, 36px)}
+.turn21 #eye-circles {transform: translate(22.3px, 36px)}
+.turn22 #eye-circles {transform: translate(25.3px, 36px)}
+.turn23 #eye-circles {transform: translate(28.2px, 36px)}
+.turn24 #eye-circles {transform: translate(31.1px, 36px)}
+.turn25 #eye-circles {transform: translate(34px, 36px)}
+.turn1 #eyes {transform: translate(-57px, 60px)}
+.turn2 #eyes {transform: translate(-51.6px, 60px)}
+.turn3 #eyes {transform: translate(-46.2px, 60px)}
+.turn4 #eyes {transform: translate(-40.7px, 60px)}
+.turn5 #eyes {transform: translate(-35.3px, 60px)}
+.turn6 #eyes {transform: translate(-29.9px, 60px)}
+.turn7 #eyes {transform: translate(-24.5px, 60px)}
+.turn8 #eyes {transform: translate(-19.1px, 60px)}
+.turn9 #eyes {transform: translate(-13.7px, 60px)}
+.turn10 #eyes {transform: translate(-8.2px, 60px)}
+.turn11 #eyes {transform: translate(-2.8px, 60px)}
+.turn12 #eyes {transform: translate(2.6px, 60px)}
+.turn13 #eyes {transform: translate(8.0px, 60px)}
+.turn14 #eyes {transform: translate(13.4px, 60px)}
+.turn15 #eyes {transform: translate(18.8px, 60px)}
+.turn16 #eyes {transform: translate(24.3px, 60px)}
+.turn17 #eyes {transform: translate(29.7px, 60px)}
+.turn18 #eyes {transform: translate(35.1px, 60px)}
+.turn19 #eyes {transform: translate(40.5px, 60px)}
+.turn20 #eyes {transform: translate(45.9px, 60px)}
+.turn21 #eyes {transform: translate(51.3px, 60px)}
+.turn22 #eyes {transform: translate(56.8px, 60px)}
+.turn23 #eyes {transform: translate(62.2px, 60px)}
+.turn24 #eyes {transform: translate(67.6px, 60px)}
+.turn25 #eyes {transform: translate(73px, 60px)}
+
+.turn1 #beak, .turn2 #beak, .turn3 #beak, .turn4 #beak, .turn5 #beak, .turn6 #beak, .turn7 #beak, .turn8 #beak, .turn9 #beak, .turn10 #beak, .turn11 #beak, .turn12 #beak, .turn13 #beak, .turn14 #beak, .turn15 #beak, .turn16 #beak, .turn17 #beak, .turn18 #beak, .turn19 #beak, .turn20 #beak, .turn21 #beak, .turn22 #beak, .turn23 #beak, .turn24 #beak, .turn25 #beak {
+  visibility: hidden;
+  display: none;
+}
+
+.turn1 #b9 {
+  visibility: visible;
+  transform: translate(0px, 0px);
+}
+.turn2 #b9 {
+  visibility: visible;
+  transform: translate(4.8px, 0px);
+}
+.turn3 #b9 {
+  visibility: visible;
+  transform: translate(9.5px, 0px);
+}
+.turn4 #b9 {
+  visibility: visible;
+  transform: translate(14.3px, 0px);
+}
+.turn5 #b9 {
+  visibility: visible;
+  transform: translate(19.0px, 0px);
+}
+.turn6 #b9 {
+  visibility: visible;
+  transform: translate(23.8px, 0px);
+}
+.turn7 #b9 {
+  visibility: visible;
+  transform: translate(28.5px, 0px);
+}
+.turn8 #b9 {
+  visibility: visible;
+  transform: translate(33.3px, 0px);
+}
+.turn9 #b9 {
+  visibility: visible;
+  transform: translate(38.0px, 0px);
+}
+.turn10 #b9 {
+  visibility: visible;
+  transform: translate(42.8px, 0px);
+}
+.turn11 #b9 {
+  visibility: visible;
+  transform: translate(47.5px, 0px);
+}
+.turn12 #b9 {
+  visibility: visible;
+  transform: translate(52.3px, 0px);
+}
+.turn13 #b9 {
+  visibility: visible;
+  transform: translate(57.0px, 0px);
+}
+.turn14 #b9 {
+  visibility: visible;
+  transform: translate(61.8px, 0px);
+}
+.turn15 #b9 {
+  visibility: visible;
+  transform: translate(66.5px, 0px);
+}
+.turn16 #b9 {
+  visibility: visible;
+  transform: translate(71.3px, 0px);
+}
+.turn17 #b9 {
+  visibility: visible;
+  transform: translate(76.0px, 0px);
+}
+.turn18 #b9 {
+  visibility: visible;
+  transform: translate(80.8px, 0px);
+}
+.turn19 #b9 {
+  visibility: visible;
+  transform: translate(85.5px, 0px);
+}
+.turn20 #b9 {
+  visibility: visible;
+  transform: translate(90.3px, 0px);
+}
+.turn21 #b9 {
+  visibility: visible;
+  transform: translate(95.0px, 0px);
+}
+.turn22 #b9 {
+  visibility: visible;
+  transform: translate(99.8px, 0px);
+}
+.turn23 #b9 {
+  visibility: visible;
+  transform: translate(104.5px, 0px);
+}
+.turn24 #b9 {
+  visibility: visible;
+  transform: translate(109.3px, 0px);
+}
+.turn25 #b9 {
+  visibility: visible;
+  transform: translate(114px, 0px);
+}
+
+/* Password Animation */
+
+#w1, #w2, #w3, #w4, #left-feather, #right-feather, #long-line {
+  visibility: hidden;
+}
+
+.password #left-wing {
+  animation: left-wing_04 .5s ease-in-out forwards;
+}
+
+.password_reverse #left-wing {
+  animation: left-wing_04 .5s ease-in-out forwards reverse;
+}
+
+.password_static #left-wing {
+  visibility: hidden;
+}
+
+@keyframes left-wing_04 {
+  0%, 66% {
+    transform: translate(213px, 383px) rotate(0deg) translate(-213px, -383px);
+  }
+  33% {
+    transform: translate(213px, 383px) rotate(10deg) translate(-213px, -383px);
+  }
+  0%, 66% {
+    visibility: visible;
+  }
+  67%, 100% {
+    visibility: hidden;
+  }
+}
+
+.password #right-wing {
+  animation: right-wing_04 .5s ease-in-out forwards;
+}
+
+.password_reverse #right-wing {
+  animation: right-wing_04 .5s ease-in-out forwards reverse;
+}
+
+.password_static #right-wing {
+  visibility: hidden;
+}
+
+@keyframes right-wing_04 {
+  0%, 66% {
+    transform: translate(867px, 383px) rotate(0deg) translate(-867px, -383px);
+  }
+  33% {
+    transform: translate(867px, 383px) rotate(-7.1deg) translate(-867px, -383px);
+  }
+  0%, 66% {
+    visibility: visible;
+  }
+  67%, 100% {
+    visibility: hidden;
+  }
+}
+
+.password #w1, .password #w2, .password #w3, .password #w4 {
+visibility: hidden;
+animation-duration: 0.5s;
+animation-fill-mode: forwards;
+animation-timing-function: steps(1);
+}
+
+.password_reverse #w1, .password_reverse #w2, .password_reverse #w3, .password_reverse #w4 {
+visibility: hidden;
+animation-duration: 0.5s;
+animation-fill-mode: forwards;
+animation-timing-function: steps(1);
+animation-direction: reverse;
+}
+
+.password_static #w4 {
+visibility: visible;
+}
+
+.password #w1 {animation-name: w1}
+.password #w2 {animation-name: w2}
+.password #w3 {animation-name: w3}
+.password #w4 {animation-name: w4}
+
+.password_reverse #w1 {animation-name: w1; animation-direction: reverse;}
+.password_reverse #w2 {animation-name: w2; animation-direction: reverse;}
+.password_reverse #w3 {animation-name: w3; animation-direction: reverse;}
+.password_reverse #w4 {animation-name: w4; animation-direction: reverse;}
+
+@keyframes w1 {67%{visibility: visible} 75%{visibility: hidden}}
+@keyframes w2 {75%{visibility: visible} 83.33%{visibility: hidden}}
+@keyframes w3 {83.33%{visibility: visible} 91.67%{visibility: hidden}}
+@keyframes w4 {91.67%, 100%{visibility: visible}}
+
+.password #left-feather {
+  animation: left-feather .5s linear forwards;
+}
+
+.password_reverse #left-feather {
+  animation: left-feather .5s linear forwards reverse;
+}
+
+.password_static #left-feather {
+  visibility: visible;
+  transform: translate(89px, 576px) rotate(0deg) translate(-89px, -576px);
+}
+
+@keyframes left-feather {
+  0%, 66% {
+    visibility: hidden;
+    transform: translate(89px, 576px) rotate(82deg) translate(-89px, -576px);
+  }
+  67%, 100% {
+    visibility: visible;
+  }
+  100% {
+    transform: translate(89px, 576px) rotate(0deg) translate(-89px, -576px);
+  }
+}
+
+.password #right-feather {
+  animation: right-feather .5s linear forwards;
+}
+
+.password_reverse #right-feather {
+  animation: right-feather .5s linear forwards reverse;
+}
+
+.password_static #right-feather {
+  visibility: visible;
+  transform: translate(968px, 554px) rotate(0deg) translate(-968px, -554px);
+}
+
+@keyframes right-feather {
+  0%, 66% {
+    visibility: hidden;
+    transform: translate(968px, 554px) rotate(-95deg) translate(-968px, -554px);
+  }
+  67%, 100% {
+    visibility: visible;
+  }
+  100% {
+    transform: translate(968px, 554px) rotate(0deg) translate(-968px, -554px);
+  }
+}
+
+.password #long-line {
+  animation: long-line .5s ease-in-out forwards;
+}
+
+.password_reverse #long-line {
+  animation: long-line .5s ease-in-out forwards reverse;
+}
+
+.password_static #long-line {
+  visibility: visible;
+}
+
+@keyframes long-line {
+  0%, 66% {
+    visibility: hidden;
+  }
+  67%, 100% {
+    visibility: visible;
+  }
+}
+
+.password #body-outline {
+  animation: body-outline .5s ease-in-out forwards;
+}
+
+.password_reverse #body-outline {
+  animation: body-outline .5s ease-in-out forwards reverse;
+}
+
+.password_static #body-outline {
+  visibility: hidden;
+}
+
+@keyframes body-outline {
+  0%, 66% {
+    visibility: visible;
+  }
+  67%, 100% {
+    visibility: hidden;
+  }
+}
