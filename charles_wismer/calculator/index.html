@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+    <div class="ui_section">
+        <div id="calculator">
+            <label>Total CLient:</label>
+            <input type="number" id="client" name="ui" min="0" max="1000000" value="1">
+            <label>Percentage of clients with CAS interest:</label>
+            <select name="ui" id="percentage">
+                <option value="10">10%</option>
+                <option value="20">20%</option>
+                <option value="30" selected>30%</option>
+                <option value="40">40%</option>
+                <option value="50">50%</option>
+                <option value="60">60%</option>
+                <option value="70">70%</option>
+                <option value="80">80%</option>
+                <option value="90">90%</option>
+                <option value="100">100%</option>
+            </select>
+            <label>Average billing per CAS engagement:</label>
+            <select name="ui" id="billing">
+                <option value="400">$400</option>
+                <option value="500">$500</option>
+                <option value="600" selected>$600</option>
+                <option value="700">$700</option>
+                <option value="800">$800</option>
+                <option value="900">$900</option>
+                <option value="1000">$1000</option>
+                <option value="1100">$1100</option>
+                <option value="1200">$1200</option>
+                <option value="1300">$1300</option>
+                <option value="1400">$1400</option>
+                <option value="1500">$1500</option>
+                <option value="1600">$1600</option>
+                <option value="1700">$1700</option>
+                <option value="1800">$1800</option>
+                <option value="1900">$1900</option>
+                <option value="2000">$2000</option>
+                <option value="2100">$2100</option>
+                <option value="2200">$2200</option>
+                <option value="2300">$2300</option>
+                <option value="2400">$2400</option>
+                <option value="2500">$2500</option>
+                <option value="2600">$2600</option>
+                <option value="2700">27$00</option>
+                <option value="2800">$2800</option>
+                <option value="2900">$2900</option>
+                <option value="3000">$3000</option>
+            </select>
+            <button id="estimate">Estimate CAS Revenue</button>
+        </div>
+        <div id="results" class="hidden">
+            <h2>Your Estimated CAS practice revenue is:</h2>
+            <p><strong>$<span id="month_val"></span></strong> / Month</p>
+            <p><strong>$<span id="quarter_val"></span></strong> / Quarter</p>
+            <p><strong>$<span id="year_val"></span></strong> / Year</p>
+            <h3>Want help with launching CAS?</h3>
+            <a class="bttn" href="javascript:;">Book a Meeting</a>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

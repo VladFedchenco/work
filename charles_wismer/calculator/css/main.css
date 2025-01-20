@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
+}
+
+*:focus {
+    outline: none;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  min-height: 100%;
+  font-family: sans-serif;
+  background: #fff;
+  font-size: 21px;
+}
+
+body {
+  padding-top: 32px;
+}
+
+/* UI */
+
+#ui {
+  padding: 32px;
+}
+
+label {
+  font-size: 18px;
+  margin-bottom: 6px;
+  color: #666;
+  display: inline-block;
+}
+
+.ui_section {
+  position: relative;
+  width: 400px;
+  margin: 0 auto;
+  padding: 32px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0px 0px 32px rgba(0, 0, 0, .1);
+}
+
+input, select {
+  background: #fff;
+  display: block;
+  font-size: 21px;
+  width: 100%;
+  height: 52px;
+  padding: 12px;
+  margin-bottom: 24px;
+  border-radius: 8px;
+  border: solid 1px #ccc;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='50' fill='%23aaa'><polygon points='0,0 100,0 50,50'/></svg>") no-repeat;
+  background-size: 16px;
+  background-position: calc(100% - 20px) center;
+  background-repeat: no-repeat;
+}
+
+button, .bttn {
+  display: block;
+  font-size: 21px;
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: solid 1px #ccc;
+  background: #53ab8b;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+}
+
+button:hover, .bttn:hover {
+  background: #4e9173;
+}
+
+#calculator, #results {
+  opacity: 1;
+  transition: all .3s ease;
+}
+
+#calculator.hidden, #results.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+#results {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding: 32px;
+}
+
+#results h2 {
+  margin: 0;
+  font-size: 30px;
+  line-height: 1.1;
+}
+
+#results h3 {
+  font-size: 21px;
+  margin-bottom: 24px;
+}
+
+#results strong {
+  color: #53ab8b;
+  margin-left: 16px;
+  font-size: 28px;
+}
+
+@media (max-width: 1168px) {
+
+}
