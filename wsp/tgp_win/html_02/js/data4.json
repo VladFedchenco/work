@@ -1,0 +1,11 @@
+{
+  "town": "imgs/towns/6055.png",
+  "title": "You’ve Earned:",
+  "prize": "<span>10</span> <strong>Sweepstakes Entries</strong>",
+  "detail": "You now have <strong>20 entries</strong> for your chance to WIN:",
+  "image": "imgs/10k.png",
+  "note": "<p>Plus Free Groceries for a Year + $1K for the community and more!</p> See <a href='#!'>Official Rules</a> for complete details.",
+  "game_plays": 1,
+  "sweepstakes": true,
+  "employee": false
+}
