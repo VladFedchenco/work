@@ -24,7 +24,7 @@
     }
 
     body {
-      background-color: #000;
+      background-color: #fff;
       overflow-x: hidden;
     }
 
@@ -71,7 +71,7 @@
 
     .tile_01 h3 {
       display: inline-block;
-      max-width: 860px;
+      max-width: 880px;
     }
 
     .tile_02 {
@@ -108,14 +108,34 @@
       font-size: 21px;
     }
 
+    #bottom_section {
+      position: relative;
+/*      background-color: #fff;*/
+      height: 1000px;
+      margin-top: -300px;
+      z-index: 9;
+      padding-top: 40px;
+    }
+
+    #bottom_section h3 {
+      text-align: center;
+      display: block;
+      width: 600px;
+      padding: 200px 0;
+      border: solid 1px #000;
+      margin: 0 auto;
+    }
+
   </style>
 </head>
 
 <body>
   <div id="animationWindow"></div>
   <div class="tile_01">
-    <h2>Instantly remediate risks without disrupting operations</h2>
-    <h3>Use Veriti to proactively assess and safely remediate exposures across the entire security stack on-prem and cloud.</h3>
+    <div class="tile_01_wrapper">
+      <h2>Instantly remediate risks without disrupting operations</h2>
+      <h3>Use Veriti to proactively assess and safely remediate exposures across the entire security stack on-prem and in the cloud.</h3>
+    </div>
   </div>
   <div class="tile_02">
     <div class="tile_02_wrapper">
@@ -124,8 +144,13 @@
     </div>
   </div>
   <div class="tile_03">
-    <h2>Get 10x Faster<br> Exposure Remediation</h2>
-    <a id="demo" href="javascript:;">Book Demo</a>
+    <div class="tile_03_wrapper">
+      <h2>Get 10x Faster<br> Exposure Remediation</h2>
+      <a id="demo" href="javascript:;">Book Demo</a>
+    </div>
+  </div>
+  <div id="bottom_section">
+    <h3>Bottom Section</h3>
   </div>
 <script>
  LottieScrollTrigger({
@@ -143,10 +168,22 @@ gsap.to('.tile_01', {
       trigger: '.tile_01',
       markers: false,
       toggleActions: 'play none reverse none',
-      start: '+=2100'
+      start: '+=800'
     },
     opacity: 0,
     duration: .3
+});
+
+gsap.to('.tile_01_wrapper', {
+    scrollTrigger: {
+      trigger: '.tile_01_wrapper',
+      markers: false,
+      toggleActions: 'play none reverse none',
+      start: '+=1',
+      end: '+=800',
+      scrub: 1
+    },
+    scale: 1.1
 });
 
 gsap.to('.tile_02', {
@@ -154,7 +191,7 @@ gsap.to('.tile_02', {
       trigger: '.tile_02',
       markers: false,
       toggleActions: 'play none reverse none',
-      start: '+=2100'
+      start: '+=500'
     },
     opacity: 1,
     duration: .3
@@ -165,7 +202,7 @@ gsap.to('.tile_02_wrapper', {
       trigger: '.tile_02_wrapper',
       markers: false,
       toggleActions: 'play none reverse none',
-      start: '+=3100'
+      start: '+=1200'
     },
     opacity: 0,
     duration: .3
@@ -176,9 +213,20 @@ gsap.to('.tile_03', {
       trigger: '.tile_03',
       markers: false,
       toggleActions: 'play none reverse none',
-      start: '+=3900'
+      start: '+=1700'
     },
     opacity: 1,
+    duration: .3
+});
+
+gsap.to('.tile_03_wrapper', {
+    scrollTrigger: {
+      trigger: '.tile_03_wrapper',
+      markers: false,
+      toggleActions: 'play none reverse none',
+      start: '+=2200'
+    },
+    opacity: 0,
     duration: .3
 });
 
@@ -191,8 +239,10 @@ function LottieScrollTrigger(vars) {
       markers: false,
       pin: true,
       start: "top top",
-      // end: speeds[vars.speed] || "+=1000",
-      end: '+=6000',
+      end: speeds[vars.speed] || "+=1000",
+      end: '+=2400',
+      // endTrigger: '#bottom_section',
+      // end: '+=2400',
       scrub: 1
     },
     ctx = gsap.context && gsap.context(),
