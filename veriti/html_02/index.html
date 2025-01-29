@@ -98,14 +98,20 @@
       color: #fff;
     }
 
-    #demo {
+    #demo, #video {
       display: inline-block;
+      margin: 0px 8px;
       text-decoration: none;
       color: #fff;
       background: linear-gradient(90deg, #6911d8, #ed1964);
       border-radius: 20px;
       padding: 8px 32px;
       font-size: 21px;
+    }
+
+    #video {
+      border: solid 1px #fff;
+      background: transparent;
     }
 
     #bottom_section {
@@ -187,6 +193,7 @@
     <div class="tile_03_wrapper">
       <h2>Get 10x Faster<br> Exposure Remediation</h2>
       <a id="demo" href="javascript:;">Book Demo</a>
+      <a id="video" href="javascript:;">Watch Video</a>
     </div>
   </div>
   <div id="bottom_section">
@@ -242,7 +249,7 @@ gsap.to('.tile_02_wrapper', {
       trigger: '.tile_02_wrapper',
       markers: false,
       toggleActions: 'play none reverse none',
-      start: '+=1200'
+      start: '+=1100'
     },
     opacity: 0,
     duration: .3
