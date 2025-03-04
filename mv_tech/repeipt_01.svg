@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 85 53">
+
+<style>
+/* <![CDATA[ */
+
+#shadow {
+  transform: translate(66px, 44px) scale(0) translate(-66px, -44px);
+  animation: shadow 6s ease-in-out infinite;
+}
+
+@keyframes shadow {
+  0% {
+    transform: translate(66px, 44px) scale(0) translate(-66px, -44px);
+  }
+  10% {
+    transform: translate(66px, 44px) scale(1.1) translate(-66px, -44px);
+  }
+  15%, 100% {
+    transform: translate(66px, 44px) scale(1) translate(-66px, -44px);
+  }
+  0%, 93% {
+    opacity: 1;
+  }
+  98%, 100% {
+    opacity 0;
+  }
+}
+
+#printer {
+  transform: translate(17px, 29px) scale(0) translate(-17px, -29px);
+  animation: printer 6s ease-in-out infinite;
+}
+
+@keyframes printer {
+  0%, 5% {
+    transform: translate(17px, 29px) scale(0) translate(-17px, -29px);
+  }
+  15% {
+    transform: translate(17px, 29px) scale(1.1) translate(-17px, -29px);
+  }
+  20%, 100% {
+    transform: translate(17px, 29px) scale(1) translate(-17px, -29px);
+  }
+  0%, 93% {
+    opacity: 1;
+  }
+  98%, 100% {
+    opacity 0;
+  }
+}
+
+#receipt {
+  transform: translate(0px, -37px);
+  animation: receipt 6s ease-out infinite;
+}
+
+@keyframes receipt {
+  0%, 20% {
+    transform: translate(0px, -37px);
+  }
+  36%, 100% {
+    transform: translate(0px, 0px);
+  }
+  0%, 93% {
+    opacity: 1;
+  }
+  98%, 100% {
+    opacity 0;
+  }
+}
+
+/* ]]> */
+</style>
+
+  <clipPath id="receipt-clip">
+    <path transform="translate(0 .5)" d="M25.59 13.38h28.06v37.13H25.59z"/>
+  </clipPath>
+  <rect id="shadow" width="44.47" height="34.39" x="21.53" y="9.02" fill="#cfd4ff" rx=".96" ry=".96"/>
+  <g id="printer" fill="none" stroke="#9aa8ff" stroke-linecap="round" stroke-linejoin="round">
+    <rect width="44" height="24" x="17.53" y="5.38" rx="1.52" ry="1.52"/>
+    <rect width="36" height="8" x="21.53" y="13.38" rx="4" ry="4"/>
+  </g>
+  <g clip-path="url(#receipt-clip)" stroke="#9aa8ff" stroke-linecap="round" stroke-linejoin="round">
+    <g id="receipt" transform="translate(0 -37)">
+      <path fill="#fff" d="m52.53 49.38-4.34-4.28-4.33 4.28-4.33-4.28-4.34 4.28-4.33-4.28-4.33 4.28v-36h26v36z"/>
+      <path fill="none" d="M30.63 21h12M30.63 25h10M30.63 29h12M30.63 33h10"/>
+    </g>
+  </g>
+</svg>
