@@ -8,6 +8,8 @@ request.onload = function() {
     $("#ballots h2").innerHTML = prizeData.ballots;
 }
 
+const randomNumber = Math.floor(Math.random() * 1000) + 1;
+
 function $(sel) {
   return document.querySelector(sel);
 }
@@ -28,7 +30,7 @@ function gstart() {
   $("#digits").classList.add("move");
   $("#winner").classList.add("win9");
   setTimeout(function(){
-    $("#confetti").setAttribute("href", "imgs/confetti.svg");
+    $("#confetti").setAttribute("href", "imgs/confetti.svg?r=" + randomNumber);
   }, 3800);
   setTimeout(function(){
     $("#station").classList.add("invis");
