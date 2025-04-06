@@ -277,6 +277,11 @@ footer h3 {
     cursor: pointer;
 }
 
+#animation.inactive {
+    cursor: default;
+    pointer-events: none;
+}
+
 #fuel {
     font-size: 24px;
     font-family: 'Trade Gothic';
@@ -320,7 +325,7 @@ footer h3 {
 
 #fuel, #win {
     opacity: 1;
-    transition: all 1s .2s ease-in-out;
+    transition: all 3s .2s ease-in-out;
 }
 
 #hand.invis, #tap.invis, #fuel.invis, #win.invis {
@@ -574,6 +579,7 @@ footer h3 {
 }
 
 #info p {
+    font-size: 19px;
     user-select: none;
     line-height: 1.2;
     margin: 0px 0px 8px 0px;
