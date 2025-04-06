@@ -337,7 +337,7 @@ footer h3 {
 }
 
 #sun.set {
-    animation: sunset 3s .3s ease-in-out forwards;
+    animation: sunset 6s .3s ease-in-out forwards;
 }
 
 @keyframes sunset {
