@@ -600,11 +600,12 @@ footer h3 {
     border-radius: 24px;
     padding: 16px 48px;
     margin-top: 16px;
+    transition: all .2s;
 }
 
 .bttn:hover {
     text-decoration: none;
-    background-color: #000;
+    background-color: #008061;
     color: #fff;
 }
 

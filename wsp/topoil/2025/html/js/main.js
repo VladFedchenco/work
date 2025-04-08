@@ -1,3 +1,5 @@
+let win = "win0";
+
 let request = new XMLHttpRequest();
 request.open('GET', requestURL);
 request.responseType = 'json';
@@ -6,6 +8,7 @@ request.send();
 request.onload = function() {
   const prizeData = request.response;
     $("#ballots h2").innerHTML = prizeData.ballots;
+    win = "win" + prizeData.ballots;
 }
 
 const randomNumber = Math.floor(Math.random() * 1000) + 1;
@@ -20,7 +23,7 @@ function play_sound() {
 }
 
 function gstart() {
-  // play_sound();
+  play_sound();
   $("#animation").classList.add("inactive");
   $("#hand").classList.add("invis");
   $("#tap").classList.add("invis");
@@ -28,7 +31,7 @@ function gstart() {
   $("#win").classList.add("invis");
   $("#sun").classList.add("set");
   $("#digits").classList.add("move");
-  $("#winner").classList.add("win9");
+  $("#winner").classList.add(win);
   setTimeout(function(){
     $("#confetti").setAttribute("href", "imgs/confetti.svg?r=" + randomNumber);
   }, 3800);
