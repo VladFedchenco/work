@@ -1,60 +1,64 @@
-// let requestURL = 'js/data.json';
-// let request = new XMLHttpRequest();
-// request.open('GET', requestURL);
-// request.responseType = 'json';
-// request.send();
+let start = true;
+let prize_ID;
+let game_type;
 
-// request.onload = function() {
-//   const prizeData = request.response;
-//   $("#prize_head").innerText = prizeData.head;
-//   $("#prize_id").setAttribute("src", prizeData.prize_id);
-//   $("#prize_name").innerText = prizeData.prize_name;
-//   $("#prize_underline").innerText = prizeData.prize_underline;
-//   $("#prize_size").innerText = prizeData.prize_size;
-// }
+let request = new XMLHttpRequest();
+request.open('GET', requestURL);
+request.responseType = 'json';
+request.send();
+
+request.onload = function() {
+  const prizeData = request.response;
+  prize_ID = prizeData.prize_ID;
+  game_type = prizeData.game_type;
+  $("#headline").innerHTML =  prizeData.headline;
+  $("#prize").setAttribute("src", prizeData.img);
+  $("#title").innerHTML =  prizeData.title;
+  $("#subtitle").innerHTML =  prizeData.subtitle;
+  $("#note").innerHTML =  prizeData.note;
+  $("#info").innerHTML =  prizeData.info;
+}
 
 function $(sel) {
   return document.querySelector(sel);
 }
 
-$("#main_banner").onclick = function() {
-  $("#curl_animation").setAttribute("class", "c_play");
-  $("#pointer-block").setAttribute("class", "hidden");
-  $("#click_to_open").setAttribute("class", "hidden");
+function play_sound() {
+  $("#sound").play();
+  $("#sound").loop = false;
+}
 
-  if(!win) {
+$("#pump").addEventListener("click", function(){
+  $("#hand").classList.add("invis");
+  $("#spin_bttn").classList.add("invis");
+  $("#coins").classList.add("invis");
+  $("#prize_01").classList.add("a" + prize_ID + "_1");
+  $("#prize_02").classList.add("a" + prize_ID + "_2");
+  $("#prize_03").classList.add("a" + prize_ID + "_3");
+  if(start) {
+    start = false;
+    play_sound();
+    $("#handle_01").classList.add("invis");
+    $("#handle_02").classList.remove("invis");
+    $("#pump").classList.add("clicked");
     setTimeout(function(){
-      $("#main").setAttribute("class", "hide");
-      setTimeout(function(){
-        $("#eargings").setAttribute("class", "disp");
-        setTimeout(function(){
-          $("#main").setAttribute("class", "hide invis");
-          $("#eargings").setAttribute("class", "disp visible");
-        }, 50);
-      }, 250);
-    }, 700);
-  } else {
+      $("#handle_01").classList.remove("invis");
+      $("#handle_02").classList.add("invis");
+    }, 400);
     setTimeout(function(){
-      $("#main").setAttribute("class", "hide");
-      $("#winning").setAttribute("class", "disp");
-      setTimeout(function(){
-        $("#main").setAttribute("class", "hide invis");
-        $("#winning").setAttribute("class", "disp visible");
-      }, 50);
-    }, 700);
+      $("#main_popup").classList.remove("invis");
+      $("#message_frame").classList.add("anim");
+      if(game_type == 1) {
+        $("#message_options").classList.add("anim");
+      }
+      if(game_type == 2) {
+        $("#participating_product").classList.remove("invis");
+        $("#more_chances").classList.add("anim");
+      }
+      if(game_type == 3) {
+        $("#redeem_bttn").classList.remove("invis");
+      }
+    }, 6500);
   }
-}
+}, false);
 
-$("#full_details").onclick = function() {
-  $("#popup").setAttribute("class", "disp");
-  setTimeout(function(){
-    $("#popup").setAttribute("class", "disp visible");
-  }, 50);
-}
-
-$("#popup_close").onclick = function() {
-  $("#popup").setAttribute("class", "disp");
-  setTimeout(function(){
-    $("#popup").setAttribute("class", "");
-  }, 50);
-}
