@@ -1,4 +1,5 @@
 let win = "win0";
+let game_type = 1;
 
 let request = new XMLHttpRequest();
 request.open('GET', requestURL);
@@ -7,8 +8,13 @@ request.send();
 
 request.onload = function() {
   const prizeData = request.response;
-    $("#ballots h2").innerHTML = prizeData.ballots;
+    $("#bllt").innerHTML = prizeData.ballots;
+    game_type = prizeData.game_type;
     win = "win" + prizeData.ballots;
+    if(game_type == 2) {
+      $("#bllt_x10").innerHTML = prizeData.ballots * 10;
+      $("#sound source").setAttribute("src", "audio/sound_10x.mp3");
+    }
 }
 
 const randomNumber = Math.floor(Math.random() * 1000) + 1;
@@ -18,6 +24,7 @@ function $(sel) {
 }
 
 function play_sound() {
+  $("#sound").load();
   $("#sound").play();
   $("#sound").loop = false;
 }
@@ -49,6 +56,15 @@ function gstart() {
     $("#info").classList.add("active");
     $("#code").classList.add("active");
   }, 6100);
+  if(game_type == 2) {
+    setTimeout(function(){
+      $("#x10").classList.add("active");
+    }, 7000);
+    setTimeout(function(){
+      $("#bllt").classList.add("invis");
+      $("#bllt_x10").classList.remove("invis");
+    }, 7800);
+  }
 }
 
 $("#animation").addEventListener("click", function(){

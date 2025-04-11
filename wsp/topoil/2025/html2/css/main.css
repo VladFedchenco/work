@@ -282,62 +282,12 @@ footer h3 {
     pointer-events: none;
 }
 
-#fuel {
-    font-size: 24px;
-    font-family: 'Trade Gothic';
-    fill: #394b54;
-    text-anchor: middle;
-}
-
-#win {
-    font-size: 108px;
-    font-family: 'Trade Gothic Bold';
-    fill: #394b54;
-    text-anchor: middle;
-}
-
-#tap {
-    font-size: 16px;
-    font-family: 'Trade Gothic';
-    fill: #fff;
-    text-anchor: middle;
-}
-
-#dw text, #db text {
-    font-size: 24px;
-    font-family: 'Trade Gothic Bold';
-    fill: #fff;
-    text-anchor: middle;
-}
-
-#db text {
-    fill: #394b54;
-}
-
-#hand, #tap {
-    opacity: 1;
-    transition: all .3s .2s ease-in-out;
-}
-
-#hand.invis, #tap.invis {
-    opacity: 0;
-}
-
-#fuel, #win {
-    opacity: 1;
-    transition: all 3s .2s ease-in-out;
-}
-
-#hand.invis, #tap.invis, #fuel.invis, #win.invis {
-    opacity: 0;
-}
-
 #sun {
     opacity: 1;
 }
 
 #sun.set {
-    animation: sunset 6s .3s ease-in-out forwards;
+    animation: sunset 4s ease-in-out forwards;
 }
 
 @keyframes sunset {
@@ -347,118 +297,6 @@ footer h3 {
     100% {
         transform: translate(400px, 80px);
     }
-}
-
-#digits.move #clmn1 {
-    animation: move 3s 0s ease-in-out forwards;
-}
-
-#digits.move #clmn2 {
-    animation: move 3s .2s ease-in-out forwards;
-}
-
-#digits.move #clmn3 {
-    animation: move 3s .4s ease-in-out forwards;
-}
-
-#digits.move #clmn4 {
-    animation: move 3s .6s ease-in-out forwards;
-}
-
-#digits.move #clmn5 {
-    animation: move 3s .8s ease-in-out forwards;
-}
-
-#digits.move #clmn6 {
-    animation: move 3s 1s ease-in-out forwards;
-}
-
-@keyframes move {
-    0% {
-        transform: translate(0px, 0px);
-    }
-    100% {
-        transform: translate(0px, 900px);
-    }
-}
-
-#winner.win0 { animation: win0 3s 1.2s ease-in-out forwards }
-
-@keyframes win0 {
-    0% { transform: translate(0px, 0px) }
-    100% { transform: translate(0px, 900px) }
-}
-
-#winner.win1 { animation: win1 3s 1.2s ease-in-out forwards }
-
-@keyframes win1 {
-    0% { transform: translate(0px, 0px) }
-    100% { transform: translate(0px, 870px) }
-}
-
-#winner.win2 { animation: win2 3s 1.2s ease-in-out forwards }
-
-@keyframes win2 {
-    0% { transform: translate(0px, 0px) }
-    100% { transform: translate(0px, 840px) }
-}
-
-#winner.win3 { animation: win3 3s 1.2s ease-in-out forwards }
-
-@keyframes win3 {
-    0% { transform: translate(0px, 0px) }
-    100% { transform: translate(0px, 810px) }
-}
-
-#winner.win4 { animation: win4 3s 1.2s ease-in-out forwards }
-
-@keyframes win4 {
-    0% { transform: translate(0px, 0px) }
-    100% { transform: translate(0px, 780px) }
-}
-
-#winner.win5 { animation: win5 3s 1.2s ease-in-out forwards }
-
-@keyframes win5 {
-    0% { transform: translate(0px, 0px) }
-    100% { transform: translate(0px, 750px) }
-}
-
-#winner.win6 { animation: win6 3s 1.2s ease-in-out forwards }
-
-@keyframes win6 {
-    0% { transform: translate(0px, 0px) }
-    100% { transform: translate(0px, 720px) }
-}
-
-#winner.win7 { animation: win7 3s 1.2s ease-in-out forwards }
-
-@keyframes win7 {
-    0% { transform: translate(0px, 0px) }
-    100% { transform: translate(0px, 690px) }
-}
-
-#winner.win8 { animation: win8 3s 1.2s ease-in-out forwards }
-
-@keyframes win8 {
-    0% { transform: translate(0px, 0px) }
-    100% { transform: translate(0px, 660px) }
-}
-
-#winner.win9 { animation: win9 3s 1.2s ease-in-out forwards }
-
-@keyframes win9 {
-    0% { transform: translate(0px, 0px) }
-    100% { transform: translate(0px, 630px) }
-}
-
-#station {
-    opacity: 1;
-    transition: all .3s ease-in-out;
-}
-
-#station.invis {
-    opacity: 0;
 }
 
 #receipt, #win_circle {
@@ -648,59 +486,6 @@ footer h3 {
 
 #code a:hover path {
     fill: #000;
-}
-
-#x10_1, #x10_2 {
-    font-family: 'Volte Semibold';
-    font-size: 32px;
-    text-anchor: middle;
-    fill: #fff;
-}
-
-#x10_2 {
-    font-size: 22px;
-}
-
-#x10 {
-    opacity: 0;
-}
-
-#x10.active {
-    animation: x10 1s ease-in-out forwards;
-}
-
-@keyframes x10 {
-    0% {
-        opacity: 0;
-        transform: translate(68px, 68px) scale(.4) translate(-68px, -68px);
-    }
-    70% {
-        transform: translate(68px, 68px) scale(1.2) translate(-68px, -68px);
-    }
-    100% {
-        transform: translate(68px, 68px) scale(1) translate(-68px, -68px);
-    }
-    30%, 100% {
-        opacity: 1;
-    }
-}
-
-#bllt_x10 {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%);
-}
-
-#bllt, #bllt_x10 {
-    opacity: 1;
-    transition: all .5s ease-in-out;
-}
-
-#bllt.invis, #bllt_x10.invis {
-    opacity: 0;
-    pointer-events: none;
 }
 
 @media (max-width: 1390px) {

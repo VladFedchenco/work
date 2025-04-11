@@ -1,0 +1,745 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="376" height="670" viewBox="0 0 376 670">
+<defs>
+  <path id="r" fill="#ed3341" d="M.15 5.07 3.67-.07c.28-1.8-4.71-4.02-4.71-4.02L-4.4.45C-.54 2.22.15 5.07.15 5.07"/>
+  <path id="g" fill="#8dc63f" d="m-1.01-4.16-3.03.83S-.38 2.83.64 7.18l2.5-5.13s-.77-4.01-4.15-6.21"/>
+  <path id="y" fill="#fd0" d="m2.9 3.21 2.61-5.03S.35-.79-.42-4.09L-4.4-1.81s.94 5.47 7.3 5.02"/>
+  <path id="b" fill="#00bce4" d="M-1.01 4.83c.87-2.41 5.2-4.96 5.2-4.96L2.47-3.35c-4.12.91-6.66 3.01-6.66 3.01a86.5 86.5 0 0 0 2.35 3.89l.08.12.75 1.16"/>
+  <path id="o" fill="#f9a01b" d="m2.12 4.94.53-.24c-.14-.13-.22-.33-.33-.5-.04-.06-.09-.12-.12-.19-1.26-2.41-.04-7.88.06-8.3l-.08-.13-2.57-1A11.15 11.15 0 0 0-.08 5.96l2.2-1.02Z"/>
+</defs>
+
+<style>
+/* <![CDATA[ */
+
+use {
+  opacity: 0;
+}
+
+#r1 {
+  animation: r1 1.3s 0.8s ease-out forwards;
+}
+
+@keyframes r1 {
+  0% {transform: translate(330px, -9px) scale(1.6) rotate(180deg)}
+  100% {transform: translate(330px, 200px) scale(.8) rotate(0deg)}
+  0%, 96%, 100% {opacity: 0}
+  5%, 70% {opacity: 1}
+}
+
+#r2 {
+  animation: r2 1.2s 0.9s ease-out forwards;
+}
+
+@keyframes r2 {
+  0% {transform: translate(213px, -9px) scale(1.6) rotate(180deg)}
+  100% {transform: translate(213px, 200px) scale(.8) rotate(0deg)}
+  0%, 96%, 100% {opacity: 0}
+  5%, 70% {opacity: 1}
+}
+
+#r3 {
+  animation: r3 1.3s 0.4s ease-out forwards;
+}
+
+@keyframes r3 {
+  0% {transform: translate(64px, -9px) scale(1.6) rotate(180deg)}
+  100% {transform: translate(64px, 200px) scale(.8) rotate(0deg)}
+  0%, 96%, 100% {opacity: 0}
+  5%, 70% {opacity: 1}
+}
+
+#r4 {
+  animation: r4 1.1s 0.8s ease-out forwards;
+}
+
+@keyframes r4 {
+  0% {transform: translate(180px, -9px) scale(1.6) rotate(180deg)}
+  100% {transform: translate(180px, 200px) scale(.8) rotate(0deg)}
+  0%, 96%, 100% {opacity: 0}
+  5%, 70% {opacity: 1}
+}
+
+#r5 {
+  animation: r5 1.5s 0.2s ease-out forwards;
+}
+
+@keyframes r5 {
+  0% {transform: translate(48px, -9px) scale(1.6) rotate(180deg)}
+  100% {transform: translate(48px, 200px) scale(.8) rotate(0deg)}
+  0%, 96%, 100% {opacity: 0}
+  5%, 70% {opacity: 1}
+}
+
+#r6 {
+  animation: r6 1.1s 0.1s ease-out forwards;
+}
+
+@keyframes r6 {
+  0% {transform: translate(303px, -9px) scale(1.6) rotate(180deg)}
+  100% {transform: translate(303px, 200px) scale(.8) rotate(0deg)}
+  0%, 96%, 100% {opacity: 0}
+  5%, 70% {opacity: 1}
+}
+
+#r7 {
+  animation: r7 1.4s 0.3s ease-out forwards;
+}
+
+@keyframes r7 {
+  0% {transform: translate(20px, -9px) scale(1.6) rotate(180deg)}
+  100% {transform: translate(20px, 200px) scale(.8) rotate(0deg)}
+  0%, 96%, 100% {opacity: 0}
+  5%, 70% {opacity: 1}
+}
+
+#r8 {
+  animation: r8 1.3s 0.1s ease-out forwards;
+}
+
+@keyframes r8 {
+  0% {transform: translate(174px, -9px) scale(1.6) rotate(180deg)}
+  100% {transform: translate(174px, 200px) scale(.8) rotate(0deg)}
+  0%, 96%, 100% {opacity: 0}
+  5%, 70% {opacity: 1}
+}
+
+#r9 {
+  animation: r9 1.5s 1s ease-out forwards;
+}
+
+@keyframes r9 {
+  0% {transform: translate(284px, -9px) scale(1.6) rotate(180deg)}
+  100% {transform: translate(284px, 200px) scale(.8) rotate(0deg)}
+  0%, 96%, 100% {opacity: 0}
+  5%, 70% {opacity: 1}
+}
+
+#r10 {
+  animation: r10 1.2s 0.2s ease-out forwards;
+}
+
+@keyframes r10 {
+  0% {transform: translate(317px, -9px) scale(1.6) rotate(180deg)}
+  100% {transform: translate(317px, 200px) scale(.8) rotate(0deg)}
+  0%, 96%, 100% {opacity: 0}
+  5%, 70% {opacity: 1}
+}
+
+#r11 {
+  animation: r11 1.4s 0.4s ease-out forwards;
+}
+
+@keyframes r11 {
+  0% {transform: translate(107px, -9px) scale(1.6) rotate(180deg)}
+  100% {transform: translate(107px, 200px) scale(.8) rotate(0deg)}
+  0%, 96%, 100% {opacity: 0}
+  5%, 70% {opacity: 1}
+}
+
+#r12 {
+  animation: r12 1.5s 1s ease-out forwards;
+}
+
+@keyframes r12 {
+  0% {transform: translate(52px, -9px) scale(1.6) rotate(180deg)}
+  100% {transform: translate(52px, 200px) scale(.8) rotate(0deg)}
+  0%, 96%, 100% {opacity: 0}
+  5%, 70% {opacity: 1}
+}
+
+#g1 {
+  animation: g1 1.1s 0.3s ease-out forwards;
+}
+
+@keyframes g1 {
+  0% {transform: translate(81px, -21px) scale(1.6) rotate(180deg)}
+  100% {transform: translate(81px, 200px) scale(.8) rotate(0deg)}
+  0%, 96%, 100% {opacity: 0}
+  5%, 70% {opacity: 1}
+}
+
+#g2 {
+  animation: g2 1s 0.1s ease-out forwards;
+}
+
+@keyframes g2 {
+  0% {transform: translate(192px, -19px) scale(1.6) rotate(180deg)}
+  100% {transform: translate(192px, 200px) scale(.8) rotate(0deg)}
+  0%, 96%, 100% {opacity: 0}
+  5%, 70% {opacity: 1}
+}
+
+#g3 {
+  animation: g3 1.5s 0.6s ease-out forwards;
+}
+
+@keyframes g3 {
+  0% {transform: translate(39px, -5px) scale(1.6) rotate(180deg)}
+  100% {transform: translate(39px, 200px) scale(.8) rotate(0deg)}
+  0%, 96%, 100% {opacity: 0}
+  5%, 70% {opacity: 1}
+}
+
+#g4 {
+  animation: g4 1s 0.2s ease-out forwards;
+}
+
+@keyframes g4 {
+  0% {transform: translate(172px, -12px) scale(1.6) rotate(180deg)}
+  100% {transform: translate(172px, 200px) scale(.8) rotate(0deg)}
+  0%, 96%, 100% {opacity: 0}
+  5%, 70% {opacity: 1}
+}
+
+#g5 {
+  animation: g5 1s 0.5s ease-out forwards;
+}
+
+@keyframes g5 {
+  0% {transform: translate(350px, -21px) scale(1.6) rotate(180deg)}
+  100% {transform: translate(350px, 200px) scale(.8) rotate(0deg)}
+  0%, 96%, 100% {opacity: 0}
+  5%, 70% {opacity: 1}
+}
+
+#g6 {
+  animation: g6 1.3s 1s ease-out forwards;
+}
+
+@keyframes g6 {
+  0% {transform: translate(205px, -23px) scale(1.6) rotate(180deg)}
+  100% {transform: translate(205px, 200px) scale(.8) rotate(0deg)}
+  0%, 96%, 100% {opacity: 0}
+  5%, 70% {opacity: 1}
+}
+
+#g7 {
+  animation: g7 1.3s 0.7s ease-out forwards;
+}
+
+@keyframes g7 {
+  0% {transform: translate(119px, -24px) scale(1.6) rotate(180deg)}
+  100% {transform: translate(119px, 200px) scale(.8) rotate(0deg)}
+  0%, 96%, 100% {opacity: 0}
+  5%, 70% {opacity: 1}
+}
+
+#g8 {
+  animation: g8 1.1s 0s ease-out forwards;
+}
+
+@keyframes g8 {
+  0% {transform: translate(89px, -23px) scale(1.6) rotate(180deg)}
+  100% {transform: translate(89px, 200px) scale(.8) rotate(0deg)}
+  0%, 96%, 100% {opacity: 0}
+  5%, 70% {opacity: 1}
+}
+
+#g9 {
+  animation: g9 1.5s 0.2s ease-out forwards;
+}
+
+@keyframes g9 {
+  0% {transform: translate(331px, -26px) scale(1.6) rotate(180deg)}
+  100% {transform: translate(331px, 200px) scale(.8) rotate(0deg)}
+  0%, 96%, 100% {opacity: 0}
+  5%, 70% {opacity: 1}
+}
+
+#g10 {
+  animation: g10 1.5s 0.7s ease-out forwards;
+}
+
+@keyframes g10 {
+  0% {transform: translate(54px, -6px) scale(1.6) rotate(180deg)}
+  100% {transform: translate(54px, 200px) scale(.8) rotate(0deg)}
+  0%, 96%, 100% {opacity: 0}
+  5%, 70% {opacity: 1}
+}
+
+#g11 {
+  animation: g11 1.4s 0.4s ease-out forwards;
+}
+
+@keyframes g11 {
+  0% {transform: translate(68px, -26px) scale(1.6) rotate(180deg)}
+  100% {transform: translate(68px, 200px) scale(.8) rotate(0deg)}
+  0%, 96%, 100% {opacity: 0}
+  5%, 70% {opacity: 1}
+}
+
+#g12 {
+  animation: g12 1.2s 0.6s ease-out forwards;
+}
+
+@keyframes g12 {
+  0% {transform: translate(309px, -12px) scale(1.6) rotate(180deg)}
+  100% {transform: translate(309px, 200px) scale(.8) rotate(0deg)}
+  0%, 96%, 100% {opacity: 0}
+  5%, 70% {opacity: 1}
+}
+
+#y1 {
+  animation: y1 1.1s 0.6s ease-out forwards;
+}
+
+@keyframes y1 {
+  0% {transform: translate(346px, -13px) scale(1.6) rotate(180deg)}
+  100% {transform: translate(346px, 200px) scale(.8) rotate(0deg)}
+  0%, 96%, 100% {opacity: 0}
+  5%, 70% {opacity: 1}
+}
+
+#y2 {
+  animation: y2 1s 0.3s ease-out forwards;
+}
+
+@keyframes y2 {
+  0% {transform: translate(193px, -22px) scale(1.6) rotate(180deg)}
+  100% {transform: translate(193px, 200px) scale(.8) rotate(0deg)}
+  0%, 96%, 100% {opacity: 0}
+  5%, 70% {opacity: 1}
+}
+
+#y3 {
+  animation: y3 1.2s 0.4s ease-out forwards;
+}
+
+@keyframes y3 {
+  0% {transform: translate(353px, -18px) scale(1.6) rotate(180deg)}
+  100% {transform: translate(353px, 200px) scale(.8) rotate(0deg)}
+  0%, 96%, 100% {opacity: 0}
+  5%, 70% {opacity: 1}
+}
+
+#y4 {
+  animation: y4 1s 0.5s ease-out forwards;
+}
+
+@keyframes y4 {
+  0% {transform: translate(58px, -30px) scale(1.6) rotate(180deg)}
+  100% {transform: translate(58px, 200px) scale(.8) rotate(0deg)}
+  0%, 96%, 100% {opacity: 0}
+  5%, 70% {opacity: 1}
+}
+
+#y5 {
+  animation: y5 1.2s 0.9s ease-out forwards;
+}
+
+@keyframes y5 {
+  0% {transform: translate(84px, -22px) scale(1.6) rotate(180deg)}
+  100% {transform: translate(84px, 200px) scale(.8) rotate(0deg)}
+  0%, 96%, 100% {opacity: 0}
+  5%, 70% {opacity: 1}
+}
+
+#y6 {
+  animation: y6 1.3s 0.3s ease-out forwards;
+}
+
+@keyframes y6 {
+  0% {transform: translate(14px, -28px) scale(1.6) rotate(180deg)}
+  100% {transform: translate(14px, 200px) scale(.8) rotate(0deg)}
+  0%, 96%, 100% {opacity: 0}
+  5%, 70% {opacity: 1}
+}
+
+#y7 {
+  animation: y7 1.4s 0.9s ease-out forwards;
+}
+
+@keyframes y7 {
+  0% {transform: translate(209px, -9px) scale(1.6) rotate(180deg)}
+  100% {transform: translate(209px, 200px) scale(.8) rotate(0deg)}
+  0%, 96%, 100% {opacity: 0}
+  5%, 70% {opacity: 1}
+}
+
+#y8 {
+  animation: y8 1.4s 0s ease-out forwards;
+}
+
+@keyframes y8 {
+  0% {transform: translate(318px, -26px) scale(1.6) rotate(180deg)}
+  100% {transform: translate(318px, 200px) scale(.8) rotate(0deg)}
+  0%, 96%, 100% {opacity: 0}
+  5%, 70% {opacity: 1}
+}
+
+#y9 {
+  animation: y9 1.5s 0s ease-out forwards;
+}
+
+@keyframes y9 {
+  0% {transform: translate(160px, -30px) scale(1.6) rotate(180deg)}
+  100% {transform: translate(160px, 200px) scale(.8) rotate(0deg)}
+  0%, 96%, 100% {opacity: 0}
+  5%, 70% {opacity: 1}
+}
+
+#y10 {
+  animation: y10 1.3s 0.2s ease-out forwards;
+}
+
+@keyframes y10 {
+  0% {transform: translate(209px, -26px) scale(1.6) rotate(180deg)}
+  100% {transform: translate(209px, 200px) scale(.8) rotate(0deg)}
+  0%, 96%, 100% {opacity: 0}
+  5%, 70% {opacity: 1}
+}
+
+#y11 {
+  animation: y11 1.2s 0.6s ease-out forwards;
+}
+
+@keyframes y11 {
+  0% {transform: translate(166px, -6px) scale(1.6) rotate(180deg)}
+  100% {transform: translate(166px, 200px) scale(.8) rotate(0deg)}
+  0%, 96%, 100% {opacity: 0}
+  5%, 70% {opacity: 1}
+}
+
+#y12 {
+  animation: y12 1.3s 1s ease-out forwards;
+}
+
+@keyframes y12 {
+  0% {transform: translate(237px, -18px) scale(1.6) rotate(180deg)}
+  100% {transform: translate(237px, 200px) scale(.8) rotate(0deg)}
+  0%, 96%, 100% {opacity: 0}
+  5%, 70% {opacity: 1}
+}
+
+#b1 {
+  animation: b1 1.2s 0.9s ease-out forwards;
+}
+
+@keyframes b1 {
+  0% {transform: translate(309px, -23px) scale(1.6) rotate(180deg)}
+  100% {transform: translate(309px, 200px) scale(.8) rotate(0deg)}
+  0%, 96%, 100% {opacity: 0}
+  5%, 70% {opacity: 1}
+}
+
+#b2 {
+  animation: b2 1.2s 0.4s ease-out forwards;
+}
+
+@keyframes b2 {
+  0% {transform: translate(220px, -20px) scale(1.6) rotate(180deg)}
+  100% {transform: translate(220px, 200px) scale(.8) rotate(0deg)}
+  0%, 96%, 100% {opacity: 0}
+  5%, 70% {opacity: 1}
+}
+
+#b3 {
+  animation: b3 1.1s 0.9s ease-out forwards;
+}
+
+@keyframes b3 {
+  0% {transform: translate(206px, -6px) scale(1.6) rotate(180deg)}
+  100% {transform: translate(206px, 200px) scale(.8) rotate(0deg)}
+  0%, 96%, 100% {opacity: 0}
+  5%, 70% {opacity: 1}
+}
+
+#b4 {
+  animation: b4 1.5s 0.3s ease-out forwards;
+}
+
+@keyframes b4 {
+  0% {transform: translate(292px, -13px) scale(1.6) rotate(180deg)}
+  100% {transform: translate(292px, 200px) scale(.8) rotate(0deg)}
+  0%, 96%, 100% {opacity: 0}
+  5%, 70% {opacity: 1}
+}
+
+#b5 {
+  animation: b5 1.5s 0.9s ease-out forwards;
+}
+
+@keyframes b5 {
+  0% {transform: translate(169px, -25px) scale(1.6) rotate(180deg)}
+  100% {transform: translate(169px, 200px) scale(.8) rotate(0deg)}
+  0%, 96%, 100% {opacity: 0}
+  5%, 70% {opacity: 1}
+}
+
+#b6 {
+  animation: b6 1.2s 0.5s ease-out forwards;
+}
+
+@keyframes b6 {
+  0% {transform: translate(57px, -3px) scale(1.6) rotate(180deg)}
+  100% {transform: translate(57px, 200px) scale(.8) rotate(0deg)}
+  0%, 96%, 100% {opacity: 0}
+  5%, 70% {opacity: 1}
+}
+
+#b7 {
+  animation: b7 1.5s 1s ease-out forwards;
+}
+
+@keyframes b7 {
+  0% {transform: translate(146px, -24px) scale(1.6) rotate(180deg)}
+  100% {transform: translate(146px, 200px) scale(.8) rotate(0deg)}
+  0%, 96%, 100% {opacity: 0}
+  5%, 70% {opacity: 1}
+}
+
+#b8 {
+  animation: b8 1s 1s ease-out forwards;
+}
+
+@keyframes b8 {
+  0% {transform: translate(326px, -13px) scale(1.6) rotate(180deg)}
+  100% {transform: translate(326px, 200px) scale(.8) rotate(0deg)}
+  0%, 96%, 100% {opacity: 0}
+  5%, 70% {opacity: 1}
+}
+
+#b9 {
+  animation: b9 1.1s 0.2s ease-out forwards;
+}
+
+@keyframes b9 {
+  0% {transform: translate(66px, -22px) scale(1.6) rotate(180deg)}
+  100% {transform: translate(66px, 200px) scale(.8) rotate(0deg)}
+  0%, 96%, 100% {opacity: 0}
+  5%, 70% {opacity: 1}
+}
+
+#b10 {
+  animation: b10 1.3s 0.3s ease-out forwards;
+}
+
+@keyframes b10 {
+  0% {transform: translate(359px, -26px) scale(1.6) rotate(180deg)}
+  100% {transform: translate(359px, 200px) scale(.8) rotate(0deg)}
+  0%, 96%, 100% {opacity: 0}
+  5%, 70% {opacity: 1}
+}
+
+#b11 {
+  animation: b11 1.5s 0.6s ease-out forwards;
+}
+
+@keyframes b11 {
+  0% {transform: translate(148px, -17px) scale(1.6) rotate(180deg)}
+  100% {transform: translate(148px, 200px) scale(.8) rotate(0deg)}
+  0%, 96%, 100% {opacity: 0}
+  5%, 70% {opacity: 1}
+}
+
+#b12 {
+  animation: b12 1s 0.3s ease-out forwards;
+}
+
+@keyframes b12 {
+  0% {transform: translate(164px, -28px) scale(1.6) rotate(180deg)}
+  100% {transform: translate(164px, 200px) scale(.8) rotate(0deg)}
+  0%, 96%, 100% {opacity: 0}
+  5%, 70% {opacity: 1}
+}
+
+#o1 {
+  animation: o1 1.4s 0.5s ease-out forwards;
+}
+
+@keyframes o1 {
+  0% {transform: translate(1px, -3px) scale(1.6) rotate(180deg)}
+  100% {transform: translate(1px, 200px) scale(.8) rotate(0deg)}
+  0%, 96%, 100% {opacity: 0}
+  5%, 70% {opacity: 1}
+}
+
+#o2 {
+  animation: o2 1.4s 0.4s ease-out forwards;
+}
+
+@keyframes o2 {
+  0% {transform: translate(290px, -30px) scale(1.6) rotate(180deg)}
+  100% {transform: translate(290px, 200px) scale(.8) rotate(0deg)}
+  0%, 96%, 100% {opacity: 0}
+  5%, 70% {opacity: 1}
+}
+
+#o3 {
+  animation: o3 1.4s 0.2s ease-out forwards;
+}
+
+@keyframes o3 {
+  0% {transform: translate(324px, -8px) scale(1.6) rotate(180deg)}
+  100% {transform: translate(324px, 200px) scale(.8) rotate(0deg)}
+  0%, 96%, 100% {opacity: 0}
+  5%, 70% {opacity: 1}
+}
+
+#o4 {
+  animation: o4 1.5s 0s ease-out forwards;
+}
+
+@keyframes o4 {
+  0% {transform: translate(190px, -10px) scale(1.6) rotate(180deg)}
+  100% {transform: translate(190px, 200px) scale(.8) rotate(0deg)}
+  0%, 96%, 100% {opacity: 0}
+  5%, 70% {opacity: 1}
+}
+
+#o5 {
+  animation: o5 1.2s 0.9s ease-out forwards;
+}
+
+@keyframes o5 {
+  0% {transform: translate(96px, -14px) scale(1.6) rotate(180deg)}
+  100% {transform: translate(96px, 200px) scale(.8) rotate(0deg)}
+  0%, 96%, 100% {opacity: 0}
+  5%, 70% {opacity: 1}
+}
+
+#o6 {
+  animation: o6 1.2s 0.4s ease-out forwards;
+}
+
+@keyframes o6 {
+  0% {transform: translate(312px, -12px) scale(1.6) rotate(180deg)}
+  100% {transform: translate(312px, 200px) scale(.8) rotate(0deg)}
+  0%, 96%, 100% {opacity: 0}
+  5%, 70% {opacity: 1}
+}
+
+#o7 {
+  animation: o7 1.1s 1s ease-out forwards;
+}
+
+@keyframes o7 {
+  0% {transform: translate(188px, -9px) scale(1.6) rotate(180deg)}
+  100% {transform: translate(188px, 200px) scale(.8) rotate(0deg)}
+  0%, 96%, 100% {opacity: 0}
+  5%, 70% {opacity: 1}
+}
+
+#o8 {
+  animation: o8 1.2s 0.9s ease-out forwards;
+}
+
+@keyframes o8 {
+  0% {transform: translate(264px, -28px) scale(1.6) rotate(180deg)}
+  100% {transform: translate(264px, 200px) scale(.8) rotate(0deg)}
+  0%, 96%, 100% {opacity: 0}
+  5%, 70% {opacity: 1}
+}
+
+#o9 {
+  animation: o9 1.3s 1s ease-out forwards;
+}
+
+@keyframes o9 {
+  0% {transform: translate(340px, -1px) scale(1.6) rotate(180deg)}
+  100% {transform: translate(340px, 200px) scale(.8) rotate(0deg)}
+  0%, 96%, 100% {opacity: 0}
+  5%, 70% {opacity: 1}
+}
+
+#o10 {
+  animation: o10 1.3s 0.8s ease-out forwards;
+}
+
+@keyframes o10 {
+  0% {transform: translate(294px, -11px) scale(1.6) rotate(180deg)}
+  100% {transform: translate(294px, 200px) scale(.8) rotate(0deg)}
+  0%, 96%, 100% {opacity: 0}
+  5%, 70% {opacity: 1}
+}
+
+#o11 {
+  animation: o11 1.1s 0.3s ease-out forwards;
+}
+
+@keyframes o11 {
+  0% {transform: translate(11px, -22px) scale(1.6) rotate(180deg)}
+  100% {transform: translate(11px, 200px) scale(.8) rotate(0deg)}
+  0%, 96%, 100% {opacity: 0}
+  5%, 70% {opacity: 1}
+}
+
+#o12 {
+  animation: o12 1.4s 0.7s ease-out forwards;
+}
+
+@keyframes o12 {
+  0% {transform: translate(21px, -13px) scale(1.6) rotate(180deg)}
+  100% {transform: translate(21px, 200px) scale(.8) rotate(0deg)}
+  0%, 96%, 100% {opacity: 0}
+  5%, 70% {opacity: 1}
+}
+
+/* ]]> */
+</style>
+
+<use id="r1" xlink:href="#r"/>
+<use id="r2" xlink:href="#r"/>
+<use id="r3" xlink:href="#r"/>
+<use id="r4" xlink:href="#r"/>
+<use id="r5" xlink:href="#r"/>
+<use id="r6" xlink:href="#r"/>
+<use id="r7" xlink:href="#r"/>
+<use id="r8" xlink:href="#r"/>
+<use id="r9" xlink:href="#r"/>
+<use id="r10" xlink:href="#r"/>
+<use id="r11" xlink:href="#r"/>
+<use id="r12" xlink:href="#r"/>
+
+<use id="g1" xlink:href="#g"/>
+<use id="g2" xlink:href="#g"/>
+<use id="g3" xlink:href="#g"/>
+<use id="g4" xlink:href="#g"/>
+<use id="g5" xlink:href="#g"/>
+<use id="g6" xlink:href="#g"/>
+<use id="g7" xlink:href="#g"/>
+<use id="g8" xlink:href="#g"/>
+<use id="g9" xlink:href="#g"/>
+<use id="g10" xlink:href="#g"/>
+<use id="g11" xlink:href="#g"/>
+<use id="g12" xlink:href="#g"/>
+
+<use id="y1" xlink:href="#y"/>
+<use id="y2" xlink:href="#y"/>
+<use id="y3" xlink:href="#y"/>
+<use id="y4" xlink:href="#y"/>
+<use id="y5" xlink:href="#y"/>
+<use id="y6" xlink:href="#y"/>
+<use id="y7" xlink:href="#y"/>
+<use id="y8" xlink:href="#y"/>
+<use id="y9" xlink:href="#y"/>
+<use id="y10" xlink:href="#y"/>
+<use id="y11" xlink:href="#y"/>
+<use id="y12" xlink:href="#y"/>
+
+<use id="b1" xlink:href="#b"/>
+<use id="b2" xlink:href="#b"/>
+<use id="b3" xlink:href="#b"/>
+<use id="b4" xlink:href="#b"/>
+<use id="b5" xlink:href="#b"/>
+<use id="b6" xlink:href="#b"/>
+<use id="b7" xlink:href="#b"/>
+<use id="b8" xlink:href="#b"/>
+<use id="b9" xlink:href="#b"/>
+<use id="b10" xlink:href="#b"/>
+<use id="b11" xlink:href="#b"/>
+<use id="b12" xlink:href="#b"/>
+
+<use id="o1" xlink:href="#o"/>
+<use id="o2" xlink:href="#o"/>
+<use id="o3" xlink:href="#o"/>
+<use id="o4" xlink:href="#o"/>
+<use id="o5" xlink:href="#o"/>
+<use id="o6" xlink:href="#o"/>
+<use id="o7" xlink:href="#o"/>
+<use id="o8" xlink:href="#o"/>
+<use id="o9" xlink:href="#o"/>
+<use id="o10" xlink:href="#o"/>
+<use id="o11" xlink:href="#o"/>
+<use id="o12" xlink:href="#o"/>
+
+</svg>
