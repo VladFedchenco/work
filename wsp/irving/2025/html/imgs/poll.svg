@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 752 1424">
+  <defs>
+    <linearGradient id="poll_grd" x1="446.94" x2="472.99" y1="905.58" y2="905.58" data-name="New Gradient Swatch 8" gradientTransform="translate(-83.96)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7d7d7d"/>
+      <stop offset=".11" stop-color="#e3e3e3"/>
+      <stop offset=".2" stop-color="#fff"/>
+      <stop offset=".34" stop-color="#fff"/>
+      <stop offset=".42" stop-color="#cecece"/>
+      <stop offset=".51" stop-color="#9b9b9b"/>
+      <stop offset=".59" stop-color="#767676"/>
+      <stop offset=".65" stop-color="#5f5f5f"/>
+      <stop offset=".69" stop-color="#575757"/>
+      <stop offset=".87" stop-color="#bababa"/>
+      <stop offset="1" stop-color="#2e2e2e"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#poll_grd)" d="M362.97 387.17h26.05V1424h-26.05z"/>
+</svg>

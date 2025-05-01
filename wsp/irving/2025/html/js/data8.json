@@ -1,0 +1,10 @@
+{ 
+  "username": "Mike",
+  "ballots_amount": 20,
+  "prize_top": "20",
+  "prize_mdl": "AIR MILES<span>&#174;</span>",
+  "prize_bttm": "<div>Bonus Miles<span>&trade;</span><div>",
+  "note": "Your prize will be loaded to your Air Miles® account within 48 hours.",
+  "ballots": "Plus, you’ve earned <strong>3 ballots</strong>",
+  "ballot_enter": "to enter into the prize draws below:"
+}

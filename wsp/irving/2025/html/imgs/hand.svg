@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" stroke-linecap="round" stroke-linejoin="round" stroke-width="5" viewBox="0 0 160 600">
+<style>
+  /* <![CDATA[ */
+    #hand {
+      animation: hand 6s ease-in-out infinite;
+    }
+    @keyframes hand {
+      0%, 10%, 15%, 100% {
+        transform: translate(80px, 70px) scale(1)  translate(-80px, -70px);
+      }
+      5% {
+        transform: translate(80px, 70px) scale(.8)  translate(-80px, -70px);
+      }
+      25%, 35%, 40%, 75%, 85%, 90% {
+        transform: translate(80px, 290px) scale(1)  translate(-80px, -70px);
+      }
+      30%, 80% {
+        transform: translate(80px, 290px) scale(.8)  translate(-80px, -70px);
+      }
+      50%, 60%, 65% {
+        transform: translate(80px, 510px) scale(1)  translate(-80px, -70px);
+      }
+      55% {
+        transform: translate(80px, 510px) scale(.8)  translate(-80px, -70px);
+      }
+    }
+  /* ]]> */
+</style>
+<g id="hand">
+  <path fill="#fff" d="M81.76 48c1.22-.08 19.43-3.37 19.43-3.37l6.89 13.85 5.66 21.27.38 16.45-13.31 3.21-19.05-51.42Z"/>
+  <path fill="#fff" stroke="#1c2b39" d="m83.8 42.61 59.95-15.59c10-2.55 15.77 11.28 6.78 16.35-.67.38-8.42 2.78-9.17 2.97L100.32 56.8M100.33 56.8l17.19-4.38a8.92 8.92 0 0 1 10.84 6.44h0a8.92 8.92 0 0 1-6.44 10.84l-17.19 4.38"/>
+  <path fill="#fff" stroke="#1c2b39" d="m103.03 74.5 14.3-3.64a8.92 8.92 0 0 1 10.84 6.44h0a8.92 8.92 0 0 1-6.44 10.84l-14.3 3.64"/>
+  <path fill="#fff" stroke="#1c2b39" d="m105.74 92.2 11.41-2.91a8.92 8.92 0 0 1 10.84 6.44h0a8.92 8.92 0 0 1-6.44 10.84l-7.78 1.98a49.4 49.4 0 0 1-7.35 1.3l-19.7 1.97a49.4 49.4 0 0 0-7.35 1.3l-29.9 7.62-11.94-44.11-1.46-5.28L47.51 68a.83.83 0 0 0 .55-.45l4.13-8.46c.82-1.69 1.97-3.2 3.38-4.43 5.26-4.58 17.35-17.68 8.71-45.71a.84.84 0 0 1 .35-.96c2.76-1.76 15.43-8.71 21.51 7.66 6.84 18.44 1.95 25.88 1.95 25.88"/>
+  <rect width="30.2" height="73.1" x="12.3" y="60.23" fill="#fff" stroke="#1c2b39" rx="5.82" ry="5.82" transform="translate(-23.05 9.76) rotate(-14.29)"/>
+</g>
+</svg>

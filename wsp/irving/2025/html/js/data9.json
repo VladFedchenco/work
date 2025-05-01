@@ -1,0 +1,10 @@
+{ 
+  "username": "Mike",
+  "ballots_amount": 2,
+  "prize_top": "2",
+  "prize_mdl": "ballots",
+  "prize_bttm": "<img src='../imgs/logo_irving.svg'/>",
+  "note": "Your prize has been added to your Hometown Rewards account.",
+  "ballots": "You have <strong>2 ballots</strong>",
+  "ballot_enter": "to enter into the prize draws below:"
+}

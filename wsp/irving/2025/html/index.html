@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Road Trip</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+    <header>
+        <a href="javascript:;" id="mobile_menu"></a>
+        <div id="header_button">
+          <a class="lang current" href="#!">EN</a>/<a class="lang" href="#!">FR</a>
+          <a href="#!" class="bttn"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="20" viewBox="0 0 33 23">
+            <path fill="#fff" d="M1.22 3.25c.68 0 1.22.54 1.22 1.22v12.19a3.66 3.66 0 0 0 3.66 3.66h20.31c.68 0 1.22.54 1.22 1.22s-.54 1.22-1.22 1.22H6.09A6.09 6.09 0 0 1 0 16.67V4.47c0-.68.54-1.22 1.22-1.22ZM8.12 0h21.12a3.26 3.26 0 0 1 3.25 3.25v2.84c0 .45-.38.8-.79.97a2.03 2.03 0 0 0 0 3.74c.41.17.79.52.79.97v2.84a3.26 3.26 0 0 1-3.25 3.25H8.12a3.26 3.26 0 0 1-3.25-3.25v-2.84c0-.45.38-.8.79-.97a2.03 2.03 0 0 0 0-3.74c-.42-.17-.79-.52-.79-.97V3.25A3.26 3.26 0 0 1 8.12 0Zm0 2.44a.81.81 0 0 0-.81.81v1.94a4.47 4.47 0 0 1 0 7.5v1.94c0 .45.37.81.81.81h21.12c.45 0 .81-.37.81-.81v-1.94a4.47 4.47 0 0 1 0-7.5V3.25a.81.81 0 0 0-.81-.81H8.12Zm3.25 4.06c0-.9.73-1.62 1.62-1.62h11.37c.9 0 1.62.73 1.62 1.62v4.87c0 .9-.73 1.62-1.62 1.62H12.99c-.9 0-1.62-.73-1.62-1.62V6.5Zm12.19 4.06V7.31h-9.75v3.25h9.75Z"/>
+          </svg> OPEN GAME TICKETS</a>
+          <a href="#!" class="bttn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="20" viewBox="0 0 26 23">
+            <path fill="#fff" d="M4.47 2.44c-1.12 0-2.03.91-2.03 2.03v13.81c0 1.12.91 2.03 2.03 2.03h4.06c.68 0 1.22.54 1.22 1.22s-.54 1.22-1.22 1.22H4.47C2 22.75 0 20.75 0 18.28V4.47C0 2 2 0 4.47 0h4.06c.68 0 1.22.54 1.22 1.22s-.54 1.22-1.22 1.22H4.47Zm20.89 10.49-5.9 5.88a2.36 2.36 0 0 1-4.03-1.67v-1.71h-4.87a2.44 2.44 0 0 1-2.44-2.44V9.74a2.44 2.44 0 0 1 2.44-2.44h4.87V5.59a2.36 2.36 0 0 1 4.03-1.67l5.9 5.88a2.2 2.2 0 0 1 0 3.1Zm-7.48-4.4c0 .68-.54 1.22-1.22 1.22h-6.09V13h6.09c.68 0 1.22.54 1.22 1.22v2.73l5.59-5.58-5.59-5.58v2.73Z"/>
+          </svg> LOGOUT</a>
+        </div>
+        <div id="header_links">
+          <a href="#!"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="26" viewBox="0 0 30 26">
+            <path fill="#005670" d="M13.84.29a1.21 1.21 0 0 1 1.58 0l13.41 11.37a1.22 1.22 0 1 1-1.58 1.86L26 12.46v9.47a4.06 4.06 0 0 1-4.06 4.06H7.31a4.06 4.06 0 0 1-4.06-4.06v-9.47l-1.24 1.06a1.22 1.22 0 0 1-1.58-1.86L13.84.29Zm.79 2.53L5.69 10.4v11.54c0 .9.73 1.62 1.62 1.62h2.44v-7.72c0-1.12.91-2.03 2.03-2.03h5.69c1.12 0 2.03.91 2.03 2.03v7.72h2.44c.9 0 1.62-.73 1.62-1.62V10.4l-8.94-7.58Zm-2.44 20.74h4.87v-7.31h-4.87v7.31Z"/>
+          </svg> HOME</a>
+          <a href="#!"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
+            <path fill="#005670" d="M1.74 19.5a13.01 13.01 0 1 1 22.54-13 13.01 13.01 0 0 1-22.54 13ZM3.85 7.72A10.54 10.54 0 0 0 13 23.56 10.56 10.56 0 1 0 3.85 7.72Zm8.33 9.34v-3.25h-1.22c-.68 0-1.22-.54-1.22-1.22s.54-1.22 1.22-1.22h2.44c.68 0 1.22.54 1.22 1.22v4.47h.41c.68 0 1.22.54 1.22 1.22s-.54 1.22-1.22 1.22h-4.06c-.68 0-1.22-.54-1.22-1.22s.54-1.22 1.22-1.22h1.22Zm-.81-8.94a1.62 1.62 0 1 1 3.24 0 1.62 1.62 0 0 1-3.24 0Z"/>
+          </svg> HOW TO PLAY</a>
+          <a href="#!"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="26" viewBox="0 0 30 26">
+            <path fill="#005670" d="M8.94 0h11.37a2.38 2.38 0 0 1 2.39 2.45l-.04.8h5.36c.68 0 1.22.54 1.22 1.22 0 5.51-2.33 9.02-5.15 11.2a17.81 17.81 0 0 1-7.59 3.23c-.24.13-.46.23-.67.31v4.35h4.06c.68 0 1.22.54 1.22 1.22S20.57 26 19.89 26H9.33c-.68 0-1.22-.54-1.22-1.22s.54-1.22 1.22-1.22h4.06v-4.35c-.2-.08-.43-.18-.67-.31a17.76 17.76 0 0 1-7.59-3.23C2.33 13.49 0 9.98 0 4.47c0-.68.54-1.22 1.22-1.22h5.36l-.04-.8A2.38 2.38 0 0 1 8.93 0Zm-2.3 13.74a12.9 12.9 0 0 0 2.76 1.62c-1.15-2.05-2.17-5.1-2.64-9.68H2.48c.3 3.98 2.1 6.46 4.16 8.05Zm2.34-11.3c.33 8.16 2.25 11.75 3.65 13.29.7.77 1.32 1.09 1.68 1.22l.31.1.31-.1c.37-.14.99-.46 1.68-1.22 1.4-1.54 3.33-5.13 3.65-13.29H8.99Zm6.01 2.77.74 1.49c.06.12.17.2.3.22l1.65.24a.4.4 0 0 1 .22.69l-1.19 1.16a.4.4 0 0 0-.12.36l.28 1.64c.06.33-.29.58-.59.43l-1.47-.77a.42.42 0 0 0-.38 0l-1.47.77a.4.4 0 0 1-.59-.43l.28-1.64a.41.41 0 0 0-.12-.36l-1.19-1.16a.4.4 0 0 1 .22-.69l1.65-.24c.13-.02.25-.1.3-.22l.74-1.49a.4.4 0 0 1 .73 0Zm4.85 10.16c.92-.41 1.87-.93 2.76-1.62 2.06-1.59 3.85-4.07 4.16-8.05h-4.29c-.46 4.58-1.48 7.63-2.64 9.68Z"/>
+          </svg> PRIZES & WINNERS</a>
+          <a href="#!"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="26" viewBox="0 0 26 26">
+            <path fill="#005670" d="M1.74 19.5a13.01 13.01 0 1 1 22.54-13 13.01 13.01 0 0 1-22.54 13ZM23.56 13a10.56 10.56 0 1 0-18.2 7.29 6.5 6.5 0 0 1 6.02-4.04h3.25a6.5 6.5 0 0 1 6.02 4.04A10.52 10.52 0 0 0 23.57 13Zm-4.95 8.95a4.08 4.08 0 0 0-3.99-3.27h-3.25a4.07 4.07 0 0 0-3.99 3.27 10.53 10.53 0 0 0 11.22 0ZM10.76 6.28a4.46 4.46 0 1 1 4.47 7.73 4.46 4.46 0 0 1-4.47-7.73Zm3.99 4.89a2.04 2.04 0 0 0-1.76-3.05 2.02 2.02 0 0 0-1.76 3.05 2.02 2.02 0 0 0 3.52 0Z"/>
+          </svg> MY GAME ACCOUNT</a>
+          <a href="#!"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="26" viewBox="0 0 26 26">
+            <path fill="#005670" d="M0 13a13.01 13.01 0 1 1 26.02 0A13.01 13.01 0 0 1 0 13Zm23.56 0a10.57 10.57 0 1 0-21.14 0 10.57 10.57 0 0 0 21.14 0ZM8.62 8.39A2.85 2.85 0 0 1 11.3 6.5h2.96a3.2 3.2 0 0 1 1.59 5.98l-1.64.94a1.22 1.22 0 0 1-2.44-.02v-.69c0-.44.23-.84.61-1.06l2.25-1.29a.77.77 0 0 0-.38-1.44h-2.96a.4.4 0 0 0-.38.27l-.02.06c-.22.63-.92.96-1.55.74a1.22 1.22 0 0 1-.74-1.55l.02-.06Zm2.75 9.48a1.62 1.62 0 1 1 3.24 0 1.62 1.62 0 0 1-3.24 0Z"/>
+          </svg> HELP</a>
+        </div>
+    </header>
+    <section id="main">
+      <div id="game">
+        <svg id="colored_background" xmlns="http://www.w3.org/2000/svg" width="376" height="712" viewBox="0 0 752 1424">
+          <defs>
+            <radialGradient id="color_bg1" cx="376" cy="633.69" r="521.03" fx="376" fy="212.94" gradientTransform="translate(0 -286.58) scale(1 1.58)" gradientUnits="userSpaceOnUse">
+              <stop offset=".34" stop-color="#ffcb66"/>
+              <stop offset="1" stop-color="#faa31b"/>
+            </radialGradient>
+            <radialGradient id="color_bg2" cx="376" cy="633.69" r="521.03" fx="376" fy="212.94" gradientTransform="translate(0 -286.58) scale(1 1.58)" gradientUnits="userSpaceOnUse">
+              <stop offset=".34" stop-color="#37cdeb"/>
+              <stop offset="1" stop-color="#15a9e1"/>
+            </radialGradient>
+            <radialGradient id="color_bg3" cx="376" cy="633.69" r="521.03" fx="376" fy="212.94" gradientTransform="translate(0 -286.58) scale(1 1.58)" gradientUnits="userSpaceOnUse">
+              <stop offset=".34" stop-color="#db57a0"/>
+              <stop offset="1" stop-color="#d01d8e"/>
+            </radialGradient>
+          </defs>
+          <path id="color_bg" fill="none" d="M0 0h752v1424H0z"/>
+        </svg>
+        <svg id="game_container" xmlns="http://www.w3.org/2000/svg" width="376" height="712" viewBox="0 0 752 1424">
+          <image id="road" href="imgs/road.svg" width="752" height="1424"/>
+          <image id="car" href="imgs/car.svg" width="634" height="310" x="340" y="880"/>
+          <g id="dog">
+            <image href="imgs/dog_body.svg" width="157" height="313" x="180" y="1110"/>
+            <image id="head" href="imgs/dog_head.svg" width="190" height="240" x="132" y="1007"/>
+          </g>
+          <g id="pointer">
+            <image href="imgs/poll.svg" width="752" height="1424" x="0" y="0"/>
+            <a id="sign_1" href="javascript:;">
+              <image href="imgs/arrow_1.svg" width="504" height="172" x="134" y="290"/>
+              <text class="arrow_text" font-size="60" transform="translate(0 15)" x="360" y="376">Shediac, NB</text>
+            </a>
+            <a id="sign_2" href="javascript:;">
+              <image href="imgs/arrow_2.svg" width="504" height="172" x="114" y="510"/>
+              <text class="arrow_text" font-size="60" transform="translate(0 15)" x="384" y="596">Cavendish, PEI</text>
+            </a>
+            <a id="sign_3" href="javascript:;">
+              <image href="imgs/arrow_3.svg" width="504" height="172" x="134" y="730"/>
+              <text class="arrow_text" font-size="60" transform="translate(0 15)" x="366" y="816">Lunenburg, NS</text>
+            </a>
+          </g>
+          <image id="prize_cup" href="imgs/cup.svg" width="582" height="584" x="88" y="166"/>
+          <g id="top_text" font-family="Volte" font-size="44" fill="#ba0c2f" text-anchor="middle">
+            <text x="376" y="76">Where would you go with</text>
+            <text x="376" y="124">Free Fuel for Life?</text>
+            <text font-family="Volte Semibold" x="376" y="195">Choose a destination for your</text>
+            <text font-family="Volte Semibold" x="376" y="243">chance to WIN!</text>
+          </g>
+          <g id="cup_top_title" fill="#BA0C2F" text-anchor="middle">
+            <text font-family="Volte Semibold" font-size="64" x="376" y="90">CONGRATULATIONS!</text>
+            <text font-family="Volte" font-size="48" x="376" y="154">You’ve WON a</text>
+          </g>
+          <image id="hand" href="imgs/hand.svg" width="160" height="600" x="40" y="380"/>
+          <image id="confetti" href="imgs/empty.svg" width="752" height="660" x="0" y="0"/>
+        </svg>
+        <div id="cup_prize_text">
+          <h2></h2>
+          <h3></h3>
+          <h4></h4>
+        </div>
+        <div class="invis" id="ballot_wrapper">
+          <h3 id="ballots"></h3>
+          <h4 id="ballot_enter"></h4>
+          <div id="ballot_frame">
+            <div id="counters_wrapper">
+              <div id="clmn1">
+                <img src="imgs/clmn_fuel_life.svg">
+                <div class="counter">
+                  <div id="clmn1_minus" class="counter_left"><a id="c1_minus" class="bttn_minus" href="javascript:;"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"><rect width="18" height="18" fill="#d9e3eb" stroke-width="0" rx="4.1" ry="4.1"/><path fill="#ce153e" stroke-width="0" d="M5.16 7.5h8v3h-8z"/></svg></a></div>
+                  <div id="clmn1_amount" class="counter_center">0</div>
+                  <div id="clmn1_plus" class="counter_right"><a id="c1_plus" class="bttn_plus" href="javascript:;"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"><rect width="18" height="18" fill="#d9e3eb" stroke-width="0" rx="4.1" ry="4.1"/><path fill="#ce153e" stroke-width="0" d="M15.16 8h-5V3h-2v5h-5v2h5v5h2v-5h5V8z"/></svg></a></div>
+                </div>
+              </div>
+              <div id="clmn2">
+                <img src="imgs/clmn_fuel_year.svg">
+                <div class="counter">
+                  <div id="clmn2_minus" class="counter_left"><a id="c2_minus" class="bttn_minus" href="javascript:;"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"><rect width="18" height="18" fill="#d9e3eb" stroke-width="0" rx="4.1" ry="4.1"/><path fill="#ce153e" stroke-width="0" d="M5.16 7.5h8v3h-8z"/></svg></a></div>
+                  <div id="clmn2_amount" class="counter_center">0</div>
+                  <div id="clmn2_plus" class="counter_right"><a id="c2_plus" class="bttn_plus" href="javascript:;"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"><rect width="18" height="18" fill="#d9e3eb" stroke-width="0" rx="4.1" ry="4.1"/><path fill="#ce153e" stroke-width="0" d="M15.16 8h-5V3h-2v5h-5v2h5v5h2v-5h5V8z"/></svg></a></div>
+                </div>
+              </div>
+              <div id="clmn3">
+                <img src="imgs/clmn_travel.svg">
+                <div class="counter">
+                  <div id="clmn3_minus" class="counter_left"><a id="c3_minus" class="bttn_minus" href="javascript:;"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"><rect width="18" height="18" fill="#d9e3eb" stroke-width="0" rx="4.1" ry="4.1"/><path fill="#ce153e" stroke-width="0" d="M5.16 7.5h8v3h-8z"/></svg></a></div>
+                  <div id="clmn3_amount" class="counter_center">0</div>
+                  <div id="clmn3_plus" class="counter_right"><a id="c3_plus" class="bttn_plus" href="javascript:;"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"><rect width="18" height="18" fill="#d9e3eb" stroke-width="0" rx="4.1" ry="4.1"/><path fill="#ce153e" stroke-width="0" d="M15.16 8h-5V3h-2v5h-5v2h5v5h2v-5h5V8z"/></svg></a></div>
+                </div>
+              </div>
+            </div>
+            <a id="enter_ballots" href="javascript:;">ENTER BALLOTS</a>
+          </div>
+          <p id="note"></p>
+        </div>
+        <div id="congrats" class="invis">
+          <h2>Congratulations <span id="username"></span></h2>
+          <h3>Your ballots have been entered.</h3>
+          <div id="congrats_frame">
+            <h4>You now have:</h4>
+            <div id="congrats_wrapper">
+              <div id="congrats_clmn1">
+                <div id="clmn1_ballots">0</div>
+                <img id="clmn1_ballots_img" src="imgs/ballots_fuel_life.svg">
+              </div>
+              <div id="congrats_clmn2">
+                <div id="clmn2_ballots">0</div>
+                <img id="clmn2_ballots_img" src="imgs/ballots_fuel_year.svg">
+              </div>
+              <div id="congrats_clmn3">
+                <div id="clmn3_ballots">0</div>
+                <img id="clmn3_ballots_img" src="imgs/ballots_travel.svg">
+              </div>
+            </div>
+          </div>
+          <a id="next_ticket" class="" href="javascript:;">OPEN NEXT TICKET</a>
+          <div id="more_ballots" class="invis">
+            <h2>Receive more ballots in every game ticket you open.</h2>
+            <h3>Earn tickets with 20 L+ fill using Hometown Rewards.<br>
+            More ballots means more chances to win!</h3>
+            <a href="javascript:;"><svg xmlns="http://www.w3.org/2000/svg" fill="#fff" width="21" height="18" viewBox="0 0 576 512"><path d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"/></svg>My Game Home</a><br>
+            <a href="javascript:;"><svg xmlns="http://www.w3.org/2000/svg" fill="#fff" width="18" height="18" viewBox="0 0 512 512"><path d="M399 384.2C376.9 345.8 335.4 320 288 320H224c-47.4 0-88.9 25.8-111 64.2c35.2 39.2 86.2 63.8 143 63.8s107.8-24.7 143-63.8zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm256 16a72 72 0 1 0 0-144 72 72 0 1 0 0 144z"/></svg>My Game Account</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div id="social">
+        <a href="#!"><svg xmlns="http://www.w3.org/2000/svg" fill="#fff" width="17" height="32" viewBox="0 0 25 48">
+          <path d="M.77 25.56h5.26v21.66c0 .43.35.77.77.77h8.92c.43 0 .77-.35.77-.77V25.66h6.05c.39 0 .72-.3.77-.69l.92-7.97a.73.73 0 0 0-.19-.6.8.8 0 0 0-.58-.26h-6.97v-5c0-1.51.81-2.27 2.41-2.27h4.56c.43 0 .77-.35.77-.77V.78a.77.77 0 0 0-.77-.77h-6.57a12 12 0 0 0-7.87 2.97 8.25 8.25 0 0 0-2.74 7.33v5.85H.77a.77.77 0 0 0-.77.77v7.87c0 .43.35.77.77.77Z"/>
+        </svg></a>
+        <a href="#!"><svg xmlns="http://www.w3.org/2000/svg" fill="#fff" width="32" height="32" viewBox="0 0 48 48">
+          <path d="M14.09.29C10.18.47 6.8 1.42 4.06 4.14 1.32 6.89.37 10.29.2 14.15c-.11 2.41-.75 20.64 1.11 25.43a12.1 12.1 0 0 0 6.99 6.97c1.52.59 3.25.99 5.8 1.11 21.27.96 29.15.44 32.47-8.07.59-1.52 1-3.25 1.11-5.78.97-21.32-.16-25.94-3.86-29.64C40.87 1.22 37.41-.78 14.09.29m.2 43.07c-2.33-.1-3.59-.49-4.43-.82a7.8 7.8 0 0 1-4.53-4.52c-1.42-3.63-.95-20.89-.82-23.68.12-2.74.68-5.23 2.61-7.16 2.39-2.38 5.47-3.55 26.48-2.6 2.74.12 5.25.68 7.18 2.6 2.39 2.38 3.57 5.49 2.61 26.42a13.18 13.18 0 0 1-.82 4.42c-2.16 5.54-7.13 6.31-28.27 5.34m19.52-32.11c0 1.58 1.28 2.86 2.87 2.86a2.86 2.86 0 1 0 0-5.72 2.86 2.86 0 0 0-2.87 2.86M11.68 23.97c0 6.76 5.49 12.23 12.26 12.23S36.2 30.72 36.2 23.97s-5.49-12.23-12.26-12.23-12.26 5.47-12.26 12.23m4.3 0a7.95 7.95 0 1 1 15.9.02 7.95 7.95 0 0 1-15.9-.02"/>
+        </svg></a>
+        <a href="#!"><svg xmlns="http://www.w3.org/2000/svg" fill="#fff" width="33" height="30" viewBox="0 0 54 48">
+          <path d="M41.82 0h8.14L32.17 20.33 53.1 48H36.71L23.88 31.22 9.19 48H1.05l19.03-21.75L0 0h16.8l11.6 15.34L41.82 0Zm-2.86 43.13h4.51L14.35 4.62H9.51l29.45 38.51Z"/>
+        </svg></a>
+      </div>
+      <div id="footer_nav"><a href="#!">Official Rules</a> <a href="#!">Find a Location</a> <a href="#!">Privacy & Security</a></div>
+      <div id="footer_note">
+        <p>*No purchase necessary. Starts June 4, 2025; ends Sept. 2, 2025, while supplies last. Must be legal resident of ON, QC, NB, NS, NL or PE and age of majority. Registered Hometown Rewards members with a linked AIR MILES® card earn a digital game ticket with a minimum 20 litre fuel transaction. Any fuel type. One Grand Prize will be awarded (drawn from all eligible entries received from Hometown Rewards members in NB, NS, NL or PE and from Irving Rewards members in QC and ON) and 14 Secondary Prizes (drawn only from all eligible entries received from Hometown Rewards members in NB, NS, NL or PE). Grand Prize consists of Free Fuel for Life, valued at $75,000. Secondary Prizes available to win include: 13 prizes of Free Fuel for a Year, each valued at $3,000, and 1 prize of a $5,000 AIR MILES Travel Voucher. Odds to win the Grand Prize depend on the total number of eligible entries received; odds to win a Secondary Prize depend on the total number of eligible entries received by Hometown Rewards members. There are also instant prizes available to be won by Hometown Rewards members in NB, NS, NL or PE, consisting of “cents off per litre” discounts of varying sizes, and AIR MILES® Bonus Miles™ of various amounts. Odds to receive an instant prize are 1 in 4. Mathematical skill testing question required to redeem any prize. See <a href="#!">Official Rules</a> at <a href="#!">irvingwin.com</a> for complete details including eligibility requirements, available prizes, instant prize details, odds and no purchase entry means.</p>
+
+        <p>Sponsor: Irving Oil Limited., Saint John, NB.</p>
+
+        <p>®™ Trademarks of AM Royalties Limited Partnership used under license by AIR MILES Loyalty Inc. and Irving Oil Limited</p>
+      </div>
+    </footer>
+    <audio id="sound" src="audio/sound.mp3"></audio>
+    <script>
+      const queryString = window.location.search;
+      const urlParams = new URLSearchParams(queryString);
+      const v = urlParams.get('v')
+      let requestURL;
+      if (v) {
+        requestURL = 'js/data' + v + '.json';
+      } else {
+        requestURL = 'js/data.json'
+      }
+      // let requestURL = 'js/data.json';
+    </script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
