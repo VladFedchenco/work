@@ -1,7 +1,7 @@
 { 
   "username": "Mike",
   "ballots_amount": 3,
-  "prize_top": "3<img src='../imgs/cl.svg'/>",
+  "prize_top": "3<img src='imgs/cl.svg'/>",
   "prize_mdl": "fuel discount",
   "prize_bttm": "<img src='imgs/logo_irving.svg'/>",
   "note": "Your prize has been added to your Hometown Rewards account.",
