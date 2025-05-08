@@ -1,6 +1,7 @@
 { 
   "username": "Mike",
   "ballots_amount": 20,
+  "subheadline": "You’ve WON",
   "prize_top": "20",
   "prize_mdl": "AIR MILES<span>&#174;</span>",
   "prize_bttm": "<div>Bonus Miles<span>&trade;</span><div>",

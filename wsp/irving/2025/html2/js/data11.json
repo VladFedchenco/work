@@ -1,6 +1,7 @@
 { 
   "username": "Mike",
   "ballots_amount": 4,
+  "subheadline": "You've earned",
   "prize_top": "4",
   "prize_mdl": "ballots",
   "prize_bttm": "<img src='imgs/logo_irving.svg'/>",

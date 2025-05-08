@@ -35,9 +35,7 @@ request.onload = function() {
   total_amount = ballots_amount;
   $("#cup_prize_text h2").innerHTML = prizeData.prize_top;
   $("#cup_prize_text h3").innerHTML = prizeData.prize_mdl;
-  if(prizeData.prize_mdl == "fuel discount") {
-    $("#subheadline").textContent = "You’ve WON a";
-  }
+  $("#subheadline").textContent = prizeData.subheadline;
   $("#cup_prize_text h4").innerHTML = prizeData.prize_bttm;
   $("#note").innerHTML = prizeData.note;
   $("#ballots").innerHTML = prizeData.ballots;
