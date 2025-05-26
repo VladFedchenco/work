@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Heron Point Seafood</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+    <header>
+      <a href="#!" id="logo"><img src="imgs/logo.png"></a>
+      <span id="menu">
+        <a href="#!">Home</a>
+        <a href="#!">How to Play</a>
+        <a href="#!">Prizes & Winners</a>
+        <a href="#!">Help</a>
+        <a href="#!" class="bttn">Sign-up</a>
+        <a href="#!" class="bttn">Log-in</a>
+      </span>
+      <a href="javascript:;" id="mobile_menu"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="28" viewBox="0 0 41 32"><path fill="#ffecaf" d="M0 1.45C0 .65.65 0 1.45 0h37.82a1.45 1.45 0 0 1 0 2.9H1.45C.65 2.9 0 2.25 0 1.45ZM0 16c0-.8.65-1.45 1.45-1.45h37.82a1.45 1.45 0 0 1 0 2.9H1.45C.65 17.45 0 16.8 0 16Zm40.73 14.55c0 .8-.65 1.45-1.45 1.45H1.45a1.45 1.45 0 0 1 0-2.9h37.82c.8 0 1.45.65 1.45 1.45Z"/></svg></a>
+    </header>
+    <section id="main">
+      <div id="gradient"></div>
+      <div id="banner">
+        <h2>Ready to Play to WIN?</h2>
+        <h3>Choose 1 of 3 cans below to see if you've<br> INSTANTLY WON!</h3>
+      </div>
+      <div class="color_colossal invis" id="banner_win">
+        <h2>Colossal (16 oz)</h2>
+        <h3>Large whole muscle pieces from the largest crabs. Minimum 10g weight per piece.</h3>
+      </div>
+      <a id="can1" class="can" href="#!"><img src="imgs/can-1a.png"></a>
+      <a id="can2" class="can" href="#!"><img src="imgs/can-2a.png"></a>
+      <a id="can3" class="can" href="#!"><img src="imgs/can-3a.png"></a>
+      <img id="open1" class="can_big invis" src="imgs/can-1b.png">
+      <img id="open2" class="can_big invis" src="imgs/can-2b.png">
+      <img id="open3" class="can_big invis" src="imgs/can-3b.png">
+      <img id="coins" class="invis" src="">
+      <img id="crab" class="invis" src="imgs/crab.png">
+      <img id="pointer" src="imgs/pointer.svg">
+      <div id="title" class="hidden">
+        <h2>Congratulations</h2>
+      </div>
+      <img id="prize" class="invis" src="imgs/25_entries.png">
+      <div id="redeem" class="hidden">
+        <a class="button" href="#!">Redeem now</a>
+      </div>
+      <div id="content_win" class="hidden">
+        <h3>Every entry is a chance to WIN:</h3>
+        <div class="color_row clr1"><img src="imgs/m.svg"> $20,000 CASH GRAND PRIZE!</div>
+        <div class="color_row clr2"><img src="imgs/m.svg"> $5,000 CASH!</div>
+        <div class="color_row clr3"><img src="imgs/m.svg"> $1,000 CASH!</div>
+        <div class="color_row clr4"><img src="imgs/m.svg"> Heron Point Cordova Cooler!</div>
+        <div id="money_bg">&nbsp;</div>
+        <div id="text_content">
+            <div id="text_content_wrapper">
+            <h4>More Entries Mean</h4>
+            <h3>More Chances to WIN!</h3>
+            <p>With every case purchase of our 16 oz. crab meat, you’ll find a PIN. This is your key to winning! More PINs mean more chances to WIN!</p>
+            <div class="clmns">
+              <div class="clmn_50">
+                <img class="bonus" src="imgs/bonus.png">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 25 25"><path fill="#2C2C2C" d="M3.5 0H21c1.91 0 3.5 1.59 3.5 3.5V21a3.5 3.5 0 0 1-3.5 3.5h-7.05v-7.93h3.77l.77-4.32h-4.54v-1.48c0-2.3.88-3.17 3.17-3.17.71 0 1.26.05 1.59.05V3.82c-.6-.22-2.13-.38-3.01-.38-4.7 0-6.84 2.24-6.84 7v1.8h-2.9v4.32h2.9v7.93H3.5a3.45 3.45 0 0 1-3.5-3.5V3.5A3.5 3.5 0 0 1 3.5 0Z"/></svg> Follow us on Facebook
+              </div>
+              <div class="clmn_50">
+                <img class="bonus" src="imgs/bonus.png">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 25 25"><path fill="#2C2C2C" d="M24.42 7.19c-.11-1.97-.55-3.72-1.97-5.14C21.03.63 19.28.19 17.31.08c-2.02-.11-8.1-.11-10.12 0-1.97.11-3.66.55-5.14 1.97C.63 3.47.19 5.22.08 7.19c-.11 2.02-.11 8.1 0 10.12.11 1.97.55 3.66 1.97 5.14 1.48 1.42 3.17 1.86 5.14 1.97 2.02.11 8.09.11 10.12 0 1.97-.11 3.72-.55 5.14-1.97 1.42-1.48 1.86-3.17 1.97-5.14.11-2.02.11-8.09 0-10.12Zm-2.63 12.25a4.06 4.06 0 0 1-2.3 2.35c-1.64.66-5.47.49-7.22.49s-5.63.16-7.22-.49a4.18 4.18 0 0 1-2.35-2.35c-.66-1.59-.49-5.41-.49-7.22S2.05 6.64 2.7 5a4.24 4.24 0 0 1 2.35-2.3c1.59-.66 5.41-.49 7.22-.49s5.58-.16 7.22.49a4.13 4.13 0 0 1 2.3 2.3c.66 1.64.49 5.47.49 7.22s.16 5.63-.49 7.22Z"/><path fill="#2C2C2C" d="M12.28 5.93a6.29 6.29 0 1 0 0 12.58 6.29 6.29 0 0 0 0-12.58Zm0 10.39c-2.24 0-4.1-1.8-4.1-4.1s1.8-4.05 4.1-4.05 4.05 1.8 4.05 4.05-1.81 4.1-4.05 4.1ZM18.79 4.24a1.48 1.48 0 1 0 0 2.96 1.48 1.48 0 1 0 0-2.96Z"/></svg> Follow us on Instagram
+              </div>
+            </div>
+            <a class="button" href="#!">Enter another PIN</a>
+            <h4>What’s Next?</h4>
+            <ul>
+              <li>Find out <a href="#!">how to play to win and the participating products</a> that contain our Anniversary PIN cards!</li>
+              <li>See the <a href="#!">prizes available to be WON!</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+        <div id="social">
+          <a href="#!"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"><path fill="#fff" d="M3.5 0H21c1.91 0 3.5 1.59 3.5 3.5V21a3.5 3.5 0 0 1-3.5 3.5h-7.05v-7.93h3.77l.77-4.32h-4.54v-1.48c0-2.3.88-3.17 3.17-3.17.71 0 1.26.05 1.59.05V3.82c-.6-.22-2.13-.38-3.01-.38-4.7 0-6.84 2.24-6.84 7v1.8h-2.9v4.32h2.9v7.93H3.5a3.45 3.45 0 0 1-3.5-3.5V3.5A3.5 3.5 0 0 1 3.5 0Z"/></svg></a>
+          <a href="#!"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"><path fill="#fff" d="M22.75 0H1.7C.77 0 0 .82 0 1.8v20.95c0 .98.77 1.75 1.7 1.75h21.05c.93 0 1.75-.77 1.75-1.75V1.8c0-.98-.82-1.8-1.75-1.8ZM7.38 21H3.77V9.35h3.61V21ZM5.58 7.71c-1.2 0-2.13-.93-2.13-2.08S4.38 3.5 5.58 3.5s2.08.98 2.08 2.13-.93 2.08-2.08 2.08ZM21 21h-3.66v-5.69c0-1.31 0-3.06-1.86-3.06s-2.19 1.48-2.19 3.01V21H9.68V9.35h3.44v1.59h.06a3.84 3.84 0 0 1 3.44-1.91c3.66 0 4.38 2.46 4.38 5.58v6.4Z"/></svg></a>
+          <a href="#!"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"><path fill="#fff" d="M24.42 7.19c-.11-1.97-.55-3.72-1.97-5.14C21.03.63 19.28.19 17.31.08c-2.02-.11-8.1-.11-10.12 0-1.97.11-3.66.55-5.14 1.97C.63 3.47.19 5.22.08 7.19c-.11 2.02-.11 8.1 0 10.12.11 1.97.55 3.66 1.97 5.14 1.48 1.42 3.17 1.86 5.14 1.97 2.02.11 8.09.11 10.12 0 1.97-.11 3.72-.55 5.14-1.97 1.42-1.48 1.86-3.17 1.97-5.14.11-2.02.11-8.09 0-10.12Zm-2.63 12.25a4.06 4.06 0 0 1-2.3 2.35c-1.64.66-5.47.49-7.22.49s-5.63.16-7.22-.49a4.18 4.18 0 0 1-2.35-2.35c-.66-1.59-.49-5.41-.49-7.22S2.05 6.64 2.7 5a4.24 4.24 0 0 1 2.35-2.3c1.59-.66 5.41-.49 7.22-.49s5.58-.16 7.22.49a4.13 4.13 0 0 1 2.3 2.3c.66 1.64.49 5.47.49 7.22s.16 5.63-.49 7.22Z"/><path fill="#fff" d="M12.28 5.93a6.29 6.29 0 1 0 0 12.58 6.29 6.29 0 0 0 0-12.58Zm0 10.39c-2.24 0-4.1-1.8-4.1-4.1s1.8-4.05 4.1-4.05 4.05 1.8 4.05 4.05-1.81 4.1-4.05 4.1ZM18.79 4.24a1.48 1.48 0 1 0 0 2.96 1.48 1.48 0 1 0 0-2.96Z"/></svg></a>
+          <a href="#!"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"><path fill="#fff" d="M21 0c1.91 0 3.5 1.59 3.5 3.5V21a3.5 3.5 0 0 1-3.5 3.5H8.42c.55-.88 1.2-2.19 1.48-3.23l.88-3.17c.44.82 1.7 1.53 3.06 1.53 4.05 0 6.95-3.72 6.95-8.37s-3.61-7.77-8.26-7.77c-5.8.01-8.87 3.95-8.87 8.16 0 1.97 1.04 4.43 2.73 5.2.22.11.38.05.44-.16 0-.05.05-.27.11-.49.05-.33.16-.77.27-1.04 0-.11 0-.27-.11-.38a5.21 5.21 0 0 1-.98-3.06 5.82 5.82 0 0 1 6.02-5.85c3.34 0 5.63 2.3 5.63 5.47 0 3.66-1.8 6.18-4.21 6.18a2 2 0 0 1-2.02-2.46c.16-.55.33-1.15.55-1.75.27-.98.6-1.97.6-2.68 0-2.9-4.16-2.52-4.16 1.37 0 1.15.44 1.97.44 1.97-.33 1.26-.55 2.3-.77 3.17-1.04 4.21-1.15 4.76-.88 7.38h.11-3.94a3.45 3.45 0 0 1-3.5-3.5V3.5A3.5 3.5 0 0 1 3.5 0H21Z"/></svg></a>
+        </div>
+        <div id="footer_info">Visit <a href="https://heronpointseafood.com/">HeronPointSeafood.com</a> for products and culinary inspirations!</div>
+        <div id="footer_links">
+            <a href="#!">Official Rules</a> <a href="#!">Privacy & Security</a> <a href="#!">Help</a>
+        </div>
+        <div id="footer_note">*No purchase necessary. Trade contest only, open to commercial customers of Heron Point Seafood, LLC. PINs available in 6 lb. case pack, 16 oz. crab meat only, while supplies last. Starts 6/15/2025, ends 11/1/2025. All PINs must be entered by 11/1/2025. Prizes may not be exactly as illustrated. See Official Rules for complete details, eligibility requirements, available prizes, draw dates, odds and no purchase entry means.</div>
+    </footer>
+    <script>
+      let requestURL = 'js/data.json';
+      let gametype = 2;
+    </script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
