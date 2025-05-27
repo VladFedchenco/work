@@ -1,0 +1,18 @@
+{
+  "gametype": 2,
+  "can1": "imgs/can-4a.png",
+  "can2": "imgs/can-5a.png",
+  "can3": "imgs/can-6a.png",
+  "can1_open": "imgs/can-4b.png",
+  "can2_open": "imgs/can-5b.png",
+  "can3_open": "imgs/can-6b.png",
+  "can1_color": "#AB8900",
+  "can2_color": "#A79F88",
+  "can3_color": "#0047BA",
+  "can1_product": "Colossal (16 oz)",
+  "can2_product": "Jumbo (16 oz)",
+  "can3_product": "Jumbo Lump (16 oz)",
+  "can1_descriprion": "Large whole muscle pieces from the largest crabs. Minimum 10g weight per piece.",
+  "can2_descriprion": "Intact whole muscle pieces from the 2 swimmer fin cavities of the crab.",
+  "can3_descriprion": "Layered blend of broken Jumbo Lump and large body flakes with 20% whole Jumbo Lump."
+}

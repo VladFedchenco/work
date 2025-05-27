@@ -1,0 +1,18 @@
+{
+  "gametype": 1,
+  "can1": "imgs/can-7a.png",
+  "can2": "imgs/can-8a.png",
+  "can3": "imgs/can-9a.png",
+  "can1_open": "imgs/can-7b.png",
+  "can2_open": "imgs/can-8b.png",
+  "can3_open": "imgs/can-9b.png",
+  "can1_color": "#F45197",
+  "can2_color": "#45A041",
+  "can3_color": "#8A84D6",
+  "can1_product": "Lump (16 oz)",
+  "can2_product": "Special (16 oz)",
+  "can3_product": "Super Lump (16 oz)",
+  "can1_descriprion": "Layered blend of 40% Super Lump and 60% Special.",
+  "can2_descriprion": "Small flakes of white meat picked from the body of the crab.",
+  "can3_descriprion": "Large whole pieces from the swimmer muscle. 4-10g weight per piece."
+}

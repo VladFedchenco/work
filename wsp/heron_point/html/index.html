@@ -27,19 +27,23 @@
     <section id="main">
       <div id="gradient"></div>
       <div id="banner">
-        <h2>Ready to Play to WIN?</h2>
-        <h3>Choose 1 of 3 cans below to see if you've<br> INSTANTLY WON!</h3>
+        <div class="banner_wripper">
+          <h2>Ready to Play to WIN?</h2>
+          <h3>Choose 1 of 3 cans below to see if you've<br> INSTANTLY WON!</h3>
+        </div>
       </div>
-      <div class="color_colossal invis" id="banner_win">
-        <h2>Colossal (16 oz)</h2>
-        <h3>Large whole muscle pieces from the largest crabs. Minimum 10g weight per piece.</h3>
+      <div id="banner_win" class="invis">
+        <div class="banner_wripper">
+          <h2></h2>
+          <h3></h3>
+        </div>
       </div>
-      <a id="can1" class="can" href="#!"><img src="imgs/can-1a.png"></a>
-      <a id="can2" class="can" href="#!"><img src="imgs/can-2a.png"></a>
-      <a id="can3" class="can" href="#!"><img src="imgs/can-3a.png"></a>
-      <img id="open1" class="can_big invis" src="imgs/can-1b.png">
-      <img id="open2" class="can_big invis" src="imgs/can-2b.png">
-      <img id="open3" class="can_big invis" src="imgs/can-3b.png">
+      <a id="can1" class="can" href="javascript:;"><img src=""></a>
+      <a id="can2" class="can" href="javascript:;"><img src=""></a>
+      <a id="can3" class="can" href="javascript:;"><img src=""></a>
+      <img id="open1" class="can_big invis" src="">
+      <img id="open2" class="can_big invis" src="">
+      <img id="open3" class="can_big invis" src="">
       <img id="coins" class="invis" src="">
       <img id="crab" class="invis" src="imgs/crab.png">
       <img id="pointer" src="imgs/pointer.svg">
@@ -95,9 +99,18 @@
         </div>
         <div id="footer_note">*No purchase necessary. Trade contest only, open to commercial customers of Heron Point Seafood, LLC. PINs available in 6 lb. case pack, 16 oz. crab meat only, while supplies last. Starts 6/15/2025, ends 11/1/2025. All PINs must be entered by 11/1/2025. Prizes may not be exactly as illustrated. See Official Rules for complete details, eligibility requirements, available prizes, draw dates, odds and no purchase entry means.</div>
     </footer>
+    <audio id="sound" src="audio/sound.mp3"></audio>
     <script>
-      let requestURL = 'js/data.json';
-      let gametype = 1;
+      const queryString = window.location.search;
+      const urlParams = new URLSearchParams(queryString);
+      const v = urlParams.get('v')
+      let requestURL;
+      if (v) {
+        requestURL = 'js/data' + v + '.json';
+      } else {
+        requestURL = 'js/data.json'
+      }
+      // let requestURL = 'js/data.json';
     </script>
     <script src="js/main.js"></script>
 </body>

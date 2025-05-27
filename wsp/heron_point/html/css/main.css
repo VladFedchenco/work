@@ -231,6 +231,11 @@ footer {
     transition: all .3s ease-in-out;
 }
 
+.banner_wripper {
+    max-width: 640px;
+    margin: 0 auto;
+}
+
 #banner_win {
     position: absolute;
     top: 18px;
@@ -468,7 +473,7 @@ footer {
 #money_bg {
     height: 160px;
     background: url(../imgs/cash_desktop.jpg) repeat-x center;
-    background-size: contain;
+    background-size: cover;
 }
 
 #text_content {
@@ -520,11 +525,16 @@ footer {
     background: #FFECAF;
     color: #000;
     font-size: 16px;
-    padding: 12px 16px 10px 16px;
+    padding: 12px 16px;
     width: 240px;
     border-radius: 32px;
     margin: 0 auto 24px auto;
     text-align: center;
+}
+
+.button:hover {
+    color: #000;
+    font-weight: 700;
 }
 
 #text_content ul {
