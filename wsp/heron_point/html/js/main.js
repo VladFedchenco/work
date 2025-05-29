@@ -35,7 +35,7 @@ $("#can1").addEventListener("click", () => {
   }, 200);
   setTimeout(function(){
     $("#open1").classList.add("hide");
-  }, 2000);
+  }, 4000);
 }, false);
 
 $("#can2").addEventListener("click", () => {
@@ -48,7 +48,7 @@ $("#can2").addEventListener("click", () => {
   }, 200);
   setTimeout(function(){
     $("#open2").classList.add("hide");
-  }, 2000);
+  }, 4000);
 }, false);
 
 $("#can3").addEventListener("click", () => {
@@ -61,7 +61,7 @@ $("#can3").addEventListener("click", () => {
   }, 200);
   setTimeout(function(){
     $("#open3").classList.add("hide");
-  }, 2000);
+  }, 4000);
 }, false);
 
 const randomNumber = Math.floor(Math.random() * 1000) + 1;
@@ -89,26 +89,26 @@ function hide_cans() {
     $("#crab").classList.remove("invis");
     $("#banner_win").classList.add("move");
     $("#pointer").style.display = "none";
-  }, 2000);
+  }, 4000);
   setTimeout(function(){
     $("#coins").setAttribute("src", "imgs/coins.svg");
     $("#coins").classList.remove("invis");
-  }, 2100);
+  }, 4100);
   setTimeout(function(){
     $("#prize").classList.remove("invis");
     $("#banner_win").style.display = "none";
-  }, 4000);
+  }, 6000);
   setTimeout(function(){
     $("#title").classList.remove("hidden");
     $("#crab").style.display = "none";
-  }, 5000);
+  }, 7000);
   setTimeout(function(){
     if (gametype == 1) {
       $("#content_win").classList.remove("hidden");
     } else {
       $("#redeem").classList.remove("hidden");
     }
-  }, 5500);
+  }, 7500);
 }
 
 function $(sel) {
