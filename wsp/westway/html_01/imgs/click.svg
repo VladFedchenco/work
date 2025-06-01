@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="164" height="164" viewBox="0 0 164 164">
+<defs>
+  <g id="click_area" fill="#E33C1B">
+    <path d="M-1.357 54.721l.001-.001.677-7.085-.001-.002-.001-.001-3.543-.338c-.298-.029-.598-.06-.892-.095l-3.535-.411h-.002l-.001.002-.821 7.07v.002l.002.001 7.07.821.003-.002.007-.059 1.035.099.001-.001z"/>
+    <path d="M51.088 1.673l.001-.002-.762-7.077c0-.001-.001-.002-.003-.002l-.059.006-.132-1.029c0-.001-.001-.002-.003-.002l-7.059.905-.002.001v.002l.453 3.53c.038.295.073.595.105.89l.381 3.538c0 .002.002.002.003.002l7.076-.762h.001z"/>
+    <path d="M-16.369 52.064v-.001l2.741-6.568v-.002l-.001-.001-3.284-1.371a45.611 45.611 0 01-.826-.355l-3.255-1.438-.003.001-2.877 6.51.001.003 6.51 2.877h.002l.001-.001.025-.055.963.402.003-.001z"/>
+    <path d="M48.258-13.301c.001 0 .001 0 0 0l.001-.003-1.405-3.269-1.405-3.27-.001-.001h-.002l-.056.024-.429-.943c0-.001-.002-.002-.003-.001l-6.481 2.944-.001.001v.002l1.472 3.24c.123.271.244.546.361.817l1.405 3.269c.001.001.002.002.003.001l6.541-2.811z"/>
+    <path d="M-29.917 45.079l4.557-5.468v-.003l-2.734-2.278a47.92 47.92 0 01-.672-.571l-2.743-2.387h-.003l-4.673 5.369-.001.002.001.001 5.369 4.674h.002l.001-.001.041-.047.851.71.004-.001z"/>
+    <path d="M41.133-26.776l.001-.001-.001-.002-4.622-5.412a.003.003 0 00-.004 0l-.045.039-.691-.776h-.003l-5.317 4.732v.003l2.366 2.658c.195.219.393.446.589.676l2.311 2.706h.003l5.413-4.623z"/>
+    <path d="M-34.892 30.496l.001-.001v-.002l-1.939-2.984a37.498 37.498 0 01-.48-.756l-1.877-3.023c-.001-.001-.002-.002-.003-.001l-6.046 3.755-.001.001v.002l3.755 6.046.003.001.051-.032.566.871.003.001 5.967-3.878z"/>
+    <path d="M26.531-31.536l3.825-6.003v-.002l-.001-.002-6.003-3.824c-.001-.001-.002 0-.003.001l-.032.05-.888-.54h-.002l-.002.001-3.701 6.08v.002l.001.002 3.04 1.85c.258.157.514.316.76.474l3.001 1.912.005-.001c-.001 0-.001 0 0 0z"/>
+    <path d="M-41.263 19.027v-.002l-.969-3.425c-.08-.282-.159-.573-.235-.864l-.899-3.443-.001-.001h-.002l-6.886 1.799c-.002 0-.002.002-.002.003l1.799 6.886.001.002h.002l.058-.015.282.998.003.002 6.848-1.939.001-.001z"/>
+    <path d="M15.008-37.805v-.001l1.872-6.867c0-.001 0-.002-.002-.003l-6.867-1.872c-.002 0-.003.001-.003.002l-.016.058-1.01-.253H8.98l-.001.002-1.731 6.904.002.003 3.452.866c.287.072.579.148.869.227l3.433.936.004-.002c-.001 0-.001 0 0 0z"/>
+    <path d="M-43.966 6.179l.001-.001.078-3.558c.007-.297.016-.599.029-.897l.15-3.556a.002.002 0 00-.002-.002l-7.111-.3-.002.001-.001.002-.3 7.111.001.001.002.001.059.002-.023 1.039.002.002 7.116.156.001-.001z"/>
+    <path d="M2.133-40.378l.001-.002-.232-7.114-.001-.002-.001-.001-7.114.232-.002.001v.002l.002.059-1.037.055a.002.002 0 00-.002.002l.376 7.107.001.002h.002l3.554-.188c.295-.016.597-.029.896-.038l3.557-.116v.001z"/>
+    <path d="M-.938 38.785s.001 0 0 0l.467-4.877v-.001h-.001l-2.438-.233c-.205-.02-.411-.042-.614-.065l-2.433-.283h-.001l-.001.001-.565 4.866v.001l.001.001 4.866.565.002-.001.005-.041.712.068v-.001z"/>
+    <path d="M35.159 2.274v-.001l-.525-4.871-.002-.001-.04.004-.091-.708c0-.001-.001-.002-.002-.001l-4.859.623-.001.001v.001l.311 2.43c.026.203.05.409.072.613l.262 2.435c0 .001.001.002.002.001l4.87-.524.003-.002z"/>
+    <path d="M-11.27 36.956c.001 0 0 0 0 0l1.887-4.521v-.001l-.001-.001-2.26-.943a31.3 31.3 0 01-.568-.244l-2.241-.99-.002.001-1.98 4.481.001.002 4.481 1.98h.001l.001-.001.017-.038.663.277.001-.002z"/>
+    <path d="M33.211-8.032v-.002l-.967-2.25-.967-2.25-.001-.001h-.001l-.038.016-.295-.649-.002-.001-4.46 2.026-.001.001v.001l1.013 2.23c.085.186.168.376.248.562l.967 2.25.002.001 4.502-1.934z"/>
+    <path d="M-20.594 32.149l3.136-3.763v-.002l-1.881-1.568c-.156-.13-.311-.262-.462-.393l-1.888-1.643h-.002l-3.216 3.695v.002l3.695 3.217h.003l.028-.032.586.489c-.001-.001 0-.001.001-.002z"/>
+    <path d="M28.307-17.306c0-.001 0-.001 0 0v-.002l-3.181-3.725h-.003l-.031.027-.475-.534h-.002l-3.659 3.257v.002l1.628 1.829c.134.151.271.307.405.465l1.591 1.863h.002l3.725-3.182z"/>
+    <path d="M-24.018 22.112c0-.001 0-.001 0 0v-.002l-1.335-2.054a28.97 28.97 0 01-.331-.52l-1.292-2.081h-.002l-4.161 2.584-.001.001v.001l2.585 4.162.002.001.035-.022.39.6.002.001 4.108-2.671z"/>
+    <path d="M18.256-20.583l2.632-4.132v-.001l-.001-.001-4.132-2.632-.002.001-.022.034-.611-.372h-.001l-.001.001-2.546 4.185v.001l.001.001 2.092 1.273c.177.108.354.218.523.326l2.066 1.316h.002c0 .001 0 .001 0 0z"/>
+    <path d="M-28.404 14.218v-.002l-.667-2.357a28.25 28.25 0 01-.162-.594l-.619-2.37v-.001h-.001l-4.74 1.238c-.001 0-.002.001-.001.002l1.238 4.74.001.001h.001l.04-.011.194.687.002.001 4.714-1.334z"/>
+    <path d="M10.325-24.897c.001 0 .001 0 0 0l1.289-4.727-.001-.002-4.726-1.288-.002.001-.011.04-.695-.174h-.001l-.001.001-1.191 4.751.001.002 2.376.596c.198.049.399.102.598.156l2.363.644h.001z"/>
+    <path d="M-30.264 5.375l.054-2.45c.005-.204.011-.412.02-.617l.103-2.447a.002.002 0 00-.002-.002l-4.894-.207h-.001v.001l-.207 4.894v.001l.001.001.041.002-.016.715.002.002 4.898.107h.001z"/>
+    <path d="M1.464-26.668l.001-.001-.159-4.896-.001-.001h-.001l-4.896.159h-.001v.001l.001.041-.714.038a.002.002 0 00-.002.002l.259 4.892.001.001h.001l2.446-.129c.203-.011.411-.02.617-.026l2.448-.081z"/>
+  </g>
+  <g id="pointer">
+    <path fill="#fff" d="M54 78.2c-2.4 0-2.7-2.7-3.7-4.3-2.4-7-8.6-4-13.6-7-6.9-5-12.6-12.6-21.8-13.3-2.7-.6-6.6-.8-8.2-3.3C5 46 10.5 44 14 44.2c5 0 9.4 2.7 13 6 1 .8 2.4-.5 1.7-1.6-3.3-6.7-7.8-12.9-12-19-7-10.3-9.7-11.2-13-18.2C1.7 7.4 4 1.6 9 3c2.3.6 4.5 2.9 6.3 6.2 2 4 10.5 19.5 10.8 20.2.2.3.6.6 1 .6 2.5-.7.7-2.2-.5-4.7-2.8-4.8 4-9 7-4.2l3.7 6.6c.3.5 1 .7 1.6.4 2.8-1.6-5.3-6 .5-10 2.1-1.2 4.6.6 5.6 2.4l2.8 5.5c.3.5 1 .8 1.6.5.6-.3.8-1 .5-1.6l-2.5-5c.9-2.1 3.5-1.8 5.2-1 7.8 4.4 12.5 18 14.1 22.4 1.1 3 1.6 6.2 1.4 9.4a7 7 0 0 0 1.7 5c1.4 2 2.6 4 4.1 5.8 1 1.2 2.2 2.1 2 3.7a2 2 0 0 1-1 1.3L65.4 72c-5.7 3-8.3 5.5-11.5 6.2"/>
+    <path d="M77.7 61.5c-10.3-12.3-4.2-8.7-8.1-21C66.8 32 57 9.4 46 17c-3-3.2-8.7-2.8-10.7 1.3A7.1 7.1 0 0 0 24 19.4C19.7 12 18.8 8 14.3 3 10.2-2 1.1-.6.1 6.3c-.6 3.6.9 8 4 11.7 6.5 8 12.6 16.5 18.1 25.4-16.2-8.6-29 10.4-7.8 13.1 11 .5 17.3 14.6 27 15 5.7 0 5.5 2.5 7.4 6 4.6 8.1 10.5.9 18.2-3 6.6-4.5 15.3-5.7 10.8-13m-2.4 3.7c-1.6 2-5.1 3-10.2 6.3l-9.8 5.7c-1.2.8-3 .3-3.4-1-2-5.1-4.4-8.4-10.4-8.3-5.3.5-12-9.1-17.9-12C19 53 13 53.6 8 51c-2-1.8-.8-4.6 2-5.5 4.8-1.8 11.1.2 16.5 5.1 1.4 1.4 3.7-.4 2.8-2-3.4-6.8-7.9-13-12.2-19.3-6.5-10.1-14.1-15-13.4-22.3 2-6.6 9-2.7 11.2 2.7l11 20.1c1 2 4.2.4 3-1.6l-1.5-2.9c-2.6-4 3.5-8 6-3.8l3.6 6.7c.5.8 1.6 1.1 2.5.6 3.4-2.3-5-6.4.4-10 3.9-1.9 6.2 5 7.6 7.6 1 2 4.2.5 3.2-1.5L48 20c7.4-6.3 18 19.8 18.2 21.6 1 3 1.5 6 1.3 9.2 0 4.4 3.7 7.7 6 11.1.8 1.1 2 1.9 1.9 3.3"/>
+  </g>
+</defs>
+
+<g transform="translate(-320 -542)">
+<g id="click_circles">
+  <use id="circles_1" href="#click_area" x="402" y="618" opacity="0" transform="matrix(1, 0, 0, 1, 0, 0)"/>
+  <use id="circles_2" href="#click_area" x="402" y="618" opacity="0.0059376" transform="matrix(1.00061, 0, 0, 1.00061, -0.246041, -0.378242)"/>
+  <use id="circles_3" href="#click_area" x="402" y="618" opacity="0.0387527" transform="matrix(1.01011, 0, 0, 1.01011, -4.06308, -6.24623)"/>
+  <use id="circles_4" href="#click_area" x="402" y="618" opacity="0.160522" transform="matrix(1.03177, 0, 0, 1.03177, -12.771, -19.633)"/>
+  <use id="circles_5" href="#click_area" x="402" y="618" opacity="0.359222" transform="matrix(1.06615, 0, 0, 1.06615, -26.5918, -40.8799)"/>
+  <use id="circles_6" href="#click_area" x="402" y="618" opacity="0.595434" transform="matrix(1.11311, 0, 0, 1.11311, -45.4694, -69.9007)"/>
+  <use id="circles_7" href="#click_area" x="402" y="618" opacity="0.8058" transform="matrix(1.17139, 0, 0, 1.17139, -68.898, -105.918)"/>
+  <use id="circles_8" href="#click_area" x="402" y="618" opacity="0.944025" transform="matrix(1.23826, 0, 0, 1.23826, -95.78, -147.244)"/>
+  <use id="circles_9" href="#click_area" x="402" y="618" opacity="0.998547" transform="matrix(1.30952, 0, 0, 1.30952, -124.427, -191.284)"/>
+  <use id="circles_10" href="#click_area" x="402" y="618" opacity="0.975449" transform="matrix(1.38009, 0, 0, 1.38009, -152.798, -234.898)"/>
+  <use id="circles_11" href="#click_area" x="402" y="618" opacity="0.870617" transform="matrix(1.44504, 0, 0, 1.44504, -178.906, -275.035)"/>
+  <use id="circles_12" href="#click_area" x="402" y="618" opacity="0.685389" transform="matrix(1.50052, 0, 0, 1.50052, -201.209, -309.322)"/>
+  <use id="circles_13" href="#click_area" x="402" y="618" opacity="0.451863" transform="matrix(1.54421, 0, 0, 1.54421, -218.774, -336.324)"/>
+  <use id="circles_14" href="#click_area" x="402" y="618" opacity="0.231508" transform="matrix(1.5752, 0, 0, 1.5752, -231.23, -355.474)"/>
+  <use id="circles_15" href="#click_area" x="402" y="618" opacity="0.0769111" transform="matrix(1.59356, 0, 0, 1.59356, -238.612, -366.822)"/>
+  <use id="circles_16" href="#click_area" x="402" y="618" opacity="0.0059376" transform="matrix(1.59997, 0, 0, 1.59997, -241.19, -370.784)"/>
+  <use id="circles_17" href="#click_area" x="402" y="618" opacity="0" transform="matrix(1.6, 0, 0, 1.6, -241.2, -370.8)"/>
+</g>
+
+<g id="hand_pointer">
+  <use id="hand_pointer_1" href="#pointer" x="400" y="614" />
+  <use id="hand_pointer_2" href="#pointer" x="400" y="614" transform="matrix(1, 0, 0, 1, 0, 0.729659)"/>
+  <use id="hand_pointer_3" href="#pointer" x="400" y="614" transform="matrix(1, 0, 0, 1, 0, 4.85494)"/>
+  <use id="hand_pointer_4" href="#pointer" x="400" y="614" transform="matrix(1, 0, 0, 1, 0, 5.72195)"/>
+  <use id="hand_pointer_5" href="#pointer" x="400" y="614" transform="matrix(1, 0, 0, 1, 0, 1.93079)"/>
+  <use id="hand_pointer_6" href="#pointer" x="400" y="614" />
+</g>
+</g>
+
+<style>
+/* <![CDATA[ */
+
+#circles_1, #circles_2, #circles_3, #circles_4, #circles_5, #circles_6, #circles_7, #circles_8, #circles_9, #circles_10, #circles_11, #circles_12, #circles_13, #circles_14, #circles_15, #circles_16, #circles_17 {
+visibility: hidden;
+animation-duration: 2.2s;
+animation-iteration-count: infinite;
+animation-timing-function: steps(1);
+}
+
+#circles_1 {animation-name: circles_1}
+#circles_2 {animation-name: circles_2}
+#circles_3 {animation-name: circles_3}
+#circles_4 {animation-name: circles_4}
+#circles_5 {animation-name: circles_5}
+#circles_6 {animation-name: circles_6}
+#circles_7 {animation-name: circles_7}
+#circles_8 {animation-name: circles_8}
+#circles_9 {animation-name: circles_9}
+#circles_10 {animation-name: circles_10}
+#circles_11 {animation-name: circles_11}
+#circles_12 {animation-name: circles_12}
+#circles_13 {animation-name: circles_13}
+#circles_14 {animation-name: circles_14}
+#circles_15 {animation-name: circles_15}
+#circles_16 {animation-name: circles_16}
+#circles_17 {animation-name: circles_17}
+
+@keyframes circles_1 {0%{visibility: visible} 26.47%{visibility: hidden}}
+@keyframes circles_2 {26.47%{visibility: visible} 29.41%{visibility: hidden}}
+@keyframes circles_3 {29.41%{visibility: visible} 32.35%{visibility: hidden}}
+@keyframes circles_4 {32.35%{visibility: visible} 35.29%{visibility: hidden}}
+@keyframes circles_5 {35.29%{visibility: visible} 38.24%{visibility: hidden}}
+@keyframes circles_6 {38.24%{visibility: visible} 41.18%{visibility: hidden}}
+@keyframes circles_7 {41.18%{visibility: visible} 44.12%{visibility: hidden}}
+@keyframes circles_8 {44.12%{visibility: visible} 47.06%{visibility: hidden}}
+@keyframes circles_9 {47.06%{visibility: visible} 50.00%{visibility: hidden}}
+@keyframes circles_10 {50.00%{visibility: visible} 52.94%{visibility: hidden}}
+@keyframes circles_11 {52.94%{visibility: visible} 55.88%{visibility: hidden}}
+@keyframes circles_12 {55.88%{visibility: visible} 58.82%{visibility: hidden}}
+@keyframes circles_13 {58.82%{visibility: visible} 61.76%{visibility: hidden}}
+@keyframes circles_14 {61.76%{visibility: visible} 64.71%{visibility: hidden}}
+@keyframes circles_15 {64.71%{visibility: visible} 67.65%{visibility: hidden}}
+@keyframes circles_16 {67.65%{visibility: visible} 70.59%{visibility: hidden}}
+@keyframes circles_17 {70.59%{visibility: visible} 100%{visibility: hidden}}
+
+#hand_pointer_1, #hand_pointer_2, #hand_pointer_3, #hand_pointer_4, #hand_pointer_5, #hand_pointer_6 {
+visibility: hidden;
+animation-duration: 2.2s;
+animation-iteration-count: infinite;
+animation-timing-function: steps(1);
+}
+
+#hand_pointer_1 {animation-name: hand_pointer_1}
+#hand_pointer_2 {animation-name: hand_pointer_2}
+#hand_pointer_3 {animation-name: hand_pointer_3}
+#hand_pointer_4 {animation-name: hand_pointer_4}
+#hand_pointer_5 {animation-name: hand_pointer_5}
+#hand_pointer_6 {animation-name: hand_pointer_6}
+
+@keyframes hand_pointer_1 {0%{visibility: visible} 20.59%{visibility: hidden}}
+@keyframes hand_pointer_2 {20.59%{visibility: visible} 23.53%{visibility: hidden}}
+@keyframes hand_pointer_3 {23.53%{visibility: visible} 26.47%{visibility: hidden}}
+@keyframes hand_pointer_4 {26.47%{visibility: visible} 29.41%{visibility: hidden}}
+@keyframes hand_pointer_5 {29.41%{visibility: visible} 32.35%{visibility: hidden}}
+@keyframes hand_pointer_6 {32.35%{visibility: visible} 100%{visibility: hidden}}
+
+/* ]]> */
+</style>
+</svg>

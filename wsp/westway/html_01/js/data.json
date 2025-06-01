@@ -1,0 +1,11 @@
+{
+  "game_type": 1,
+  "head": "You’ve WON",
+  "amount": 100,
+  "prize_name": "WestWay Rewards Points!",
+  "prize_underline": "",
+  "note": "Your points will be automatically applied to your WestWay Rewards account.<br> See <a href='#!''>Official Rules</a> for details",
+  "entries": 5,
+  "entries_headline": "ENTRIES",
+  "entries_text": "for your chance to WIN<br> up to $2,500 FOR YOU<br> + $2,500 FOR YOUR LOCAL FOOD BANK!*"
+}
