@@ -1,6 +1,8 @@
 let game_type;
 $('#tickt2x').setAttribute("src", "imgs/ticket.png");
 
+const randomNumber = Math.floor(Math.random() * 1000) + 1;
+
 window.addEventListener('load', function () {
 
   let scContainer = $('#main_container');
@@ -28,7 +30,7 @@ window.addEventListener('load', function () {
       $('#prize_head').classList.remove("invis");
       $('#note').classList.remove("invis");
       setTimeout(function(){
-        $("#confetti").setAttribute("src", "imgs/confetti.svg");
+        $("#confetti").setAttribute("src", "imgs/confetti.svg?r=" + randomNumber);
       }, 300);
       setTimeout(function(){
         if(game_type == 1) {
