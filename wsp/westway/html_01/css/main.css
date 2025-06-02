@@ -147,6 +147,10 @@ footer {
   opacity: 0;
 }
 
+#custom_cursor.hidden {
+  display: none;
+}
+
 input {
   border: solid 1px #707070;
   padding: 16px;
@@ -526,11 +530,24 @@ a {
   fill: #018448;
 }
 
-#confetti {
+#confetti_wrapper {
   pointer-events: none;
   position: absolute;
   left: 50%;
   top: 100px;
+  width: 100%;
+  max-width: 610px;
+  height: 392px;
+  overflow: hidden;
+  transform: translateX(-50%);
+}
+
+#confetti {
+  width: 610px;
+  height: 392px;
+  position: absolute;
+  left: 50%;
+  top: 0;
   transform: translateX(-50%);
 }
 

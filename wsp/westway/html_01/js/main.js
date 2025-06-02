@@ -30,6 +30,7 @@ window.addEventListener('load', function () {
       $('#prize_head').classList.remove("invis");
       $('#note').classList.remove("invis");
       setTimeout(function(){
+        custom_cursor.classList.add("hidden");
         $("#confetti").setAttribute("src", "imgs/confetti.svg?r=" + randomNumber);
       }, 300);
       setTimeout(function(){
