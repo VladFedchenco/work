@@ -67,6 +67,9 @@ request.onload = function() {
   const prizeData = request.response;
   game_type = prizeData.game_type;
   $("#head_title").innerText = prizeData.head;
+  if(game_type == 2) {
+    $("#head_title").style.fontSize = "34px";
+  }
   $("#amount").innerText = prizeData.amount;
   $("#prize_name").innerText = prizeData.prize_name;
   $("#prize_underline").innerText = prizeData.prize_underline;
