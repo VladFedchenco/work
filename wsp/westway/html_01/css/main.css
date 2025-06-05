@@ -151,15 +151,6 @@ footer {
   display: none;
 }
 
-input {
-  border: solid 1px #707070;
-  padding: 16px;
-  font-size: 16px;
-  display: block;
-  width: 100%;
-  margin-bottom: 16px;
-}
-
 button, .bttn {
   display: inline-block;
   padding: 12px 24px 10px 24px;
@@ -204,30 +195,6 @@ button:hover path, .bttn:hover path {
 
 a {
   color: #000;
-}
-
-::-webkit-input-placeholder {
-  font-family: 'Open Sans', sans-serif;
-  opacity: 1;
-  color: #707070;
-  font-size: 16px;
-  transition: all .2s linear;
-}
-
-::placeholder {
-  font-family: 'Open Sans', sans-serif;
-  opacity: 1;
-  color: #707070;
-  font-size: 16px;
-  transition: all .2s linear;
-}
-
-:focus::-webkit-input-placeholder {
-  opacity: 0;
-}
-
-:focus::placeholder {
-  opacity: 0;
 }
 
 #social {
@@ -334,10 +301,6 @@ a {
   opacity: 0;
   border: solid 4px #12172E;
   transition: border-color .6s .4s linear;
-}
-
-#prize_id {
-  height: 159px;
 }
 
 #head_title {
@@ -501,33 +464,8 @@ a {
   opacity: 0;
 }
 
-.form_mobile {
-  padding: 16px 0;
-}
-
 #redeem_block.invis {
   display: none;
-}
-
-.bonus_code {
-  color: #D73C5B;
-  font-size: 14px;
-  display: block;
-  margin: 0 auto;
-}
-
-.bonus_code svg {
-  vertical-align: middle;
-  margin-top: -3px;
-}
-
-.bonus_code:hover {
-  color: #018448;
-  transition: all .2s linear;
-}
-
-.bonus_code:hover path {
-  fill: #018448;
 }
 
 #confetti_wrapper {
