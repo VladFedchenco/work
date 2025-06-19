@@ -87,6 +87,10 @@ setTimeout(function() {
 
 */
 
+function randomNumber() {
+  return Math.floor(Math.random() * 10000) + 1;
+}
+
 const items = document.querySelectorAll('.items');
 const close_bttns = document.querySelectorAll('.close_bttn');
 
@@ -116,7 +120,7 @@ function $(sel) {
 function gstart() {
   $("#main_logo").classList.add("hidden");
   setTimeout(function() {
-      $("#confetti").setAttribute("href", "imgs/confetti.svg");
+      $("#confetti").setAttribute("href", "imgs/confetti.svg?v=" + randomNumber());
       $("#popup_bg").classList.add("animated");
       $("#red_label").classList.add("animated");
       $("#icon_label").classList.add("animated");
@@ -134,7 +138,7 @@ function gstart() {
   }, 3000);
   setTimeout(function() {
       $("#pin1").classList.replace("inactive", "active");
-      $("#confetti").setAttribute("href", "imgs/confetti.svg");
+      $("#confetti").setAttribute("href", "imgs/confetti.svg?v=" + randomNumber());
       $("#popup_bg").classList.replace("animated2", "animated");
       $("#popup_message1").classList.remove("hidden");
   }, 4000);
@@ -150,7 +154,7 @@ function gstart() {
   }, 7300);
   setTimeout(function() {
       $("#pin2").classList.replace("inactive", "active");
-      $("#confetti").setAttribute("href", "imgs/confetti.svg");
+      $("#confetti").setAttribute("href", "imgs/confetti.svg?v=" + randomNumber());
       $("#popup_bg").classList.replace("animated2", "animated");
       $("#popup_message2").classList.remove("hidden");
   }, 8000);
@@ -166,7 +170,7 @@ function gstart() {
   }, 11500);
   setTimeout(function() {
       $("#pin3").classList.replace("inactive", "active");
-      $("#confetti").setAttribute("href", "imgs/confetti.svg");
+      $("#confetti").setAttribute("href", "imgs/confetti.svg?v=" + randomNumber());
       $("#popup_bg").classList.replace("animated2", "animated");
       $("#popup_message3").classList.remove("hidden");
   }, 12000);
@@ -179,7 +183,7 @@ function gstart() {
   }, 15000);
   setTimeout(function() {
       $("#pin4").classList.replace("inactive", "active");
-      $("#confetti").setAttribute("href", "imgs/confetti.svg");
+      $("#confetti").setAttribute("href", "imgs/confetti.svg?v=" + randomNumber());
       $("#popup_bg").classList.replace("animated2", "animated");
       $("#popup_message4").classList.remove("hidden");
   }, 16000);
@@ -195,7 +199,7 @@ function gstart() {
   }, 19500);
   setTimeout(function() {
       $("#pin5").classList.replace("inactive", "active");
-      $("#confetti").setAttribute("href", "imgs/confetti.svg");
+      $("#confetti").setAttribute("href", "imgs/confetti.svg?v=" + randomNumber());
       $("#popup_bg").classList.replace("animated2", "animated");
       $("#popup_message5").classList.remove("hidden");
   }, 20000);
@@ -208,7 +212,7 @@ function gstart() {
   }, 23000);
   setTimeout(function() {
       $("#pin6").classList.replace("inactive", "active");
-      $("#confetti").setAttribute("href", "imgs/confetti.svg");
+      $("#confetti").setAttribute("href", "imgs/confetti.svg?v=" + randomNumber());
       $("#popup_bg").classList.replace("animated2", "animated");
       $("#popup_message6").classList.remove("hidden");
   }, 24000);
@@ -221,7 +225,7 @@ function gstart() {
   }, 27000);
   setTimeout(function() {
       $("#pin7").classList.replace("inactive", "active");
-      $("#confetti").setAttribute("href", "imgs/confetti.svg");
+      $("#confetti").setAttribute("href", "imgs/confetti.svg?v=" + randomNumber());
       $("#popup_bg").classList.replace("animated2", "animated");
       $("#popup_message7").classList.remove("hidden");
   }, 28000);
@@ -237,7 +241,7 @@ function gstart() {
   }, 31200);
   setTimeout(function() {
       $("#pin8").classList.replace("inactive", "active");
-      $("#confetti").setAttribute("href", "imgs/confetti.svg");
+      $("#confetti").setAttribute("href", "imgs/confetti.svg?v=" + randomNumber);
       $("#popup_bg").classList.replace("animated2", "animated");
       $("#popup_message8").classList.remove("hidden");
   }, 32000);
