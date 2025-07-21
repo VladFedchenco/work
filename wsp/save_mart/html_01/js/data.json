@@ -1,0 +1,6 @@
+{ 
+  "ballots_amount": 10,
+  "circle_bttm": "BALLOTS",
+  "ballots": "You have <strong>10 ballots</strong> to assign.",
+  "ballot_enter": "Enter your ballots into the prize draws below:"
+}

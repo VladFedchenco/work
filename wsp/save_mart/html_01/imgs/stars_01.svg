@@ -1,0 +1,952 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 344 240">
+<defs>
+<linearGradient id="lg" x1="142.75" x2="142.75" y1="102.07" y2="-37.83" gradientUnits="userSpaceOnUse">
+  <stop offset="0" stop-color="#00a0e3"/>
+  <stop offset=".43" stop-color="#0068a5"/>
+  <stop offset=".64" stop-color="#005d98"/>
+  <stop offset="1" stop-color="#00427a"/>
+</linearGradient>
+<linearGradient id="lg1" x1="122.95" x2="202.21" y1="35.73" y2="35.73" gradientUnits="userSpaceOnUse">
+  <stop offset="0" stop-color="#c6e9fa"/>
+  <stop offset=".43" stop-color="#c6e9fa"/>
+  <stop offset=".49" stop-color="#b9e5f8"/>
+  <stop offset=".6" stop-color="#99dbf3"/>
+  <stop offset=".75" stop-color="#65cceb"/>
+  <stop offset=".93" stop-color="#1db7e1"/>
+  <stop offset="1" stop-color="#00afdd"/>
+</linearGradient>
+<linearGradient id="lg2" x1="162.55" x2="162.55" y1="248.01" y2="66.69" gradientUnits="userSpaceOnUse">
+  <stop offset="0" stop-color="#00a0e3"/>
+  <stop offset=".43" stop-color="#005e96"/>
+  <stop offset=".59" stop-color="#005489"/>
+  <stop offset=".88" stop-color="#003b69"/>
+  <stop offset="1" stop-color="#00305b"/>
+</linearGradient>
+<linearGradient xlink:href="#lg" id="lg3" x1="182.38" x2="182.38" y1="108.91" y2="-32.21"/>
+<linearGradient id="lg4" x1="134.01" x2="69.44" y1="61.68" y2="62.6" gradientUnits="userSpaceOnUse">
+  <stop offset="0" stop-color="#e1f3fc"/>
+  <stop offset=".43" stop-color="#c6e9fa"/>
+  <stop offset=".49" stop-color="#b9e5f8"/>
+  <stop offset=".6" stop-color="#99ddf5"/>
+  <stop offset=".75" stop-color="#65d0f0"/>
+  <stop offset=".93" stop-color="#1dbde9"/>
+  <stop offset="1" stop-color="#00b6e7"/>
+</linearGradient>
+<linearGradient xlink:href="#lg" id="lg5" x1="165.9" x2="101.06" y1="241.59" y2="58.1"/>
+<linearGradient xlink:href="#lg" id="lg6" x1="110.54" x2="4.19" y1="143.46" y2="-20.08"/>
+<linearGradient xlink:href="#lg" id="lg7" x1="138.36" x2="41.45" y1="139.77" y2="-9.24"/>
+<linearGradient xlink:href="#lg4" id="lg8" x1="191.71" x2="254.61" y1="62.26" y2="62.26"/>
+<linearGradient xlink:href="#lg2" id="lg9" x1="185.31" x2="222.24" y1="165.89" y2="60.31"/>
+<linearGradient xlink:href="#lg" id="lg10" x1="201.49" x2="322.15" y1="165.34" y2="-111.6"/>
+<linearGradient xlink:href="#lg" id="lg11" x1="173.98" x2="289.55" y1="158.55" y2="-106.7"/>
+<linearGradient xlink:href="#lg4" id="lg12" x1="119.18" x2="156.21" y1="121.52" y2="121.52"/>
+<linearGradient id="lg13" x1="148.44" x2="131.15" y1="212.97" y2="70.19" gradientUnits="userSpaceOnUse">
+  <stop offset="0" stop-color="#00a0e3"/>
+  <stop offset=".43" stop-color="#005e96"/>
+  <stop offset=".66" stop-color="#005489"/>
+  <stop offset="1" stop-color="#004071"/>
+</linearGradient>
+<linearGradient xlink:href="#lg" id="lg14" x1="156.5" x2="138.1" y1="193.27" y2="-2.5"/>
+<linearGradient xlink:href="#lg" id="lg15" x1="140.72" x2="88.61" y1="195.04" y2="-33.36"/>
+<linearGradient xlink:href="#lg4" id="lg16" x1="164.8" x2="201.84" y1="121.52" y2="121.52"/>
+<linearGradient xlink:href="#lg13" id="lg17" x1="173.98" x2="190.59" y1="199.53" y2="66.3"/>
+<linearGradient xlink:href="#lg" id="lg18" x1="164.52" x2="177.27" y1="190.98" y2="12.75"/>
+<linearGradient xlink:href="#lg" id="lg19" x1="183.04" x2="195.79" y1="192.26" y2="13.94"/>
+<linearGradient xlink:href="#lg4" id="lg20" x1="305.42" x2="266.16" y1="93.01" y2="93.01"/>
+<linearGradient xlink:href="#lg13" id="lg21" x1="221.64" x2="306.49" y1="163.98" y2="63.91"/>
+<linearGradient xlink:href="#lg" id="lg22" x1="273.98" x2="408.18" y1="151.86" y2="126.04"/>
+<linearGradient xlink:href="#lg4" id="lg23" x1="27.6" x2="64.65" y1="100.16" y2="100.16"/>
+<linearGradient xlink:href="#lg13" id="lg24" x1="84.85" x2="16.14" y1="145.47" y2="61.8"/>
+<linearGradient xlink:href="#lg" id="lg25" x1="35.59" x2="-105.16" y1="154.17" y2="124.59"/>
+<linearGradient xlink:href="#lg4" id="lg26" x1="313.55" x2="261.02" y1="141.01" y2="134.54"/>
+<linearGradient xlink:href="#lg2" id="lg27" x1="181.61" x2="288.48" y1="222.85" y2="137.23"/>
+<linearGradient xlink:href="#lg4" id="lg28" x1="7.12" x2="66.15" y1="141.11" y2="137.89"/>
+<linearGradient xlink:href="#lg2" id="lg29" x1="138.05" x2="34.35" y1="218.75" y2="139.61"/>
+<linearGradient xlink:href="#lg4" id="lg30" x1="213.09" x2="275.81" y1="98.04" y2="128.02"/>
+<linearGradient xlink:href="#lg2" id="lg31" x1="149.68" x2="237.36" y1="263.95" y2="114.31"/>
+<linearGradient xlink:href="#lg" id="lg32" x1="176.87" x2="198.92" y1="177.54" y2="-2.03"/>
+<linearGradient xlink:href="#lg" id="lg33" x1="199.79" x2="244.42" y1="193.05" y2="18.21"/>
+<linearGradient xlink:href="#lg4" id="lg34" x1="113.54" x2="55.35" y1="105.02" y2="120.07"/>
+<linearGradient xlink:href="#lg2" id="lg35" x1="177.83" x2="91.54" y1="260.92" y2="122.96"/>
+<linearGradient xlink:href="#lg" id="lg36" x1="141.77" x2="104.65" y1="172.79" y2="33.33"/>
+<linearGradient xlink:href="#lg" id="lg37" x1="126.81" x2="82.66" y1="202.84" y2="35.79"/>
+<linearGradient id="lg38" x1="162" x2="162" y1="150.59" y2="212.26" gradientUnits="userSpaceOnUse">
+  <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+  <stop offset=".63" stop-color="#fff"/>
+</linearGradient>
+</defs>
+
+<style>
+<![CDATA[
+  #s1, #s2, #s3, #s4, #s5, #s6, #s7, #s8, #s9, #s10, #s11 {
+    opacity: 0;
+    transform: translate(162px, 236px) scale(.1) translate(-162px, -236px);
+  }
+  #s1 {
+    animation: star 2s ease-in-out forwards;
+  }
+  #s2 {
+    animation: star 2s .1s ease-in-out forwards;
+  }
+  #s3 {
+    animation: star 2s .2s ease-in-out forwards;
+  }
+  #s4 {
+    animation: star 2s .3s ease-in-out forwards;
+  }
+  #s5 {
+    animation: star 2s .4s ease-in-out forwards;
+  }
+  #s6 {
+    animation: star 2s .5s ease-in-out forwards;
+  }
+  #s7 {
+    animation: star 2s .6s ease-in-out forwards;
+  }
+  #s8 {
+    animation: star 2s .7s ease-in-out forwards;
+  }
+  #s9 {
+    animation: star 2s .8s ease-in-out forwards;
+  }
+  #s10 {
+    animation: star 2s .9s ease-in-out forwards;
+  }
+  #s11 {
+    animation: star 2s 1s ease-in-out forwards;
+  }
+  @keyframes star {
+    0% {
+      opacity: 0;
+      transform: translate(162px, 236px) scale(.1) translate(-162px, -236px);
+    }
+    10%, 100% {
+      opacity: 1;
+    }
+    80% {
+      transform: translate(162px, 236px) scale(1.1) translate(-162px, -236px);
+    }
+    100% {
+      transform: translate(162px, 236px) scale(1) translate(-162px, -236px);
+    }
+  }
+
+  #d1, #d2, #d3, #d4, #d5, #d6, #d7, #d8, #d9, #d10, #d11, #d12, #d13, #d14, #d15, #d16, #d17, #d18, #d19, #d20, #d21, #d22, #d23, #d24, #d25, #d26, #d27, #d28, #d29, #d30, #d31, #d32, #d33, #d34, #d35, #d36, #d37, #d38, #d39, #d40, #d41, #d42, #d43, #d44, #d45, #d46, #d47, #d48, #d49, #d50, #d51, #d52, #d53, #d54, #d55, #d56, #d57, #d58, #d59, #d60, #d61, #d62, #d63, #d64, #d65, #d66, #d67, #d68, #d69, #d70, #d71, #d72, #d73, #d74, #d75, #d76, #d77, #d78, #d79, #d80, #d81, #d82, #d83, #d84, #d85, #d86, #d87, #d88, #d89, #d90, #d91, #d92, #d93, #d94, #d95, #d96, #d97, #d98, #d99, #d100, #d101, #d102, #d103, #d104, #d105, #d106, #d107, #d108, #d109, #d110, #d111, #d112, #d113, #d114, #d115, #d116, #d117, #d118, #d119, #d120, #d121, #d122, #d123, #d124, #d125, #d126, #d127, #d128, #d129, #d130, #d131, #d132, #d133, #d134, #d135, #d136, #d137, #d138, #d139, #d140, #d141, #d142, #d143, #d144, #d145, #d146, #d147, #d148, #d149, #d150, #d151, #d152, #d153, #d154, #d155, #d156, #d157, #d158, #d159, #d160, #d161, #d162, #d163, #d164, #d165, #d166, #d167, #d168, #d169, #d170, #d171, #d172, #d173, #d174, #d175, #d176, #d177, #d178, #d179, #d180, #d181, #d182, #d183, #d184, #d185, #d186, #d187, #d188, #d189, #d190, #d191, #d192, #d193, #d194, #d195, #d196, #d197, #d198, #d199, #d200, #d201, #d202, #d203, #d204, #d205, #d206, #d207, #d208, #d209, #d210, #d211, #d212, #d213, #b1, #b2, #b3, #b4, #b5, #b6, #p1, #p2, #p3, #p4, #p5, #p6, #p7, #p8, #p9, #p10, #p11, #p12, #p13, #p14, #p15, #p16, #p17, #p18, #p19, #p20, #p21 {
+    opacity: 0;
+  }
+
+  #d1 { animation: d1 2s 1.57s ease-out forwards }
+  @keyframes d1 { 0% { opacity: 0; transform: translate(18px, 169px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-18px, -169px) } }
+  #d2 { animation: d2 2s 1.35s ease-out forwards }
+  @keyframes d2 { 0% { opacity: 0; transform: translate(5px, 160px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-5px, -160px) } }
+  #d3 { animation: d3 2s 1.69s ease-out forwards }
+  @keyframes d3 { 0% { opacity: 0; transform: translate(-20px, 155px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(20px, -155px) } }
+  #d4 { animation: d4 2s 1.84s ease-out forwards }
+  @keyframes d4 { 0% { opacity: 0; transform: translate(18px, 199px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-18px, -199px) } }
+  #d5 { animation: d5 2s 1.78s ease-out forwards }
+  @keyframes d5 { 0% { opacity: 0; transform: translate(-12px, 190px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(12px, -190px) } }
+  #d6 { animation: d6 2s 1.34s ease-out forwards }
+  @keyframes d6 { 0% { opacity: 0; transform: translate(-21px, 189px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(21px, -189px) } }
+  #d7 { animation: d7 2s 1.16s ease-out forwards }
+  @keyframes d7 { 0% { opacity: 0; transform: translate(9px, 160px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-9px, -160px) } }
+  #d8 { animation: d8 2s 1.68s ease-out forwards }
+  @keyframes d8 { 0% { opacity: 0; transform: translate(16px, 153px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-16px, -153px) } }
+  #d9 { animation: d9 2s 1.06s ease-out forwards }
+  @keyframes d9 { 0% { opacity: 0; transform: translate(-20px, 162px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(20px, -162px) } }
+  #d10 { animation: d10 2s 1.41s ease-out forwards }
+  @keyframes d10 { 0% { opacity: 0; transform: translate(-11px, 154px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(11px, -154px) } }
+  #d11 { animation: d11 2s 1.13s ease-out forwards }
+  @keyframes d11 { 0% { opacity: 0; transform: translate(12px, 192px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-12px, -192px) } }
+  #d12 { animation: d12 2s 1.24s ease-out forwards }
+  @keyframes d12 { 0% { opacity: 0; transform: translate(-21px, 156px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(21px, -156px) } }
+  #d13 { animation: d13 2s 1.63s ease-out forwards }
+  @keyframes d13 { 0% { opacity: 0; transform: translate(-20px, 197px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(20px, -197px) } }
+  #d14 { animation: d14 2s 1.63s ease-out forwards }
+  @keyframes d14 { 0% { opacity: 0; transform: translate(1px, 153px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-1px, -153px) } }
+  #d15 { animation: d15 2s 1.03s ease-out forwards }
+  @keyframes d15 { 0% { opacity: 0; transform: translate(-13px, 177px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(13px, -177px) } }
+  #d16 { animation: d16 2s 1.73s ease-out forwards }
+  @keyframes d16 { 0% { opacity: 0; transform: translate(4px, 182px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-4px, -182px) } }
+  #d17 { animation: d17 2s 1.45s ease-out forwards }
+  @keyframes d17 { 0% { opacity: 0; transform: translate(97px, 107px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-97px, -107px) } }
+  #d18 { animation: d18 2s 1.17s ease-out forwards }
+  @keyframes d18 { 0% { opacity: 0; transform: translate(79px, 150px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-79px, -150px) } }
+  #d19 { animation: d19 2s 1.95s ease-out forwards }
+  @keyframes d19 { 0% { opacity: 0; transform: translate(93px, 131px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-93px, -131px) } }
+  #d20 { animation: d20 2s 1.90s ease-out forwards }
+  @keyframes d20 { 0% { opacity: 0; transform: translate(127px, 111px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-127px, -111px) } }
+  #d21 { animation: d21 2s 1.25s ease-out forwards }
+  @keyframes d21 { 0% { opacity: 0; transform: translate(131px, 111px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-131px, -111px) } }
+  #d22 { animation: d22 2s 1.93s ease-out forwards }
+  @keyframes d22 { 0% { opacity: 0; transform: translate(133px, 117px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-133px, -117px) } }
+  #d23 { animation: d23 2s 1.06s ease-out forwards }
+  @keyframes d23 { 0% { opacity: 0; transform: translate(69px, 133px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-69px, -133px) } }
+  #d24 { animation: d24 2s 1.51s ease-out forwards }
+  @keyframes d24 { 0% { opacity: 0; transform: translate(97px, 156px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-97px, -156px) } }
+  #d25 { animation: d25 2s 1.55s ease-out forwards }
+  @keyframes d25 { 0% { opacity: 0; transform: translate(71px, 170px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-71px, -170px) } }
+  #d26 { animation: d26 2s 1.74s ease-out forwards }
+  @keyframes d26 { 0% { opacity: 0; transform: translate(101px, 144px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-101px, -144px) } }
+  #d27 { animation: d27 2s 1.08s ease-out forwards }
+  @keyframes d27 { 0% { opacity: 0; transform: translate(83px, 137px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-83px, -137px) } }
+  #d28 { animation: d28 2s 1.10s ease-out forwards }
+  @keyframes d28 { 0% { opacity: 0; transform: translate(108px, 101px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-108px, -101px) } }
+  #d29 { animation: d29 2s 1.11s ease-out forwards }
+  @keyframes d29 { 0% { opacity: 0; transform: translate(71px, 132px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-71px, -132px) } }
+  #d30 { animation: d30 2s 1.57s ease-out forwards }
+  @keyframes d30 { 0% { opacity: 0; transform: translate(110px, 114px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-110px, -114px) } }
+  #d31 { animation: d31 2s 1.79s ease-out forwards }
+  @keyframes d31 { 0% { opacity: 0; transform: translate(70px, 139px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-70px, -139px) } }
+  #d32 { animation: d32 2s 1.01s ease-out forwards }
+  @keyframes d32 { 0% { opacity: 0; transform: translate(85px, 140px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-85px, -140px) } }
+  #d33 { animation: d33 2s 1.56s ease-out forwards }
+  @keyframes d33 { 0% { opacity: 0; transform: translate(99px, 148px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-99px, -148px) } }
+  #d34 { animation: d34 2s 1.42s ease-out forwards }
+  @keyframes d34 { 0% { opacity: 0; transform: translate(103px, 155px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-103px, -155px) } }
+  #d35 { animation: d35 2s 1.24s ease-out forwards }
+  @keyframes d35 { 0% { opacity: 0; transform: translate(92px, 153px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-92px, -153px) } }
+  #d36 { animation: d36 2s 1.91s ease-out forwards }
+  @keyframes d36 { 0% { opacity: 0; transform: translate(102px, 100px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-102px, -100px) } }
+  #d37 { animation: d37 2s 1.24s ease-out forwards }
+  @keyframes d37 { 0% { opacity: 0; transform: translate(96px, 87px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-96px, -87px) } }
+  #d38 { animation: d38 2s 1.82s ease-out forwards }
+  @keyframes d38 { 0% { opacity: 0; transform: translate(91px, 144px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-91px, -144px) } }
+  #d39 { animation: d39 2s 1.35s ease-out forwards }
+  @keyframes d39 { 0% { opacity: 0; transform: translate(100px, 132px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-100px, -132px) } }
+  #d40 { animation: d40 2s 1.99s ease-out forwards }
+  @keyframes d40 { 0% { opacity: 0; transform: translate(99px, 138px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-99px, -138px) } }
+  #d41 { animation: d41 2s 1.43s ease-out forwards }
+  @keyframes d41 { 0% { opacity: 0; transform: translate(76px, 135px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-76px, -135px) } }
+  #d42 { animation: d42 2s 1.92s ease-out forwards }
+  @keyframes d42 { 0% { opacity: 0; transform: translate(95px, 137px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-95px, -137px) } }
+  #d43 { animation: d43 2s 1.76s ease-out forwards }
+  @keyframes d43 { 0% { opacity: 0; transform: translate(-60px, 85px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(60px, -85px) } }
+  #d44 { animation: d44 2s 1.14s ease-out forwards }
+  @keyframes d44 { 0% { opacity: 0; transform: translate(-97px, 134px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(97px, -134px) } }
+  #d45 { animation: d45 2s 1.69s ease-out forwards }
+  @keyframes d45 { 0% { opacity: 0; transform: translate(-96px, 106px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(96px, -106px) } }
+  #d46 { animation: d46 2s 1.78s ease-out forwards }
+  @keyframes d46 { 0% { opacity: 0; transform: translate(-108px, 103px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(108px, -103px) } }
+  #d47 { animation: d47 2s 1.49s ease-out forwards }
+  @keyframes d47 { 0% { opacity: 0; transform: translate(-107px, 117px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(107px, -117px) } }
+  #d48 { animation: d48 2s 1.48s ease-out forwards }
+  @keyframes d48 { 0% { opacity: 0; transform: translate(-78px, 140px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(78px, -140px) } }
+  #d49 { animation: d49 2s 1.32s ease-out forwards }
+  @keyframes d49 { 0% { opacity: 0; transform: translate(-51px, 62px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(51px, -62px) } }
+  #d50 { animation: d50 2s 1.75s ease-out forwards }
+  @keyframes d50 { 0% { opacity: 0; transform: translate(-86px, 177px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(86px, -177px) } }
+  #d51 { animation: d51 2s 1.77s ease-out forwards }
+  @keyframes d51 { 0% { opacity: 0; transform: translate(50px, 190px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-50px, -190px) } }
+  #d52 { animation: d52 2s 1.29s ease-out forwards }
+  @keyframes d52 { 0% { opacity: 0; transform: translate(50px, 200px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-50px, -200px) } }
+  #d53 { animation: d53 2s 1.06s ease-out forwards }
+  @keyframes d53 { 0% { opacity: 0; transform: translate(-46px, 188px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(46px, -188px) } }
+  #d54 { animation: d54 2s 1.92s ease-out forwards }
+  @keyframes d54 { 0% { opacity: 0; transform: translate(-47px, 192px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(47px, -192px) } }
+  #d55 { animation: d55 2s 1.63s ease-out forwards }
+  @keyframes d55 { 0% { opacity: 0; transform: translate(-81px, 183px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(81px, -183px) } }
+  #d56 { animation: d56 2s 1.04s ease-out forwards }
+  @keyframes d56 { 0% { opacity: 0; transform: translate(-92px, 106px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(92px, -106px) } }
+  #d57 { animation: d57 2s 1.66s ease-out forwards }
+  @keyframes d57 { 0% { opacity: 0; transform: translate(-25px, 75px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(25px, -75px) } }
+  #d58 { animation: d58 2s 1.00s ease-out forwards }
+  @keyframes d58 { 0% { opacity: 0; transform: translate(-104px, 116px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(104px, -116px) } }
+  #d59 { animation: d59 2s 1.96s ease-out forwards }
+  @keyframes d59 { 0% { opacity: 0; transform: translate(-66px, 98px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(66px, -98px) } }
+  #d60 { animation: d60 2s 1.69s ease-out forwards }
+  @keyframes d60 { 0% { opacity: 0; transform: translate(-105px, 123px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(105px, -123px) } }
+  #d61 { animation: d61 2s 1.10s ease-out forwards }
+  @keyframes d61 { 0% { opacity: 0; transform: translate(-96px, 147px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(96px, -147px) } }
+  #d62 { animation: d62 2s 1.43s ease-out forwards }
+  @keyframes d62 { 0% { opacity: 0; transform: translate(-90px, 153px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(90px, -153px) } }
+  #d63 { animation: d63 2s 1.08s ease-out forwards }
+  @keyframes d63 { 0% { opacity: 0; transform: translate(-59px, 131px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(59px, -131px) } }
+  #d64 { animation: d64 2s 1.14s ease-out forwards }
+  @keyframes d64 { 0% { opacity: 0; transform: translate(-63px, 136px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(63px, -136px) } }
+  #d65 { animation: d65 2s 3.00s ease-out forwards }
+  @keyframes d65 { 0% { opacity: 0; transform: translate(-72px, 139px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(72px, -139px) } }
+  #d66 { animation: d66 2s 1.95s ease-out forwards }
+  @keyframes d66 { 0% { opacity: 0; transform: translate(-83px, 145px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(83px, -145px) } }
+  #d67 { animation: d67 2s 1.68s ease-out forwards }
+  @keyframes d67 { 0% { opacity: 0; transform: translate(-26px, 62px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(26px, -62px) } }
+  #d68 { animation: d68 2s 1.66s ease-out forwards }
+  @keyframes d68 { 0% { opacity: 0; transform: translate(-50px, 114px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(50px, -114px) } }
+  #d69 { animation: d69 2s 1.23s ease-out forwards }
+  @keyframes d69 { 0% { opacity: 0; transform: translate(-25px, 52px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(25px, -52px) } }
+  #d70 { animation: d70 2s 1.35s ease-out forwards }
+  @keyframes d70 { 0% { opacity: 0; transform: translate(-51px, 95px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(51px, -95px) } }
+  #d71 { animation: d71 2s 1.97s ease-out forwards }
+  @keyframes d71 { 0% { opacity: 0; transform: translate(-76px, 153px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(76px, -153px) } }
+  #d72 { animation: d72 2s 1.17s ease-out forwards }
+  @keyframes d72 { 0% { opacity: 0; transform: translate(-43px, 78px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(43px, -78px) } }
+  #d73 { animation: d73 2s 1.62s ease-out forwards }
+  @keyframes d73 { 0% { opacity: 0; transform: translate(-99px, 119px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(99px, -119px) } }
+  #d74 { animation: d74 2s 1.79s ease-out forwards }
+  @keyframes d74 { 0% { opacity: 0; transform: translate(-87px, 102px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(87px, -102px) } }
+  #d75 { animation: d75 2s 1.94s ease-out forwards }
+  @keyframes d75 { 0% { opacity: 0; transform: translate(-130px, 116px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(130px, -116px) } }
+  #d76 { animation: d76 2s 1.89s ease-out forwards }
+  @keyframes d76 { 0% { opacity: 0; transform: translate(-135px, 112px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(135px, -112px) } }
+  #d77 { animation: d77 2s 1.32s ease-out forwards }
+  @keyframes d77 { 0% { opacity: 0; transform: translate(42px, 126px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-42px, -126px) } }
+  #d78 { animation: d78 2s 1.48s ease-out forwards }
+  @keyframes d78 { 0% { opacity: 0; transform: translate(-4px, 136px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(4px, -136px) } }
+  #d79 { animation: d79 2s 1.97s ease-out forwards }
+  @keyframes d79 { 0% { opacity: 0; transform: translate(20px, 120px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-20px, -120px) } }
+  #d80 { animation: d80 2s 1.57s ease-out forwards }
+  @keyframes d80 { 0% { opacity: 0; transform: translate(17px, 127px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-17px, -127px) } }
+  #d81 { animation: d81 2s 1.17s ease-out forwards }
+  @keyframes d81 { 0% { opacity: 0; transform: translate(5px, 118px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-5px, -118px) } }
+  #d82 { animation: d82 2s 1.57s ease-out forwards }
+  @keyframes d82 { 0% { opacity: 0; transform: translate(2px, 164px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-2px, -164px) } }
+  #d83 { animation: d83 2s 1.05s ease-out forwards }
+  @keyframes d83 { 0% { opacity: 0; transform: translate(-13px, 143px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(13px, -143px) } }
+  #d84 { animation: d84 2s 1.69s ease-out forwards }
+  @keyframes d84 { 0% { opacity: 0; transform: translate(-21px, 150px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(21px, -150px) } }
+  #d85 { animation: d85 2s 1.92s ease-out forwards }
+  @keyframes d85 { 0% { opacity: 0; transform: translate(18px, 137px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-18px, -137px) } }
+  #d86 { animation: d86 2s 1.11s ease-out forwards }
+  @keyframes d86 { 0% { opacity: 0; transform: translate(-44px, 146px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(44px, -146px) } }
+  #d87 { animation: d87 2s 1.15s ease-out forwards }
+  @keyframes d87 { 0% { opacity: 0; transform: translate(-26px, 145px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(26px, -145px) } }
+  #d88 { animation: d88 2s 1.84s ease-out forwards }
+  @keyframes d88 { 0% { opacity: 0; transform: translate(23px, 123px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-23px, -123px) } }
+  #d89 { animation: d89 2s 1.16s ease-out forwards }
+  @keyframes d89 { 0% { opacity: 0; transform: translate(31px, 150px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-31px, -150px) } }
+  #d90 { animation: d90 2s 1.60s ease-out forwards }
+  @keyframes d90 { 0% { opacity: 0; transform: translate(7px, 119px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-7px, -119px) } }
+  #d91 { animation: d91 2s 1.82s ease-out forwards }
+  @keyframes d91 { 0% { opacity: 0; transform: translate(43px, 141px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-43px, -141px) } }
+  #d92 { animation: d92 2s 1.62s ease-out forwards }
+  @keyframes d92 { 0% { opacity: 0; transform: translate(1px, 122px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-1px, -122px) } }
+  #d93 { animation: d93 2s 1.15s ease-out forwards }
+  @keyframes d93 { 0% { opacity: 0; transform: translate(-37px, 143px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(37px, -143px) } }
+  #d94 { animation: d94 2s 1.78s ease-out forwards }
+  @keyframes d94 { 0% { opacity: 0; transform: translate(-15px, 152px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(15px, -152px) } }
+  #d95 { animation: d95 2s 1.48s ease-out forwards }
+  @keyframes d95 { 0% { opacity: 0; transform: translate(19px, 165px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-19px, -165px) } }
+  #d96 { animation: d96 2s 1.95s ease-out forwards }
+  @keyframes d96 { 0% { opacity: 0; transform: translate(13px, 165px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-13px, -165px) } }
+  #d97 { animation: d97 2s 1.21s ease-out forwards }
+  @keyframes d97 { 0% { opacity: 0; transform: translate(18px, 157px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-18px, -157px) } }
+  #d98 { animation: d98 2s 1.13s ease-out forwards }
+  @keyframes d98 { 0% { opacity: 0; transform: translate(1px, 148px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-1px, -148px) } }
+  #d99 { animation: d99 2s 1.89s ease-out forwards }
+  @keyframes d99 { 0% { opacity: 0; transform: translate(27px, 150px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-27px, -150px) } }
+  #d100 { animation: d100 2s 1.84s ease-out forwards }
+  @keyframes d100 { 0% { opacity: 0; transform: translate(31px, 162px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-31px, -162px) } }
+  #d101 { animation: d101 2s 1.65s ease-out forwards }
+  @keyframes d101 { 0% { opacity: 0; transform: translate(8px, 142px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-8px, -142px) } }
+  #d102 { animation: d102 2s 1.48s ease-out forwards }
+  @keyframes d102 { 0% { opacity: 0; transform: translate(23px, 143px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-23px, -143px) } }
+  #d103 { animation: d103 2s 1.99s ease-out forwards }
+  @keyframes d103 { 0% { opacity: 0; transform: translate(18px, 146px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-18px, -146px) } }
+  #d104 { animation: d104 2s 1.37s ease-out forwards }
+  @keyframes d104 { 0% { opacity: 0; transform: translate(8px, 125px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-8px, -125px) } }
+  #d105 { animation: d105 2s 1.65s ease-out forwards }
+  @keyframes d105 { 0% { opacity: 0; transform: translate(28px, 126px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-28px, -126px) } }
+  #d106 { animation: d106 2s 1.34s ease-out forwards }
+  @keyframes d106 { 0% { opacity: 0; transform: translate(-1px, 51px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(1px, -51px) } }
+  #d107 { animation: d107 2s 1.44s ease-out forwards }
+  @keyframes d107 { 0% { opacity: 0; transform: translate(17px, 72px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-17px, -72px) } }
+  #d108 { animation: d108 2s 1.32s ease-out forwards }
+  @keyframes d108 { 0% { opacity: 0; transform: translate(16px, 52px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-16px, -52px) } }
+  #d109 { animation: d109 2s 1.85s ease-out forwards }
+  @keyframes d109 { 0% { opacity: 0; transform: translate(13px, 59px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-13px, -59px) } }
+  #d110 { animation: d110 2s 1.42s ease-out forwards }
+  @keyframes d110 { 0% { opacity: 0; transform: translate(27px, 63px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-27px, -63px) } }
+  #d111 { animation: d111 2s 1.25s ease-out forwards }
+  @keyframes d111 { 0% { opacity: 0; transform: translate(38px, 71px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-38px, -71px) } }
+  #d112 { animation: d112 2s 1.62s ease-out forwards }
+  @keyframes d112 { 0% { opacity: 0; transform: translate(50px, 91px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-50px, -91px) } }
+  #d113 { animation: d113 2s 1.84s ease-out forwards }
+  @keyframes d113 { 0% { opacity: 0; transform: translate(49px, 101px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-49px, -101px) } }
+  #d114 { animation: d114 2s 1.48s ease-out forwards }
+  @keyframes d114 { 0% { opacity: 0; transform: translate(5px, 64px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-5px, -64px) } }
+  #d115 { animation: d115 2s 1.30s ease-out forwards }
+  @keyframes d115 { 0% { opacity: 0; transform: translate(11px, 143px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-11px, -143px) } }
+  #d116 { animation: d116 2s 1.43s ease-out forwards }
+  @keyframes d116 { 0% { opacity: 0; transform: translate(56px, 76px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-56px, -76px) } }
+  #d117 { animation: d117 2s 1.43s ease-out forwards }
+  @keyframes d117 { 0% { opacity: 0; transform: translate(13px, 52px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-13px, -52px) } }
+  #d118 { animation: d118 2s 1.92s ease-out forwards }
+  @keyframes d118 { 0% { opacity: 0; transform: translate(-13px, 61px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(13px, -61px) } }
+  #d119 { animation: d119 2s 1.09s ease-out forwards }
+  @keyframes d119 { 0% { opacity: 0; transform: translate(-14px, 45px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(14px, -45px) } }
+  #d120 { animation: d120 2s 1.27s ease-out forwards }
+  @keyframes d120 { 0% { opacity: 0; transform: translate(50px, 120px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-50px, -120px) } }
+  #d121 { animation: d121 2s 1.87s ease-out forwards }
+  @keyframes d121 { 0% { opacity: 0; transform: translate(42px, 74px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-42px, -74px) } }
+  #d122 { animation: d122 2s 1.38s ease-out forwards }
+  @keyframes d122 { 0% { opacity: 0; transform: translate(-20px, 79px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(20px, -79px) } }
+  #d123 { animation: d123 2s 1.98s ease-out forwards }
+  @keyframes d123 { 0% { opacity: 0; transform: translate(-14px, 77px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(14px, -77px) } }
+  #d124 { animation: d124 2s 1.57s ease-out forwards }
+  @keyframes d124 { 0% { opacity: 0; transform: translate(0px, 58px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(0px, -58px) } }
+  #d125 { animation: d125 2s 1.42s ease-out forwards }
+  @keyframes d125 { 0% { opacity: 0; transform: translate(3px, 76px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-3px, -76px) } }
+  #d126 { animation: d126 2s 1.72s ease-out forwards }
+  @keyframes d126 { 0% { opacity: 0; transform: translate(-11px, 64px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(11px, -64px) } }
+  #d127 { animation: d127 2s 1.38s ease-out forwards }
+  @keyframes d127 { 0% { opacity: 0; transform: translate(-24px, 67px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(24px, -67px) } }
+  #d128 { animation: d128 2s 1.98s ease-out forwards }
+  @keyframes d128 { 0% { opacity: 0; transform: translate(6px, 75px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-6px, -75px) } }
+  #d129 { animation: d129 2s 1.85s ease-out forwards }
+  @keyframes d129 { 0% { opacity: 0; transform: translate(-4px, 63px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(4px, -63px) } }
+  #d130 { animation: d130 2s 1.61s ease-out forwards }
+  @keyframes d130 { 0% { opacity: 0; transform: translate(-2px, 69px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(2px, -69px) } }
+  #d131 { animation: d131 2s 1.58s ease-out forwards }
+  @keyframes d131 { 0% { opacity: 0; transform: translate(20px, 65px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-20px, -65px) } }
+  #d132 { animation: d132 2s 1.03s ease-out forwards }
+  @keyframes d132 { 0% { opacity: 0; transform: translate(6px, 56px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-6px, -56px) } }
+  #d133 { animation: d133 2s 1.85s ease-out forwards }
+  @keyframes d133 { 0% { opacity: 0; transform: translate(27px, 51px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-27px, -51px) } }
+  #d134 { animation: d134 2s 1.97s ease-out forwards }
+  @keyframes d134 { 0% { opacity: 0; transform: translate(47px, 81px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-47px, -81px) } }
+  #d135 { animation: d135 2s 1.36s ease-out forwards }
+  @keyframes d135 { 0% { opacity: 0; transform: translate(45px, 52px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-45px, -52px) } }
+  #d136 { animation: d136 2s 1.15s ease-out forwards }
+  @keyframes d136 { 0% { opacity: 0; transform: translate(41px, 59px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-41px, -59px) } }
+  #d137 { animation: d137 2s 1.05s ease-out forwards }
+  @keyframes d137 { 0% { opacity: 0; transform: translate(56px, 63px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-56px, -63px) } }
+  #d138 { animation: d138 2s 1.53s ease-out forwards }
+  @keyframes d138 { 0% { opacity: 0; transform: translate(28px, 87px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-28px, -87px) } }
+  #d139 { animation: d139 2s 1.25s ease-out forwards }
+  @keyframes d139 { 0% { opacity: 0; transform: translate(55px, 101px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-55px, -101px) } }
+  #d140 { animation: d140 2s 1.83s ease-out forwards }
+  @keyframes d140 { 0% { opacity: 0; transform: translate(44px, 103px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-44px, -103px) } }
+  #d141 { animation: d141 2s 1.52s ease-out forwards }
+  @keyframes d141 { 0% { opacity: 0; transform: translate(33px, 64px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-33px, -64px) } }
+  #d142 { animation: d142 2s 1.48s ease-out forwards }
+  @keyframes d142 { 0% { opacity: 0; transform: translate(63px, 102px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-63px, -102px) } }
+  #d143 { animation: d143 2s 1.51s ease-out forwards }
+  @keyframes d143 { 0% { opacity: 0; transform: translate(52px, 109px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-52px, -109px) } }
+  #d144 { animation: d144 2s 1.57s ease-out forwards }
+  @keyframes d144 { 0% { opacity: 0; transform: translate(41px, 52px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-41px, -52px) } }
+  #d145 { animation: d145 2s 1.72s ease-out forwards }
+  @keyframes d145 { 0% { opacity: 0; transform: translate(16px, 61px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-16px, -61px) } }
+  #d146 { animation: d146 2s 1.62s ease-out forwards }
+  @keyframes d146 { 0% { opacity: 0; transform: translate(54px, 69px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-54px, -69px) } }
+  #d147 { animation: d147 2s 1.67s ease-out forwards }
+  @keyframes d147 { 0% { opacity: 0; transform: translate(49px, 110px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-49px, -110px) } }
+  #d148 { animation: d148 2s 1.90s ease-out forwards }
+  @keyframes d148 { 0% { opacity: 0; transform: translate(39px, 99px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-39px, -99px) } }
+  #d149 { animation: d149 2s 1.11s ease-out forwards }
+  @keyframes d149 { 0% { opacity: 0; transform: translate(8px, 79px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-8px, -79px) } }
+  #d150 { animation: d150 2s 1.55s ease-out forwards }
+  @keyframes d150 { 0% { opacity: 0; transform: translate(12px, 83px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-12px, -83px) } }
+  #d151 { animation: d151 2s 1.00s ease-out forwards }
+  @keyframes d151 { 0% { opacity: 0; transform: translate(22px, 86px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-22px, -86px) } }
+  #d152 { animation: d152 2s 1.61s ease-out forwards }
+  @keyframes d152 { 0% { opacity: 0; transform: translate(33px, 83px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-33px, -83px) } }
+  #d153 { animation: d153 2s 1.94s ease-out forwards }
+  @keyframes d153 { 0% { opacity: 0; transform: translate(17px, 64px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-17px, -64px) } }
+  #d154 { animation: d154 2s 1.22s ease-out forwards }
+  @keyframes d154 { 0% { opacity: 0; transform: translate(4px, 67px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-4px, -67px) } }
+  #d155 { animation: d155 2s 1.13s ease-out forwards }
+  @keyframes d155 { 0% { opacity: 0; transform: translate(34px, 75px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-34px, -75px) } }
+  #d156 { animation: d156 2s 1.83s ease-out forwards }
+  @keyframes d156 { 0% { opacity: 0; transform: translate(24px, 63px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-24px, -63px) } }
+  #d157 { animation: d157 2s 1.57s ease-out forwards }
+  @keyframes d157 { 0% { opacity: 0; transform: translate(26px, 69px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-26px, -69px) } }
+  #d158 { animation: d158 2s 1.54s ease-out forwards }
+  @keyframes d158 { 0% { opacity: 0; transform: translate(49px, 65px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-49px, -65px) } }
+  #d159 { animation: d159 2s 1.95s ease-out forwards }
+  @keyframes d159 { 0% { opacity: 0; transform: translate(34px, 56px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-34px, -56px) } }
+  #d160 { animation: d160 2s 1.50s ease-out forwards }
+  @keyframes d160 { 0% { opacity: 0; transform: translate(-72px, 76px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(72px, -76px) } }
+  #d161 { animation: d161 2s 1.38s ease-out forwards }
+  @keyframes d161 { 0% { opacity: 0; transform: translate(-55px, 69px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(55px, -69px) } }
+  #d162 { animation: d162 2s 1.42s ease-out forwards }
+  @keyframes d162 { 0% { opacity: 0; transform: translate(-71px, 45px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(71px, -45px) } }
+  #d163 { animation: d163 2s 1.10s ease-out forwards }
+  @keyframes d163 { 0% { opacity: 0; transform: translate(-70px, 52px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(70px, -52px) } }
+  #d164 { animation: d164 2s 1.54s ease-out forwards }
+  @keyframes d164 { 0% { opacity: 0; transform: translate(-51px, 52px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(51px, -52px) } }
+  #d165 { animation: d165 2s 1.36s ease-out forwards }
+  @keyframes d165 { 0% { opacity: 0; transform: translate(-67px, 83px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(67px, -83px) } }
+  #d166 { animation: d166 2s 1.82s ease-out forwards }
+  @keyframes d166 { 0% { opacity: 0; transform: translate(-38px, 81px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(38px, -81px) } }
+  #d167 { animation: d167 2s 1.99s ease-out forwards }
+  @keyframes d167 { 0% { opacity: 0; transform: translate(-34px, 76px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(34px, -76px) } }
+  #d168 { animation: d168 2s 1.82s ease-out forwards }
+  @keyframes d168 { 0% { opacity: 0; transform: translate(-75px, 61px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(75px, -61px) } }
+  #d169 { animation: d169 2s 1.27s ease-out forwards }
+  @keyframes d169 { 0% { opacity: 0; transform: translate(-52px, 47px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(52px, -47px) } }
+  #d170 { animation: d170 2s 1.61s ease-out forwards }
+  @keyframes d170 { 0% { opacity: 0; transform: translate(-74px, 46px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(74px, -46px) } }
+  #d171 { animation: d171 2s 1.14s ease-out forwards }
+  @keyframes d171 { 0% { opacity: 0; transform: translate(-92px, 67px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(92px, -67px) } }
+  #d172 { animation: d172 2s 1.37s ease-out forwards }
+  @keyframes d172 { 0% { opacity: 0; transform: translate(-100px, 54px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(100px, -54px) } }
+  #d173 { animation: d173 2s 1.83s ease-out forwards }
+  @keyframes d173 { 0% { opacity: 0; transform: translate(-54px, 54px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(54px, -54px) } }
+  #d174 { animation: d174 2s 1.10s ease-out forwards }
+  @keyframes d174 { 0% { opacity: 0; transform: translate(-52px, 88px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(52px, -88px) } }
+  #d175 { animation: d175 2s 1.72s ease-out forwards }
+  @keyframes d175 { 0% { opacity: 0; transform: translate(-89px, 86px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(89px, -86px) } }
+  #d176 { animation: d176 2s 1.30s ease-out forwards }
+  @keyframes d176 { 0% { opacity: 0; transform: translate(-83px, 88px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(83px, -88px) } }
+  #d177 { animation: d177 2s 1.33s ease-out forwards }
+  @keyframes d177 { 0% { opacity: 0; transform: translate(-73px, 85px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(73px, -85px) } }
+  #d178 { animation: d178 2s 1.09s ease-out forwards }
+  @keyframes d178 { 0% { opacity: 0; transform: translate(-65px, 77px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(65px, -77px) } }
+  #d179 { animation: d179 2s 1.83s ease-out forwards }
+  @keyframes d179 { 0% { opacity: 0; transform: translate(-85px, 69px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(85px, -69px) } }
+  #d180 { animation: d180 2s 1.93s ease-out forwards }
+  @keyframes d180 { 0% { opacity: 0; transform: translate(-99px, 82px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(99px, -82px) } }
+  #d181 { animation: d181 2s 1.20s ease-out forwards }
+  @keyframes d181 { 0% { opacity: 0; transform: translate(-68px, 70px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(68px, -70px) } }
+  #d182 { animation: d182 2s 1.13s ease-out forwards }
+  @keyframes d182 { 0% { opacity: 0; transform: translate(-47px, 74px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(47px, -74px) } }
+  #d183 { animation: d183 2s 1.55s ease-out forwards }
+  @keyframes d183 { 0% { opacity: 0; transform: translate(-79px, 69px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(79px, -69px) } }
+  #d184 { animation: d184 2s 1.02s ease-out forwards }
+  @keyframes d184 { 0% { opacity: 0; transform: translate(-75px, 55px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(75px, -55px) } }
+  #d185 { animation: d185 2s 1.57s ease-out forwards }
+  @keyframes d185 { 0% { opacity: 0; transform: translate(91px, 74px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-91px, -74px) } }
+  #d186 { animation: d186 2s 1.42s ease-out forwards }
+  @keyframes d186 { 0% { opacity: 0; transform: translate(47px, 78px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-47px, -78px) } }
+  #d187 { animation: d187 2s 1.39s ease-out forwards }
+  @keyframes d187 { 0% { opacity: 0; transform: translate(63px, 54px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-63px, -54px) } }
+  #d188 { animation: d188 2s 1.73s ease-out forwards }
+  @keyframes d188 { 0% { opacity: 0; transform: translate(62px, 61px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-62px, -61px) } }
+  #d189 { animation: d189 2s 1.09s ease-out forwards }
+  @keyframes d189 { 0% { opacity: 0; transform: translate(48px, 58px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-48px, -58px) } }
+  #d190 { animation: d190 2s 1.34s ease-out forwards }
+  @keyframes d190 { 0% { opacity: 0; transform: translate(60px, 92px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-60px, -92px) } }
+  #d191 { animation: d191 2s 1.78s ease-out forwards }
+  @keyframes d191 { 0% { opacity: 0; transform: translate(30px, 91px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-30px, -91px) } }
+  #d192 { animation: d192 2s 1.09s ease-out forwards }
+  @keyframes d192 { 0% { opacity: 0; transform: translate(37px, 98px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-37px, -98px) } }
+  #d193 { animation: d193 2s 1.80s ease-out forwards }
+  @keyframes d193 { 0% { opacity: 0; transform: translate(67px, 70px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-67px, -70px) } }
+  #d194 { animation: d194 2s 1.57s ease-out forwards }
+  @keyframes d194 { 0% { opacity: 0; transform: translate(24px, 104px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-24px, -104px) } }
+  #d195 { animation: d195 2s 1.37s ease-out forwards }
+  @keyframes d195 { 0% { opacity: 0; transform: translate(28px, 99px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-28px, -99px) } }
+  #d196 { animation: d196 2s 1.38s ease-out forwards }
+  @keyframes d196 { 0% { opacity: 0; transform: translate(79px, 72px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-79px, -72px) } }
+  #d197 { animation: d197 2s 1.14s ease-out forwards }
+  @keyframes d197 { 0% { opacity: 0; transform: translate(84px, 76px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-84px, -76px) } }
+  #d198 { animation: d198 2s 1.02s ease-out forwards }
+  @keyframes d198 { 0% { opacity: 0; transform: translate(50px, 58px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-50px, -58px) } }
+  #d199 { animation: d199 2s 1.03s ease-out forwards }
+  @keyframes d199 { 0% { opacity: 0; transform: translate(92px, 63px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-92px, -63px) } }
+  #d200 { animation: d200 2s 1.30s ease-out forwards }
+  @keyframes d200 { 0% { opacity: 0; transform: translate(46px, 63px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-46px, -63px) } }
+  #d201 { animation: d201 2s 1.95s ease-out forwards }
+  @keyframes d201 { 0% { opacity: 0; transform: translate(24px, 102px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-24px, -102px) } }
+  #d202 { animation: d202 2s 1.56s ease-out forwards }
+  @keyframes d202 { 0% { opacity: 0; transform: translate(44px, 97px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-44px, -97px) } }
+  #d203 { animation: d203 2s 1.09s ease-out forwards }
+  @keyframes d203 { 0% { opacity: 0; transform: translate(81px, 83px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-81px, -83px) } }
+  #d204 { animation: d204 2s 1.25s ease-out forwards }
+  @keyframes d204 { 0% { opacity: 0; transform: translate(74px, 90px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-74px, -90px) } }
+  #d205 { animation: d205 2s 1.26s ease-out forwards }
+  @keyframes d205 { 0% { opacity: 0; transform: translate(65px, 95px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-65px, -95px) } }
+  #d206 { animation: d206 2s 1.38s ease-out forwards }
+  @keyframes d206 { 0% { opacity: 0; transform: translate(57px, 87px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-57px, -87px) } }
+  #d207 { animation: d207 2s 1.92s ease-out forwards }
+  @keyframes d207 { 0% { opacity: 0; transform: translate(81px, 78px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-81px, -78px) } }
+  #d208 { animation: d208 2s 1.92s ease-out forwards }
+  @keyframes d208 { 0% { opacity: 0; transform: translate(90px, 88px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-90px, -88px) } }
+  #d209 { animation: d209 2s 1.76s ease-out forwards }
+  @keyframes d209 { 0% { opacity: 0; transform: translate(60px, 79px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-60px, -79px) } }
+  #d210 { animation: d210 2s 1.90s ease-out forwards }
+  @keyframes d210 { 0% { opacity: 0; transform: translate(75px, 73px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-75px, -73px) } }
+  #d211 { animation: d211 2s 1.64s ease-out forwards }
+  @keyframes d211 { 0% { opacity: 0; transform: translate(71px, 78px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-71px, -78px) } }
+  #d212 { animation: d212 2s 1.99s ease-out forwards }
+  @keyframes d212 { 0% { opacity: 0; transform: translate(53px, 63px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-53px, -63px) } }
+  #d213 { animation: d213 2s 1.56s ease-out forwards }
+  @keyframes d213 { 0% { opacity: 0; transform: translate(65px, 76px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-65px, -76px) } }
+
+  #b1 { animation: b1 2s 1.95s ease-out forwards }
+  @keyframes b1 { 0% { opacity: 0; transform: translate(57px, 120px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-57px, -120px) } }
+  #b2 { animation: b2 2s 1.20s ease-out forwards }
+  @keyframes b2 { 0% { opacity: 0; transform: translate(35px, 169px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-35px, -169px) } }
+  #b3 { animation: b3 2s 1.09s ease-out forwards }
+  @keyframes b3 { 0% { opacity: 0; transform: translate(95px, 84px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-95px, -84px) } }
+  #b4 { animation: b4 2s 1.32s ease-out forwards }
+  @keyframes b4 { 0% { opacity: 0; transform: translate(-58px, 97px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(58px, -97px) } }
+  #b5 { animation: b5 2s 1.66s ease-out forwards }
+  @keyframes b5 { 0% { opacity: 0; transform: translate(71px, 89px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-71px, -89px) } }
+  #b6 { animation: b6 2s 1.61s ease-out forwards }
+  @keyframes b6 { 0% { opacity: 0; transform: translate(-93px, 99px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(93px, -99px) } }
+
+  #p1 { animation: p1 2s 1.56s ease-out forwards }
+  @keyframes p1 { 0% { opacity: 0; transform: translate(54px, 146px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-54px, -146px) } }
+  #p2 { animation: p2 2s 1.35s ease-out forwards }
+  @keyframes p2 { 0% { opacity: 0; transform: translate(58px, 134px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-58px, -134px) } }
+  #p3 { animation: p3 2s 1.95s ease-out forwards }
+  @keyframes p3 { 0% { opacity: 0; transform: translate(60px, 140px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-60px, -140px) } }
+  #p4 { animation: p4 2s 1.48s ease-out forwards }
+  @keyframes p4 { 0% { opacity: 0; transform: translate(-46px, 130px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(46px, -130px) } }
+  #p5 { animation: p5 2s 1.23s ease-out forwards }
+  @keyframes p5 { 0% { opacity: 0; transform: translate(-2px, 161px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(2px, -161px) } }
+  #p6 { animation: p6 2s 1.13s ease-out forwards }
+  @keyframes p6 { 0% { opacity: 0; transform: translate(10px, 158px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-10px, -158px) } }
+  #p7 { animation: p7 2s 1.55s ease-out forwards }
+  @keyframes p7 { 0% { opacity: 0; transform: translate(15px, 152px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-15px, -152px) } }
+  #p8 { animation: p8 2s 1.90s ease-out forwards }
+  @keyframes p8 { 0% { opacity: 0; transform: translate(99px, 101px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-99px, -101px) } }
+  #p9 { animation: p9 2s 1.49s ease-out forwards }
+  @keyframes p9 { 0% { opacity: 0; transform: translate(99px, 77px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-99px, -77px) } }
+  #p10 { animation: p10 2s 1.80s ease-out forwards }
+  @keyframes p10 { 0% { opacity: 0; transform: translate(118px, 80px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-118px, -80px) } }
+  #p11 { animation: p11 2s 1.69s ease-out forwards }
+  @keyframes p11 { 0% { opacity: 0; transform: translate(102px, 86px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-102px, -86px) } }
+  #p12 { animation: p12 2s 1.97s ease-out forwards }
+  @keyframes p12 { 0% { opacity: 0; transform: translate(-52px, 83px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(52px, -83px) } }
+  #p13 { animation: p13 2s 1.20s ease-out forwards }
+  @keyframes p13 { 0% { opacity: 0; transform: translate(-83px, 85px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(83px, -85px) } }
+  #p14 { animation: p14 2s 1.95s ease-out forwards }
+  @keyframes p14 { 0% { opacity: 0; transform: translate(-86px, 80px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(86px, -80px) } }
+  #p15 { animation: p15 2s 1.03s ease-out forwards }
+  @keyframes p15 { 0% { opacity: 0; transform: translate(-77px, 79px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(77px, -79px) } }
+  #p16 { animation: p16 2s 1.70s ease-out forwards }
+  @keyframes p16 { 0% { opacity: 0; transform: translate(54px, 194px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-54px, -194px) } }
+  #p17 { animation: p17 2s 1.35s ease-out forwards }
+  @keyframes p17 { 0% { opacity: 0; transform: translate(105px, 163px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-105px, -163px) } }
+  #p18 { animation: p18 2s 1.19s ease-out forwards }
+  @keyframes p18 { 0% { opacity: 0; transform: translate(-81px, 179px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(81px, -179px) } }
+  #p19 { animation: p19 2s 1.36s ease-out forwards }
+  @keyframes p19 { 0% { opacity: 0; transform: translate(-135px, 119px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(135px, -119px) } }
+  #p20 { animation: p20 2s 1.76s ease-out forwards }
+  @keyframes p20 { 0% { opacity: 0; transform: translate(-50px, 192px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(50px, -192px) } }
+  #p21 { animation: p21 2s 1.04s ease-out forwards }
+  @keyframes p21 { 0% { opacity: 0; transform: translate(61px, 89px) } 10%, 70% { opacity: 1 } 100% { opacity: 0; transform: translate(-61px, -89px) } }
+
+]]>
+</style>
+
+<g transform="translate(10 24)">
+<g id="s1">
+<path fill="url(#lg)" d="M162.55 302.58 138.06 71.46l4.69-25.87-19.8-18.42 39.6 275.41z"/>
+<path fill="url(#lg1)" d="m150.34 23.51-27.39 3.66 19.8 18.42-4.69 25.87 24.55-12.12 24.43 12.12-4.66-25.87 19.83-18.42-27.38-3.66L162.6 0l-12.26 23.51z"/>
+<path fill="#fff" d="m169.18 29.15-6.58-12.66-6.61 12.66-14.75 1.97 10.66 9.92-2.53 13.94 13.23-6.53 13.16 6.53-2.51-13.94 10.68-9.92-14.75-1.97z"/>
+<path fill="url(#lg2)" d="m138.06 71.46 24.49 231.12 24.49-231.12-24.43-12.12-24.55 12.12z"/>
+<path fill="url(#lg3)" d="m182.38 45.59 4.66 25.87-24.49 231.12 39.66-275.41-19.83 18.42z"/>
+</g>
+<g id="s2">
+<path fill="url(#lg4)" d="m90.44 52.66-20.86 8.69 20.09 10.26 2.43 21.32 16.6-14.73 22.27 4.33-9.85-19.33 11.35-18.69-22.59 2.95-15.3-15.87-4.14 21.07z"/>
+<path fill="#fff" d="m106.67 53.16-8.23-8.55-2.23 11.35-11.24 4.69 10.82 5.52 1.31 11.48 8.94-7.93 11.99 2.33-5.3-10.41 6.12-10.06-12.18 1.58z"/>
+<path fill="url(#lg5)" d="m92.1 92.93 74.39 176.32-35.52-186.72-22.27-4.33-16.6 14.73z"/>
+<path fill="url(#lg6)" d="M166.49 269.25 92.1 92.93l-2.43-21.32-20.09-10.26 96.91 207.9z"/>
+<path fill="url(#lg7)" d="m121.12 63.2 9.85 19.33 35.52 186.72-34.02-224.74-11.35 18.69z"/>
+</g>
+<g id="s3">
+<path fill="url(#lg8)" d="m214.31 47.46-22.6-2.95 11.35 18.69-9.84 19.33 22.26-4.33 16.61 14.73 2.42-21.32 20.1-10.26-20.87-8.69-4.14-21.07-15.29 15.87z"/>
+<path fill="#fff" d="m217.51 53.16 8.24-8.55 2.23 11.35 11.24 4.69-10.83 5.52-1.3 11.48-8.95-7.93-11.99 2.33 5.3-10.41-6.11-10.06 12.17 1.58z"/>
+<path fill="url(#lg9)" d="m193.22 82.53-35.53 186.72 74.4-176.32-16.61-14.73-22.26 4.33z"/>
+<path fill="url(#lg10)" d="m234.51 71.61-2.42 21.32-74.4 176.32 96.92-207.9-20.1 10.26z"/>
+<path fill="url(#lg11)" d="m157.69 269.25 35.53-186.72 9.84-19.33-11.35-18.69-34.02 224.74z"/>
+</g>
+<g id="s4">
+<path fill="url(#lg12)" d="m131.84 115.87-12.66 2.58 9.93 7.88-1.24 12.12 10.98-6.4 11.91 4.81-3.13-11.82 8.58-9.16-12.93-.8-6.58-10.48-4.86 11.27z"/>
+<path fill="#fff" d="m134.84 118.46 2.48-5.77 3.37 5.36 6.62.41-4.4 4.69 1.61 6.05-6.1-2.46-5.62 3.27.64-6.2-5.08-4.03 6.48-1.32z"/>
+<path fill="url(#lg13)" d="m127.87 138.45 30.16 145.31-7.27-146.9-11.91-4.81-10.98 6.4z"/>
+<path fill="url(#lg14)" d="m147.63 125.04 3.13 11.82 7.27 146.9-1.82-167.88-8.58 9.16z"/>
+<path fill="url(#lg15)" d="m119.18 118.45 38.85 165.31-30.16-145.31 1.24-12.12-9.93-7.88z"/>
+</g>
+<g id="s5">
+<path fill="url(#lg16)" d="m177.73 115.08-12.93.8 8.58 9.16-3.13 11.82 11.91-4.81 10.98 6.4-1.24-12.12 9.94-7.88-12.67-2.58-4.86-11.27-6.58 10.48z"/>
+<path fill="#fff" d="m186.18 118.46-2.49-5.77-3.37 5.36-6.62.41 4.4 4.69-1.61 6.05 6.1-2.46 5.62 3.27-.64-6.2 5.08-4.03-6.47-1.32z"/>
+<path fill="url(#lg17)" d="m170.25 136.86-7.27 146.89 30.16-145.3-10.98-6.4-11.91 4.81z"/>
+<path fill="url(#lg18)" d="m162.98 283.75 7.27-146.89 3.13-11.82-8.58-9.16-1.82 167.87z"/>
+<path fill="url(#lg19)" d="m191.9 126.33 1.24 12.12-30.16 145.3 38.86-165.3-9.94 7.88z"/>
+</g>
+<g id="s6">
+<path fill="url(#lg20)" d="m274.44 88.21-9.89 7.86 12.61 2.63 4.96 11.27 6.53-10.52 12.94-.92-8.65-9.06 3.07-11.82-11.85 4.87-10.98-6.47 1.26 12.16z"/>
+<path fill="#fff" d="m284.35 86.2 6.38-2.63-1.65 6.37 4.66 4.89-6.97.49-3.52 5.66-2.67-6.06-6.79-1.42 5.33-4.24-.68-6.55 5.91 3.49z"/>
+<path fill="url(#lg21)" d="m178.22 219.88 103.9-109.91-4.96-11.27-12.61-2.63-86.33 123.81z"/>
+<path fill="url(#lg22)" d="m288.65 99.45-6.53 10.52-103.9 109.91L301.59 98.53l-12.94.92z"/>
+<path fill="#01a0e3" d="m178.22 219.88 86.33-123.81 9.89-7.86-1.26-12.16-94.96 143.83z"/>
+</g>
+<g id="s7">
+<path fill="url(#lg23)" d="M45.04 89.67 33.19 84.8l3.07 11.82-8.66 9.07 12.95.92 6.53 10.51 4.96-11.27 12.61-2.63-9.89-7.86 1.26-12.16-10.98 6.47z"/>
+<path fill="#fff" d="m44.85 93.35-6.39-2.62 1.66 6.36-4.67 4.89 6.98.49 3.52 5.67 2.67-6.07 6.79-1.42-5.33-4.23.68-6.55-5.91 3.48z"/>
+<path fill="url(#lg24)" d="m52.04 105.85-4.96 11.27 103.89 109.91-86.32-123.81-12.61 2.63z"/>
+<path fill="url(#lg25)" d="M150.97 227.03 47.08 117.12l-6.53-10.51-12.95-.92 123.37 121.34z"/>
+<path fill="#01a0e3" d="m54.76 95.36 9.89 7.86 86.32 123.81L56.02 83.2l-1.26 12.16z"/>
+</g>
+<g id="s8">
+<path fill="url(#lg26)" d="m278.5 129.91-15.22 8.18 16.19 6.47 3.75 16.22 11.42-12.52 17.54 1.81-9.26-14.15 7.13-15.07-17.09 3.73-13.03-11.22-1.43 16.55z"/>
+<path fill="#fff" d="m292.25 129.52 9.21-2.01-3.84 8.12 4.99 7.62-9.45-.98-6.15 6.74-2.02-8.73-8.72-3.49 8.2-4.4.77-8.91 7.01 6.04z"/>
+<path fill="url(#lg27)" d="m166.25 234.08 116.97-73.3-3.75-16.22-16.19-6.47-97.03 95.99z"/>
+<path fill="#01a0e3" d="m166.25 234.08 97.03-95.99 15.22-8.18 1.43-16.54v-.01L166.25 234.08z"/>
+<path fill="#01a0e3" d="m283.22 160.78-116.97 73.3 145.93-84.01-17.54-1.81-11.42 12.52z"/>
+</g>
+<g id="s9">
+<path fill="url(#lg28)" d="M30.34 126.73 13.25 123l7.13 15.07-9.27 14.15 17.55-1.81 11.42 12.52 3.75-16.22 16.19-6.47-15.23-8.18-1.42-16.54-13.03 11.21z"/>
+<path fill="#fff" d="m31.04 131.67-9.2-2.01 3.83 8.12-4.98 7.62 9.45-.98 6.15 6.74 2.02-8.73 8.72-3.49-8.2-4.4-.77-8.91-7.02 6.04z"/>
+<path fill="url(#lg29)" d="m43.83 146.71-3.75 16.22 116.97 73.3-97.03-95.99-16.19 6.47z"/>
+<path fill="#01a0e3" d="m44.79 132.06 15.23 8.18 97.03 95.99L43.37 115.52l1.42 16.54z"/>
+<path fill="#01a0e3" d="m11.11 152.22 145.94 84.01-116.97-73.3-11.42-12.52-17.55 1.81z"/>
+</g>
+<g id="s10">
+<path fill="url(#lg30)" d="m237.25 98.65-18.19-7.43 5.38 18.08-12.43 13.95 19.51 1.29 10.61 15.94 6.68-17.24 18.99-4.14-15.49-11.84 1.16-18.48-16.22 9.87z"/>
+<path fill="#fff" d="m238.67 104.1 8.74-5.31-.62 9.95 8.34 6.38-10.23 2.23-3.6 9.29-5.72-8.59-10.5-.69 6.69-7.52-2.89-9.73 9.79 3.99z"/>
+<path fill="url(#lg31)" d="m121.98 305.4 120.15-164.92-10.61-15.94-19.51-1.29-90.03 182.15z"/>
+<path fill="url(#lg32)" d="m121.98 305.4 90.03-182.15 12.43-13.95-5.38-18.08-97.08 214.18z"/>
+<path fill="url(#lg33)" d="m248.81 123.24-6.68 17.24L121.98 305.4 267.8 119.1l-18.99 4.14z"/>
+</g>
+<g id="s11">
+<path fill="url(#lg34)" d="M71.87 107.26 56.38 119.1l18.99 4.14 6.68 17.24 10.62-15.94 19.5-1.29-12.43-13.95 5.39-18.08-18.2 7.43-16.21-9.87 1.15 18.48z"/>
+<path fill="#fff" d="m85.51 104.1-8.73-5.31.62 9.95-8.34 6.38 10.22 2.23 3.6 9.29 5.72-8.59 10.51-.69-6.7-7.52 2.9-9.73-9.8 3.99z"/>
+<path fill="url(#lg35)" d="m92.67 124.54-10.62 15.94L202.21 305.4l-90.04-182.15-19.5 1.29z"/>
+<path fill="url(#lg36)" d="m99.74 109.3 12.43 13.95 90.04 182.15-97.08-214.18-5.39 18.08z"/>
+<path fill="url(#lg37)" d="m56.38 119.1 145.83 186.3L82.05 140.48l-6.68-17.24-18.99-4.14z"/>
+</g>
+<g id="dots" fill="#e1f3fc">
+<path id="d1" d="M143.59 61.65c0-.45.36-.81.81-.82s.81.36.81.81-.36.81-.81.81-.81-.36-.81-.81"/>
+<path id="d2" d="M157.1 70.48a.56.56 0 1 1 1.12 0 .56.56 0 0 1-1.12 0"/>
+<path id="d3" d="M182.36 75.85c0-.31.25-.56.57-.56s.56.25.56.56-.25.56-.56.56-.57-.25-.57-.56"/>
+<path id="d4" d="M143.63 32.26c0-.45.36-.81.81-.82s.81.36.81.81-.36.81-.81.81-.81-.36-.81-.81"/>
+<path id="d5" d="M173.85 40.5a.56.56 0 1 1 1.12 0 .56.56 0 0 1-1.12 0"/>
+<path id="d6" d="M182.68 42.04c0-.31.25-.56.57-.56s.56.25.56.56-.25.56-.56.56-.57-.25-.57-.56"/>
+<path id="d7" d="M152.54 70.65a.56.56 0 1 1 1.12 0 .56.56 0 0 1-1.12 0"/>
+<path id="d8" d="M145.83 77.35a.56.56 0 1 1 1.12 0 .56.56 0 0 1-1.12 0"/>
+<path id="d9" d="M181.71 68.35a.56.56 0 1 1 1.12 0 .56.56 0 0 1-1.12 0"/>
+<path id="d10" d="M173.26 76.41a.56.56 0 1 1 1.12 0 .56.56 0 0 1-1.12 0"/>
+<path id="d11" d="M149.85 38.79a.56.56 0 1 1 1.12 0 .56.56 0 0 1-1.12 0"/>
+<path id="d12" d="M183.17 74.49c0-.45.36-.81.81-.82s.81.36.81.81-.36.81-.81.81-.81-.36-.81-.81"/>
+<path id="d13" d="M181.84 34a.56.56 0 1 1 1.12 0 .56.56 0 0 1-1.12 0"/>
+<path id="d14" d="M160.79 77.94a.56.56 0 1 1 1.12 0 .56.56 0 0 1-1.12 0"/>
+<path id="d15" d="M174.91 54.21c0-.45.36-.81.81-.82s.81.36.81.81-.36.81-.81.81-.81-.36-.81-.81"/>
+<path id="d16" d="M158.01 48.89a.56.56 0 1 1 1.12 0 .56.56 0 0 1-1.12 0"/>
+<circle id="d17" cx="66.39" cy="124.09" r=".97"/>
+<path id="d18" d="M83.5 81.13a.97.97 0 1 0 .31-1.34.97.97 0 0 0-.31 1.34Z"/>
+<path id="d19" d="M68.86 100.1a.68.68 0 1 0 1.15-.73c-.2-.32-.62-.41-.94-.22s-.42.62-.22.94Z"/>
+<path id="d20" d="M34.74 119.68a.68.68 0 1 0 1.15-.73c-.2-.32-.62-.41-.94-.22s-.42.62-.22.94Z"/>
+<path id="d21" d="M31.13 119.51c.11.17.33.22.5.12s.22-.33.11-.5-.33-.22-.5-.12-.22.33-.12.5Z"/>
+<path id="d22" d="M29.35 114.63c.27.43.84.56 1.28.29s.56-.84.29-1.27a.92.92 0 0 0-1.56.98Z"/>
+<path id="d23" d="M93.22 97.97a.68.68 0 1 0 1.15-.73c-.2-.32-.62-.41-.94-.22s-.41.62-.21.94Z"/>
+<path id="d24" d="M66.71 74.08c-.29-.45-.89-.59-1.34-.32s-.59.88-.31 1.34.88.59 1.34.31.59-.88.31-1.34Z"/>
+<path id="d25" d="M92.74 59.9a.68.68 0 1 0-1.15.73c.2.32.62.41.94.22s.41-.62.21-.94Z"/>
+<path id="d26" d="M61.82 86.76c-.2-.32-.62-.41-.94-.22s-.42.62-.22.94.62.41.94.21.41-.62.21-.94Z"/>
+<path id="d27" d="M81.19 93.89c-.29-.45-.89-.59-1.34-.32s-.59.89-.31 1.34.89.59 1.34.31.59-.89.31-1.34Z"/>
+<path id="d28" d="M55.43 129.42c-.29-.45-.89-.59-1.34-.32s-.59.89-.31 1.34.89.59 1.34.31.59-.89.31-1.34Z"/>
+<path id="d29" d="M92.2 98.34c-.2-.32-.62-.41-.94-.22s-.42.62-.22.94.62.41.94.21.41-.62.21-.94Z"/>
+<path id="d30" d="M53.57 116.02c-.2-.32-.62-.41-.94-.22s-.42.62-.22.94.62.41.94.21.41-.62.21-.94Z"/>
+<path id="d31" d="M93.08 91.78a.68.68 0 1 0-1.15.73c.2.32.62.41.94.22s.41-.62.21-.94Z"/>
+<path id="d32" d="M78.21 90.14c-.2-.32-.62-.41-.94-.22s-.42.62-.22.94.62.41.94.21.41-.62.21-.94Z"/>
+<path id="d33" d="M64.42 82.72c-.2-.32-.62-.41-.94-.22s-.42.62-.22.94.62.41.94.21.41-.62.21-.94Z"/>
+<path id="d34" d="M60.22 75.24c-.2-.32-.62-.41-.94-.22s-.42.62-.22.94.62.41.94.21.41-.62.21-.94Z"/>
+<path id="d35" d="M71.37 77.79c-.2-.32-.62-.41-.94-.22s-.41.62-.21.94.62.41.94.21.41-.62.21-.94Z"/>
+<path id="d36" d="M61.17 130.61c-.2-.32-.62-.41-.94-.22s-.42.62-.22.94.62.41.94.21.41-.62.21-.94Z"/>
+<path id="d37" d="M67.51 143.42c-.2-.32-.62-.41-.94-.22s-.42.62-.22.94.62.41.94.21.41-.62.21-.94Z"/>
+<path id="d38" d="M72.7 86.07a.68.68 0 1 0-1.15.73c.2.32.62.41.94.22s.42-.62.22-.94Z"/>
+<path id="d39" d="M63.11 98.64a.68.68 0 1 0-1.15.73c.2.32.62.41.94.22s.42-.62.22-.94Z"/>
+<path id="d40" d="M64.57 92.26c-.29-.46-.89-.59-1.34-.32s-.59.88-.31 1.34.89.59 1.34.31.59-.89.31-1.34Z"/>
+<path id="d41" d="M87.35 95.4c-.29-.46-.89-.59-1.34-.32s-.59.88-.31 1.34.89.59 1.34.31.59-.89.31-1.34Z"/>
+<path id="d42" d="M67.93 93.79c-.2-.32-.62-.41-.94-.22s-.41.62-.22.94.62.41.94.22.41-.62.21-.94Z"/>
+<circle id="d43" cx="222.7" cy="145.55" r=".97"/>
+<path id="d44" d="M258.95 97.03a.97.97 0 1 0 .31-1.34.97.97 0 0 0-.31 1.34Z"/>
+<path id="d45" d="M258.03 125.19a.68.68 0 1 0 1.15-.73c-.2-.32-.62-.41-.94-.22s-.42.62-.22.94Z"/>
+<path id="d46" d="M270.58 128.47a.68.68 0 1 0 1.15-.73c-.2-.32-.62-.41-.94-.22s-.42.62-.22.94Z"/>
+<path id="d47" d="M268.67 113.86a.68.68 0 1 0 1.15-.73c-.2-.32-.62-.41-.94-.22s-.41.62-.21.94Z"/>
+<path id="d48" d="M242.16 89.98c-.29-.45-.89-.59-1.34-.32s-.59.88-.31 1.34.88.59 1.34.31.59-.88.31-1.34Z"/>
+<path id="d49" d="M214.11 168.3c-.2-.32-.62-.41-.94-.22s-.42.62-.22.94.62.41.94.21.41-.62.21-.94Z"/>
+<path id="d50" d="M249.84 53.21a.87.87 0 0 0-1.48.93c.25.41.79.53 1.2.27s.53-.79.27-1.2Z"/>
+<path id="d51" d="M113.84 40.41a.87.87 0 0 0-1.48.93c.25.41.79.53 1.2.27s.53-.79.27-1.2Z"/>
+<path id="d52" d="M114.22 31.07a1.31 1.31 0 0 0-2.23 1.4 1.31 1.31 0 1 0 2.22-1.4Z"/>
+<path id="d53" d="M209.81 42.28a.87.87 0 0 0-1.48.93c.25.41.79.53 1.2.27s.53-.79.27-1.2Z"/>
+<path id="d54" d="M209.24 38.56c-.05-.09-.17-.11-.26-.06s-.11.17-.06.26.17.11.26.06.11-.17.06-.26Z"/>
+<path id="d55" d="M243.53 47.48c-.13-.21-.41-.27-.62-.14s-.28.41-.14.62.41.28.62.14.28-.41.14-.62Z"/>
+<path id="d56" d="M255.87 124.91c-.29-.45-.89-.59-1.34-.32s-.59.89-.31 1.34.89.59 1.34.31.59-.89.31-1.34Z"/>
+<path id="d57" d="M189.21 155.4c-.29-.45-.89-.59-1.34-.32s-.59.89-.31 1.34.89.59 1.34.31.59-.89.31-1.34Z"/>
+<path id="d58" d="M267.65 114.24c-.2-.32-.62-.41-.94-.22s-.42.62-.22.94.62.41.94.21.41-.62.21-.94Z"/>
+<path id="d59" d="M229.01 131.92c-.2-.32-.62-.41-.94-.22s-.42.62-.22.94.62.41.94.21.41-.62.21-.94Z"/>
+<path id="d60" d="M268.53 107.68a.68.68 0 1 0-1.15.73c.2.32.62.41.94.22s.41-.62.21-.94Z"/>
+<path id="d61" d="M258.98 82.98c-.2-.32-.62-.41-.94-.22s-.42.62-.22.94.62.41.94.21.41-.62.21-.94Z"/>
+<path id="d62" d="M252.87 77.61c-.2-.32-.62-.41-.94-.22s-.42.62-.22.94.62.41.94.21.41-.62.21-.94Z"/>
+<path id="d63" d="M222.28 98.82c-.2-.32-.62-.41-.94-.22s-.42.62-.22.94.62.41.94.21.41-.62.21-.94Z"/>
+<path id="d64" d="M226.28 94.4c-.2-.32-.62-.41-.94-.22s-.41.62-.22.94.62.41.94.22.41-.62.21-.94Z"/>
+<path id="d65" d="M235.67 91.13c-.2-.32-.62-.41-.94-.22s-.42.62-.22.94.62.41.94.21.41-.62.21-.94Z"/>
+<path id="d66" d="M246.74 85.07c-.2-.32-.62-.41-.94-.22s-.41.62-.21.94.62.41.94.21.41-.62.21-.94Z"/>
+<path id="d67" d="M189.74 168.62c-.2-.32-.62-.41-.94-.22s-.42.62-.22.94.62.41.94.21.41-.62.21-.94Z"/>
+<path id="d68" d="M213.69 116.3c-.2-.32-.62-.41-.94-.22s-.42.62-.22.94.62.41.94.21.41-.62.21-.94Z"/>
+<path id="d69" d="M188.44 178.77a.68.68 0 1 0-1.15.73c.2.32.62.41.94.22s.42-.62.22-.94Z"/>
+<path id="d70" d="M214.57 135.1a.68.68 0 1 0-1.15.73c.2.32.62.41.94.22s.42-.62.22-.94Z"/>
+<path id="d71" d="M239.66 77.62a.68.68 0 1 0-1.15.73c.2.32.62.41.94.22s.42-.62.22-.94Z"/>
+<path id="d72" d="M206.35 152.84c-.29-.46-.89-.59-1.34-.32s-.59.88-.31 1.34.89.59 1.34.31.59-.89.31-1.34Z"/>
+<path id="d73" d="M262.8 111.3c-.29-.46-.89-.59-1.34-.32s-.59.88-.31 1.34.89.59 1.34.31.59-.89.31-1.34Z"/>
+<path id="d74" d="M249.87 128.14c-.2-.32-.62-.41-.94-.22s-.41.62-.22.94.62.41.94.22.41-.62.21-.94Z"/>
+<path id="d75" d="M292.19 115.14a.97.97 0 1 0 .31-1.34.97.97 0 0 0-.31 1.34Z"/>
+<path id="d76" d="M296.82 119.44c.21.34.66.44 1.01.23s.44-.66.23-1.01-.66-.44-1.01-.23-.44.66-.23 1.01Z"/>
+<circle id="d77" cx="120.53" cy="104.64" r=".97"/>
+<path id="d78" d="M165.76 95.06a.97.97 0 1 0 1.77.79c.22-.49 0-1.06-.49-1.29s-1.06 0-1.29.49Z"/>
+<path id="d79" d="M141.83 109.92c-.15.34 0 .75.34.9s.75 0 .9-.34 0-.75-.34-.9-.75 0-.9.34Z"/>
+<path id="d80" d="M145.28 103.35c-.15.34 0 .75.34.9s.75 0 .9-.34 0-.75-.34-.9-.75 0-.9.34Z"/>
+<path id="d81" d="M157.15 112.48c-.15.34 0 .75.34.9s.74 0 .9-.34 0-.75-.34-.9-.75 0-.9.34Z"/>
+<path id="d82" d="M161.42 67.09c.22-.49 0-1.06-.49-1.29s-1.06 0-1.28.49 0 1.06.49 1.28 1.06 0 1.29-.49Z"/>
+<path id="d83" d="M176.64 87.53c.15-.34 0-.74-.34-.9a.68.68 0 1 0 .34.9Z"/>
+<path id="d84" d="M184.62 80.57c.15-.34 0-.74-.34-.9a.68.68 0 1 0 .34.9Z"/>
+<path id="d85" d="M145.74 94.26c.15-.34 0-.75-.34-.9s-.75 0-.9.34 0 .75.34.9.75 0 .9-.34Z"/>
+<path id="d86" d="M207.26 85.17c.15-.34 0-.74-.34-.9s-.75 0-.9.34 0 .75.34.9.75 0 .9-.34Z"/>
+<path id="d87" d="M189.27 85.71c.15-.34 0-.74-.34-.9a.68.68 0 1 0 .34.9Z"/>
+<path id="d88" d="M140.87 107.96c.22-.49 0-1.07-.49-1.29s-1.06 0-1.28.49a.98.98 0 0 0 1.78.8Z"/>
+<path id="d89" d="M133.28 81.71c.22-.49 0-1.06-.49-1.29s-1.06 0-1.28.49a.98.98 0 0 0 1.78.8Z"/>
+<path id="d90" d="M156.27 111.84c.15-.34 0-.74-.34-.9s-.75 0-.9.34 0 .75.34.9.75 0 .9-.34Z"/>
+<path id="d91" d="M120.14 89.5c.15-.34 0-.74-.34-.9s-.75 0-.9.34 0 .75.34.9.75 0 .9-.34Z"/>
+<path id="d92" d="M162.22 108.93c.15-.34 0-.74-.34-.9a.68.68 0 1 0 .34.9Z"/>
+<path id="d93" d="M200.46 87.66c.15-.34 0-.74-.34-.9s-.75 0-.9.34 0 .75.34.9.75 0 .9-.34Z"/>
+<path id="d94" d="M178.55 79.23c.15-.34 0-.74-.34-.9s-.75 0-.9.34 0 .75.34.9.75 0 .9-.34Z"/>
+<path id="d95" d="M143.94 65.54c.15-.34 0-.75-.34-.9s-.75 0-.9.34 0 .75.34.9.74 0 .9-.34Z"/>
+<path id="d96" d="M149.84 66.42c.15-.34 0-.74-.34-.9s-.75 0-.9.34 0 .75.34.9.75 0 .9-.34Z"/>
+<path id="d97" d="M144.89 73.6c.15-.34 0-.74-.34-.9s-.75 0-.9.34 0 .75.34.9.75 0 .9-.34Z"/>
+<path id="d98" d="M161.82 83.11c.15-.34 0-.75-.34-.9s-.75 0-.9.34 0 .75.34.9.75 0 .9-.34Z"/>
+<path id="d99" d="M136.57 81.16c.15-.34 0-.74-.34-.9s-.75 0-.9.34 0 .75.34.9.75 0 .9-.34Z"/>
+<path id="d100" d="M132.12 68.5c.15-.34 0-.74-.34-.9s-.75 0-.9.34 0 .75.34.9.75 0 .9-.34Z"/>
+<path id="d101" d="M155.67 88.81c.15-.34 0-.75-.34-.9s-.75 0-.9.34 0 .75.34.9.75 0 .9-.34Z"/>
+<path id="d102" d="M139.89 87.8c.15-.34 0-.75-.34-.9s-.75 0-.9.34 0 .75.34.9.75 0 .9-.34Z"/>
+<path id="d103" d="M146.01 85.48c.22-.49 0-1.07-.49-1.29a.97.97 0 1 0-.79 1.77.98.98 0 0 0 1.29-.49Z"/>
+<path id="d104" d="M156.03 106.18c.22-.49 0-1.07-.49-1.29a.97.97 0 1 0-.79 1.77.98.98 0 0 0 1.29-.49Z"/>
+<path id="d105" d="M134.85 104.76c.15-.34 0-.74-.34-.9s-.75 0-.9.34 0 .75.34.9.75 0 .9-.34Z"/>
+<circle id="d106" cx="164.04" cy="179.67" r=".97"/>
+<path id="d107" d="M147.29 159.27c-.28.46-.87.61-1.33.34s-.61-.87-.34-1.33.87-.61 1.33-.34.61.87.34 1.33Z"/>
+<path id="d108" d="M147 178.77c-.19.32-.61.43-.93.24s-.43-.61-.24-.93.61-.43.93-.24.43.61.24.93Z"/>
+<path id="d109" d="M150.39 172.18c-.19.32-.61.43-.93.24s-.43-.61-.24-.93.61-.43.93-.24.43.61.24.93Z"/>
+<path id="d110" d="M136.11 167.69c-.19.32-.61.43-.93.24s-.43-.61-.24-.93.61-.43.93-.24.43.61.24.93Z"/>
+<path id="d111" d="M123.84 159.61c.28-.46.87-.61 1.33-.34s.61.87.34 1.33-.87.61-1.33.34-.61-.87-.34-1.33Z"/>
+<path id="d112" d="M111.86 139.31c.19-.32.61-.43.93-.24s.43.61.24.93-.61.43-.93.24-.43-.61-.24-.93Z"/>
+<path id="d113" d="M112.93 129.78c.19-.32.61-.43.93-.24s.43.61.24.93-.61.43-.93.24-.43-.61-.24-.93Z"/>
+<path id="d114" d="M157.58 166.59c.19-.32.61-.43.93-.24s.43.61.24.93-.61.43-.93.24-.43-.61-.24-.93Z"/>
+<path id="d115" d="M150.84 87.16c.19-.32.61-.43.93-.24s.43.61.24.93-.61.43-.93.24-.43-.61-.24-.93Z"/>
+<path id="d116" d="M105.75 154.49c.19-.32.61-.43.93-.24s.43.61.24.93-.61.43-.93.24-.43-.61-.24-.93Z"/>
+<path id="d117" d="M149.15 178.44c.27-.46.87-.61 1.33-.34s.61.87.34 1.33-.87.61-1.33.34-.61-.87-.34-1.33Z"/>
+<path id="d118" d="M175.01 169.6c.27-.46.87-.61 1.33-.34s.61.87.34 1.33-.87.61-1.33.34-.61-.87-.34-1.33Z"/>
+<path id="d119" d="M176.16 184.84c.19-.32.61-.43.93-.24s.43.61.24.93-.61.43-.93.24-.43-.61-.24-.93Z"/>
+<path id="d120" d="M112.23 109.87c.19-.32.61-.43.93-.24s.43.61.24.93-.61.43-.93.24-.43-.61-.24-.93Z"/>
+<path id="d121" d="M119.7 156.07c.19-.32.61-.43.93-.24s.43.61.24.93-.61.43-.93.24-.43-.61-.24-.93Z"/>
+<path id="d122" d="M182.15 151.6c.19-.32.61-.43.93-.24s.43.61.24.93-.61.43-.93.24-.43-.61-.24-.93Z"/>
+<path id="d123" d="M176.35 153.27c.19-.32.61-.43.93-.24s.43.61.24.93-.61.43-.93.24-.43-.61-.24-.93Z"/>
+<path id="d124" d="M161.86 171.95c.19-.32.61-.43.93-.24s.43.61.24.93-.61.43-.93.24-.43-.61-.24-.93Z"/>
+<path id="d125" d="M159.43 154.83c.19-.32.61-.43.93-.24s.43.61.24.93-.61.43-.93.24-.43-.61-.24-.93Z"/>
+<path id="d126" d="M173.57 166.59c.19-.32.61-.43.93-.24s.43.61.24.93-.61.43-.93.24-.43-.61-.24-.93Z"/>
+<path id="d127" d="M186.5 162.98c.19-.32.61-.43.93-.24s.43.61.24.93-.61.43-.93.24-.43-.61-.24-.93Z"/>
+<path id="d128" d="M156.35 155.33c.19-.32.61-.43.93-.24s.43.61.24.93-.61.43-.93.24-.43-.61-.24-.93Z"/>
+<path id="d129" d="M166.23 167.68c.19-.32.61-.43.93-.24s.43.61.24.93-.61.43-.93.24-.43-.61-.24-.93Z"/>
+<path id="d130" d="M164.63 161.34c.28-.46.87-.61 1.33-.34s.61.87.34 1.33-.87.61-1.33.34-.61-.87-.34-1.33Z"/>
+<path id="d131" d="M141.92 164.99c.28-.46.87-.61 1.33-.34s.61.87.34 1.33-.87.61-1.33.34-.61-.87-.34-1.33Z"/>
+<path id="d132" d="M156.31 174.44c.19-.32.61-.43.93-.24s.43.61.24.93-.61.43-.93.24-.43-.61-.24-.93Z"/>
+<circle id="d133" cx="135.62" cy="179.67" r=".97"/>
+<path id="d134" d="M117.03 150.64c-.28.46-.87.61-1.33.34s-.61-.87-.34-1.33.87-.61 1.33-.34.61.87.34 1.33Z"/>
+<path id="d135" d="M118.58 178.77c-.19.32-.61.43-.93.24s-.43-.61-.24-.93.61-.43.93-.24.43.61.24.93Z"/>
+<path id="d136" d="M121.98 172.18c-.19.32-.61.43-.93.24s-.43-.61-.24-.93.61-.43.93-.24.43.61.24.93Z"/>
+<path id="d137" d="M107.69 167.69c-.19.32-.61.43-.93.24s-.43-.61-.24-.93.61-.43.93-.24.43.61.24.93Z"/>
+<path id="d138" d="M133.66 143.21c.28-.46.87-.61 1.33-.34s.61.87.34 1.33-.87.61-1.33.34-.61-.87-.34-1.33Z"/>
+<path id="d139" d="M107.31 129.62c.19-.32.61-.43.93-.24s.43.61.24.93-.61.43-.93.24-.43-.61-.24-.93Z"/>
+<path id="d140" d="M118.1 126.89c.19-.32.61-.43.93-.24s.43.61.24.93-.61.43-.93.24-.43-.61-.24-.93Z"/>
+<path id="d141" d="M129.17 166.59c.19-.32.61-.43.93-.24s.43.61.24.93-.61.43-.93.24-.43-.61-.24-.93Z"/>
+<path id="d142" d="M99.57 128.55c.19-.32.61-.43.93-.24s.43.61.24.93-.61.43-.93.24-.43-.61-.24-.93Z"/>
+<path id="d143" d="M110.41 121.74c.19-.32.61-.43.93-.24s.43.61.24.93-.61.43-.93.24-.43-.61-.24-.93Z"/>
+<path id="d144" d="M120.74 178.44c.27-.46.87-.61 1.33-.34s.61.87.34 1.33-.87.61-1.33.34-.61-.87-.34-1.33Z"/>
+<path id="d145" d="M146.59 169.6c.27-.46.87-.61 1.33-.34s.61.87.34 1.33-.87.61-1.33.34-.61-.87-.34-1.33Z"/>
+<path id="d146" d="M107.7 161.5c.19-.32.61-.43.93-.23s.43.61.24.93-.61.43-.93.24-.43-.61-.24-.93Z"/>
+<path id="d147" d="M112.67 119.89c.19-.32.61-.43.93-.24s.43.61.24.93-.61.43-.93.24-.43-.61-.24-.93Z"/>
+<path id="d148" d="M122.67 131.09c.19-.32.61-.43.93-.24s.43.61.24.93-.61.43-.93.24-.43-.61-.24-.93Z"/>
+<path id="d149" d="M153.73 151.6c.19-.32.61-.43.93-.24s.43.61.24.93-.61.43-.93.24-.43-.61-.24-.93Z"/>
+<path id="d150" d="M149.63 147.27c.19-.32.61-.43.93-.24s.43.61.24.93-.61.43-.93.24-.43-.61-.24-.93Z"/>
+<path id="d151" d="M140.17 144.22c.19-.32.61-.43.93-.24s.43.61.24.93-.61.43-.93.24-.43-.61-.24-.93Z"/>
+<path id="d152" d="M129.08 147.02c.19-.32.61-.43.93-.24s.43.61.24.93-.61.43-.93.24-.43-.61-.24-.93Z"/>
+<path id="d153" d="M145.15 166.59c.19-.32.61-.43.93-.24s.43.61.24.93-.61.43-.93.24-.43-.61-.24-.93Z"/>
+<path id="d154" d="M158.08 162.98c.19-.32.61-.43.93-.24s.43.61.24.93-.61.43-.93.24-.43-.61-.24-.93Z"/>
+<path id="d155" d="M127.94 155.33c.19-.32.61-.43.93-.24s.43.61.24.93-.61.43-.93.24-.43-.61-.24-.93Z"/>
+<path id="d156" d="M137.81 167.68c.19-.32.61-.43.93-.24s.43.61.24.93-.61.43-.93.24-.43-.61-.24-.93Z"/>
+<path id="d157" d="M136.21 161.34c.28-.46.87-.61 1.33-.34s.61.87.34 1.33-.87.61-1.33.34-.61-.87-.34-1.33Z"/>
+<path id="d158" d="M113.5 164.99c.28-.46.87-.61 1.33-.34s.61.87.34 1.33-.87.61-1.33.34-.61-.87-.34-1.33Z"/>
+<path id="d159" d="M127.89 174.44c.19-.32.61-.43.93-.24s.43.61.24.93-.61.43-.93.24-.43-.61-.24-.93Z"/>
+<circle id="d160" cx="234.52" cy="154.66" r=".97"/>
+<path id="d161" d="M218.63 162.45a.97.97 0 1 1-1.95-.01.97.97 0 1 1 1.95.01Z"/>
+<path id="d162" d="M234.22 185.92c0 .38-.31.68-.68.68s-.68-.31-.68-.68.31-.68.68-.68.68.31.68.68Z"/>
+<path id="d163" d="M233.81 178.51c0 .38-.31.68-.68.68s-.68-.31-.68-.68.31-.68.68-.68.68.31.68.68Z"/>
+<path id="d164" d="M214.73 178.36c0 .38-.31.68-.68.68s-.68-.31-.68-.68.31-.68.68-.68.68.31.68.68Z"/>
+<path id="d165" d="M229.19 147.62a.97.97 0 1 1 1.95.01.97.97 0 1 1-1.95-.01Z"/>
+<path id="d166" d="M199.59 149.26c0-.38.31-.68.68-.68s.68.31.68.68-.31.68-.68.68-.68-.31-.68-.68Z"/>
+<path id="d167" d="M196.29 154.66c0-.38.31-.68.68-.68s.68.31.68.68-.31.68-.68.68-.68-.31-.68-.68Z"/>
+<path id="d168" d="M237.17 170.05c0-.38.31-.68.68-.68s.68.31.68.68-.31.68-.68.68-.68-.31-.68-.68Z"/>
+<path id="d169" d="M213.73 184.07c0-.38.31-.68.68-.68s.68.31.68.68-.31.68-.68.68-.68-.31-.68-.68Z"/>
+<path id="d170" d="M235.91 184.54a.97.97 0 1 1 1.95.01.97.97 0 1 1-1.95-.01Z"/>
+<path id="d171" d="M253.72 163.81a.97.97 0 1 1 1.95.01.97.97 0 1 1-1.95-.01Z"/>
+<path id="d172" d="M262.44 176.36c0-.38.31-.68.68-.68s.68.31.68.68-.31.68-.68.68-.68-.31-.68-.68Z"/>
+<path id="d173" d="M216.08 176.55c0-.38.31-.68.68-.68s.68.31.68.68-.31.68-.68.68-.68-.31-.68-.68Z"/>
+<path id="d174" d="M213.58 142.74c0-.38.31-.68.68-.68s.68.31.68.68-.31.68-.68.68-.68-.31-.68-.68Z"/>
+<path id="d175" d="M250.75 144.67c0-.38.31-.68.68-.68s.68.31.68.68-.31.68-.68.68-.68-.31-.68-.68Z"/>
+<path id="d176" d="M245.02 143.03c0-.38.31-.68.68-.68s.68.31.68.68-.31.68-.68.68-.68-.31-.68-.68Z"/>
+<path id="d177" d="M235.32 145.19c0-.38.31-.68.68-.68s.68.31.68.68-.31.68-.68.68-.68-.31-.68-.68Z"/>
+<path id="d178" d="M227.18 153.22c0-.38.31-.68.68-.68s.68.31.68.68-.31.68-.68.68-.68-.31-.68-.68Z"/>
+<path id="d179" d="M246.96 161.77c0-.38.31-.68.68-.68s.68.31.68.68-.31.68-.68.68-.68-.31-.68-.68Z"/>
+<path id="d180" d="M260.68 148.93c0-.38.31-.68.68-.68s.68.31.68.68-.31.68-.68.68-.68-.31-.68-.68Z"/>
+<path id="d181" d="M230.4 160.97c0-.38.31-.68.68-.68s.68.31.68.68-.31.68-.68.68-.68-.31-.68-.68Z"/>
+<path id="d182" d="M208.52 156.9c0-.38.31-.68.68-.68s.68.31.68.68-.31.68-.68.68-.68-.31-.68-.68Z"/>
+<path id="d183" d="M240.58 161.95a.97.97 0 1 1 1.95.01.97.97 0 1 1-1.95-.01Z"/>
+<path id="d184" d="M236.54 175.74c0-.38.31-.68.68-.68s.68.31.68.68-.31.68-.68.68-.68-.31-.68-.68Z"/>
+<circle id="d185" cx="72.05" cy="157.02" r=".97"/>
+<path id="d186" d="M114.74 153.35a.97.97 0 1 0 1.95-.01.97.97 0 1 0-1.95.01Z"/>
+<path id="d187" d="M99.14 176.81c0 .38.31.68.68.68s.68-.31.68-.68-.31-.68-.68-.68-.68.31-.68.68Z"/>
+<path id="d188" d="M99.56 169.4c0 .38.31.68.68.68s.68-.31.68-.68-.31-.68-.68-.68-.68.31-.68.68Z"/>
+<path id="d189" d="M114.15 172.77c0 .38.31.68.68.68s.68-.31.68-.68-.31-.68-.68-.68-.68.31-.68.68Z"/>
+<path id="d190" d="M104.18 138.51a.97.97 0 1 0-1.95.01.97.97 0 1 0 1.95-.01Z"/>
+<path id="d191" d="M133.78 140.15c0-.38-.31-.68-.68-.68s-.68.31-.68.68.31.68.68.68.68-.31.68-.68Z"/>
+<path id="d192" d="M125.86 132.33c0-.38-.31-.68-.68-.68s-.68.31-.68.68.31.68.68.68.68-.31.68-.68Z"/>
+<path id="d193" d="M96.2 160.94c0-.38-.31-.68-.68-.68s-.68.31-.68.68.31.68.68.68.68-.31.68-.68Z"/>
+<path id="d194" d="M139.7 126.57c0-.38-.31-.68-.68-.68s-.68.31-.68.68.31.68.68.68.68-.31.68-.68Z"/>
+<path id="d195" d="M135.1 131.8c0-.38-.31-.68-.68-.68s-.68.31-.68.68.31.68.68.68.68-.31.68-.68Z"/>
+<path id="d196" d="M84.47 159.1a.97.97 0 1 0-1.95.01.97.97 0 1 0 1.95-.01Z"/>
+<path id="d197" d="M79.65 154.71a.97.97 0 1 0-1.95.01.97.97 0 1 0 1.95-.01Z"/>
+<path id="d198" d="M113.09 172.56c0-.38-.31-.68-.68-.68s-.68.31-.68.68.31.68.68.68.68-.31.68-.68Z"/>
+<path id="d199" d="M70.93 167.26c0-.38-.31-.68-.68-.68s-.68.31-.68.68.31.68.68.68.68-.31.68-.68Z"/>
+<path id="d200" d="M117.28 167.44c0-.38-.31-.68-.68-.68s-.68.31-.68.68.31.68.68.68.68-.31.68-.68Z"/>
+<path id="d201" d="M139.67 128.42c0-.38-.31-.68-.68-.68s-.68.31-.68.68.31.68.68.68.68-.31.68-.68Z"/>
+<path id="d202" d="M119.79 133.63c0-.38-.31-.68-.68-.68s-.68.31-.68.68.31.68.68.68.68-.31.68-.68Z"/>
+<path id="d203" d="M82.62 148.05c0-.38-.31-.68-.68-.68s-.68.31-.68.68.31.68.68.68.68-.31.68-.68Z"/>
+<path id="d204" d="M88.86 141.12c0-.38-.31-.68-.68-.68s-.68.31-.68.68.31.68.68.68.68-.31.68-.68Z"/>
+<path id="d205" d="M98.05 136.08c0-.38-.31-.68-.68-.68s-.68.31-.68.68.31.68.68.68.68-.31.68-.68Z"/>
+<path id="d206" d="M106.19 144.12c0-.38-.31-.68-.68-.68s-.68.31-.68.68.31.68.68.68.68-.31.68-.68Z"/>
+<path id="d207" d="M82.42 152.84c0-.38-.31-.68-.68-.68s-.68.31-.68.68.31.68.68.68.68-.31.68-.68Z"/>
+<path id="d208" d="M73.1 143.17c0-.38-.31-.68-.68-.68s-.68.31-.68.68.31.68.68.68.68-.31.68-.68Z"/>
+<path id="d209" d="M102.97 151.86c0-.38-.31-.68-.68-.68s-.68.31-.68.68.31.68.68.68.68-.31.68-.68Z"/>
+<path id="d210" d="M88.19 157.5c0-.38-.31-.68-.68-.68s-.68.31-.68.68.31.68.68.68.68-.31.68-.68Z"/>
+<path id="d211" d="M92.79 152.85a.97.97 0 1 0-1.95.01.97.97 0 1 0 1.95-.01Z"/>
+<path id="d212" d="M110.51 167.51a.97.97 0 1 0-1.95.01.97.97 0 1 0 1.95-.01Z"/>
+<path id="d213" d="M98.76 154.66c0-.38-.31-.68-.68-.68s-.68.31-.68.68.31.68.68.68.68-.31.68-.68Z"/>
+</g>
+<g id="blicks" fill="#fff">
+<path id="b1" d="m107.18 113.06-1.93 1.17 1.85-1.29-2.2.5 2.16-.65-2.25-.2 2.26.05-2.08-.88 2.14.74-1.71-1.48 1.8 1.36-1.16-1.93 1.29 1.85-.51-2.2.65 2.16.2-2.25-.05 2.26.89-2.08-.74 2.13 1.48-1.7-1.37 1.8 1.94-1.16-1.85 1.29 2.2-.51-2.17.65 2.25.2-2.25-.05 2.07.88-2.13-.74 1.7 1.48-1.79-1.36 1.16 1.93-1.29-1.85.5 2.2-.65-2.16-.2 2.25.05-2.26-.88 2.08.74-2.13-1.48 1.7 1.36-1.8z"/>
+<path id="b2" d="m129.4 63.57-1.94 1.16 1.85-1.29-2.2.51 2.17-.65-2.25-.2 2.25.05-2.07-.89 2.13.75-1.7-1.49 1.79 1.37-1.16-1.94 1.29 1.86-.5-2.2.65 2.16.2-2.25-.05 2.26.88-2.08-.74 2.13 1.48-1.7-1.37 1.8 1.94-1.17-1.85 1.29 2.2-.51-2.16.66 2.25.19-2.26-.04 2.08.88-2.14-.74 1.71 1.48-1.8-1.36 1.16 1.93-1.29-1.85.51 2.2-.65-2.16-.2 2.25.04-2.26-.88 2.08.74-2.14-1.48 1.71 1.37-1.8z"/>
+<path id="b3" d="m69.39 148.26-.04-2.26.19 2.26.66-2.16-.51 2.2 1.29-1.86-1.17 1.94 1.8-1.36-1.7 1.48 2.13-.74-2.08.88 2.26-.04-2.25.19 2.16.66-2.2-.52 1.85 1.3-1.93-1.17 1.36 1.8-1.48-1.71.74 2.14-.88-2.08.04 2.26-.19-2.25-.66 2.16.51-2.2-1.29 1.85 1.17-1.94-1.8 1.36 1.7-1.47-2.13.73 2.08-.87-2.26.04 2.25-.19-2.16-.66 2.2.51-1.85-1.3 1.93 1.17-1.36-1.8 1.48 1.71-.74-2.14.88 2.08z"/>
+<path id="b4" d="m221.88 136.37-1.93 1.16 1.85-1.29-2.2.51 2.16-.66-2.25-.19 2.26.04-2.08-.88 2.14.74-1.71-1.48 1.8 1.37-1.16-1.94 1.29 1.85-.51-2.2.65 2.16.2-2.25-.05 2.26.89-2.08-.75 2.14 1.49-1.71-1.37 1.8 1.94-1.16-1.86 1.29 2.2-.51-2.16.66 2.25.19-2.26-.05 2.08.89-2.13-.74 1.7 1.48-1.8-1.37 1.16 1.94-1.28-1.86.5 2.2-.65-2.16-.2 2.25.05-2.25-.88 2.07.74-2.13-1.48 1.7 1.36-1.79z"/>
+<path id="b5" d="m93.12 143.99-1.93 1.16 1.85-1.29-2.2.51 2.16-.65-2.25-.2 2.26.05-2.08-.89 2.14.75-1.71-1.48 1.8 1.36-1.16-1.94 1.29 1.86-.51-2.2.65 2.16.2-2.25-.05 2.26.89-2.08-.74 2.13 1.48-1.7-1.37 1.8 1.94-1.17-1.86 1.29 2.21-.5-2.17.65 2.25.2-2.26-.05 2.08.88-2.13-.74 1.7 1.48-1.79-1.36 1.16 1.93-1.29-1.85.5 2.2-.65-2.16-.2 2.25.05-2.26-.88 2.08.74-2.13-1.48 1.7 1.36-1.8z"/>
+<path id="b6" d="m256.14 132.58-.74.45.71-.5-.84.2.83-.25-.86-.08.86.02-.79-.34.81.29-.65-.57.69.52-.45-.74.5.71-.2-.84.25.82.08-.86-.02.87.34-.8-.29.82.57-.65-.52.68.74-.44-.71.49.84-.19-.83.25.86.07-.86-.01.79.33-.81-.28.65.57-.69-.52.45.73-.49-.7.19.84-.25-.83-.08.86.02-.86-.34.79.29-.81-.57.65.52-.69z"/>
+</g>
+<g id="stars">
+<path id="p1" fill="#fff" d="m113.03 85.11-1.32 1.61 1.09 1.78-1.95-.75-1.35 1.58.11-2.08-1.93-.79 2.02-.54.17-2.08L111 85.6l2.03-.49z"/>
+<path id="p2" fill="#c6e9fa" d="m114.52 99.32-2.81 2.99 1.89 3.64-3.71-1.75-2.89 2.92.53-4.07-3.68-1.83 4.04-.77.61-4.06 1.97 3.6 4.05-.67z"/>
+<path id="p3" fill="#fff" d="m104.96 90.96-.92.51.18 1.04-.77-.72-.94.5.45-.96-.76-.74 1.05.13.46-.95.21 1.04 1.04.15z"/>
+<path id="p4" fill="#c6e9fa" d="m218.53 103.2-2.81 2.99 1.89 3.65-3.71-1.76-2.89 2.93.53-4.07-3.68-1.83 4.04-.77.61-4.06 1.97 3.6 4.05-.68z"/>
+<path id="p5" fill="#fff" d="m170.43 74.07-2.38-.64-1.38 2.03-.13-2.46-2.36-.69 2.3-.88-.08-2.45 1.55 1.91 2.32-.83-1.35 2.06 1.51 1.95z"/>
+<path id="p6" fill="#fff" d="m157.41 73.17-1.32 1.62 1.1 1.77-1.95-.75-1.36 1.59.12-2.08-1.93-.8 2.02-.53.16-2.08 1.14 1.75 2.02-.49z"/>
+<path id="p7" fill="#fff" d="m149.35 79.02-.92.51.18 1.04-.78-.71-.93.49.44-.96-.75-.73 1.05.12.46-.94.2 1.03 1.05.15z"/>
+<path id="p8" fill="#fff" d="m68.87 141.85-1.42-4.72-4.92-.22 4.05-2.81-1.32-4.75 3.92 2.98 4.11-2.72-1.62 4.65 3.86 3.07-4.93-.1-1.73 4.62z"/>
+<path id="p9" fill="#fff" d="m65.96 158.05-.75-1.95-2.08.06 1.62-1.32-.7-1.96 1.75 1.14 1.65-1.28-.54 2.02 1.72 1.18-2.09.1-.58 2.01z"/>
+<path id="p10" fill="#c6e9fa" d="m49.87 162.47-1.43-4.73-4.92-.21 4.05-2.82-1.32-4.75 3.92 2.99 4.11-2.73-1.62 4.66 3.86 3.07-4.93-.11-1.72 4.63z"/>
+<path id="p11" fill="#fff" d="m60.66 146.3.02-1.05-.99-.37 1.01-.31.03-1.05.61.86 1.02-.29-.64.85.59.87-1-.34-.65.83z"/>
+<path id="p12" fill="#fff" d="m221.8 149.48-2.03 2.15 1.36 2.62-2.67-1.26-2.07 2.11.38-2.93-2.65-1.32 2.91-.55.44-2.92 1.41 2.59 2.92-.49z"/>
+<path id="p13" fill="#fff" d="m249.9 145.97-1.32 1.61 1.09 1.78-1.94-.75-1.36 1.58.12-2.08-1.93-.79 2.02-.54.16-2.08 1.13 1.76 2.03-.49z"/>
+<path id="p14" fill="#c6e9fa" d="m261.23 153.11-3.38 3.59 2.27 4.37-4.46-2.1-3.46 3.51.63-4.89-4.42-2.2 4.85-.92.74-4.87 2.36 4.32 4.87-.81z"/>
+<path id="p15" fill="#fff" d="m241.83 151.82-.92.51.18 1.04-.77-.72-.93.5.44-.96-.76-.73 1.05.12.47-.95.2 1.04 1.04.15z"/>
+<path id="p16" fill="#fff" d="m110.31 37.3-.93.51.18 1.04-.77-.72-.93.49.44-.95-.75-.74 1.04.13.47-.95.2 1.04 1.05.15z"/>
+<path id="p17" fill="#fff" d="m61.19 68.52-1.38.77.27 1.55-1.16-1.07-1.39.74.66-1.43-1.13-1.1 1.57.19.69-1.42.31 1.55 1.56.22z"/>
+<path id="p18" fill="#fff" d="m245.53 51.86-.92.51.18 1.04-.78-.72-.93.5.44-.96-.75-.73 1.05.12.46-.94.2 1.03 1.05.15z"/>
+<path id="p19" fill="#fff" d="m300.93 113.26-1.47.81.29 1.66-1.24-1.14-1.48.78.71-1.52-1.21-1.17 1.67.2.74-1.51.32 1.65 1.67.24z"/>
+<path id="p20" fill="#fff" d="m214.73 39.38-.93.51.18 1.04-.77-.72-.93.5.44-.96-.75-.73 1.04.12.47-.95.2 1.04 1.05.15z"/>
+<path id="p21" fill="#fff" d="m107.71 153.56-1.42-4.73-4.93-.21 4.05-2.81-1.32-4.76 3.93 2.99 4.11-2.73-1.63 4.66 3.86 3.07-4.93-.1-1.72 4.62z"/>
+</g>
+<g id="mask">
+<path fill="url(#lg38)" d="M0 150.41h324v157.61H0z"/>
+</g>
+</g>
+</svg>
