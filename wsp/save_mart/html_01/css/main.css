@@ -672,10 +672,15 @@ footer a {
         padding: 44px 0 0 0;
     }
     .clmn_img img {
-        min-height: 200px;
+        min-height: 180px;
     }
     .clmn_img h3 {
-        font-size: 14px;
+        font-size: 13px;
+        top: 10px;
+        letter-spacing: -.05em;
+    }
+    #congrats {
+        top: 10px;
     }
     #congrats_wrapper img {
         height: 190px;
@@ -685,6 +690,57 @@ footer a {
     }
     #more_ballots {
         margin: 0 16px;
-        padding: 16px 0;
+        padding: 0px 0px 16px 0;
+    }
+    #game {
+        padding-top: 50px;
+        min-height: 750px;
+    }
+    #ttl1 {
+        top: 10px;
+    }
+    #ttl2 {
+        top: 42px;
+    }
+    #circle_text {
+        top: 212px;
+    }
+    #ballots {
+        margin: 0;
+    }
+    #ballot_enter {
+        margin: 0 0 8px 0;
+    }
+    .play #ballot_wrapper {
+        animation: ballot_wrapper_mobile .8s 2.8s ease-out forwards;
+    }
+
+    @keyframes ballot_wrapper_mobile {
+        0% {
+            opacity: 0;
+            top: 500px;
+        }
+        100% {
+            opacity: 1;
+            top: 380px;
+        }
+    }
+    .play #ballot_wrapper.invis {
+        pointer-events: none;
+        animation: ballot_wrapper_invis .8s ease-out forwards;
+    }
+
+    @keyframes ballot_wrapper_invis {
+        0% {
+            opacity: 1;
+            top: 380px;
+        }
+        100% {
+            opacity: 0;
+            top: 500px;
+        }
+    }
+    #more_ballots h2 {
+        margin: 0;
     }
 }
