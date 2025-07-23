@@ -27,8 +27,14 @@ function $(sel) {
   return document.querySelector(sel);
 }
 
+function play_sound() {
+  $("#sound").play();
+  $("#sound").loop=false;
+}
+
 if( $("#enter_ballots") ) {
   $("#enter_ballots").addEventListener("click", function(){
+    play_sound();
     $("#circle_text").classList.add("invis");
     $("#ballot_wrapper").classList.add("invis");
     $("#congrats").classList.remove("invis");

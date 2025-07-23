@@ -357,7 +357,7 @@ footer a {
 }
 
 .clmn_img img {
-    min-height: 220px;
+    min-height: 198px;
 }
 
 .clmn_img h3 {
@@ -367,12 +367,12 @@ footer a {
     left: 0;
     width: 100%;
     font-size: 15px;
-    padding: 8px;
+    padding: 8px 12px;
 }
 
 #ballot_frame, #congrats_frame {
     background: #fff;
-    padding: 16px 12px 24px 12px;
+    padding: 16px 10px 24px 10px;
     border-radius: 24px;
     box-shadow: 0px 3px 6px #B9D9EB;
 }
@@ -483,7 +483,7 @@ footer a {
     display: block;
     position: absolute;
     left: 0;
-    top: 32px;
+    top: 8px;
     width: 100%;
     font-weight: bold;
     font-size: 52px;
@@ -493,7 +493,7 @@ footer a {
 
 #congrats_wrapper img {
     width: auto;
-    height: 220px;
+    height: 190px;
 }
 
 #congrats_wrapper h3 {
@@ -766,17 +766,17 @@ footer a {
     }
     .clmn_img img {
         min-height: inherit;
-        max-width: 80px;
+        max-width: 90px;
     }
     .clmn_img h3 {
         display: block;
         padding: 0 12px;
         font-size: 12px;
-        top: 10px;
+        top: 6px;
         letter-spacing: -.07em;
     }
     #congrats {
-        top: 10px;
+        top: 30px;
     }
     #congrats_wrapper img {
         height: inherit;
@@ -818,11 +818,13 @@ footer a {
         line-height: 1;
     }
     #ballot_frame, #congrats_frame {
-        padding: 10px 24px 16px 24px;
+        padding: 10px 10px 16px 10px;
+        margin-left: 16px;
+        margin-right: 16px;
         border-radius: 20px;
     }
     #congrats_frame {
-        min-height: 300px;
+        min-height: 280px;
     }
     #ballots {
         margin: 0;
@@ -887,7 +889,13 @@ footer a {
     .bonus_ballots .clmn_50 img {
         max-width: 140px;
     }
+    .bonus_ballots .clmns .clmn_50:first-child {
+        text-align: right;
+    }
     .bonus #game {
         min-height: 450px;
+    }
+    #more_ballots h2.blue {
+        font-size: 16px;
     }
 }
