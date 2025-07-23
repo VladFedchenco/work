@@ -887,4 +887,7 @@ footer a {
     .bonus_ballots .clmn_50 img {
         max-width: 140px;
     }
+    .bonus #game {
+        min-height: 450px;
+    }
 }
