@@ -676,7 +676,7 @@ footer a {
 
 .bonus #game {
     max-width: 820px;
-    min-height: inherit;
+    min-height: 530px;
 }
 
 #bonus {
