@@ -713,15 +713,16 @@ footer a {
         top: 30px;
     }
     #animation {
-        height: 280px;
+        height: 260px;
         width: auto;
     }
     #circle_text {
-        top: 164px;
+        top: 156px;
     }
     #circle_top {
         margin: 0;
-        font-size: 92px;
+        font-size: 86px;
+        line-height: 1;
     }
     #ballot_frame, #congrats_frame {
         padding: 10px 24px 16px 24px;
@@ -747,7 +748,7 @@ footer a {
         }
         100% {
             opacity: 1;
-            top: 320px;
+            top: 300px;
         }
     }
     .play #ballot_wrapper.invis {
@@ -758,7 +759,7 @@ footer a {
     @keyframes ballot_wrapper_invis {
         0% {
             opacity: 1;
-            top: 320px;
+            top: 300px;
         }
         100% {
             opacity: 0;
