@@ -42,7 +42,7 @@ if( $("#enter_ballots") ) {
     $("#ttl2").classList.add("invis");
     $("#animation").classList.add("invis");
     setTimeout(function(){
-      $("#game").style.minHeight = "500px";
+      $("#game").style.minHeight = "420px";
       $("#more_ballots").classList.remove("invis");
     }, 1000);
   }, false);

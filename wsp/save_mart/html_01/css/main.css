@@ -497,7 +497,7 @@ footer a {
 }
 
 #congrats_wrapper h3 {
-    position: absolute;
+    position: absolute;©
     font-size: 16px;
     font-weight: bold;
     display: block;
@@ -523,7 +523,7 @@ footer a {
     max-width: 776px;
     margin: 0 auto;
     opacity: 1;
-    padding: 32px 0;
+    padding: 84px 0 32px 0;
     color: #134372;
     transition: all .6s ease-in-out;
 }
@@ -776,7 +776,7 @@ footer a {
         letter-spacing: -.07em;
     }
     #congrats {
-        top: 30px;
+        top: 10px;
     }
     #congrats_wrapper img {
         height: inherit;
@@ -787,7 +787,7 @@ footer a {
     }
     #more_ballots {
         margin: 0 24px;
-        padding: 0px 0px 16px 0;
+        padding: 0px 0px 32px 0;
         font-size: 14px;
         line-height: 1.3;
     }
@@ -824,7 +824,7 @@ footer a {
         border-radius: 20px;
     }
     #congrats_frame {
-        min-height: 280px;
+        min-height: 260px;
     }
     #ballots {
         margin: 0;
@@ -874,7 +874,7 @@ footer a {
         margin-bottom: 6px;
     }
     #congrats h2 {
-        margin: 12px 0 14px 0;
+        margin: 0 0 8px 0;
     }
 
     #bonus #ballots, #bonus #ballot_enter {
