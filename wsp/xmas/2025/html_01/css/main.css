@@ -1,0 +1,951 @@
+* {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+*:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Figtree', sans-serif;
+}
+
+header {
+    display: block;
+    height: 62px;
+    background: #8FC946;
+    padding: 14px 24px;
+}
+
+footer {
+    background-color: #0DC0E0;
+    color: #fff;
+    padding: 16px 24px;
+    text-align: center;
+}
+
+#main {
+    max-width: 356px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#main_ttl {
+    height: 80px;
+}
+
+#footer_links {
+    padding: 8px 0;
+    text-align: center;
+}
+
+#footer_links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+    margin: 0px 8px;
+    text-decoration: underline;
+}
+
+#footer_links a:hover {
+    text-decoration: none;
+}
+
+#footer_social {
+    padding: 16px 0 8px 0;
+}
+
+#footer_stores {
+    padding: 8px 0;
+}
+
+#footer_social a, #footer_stores a {
+    margin: 0 8px;
+}
+
+#footer_social img {
+    width: 24px;
+    height: 24px;
+}
+
+#copy {
+    max-width: 1160px;
+    margin: 0 auto;
+    font-size: 12px;
+    color: #fff;
+}
+
+#copy a {
+    color: #fff;
+}
+
+#start_bttn {
+    display: block;
+    width: 266px;
+    padding: 12px 24px;
+    margin: 0 auto;
+    text-align: center;
+    text-decoration: none;
+    background-color: #8FC946;
+    border-radius: 48px;
+    font-size: 15px;
+    line-height: 1.2;
+    color: #fff;
+    font-weight: bold;
+}
+
+#start_bttn:hover {
+    background-color: #98d54a;
+}
+
+#start_bttn.invis {
+    display: none;
+}
+
+#main_logos {
+    text-align: center;
+    padding: 8px 0;
+}
+
+#logo_udf {
+    display: inline-block;
+    height: 42px;
+    margin: 4px 12px 4px 0;
+}
+
+#logo_xmas {
+    display: inline-block;
+    height: 62px;
+    margin: 0px 12px 0px 12px;
+}
+
+#logo_udrive {
+    display: inline-block;
+    height: 58px;
+    margin: 2px 12px 0px 12px;
+}
+
+#bottom_logos {
+    text-align: center;
+    padding: 48px 0 32px 0;
+}
+
+#bottom_logos h4 {
+    margin: 0;
+    font-weight: normal;
+}
+
+#snow {
+    transform: translate(0px, 836px);
+}
+
+.play #snow {
+    animation: snow 6.5s ease-out;
+}
+
+#animation {
+    pointer-events: none;
+    cursor: default;
+}
+
+.static #animation {
+    pointer-events: initial;
+    cursor: pointer;
+}
+
+@keyframes snow {
+    0% {
+        transform: translate(0px, 836px);
+    }
+    80%, 100% {
+        transform: translate(0px, 0px);
+    }
+    0%, 80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.static #sf1 {
+    animation: sf1 10s -5s linear infinite;
+}
+
+.play #sf1 {
+    animation: sf1 2s -.5s linear infinite;
+}
+
+@keyframes sf1 {
+    0% {
+        transform: translate(720px, 0px) rotate(-30deg) scale(.88);
+    }
+    100% {
+        transform: translate(720px, 800px) rotate(-30deg) scale(.88);
+    }
+}
+
+.static #sf2 {
+    animation: sf2 9s -2s linear infinite;
+}
+
+.play #sf2 {
+    animation: sf2 1.5s -5s linear infinite;
+}
+
+@keyframes sf2 {
+    0% {
+        transform: translate(776px, 0px) rotate(12deg) scale(.3);
+    }
+    100% {
+        transform: translate(776px, 800px) rotate(12deg) scale(.3);
+    }
+}
+
+.static #sf3 {
+    animation: sf3 11s -.5s linear infinite;
+}
+
+.play #sf3 {
+    animation: sf3 1s -.25s linear infinite;
+}
+
+@keyframes sf3 {
+    0% {
+        transform: translate(775px, 0px) rotate(12deg) scale(.38);
+    }
+    100% {
+        transform: translate(775px, 800px) rotate(12deg) scale(.38);
+    }
+}
+
+.static #sf4 {
+    animation: sf4 12s -.5s linear infinite;
+}
+
+.play #sf4 {
+    animation: sf4 2s -1.25s linear infinite;
+}
+
+@keyframes sf4 {
+    0% {
+        transform: translate(602px, 0px) rotate(12deg) scale(.38);
+    }
+    100% {
+        transform: translate(602px, 800px) rotate(12deg) scale(.38);
+    }
+}
+
+.static #sf5 {
+    animation: sf5 8s -2s linear infinite;
+}
+
+.play #sf5 {
+    animation: sf5 1s -.5s linear infinite;
+}
+
+@keyframes sf5 {
+    0% {
+        transform: translate(393px, 0px) rotate(12deg) scale(.36);
+    }
+    100% {
+        transform: translate(393px, 800px) rotate(12deg) scale(.36);
+    }
+}
+
+.static #sf6 {
+    animation: sf6 13s -2s linear infinite;
+}
+
+.play #sf6 {
+    animation: sf6 1.5s -1.1s linear infinite;
+}
+
+@keyframes sf6 {
+    0% {
+        transform: translate(701px, 0px) rotate(12deg) scale(.8);
+    }
+    100% {
+        transform: translate(701px, 800px) rotate(12deg) scale(.8);
+    }
+}
+
+.static #sf7 {
+    animation: sf7 11s -3s linear infinite;
+}
+
+.play #sf7 {
+    animation: sf7 2s -1.5s linear infinite;
+}
+
+@keyframes sf7 {
+    0% {
+        transform: translate(265px, 0px) rotate(-30deg) scale(.82);
+    }
+    100% {
+        transform: translate(265px, 800px) rotate(-30deg) scale(.82);
+    }
+}
+
+.static #sf8 {
+    animation: sf8 7s -7s linear infinite;
+}
+
+.play #sf8 {
+    animation: sf8 1.5s -.5s linear infinite;
+}
+
+@keyframes sf8 {
+    0% {
+        transform: translate(260px, 0px) rotate(12deg);
+    }
+    100% {
+        transform: translate(260px, 800px) rotate(12deg);
+    }
+}
+
+#light2 {
+    animation: light2 1.4s linear infinite;
+}
+
+@keyframes light2 {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+#shake_flakes {
+    opacity: 1;
+    display: none;
+}
+
+.play #shake_flakes {
+    display: block;
+}
+
+.play #sf9 {
+    animation: sf9 2s -.5s linear infinite;
+}
+
+@keyframes sf9 {
+    0% {
+        transform: translate(500px, 0px) rotate(-30deg) scale(.88);
+    }
+    100% {
+        transform: translate(500px, 800px) rotate(-30deg) scale(.88);
+    }
+}
+
+.play #sf10 {
+    animation: sf10 2.5s -1s linear infinite;
+}
+
+@keyframes sf10 {
+    0% {
+        transform: translate(110px, 0px) rotate(12deg) scale(.3);
+    }
+    100% {
+        transform: translate(110px, 800px) rotate(12deg) scale(.3);
+    }
+}
+
+.play #sf11 {
+    animation: sf11 1s -.7s linear infinite;
+}
+
+@keyframes sf11 {
+    0% {
+        transform: translate(326px, 0px) rotate(12deg) scale(.38);
+    }
+    100% {
+        transform: translate(326px, 800px) rotate(12deg) scale(.38);
+    }
+}
+
+.play #sf12 {
+    animation: sf12 2s -1.2s linear infinite;
+}
+
+@keyframes sf12 {
+    0% {
+        transform: translate(429px, 0px) rotate(12deg) scale(.38);
+    }
+    100% {
+        transform: translate(429px, 800px) rotate(12deg) scale(.38);
+    }
+}
+
+.play #sf13 {
+    animation: sf13 2.4s -2s linear infinite;
+}
+
+@keyframes sf13 {
+    0% {
+        transform: translate(610px, 0px) rotate(12deg) scale(.36);
+    }
+    100% {
+        transform: translate(610px, 800px) rotate(12deg) scale(.36);
+    }
+}
+
+.play #sf14 {
+    animation: sf14 2s -.5s linear infinite;
+}
+
+@keyframes sf14 {
+    0% {
+        transform: translate(450px, 0px) rotate(12deg) scale(.8);
+    }
+    100% {
+        transform: translate(450px, 800px) rotate(12deg) scale(.8);
+    }
+}
+
+.play #sf15 {
+    animation: sf15 1.8s -1.5s linear infinite;
+}
+
+@keyframes sf15 {
+    0% {
+        transform: translate(520px, 0px) rotate(-30deg) scale(.82);
+    }
+    100% {
+        transform: translate(520px, 800px) rotate(-30deg) scale(.82);
+    }
+}
+
+
+.play #sf16 {
+    animation: sf16 2.5s -2s linear infinite;
+}
+
+@keyframes sf16 {
+    0% {
+        transform: translate(290px, 0px) rotate(12deg);
+    }
+    100% {
+        transform: translate(290px, 800px) rotate(12deg);
+    }
+}
+
+.play #ball {
+    animation: ball 5s ease-in-out forwards;
+}
+
+@keyframes ball {
+    0%, 100% {
+        transform: translate(510px, 1100px) rotate(0deg) translate(-510px, -1100px);
+    }
+    10%, 30%, 50%, 70%, 90% {
+        transform: translate(510px, 1080px) rotate(5deg) translate(-510px, -1100px);
+    }
+    20%, 40%, 60%, 80% {
+        transform: translate(510px, 1080px) rotate(-5deg) translate(-510px, -1100px);
+    }
+}
+
+.play #shadow {
+    animation: shadow 5s ease-in-out forwards;
+}
+
+@keyframes shadow {
+    0%, 100% {
+        opacity: 1;
+        transform: translate(556px, 1100px) rotate(0deg) scale(1, 1) translate(-556px, -1100px);
+    }
+    10%, 30%, 50%, 70%, 90% {
+        opacity: .5;
+        transform: translate(440px, 1130px) rotate(-3deg) scale(.9, .5) translate(-556px, -1100px);
+    }
+    20%, 40%, 60%, 80% {
+        opacity: .5;
+        transform: translate(556px, 1130px) rotate(1deg) scale(.9, .5) translate(-556px, -1100px);
+    }
+}
+
+#dollar {
+    display: none;
+}
+
+.static #dollar, .play #dollar {
+    display: block;
+}
+
+.play #dollar {
+    animation: dollar 5s linear forwards;
+}
+
+@keyframes dollar {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+#prize.invis {
+    display: none;
+}
+
+#snowflakes {
+    opacity: 1;
+}
+
+#snowflakes.invis, #shake_flakes.invis {
+    opacity: 0;
+    transition: opacity 1s linear;
+}
+
+#prize_h1 {
+    opacity: 0;
+    user-select: none;
+    pointer-events: none;
+    font-size: 22px;
+    margin: 0;
+    color: #6C2671;
+    text-align: center;
+    display: block;
+    padding: 20px 0 0 0;
+    transition: opacity .3s linear;
+}
+
+#prize_h1.vis {
+    opacity: 1;
+}
+
+#prize_name {
+    font-size: 20px;
+    margin: 0;
+    color: #6C2671;
+    text-align: center;
+    display: block;
+    padding: 0 12px;
+}
+
+#content_section {
+    min-height: 60px;
+}
+
+#size {
+    font-size: 14px;
+    text-align: center;
+    color: #6C2671;
+    display: block;
+    margin: 0;
+    padding: 12px 12px 0 12px;
+}
+
+#chance {
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    color: #F78934;
+    display: block;
+    margin: 0;
+    padding: 24px 12px 12px 12px;
+}
+
+#again_bttn {
+    display: block;
+    width: 266px;
+    padding: 12px 24px;
+    margin: 0 auto;
+    text-align: center;
+    text-decoration: none;
+    background-color: #8FC946;
+    border-radius: 48px;
+    font-size: 15px;
+    line-height: 1.2;
+    color: #fff;
+    font-weight: bold;
+}
+
+#again_bttn.invis {
+    display: none;
+}
+
+#again_bttn svg {
+    vertical-align: middle;
+}
+
+#again_bttn:hover {
+    box-shadow: 0px 2px 4px rgba(0,0,0,.2);
+}
+
+#again_bttn:active {
+    box-shadow: 0px 4px 6px rgba(0,0,0,.2) inset;
+}
+
+#prize_h3 {
+    font-size: 15px;
+    text-align: center;
+    display: block;
+    margin: 0;
+    padding: 12px 8px 0px 8px;
+}
+
+#more_chances {
+    text-align: center;
+}
+
+#more_chances.invis {
+    display: none;
+}
+
+#more_chances img {
+    width: 358px;
+    display: block;
+    margin: 0 auto;
+}
+
+#more_chances p {
+    font-size: 15px;
+    text-align: center;
+    display: block;
+    margin: 0;
+    padding: 12px 8px 24px 8px;
+}
+
+#more_chances a {
+    font-size: 12px;
+    color: #000;
+    margin: 0px 8px;
+}
+
+#more_chances a svg {
+    vertical-align: middle;
+    margin-right: 4px;
+}
+
+#hidden_content {
+    display: none;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height .8s ease-in-out;
+}
+
+#hidden_content.vis {
+    display: block;
+}
+
+#hidden_content.vis.open {
+    max-height: 550px;
+}
+
+#num_animation {
+    display: none;
+}
+
+#glass_shadow {
+    opacity: 1;
+    transition: all 1s linear;
+}
+
+#prize_money, #prize_car, #gift_box {
+    transition: all .3s linear;
+}
+
+#prize_money.invis, #prize_car.invis,  #gift_box.invis {
+    opacity: 0;
+}
+
+#glass_shadow.invis {
+    opacity: 0;
+}
+
+#circle, #entries {
+    opacity: 0;
+}
+
+.num #prize_img, #gift_box {
+    display: none;
+}
+
+.num #num_animation.invis {
+    display: none;
+}
+
+.num #num_animation, .num #gift_box {
+    display: block;
+}
+
+.num #box_cap {
+    animation: box_up .6s .6s ease-out forwards;
+}
+
+@keyframes box_up {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    0%, 60% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translate(40px, -300px);
+    }
+}
+
+.num #circle_back {
+    opacity: 0;
+    animation: circle_back .35s 1.2s ease-in-out forwards;
+}
+
+@keyframes circle_back {
+    0% {
+        transform: translate(501px, 435px) scale(.3) translate(-501px, -335px);
+    }
+    0%, 98% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translate(501px, 250px) scale(.8) translate(-501px, -335px);
+    }
+}
+
+.num #circle {
+    opacity: 0;
+    animation: circle .3s 1.5s ease-in-out forwards;
+}
+
+@keyframes circle {
+    0%, 1% {
+        opacity: 0;
+    }
+    2%, 100% {
+        opacity: 1;
+    }
+    0% {
+        transform: translate(501px, 250px) scale(.8) translate(-501px, -335px);
+    }
+    100% {
+        transform: translate(501px, 335px) scale(1) translate(-501px, -335px);
+    }
+}
+
+.num #entries {
+    animation: entries .3s 1.8s linear forwards;
+}
+
+@keyframes entries {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#d1, #d2, #d3, #d4, #d5, #d6, #d7, #d8, #d9, #d10, #d11, #d12, #d13, #d14, #d15, #d16, #d17, #d18, #d19 {
+visibility: hidden;
+animation-duration: 1.4s;
+animation-iteration-count: 1;
+animation-fill-mode: forwards;
+animation-timing-function: steps(1);
+}
+
+.num50 #d1 {animation-name: d1_50}
+.num50 #d2 {animation-name: d2_50}
+.num50 #d3 {animation-name: d3_50}
+.num50 #d4 {animation-name: d4_50}
+.num50 #d5 {animation-name: d5_50}
+.num50 #d6 {animation-name: d6_50}
+.num50 #d7 {animation-name: d7_50}
+.num50 #d8 {animation-name: d8_50}
+.num50 #d9 {animation-name: d9_50}
+.num50 #d10 {animation-name: d10_50}
+.num50 #d11 {animation-name: d11_50}
+.num50 #d12 {animation-name: d12_50}
+.num50 #d13 {animation-name: d13_50}
+.num50 #d14 {animation-name: d14_50}
+.num50 #d15 {animation-name: d15_50}
+.num50 #d16 {animation-name: d16_50}
+.num50 #d17 {animation-name: d17_50}
+.num50 #d18 {animation-name: d18_50}
+.num50 #d19 {animation-name: d19_50}
+
+@keyframes d1_50 {0.00%{visibility: visible} 5.26%{visibility: hidden}}
+@keyframes d2_50 {5.26%{visibility: visible} 10.53%{visibility: hidden}}
+@keyframes d3_50 {10.53%{visibility: visible} 15.79%{visibility: hidden}}
+@keyframes d4_50 {15.79%{visibility: visible} 21.05%{visibility: hidden}}
+@keyframes d5_50 {21.05%{visibility: visible} 26.32%{visibility: hidden}}
+@keyframes d6_50 {26.32%{visibility: visible} 31.58%{visibility: hidden}}
+@keyframes d7_50 {31.58%{visibility: visible} 36.84%{visibility: hidden}}
+@keyframes d8_50 {36.84%{visibility: visible} 42.11%{visibility: hidden}}
+@keyframes d9_50 {42.11%{visibility: visible} 47.37%{visibility: hidden}}
+@keyframes d10_50 {47.37%{visibility: visible} 52.63%{visibility: hidden}}
+@keyframes d11_50 {52.63%{visibility: visible} 57.89%{visibility: hidden}}
+@keyframes d12_50 {57.89%{visibility: visible} 63.16%{visibility: hidden}}
+@keyframes d13_50 {63.16%{visibility: visible} 68.42%{visibility: hidden}}
+@keyframes d14_50 {68.42%{visibility: visible} 73.68%{visibility: hidden}}
+@keyframes d15_50 {73.68%{visibility: visible} 78.95%{visibility: hidden}}
+@keyframes d16_50 {78.95%{visibility: visible} 84.21%{visibility: hidden}}
+@keyframes d17_50 {84.21%{visibility: visible} 89.47%{visibility: hidden}}
+@keyframes d18_50 {89.47%{visibility: visible} 94.74%{visibility: hidden}}
+@keyframes d19_50 {94.74%, 100%{visibility: visible}}
+
+.num40 #d1 {animation-name: d1_40}
+.num40 #d2 {animation-name: d2_40}
+.num40 #d3 {animation-name: d3_40}
+.num40 #d4 {animation-name: d4_40}
+.num40 #d5 {animation-name: d5_40}
+.num40 #d6 {animation-name: d6_40}
+.num40 #d7 {animation-name: d7_40}
+.num40 #d8 {animation-name: d8_40}
+.num40 #d9 {animation-name: d9_40}
+.num40 #d10 {animation-name: d10_40}
+.num40 #d11 {animation-name: d11_40}
+.num40 #d12 {animation-name: d12_40}
+.num40 #d13 {animation-name: d13_40}
+.num40 #d14 {animation-name: d14_40}
+.num40 #d15 {animation-name: d15_40}
+.num40 #d16 {animation-name: d16_40}
+.num40 #d17 {animation-name: d17_40}
+
+@keyframes d1_40 {0.00%{visibility: visible} 5.88%{visibility: hidden}}
+@keyframes d2_40 {5.88%{visibility: visible} 11.76%{visibility: hidden}}
+@keyframes d3_40 {11.76%{visibility: visible} 17.65%{visibility: hidden}}
+@keyframes d4_40 {17.65%{visibility: visible} 23.53%{visibility: hidden}}
+@keyframes d5_40 {23.53%{visibility: visible} 29.41%{visibility: hidden}}
+@keyframes d6_40 {29.41%{visibility: visible} 35.29%{visibility: hidden}}
+@keyframes d7_40 {35.29%{visibility: visible} 41.18%{visibility: hidden}}
+@keyframes d8_40 {41.18%{visibility: visible} 47.06%{visibility: hidden}}
+@keyframes d9_40 {47.06%{visibility: visible} 52.94%{visibility: hidden}}
+@keyframes d10_40 {52.94%{visibility: visible} 58.82%{visibility: hidden}}
+@keyframes d11_40 {58.82%{visibility: visible} 64.71%{visibility: hidden}}
+@keyframes d12_40 {64.71%{visibility: visible} 70.59%{visibility: hidden}}
+@keyframes d13_40 {70.59%{visibility: visible} 76.47%{visibility: hidden}}
+@keyframes d14_40 {76.47%{visibility: visible} 82.35%{visibility: hidden}}
+@keyframes d15_40 {82.35%{visibility: visible} 88.24%{visibility: hidden}}
+@keyframes d16_40 {88.24%{visibility: visible} 94.12%{visibility: hidden}}
+@keyframes d17_40 {94.12%, 100%{visibility: visible}}
+
+.num30 #d1 {animation-name: d1_30}
+.num30 #d2 {animation-name: d2_30}
+.num30 #d3 {animation-name: d3_30}
+.num30 #d4 {animation-name: d4_30}
+.num30 #d5 {animation-name: d5_30}
+.num30 #d6 {animation-name: d6_30}
+.num30 #d7 {animation-name: d7_30}
+.num30 #d8 {animation-name: d8_30}
+.num30 #d9 {animation-name: d9_30}
+.num30 #d10 {animation-name: d10_30}
+.num30 #d11 {animation-name: d11_30}
+.num30 #d12 {animation-name: d12_30}
+.num30 #d13 {animation-name: d13_30}
+.num30 #d14 {animation-name: d14_30}
+.num30 #d15 {animation-name: d15_30}
+
+@keyframes d1_30 {0.00%{visibility: visible} 6.67%{visibility: hidden}}
+@keyframes d2_30 {6.67%{visibility: visible} 13.33%{visibility: hidden}}
+@keyframes d3_30 {13.33%{visibility: visible} 20.00%{visibility: hidden}}
+@keyframes d4_30 {20.00%{visibility: visible} 26.67%{visibility: hidden}}
+@keyframes d5_30 {26.67%{visibility: visible} 33.33%{visibility: hidden}}
+@keyframes d6_30 {33.33%{visibility: visible} 40.00%{visibility: hidden}}
+@keyframes d7_30 {40.00%{visibility: visible} 46.67%{visibility: hidden}}
+@keyframes d8_30 {46.67%{visibility: visible} 53.33%{visibility: hidden}}
+@keyframes d9_30 {53.33%{visibility: visible} 60.00%{visibility: hidden}}
+@keyframes d10_30 {60.00%{visibility: visible} 66.67%{visibility: hidden}}
+@keyframes d11_30 {66.67%{visibility: visible} 73.33%{visibility: hidden}}
+@keyframes d12_30 {73.33%{visibility: visible} 80.00%{visibility: hidden}}
+@keyframes d13_30 {80.00%{visibility: visible} 86.67%{visibility: hidden}}
+@keyframes d14_30 {86.67%{visibility: visible} 93.33%{visibility: hidden}}
+@keyframes d15_30 {93.33%, 100%{visibility: visible}}
+
+.num20 #d1 {animation-name: d1_20}
+.num20 #d2 {animation-name: d2_20}
+.num20 #d3 {animation-name: d3_20}
+.num20 #d4 {animation-name: d4_20}
+.num20 #d5 {animation-name: d5_20}
+.num20 #d6 {animation-name: d6_20}
+.num20 #d7 {animation-name: d7_20}
+.num20 #d8 {animation-name: d8_20}
+.num20 #d9 {animation-name: d9_20}
+.num20 #d10 {animation-name: d10_20}
+.num20 #d11 {animation-name: d11_20}
+.num20 #d12 {animation-name: d12_20}
+.num20 #d13 {animation-name: d13_20}
+
+@keyframes d1_20 {0.00%{visibility: visible} 7.69%{visibility: hidden}}
+@keyframes d2_20 {7.69%{visibility: visible} 15.38%{visibility: hidden}}
+@keyframes d3_20 {15.38%{visibility: visible} 23.08%{visibility: hidden}}
+@keyframes d4_20 {23.08%{visibility: visible} 30.77%{visibility: hidden}}
+@keyframes d5_20 {30.77%{visibility: visible} 38.46%{visibility: hidden}}
+@keyframes d6_20 {38.46%{visibility: visible} 46.15%{visibility: hidden}}
+@keyframes d7_20 {46.15%{visibility: visible} 53.85%{visibility: hidden}}
+@keyframes d8_20 {53.85%{visibility: visible} 61.54%{visibility: hidden}}
+@keyframes d9_20 {61.54%{visibility: visible} 69.23%{visibility: hidden}}
+@keyframes d10_20 {69.23%{visibility: visible} 76.92%{visibility: hidden}}
+@keyframes d11_20 {76.92%{visibility: visible} 84.62%{visibility: hidden}}
+@keyframes d12_20 {84.62%{visibility: visible} 92.31%{visibility: hidden}}
+@keyframes d13_20 {92.31%, 100%{visibility: visible}}
+
+.num10 #d1 {animation-name: d1_10}
+.num10 #d2 {animation-name: d2_10}
+.num10 #d3 {animation-name: d3_10}
+.num10 #d4 {animation-name: d4_10}
+.num10 #d5 {animation-name: d5_10}
+.num10 #d6 {animation-name: d6_10}
+.num10 #d7 {animation-name: d7_10}
+.num10 #d8 {animation-name: d8_10}
+.num10 #d9 {animation-name: d9_10}
+.num10 #d10 {animation-name: d10_10}
+.num10 #d11 {animation-name: d11_10}
+
+@keyframes d1_10 {0.00%{visibility: visible} 9.09%{visibility: hidden}}
+@keyframes d2_10 {9.09%{visibility: visible} 18.18%{visibility: hidden}}
+@keyframes d3_10 {18.18%{visibility: visible} 27.27%{visibility: hidden}}
+@keyframes d4_10 {27.27%{visibility: visible} 36.36%{visibility: hidden}}
+@keyframes d5_10 {36.36%{visibility: visible} 45.45%{visibility: hidden}}
+@keyframes d6_10 {45.45%{visibility: visible} 54.55%{visibility: hidden}}
+@keyframes d7_10 {54.55%{visibility: visible} 63.64%{visibility: hidden}}
+@keyframes d8_10 {63.64%{visibility: visible} 72.73%{visibility: hidden}}
+@keyframes d9_10 {72.73%{visibility: visible} 81.82%{visibility: hidden}}
+@keyframes d10_10 {81.82%{visibility: visible} 90.91%{visibility: hidden}}
+@keyframes d11_10 {90.91%, 100%{visibility: visible}}
+
+#size.invis, #prize_h3.invis, #ticket.invis {
+    display: none;
+}
+
+#ticket {
+    font-size: 18px;
+    text-align: center;
+    margin: 16px 0 0 0;
+}
+
+#ticket img {
+    width: 30px;
+    height: auto;
+    vertical-align: middle;
+    margin-top: -3px;
+}
+
+@media screen and (min-width: 640px) {
+    #main {
+        max-width: 600px;
+    }
+    #main #animation {
+        width: 356px;
+        display: block;
+        margin: 0 auto;
+    }
+    #bottom_logos div {
+        display: inline-block;
+    }
+    #logo_pepsi {
+        margin-bottom: -4px;
+    }
+    #logo_monster {
+        margin-bottom: 2px;
+    }
+}
