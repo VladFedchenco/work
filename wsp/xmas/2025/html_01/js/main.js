@@ -1,4 +1,4 @@
-let game_type;
+let game_type, entries;
 
 let request = new XMLHttpRequest();
 request.open('GET', requestURL);
@@ -18,6 +18,26 @@ request.onload = function() {
     $("#again_bttn").classList.add("invis");
   } else {
     $("#more_chances").classList.add("invis");
+  }
+  switch(prizeData.entries) {
+    case 10:
+      entries = "num10";
+      break;
+    case 20:
+      entries = "num20";
+      break;
+    case 30:
+      entries = "num30";
+      break;
+    case 40:
+      entries = "num40";
+      break;
+    case 50:
+      entries = "num50";
+      break;
+    default:
+      entries = "";
+      break;
   }
 }
 
@@ -63,7 +83,7 @@ function gstart() {
   if(game_type == 3 || game_type == 4 ) {
     setTimeout(function(){
       $("#prize_h1").classList.remove("vis");
-      $("#prize").classList.add("num50");
+      $("#prize").classList.add(entries);
       $("#num_animation").classList.remove("invis");
       $("#gift_box").classList.add("invis");
       game_type == 3 ? $("#prize_money").classList.remove("invis") : $("#prize_car").classList.remove("invis");
