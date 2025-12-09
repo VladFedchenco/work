@@ -27,6 +27,7 @@ request.onload = function() {
     setTimeout(function(){ $("#f3").classList.add("vis"); }, 2400);
     setTimeout(function(){ $("#f2").classList.add("vis"); }, 2450);
     setTimeout(function(){ $("#f1").classList.add("vis"); }, 2500);
+    setTimeout(function(){ $("#num").classList.add("scale"); }, 2900);
     $("#text_num").innerHTML = prizeData.sweepstakes;
     gstart();
 }

@@ -214,6 +214,20 @@ svg text {
     }
 }
 
+.play #num.scale {
+    opacity: 1;
+    animation: digit3 .6s ease-in-out forwards;
+}
+
+@keyframes digit3 {
+    0%, 100% {
+        transform: translate(284px, 324px) scale(1) translate(-284px, -324px);
+    }
+    50% {
+        transform: translate(284px, 324px) scale(1.2) translate(-284px, -324px);
+    }
+}
+
 #sweepstakes {
     opacity: 1;
     pointer-events: initial;
