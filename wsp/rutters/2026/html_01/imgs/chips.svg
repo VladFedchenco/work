@@ -1,0 +1,305 @@
+<svg xmlns="http://www.w3.org/2000/svg" stroke="#3092c7" stroke-width="1" width="108" height="164" viewBox="0 0 540 820">
+
+<style>
+/* <![CDATA[ */
+
+#t1 { animation: t1 .3s -.1s ease-in-out infinite }
+@keyframes t1 {
+	0%, 100% { transform: translate(92.5px, 154.6px) rotate(0deg) translate(-92.5px, -154.6px) }
+	50% { transform: translate(92.5px, 154.6px) rotate(180deg) translate(-92.5px, -154.6px) }
+}
+
+#t2 { animation: t2 .31s -.2s ease-in-out infinite }
+@keyframes t2 {
+	0%, 100% { transform: translate(118px, 138.8px) rotate(0deg) translate(-118px, -138.8px) }
+	50% { transform: translate(118px, 138.8px) rotate(180deg) translate(-118px, -138.8px) }
+}
+
+#t3 { animation: t3 .37s -.3s ease-in-out infinite }
+@keyframes t3 {
+	0%, 100% { transform: translate(142.5px, 134.8px) rotate(0deg) translate(-142.5px, -134.8px) }
+	50% { transform: translate(142.5px, 134.8px) rotate(180deg) translate(-142.5px, -134.8px) }
+}
+
+#t4 { animation: t4 .33s -.4s ease-in-out infinite }
+@keyframes t4 {
+	0%, 100% { transform: translate(168px, 122.3px) rotate(0deg) translate(-168px, -122.3px) }
+	50% { transform: translate(168px, 122.3px) rotate(180deg) translate(-168px, -122.3px) }
+}
+
+#t5 { animation: t5 .36s -.15s ease-in-out infinite }
+@keyframes t5 {
+	0%, 100% { transform: translate(197px, 113.2px) rotate(0deg) translate(-197px, -113.2px) }
+	50% { transform: translate(197px, 113.2px) rotate(180deg) translate(-197px, -113.2px) }
+}
+
+#t6 { animation: t6 .34s -.25s ease-in-out infinite }
+@keyframes t6 {
+	0%, 100% { transform: translate(213px, 101.2px) rotate(0deg) translate(-213px, -101.2px) }
+	50% { transform: translate(213px, 101.2px) rotate(180deg) translate(-213px, -101.2px) }
+}
+
+#t7 { animation: t7 .31s -.35s ease-in-out infinite }
+@keyframes t7 {
+	0%, 100% { transform: translate(250.3px, 82.3px) rotate(0deg) translate(-250.3px, -82.3px) }
+	50% { transform: translate(250.3px, 82.3px) rotate(180deg) translate(-250.3px, -82.3px) }
+}
+
+#t8 { animation: t8 .36s -.45s ease-in-out infinite }
+@keyframes t8 {
+	0%, 100% { transform: translate(176.3px, 101.1px) rotate(0deg) translate(-176.3px, -101.1px) }
+	50% { transform: translate(176.3px, 101.1px) rotate(180deg) translate(-176.3px, -101.1px) }
+}
+
+#t9 { animation: t9 .4s -.03s ease-in-out infinite }
+@keyframes t9 {
+	0%, 100% { transform: translate(235.8px, 101.2px) rotate(0deg) translate(-235.8px, -101.2px) }
+	50% { transform: translate(235.8px, 101.2px) rotate(180deg) translate(-235.8px, -101.2px) }
+}
+
+#t10 { animation: t10 .44s -.13s ease-in-out infinite }
+@keyframes t10 {
+	0%, 100% { transform: translate(256.6px, 87.2px) rotate(0deg) translate(-256.6px, -87.2px) }
+	50% { transform: translate(256.6px, 87.2px) rotate(180deg) translate(-256.6px, -87.2px) }
+}
+
+#t11 { animation: t11 .34s -.23s ease-in-out infinite }
+@keyframes t11 {
+	0%, 100% { transform: translate(283.3px, 61.5px) rotate(0deg) translate(-283.3px, -61.5px) }
+	50% { transform: translate(283.3px, 61.5px) rotate(180deg) translate(-283.3px, -61.5px) }
+}
+
+#t12 { animation: t12 .32s -.33s ease-in-out infinite }
+@keyframes t12 {
+	0%, 100% { transform: translate(213.3px, 87.1px) rotate(0deg) translate(-213.3px, -87.1px) }
+	50% { transform: translate(213.3px, 87.1px) rotate(180deg) translate(-213.3px, -87.1px) }
+}
+
+#t13 { animation: t13 .37s -.43s ease-in-out infinite }
+@keyframes t13 {
+	0%, 100% { transform: translate(283.3px, 82.3px) rotate(0deg) translate(-283.3px, -82.3px) }
+	50% { transform: translate(283.3px, 82.3px) rotate(180deg) translate(-283.3px, -82.3px) }
+}
+
+#t14 { animation: t14 .41s -.07s ease-in-out infinite }
+@keyframes t14 {
+	0%, 100% { transform: translate(307.1px, 67.1px) rotate(0deg) translate(-307.1px, -67.1px) }
+	50% { transform: translate(307.1px, 67.1px) rotate(180deg) translate(-307.1px, -67.1px) }
+}
+
+#t15 { animation: t15 .45s -.17s ease-in-out infinite }
+@keyframes t15 {
+	0%, 100% { transform: translate(336px, 61.5px) rotate(0deg) translate(-336px, -61.5px) }
+	50% { transform: translate(336px, 61.5px) rotate(180deg) translate(-336px, -61.5px) }
+}
+
+#t16 { animation: t16 .35s -.27s ease-in-out infinite }
+@keyframes t16 {
+	0%, 100% { transform: translate(365.1px, 49.9px) rotate(0deg) translate(-365.1px, -49.9px) }
+	50% { transform: translate(365.1px, 49.9px) rotate(180deg) translate(-365.1px, -49.9px) }
+}
+
+#t17 { animation: t17 .38s -.37s ease-in-out infinite }
+@keyframes t17 {
+	0%, 100% { transform: translate(382.4px, 43px) rotate(0deg) translate(-382.4px, -43px) }
+	50% { transform: translate(382.4px, 43px) rotate(180deg) translate(-382.4px, -43px) }
+}
+
+#l1 { animation: l1 .6s ease-in infinite; opacity: 0 }
+@keyframes l1 {
+	0% { transform: translate(70px, 160px) rotate(0deg) translate(-70px, -160px) }
+	100% { transform: translate(0px, 800px) rotate(180deg) translate(-70px, -160px) }
+	5%, 70% { opacity: 1 }
+	0%, 100% { opacity: 0 }
+}
+
+#l2 { animation: l2 .7s .05s ease-in infinite; opacity: 0 }
+@keyframes l2 {
+	0% { transform: translate(70px, 160px) rotate(0deg) translate(-70px, -160px) }
+	100% { transform: translate(-20px, 800px) rotate(180deg) translate(-70px, -160px) }
+	5%, 70% { opacity: 1 }
+	0%, 100% { opacity: 0 }
+}
+
+#l3 { animation: l3 .8s .1s ease-in infinite; opacity: 0 }
+@keyframes l3 {
+	0% { transform: translate(70px, 160px) rotate(0deg) translate(-70px, -160px) }
+	100% { transform: translate(-50px, 800px) rotate(180deg) translate(-70px, -160px) }
+	5%, 70% { opacity: 1 }
+	0%, 100% { opacity: 0 }
+}
+
+#l4 { animation: l4 .55s .15s ease-in infinite; opacity: 0 }
+@keyframes l4 {
+	0% { transform: translate(70px, 160px) rotate(0deg) translate(-70px, -160px) }
+	100% { transform: translate(-100px, 800px) rotate(180deg) translate(-70px, -160px) }
+	5%, 70% { opacity: 1 }
+	0%, 100% { opacity: 0 }
+}
+
+#l5 { animation: l5 .7s .2s ease-in infinite; opacity: 0 }
+@keyframes l5 {
+	0% { transform: translate(70px, 160px) rotate(0deg) translate(-70px, -160px) }
+	100% { transform: translate(0px, 800px) rotate(180deg) translate(-70px, -160px) }
+	5%, 70% { opacity: 1 }
+	0%, 100% { opacity: 0 }
+}
+
+#l6 { animation: l6 .8s .25s ease-in infinite; opacity: 0 }
+@keyframes l6 {
+	0% { transform: translate(70px, 160px) rotate(0deg) translate(-70px, -160px) }
+	100% { transform: translate(-50px, 800px) rotate(180deg) translate(-70px, -160px) }
+	5%, 70% { opacity: 1 }
+	0%, 100% { opacity: 0 }
+}
+
+#l7 { animation: l7 .88s .3s ease-in infinite; opacity: 0 }
+@keyframes l7 {
+	0% { transform: translate(70px, 160px) rotate(0deg) translate(-70px, -160px) }
+	100% { transform: translate(150px, 800px) rotate(180deg) translate(-70px, -160px) }
+	5%, 70% { opacity: 1 }
+	0%, 100% { opacity: 0 }
+}
+
+#l8 { animation: l8 .73s .35s ease-in infinite; opacity: 0 }
+@keyframes l8 {
+	0% { transform: translate(70px, 160px) rotate(0deg) translate(-70px, -160px) }
+	100% { transform: translate(200px, 800px) rotate(180deg) translate(-70px, -160px) }
+	5%, 70% { opacity: 1 }
+	0%, 100% { opacity: 0 }
+}
+
+#l9 { animation: l9 .56s .4s ease-in infinite; opacity: 0 }
+@keyframes l9 {
+	0% { transform: translate(70px, 160px) rotate(0deg) translate(-70px, -160px) }
+	100% { transform: translate(120px, 800px) rotate(180deg) translate(-70px, -160px) }
+	5%, 70% { opacity: 1 }
+	0%, 100% { opacity: 0 }
+}
+
+#l10 { animation: l10 .67s .45s ease-in infinite; opacity: 0 }
+@keyframes l10 {
+	0% { transform: translate(70px, 160px) rotate(0deg) translate(-70px, -160px) }
+	100% { transform: translate(85px, 800px) rotate(180deg) translate(-70px, -160px) }
+	5%, 70% { opacity: 1 }
+	0%, 100% { opacity: 0 }
+}
+
+#l11 { animation: l11 .71s .5s ease-in infinite; opacity: 0 }
+@keyframes l11 {
+	0% { transform: translate(70px, 160px) rotate(0deg) translate(-70px, -160px) }
+	100% { transform: translate(70px, 800px) rotate(180deg) translate(-70px, -160px) }
+	5%, 70% { opacity: 1 }
+	0%, 100% { opacity: 0 }
+}
+
+#r1 { animation: r1 .4s .05s ease-in infinite; opacity: 0 }
+@keyframes r1 {
+	0% { transform: translate(400px, 50px) rotate(0deg) translate(-400px, -50px) }
+	100% { transform: translate(400px, 330px) rotate(180deg) translate(-400px, -50px) }
+	5%, 70% { opacity: 1 }
+	0%, 100% { opacity: 0 }
+}
+
+#r2 { animation: r2 .38s .1s ease-in infinite; opacity: 0 }
+@keyframes r2 {
+	0% { transform: translate(400px, 50px) rotate(0deg) translate(-400px, -50px) }
+	100% { transform: translate(300px, 330px) rotate(180deg) translate(-400px, -50px) }
+	5%, 70% { opacity: 1 }
+	0%, 100% { opacity: 0 }
+}
+
+#r3 { animation: r3 .39s .15s ease-in infinite; opacity: 0 }
+@keyframes r3 {
+	0% { transform: translate(400px, 50px) rotate(0deg) translate(-400px, -50px) }
+	100% { transform: translate(350px, 330px) rotate(180deg) translate(-400px, -50px) }
+	5%, 70% { opacity: 1 }
+	0%, 100% { opacity: 0 }
+}
+
+#r4 { animation: r4 .4s .2s ease-in infinite; opacity: 0 }
+@keyframes r4 {
+	0% { transform: translate(400px, 50px) rotate(0deg) translate(-400px, -50px) }
+	100% { transform: translate(370px, 330px) rotate(180deg) translate(-400px, -50px) }
+	5%, 70% { opacity: 1 }
+	0%, 100% { opacity: 0 }
+}
+
+#r5 { animation: r5 .41s .25s ease-in infinite; opacity: 0 }
+@keyframes r5 {
+	0% { transform: translate(400px, 50px) rotate(0deg) translate(-400px, -50px) }
+	100% { transform: translate(400px, 330px) rotate(180deg) translate(-400px, -50px) }
+	5%, 70% { opacity: 1 }
+	0%, 100% { opacity: 0 }
+}
+
+#r6 { animation: r6 .42s .3s ease-in infinite; opacity: 0 }
+@keyframes r6 {
+	0% { transform: translate(400px, 50px) rotate(0deg) translate(-400px, -50px) }
+	100% { transform: translate(420px, 330px) rotate(180deg) translate(-400px, -50px) }
+	5%, 70% { opacity: 1 }
+	0%, 100% { opacity: 0 }
+}
+
+#r7 { animation: r7 .43s .35s ease-in infinite; opacity: 0 }
+@keyframes r7 {
+	0% { transform: translate(400px, 50px) rotate(0deg) translate(-400px, -50px) }
+	100% { transform: translate(470px, 330px) rotate(180deg) translate(-400px, -50px) }
+	5%, 70% { opacity: 1 }
+	0%, 100% { opacity: 0 }
+}
+
+#r8 { animation: r8 .44s ease-in infinite; opacity: 0 }
+@keyframes r8 {
+	0% { transform: translate(400px, 50px) rotate(0deg) translate(-400px, -50px) }
+	100% { transform: translate(520px, 330px) rotate(180deg) translate(-400px, -50px) }
+	5%, 70% { opacity: 1 }
+	0%, 100% { opacity: 0 }
+}
+
+/* ]]> */
+</style>
+
+<g id="top">
+  <ellipse id="t1" cx="92.5" cy="154.6" fill="#DCFAFC" rx="28" ry="14"/>
+  <ellipse id="t2" cx="118" cy="138.8" fill="#FFF" rx="28" ry="14"/>
+  <ellipse id="t3" cx="142.5" cy="134.8" fill="#DCFAFC" rx="28" ry="14"/>
+  <ellipse id="t4" cx="168" cy="122.3" fill="#FFF" rx="28" ry="14"/>
+  <ellipse id="t5" cx="197" cy="113.2" fill="#DCFAFC" rx="28" ry="14"/>
+  <ellipse id="t6" cx="213" cy="101.2" fill="#DCFAFC" rx="28" ry="14"/>
+  <ellipse id="t7" cx="250.3" cy="82.3" fill="#DCFAFC" rx="28" ry="14"/>
+  <ellipse id="t8" cx="176.3" cy="101.1" fill="#DCFAFC" rx="28" ry="14"/>
+  <ellipse id="t9" cx="235.8" cy="101.2" fill="#DCFAFC" rx="28" ry="14"/>
+  <ellipse id="t10" cx="256.6" cy="87.2" fill="#FFF" rx="28" ry="14"/>
+  <ellipse id="t11" cx="283.3" cy="61.5" fill="#FFF" rx="28" ry="14"/>
+  <ellipse id="t12" cx="213.3" cy="87.1" fill="#FFF" rx="28" ry="14"/>
+  <ellipse id="t13" cx="283.3" cy="82.3" fill="#DCFAFC" rx="28" ry="14"/>
+  <ellipse id="t14" cx="307.1" cy="67.1" fill="#DCFAFC" rx="28" ry="14"/>
+  <ellipse id="t15" cx="336" cy="61.5" fill="#FFF" rx="28" ry="14"/>
+  <ellipse id="t16" cx="365.1" cy="49.9" fill="#DCFAFC" rx="28" ry="14"/>
+  <ellipse id="t17" cx="382.4" cy="43" fill="#FFF" rx="7" ry="15.3"/>
+</g>
+<g id="right">
+  <ellipse id="r1" cx="400" cy="50" fill="#DCFAFC" rx="28" ry="14"/>
+  <ellipse id="r2" cx="400" cy="50" fill="#FFF" rx="28" ry="14"/>
+  <ellipse id="r3" cx="400" cy="50" fill="#DCFAFC" rx="28" ry="14"/>
+  <ellipse id="r4" cx="400" cy="50" fill="#DCFAFC" rx="7" ry="15.3"/>
+  <ellipse id="r5" cx="400" cy="50" fill="#FFF" rx="28" ry="14"/>
+  <ellipse id="r6" cx="400" cy="50" fill="#FFF" rx="7" ry="15.3"/>
+  <ellipse id="r7" cx="400" cy="50" fill="#DCFAFC" rx="28" ry="14"/>
+  <ellipse id="r8" cx="400" cy="50" fill="#DCFAFC" rx="7" ry="15.3"/>
+</g>
+<g id="left">
+  <ellipse id="l1" cx="70" cy="160" fill="#DCFAFC" rx="28" ry="14"/>
+  <ellipse id="l2" cx="70" cy="160" fill="#DCFAFC" rx="28" ry="14"/>
+  <ellipse id="l3" cx="70" cy="160" fill="#DCFAFC" rx="7" ry="15.3"/>
+  <ellipse id="l4" cx="70" cy="160" fill="#DCFAFC" rx="7" ry="15.3"/>
+  <ellipse id="l5" cx="70" cy="160" fill="#DCFAFC" rx="28" ry="14"/>
+  <ellipse id="l6" cx="70" cy="160" fill="#DCFAFC" rx="28" ry="14"/>
+  <ellipse id="l7" cx="70" cy="160" fill="#DCFAFC" rx="28" ry="14"/>
+  <ellipse id="l8" cx="70" cy="160" fill="#FFF" rx="28" ry="14"/>
+  <ellipse id="l9" cx="70" cy="160" fill="#FFF" rx="28" ry="14"/>
+  <ellipse id="l10" cx="70" cy="160" fill="#FFF" rx="7" ry="15.3"/>
+  <ellipse id="l11" cx="70" cy="160" fill="#FFF" rx="28" ry="14"/>
+</g>
+</svg>
