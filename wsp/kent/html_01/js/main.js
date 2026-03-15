@@ -56,7 +56,8 @@ if( $("#enter_ballots") ) {
       $("#ttl2").classList.add("visible");
     }, 400);
     setTimeout(function(){
-      $("#game").style.minHeight = "540px";
+      $("#game").classList.add("smaller");
+      // $("#game").style.minHeight = "490px";
       $("#more_ballots").classList.remove("invis");
     }, 1000);
   }, false);
