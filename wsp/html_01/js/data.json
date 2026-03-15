@@ -1,0 +1,5 @@
+{ 
+  "ballots_amount": 10,
+  "ballots": "You have 10 ballots to assign.",
+  "ballot_enter": "Tap + to assign ballots to any prize."
+}
