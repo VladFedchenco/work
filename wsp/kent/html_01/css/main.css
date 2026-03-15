@@ -1001,18 +1001,20 @@ footer a:hover {
         max-height: 44px;
     }
     .clmn_img img {
-        max-height: 94px;
+        max-height: 90px;
+        display: block;
+        margin-bottom: 3px;
     }
     #game {
         padding-top: 40px;
-        min-height: 600px;
+        min-height: 556px;
     }
     #game.smaller {
-        min-height: 490px;
+        min-height: 450px;
     }
     #ttl1 {
         top: 10px;
-        font-size: 24px;
+        font-size: 21px;
     }
     #ttl2 {
         top: 15px;
@@ -1043,7 +1045,7 @@ footer a:hover {
         line-height: 54px;
     }
     #ballot_wrapper {
-        top: 160px;
+        top: 156px;
     }
     #ballots {
         font-size: 13px;
@@ -1069,18 +1071,25 @@ footer a:hover {
         line-height: 1.1;
         margin-bottom: 8px;
     }
+    #ballot_frame {
+        padding: 10px;
+    }
     #flyer_block {
         margin-bottom: 32px;
     }
     #fireworks {
         width: 100%;
     }
+    .counters_wrapper {
+        padding-bottom: 4px;
+    }
     .counter_center {
         line-height: 1;
         padding-top: 3px;
+        font-size: 21px;
     }
     .counter_left, .counter_right {
-        padding: 6px 4px 0 4px;
+        padding: 4px 4px 0 4px;
     }
     .clmn_img svg {
         top: 10px;
