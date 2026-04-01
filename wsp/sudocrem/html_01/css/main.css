@@ -1,0 +1,582 @@
+@font-face {
+    font-family: 'Cocon Pro Regular';
+    src: url('../fonts/coconpro-regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cocon Pro Bold';
+    src: url('../fonts/coconpro-bold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cocon Pro Italic';
+    src: url('../fonts/coconpro-ita.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
+}
+
+*:focus {
+    outline: none;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Cocon Pro Regular', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header {
+    background: #DE0B2B;
+    min-height: 70px;
+    padding: 16px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+header a {
+    font-family: 'Cocon Pro Bold', sans-serif;
+    color: #fff;
+    display: inline-block;
+    height: 28px;
+    line-height: 28px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: .07em;
+    margin: 0px 8px;
+}
+
+header a:hover {
+    color: #cdc1dd;
+}
+
+header a:hover path {
+    fill: #cdc1dd;
+}
+
+header a.bttn, .bttn {
+    font-size: 14px;
+    color: #3A3069;
+    border: solid 2px #fff;
+    background-color: #fff;
+    padding: 3px 21px;
+    margin: 0 0 0 8px;
+    height: auto;
+    border-radius: 0px 16px 0px 16px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    line-height: 28px;
+    letter-spacing: .07em;
+}
+
+header svg {
+    vertical-align: middle;
+    margin: -3px 2px 0 0;
+}
+
+header a.bttn:hover, .bttn:hover {
+    color: #fff;
+    background: none;
+}
+
+header a.bttn:hover path, .bttn:hover path {
+    fill: #fff;
+}
+
+header a.bttn.bonus, .bttn.bonus {
+    background: #CFC2DF;
+}
+
+header a.bttn.bonus:hover, .bttn.bonus:hover {
+    background: none;
+}
+
+.bttn.start {
+    font-family: 'Cocon Pro Bold', sans-serif;
+    padding: 3px 14px;
+    font-size: 16px;
+    background: #3A3069;
+    color: #fff;
+    margin: 0;
+}
+
+.bttn.start:hover {
+    background: #DE0B2B;
+}
+
+.bttn.plus {
+    font-size: 14px;
+    font-family: 'Cocon Pro Bold', sans-serif;
+    padding: 0 21px;
+    margin: 8px 0 16px 0;
+}
+
+a {
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+#header_button {
+    float: right;
+}
+
+#header_links {
+    padding-top: 4px;
+}
+
+#mobile_menu {
+    display: none;
+    margin: 0;
+    position: absolute;
+    cursor: pointer;
+    width: 21px;
+    height: 12px;
+    background: linear-gradient(to bottom, #fff 0px, #fff 2px, transparent 2px, transparent 5px, #fff 5px, #fff 7px, transparent 7px, transparent 10px, #fff 10px, #fff 12px);
+}
+
+#mobile_menu:hover {
+    background: linear-gradient(to bottom, #FFDE00 0px, #FFDE00 2px, transparent 2px, transparent 5px, #FFDE00 5px, #FFDE00 7px, transparent 7px, transparent 10px, #FFDE00 10px, #FFDE00 12px);
+}
+
+#main {
+    min-height: 1000px;
+    background: url(../imgs/bg.svg) repeat-x center top;
+    background-size: 1920px 1400px;
+    position: relative;
+    padding: 70px 0 48px 0;
+    text-align: center;
+}
+
+footer {
+    color: #000;
+    font-size: 12px;
+    padding: 36px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+footer a {
+    font-size: 14px;
+    color: #141C4B;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.clmns {
+    overflow: hidden;
+    padding: 8px 0;
+}
+
+.clmn_33 {
+    width: 33%;
+    float: left;
+    text-align: center;
+}
+
+.clmn_50 {
+    width: 50%;
+    float: left;
+}
+
+.clmn_66 {
+    width: 66%;
+    float: left;
+    padding-left: 32px;
+}
+
+#logo {
+    width: 320px;
+    margin: 8px;
+}
+
+#social {
+    padding: 16px;
+}
+
+#social img {
+    width: 42px;
+    margin: 0 12px;
+}
+
+#footer_links {
+    font-size: 14px;
+}
+
+#footer_links a {
+    margin: 0 8px;
+}
+
+#vendors {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 16px 0;
+}
+
+#note {
+    text-align: left;
+    font-family: 'Cocon Pro Italic';
+    color: #141C4B;
+    font-size: 10px;
+    margin: 8px 16px;
+}
+
+#wrapper {
+    opacity: 1;
+    position: absolute;
+    left: 50%;
+    min-height: 645px;
+    margin: 0 auto;
+    transform: translateX(-50%);
+    transition: all .5s ease;
+}
+
+#wrapper.invis {
+    opacity: 0;
+    pointer-events: none;
+}
+
+#start_bttn {
+    opacity: 1;
+    user-select: none;
+    white-space: nowrap;
+    position: absolute;
+    left: 50%;
+    top: 80px;
+    transform: translateX(-50%);
+    transition: all .3s ease;
+}
+
+.play #start_bttn {
+    pointer-events: none;
+    opacity: 0;
+}
+
+#sudocrem_02, #confetti, #cap {
+    opacity: 0;
+    pointer-events: none;
+    transition: all .3s ease;
+}
+
+#sudocrem_01 {
+    opacity: 1;
+    transition: all .3s ease;
+}
+
+.play #sudocrem_01 {
+    pointer-events: none;
+    opacity: 0;
+}
+
+.play #sudocrem_02, .play #cap, .play #confetti {
+    opacity: 1;
+}
+
+#animation {
+    cursor: pointer;
+}
+
+.play #animation {
+    pointer-events: none;
+}
+
+.play #cap.open {
+    animation: cap 1.2s ease-out forwards;
+}
+
+@keyframes cap {
+    0% {
+        opacity: 1;
+        transform: translate(19px, 139px);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translate(19px, -200px);
+    }
+}
+
+#prize {
+    opacity: 1;
+    padding-top: 36px;
+    margin: 0 auto;
+    max-width: 670px;
+    overflow: hidden;
+    max-height: 400px;
+    transition: all 1s ease-in-out;
+}
+
+#prize.hidden {
+    pointer-events: none;
+    opacity: 0;
+}
+
+#prize.full {
+    max-height: 1600px;
+}
+
+#prize h2 {
+    opacity: 1;
+    font-family: 'Cocon Pro Bold', sans-serif;
+    font-size: 25px;
+    color: #534696;
+    margin: 0;
+    transform: scale(1);
+    transition: all .5s .3s ease-in-out;
+}
+
+#prize.hidden h2 {
+    opacity: 0;
+    transform: scale(.5);
+}
+
+#prize h2.smaller {
+    font-size: 22px;
+    line-height: 1.1;
+}
+
+#prize h3 {
+    opacity: 1;
+    font-family: 'Cocon Pro Bold', sans-serif;
+    color: #141C4B;
+    font-size: 18px;
+    margin: 0 0 32px 0;
+    transform: scale(1);
+    transition: all .5s .5s ease-in-out;
+}
+
+#prize.hidden h3 {
+    opacity: 0;
+    transform: scale(.5);
+}
+
+#prize h4 {
+    font-family: 'Cocon Pro Bold', sans-serif;
+    color: #141C4B;
+    font-size: 18px;
+    margin: 0 0 32px 0;
+}
+
+#open_view {
+    opacity: 1;
+    position: relative;
+    width: 254px;
+    height: 254px;
+    margin: 0 auto 36px auto;
+    background: url(../imgs/open_view.png) no-repeat;
+    background-size: cover;
+    transform: scale(1);
+    transition: all .5s .7s ease-in-out;
+}
+
+#prize.hidden #open_view {
+    opacity: 0;
+    transform: scale(.5);
+}
+
+#ballots {
+    position: absolute;
+    left: 50%;
+    top: 24px;
+    width: 150px;
+    height: 200px;
+    opacity: 0;
+    transform: translateX(-50%) scale(.5);
+}
+
+#ballots.reveal {
+    animation: ballots .8s ease-in-out forwards;
+}
+
+@keyframes ballots {
+    0% {
+        opacity: 0;
+        transform: translateX(-50%) scale(.5);
+    }
+    40%, 100% {
+        opacity: 1;
+    }
+    70% {
+        transform: translateX(-50%) scale(1.15);
+    }
+    100% {
+        transform: translateX(-50%) scale(1);
+    }
+}
+
+#plus_block {
+    text-align: left;
+    color: #fff;
+    background: #534696;
+    padding: 18px 24px;
+    border-radius: 0px 24px;
+    margin-bottom: 36px;
+}
+
+#plus_block.invis {
+    display: none;
+}
+
+#plus_img {
+    max-height: 172px;
+    width: 100%;
+}
+
+#prize #plus_block h2, #prize #plus_block h3, #prize #plus_block h4 {
+    font-family: 'Cocon Pro Regular';
+    font-size: 18px;
+    line-height: 1.2;
+    color: #fff;
+    margin: 0 0 6px 0;
+}
+
+#plus_block h2 {
+    font-family: 'Cocon Pro Bold';
+    font-size: 26px;
+}
+
+#plus_note {
+    font-family: 'Cocon Pro Italic';
+    font-size: 14px;
+    margin: 0;
+}
+
+#plus_note a {
+    color: #fff;
+}
+
+#vendorproducts {
+    margin: 12px 0;
+}
+
+#prize_nav {
+    font-size: 18px;
+    padding: 24px 0 8px 0;
+}
+
+#prize_nav a {
+    font-family: 'Cocon Pro Bold';
+    color: #534696;
+    text-decoration: none;
+    margin: 0 8px;
+}
+
+#prize_nav a:hover {
+    text-decoration: underline;
+}
+
+#prize_nav a svg {
+    margin-top: -4px;
+    vertical-align: middle;
+}
+
+@media (max-width: 1290px) {
+    header a {
+        font-size: 14px;
+        margin: 0 4px;
+    }
+    header a.bttn, .bttn {
+        font-size: 12px;
+        padding: 3px 8px;
+    }
+}
+
+@media (max-width: 998px) {
+    #mobile_menu {
+        display: block;
+        top: 15px;
+        right: 16px;
+    }
+    #header_links, #header_button {
+        display: none;
+    }
+    header {
+        min-height: 44px;
+    }
+    header a {
+        margin: 4px 0;
+    }
+    footer {
+        padding: 16px;
+    }
+    #main {
+        padding: 44px 0 0 0;
+    }
+    .bttn.start {
+        width: 100%;
+        max-width: 334px;
+    }
+    #logo {
+        width: 260px;
+    }
+    #social img {
+        width: 32px;
+        margin: 0 8px;
+    }
+    #footer_links {
+        font-size: 0px;
+    }
+    #footer_links a {
+        display: block;
+        font-size: 16px;
+        margin: 8px 0;
+    }
+    #vendors img {
+        max-height: 50px;
+    }
+    #note {
+        margin: 8px 0;
+    }
+    #prize {
+        padding-top: 24px;
+        max-height: 370px;
+    }
+    #prize h3, #prize h4, #open_view {
+        margin-bottom: 24px;
+    }
+    #plus_block {
+        width: 94%;
+        margin: 0 auto 32px auto;
+        padding: 12px 18px;
+    }
+    .clmn_33, .clmn_66 {
+        float: none;
+        width: 100%;
+    }
+    .clmn_66 {
+        padding: 8px 0 0 0;
+        text-align: center;
+    }
+    #plus_img {
+        max-height: initial;
+    }
+    #vendorproducts {
+        width: 100%;
+    }
+    #prize_nav {
+        padding-bottom: 32px;
+    }
+}
