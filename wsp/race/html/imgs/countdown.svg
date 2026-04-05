@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" id="Layer_1" x="0" y="0" version="1.1" viewBox="0 0 366 792">
+  <linearGradient id="SVGID_1_" x1="22.42" x2="287.83" y1="152.78" y2="152.78" gradientTransform="matrix(-1 0 0 1 338.13 0)" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#e5e2df"/>
+    <stop offset="0" stop-color="#ded9d6"/>
+    <stop offset=".06" stop-color="#cfcbc9"/>
+    <stop offset=".18" stop-color="#a8a4a7"/>
+    <stop offset=".26" stop-color="#8b878d"/>
+    <stop offset=".52" stop-color="#f3f4f4"/>
+    <stop offset=".58" stop-color="#e5e5e6"/>
+    <stop offset=".7" stop-color="#c0bec0"/>
+    <stop offset=".87" stop-color="#847f84"/>
+    <stop offset=".88" stop-color="#807b80"/>
+    <stop offset="1" stop-color="#d1d3d4"/>
+    <stop offset="1" stop-color="#a7a9ac"/>
+  </linearGradient>
+  <path fill="url(#SVGID_1_)" d="M297.06 244.53 315.7 94.18h-14.24l4.11-33.15H60.43l4.11 33.15H50.3l18.64 150.35z"/>
+  <path d="m290.17 238.07 18.37-137.66H294.3l4.11-33.15H67.59l4.11 33.15H57.46l18.37 137.66z"/>
+</svg>
