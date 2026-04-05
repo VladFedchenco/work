@@ -329,6 +329,12 @@ footer h3 {
     opacity: 0;
 }
 
+#countdown_digits {
+    font-family: "hyperspace-race-variable", sans-serif;
+    font-variation-settings: "ital" 7, "wdth" 100, "wght" 900;
+    font-size: 200px;
+}
+
 #start_title {
     font-family: "hyperspace-race-variable", sans-serif;
     font-variation-settings: "ital" 7, "wdth" 76, "wght" 800;
