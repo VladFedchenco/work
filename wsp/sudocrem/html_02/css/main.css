@@ -600,6 +600,12 @@ footer a:hover {
         width: 100%;
         max-width: 334px;
     }
+    #prize .bttn.start {
+        width: 100%;
+        max-width: initial;
+        white-space: nowrap;
+        padding: 2px 16px;
+    }
     #start_bttn {
         font-size: 14px;
     }
