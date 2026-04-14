@@ -1,0 +1,10 @@
+{ 
+  "game_type": 3,
+  "ballots_amount": "",
+  "ballots": "",
+  "ballot_enter": "",
+  "prize": "imgs/redbull.png",
+  "prize_title": "RED BULL",
+  "prize_detail": "ALL VARIETIES - 8.4 OZ",
+  "prize_note": "Expires 9/21/2026. See full details <a href='#!'>here</a>."
+}

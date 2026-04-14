@@ -1,0 +1,10 @@
+{ 
+  "game_type": 2,
+  "ballots_amount": 8,
+  "ballots": "You have <strong>8 ballots</strong> to assign.",
+  "ballot_enter": "Enter your ballots into the prize draws below:",
+  "prize": "",
+  "prize_title": "",
+  "prize_detail": "",
+  "prize_note": ""
+}
