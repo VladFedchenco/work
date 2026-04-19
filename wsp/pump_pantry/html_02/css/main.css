@@ -780,6 +780,7 @@ footer a:hover {
 }
 
 #participating_product {
+    overflow: hidden;
     text-align: center;
     margin: 0 auto;
     opacity: 1;
