@@ -1,0 +1,10 @@
+{
+  "description": "You’ve earned the <strong>Quake Collector badge</strong> by purchasing 5 Summer Quake flavors.",
+  "badge": "imgs/badge.png",
+  "title": "You’ve WON!",
+  "prize": "imgs/16014.png",
+  "subtitle": "Free Single Dip of Ice Cream",
+  "note": "Your prize has been loaded on your U-Drive account. Redeem by 08/31/26. See <a href='#!'>Official Rules</a> for details.",
+  "more_info": "Plus, you have a new badge!",
+  "button": "REVEAL NEXT BADGE!"
+}

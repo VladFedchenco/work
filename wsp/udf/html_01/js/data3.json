@@ -1,0 +1,10 @@
+{
+  "description": "You’ve earned the <strong>Quake Collector badge</strong> by purchasing 5 Summer Quake flavors.",
+  "badge": "imgs/badge.png",
+  "title": "Buy 1, Get 1 Free!",
+  "prize": "imgs/16020.png",
+  "subtitle": "Single Dip of Ice Cream",
+  "note": "Single Dip of Ice Cream Your BOGO has been loaded on your U-Drive account. Redeem by 08/31/26 See <a href='#!'>Official Rules</a> for details.",
+  "more_info": "View your earned badges and progress on your Flavor Quest.",
+  "button": "VIEW FLAVOR QUEST"
+}
