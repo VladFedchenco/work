@@ -1,8 +1,8 @@
-let game_type;
 let trigger = true;
 let t1_state = true;
 let t2_state = true;
 let t3_state = true;
+let tabs_opened = 0;
 let randomNumber = Math.floor(Math.random()*2.9);
 
 let request = new XMLHttpRequest();
@@ -12,6 +12,12 @@ request.send();
 
 request.onload = function() {
   const prizeData = request.response;
+  if(game_type == 1) {
+    $("#next_ticket").classList.remove("display_none");
+  }
+  if(game_type == 2) {
+    $("#upload_ticket").classList.remove("display_none");
+  }
 }
 
 $("#tab1").addEventListener("click", function(){
@@ -25,6 +31,7 @@ $("#tab1").addEventListener("click", function(){
     $("#prize_subttl").innerHTML = "16 oz";
     $("#prize_note").innerHTML = "See <a href='#!''>MY PRIZES</a> to redeem.<br> Redeem by July 15, 2026.";
   }, 400);
+  tabs_opened++;
   reveal_tab("#tab1_animation", "#tab1_cta", "#tab1", true);
 });
 
@@ -39,6 +46,7 @@ $("#tab2").addEventListener("click", function(){
     $("#prize_subttl").innerHTML = "Click to break open your next tab!";
     $("#prize_note").innerHTML = "";
   }, 400);
+  tabs_opened++;
   reveal_tab("#tab2_animation", "#tab2_cta", "#tab2", false);
 });
 
@@ -53,11 +61,13 @@ $("#tab3").addEventListener("click", function(){
     $("#prize_subttl").innerHTML = "into the WEEKLY and GRAND PRIZE Cash Sweepstakes!";
     $("#prize_note").innerHTML = "";
   }, 400);
+  tabs_opened++;
   reveal_tab("#tab3_animation", "#tab3_cta", "#tab3", true);
 });
 
 function reveal_tab(tab, cta, bttn, stars) {
   if(trigger) {
+    console.log(tabs_opened);
     trigger = false;
     $("#cursor").classList.add("invis");
     $("#cta_logo").classList.add("invis");
@@ -95,6 +105,13 @@ function reveal_tab(tab, cta, bttn, stars) {
       $("#tab2").classList.remove("disable");
       $("#tab3").classList.remove("disable");
     }, 1000);
+    if(tabs_opened == 3) {
+      setTimeout(function(){
+        $("#prize_section").classList.add("invis");
+        $("#main").classList.add("gameover");
+        $("#play_again").classList.remove("none");
+      }, 6000);
+    }
   }
 }
 
@@ -103,6 +120,8 @@ function $(sel) {
 }
 
 function play_sound() {
+  $("#sound").pause();
+  $("#sound").currentTime = 0;
   $("#sound").play();
   $("#sound").loop = false;
 }

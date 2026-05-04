@@ -144,7 +144,11 @@ a {
   padding: 150px 0 36px 0;
   text-align: center;
   opacity: 1;
-  transition: all .3s ease-in-out;
+  transition: all .6s ease-in-out;
+}
+
+#main.gameover {
+  padding: 32px 0 36px 0;
 }
 
 #animation {
@@ -669,7 +673,7 @@ animation-fill-mode: forwards;
   top: 0;
   width: 318px;
   height: 190px;
-  padding: 16px 0 0 0;
+  padding: 24px 0 0 0;
   transform: translate(-50%, 0) scale(1);
   transition: all .4s ease-in-out;
 }
@@ -687,11 +691,17 @@ animation-fill-mode: forwards;
   padding: 20px 0 0 0;
 }
 
-#prize_section h2 {
+#prize_section h2, #play_again h2 {
   font-family: 'Open Sans Condensed', sans-serif;
   margin: 0;
+  line-height: .8;
   color: #4CA54B;
   font-size: 26px;
+}
+
+#play_again h2 {
+  margin: 0 0 16px 0;
+  line-height: 1;
 }
 
 #prize_section h3 {
@@ -711,6 +721,86 @@ animation-fill-mode: forwards;
 #prize_section img {
   max-width: 100px;
   max-height: 140px;
+}
+
+#play_again {
+  width: 318px;
+  margin: 0 auto;
+  max-height: 800px;
+  overflow: hidden;
+  transition: all .6s ease-in-out;
+}
+
+#play_again.none {
+  max-height: 0;
+}
+
+#play_again p {
+  line-height: 1.6;
+}
+
+.bttn {
+  display: block;
+  width: 260px;
+  margin: 0 auto 24px auto;
+  padding: 16px 24px 14px 24px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+  text-align: center;
+  white-space: nowrap;
+  user-select: none;
+  color: #fff;
+  background: #4CA54B;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, .3);
+  transition: all .2s ease;
+}
+
+.bttn:hover {
+  background: #F89920;
+}
+
+.bttn svg {
+  vertical-align: middle;
+  margin: -2px 6px 0 0;
+}
+
+#next_ticket p {
+  margin: 0;
+  font-size: 14px;
+  font-style: italic;
+}
+
+#upload_ticket img {
+  max-width: 276px;
+  margin: 16px 0;
+}
+
+#game_home {
+  display: inline-block;
+  color: #D6176F;
+  font-size: 13px;
+  font-weight: 700;
+  transition: all .2s ease;
+}
+
+#game_home svg {
+  vertical-align: middle;
+  margin: -1px 6px 0 0;
+  transition: all .2s ease;
+}
+
+#game_home:hover {
+  color: #F89920;
+}
+
+#game_home:hover svg {
+  fill: #F89920;
+}
+
+.display_none {
+  display: none;
 }
 
 @media screen and (max-width: 990px) {
