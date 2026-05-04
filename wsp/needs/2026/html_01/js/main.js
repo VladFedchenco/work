@@ -88,7 +88,11 @@ function reveal_tab(tab, cta, bttn, stars) {
     }
     setTimeout(function(){
       $(tab).classList.add("play");
-      play_sound();
+      if(stars) {
+        play_sound("#sound");
+      } else {
+        play_sound("#sound2");
+      }
     }, 200);
     setTimeout(function(){
       $("#prize_section").classList.remove("invis");
@@ -107,8 +111,8 @@ function reveal_tab(tab, cta, bttn, stars) {
     }, 1000);
     if(tabs_opened == 3) {
       setTimeout(function(){
-        $("#prize_section").classList.add("invis");
-        $("#main").classList.add("gameover");
+        // $("#prize_section").classList.add("invis");
+        // $("#main").classList.add("gameover");
         $("#play_again").classList.remove("none");
       }, 6000);
     }
@@ -119,9 +123,9 @@ function $(sel) {
   return document.querySelector(sel);
 }
 
-function play_sound() {
-  $("#sound").pause();
-  $("#sound").currentTime = 0;
-  $("#sound").play();
-  $("#sound").loop = false;
+function play_sound(s) {
+  $(s).pause();
+  $(s).currentTime = 0;
+  $(s).play();
+  $(s).loop = false;
 }
