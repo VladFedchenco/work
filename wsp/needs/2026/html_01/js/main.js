@@ -1,3 +1,4 @@
+let prizeData;
 let trigger = true;
 let t1_state = true;
 let t2_state = true;
@@ -11,63 +12,68 @@ request.responseType = 'json';
 request.send();
 
 request.onload = function() {
-  const prizeData = request.response;
-  if(game_type == 1) {
+  prizeData = request.response;
+  if(prizeData.game_type == 1) {
     $("#next_ticket").classList.remove("display_none");
   }
-  if(game_type == 2) {
+  if(prizeData.game_type == 2) {
     $("#upload_ticket").classList.remove("display_none");
   }
 }
 
 $("#tab1").addEventListener("click", function(){
-  t1_state = false;
-  $("#prize_section").classList.add("invis");
-  $("#tab1_prizes").classList.remove("invis");
-  setTimeout(function(){
-    $("#ttl").innerHTML = "YOU’VE WON!";
-    $("#prize_img").setAttribute("src", "imgs/slush.png");
-    $("#prize_ttl").innerHTML = "Xtra Slush";
-    $("#prize_subttl").innerHTML = "16 oz";
-    $("#prize_note").innerHTML = "See <a href='#!''>MY PRIZES</a> to redeem.<br> Redeem by July 15, 2026.";
-  }, 400);
-  tabs_opened++;
-  reveal_tab("#tab1_animation", "#tab1_cta", "#tab1", true);
+  if(t1_state) {
+    t1_state = false;
+    $("#prize_section").classList.add("invis");
+    $("#tab1_prizes").classList.remove("invis");
+    setTimeout(function(){
+      $("#ttl").innerHTML = prizeData.ttl1;
+      $("#prize_img").setAttribute("src", prizeData.prize_img1);
+      $("#prize_ttl").innerHTML = prizeData.prize_ttl1;
+      $("#prize_subttl").innerHTML = prizeData.prize_subttl1;
+      $("#prize_note").innerHTML = prizeData.prize_note1;
+    }, 400);
+    tabs_opened++;
+    reveal_tab("#tab1_animation", "#tab1_cta", "#tab1", true);
+  }
 });
 
 $("#tab2").addEventListener("click", function(){
-  t2_state = false;
-  $("#prize_section").classList.add("invis");
-  $("#tab2_prizes").classList.remove("invis");
-  setTimeout(function(){
-    $("#ttl").innerHTML = "TRY AGAIN";
-    $("#prize_img").setAttribute("src", "imgs/speech.png");
-    $("#prize_ttl").innerHTML = "Not a winning tab this time.";
-    $("#prize_subttl").innerHTML = "Click to break open your next tab!";
-    $("#prize_note").innerHTML = "";
-  }, 400);
-  tabs_opened++;
-  reveal_tab("#tab2_animation", "#tab2_cta", "#tab2", false);
+  if(t2_state) {
+    t2_state = false;
+    $("#prize_section").classList.add("invis");
+    $("#tab2_prizes").classList.remove("invis");
+    setTimeout(function(){
+      $("#ttl").innerHTML = prizeData.ttl2;
+      $("#prize_img").setAttribute("src", prizeData.prize_img2);
+      $("#prize_ttl").innerHTML = prizeData.prize_ttl2;
+      $("#prize_subttl").innerHTML = prizeData.prize_subttl2;
+      $("#prize_note").innerHTML = prizeData.prize_note2;
+    }, 400);
+    tabs_opened++;
+    reveal_tab("#tab2_animation", "#tab2_cta", "#tab2", false);
+  }
 });
 
 $("#tab3").addEventListener("click", function(){
-  t3_state = false;
-  $("#prize_section").classList.add("invis");
-  $("#tab3_prizes").classList.remove("invis");
-  setTimeout(function(){
-    $("#ttl").innerHTML = "YOU’VE EARNED!";
-    $("#prize_img").setAttribute("src", "imgs/cash.png");
-    $("#prize_ttl").innerHTML = "2 Entries";
-    $("#prize_subttl").innerHTML = "into the WEEKLY and GRAND PRIZE Cash Sweepstakes!";
-    $("#prize_note").innerHTML = "";
-  }, 400);
-  tabs_opened++;
-  reveal_tab("#tab3_animation", "#tab3_cta", "#tab3", true);
+  if(t3_state) {
+    t3_state = false;
+    $("#prize_section").classList.add("invis");
+    $("#tab3_prizes").classList.remove("invis");
+    setTimeout(function(){
+      $("#ttl").innerHTML = prizeData.ttl3;
+      $("#prize_img").setAttribute("src", prizeData.prize_img3);
+      $("#prize_ttl").innerHTML = prizeData.prize_ttl3;
+      $("#prize_subttl").innerHTML = prizeData.prize_subttl3;
+      $("#prize_note").innerHTML = prizeData.prize_note3;
+    }, 400);
+    tabs_opened++;
+    reveal_tab("#tab3_animation", "#tab3_cta", "#tab3", true);
+  }
 });
 
 function reveal_tab(tab, cta, bttn, stars) {
   if(trigger) {
-    console.log(tabs_opened);
     trigger = false;
     $("#cursor").classList.add("invis");
     $("#cta_logo").classList.add("invis");
@@ -111,10 +117,8 @@ function reveal_tab(tab, cta, bttn, stars) {
     }, 1000);
     if(tabs_opened == 3) {
       setTimeout(function(){
-        // $("#prize_section").classList.add("invis");
-        // $("#main").classList.add("gameover");
         $("#play_again").classList.remove("none");
-      }, 6000);
+      }, 2500);
     }
   }
 }
