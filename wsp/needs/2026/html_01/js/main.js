@@ -34,7 +34,7 @@ $("#tab1").addEventListener("click", function(){
       $("#prize_note").innerHTML = prizeData.prize_note1;
     }, 400);
     tabs_opened++;
-    reveal_tab("#tab1_animation", "#tab1_cta", "#tab1", true);
+    reveal_tab("#tab1_animation", "#tab1_cta", "#tab1", prizeData.winning_tab1);
   }
 });
 
@@ -51,7 +51,7 @@ $("#tab2").addEventListener("click", function(){
       $("#prize_note").innerHTML = prizeData.prize_note2;
     }, 400);
     tabs_opened++;
-    reveal_tab("#tab2_animation", "#tab2_cta", "#tab2", false);
+    reveal_tab("#tab2_animation", "#tab2_cta", "#tab2", prizeData.winning_tab2);
   }
 });
 
@@ -68,7 +68,7 @@ $("#tab3").addEventListener("click", function(){
       $("#prize_note").innerHTML = prizeData.prize_note3;
     }, 400);
     tabs_opened++;
-    reveal_tab("#tab3_animation", "#tab3_cta", "#tab3", true);
+    reveal_tab("#tab3_animation", "#tab3_cta", "#tab3", prizeData.winning_tab3);
   }
 });
 
