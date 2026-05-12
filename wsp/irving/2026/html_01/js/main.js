@@ -24,6 +24,7 @@ window.addEventListener('load', function () {
       $("#rewards_ttl_wrapper").classList.add("hidden");
       setTimeout(function(){
         play_sound();
+        custom_cursor.classList.add("none");
         if (game_type == 1) {
           $('#info_block').classList.remove("invis");
         }
@@ -65,6 +66,10 @@ request.onload = function() {
   if(game_type == 2) {
     $('#units').classList.add("invis");
   }
+  setTimeout(function(){
+    $("#rewards_ttl img").classList.remove("vis");
+    $("#top_ttl").classList.add("vis");
+  }, 2000);
 }
 
 const moveCursor = (e)=> {
