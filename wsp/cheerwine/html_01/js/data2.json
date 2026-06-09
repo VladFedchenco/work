@@ -1,0 +1,7 @@
+{ 
+  "ballots_amount": 10,
+  "prize_image": "imgs/coupon.jpg",
+  "prize_title": "$1.00 off Cheerwine",
+  "prize_info": "This is a print at home coupon. You can access your prize at anytime in <a href='#!'>My Game Account</a>.",
+  "bonus": false
+}
