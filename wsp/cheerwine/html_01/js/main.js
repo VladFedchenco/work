@@ -19,6 +19,7 @@ request.onload = function() {
 }
 
 $("#bottle").addEventListener("click", function() {
+  play_sound();
   $("#bubbles").setAttribute("href", "imgs/bubbles.svg?v=" + randomNumber);
   $("#bottle").classList.add("play");
   $("#logo_promotion").classList.add("invis");
@@ -59,7 +60,7 @@ $("#bottle").addEventListener("click", function() {
 
 if( $("#enter_ballots") ) {
   $("#enter_ballots").addEventListener("click", function(){
-    play_sound();
+    play_sound2();
 
     $("#ttl").classList.add("invis");
     $("#enter_ballots").classList.add("invis");
@@ -141,6 +142,11 @@ function $(sel) {
 function play_sound() {
   $("#sound").play();
   $("#sound").loop=false;
+}
+
+function play_sound2() {
+  $("#sound2").play();
+  $("#sound2").loop=false;
 }
 
 function counterBttnPlus(a, f) {
