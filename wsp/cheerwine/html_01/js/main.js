@@ -60,6 +60,11 @@ $("#bottle").addEventListener("click", function() {
 
 if( $("#enter_ballots") ) {
   $("#enter_ballots").addEventListener("click", function(){
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+    
     play_sound2();
 
     $("#ttl").classList.add("invis");
