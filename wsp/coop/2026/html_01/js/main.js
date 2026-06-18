@@ -11,6 +11,7 @@ request.onload = function() {
   const prizeData = request.response;
   instant_win = prizeData.instant_win;
   ballots_amount = prizeData.ballots_amount;
+  $("#entries_left").innerHTML = ballots_amount;
   total_amount = ballots_amount;
   $("#number").innerHTML = prizeData.ballots_amount;
   $("#sweeps_title").innerHTML = prizeData.sweeps_title;
@@ -108,6 +109,7 @@ function play_sound() {
 
 function counterBttnPlus(a, f) {
   f.innerHTML = a;
+  $("#entries_left").innerHTML = ballots_amount;
   if(ballots_amount == 0) {
     $("#enter_ballots").classList.remove("disable");
   }
@@ -115,6 +117,7 @@ function counterBttnPlus(a, f) {
 
 function counterBttnMinus(a, f) {
   f.innerHTML = a;
+  $("#entries_left").innerHTML = ballots_amount;
   if(ballots_amount > 0) {
     $("#enter_ballots").classList.add("disable");
   }
