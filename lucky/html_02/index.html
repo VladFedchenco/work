@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LuckyBox</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link href="css/main.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+<header>
+  <div class="header-70">
+    <a href="javascript:;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="138" height="32" viewBox="0 0 138 32">
+        <path fill="#fff" d="M28.67 13.59c.31-.17.69.04.69.39v11.31c0 .08-.02.16-.06.22-.04.07-.1.12-.17.16L18.17 31.7a.47.47 0 0 1-.46 0L6.74 25.67a.5.5 0 0 1-.17-.16.47.47 0 0 1-.06-.23V14c0-.34.38-.56.69-.39l10.51 5.79a.47.47 0 0 0 .46 0l10.51-5.81Z"/>
+        <path fill="#fff" d="M28.66 12.37c.31-.17.31-.6 0-.77L18.17 5.78a.47.47 0 0 0-.46 0l-10.5 5.85c-.31.17-.31.61 0 .78l10.5 5.78a.47.47 0 0 0 .46 0l10.49-5.81Zm15.06 11.28h10.3v-2.92h-6.93v-8.65h-3.37zm33.9 0h3.37v-2.78h1.63l1.9 2.78h3.97l-3.15-4.47 2.99-3.94 4.17 8.32c-.14.07-.36.1-.63.1h-2.61v2.94h1.63c2.63 0 4.01-.54 4.98-2.59l4.28-9.05h-3.76l-1.34 3.39-.59 2.04h-.23l-.64-2-1.56-3.42h-7.45l-1.99 3.02H81V12.1h-3.37v11.57Zm-22.71-3.13c0 1.88 1.18 3.3 3.71 3.3s3.46-1.36 3.65-2.82h.18v2.64h3.15v-8.71h-3.37v4.49c0 1.12-.38 1.49-1.93 1.49s-2.02-.38-2.02-1.59v-4.39h-3.37v5.58Zm48.1 3.13h8.04c2.86 0 4.03-1.26 4.03-3.21 0-1.61-1.15-2.68-3.54-2.76v-.17c2.18-.09 2.99-1.14 2.99-2.63 0-1.81-1.29-2.8-3.88-2.8h-7.63v11.57Zm3.35-7.19v-1.47h3.83c.7 0 .97.21.97.74s-.2.73-.88.73zm0 4.27v-1.61h4.26c.82 0 1.06.16 1.06.79s-.25.81-1.06.81h-4.26Zm14.43 3.09c-3.13 0-5.26-1.71-5.26-4.52s2.13-4.53 5.26-4.53 5.26 1.69 5.26 4.53-2.13 4.52-5.26 4.52m5.35-.17h4.06l1.77-2.56h.18l1.84 2.56h4.12l-3.37-4.27v-.17l3.37-4.27h-4.07l-1.77 2.63h-.18l-1.84-2.63h-4.12l3.37 4.32v.17l-3.37 4.21Zm-54.46.17c-3.2 0-5.25-1.71-5.25-4.52s2.04-4.53 5.25-4.53c3.08 0 5.05 1.52 5.05 3.85v.28h-3.35v-.14c0-.9-.68-1.09-1.77-1.09-1.24 0-1.83.26-1.83 1.62s.59 1.61 1.83 1.61c1.09 0 1.77-.17 1.77-1.07v-.15h3.35v.29c0 2.31-1.97 3.85-5.05 3.85m49.09-1.31c0-1.43 1.8-3.18 3.29-3.18-1.48 0-3.29-1.75-3.29-3.18 0 1.42-1.81 3.17-3.29 3.17 1.48 0 3.29 1.75 3.29 3.18Z"/>
+        <path fill="#eacd66" d="M4.74 5.05c0 2.06-2.61 4.59-4.74 4.6 2.13 0 4.73 2.5 4.72 4.58 0-2.06 2.62-4.59 4.74-4.6-2.12 0-4.73-2.5-4.72-4.58"/>
+        <path fill="#eacd66" d="M15.3 2.54c1.18 0 2.63 1.4 2.64 2.55 0-1.15 1.44-2.55 2.62-2.54-1.18 0-2.63-1.41-2.64-2.55 0 1.14-1.44 2.54-2.62 2.54"/>
+        <path fill="#eacd66" d="M31.12 6.07c0 1.6-2.03 3.57-3.69 3.58 1.66 0 3.68 1.95 3.67 3.56 0-1.61 2.04-3.57 3.69-3.58-1.65 0-3.68-1.95-3.67-3.56"/>
+      </svg>
+    </a>
+  </div>
+  <div class="header-15">
+    <div id="avatar_wrapper">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+         <defs>
+          <clipPath id="circleView">
+            <circle cx="16" cy="16" r="16" />
+          </clipPath>
+          <linearGradient id="grd1" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#fff" />
+            <stop offset="50%" stop-color="#828282" />
+            <stop offset="100%" stop-color="#fff" />
+          </linearGradient>
+        </defs>
+        <image href="imgs/profile_pic.png" width="32" height="32" clip-path="url(#circleView)" />
+        <circle cx="16" cy="16" r="15" fill="none" stroke="url(#grd1)" stroke-width="2" opacity=".4" />
+        <circle cx="16" cy="16" r="15" fill="none" stroke="url(#grd1)" stroke-width="2" stroke-dasharray="96" stroke-dashoffset="168" stroke-linecap="round" />
+      </svg>
+      <div id="num">99</div>
+    </div>
+  </div>
+  <div class="header-15">
+    <a href="javascript:;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="13" viewBox="0 0 22 13">
+        <path fill="#fff" d="M0 0h21.33v2.14H0zm5.33 5.36h16V7.5h-16zM12 10.71h9.33v2.14H12z"/>
+      </svg>
+    </a>
+  </div>
+</header>
+
+<section id="main">
+  <div id="about">
+    <div id="about_bg">
+      <div class="about_row">
+        <div id="big_avatar">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 116 116">
+            <defs>
+              <clipPath id="circleView2">
+                <circle cx="58" cy="58" r="48" />
+              </clipPath>
+            </defs>
+            <image href="imgs/profile_pic.png" width="116" height="116" clip-path="url(#circleView2)" />
+            <image id="frame_glow" href="imgs/circle_glow.png" width="116" height="116" />
+          </svg>
+        </div>
+        <div id="about_info">
+          <a id="settings" href="javascript:;"><img src="imgs/gear.svg"></a>
+          <h2>Celestine Esotu</h2>
+          <h3>Seeker of Fortune</h3>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 222 24">
+            <g fill="none" stroke="#ffe481">
+              <path d="M12 .5a11.5 11.5 0 0 1 0 23 11.5 11.5 0 0 1 0-23Z"/>
+              <path d="M24 11.5h9"/>
+              <path d="M45 .5a11.5 11.5 0 0 1 0 23 11.5 11.5 0 0 1 0-23Z"/>
+              <path d="M57 11.5h9"/>
+              <path d="M78 .5a11.5 11.5 0 0 1 0 23 11.5 11.5 0 0 1 0-23Z"/>
+              <path d="M90 11.5h9"/>
+              <path stroke-dasharray="2 2" d="M111 .5a11.5 11.5 0 0 1 0 23 11.5 11.5 0 0 1 0-23Z"/>
+              <path d="M123 11.5h9"/>
+              <path stroke-dasharray="2 2" d="M144 .5a11.5 11.5 0 0 1 0 23 11.5 11.5 0 0 1 0-23Z"/>
+              <path d="M156 11.5h9"/>
+              <path stroke-dasharray="2 2" d="M177 .5a11.5 11.5 0 0 1 0 23 11.5 11.5 0 0 1 0-23Z"/>
+              <path d="M189 11.5h9"/>
+              <path stroke-dasharray="2 2" d="M210 .5a11.5 11.5 0 0 1 0 23 11.5 11.5 0 0 1 0-23Z"/>
+            </g>
+            <path fill="#ffe481" d="m9.96 16.5-4.75-4.75 1.19-1.19 3.56 3.56 7.65-7.65 1.19 1.19z"/>
+            <path fill="#ffe481" d="m43.29 16.5-4.75-4.75 1.19-1.19 3.56 3.56 7.65-7.65 1.19 1.19z"/>
+            <path fill="#ffe481" d="m75.62 16.5-4.75-4.75 1.19-1.19 3.56 3.56 7.65-7.65 1.19 1.19-8.83 8.83Z"/>
+            <g fill="#FFE481" font-size="14px" text-anchor="middle">
+              <text x="110" y="17">4</text>
+              <text x="144" y="17">5</text>
+              <text x="177" y="17">6</text>
+            </g>
+            <path fill="#ffe481" d="M212 4.84q.72 0 1.33.36a2.7 2.7 0 0 1 1.34 2.31c0 .46-.12.93-.36 1.33h3.02v1.33H216v6.67q0 .28-.2.47c-.2.19-.29.2-.47.2h-10.67a.6.6 0 0 1-.47-.2.6.6 0 0 1-.2-.47v-6.67h-1.33V8.84h3.02a2.68 2.68 0 0 1 2.61-3.99c.66.07 1.26.39 1.7.89q.38-.43.9-.67.53-.24 1.1-.24m-1.32 5.34h-1.33v6.67h1.33zm-2.67-4q-.54 0-.92.37c-.25.24-.39.57-.41.91q-.01.53.34.94t.89.44h1.43V7.5q0-.5-.32-.87t-.81-.45h-.1zm4 0a1.34 1.34 0 0 0-1.33 1.24v1.43H212a1.34 1.34 0 0 0 1.33-1.24v-.1A1.33 1.33 0 0 0 212 6.17"/>
+          </svg>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 348 140">
+        <defs>
+          <linearGradient id="grd2" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#DC2B50" />
+            <stop offset="100%" stop-color="#76172B" />
+          </linearGradient>
+          <linearGradient id="grd3" x1="0%" y1="100%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#FAD350" />
+            <stop offset="33%" stop-color="#FFFFA3" />
+            <stop offset="66%" stop-color="#DEB444" />
+            <stop offset="100%" stop-color="#F2B739" />
+          </linearGradient>
+          <linearGradient id="grd4" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#270002" />
+            <stop offset="100%" stop-color="#BC060D" />
+          </linearGradient>
+          <linearGradient id="grd5" x1="100%" y1="0%" x2="0%" y2="50%">
+            <stop offset="0%" stop-color="#FCF7CD" />
+            <stop offset="100%" stop-color="#EDCD78" />
+          </linearGradient>
+        </defs>
+        <text font-size="24" font-weight="bold" fill="url(#grd2)" stroke="url(#grd3)" x="12" y="24">LVL 1</text>
+        <text font-size="14" fill="#fff" x="90" y="24">1155/1500 xp</text>
+        <text font-size="24" font-weight="bold" text-anchor="end" fill="url(#grd2)" stroke="url(#grd3)" x="338" y="24">77%</text>
+        <rect stroke="url(#grd3)" fill="#000" fill-opacity=".5" x="12" y="36" width="324" height="24" rx="8" />
+        <rect fill="url(#grd4)" x="14" y="38" width="240" height="20" rx="6" />
+        <image href="imgs/diamond.svg" x="231" y="30" width="40" height="36" />
+        <image href="imgs/balance.svg" x="12" y="73" width="16" height="15" />
+        <text font-size="14" fill="#fff" x="36" y="85">Total Balance</text>
+        <text font-size="36" font-weight="bold" fill="url(#grd2)" stroke="url(#grd3)" x="10" y="124">₦ 497,221</text>
+        <a href="javascript:;">
+          <rect fill="url(#grd5)" x="206" y="92" width="128" height="36" rx="20" />
+          <text font-size="20" text-anchor="middle" font-weight="bold" fill="#270002" x="270" y="117">TOP UP</text>
+        </a>
+      </svg>
+    </div>
+  </div>
+  <div id="nav">
+    <span class="active"><a href="javascript:;">Updates</a></span> <span><a href="javascript:;">My prizes</a></span> <span><a href="javascript:;">My team</a></span>
+  </div>
+  <div id="blocks">
+    <div class="block">
+      <div class="block_bg grd_hor">
+        <img class="main_icn" src="imgs/main_icn_01.svg">
+        <div class="block_text">
+          <div class="block_text_wrapper">
+            <h3 class="time">1m ago</h3>
+            <p>Promo lasts only ONE hour - all prizes are tripled</p>
+          </div>
+        </div>
+        <div class="box_icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="28" viewBox="0 0 24 28">
+            <path fill="#a0050b" d="m20.9 4.75-1.45.4a6 6 0 0 0-.23-1.9A4.3 4.3 0 0 0 14.01.12l-.06.02C12.02.67 11.2 2.82 10.88 5 9.58 3.4 7.71 1.84 5.6 2.42a4.4 4.4 0 0 0-3.05 5.39q.3 1.08.73 1.75l-1.44.4a2.54 2.54 0 0 0-1.75 3.08 2.47 2.47 0 0 0 3 1.79h.03l19.05-5.21a2.54 2.54 0 0 0 1.75-3.08 2.47 2.47 0 0 0-3-1.79h-.03m-6.33-2.17c1-.27 2 .33 2.27 1.33.48 1.83-.27 2.03-.71 2.15l-2.96.8c.1-2.08.53-4.04 1.4-4.28M4.91 7.16a1.9 1.9 0 0 1 1.31-2.31c1.06-.3 2.53 1.3 3.58 2.93l-3.22.88c-.44.12-1.19.32-1.67-1.5m-.7 9.51H3v8.8a2.5 2.5 0 0 0 2.46 2.52h6.17V16.67zm16.04 0H14.1v11.32h6.17a2.5 2.5 0 0 0 2.47-2.52v-8.8z"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="block">
+      <div class="block_bg">
+        <img class="main_icn" src="imgs/main_icn_02.svg">
+        <div class="block_text">
+          <div class="block_text_wrapper">
+            <h3 class="time">1m ago</h3>
+            <p>You opened a big prize (₦30,000 in value for ₦1,000!)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="block">
+      <div class="block_bg grd_hor">
+        <img class="main_icn" src="imgs/main_icn_03.svg">
+        <div class="block_text">
+          <div class="block_text_wrapper">
+            <h3 class="time">1m ago</h3>
+            <p>You’ve collected 1 out of  5keychains to win the car 🎲</p>
+          </div>
+        </div>
+        <div class="box_icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="28" viewBox="0 0 24 28">
+            <path fill="#a0050b" d="m20.9 4.75-1.45.4a6 6 0 0 0-.23-1.9A4.3 4.3 0 0 0 14.01.12l-.06.02C12.02.67 11.2 2.82 10.88 5 9.58 3.4 7.71 1.84 5.6 2.42a4.4 4.4 0 0 0-3.05 5.39q.3 1.08.73 1.75l-1.44.4a2.54 2.54 0 0 0-1.75 3.08 2.47 2.47 0 0 0 3 1.79h.03l19.05-5.21a2.54 2.54 0 0 0 1.75-3.08 2.47 2.47 0 0 0-3-1.79h-.03m-6.33-2.17c1-.27 2 .33 2.27 1.33.48 1.83-.27 2.03-.71 2.15l-2.96.8c.1-2.08.53-4.04 1.4-4.28M4.91 7.16a1.9 1.9 0 0 1 1.31-2.31c1.06-.3 2.53 1.3 3.58 2.93l-3.22.88c-.44.12-1.19.32-1.67-1.5m-.7 9.51H3v8.8a2.5 2.5 0 0 0 2.46 2.52h6.17V16.67zm16.04 0H14.1v11.32h6.17a2.5 2.5 0 0 0 2.47-2.52v-8.8z"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="block">
+      <div class="block_bg grd_dis">
+        <img class="main_icn" src="imgs/main_icn_04.svg">
+        <div class="block_text">
+          <div class="block_text_wrapper">
+            <h3 class="time">5m ago</h3>
+            <p>You are 2 wins away from the super game 💰💰💰. TRY AGAIN!</p>
+          </div>
+        </div>
+        <div class="box_icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="28" viewBox="0 0 24 28">
+            <path fill="#a0050b" d="m20.9 4.75-1.45.4a6 6 0 0 0-.23-1.9A4.3 4.3 0 0 0 14.01.12l-.06.02C12.02.67 11.2 2.82 10.88 5 9.58 3.4 7.71 1.84 5.6 2.42a4.4 4.4 0 0 0-3.05 5.39q.3 1.08.73 1.75l-1.44.4a2.54 2.54 0 0 0-1.75 3.08 2.47 2.47 0 0 0 3 1.79h.03l19.05-5.21a2.54 2.54 0 0 0 1.75-3.08 2.47 2.47 0 0 0-3-1.79h-.03m-6.33-2.17c1-.27 2 .33 2.27 1.33.48 1.83-.27 2.03-.71 2.15l-2.96.8c.1-2.08.53-4.04 1.4-4.28M4.91 7.16a1.9 1.9 0 0 1 1.31-2.31c1.06-.3 2.53 1.3 3.58 2.93l-3.22.88c-.44.12-1.19.32-1.67-1.5m-.7 9.51H3v8.8a2.5 2.5 0 0 0 2.46 2.52h6.17V16.67zm16.04 0H14.1v11.32h6.17a2.5 2.5 0 0 0 2.47-2.52v-8.8z"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="block">
+      <div class="block_bg grd_dis">
+        <img class="main_icn" src="imgs/main_icn_05.svg">
+        <div class="block_text">
+          <div class="block_text_wrapper">
+            <h3 class="time">5m ago</h3>
+            <p>You opened a fail 💔</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="block">
+      <div class="block_bg grd_dis">
+        <img class="main_icn" src="imgs/main_icn_05.svg">
+        <div class="block_text">
+          <div class="block_text_wrapper">
+            <h3 class="time">5m ago</h3>
+            <p>You opened a fail 💔</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+
+</footer>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
