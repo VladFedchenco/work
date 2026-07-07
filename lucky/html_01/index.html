@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>LuckyBox</title>
   <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -60,8 +63,14 @@
               <clipPath id="circleView2">
                 <circle cx="58" cy="58" r="48" />
               </clipPath>
+              <radialGradient id="rgrd1">
+                <stop offset="0%" stop-color="#57267D" />
+                <stop offset="50%" stop-color="#57267D" />
+                <stop offset="100%" stop-color="#000000" opacity=".7" />
+              </radialGradient>
             </defs>
-            <image href="imgs/profile_pic.png" width="116" height="116" clip-path="url(#circleView2)" />
+            <circle cx="58" cy="58" r="48" fill="url(#rgrd1)" />
+            <image href="imgs/profile_pic.png" width="100" height="100" x="8" y="8" clip-path="url(#circleView2)" />
             <image id="frame_glow" href="imgs/circle_glow.png" width="116" height="116" />
           </svg>
         </div>
@@ -97,7 +106,7 @@
           </svg>
         </div>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 348 140">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 348 126">
         <defs>
           <linearGradient id="grd2" x1="0%" y1="0%" x2="0%" y2="100%">
             <stop offset="0%" stop-color="#DC2B50" />
@@ -118,18 +127,23 @@
             <stop offset="100%" stop-color="#EDCD78" />
           </linearGradient>
         </defs>
-        <text font-size="24" font-weight="bold" fill="url(#grd2)" stroke="url(#grd3)" x="12" y="24">LVL 1</text>
-        <text font-size="14" fill="#fff" x="90" y="24">1155/1500 xp</text>
-        <text font-size="24" font-weight="bold" text-anchor="end" fill="url(#grd2)" stroke="url(#grd3)" x="338" y="24">77%</text>
-        <rect stroke="url(#grd3)" fill="#000" fill-opacity=".5" x="12" y="36" width="324" height="24" rx="8" />
-        <rect fill="url(#grd4)" x="14" y="38" width="240" height="20" rx="6" />
-        <image href="imgs/diamond.svg" x="231" y="30" width="40" height="36" />
-        <image href="imgs/balance.svg" x="12" y="73" width="16" height="15" />
-        <text font-size="14" fill="#fff" x="36" y="85">Total Balance</text>
-        <text font-size="36" font-weight="bold" fill="url(#grd2)" stroke="url(#grd3)" x="10" y="124">₦ 497,221</text>
-        <a href="javascript:;">
-          <rect fill="url(#grd5)" x="206" y="92" width="128" height="36" rx="20" />
-          <text font-size="20" text-anchor="middle" font-weight="bold" fill="#270002" x="270" y="117">TOP UP</text>
+        <text class="lvl" fill="none" stroke="url(#grd3)" stroke-width="2" x="7" y="22">LVL 1</text>
+        <text class="lvl" fill="url(#grd2)" x="7" y="22">LVL 1</text>
+        <text class="lvl2" fill="#fff" x="78" y="22">1155/1500 xp</text>
+        <text class="lvl" text-anchor="end" fill="none" stroke="url(#grd3)" stroke-width="2" x="340" y="22">77%</text>
+        <text class="lvl" text-anchor="end" fill="url(#grd2)" x="340" y="22">77%</text>
+        <rect stroke="url(#grd3)" fill="#000" fill-opacity=".5" x="7" y="34" width="334" height="22" rx="8" />
+        <rect fill="url(#grd4)" x="9" y="36" width="245" height="18" rx="6" />
+        <image href="imgs/diamond.svg" x="240" y="28" width="38" height="35" />
+        <image href="imgs/balance.svg" x="7" y="69" width="16" height="15" />
+        <text class="lvl2" fill="#fff" x="30" y="82">Total Balance</text>
+        <path transform="translate(9 94)" fill="none" stroke="url(#grd3)" stroke-width="2" d="M24.16 10.46h-2.5v1.63h2.5v2.11h-2.5v8.22H16.7L7.81 9.22v13.22H2.53v-8.22H0v-2.11h2.53v-1.63H0V8.37h2.53V0h4.96l8.93 13.28V0h5.25v8.35h2.5v2.11Z"/>
+        <path transform="translate(9 94)" fill="url(#grd2)" d="M24.16 10.46h-2.5v1.63h2.5v2.11h-2.5v8.22H16.7L7.81 9.22v13.22H2.53v-8.22H0v-2.11h2.53v-1.63H0V8.37h2.53V0h4.96l8.93 13.28V0h5.25v8.35h2.5v2.11Z"/>
+        <text class="amount" fill="none" stroke="url(#grd3)" stroke-width="2" x="43" y="117">497,221</text>
+        <text class="amount" fill="url(#grd2)" x="43" y="117">497,221</text>
+        <a class="bttn" href="javascript:;">
+          <rect fill="url(#grd5)" x="213" y="79" width="128" height="36" rx="20" />
+          <text font-size="20" text-anchor="middle" fill="#270002" x="277" y="104">TOP UP</text>
         </a>
       </svg>
     </div>
