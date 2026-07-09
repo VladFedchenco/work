@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>LuckyBox</title>
   <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -60,8 +63,14 @@
               <clipPath id="circleView2">
                 <circle cx="58" cy="58" r="48" />
               </clipPath>
+              <radialGradient id="rgrd1">
+                <stop offset="0%" stop-color="#57267D" />
+                <stop offset="50%" stop-color="#57267D" />
+                <stop offset="100%" stop-color="#000000" opacity=".7" />
+              </radialGradient>
             </defs>
-            <image href="imgs/profile_pic.png" width="116" height="116" clip-path="url(#circleView2)" />
+            <circle cx="58" cy="58" r="48" fill="url(#rgrd1)" />
+            <image href="imgs/profile_pic.png" width="100" height="100" x="8" y="8" clip-path="url(#circleView2)" />
             <image id="frame_glow" href="imgs/circle_glow.png" width="116" height="116" />
           </svg>
         </div>
@@ -97,7 +106,7 @@
           </svg>
         </div>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 348 140">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 348 126">
         <defs>
           <linearGradient id="grd2" x1="0%" y1="0%" x2="0%" y2="100%">
             <stop offset="0%" stop-color="#DC2B50" />
@@ -117,25 +126,51 @@
             <stop offset="0%" stop-color="#FCF7CD" />
             <stop offset="100%" stop-color="#EDCD78" />
           </linearGradient>
+          <clipPath id="bttn_clip">
+            <rect fill="url(#grd5)" x="213" y="79" width="128" height="36" rx="20" />
+          </clipPath>
+          <linearGradient id="blick" x1="114.73" x2="127.54" y1="71.35" y2="76.6" gradientTransform="translate(-277.4 11.47) rotate(-10.4) scale(2.04 1.06) skewX(16.75)" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+            <stop offset=".5" stop-color="#fff" stop-opacity=".8"/>
+            <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+          </linearGradient>
         </defs>
-        <text font-size="24" font-weight="bold" fill="url(#grd2)" stroke="url(#grd3)" x="12" y="24">LVL 1</text>
-        <text font-size="14" fill="#fff" x="90" y="24">1155/1500 xp</text>
-        <text font-size="24" font-weight="bold" text-anchor="end" fill="url(#grd2)" stroke="url(#grd3)" x="338" y="24">77%</text>
-        <rect stroke="url(#grd3)" fill="#000" fill-opacity=".5" x="12" y="36" width="324" height="24" rx="8" />
-        <rect fill="url(#grd4)" x="14" y="38" width="240" height="20" rx="6" />
-        <image href="imgs/diamond.svg" x="231" y="30" width="40" height="36" />
-        <image href="imgs/balance.svg" x="12" y="73" width="16" height="15" />
-        <text font-size="14" fill="#fff" x="36" y="85">Total Balance</text>
-        <text font-size="36" font-weight="bold" fill="url(#grd2)" stroke="url(#grd3)" x="10" y="124">₦ 497,221</text>
-        <a href="javascript:;">
-          <rect fill="url(#grd5)" x="206" y="92" width="128" height="36" rx="20" />
-          <text font-size="20" text-anchor="middle" font-weight="bold" fill="#270002" x="270" y="117">TOP UP</text>
+        <text class="lvl" fill="none" stroke="url(#grd3)" stroke-width="3" x="7" y="22">LVL 1</text>
+        <text class="lvl" fill="url(#grd2)" x="7" y="22">LVL 1</text>
+        <text class="lvl2" fill="#fff" x="78" y="22">1155/1500 xp</text>
+        <text class="lvl" text-anchor="end" fill="none" stroke="url(#grd3)" stroke-width="3" x="340" y="22">77%</text>
+        <text class="lvl" text-anchor="end" fill="url(#grd2)" x="340" y="22">77%</text>
+        <rect stroke="url(#grd3)" fill="#000" fill-opacity=".5" x="7" y="34" width="334" height="22" rx="8" />
+        <rect fill="url(#grd4)" x="9" y="36" width="245" height="18" rx="6" />
+        <image href="imgs/diamond.svg" x="240" y="28" width="38" height="35" />
+        <image href="imgs/balance.svg" x="7" y="69" width="16" height="15" />
+        <text class="lvl2" fill="#fff" x="30" y="82">Total Balance</text>
+        <path transform="translate(9 94)" fill="none" stroke="url(#grd3)" stroke-width="3" d="M24.16 10.46h-2.5v1.63h2.5v2.11h-2.5v8.22H16.7L7.81 9.22v13.22H2.53v-8.22H0v-2.11h2.53v-1.63H0V8.37h2.53V0h4.96l8.93 13.28V0h5.25v8.35h2.5v2.11Z"/>
+        <path transform="translate(9 94)" fill="url(#grd2)" d="M24.16 10.46h-2.5v1.63h2.5v2.11h-2.5v8.22H16.7L7.81 9.22v13.22H2.53v-8.22H0v-2.11h2.53v-1.63H0V8.37h2.53V0h4.96l8.93 13.28V0h5.25v8.35h2.5v2.11Z"/>
+        <text class="amount" fill="none" stroke="url(#grd3)" stroke-width="3" x="43" y="117">497,221</text>
+        <text class="amount" fill="url(#grd2)" x="43" y="117">497,221</text>
+        <a class="bttn" href="javascript:;">
+          <rect fill="url(#grd5)" x="213" y="79" width="128" height="36" rx="20" />
+          <text font-size="20" text-anchor="middle" fill="#270002" x="277" y="104">TOP UP</text>
+          <g clip-path="url(#bttn_clip)">
+            <g id="bttn_blick">
+              <path fill="url(#blick)" d="M11.29 2.48H37.4v66.31H11.29z" transform="translate(14.83 -6.46) rotate(21.61)"/>
+            </g>
+          </g>
         </a>
       </svg>
     </div>
   </div>
   <div id="nav">
-    <span class="active"><a href="javascript:;">Updates</a></span> <span><a href="javascript:;">My prizes</a></span> <span><a href="javascript:;">My team</a></span>
+    <div>
+      <span class="active"><a href="javascript:;">Updates</a></span>
+    </div>
+    <div>
+      <span><a href="javascript:;">My prizes</a></span>
+    </div>
+    <div>
+      <span><a href="javascript:;">My team</a></span>
+    </div>
   </div>
   <div id="blocks">
     <div class="block">
@@ -148,8 +183,10 @@
           </div>
         </div>
         <div class="box_icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="28" viewBox="0 0 24 28">
-            <path fill="#a0050b" d="m20.9 4.75-1.45.4a6 6 0 0 0-.23-1.9A4.3 4.3 0 0 0 14.01.12l-.06.02C12.02.67 11.2 2.82 10.88 5 9.58 3.4 7.71 1.84 5.6 2.42a4.4 4.4 0 0 0-3.05 5.39q.3 1.08.73 1.75l-1.44.4a2.54 2.54 0 0 0-1.75 3.08 2.47 2.47 0 0 0 3 1.79h.03l19.05-5.21a2.54 2.54 0 0 0 1.75-3.08 2.47 2.47 0 0 0-3-1.79h-.03m-6.33-2.17c1-.27 2 .33 2.27 1.33.48 1.83-.27 2.03-.71 2.15l-2.96.8c.1-2.08.53-4.04 1.4-4.28M4.91 7.16a1.9 1.9 0 0 1 1.31-2.31c1.06-.3 2.53 1.3 3.58 2.93l-3.22.88c-.44.12-1.19.32-1.67-1.5m-.7 9.51H3v8.8a2.5 2.5 0 0 0 2.46 2.52h6.17V16.67zm16.04 0H14.1v11.32h6.17a2.5 2.5 0 0 0 2.47-2.52v-8.8z"/>
+          <svg class="anim_active" xmlns="http://www.w3.org/2000/svg" width="24" height="28" viewBox="0 0 24 28">
+            <path class="cap" fill="#a0050b" d="M23.91 6.55a2.47 2.47 0 0 0-3-1.79h-.02l-1.45.4a6 6 0 0 0-.23-1.9A4.3 4.3 0 0 0 14 .13l-.06.02c-1.93.53-2.75 2.68-3.07 4.86-1.3-1.6-3.17-3.16-5.28-2.58a4.4 4.4 0 0 0-3.05 5.39q.3 1.08.73 1.75l-1.44.4a2.54 2.54 0 0 0-1.75 3.08 2.47 2.47 0 0 0 3 1.79h.03l19.05-5.21a2.54 2.54 0 0 0 1.75-3.08M6.57 8.67c-.44.12-1.19.32-1.67-1.5a1.9 1.9 0 0 1 1.31-2.31c1.06-.3 2.53 1.3 3.58 2.93zm9.54-2.6-2.96.8c.1-2.08.53-4.04 1.4-4.28 1-.27 2 .33 2.27 1.33.48 1.83-.27 2.03-.71 2.15"/>
+            <path fill="#a0050b" d="M4.2 16.68H2.99v8.8A2.5 2.5 0 0 0 5.45 28h6.17V16.68z"/>
+            <path fill="#a0050b" d="M20.24 16.68h-6.15V28h6.17a2.5 2.5 0 0 0 2.47-2.52v-8.8z"/>
           </svg>
         </div>
       </div>
