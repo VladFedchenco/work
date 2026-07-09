@@ -1,0 +1,357 @@
+@font-face {
+    font-family: 'Montserrat Regular';
+    src: url('../fonts/montserrat-regular.woff2') format('woff2'),
+         url('../fonts/montserrat-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Montserrat Medium';
+    src: url('../fonts/montserrat-medium.woff2') format('woff2'),
+         url('../fonts/montserrat-medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Montserrat Bold';
+    src: url('../fonts/montserrat-bold.woff2') format('woff2'),
+         url('../fonts/montserrat-bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+*:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(#B6060D 0%, #280002 300px, #280002 100%) no-repeat center top #280002;
+    color: #fff;
+    font-family: 'Montserrat Regular', sans-serif;
+}
+
+header {
+    height: 72px;
+    background: #510006;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 16px;
+}
+
+.header-70 {
+    flex: 1;
+}
+
+.header-15 {
+    flex: 0 0 36px;
+    text-align: right;
+    position: relative;
+}
+
+#avatar_wrapper {
+    position: relative;
+    width: 32px;
+    height: 32px;
+}
+
+#num {
+    font-family: 'Montserrat Medium';
+    font-size: 11px;
+    line-height: 1;
+    text-align: center;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 80%;
+    padding: 5px 4px 4px 4px;
+    border-radius: 16px;
+    background: #B6060D;
+    box-shadow: 0px 0px 16px rgba(182, 6, 13, .5);
+}
+
+#main {
+    max-width: 440px;
+    padding: 8px 16px;
+    margin: 0 auto;
+}
+
+#about {
+    background: linear-gradient(to bottom right, #CE7142, #FBE67B, #FCFBE7, #F7D14E, #D4A041);
+    border-radius: 12px;
+    padding: 1px;
+}
+
+#about_bg {
+    width: 100%;
+    padding: 2px 4px;
+    border-radius: 11px;
+    background: linear-gradient(#64120f, #250203);
+}
+
+.about_row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#big_avatar {
+    flex: 0 0 116px;
+    width: 116px;
+    height: 116px;
+}
+
+#frame_glow {
+    animation: frame_glow 40s linear infinite;
+}
+
+@keyframes frame_glow {
+    0% {
+        transform: translate(58px, 58px) rotate(0deg) translate(-58px, -58px);
+    }
+    100% {
+        transform: translate(58px, 58px) rotate(360deg) translate(-58px, -58px);
+    }
+}
+
+#about_info {
+    position: relative;
+    flex: 1;
+    padding: 24px 6px 0px 4px;
+}
+
+#about_info h2 {
+    font-family: 'Montserrat Bold', sans-serif;
+    line-height: 1;
+    display: block;
+    padding-right: 30px;
+    margin: 0;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+#about_info h3 {
+    font-family: 'Montserrat Medium', sans-serif;
+    display: block;
+    opacity: .8;
+    margin: 4px 0;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+#settings {
+    position: absolute;
+    right: 7px;
+    top: 22px;
+}
+
+.lvl {
+    font-family: 'Montserrat Regular', sans-serif;
+    font-size: 24px;
+}
+
+.lvl2 {
+    font-family: 'Montserrat Medium', sans-serif;
+    font-size: 14px;
+}
+
+.amount {
+    font-family: 'Montserrat Bold', sans-serif;
+    font-size: 32px;
+}
+
+.bttn text {
+    font-family: 'Montserrat Bold', sans-serif;
+    font-size: 20px;
+}
+
+#nav {
+    display: flex;
+    gap: 12px;
+    font-size: 24px;
+    color: #EDCD78;
+    padding: 8px 0 0 0;
+}
+
+#nav div {
+    flex: 1;
+    text-align: center;
+}
+
+#nav div:first-child {
+    text-align: left;
+}
+
+#nav div:last-child {
+    text-align: right;
+}
+
+#nav span {
+    position: relative;
+    display: inline-block;
+}
+
+#nav span:last-child {
+    margin-right: 0;
+}
+
+#nav span.active:before {
+    content: url(../imgs/triangle.png);
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+}
+
+#nav a {
+    font-family: 'Montserrat Medium', sans-serif;
+    font-size: 24px;
+    text-wrap: nowrap;
+    position: relative;
+    display: block;
+    text-decoration: none;
+    background-image: linear-gradient(100deg, #FDF8D0, #EDCD78, #FCF7CD, #C49337);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    opacity: 60%;
+}
+
+#nav .active a {
+    opacity: 100%;
+}
+
+#nav .active a:after {
+    content: url(../imgs/stars.svg);
+    display: block;
+    position: absolute;
+    left: 98%;
+    bottom: 12px;
+}
+
+#blocks {
+    padding: 0;
+}
+
+.block {
+    position: relative;
+    background: linear-gradient(to bottom right, #CE7142, #FBE67B, #FCFBE7, #F7D14E, #D4A041);
+    border-radius: 12px;
+    padding: 1px;
+    margin-bottom: 4px;
+}
+
+.block_bg {
+    width: 100%;
+    padding: 4px;
+    height: 83px;
+    padding: 0px 60px 0px 80px;
+    border-radius: 11px;
+    background: linear-gradient(#64120f, #250203);
+}
+
+.grd_hor {
+    background: linear-gradient(270deg, #B6060D, #280002);
+}
+
+.grd_dis {
+    background: #280002;
+}
+
+.box_icon {
+    width: 50px;
+    height: 85px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 0 12px 12px 0;
+    background-image: linear-gradient(100deg, #EDCD78, #FCF7CD);
+}
+
+.box_icon svg {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main_icn {
+    position: absolute;
+    left: 12px;
+    top: 12px;
+}
+
+.block_text {
+    display: flex;
+    align-items: center;
+    height: 82px;
+}
+
+.block_text h3, .block_text p {
+    margin: 0;
+    line-height: 1.3;
+}
+
+.time {
+    font-size: 14px;
+    font-weight: normal;
+    background-image: linear-gradient(to bottom, #FFFFFF, #C82727);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.block_text p  {
+    font-size: 12px;
+}
+
+.anim_active .cap {
+    animation: cap 5s ease-in-out infinite;
+}
+
+@keyframes cap {
+    0%, 10%, 95%, 100% {
+        transform: translate(2.5px, 15px) rotate(15deg) translate(-2.5px, -15px);
+    }
+    15%, 90% {
+        transform: translate(2.5px, 15px) rotate(0deg) translate(-2.5px, -15px);
+    }
+}
+
+#bttn_blick {
+    animation: blick 5s ease-in-out infinite;
+}
+
+@keyframes blick {
+    0% {
+        transform: translate(160px, 55px);
+    }
+    50%, 100% {
+        transform: translate(330px, 55px);
+    }
+    0%, 100% {
+        opacity: .6;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 440px) {
+
+}
