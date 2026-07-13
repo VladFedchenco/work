@@ -25,7 +25,7 @@
     </a>
   </div>
   <div class="header-15">
-    <div id="avatar_wrapper">
+    <div id="avatar_wrapper" class="play">
       <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
          <defs>
           <clipPath id="circleView">
@@ -39,7 +39,7 @@
         </defs>
         <image href="imgs/profile_pic.png" width="32" height="32" clip-path="url(#circleView)" />
         <circle cx="16" cy="16" r="15" fill="none" stroke="url(#grd1)" stroke-width="2" opacity=".4" />
-        <circle cx="16" cy="16" r="15" fill="none" stroke="url(#grd1)" stroke-width="2" stroke-dasharray="96" stroke-dashoffset="168" stroke-linecap="round" />
+        <circle id="header_status" cx="16" cy="16" r="15" fill="none" stroke="url(#grd1)" stroke-width="2" stroke-dasharray="96" stroke-dashoffset="168" stroke-linecap="round" />
       </svg>
       <div id="num">99</div>
     </div>
@@ -80,29 +80,37 @@
           <h3>Seeker of Fortune</h3>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 222 24">
             <g fill="none" stroke="#ffe481">
-              <path d="M12 .5a11.5 11.5 0 0 1 0 23 11.5 11.5 0 0 1 0-23Z"/>
+              <path id="d1" d="M12 .5a11.5 11.5 0 0 1 0 23 11.5 11.5 0 0 1 0-23Z"/>
               <path d="M24 11.5h9"/>
-              <path d="M45 .5a11.5 11.5 0 0 1 0 23 11.5 11.5 0 0 1 0-23Z"/>
+              <path id="d2" d="M45 .5a11.5 11.5 0 0 1 0 23 11.5 11.5 0 0 1 0-23Z"/>
               <path d="M57 11.5h9"/>
-              <path d="M78 .5a11.5 11.5 0 0 1 0 23 11.5 11.5 0 0 1 0-23Z"/>
+              <path id="d3" d="M78 .5a11.5 11.5 0 0 1 0 23 11.5 11.5 0 0 1 0-23Z"/>
               <path d="M90 11.5h9"/>
-              <path stroke-dasharray="2 2" d="M111 .5a11.5 11.5 0 0 1 0 23 11.5 11.5 0 0 1 0-23Z"/>
+              <path id="d4" d="M111 .5a11.5 11.5 0 0 1 0 23 11.5 11.5 0 0 1 0-23Z"/>
               <path d="M123 11.5h9"/>
-              <path stroke-dasharray="2 2" d="M144 .5a11.5 11.5 0 0 1 0 23 11.5 11.5 0 0 1 0-23Z"/>
+              <path id="d5" d="M144 .5a11.5 11.5 0 0 1 0 23 11.5 11.5 0 0 1 0-23Z"/>
               <path d="M156 11.5h9"/>
-              <path stroke-dasharray="2 2" d="M177 .5a11.5 11.5 0 0 1 0 23 11.5 11.5 0 0 1 0-23Z"/>
+              <path id="d6" d="M177 .5a11.5 11.5 0 0 1 0 23 11.5 11.5 0 0 1 0-23Z"/>
               <path d="M189 11.5h9"/>
-              <path stroke-dasharray="2 2" d="M210 .5a11.5 11.5 0 0 1 0 23 11.5 11.5 0 0 1 0-23Z"/>
+              <path id="d7" d="M210 .5a11.5 11.5 0 0 1 0 23 11.5 11.5 0 0 1 0-23Z"/>
             </g>
-            <path fill="#ffe481" d="m9.96 16.5-4.75-4.75 1.19-1.19 3.56 3.56 7.65-7.65 1.19 1.19z"/>
-            <path fill="#ffe481" d="m43.29 16.5-4.75-4.75 1.19-1.19 3.56 3.56 7.65-7.65 1.19 1.19z"/>
-            <path fill="#ffe481" d="m75.62 16.5-4.75-4.75 1.19-1.19 3.56 3.56 7.65-7.65 1.19 1.19-8.83 8.83Z"/>
+            <g fill="none" stroke="#ffe481" stroke-width="2">
+              <path id="t1" d="m6.29 11.67 4.18 4.18 8.26-8.26"/>
+              <path id="t2" d="m39.28 11.67 4.18 4.18 8.26-8.26"/>
+              <path id="t3" d="m72.27 11.67 4.18 4.18 8.26-8.26"/>
+              <path id="t4" d="m105.27 11.67 4.18 4.18 8.26-8.26"/>
+              <path id="t5" d="m138.26 11.67 4.18 4.18 8.26-8.26"/>
+              <path id="t6" d="m171.25 11.67 4.18 4.18 8.26-8.26"/>
+            </g>
             <g fill="#FFE481" font-size="14px" text-anchor="middle">
-              <text x="110" y="17">4</text>
-              <text x="144" y="17">5</text>
-              <text x="177" y="17">6</text>
+              <text id="n1" x="12" y="17">1</text>
+              <text id="n2" x="46" y="17">2</text>
+              <text id="n3" x="78" y="17">3</text>
+              <text id="n4" x="110" y="17">4</text>
+              <text id="n5" x="144" y="17">5</text>
+              <text id="n6" x="177" y="17">6</text>
             </g>
-            <path fill="#ffe481" d="M212 4.84q.72 0 1.33.36a2.7 2.7 0 0 1 1.34 2.31c0 .46-.12.93-.36 1.33h3.02v1.33H216v6.67q0 .28-.2.47c-.2.19-.29.2-.47.2h-10.67a.6.6 0 0 1-.47-.2.6.6 0 0 1-.2-.47v-6.67h-1.33V8.84h3.02a2.68 2.68 0 0 1 2.61-3.99c.66.07 1.26.39 1.7.89q.38-.43.9-.67.53-.24 1.1-.24m-1.32 5.34h-1.33v6.67h1.33zm-2.67-4q-.54 0-.92.37c-.25.24-.39.57-.41.91q-.01.53.34.94t.89.44h1.43V7.5q0-.5-.32-.87t-.81-.45h-.1zm4 0a1.34 1.34 0 0 0-1.33 1.24v1.43H212a1.34 1.34 0 0 0 1.33-1.24v-.1A1.33 1.33 0 0 0 212 6.17"/>
+            <path id="small_box" fill="#ffe481" d="M212 4.84q.72 0 1.33.36a2.7 2.7 0 0 1 1.34 2.31c0 .46-.12.93-.36 1.33h3.02v1.33H216v6.67q0 .28-.2.47c-.2.19-.29.2-.47.2h-10.67a.6.6 0 0 1-.47-.2.6.6 0 0 1-.2-.47v-6.67h-1.33V8.84h3.02a2.68 2.68 0 0 1 2.61-3.99c.66.07 1.26.39 1.7.89q.38-.43.9-.67.53-.24 1.1-.24m-1.32 5.34h-1.33v6.67h1.33zm-2.67-4q-.54 0-.92.37c-.25.24-.39.57-.41.91q-.01.53.34.94t.89.44h1.43V7.5q0-.5-.32-.87t-.81-.45h-.1zm4 0a1.34 1.34 0 0 0-1.33 1.24v1.43H212a1.34 1.34 0 0 0 1.33-1.24v-.1A1.33 1.33 0 0 0 212 6.17"/>
           </svg>
         </div>
       </div>
@@ -141,8 +149,8 @@
         <text class="lvl" text-anchor="end" fill="none" stroke="url(#grd3)" stroke-width="3" x="340" y="22">77%</text>
         <text class="lvl" text-anchor="end" fill="url(#grd2)" x="340" y="22">77%</text>
         <rect stroke="url(#grd3)" fill="#000" fill-opacity=".5" x="7" y="34" width="334" height="22" rx="8" />
-        <rect fill="url(#grd4)" x="9" y="36" width="245" height="18" rx="6" />
-        <image href="imgs/diamond.svg" x="240" y="28" width="38" height="35" />
+        <rect id="status" fill="url(#grd4)" x="9" y="36" width="330" height="18" rx="6" />
+        <image id="diamond" href="imgs/diamond.svg" x="-3" y="28" width="38" height="35" />
         <image href="imgs/balance.svg" x="7" y="69" width="16" height="15" />
         <text class="lvl2" fill="#fff" x="30" y="82">Total Balance</text>
         <path transform="translate(9 94)" fill="none" stroke="url(#grd3)" stroke-width="3" d="M24.16 10.46h-2.5v1.63h2.5v2.11h-2.5v8.22H16.7L7.81 9.22v13.22H2.53v-8.22H0v-2.11h2.53v-1.63H0V8.37h2.53V0h4.96l8.93 13.28V0h5.25v8.35h2.5v2.11Z"/>
@@ -173,7 +181,7 @@
     </div>
   </div>
   <div id="blocks">
-    <div class="block">
+    <div id="block_01" class="block">
       <div class="block_bg grd_hor">
         <img class="main_icn" src="imgs/main_icn_01.svg">
         <div class="block_text">
@@ -191,7 +199,7 @@
         </div>
       </div>
     </div>
-    <div class="block">
+    <div id="block_02" class="block">
       <div class="block_bg">
         <img class="main_icn" src="imgs/main_icn_02.svg">
         <div class="block_text">
@@ -202,7 +210,7 @@
         </div>
       </div>
     </div>
-    <div class="block">
+    <div id="block_03" class="block">
       <div class="block_bg grd_hor">
         <img class="main_icn" src="imgs/main_icn_03.svg">
         <div class="block_text">
@@ -218,7 +226,7 @@
         </div>
       </div>
     </div>
-    <div class="block">
+    <div id="block_04" class="block">
       <div class="block_bg grd_dis">
         <img class="main_icn" src="imgs/main_icn_04.svg">
         <div class="block_text">
@@ -234,7 +242,7 @@
         </div>
       </div>
     </div>
-    <div class="block">
+    <div id="block_05" class="block">
       <div class="block_bg grd_dis">
         <img class="main_icn" src="imgs/main_icn_05.svg">
         <div class="block_text">
@@ -245,7 +253,7 @@
         </div>
       </div>
     </div>
-    <div class="block">
+    <div id="block_06" class="block">
       <div class="block_bg grd_dis">
         <img class="main_icn" src="imgs/main_icn_05.svg">
         <div class="block_text">
