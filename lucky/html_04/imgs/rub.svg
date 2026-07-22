@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" width="12" height="12" viewBox="0 0 12 12">
+  <g clip-path="url(#paint0_angular_563_4003_clip_path)" data-figma-skip-parse="true">
+    <g transform="matrix(0 -0.0045 0.0045 0 5.62158 5.62134)">
+      <foreignObject width="3311.05" height="3311.05" x="-1655.52" y="-1655.52">
+        <div xmlns="http://www.w3.org/1999/xhtml" opacity="1" style="background:conic-gradient(from 90deg,#fff 0deg,#270202 34.5344deg,#720404 148.004deg,#600 234.802deg,#ff4f4f 329.987deg,#7b0505 360deg);height:100%;width:100%"/>
+      </foreignObject>
+    </g>
+  </g>
+  <rect width="7.536" height="7.536" x=".293" y="5.621" stroke="url(#paint1_linear_563_4003)" rx=".5" transform="rotate(-45 0.293044 5.62134)"/>
+  <defs>
+    <linearGradient id="paint1_linear_563_4003" x1="8.096" x2="-.389" y1="5.596" y2="14.081" gradientUnits="userSpaceOnUse">
+      <stop offset=".15" stop-color="#fcfae5"/>
+      <stop offset=".601" stop-color="#ddac44"/>
+    </linearGradient>
+    <clipPath id="paint0_angular_563_4003_clip_path">
+      <rect width="7.536" height="7.536" x=".293" y="5.621" rx=".5" transform="rotate(-45 0.293044 5.62134)"/>
+    </clipPath>
+  </defs>
+</svg>
