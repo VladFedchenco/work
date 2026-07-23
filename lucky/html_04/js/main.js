@@ -1,3 +1,18 @@
+window.addEventListener('scroll', () => {
+  let nav = $("#nav").getBoundingClientRect();
+  if (nav.y <= 73) {
+    $("#nav").classList.add("shadow");
+  } else {
+    $("#nav").classList.remove("shadow");
+  }
+  // let subnav = $("#subnav").getBoundingClientRect();
+  // if (subnav.y <= 117) {
+  //   $("#subnav").classList.add("shadow");
+  // } else {
+  //   $("#subnav").classList.remove("shadow");
+  // }
+});
+
 /* document.addEventListener("DOMContentLoaded", () => {
     set_play([$("#d1"), $("#t1"), $("#n1")]);
     setTimeout(function(){
