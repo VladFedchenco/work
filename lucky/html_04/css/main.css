@@ -877,6 +877,241 @@ header {
     height: 158px;
 }
 
-@media screen and (max-width: 440px) {
+.deliveries_block {
+    border-radius: 8px;
+    margin-bottom: 4px;
+}
 
+.deliveries_block .burgundy_plain {
+    display: flex;
+    border-radius: 7px;
+    padding: 3px;
+}
+
+.deliveries_pic {
+    flex: 0 0 100px;
+    width: 100px;
+    height: 100px;
+    background: #fff;
+    border-radius: 4px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.thumb_centered {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.deliveries_pic img {
+    max-height: 90px;
+}
+
+.deliveries_status {
+    position: relative;
+    flex: 1;
+    padding: 8px 8px 0 8px;
+}
+
+.deliveries_status h3 {
+    display: block;
+    font-size: 18px;
+    margin: 0;
+    line-height: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 260px;
+}
+
+.deliveries_status h4 {
+    font-size: 12px;
+    line-height: 1;
+    margin: 0;
+}
+
+.deliveries_status svg {
+    display: block;
+    max-height: 90px;
+}
+
+.status_progress {
+    display: flex;
+    gap: 7px;
+    padding: 10px 10px 0 10px;
+}
+
+.status_step {
+    opacity: .5;
+    position: relative;
+    flex: 0 0 42px;
+    width: 42px;
+    height: 42px;
+    border-radius: 21px;
+}
+
+.status_step img {
+    position: absolute;
+    max-width: 21px;
+    max-height: 19px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.status_step.active {
+    opacity: 1;
+    box-shadow: 0 -5px 18px rgba(173, 6, 13, 1.0);
+}
+
+#no_deliveries .status_step {
+    opacity: 1;
+}
+
+.status_step.active.bottom_arrow:before {
+    content: url(../imgs/bottom_arrow.svg);
+    display: block;
+    width: 9px;
+    height: 7px;
+    position: absolute;
+    left: 50%;
+    bottom: 3px;
+    transform: translateX(-50%);
+}
+
+.status_line {
+    opacity: .5;
+    flex: 1;
+    height: 30px;
+    background-image: linear-gradient(to right, #FFE481 50%, rgba(255,255,255,0) 0%);
+    background-position: bottom;
+    background-size: 8px 1px; 
+    background-repeat: repeat-x;
+    padding-bottom: 1px;
+}
+
+.status_line.active_dashed {
+    opacity: 1;
+}
+
+.status_line.active {
+    opacity: 1;
+    background-image: linear-gradient(to right, #FFE481 50%, #FFE481 0%);
+    background-repeat: none;
+}
+
+.status_circle {
+    stroke-dasharray: 4px;
+}
+
+.status_step.active .status_circle {
+    stroke-dasharray: none;
+}
+
+.status_step:after {
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: -21px;
+    transform: translateX(-50%);
+    font-size: 10px;
+    color: #fff;
+}
+
+.status_step.active.bottom_arrow:after,
+#no_deliveries .status_step:after {
+    background-image: linear-gradient(100deg, #FDF8D0, #EDCD78, #FCF7CD, #C49337);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+#processing:after {
+    content: "Processing";
+}
+
+#shipping:after {
+    content: "Shipping";
+}
+
+#delivered:after {
+    content: "Delivered";
+}
+
+#no_deliveries {
+    padding: 4px 0;
+}
+
+.truck_icn {
+    display: block;
+    position: relative;
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    border: dashed 1px #FFE481;
+    margin: 0 auto 16px auto;
+}
+
+.truck_icn img {
+    width: 15px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#no_deliveries > h3 {
+    font-family: 'Montserrat Medium', sans-serif;
+    font-size: 16px;
+    margin: 0 0 8px 0;
+    line-height: 1;
+    text-align: center;
+}
+
+#no_deliveries > h4 {
+    display: block;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0 auto 21px auto;
+    line-height: 1.2;
+    width: 68%;
+    text-align: center;
+}
+
+#no_deliveries .deliveries_status h3 {
+    font-size: 14px;
+}
+
+#no_deliveries .deliveries_status h4 {
+    margin: 4px 0;
+}
+
+#no_deliveries .deliveries_block {
+    opacity: .5;
+    margin-bottom: 16px;
+}
+
+#no_deliveries .deliveries_block .burgundy_plain {
+    padding: 10px;
+}
+
+#no_deliveries .deliveries_pic {
+    flex: 0 0 108px;
+    width: 108px;
+    height: 108px;
+    background: none;
+    border: solid 1px rgba(255, 228, 129, .5);
+}
+
+#no_deliveries .status_progress, #no_deliveries .deliveries_status {
+    padding-top: 6px;
+}
+
+@media screen and (max-width: 410px) {
+    .deliveries_status h3 {
+        max-width: 220px;
+    }
 }
