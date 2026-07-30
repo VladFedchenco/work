@@ -1,13 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" fill="none" width="303" height="9" viewBox="0 0 303 9">
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" width="303" height="9" viewBox="0 0 1212 36">
   <g filter="url(#filter0_d_1027_6780)">
-    <path stroke="#ffd579" d="M299 4.5H4"/>
+    <path stroke="#ffd579" stroke-width="4" d="M1196 18H16"/>
   </g>
   <defs>
-    <filter id="filter0_d_1027_6780" width="302" height="9" x="0" y="0" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+    <filter id="filter0_d_1027_6780" width="1212" height="36" x="0" y="0" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
       <feFlood flood-opacity="0" result="BackgroundImageFix"/>
       <feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
       <feOffset/>
-      <feGaussianBlur stdDeviation="2"/>
+      <feGaussianBlur stdDeviation="8"/>
       <feComposite in2="hardAlpha" operator="out"/>
       <feColorMatrix values="0 0 0 0 1 0 0 0 0 0.883333 0 0 0 0 0 0 0 0 1 0"/>
       <feBlend in2="BackgroundImageFix" result="effect1_dropShadow_1027_6780"/>

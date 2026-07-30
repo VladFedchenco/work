@@ -58,6 +58,13 @@ header {
     z-index: 999;
 }
 
+.svg_assets {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+
 .invis {
     display: none !important;
 }
@@ -1207,6 +1214,10 @@ header {
     height: 1px;
 }
 
+#team_top_line.short_hline {
+    width: 224px;
+}
+
 #team_top_line img {
     position: absolute;
     left: 50%;
@@ -1223,14 +1234,18 @@ header {
 }
 
 .col-1 {
-  width: 9px;
-  flex-shrink: 0;
-  background: url(../imgs/line_v.svg) repeat-y center top;
+    width: 9px;
+    flex-shrink: 0;
+    background: url(../imgs/line_v.svg) repeat-y center top;
+}
+
+.col-1.wide {
+    width: 58px;
 }
 
 .col-2 {
-  width: 89px;
-  flex-shrink: 0;
+    width: 89px;
+    flex-shrink: 0;
 }
 
 .noline {
@@ -1240,6 +1255,10 @@ header {
 .short_vline {
     display: block;
     margin: 0 auto;
+}
+
+.col-2 svg {
+    margin-top: -2px;
 }
 
 .mate_name {
