@@ -1,0 +1,1513 @@
+@font-face {
+    font-family: 'Cocon Pro Regular';
+    src: url('../fonts/coconpro-regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cocon Pro Bold';
+    src: url('../fonts/coconpro-bold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cocon Pro Italic';
+    src: url('../fonts/coconpro-ita.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
+}
+
+*:focus {
+    outline: none;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Cocon Pro Regular', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header {
+    background: #DE0B2B;
+    min-height: 70px;
+    padding: 16px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+header a {
+    color: #fff;
+    display: inline-block;
+    height: 28px;
+    line-height: 28px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: .07em;
+    margin: 0px 8px;
+}
+
+header a:hover {
+    color: #cdc1dd;
+}
+
+header a:hover path {
+    fill: #cdc1dd;
+}
+
+header a.bttn, .bttn {
+    font-size: 14px;
+    color: #3A3069;
+    border: solid 2px #fff;
+    background-color: #fff;
+    padding: 3px 21px;
+    margin: 0 0 0 8px;
+    height: auto;
+    border-radius: 0px 16px 0px 16px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    line-height: 28px;
+    letter-spacing: .07em;
+}
+
+header svg {
+    vertical-align: middle;
+    margin: -3px 2px 0 0;
+}
+
+header a.bttn:hover, .bttn:hover {
+    color: #fff;
+    background: none;
+}
+
+header a.bttn:hover path, .bttn:hover path {
+    fill: #fff;
+}
+
+header a.bttn.bonus, .bttn.bonus {
+    background: #CFC2DF;
+}
+
+header a.bttn.bonus:hover, .bttn.bonus:hover {
+    background: none;
+}
+
+.bttn.start {
+    font-family: 'Cocon Pro Bold', sans-serif;
+    padding: 2px 24px;
+    font-size: 16px;
+    background: #3A3069;
+    color: #fff;
+    margin: 0;
+}
+
+.bttn.start:hover {
+    background: #DE0B2B;
+}
+
+.bttn.plus {
+    font-size: 14px;
+    font-family: 'Cocon Pro Bold', sans-serif;
+    padding: 0 21px;
+    margin: 8px 0 16px 0;
+}
+
+a {
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+#header_button {
+    float: right;
+}
+
+#header_links {
+    padding-top: 4px;
+}
+
+#mobile_menu {
+    display: none;
+    margin: 0;
+    position: absolute;
+    cursor: pointer;
+    width: 21px;
+    height: 12px;
+    background: linear-gradient(to bottom, #fff 0px, #fff 2px, transparent 2px, transparent 5px, #fff 5px, #fff 7px, transparent 7px, transparent 10px, #fff 10px, #fff 12px);
+}
+
+#mobile_menu:hover {
+    background: linear-gradient(to bottom, #FFDE00 0px, #FFDE00 2px, transparent 2px, transparent 5px, #FFDE00 5px, #FFDE00 7px, transparent 7px, transparent 10px, #FFDE00 10px, #FFDE00 12px);
+}
+
+#main {
+    min-height: 1000px;
+    background: url(../imgs/bg.svg) repeat-x center top;
+    background-size: 1920px 1400px;
+    position: relative;
+    padding: 70px 0 48px 0;
+    text-align: center;
+}
+
+footer {
+    color: #000;
+    font-size: 12px;
+    padding: 36px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+footer a {
+    font-size: 14px;
+    color: #141C4B;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.clmns {
+    overflow: hidden;
+    padding: 8px 0;
+}
+
+.clmn_33 {
+    width: 33%;
+    float: left;
+    text-align: center;
+}
+
+.clmn_50 {
+    width: 50%;
+    float: left;
+}
+
+.clmn_66 {
+    width: 66%;
+    float: left;
+    padding-left: 32px;
+    padding-top: 8px;
+}
+
+#logo {
+    width: 320px;
+    margin: 8px;
+}
+
+#social {
+    padding: 16px;
+}
+
+#social img {
+    width: 42px;
+    margin: 0 12px;
+}
+
+#footer_links {
+    font-size: 14px;
+}
+
+#footer_links a {
+    margin: 0 8px;
+}
+
+#vendors {
+    max-width: 1310px;
+    margin: 0 auto;
+    padding: 16px 0;
+}
+
+#vendors img {
+    max-height: 70px;
+}
+
+#note {
+    text-align: center;
+    font-family: 'Cocon Pro Italic';
+    color: #141C4B;
+    font-size: 10px;
+    margin: 8px 16px;
+}
+
+#wrapper {
+    opacity: 1;
+    position: absolute;
+    left: 50%;
+    min-height: 645px;
+    margin: 0 auto;
+    transform: translateX(-50%);
+    transition: all .5s ease;
+}
+
+#wrapper.invis {
+    opacity: 0;
+    pointer-events: none;
+}
+
+#wrapper h3 {
+    display: block;
+    font-family: 'Cocon Pro Regular';
+    font-size: 21px;
+    font-weight: normal;
+    color: #141C4B;
+    margin: 0;
+    padding: 44px 0 16px 0;
+}
+
+#click_hand {
+    opacity: 1;
+    pointer-events: none;
+    position: absolute;
+    left: 230px;
+    bottom: 150px;
+    transition: all .4s ease;
+}
+
+#click_hand.invis {
+    opacity: 0;
+    left: 120px;
+}
+
+#start_bttn {
+    line-height: 1.1;
+    padding: 6px 24px;
+    opacity: 1;
+    user-select: none;
+    white-space: nowrap;
+    position: absolute;
+    left: 50%;
+    top: 80px;
+    transform: translateX(-50%);
+    transition: all .3s ease;
+}
+
+#hand {
+    pointer-events: none;
+    animation: hand 8s ease-in-out infinite;
+}
+
+@keyframes hand {
+    0%, 40%, 100% {
+        transform: translate(202px, 137px);
+    }
+    0%, 40%, 100% {
+        opacity: 1;
+    }
+    50%, 90% {
+        opacity: 0;
+    }
+    5%, 35% {
+        transform: translate(188px, 124px) scale(.9);
+    }
+    13% {
+        transform: translate(138px, 124px) scale(.9);
+    }
+    26% {
+        transform: translate(238px, 124px) scale(.9);
+    }
+}
+
+#arrow_left {
+    pointer-events: none;
+    animation: arrow_left 8s ease-in-out infinite;
+}
+
+@keyframes arrow_left {
+    0%, 5%, 40%, 100% {
+        opacity: 1;
+        transform: translate(0px, 0px);
+    }
+    13% {
+        opacity: 0;
+        transform: translate(-50px, 0px);
+    }
+    35% {
+        opacity: 0;
+        transform: translate(0px, 0px);
+    }
+    0%, 40%, 100% {
+        opacity: 1;
+    }
+    50%, 90% {
+        opacity: 0;
+    }
+}
+
+#arrow_right {
+    pointer-events: none;
+    animation: arrow_right 8s ease-in-out infinite;
+}
+
+@keyframes arrow_right {
+    0%, 17%, 40%, 100% {
+        opacity: 1;
+        transform: translate(0px, 0px);
+    }
+    24% {
+        opacity: 0;
+        transform: translate(50px, 0px);
+    }
+    35% {
+        opacity: 0;
+        transform: translate(0px, 0px);
+    }
+    0%, 40%, 100% {
+        opacity: 1;
+    }
+    50%, 90% {
+        opacity: 0;
+    }
+}
+
+#ball {
+    transform: translate(188px, 124px);
+    animation: ball 8s ease-in-out infinite;
+    cursor: grab;
+}
+
+@keyframes ball {
+    0%, 5%, 35%, 100% {
+        transform: translate(188px, 124px);
+    }
+    13% {
+        transform: translate(138px, 124px);
+    }
+    26% {
+        transform: translate(238px, 124px);
+    }
+}
+
+.play #hand, .play #arrow_left, .play #arrow_right {
+    display: none;
+}
+
+.play #ball.p {
+    animation: none;
+}
+
+.play #ball.p1_1 { animation: path1_1 4s ease-in-out forwards}
+
+.play #ball.p1_2 { animation: path1_2 4s ease-in-out forwards}
+
+.play #ball.p1_3 { animation: path1_3 4s ease-in-out forwards}
+
+.play #ball.p1_4 { animation: path1_4 4s ease-in-out forwards}
+
+.play #ball.p2_1 { animation: path2_1 4s ease-in-out forwards}
+
+.play #ball.p2_2 { animation: path2_2 4s ease-in-out forwards}
+
+.play #ball.p2_3 { animation: path2_3 4s ease-in-out forwards}
+
+.play #ball.p2_4 { animation: path2_4 4s ease-in-out forwards}
+
+.play #ball.p3_1 { animation: path3_1 4s ease-in-out forwards}
+
+.play #ball.p3_2 { animation: path3_2 4s ease-in-out forwards}
+
+.play #ball.p3_3 { animation: path3_3 4s ease-in-out forwards}
+
+.play #ball.p3_4 { animation: path3_4 4s ease-in-out forwards}
+
+.play #ball.p4_1 { animation: path4_1 4s ease-in-out forwards}
+
+.play #ball.p4_2 { animation: path4_2 4s ease-in-out forwards}
+
+.play #ball.p4_3 { animation: path4_3 4s ease-in-out forwards}
+
+.play #ball.p4_4 { animation: path4_4 4s ease-in-out forwards}
+
+.play #ball.p5_4 { animation: path5_4 4s ease-in-out forwards}
+
+.play #ball.p5_5 { animation: path5_5 4s ease-in-out forwards}
+
+.play #ball.p5_6 { animation: path5_6 4s ease-in-out forwards}
+
+.play #ball.p5_7 { animation: path5_7 4s ease-in-out forwards}
+
+.play #ball.p6_4 { animation: path6_4 4s ease-in-out forwards}
+
+.play #ball.p6_5 { animation: path6_5 4s ease-in-out forwards}
+
+.play #ball.p6_6 { animation: path6_6 4s ease-in-out forwards}
+
+.play #ball.p6_7 { animation: path6_7 4s ease-in-out forwards}
+
+.play #ball.p7_4 { animation: path7_4 4s ease-in-out forwards}
+
+.play #ball.p7_5 { animation: path7_5 4s ease-in-out forwards}
+
+.play #ball.p7_6 { animation: path7_6 4s ease-in-out forwards}
+
+.play #ball.p7_7 { animation: path7_7 4s ease-in-out forwards}
+
+@keyframes path1_1 {
+    0% {transform: translate(76px, 124px)}
+    4% {transform: translate(76px, 156px)}
+    8% {transform: translate(93px, 148px)}
+    12% {transform: translate(93px, 186px)}
+    16% {transform: translate(105px, 180px)}
+    20% {transform: translate(113px, 214px)}
+    24% {transform: translate(101px, 208px)}
+    28% {transform: translate(94px, 243px)}
+    32% {transform: translate(81px, 235px)}
+    36% {transform: translate(74px, 272px)}
+    40% {transform: translate(88px, 264px)}
+    44% {transform: translate(95px, 300px)}
+    48% {transform: translate(85px, 294px)}
+    52% {transform: translate(76px, 328px)}
+    56% {transform: translate(67px, 319px)}
+    60% {transform: translate(56px, 358px)}
+    64% {transform: translate(66px, 351px)}
+    68% {transform: translate(74px, 385px)}
+    72% {transform: translate(62px, 378px)}
+    76% {transform: translate(57px, 414px)}
+    80% {transform: translate(44px, 408px)}
+    91%, 100% {transform: translate(37px, 500px)}
+}
+
+@keyframes path1_2 {
+    0% {transform: translate(76px, 124px)}
+    4% {transform: translate(76px, 156px)}
+    8% {transform: translate(89px, 150px)}
+    12% {transform: translate(93px, 185px)}
+    16% {transform: translate(106px, 181px)}
+    20% {transform: translate(114px, 214px)}
+    24% {transform: translate(101px, 210px)}
+    28% {transform: translate(94px, 243px)}
+    32% {transform: translate(107px, 235px)}
+    36% {transform: translate(114px, 272px)}
+    40% {transform: translate(125px, 264px)}
+    44% {transform: translate(132px, 300px)}
+    48% {transform: translate(121px, 294px)}
+    52% {transform: translate(114px, 328px)}
+    56% {transform: translate(128px, 322px)}
+    60% {transform: translate(132px, 358px)}
+    64% {transform: translate(122px, 354px)}
+    68% {transform: translate(112px, 385px)}
+    72% {transform: translate(99px, 378px)}
+    76% {transform: translate(92px, 414px)}
+    80% {transform: translate(83px, 408px)}
+    91%, 100% {transform: translate(87px, 500px)}
+}
+
+@keyframes path1_3 {
+    0% {transform: translate(77px, 124px)}
+    4% {transform: translate(77px, 156px)}
+    8% {transform: translate(90px, 150px)}
+    12% {transform: translate(93px, 185px)}
+    16% {transform: translate(102px, 177px)}
+    20% {transform: translate(115px, 216px)}
+    24% {transform: translate(125px, 212px)}
+    28% {transform: translate(133px, 244px)}
+    32% {transform: translate(144px, 241px)}
+    36% {transform: translate(151px, 273px)}
+    40% {transform: translate(139px, 271px)}
+    44% {transform: translate(133px, 301px)}
+    48% {transform: translate(143px, 297px)}
+    52% {transform: translate(152px, 330px)}
+    56% {transform: translate(133px, 328px)}
+    60% {transform: translate(134px, 358px)}
+    64% {transform: translate(150px, 350px)}
+    68% {transform: translate(149px, 387px)}
+    72% {transform: translate(132px, 382px)}
+    76% {transform: translate(133px, 415px)}
+    80% {transform: translate(143px, 407px)}
+    91%, 100% {transform: translate(134px, 500px)}
+}
+
+@keyframes path1_4 {
+    0% {transform: translate(76px, 124px)}
+    4% {transform: translate(76px, 156px)}
+    8% {transform: translate(58px, 148px)}
+    12% {transform: translate(57px, 186px)}
+    16% {transform: translate(69px, 180px)}
+    20% {transform: translate(73px, 214px)}
+    24% {transform: translate(88px, 208px)}
+    28% {transform: translate(94px, 243px)}
+    32% {transform: translate(108px, 235px)}
+    36% {transform: translate(114px, 272px)}
+    40% {transform: translate(99px, 261px)}
+    44% {transform: translate(96px, 300px)}
+    48% {transform: translate(110px, 294px)}
+    52% {transform: translate(115px, 328px)}
+    56% {transform: translate(127px, 319px)}
+    60% {transform: translate(134px, 358px)}
+    64% {transform: translate(149px, 351px)}
+    68% {transform: translate(153px, 385px)}
+    72% {transform: translate(166px, 378px)}
+    76% {transform: translate(171px, 414px)}
+    80% {transform: translate(183px, 408px)}
+    91%, 100% {transform: translate(189px, 500px)}
+}
+
+@keyframes path2_1 {
+    0% {transform: translate(113px, 124px)}
+    4% {transform: translate(113px, 156px)}
+    8% {transform: translate(93px, 148px)}
+    12% {transform: translate(93px, 186px)}
+    16% {transform: translate(105px, 180px)}
+    20% {transform: translate(113px, 214px)}
+    24% {transform: translate(101px, 208px)}
+    28% {transform: translate(94px, 243px)}
+    32% {transform: translate(81px, 235px)}
+    36% {transform: translate(74px, 272px)}
+    40% {transform: translate(88px, 264px)}
+    44% {transform: translate(95px, 300px)}
+    48% {transform: translate(85px, 294px)}
+    52% {transform: translate(76px, 328px)}
+    56% {transform: translate(67px, 319px)}
+    60% {transform: translate(56px, 358px)}
+    64% {transform: translate(66px, 351px)}
+    68% {transform: translate(74px, 385px)}
+    72% {transform: translate(62px, 378px)}
+    76% {transform: translate(57px, 414px)}
+    80% {transform: translate(44px, 408px)}
+    91%, 100% {transform: translate(37px, 500px)}
+}
+
+@keyframes path2_2 {
+    0% {transform: translate(114px, 124px)}
+    4% {transform: translate(114px, 156px)}
+    8% {transform: translate(101px, 150px)}
+    12% {transform: translate(93px, 185px)}
+    16% {transform: translate(106px, 181px)}
+    20% {transform: translate(114px, 214px)}
+    24% {transform: translate(101px, 210px)}
+    28% {transform: translate(94px, 243px)}
+    32% {transform: translate(107px, 235px)}
+    36% {transform: translate(114px, 272px)}
+    40% {transform: translate(125px, 264px)}
+    44% {transform: translate(132px, 300px)}
+    48% {transform: translate(121px, 294px)}
+    52% {transform: translate(114px, 328px)}
+    56% {transform: translate(128px, 322px)}
+    60% {transform: translate(132px, 358px)}
+    64% {transform: translate(122px, 354px)}
+    68% {transform: translate(112px, 385px)}
+    72% {transform: translate(99px, 378px)}
+    76% {transform: translate(92px, 414px)}
+    80% {transform: translate(83px, 408px)}
+    91%, 100% {transform: translate(87px, 500px)}
+}
+
+@keyframes path2_3 {
+    0% {transform: translate(114px, 124px)}
+    4% {transform: translate(114px, 156px)}
+    8% {transform: translate(93px, 149px)}
+    12% {transform: translate(93px, 185px)}
+    16% {transform: translate(102px, 177px)}
+    20% {transform: translate(115px, 216px)}
+    24% {transform: translate(125px, 212px)}
+    28% {transform: translate(133px, 244px)}
+    32% {transform: translate(144px, 241px)}
+    36% {transform: translate(151px, 273px)}
+    40% {transform: translate(139px, 271px)}
+    44% {transform: translate(133px, 301px)}
+    48% {transform: translate(143px, 297px)}
+    52% {transform: translate(152px, 330px)}
+    56% {transform: translate(133px, 328px)}
+    60% {transform: translate(134px, 358px)}
+    64% {transform: translate(150px, 350px)}
+    68% {transform: translate(149px, 387px)}
+    72% {transform: translate(132px, 382px)}
+    76% {transform: translate(133px, 415px)}
+    80% {transform: translate(143px, 407px)}
+    91%, 100% {transform: translate(134px, 500px)}
+}
+
+@keyframes path2_4 {
+    0% {transform: translate(114px, 124px)}
+    4% {transform: translate(115px, 156px)}
+    8% {transform: translate(98px, 148px)}
+    12% {transform: translate(93px, 186px)}
+    16% {transform: translate(105px, 180px)}
+    20% {transform: translate(115px, 214px)}
+    24% {transform: translate(96px, 208px)}
+    28% {transform: translate(94px, 243px)}
+    32% {transform: translate(108px, 235px)}
+    36% {transform: translate(114px, 272px)}
+    40% {transform: translate(127px, 261px)}
+    44% {transform: translate(132px, 300px)}
+    48% {transform: translate(152px, 294px)}
+    52% {transform: translate(153px, 328px)}
+    56% {transform: translate(165px, 319px)}
+    60% {transform: translate(172px, 358px)}
+    64% {transform: translate(181px, 351px)}
+    68% {transform: translate(189px, 385px)}
+    72% {transform: translate(198px, 378px)}
+    76% {transform: translate(207px, 414px)}
+    80% {transform: translate(199px, 408px)}
+    91%, 100% {transform: translate(189px, 500px)}
+}
+
+@keyframes path3_1 {
+    0% {transform: translate(152px, 124px)}
+    4% {transform: translate(152px, 156px)}
+    8% {transform: translate(169px, 148px)}
+    12% {transform: translate(169px, 186px)}
+    16% {transform: translate(157px, 180px)}
+    20% {transform: translate(151px, 214px)}
+    24% {transform: translate(140px, 208px)}
+    28% {transform: translate(134px, 243px)}
+    32% {transform: translate(148px, 235px)}
+    36% {transform: translate(152px, 272px)}
+    40% {transform: translate(140px, 264px)}
+    44% {transform: translate(132px, 300px)}
+    48% {transform: translate(123px, 294px)}
+    52% {transform: translate(114px, 328px)}
+    56% {transform: translate(105px, 322px)}
+    60% {transform: translate(93px, 358px)}
+    64% {transform: translate(80px, 354px)}
+    68% {transform: translate(74px, 385px)}
+    72% {transform: translate(62px, 378px)}
+    76% {transform: translate(57px, 414px)}
+    80% {transform: translate(48px, 408px)}
+    91%, 100% {transform: translate(37px, 500px)}
+}
+
+@keyframes path3_2 {
+    0% {transform: translate(152px, 124px)}
+    4% {transform: translate(152px, 156px)}
+    8% {transform: translate(163px, 150px)}
+    12% {transform: translate(170px, 185px)}
+    16% {transform: translate(159px, 181px)}
+    20% {transform: translate(152px, 214px)}
+    24% {transform: translate(142px, 210px)}
+    28% {transform: translate(133px, 243px)}
+    32% {transform: translate(120px, 238px)}
+    36% {transform: translate(114px, 272px)}
+    40% {transform: translate(127px, 264px)}
+    44% {transform: translate(132px, 300px)}
+    48% {transform: translate(121px, 294px)}
+    52% {transform: translate(114px, 328px)}
+    56% {transform: translate(128px, 322px)}
+    60% {transform: translate(132px, 358px)}
+    64% {transform: translate(122px, 354px)}
+    68% {transform: translate(112px, 385px)}
+    72% {transform: translate(99px, 378px)}
+    76% {transform: translate(92px, 414px)}
+    80% {transform: translate(83px, 408px)}
+    91%, 100% {transform: translate(87px, 500px)}
+}
+
+@keyframes path3_3 {
+    0% {transform: translate(151px, 124px)}
+    4% {transform: translate(151px, 156px)}
+    8% {transform: translate(139px, 153px)}
+    12% {transform: translate(134px, 186px)}
+    16% {transform: translate(146px, 181px)}
+    20% {transform: translate(152px, 216px)}
+    24% {transform: translate(165px, 212px)}
+    28% {transform: translate(169px, 243px)}
+    32% {transform: translate(158px, 241px)}
+    36% {transform: translate(151px, 273px)}
+    40% {transform: translate(139px, 271px)}
+    44% {transform: translate(133px, 301px)}
+    48% {transform: translate(143px, 297px)}
+    52% {transform: translate(152px, 330px)}
+    56% {transform: translate(133px, 328px)}
+    60% {transform: translate(134px, 358px)}
+    64% {transform: translate(150px, 350px)}
+    68% {transform: translate(149px, 387px)}
+    72% {transform: translate(132px, 382px)}
+    76% {transform: translate(133px, 415px)}
+    80% {transform: translate(143px, 407px)}
+    91%, 100% {transform: translate(134px, 500px)}
+}
+
+@keyframes path3_4 {
+    0% {transform: translate(150px, 124px)}
+    4% {transform: translate(152px, 156px)}
+    8% {transform: translate(164px, 148px)}
+    12% {transform: translate(170px, 186px)}
+    16% {transform: translate(160px, 180px)}
+    20% {transform: translate(152px, 214px)}
+    24% {transform: translate(160px, 208px)}
+    28% {transform: translate(170px, 243px)}
+    32% {transform: translate(179px, 235px)}
+    36% {transform: translate(188px, 272px)}
+    40% {transform: translate(197px, 261px)}
+    44% {transform: translate(208px, 300px)}
+    48% {transform: translate(196px, 294px)}
+    52% {transform: translate(190px, 328px)}
+    56% {transform: translate(179px, 319px)}
+    60% {transform: translate(172px, 358px)}
+    64% {transform: translate(181px, 351px)}
+    68% {transform: translate(189px, 385px)}
+    72% {transform: translate(198px, 378px)}
+    76% {transform: translate(207px, 414px)}
+    80% {transform: translate(199px, 408px)}
+    91%, 100% {transform: translate(189px, 500px)}
+}
+
+@keyframes path4_1 {
+    0% {transform: translate(188px, 124px)}
+    4% {transform: translate(188px, 156px)}
+    8% {transform: translate(169px, 148px)}
+    12% {transform: translate(169px, 186px)}
+    16% {transform: translate(157px, 180px)}
+    20% {transform: translate(151px, 214px)}
+    24% {transform: translate(140px, 208px)}
+    28% {transform: translate(134px, 243px)}
+    32% {transform: translate(148px, 235px)}
+    36% {transform: translate(152px, 272px)}
+    40% {transform: translate(164px, 264px)}
+    44% {transform: translate(168px, 300px)}
+    48% {transform: translate(154px, 294px)}
+    52% {transform: translate(149px, 328px)}
+    56% {transform: translate(138px, 322px)}
+    60% {transform: translate(128px, 358px)}
+    64% {transform: translate(116px, 354px)}
+    68% {transform: translate(111px, 385px)}
+    72% {transform: translate(98px, 378px)}
+    76% {transform: translate(89px, 414px)}
+    80% {transform: translate(69px, 410px)}
+    91%, 100% {transform: translate(43px, 500px)}
+}
+
+@keyframes path4_2 {
+    0% {transform: translate(188px, 124px)}
+    4% {transform: translate(188px, 156px)}
+    8% {transform: translate(172px, 150px)}
+    12% {transform: translate(170px, 185px)}
+    16% {transform: translate(159px, 181px)}
+    20% {transform: translate(152px, 214px)}
+    24% {transform: translate(142px, 210px)}
+    28% {transform: translate(133px, 243px)}
+    32% {transform: translate(120px, 238px)}
+    36% {transform: translate(114px, 272px)}
+    40% {transform: translate(127px, 264px)}
+    44% {transform: translate(132px, 300px)}
+    48% {transform: translate(121px, 294px)}
+    52% {transform: translate(114px, 328px)}
+    56% {transform: translate(128px, 322px)}
+    60% {transform: translate(132px, 358px)}
+    64% {transform: translate(122px, 354px)}
+    68% {transform: translate(112px, 385px)}
+    72% {transform: translate(99px, 378px)}
+    76% {transform: translate(92px, 414px)}
+    80% {transform: translate(83px, 408px)}
+    91%, 100% {transform: translate(87px, 500px)}
+}
+
+@keyframes path4_3 {
+    0% {transform: translate(189px, 124px)}
+    4% {transform: translate(189px, 156px)}
+    8% {transform: translate(177px, 153px)}
+    12% {transform: translate(169px, 186px)}
+    16% {transform: translate(158px, 181px)}
+    20% {transform: translate(152px, 216px)}
+    24% {transform: translate(165px, 212px)}
+    28% {transform: translate(169px, 243px)}
+    32% {transform: translate(158px, 241px)}
+    36% {transform: translate(151px, 273px)}
+    40% {transform: translate(139px, 271px)}
+    44% {transform: translate(133px, 301px)}
+    48% {transform: translate(143px, 297px)}
+    52% {transform: translate(152px, 330px)}
+    56% {transform: translate(133px, 328px)}
+    60% {transform: translate(134px, 358px)}
+    64% {transform: translate(150px, 350px)}
+    68% {transform: translate(149px, 387px)}
+    72% {transform: translate(165px, 381px)}
+    76% {transform: translate(166px, 415px)}
+    80% {transform: translate(153px, 408px)}
+    91%, 100% {transform: translate(134px, 500px)}
+}
+
+@keyframes path4_4 {
+    0% {transform: translate(188px, 124px)}
+    4% {transform: translate(189px, 156px)}
+    8% {transform: translate(178px, 148px)}
+    12% {transform: translate(170px, 186px)}
+    16% {transform: translate(160px, 180px)}
+    20% {transform: translate(152px, 214px)}
+    24% {transform: translate(160px, 208px)}
+    28% {transform: translate(170px, 243px)}
+    32% {transform: translate(179px, 235px)}
+    36% {transform: translate(188px, 272px)}
+    40% {transform: translate(197px, 261px)}
+    44% {transform: translate(208px, 300px)}
+    48% {transform: translate(196px, 294px)}
+    52% {transform: translate(190px, 328px)}
+    56% {transform: translate(179px, 319px)}
+    60% {transform: translate(172px, 358px)}
+    64% {transform: translate(181px, 351px)}
+    68% {transform: translate(189px, 385px)}
+    72% {transform: translate(198px, 378px)}
+    76% {transform: translate(207px, 414px)}
+    80% {transform: translate(199px, 408px)}
+    91%, 100% {transform: translate(189px, 500px)}
+}
+
+@keyframes path5_4 {
+    0% {transform: translate(229px, 124px)}
+    4% {transform: translate(227px, 156px)}
+    8% {transform: translate(246px, 148px)}
+    12% {transform: translate(246px, 186px)}
+    16% {transform: translate(261px, 180px)}
+    20% {transform: translate(264px, 214px)}
+    24% {transform: translate(251px, 208px)}
+    28% {transform: translate(246px, 243px)}
+    32% {transform: translate(238px, 235px)}
+    36% {transform: translate(226px, 272px)}
+    40% {transform: translate(216px, 264px)}
+    44% {transform: translate(208px, 300px)}
+    48% {transform: translate(196px, 294px)}
+    52% {transform: translate(190px, 328px)}
+    56% {transform: translate(179px, 319px)}
+    60% {transform: translate(172px, 358px)}
+    64% {transform: translate(181px, 351px)}
+    68% {transform: translate(189px, 385px)}
+    72% {transform: translate(198px, 378px)}
+    76% {transform: translate(207px, 414px)}
+    80% {transform: translate(199px, 408px)}
+    91%, 100% {transform: translate(189px, 500px)}
+}
+
+@keyframes path5_5 {
+    0% {transform: translate(226px, 124px)}
+    4% {transform: translate(226px, 156px)}
+    8% {transform: translate(214px, 153px)}
+    12% {transform: translate(206px, 186px)}
+    16% {transform: translate(195px, 181px)}
+    20% {transform: translate(189px, 216px)}
+    24% {transform: translate(202px, 212px)}
+    28% {transform: translate(206px, 243px)}
+    32% {transform: translate(223px, 241px)}
+    36% {transform: translate(225px, 273px)}
+    40% {transform: translate(209px, 271px)}
+    44% {transform: translate(207px, 301px)}
+    48% {transform: translate(193px, 297px)}
+    52% {transform: translate(189px, 330px)}
+    56% {transform: translate(170px, 328px)}
+    60% {transform: translate(171px, 358px)}
+    64% {transform: translate(187px, 350px)}
+    68% {transform: translate(190px, 387px)}
+    72% {transform: translate(202px, 381px)}
+    76% {transform: translate(212px, 415px)}
+    80% {transform: translate(226px, 409px)}
+    91%, 100% {transform: translate(244px, 500px)}
+}
+
+@keyframes path5_6 {
+    0% {transform: translate(226px, 124px)}
+    4% {transform: translate(226px, 156px)}
+    8% {transform: translate(214px, 153px)}
+    12% {transform: translate(206px, 186px)}
+    16% {transform: translate(195px, 181px)}
+    20% {transform: translate(189px, 216px)}
+    24% {transform: translate(202px, 212px)}
+    28% {transform: translate(206px, 243px)}
+    32% {transform: translate(223px, 241px)}
+    36% {transform: translate(225px, 273px)}
+    40% {transform: translate(209px, 271px)}
+    44% {transform: translate(207px, 301px)}
+    48% {transform: translate(193px, 297px)}
+    52% {transform: translate(189px, 330px)}
+    56% {transform: translate(200px, 324px)}
+    60% {transform: translate(209px, 356px)}
+    64% {transform: translate(219px, 350px)}
+    68% {transform: translate(228px, 387px)}
+    72% {transform: translate(236px, 381px)}
+    76% {transform: translate(249px, 415px)}
+    80% {transform: translate(262px, 406px)}
+    91%, 100% {transform: translate(289px, 500px)}
+}
+
+@keyframes path5_7 {
+    0% {transform: translate(226px, 124px)}
+    4% {transform: translate(226px, 156px)}
+    8% {transform: translate(214px, 153px)}
+    12% {transform: translate(210px, 186px)}
+    16% {transform: translate(221px, 179px)}
+    20% {transform: translate(227px, 216px)}
+    24% {transform: translate(239px, 212px)}
+    28% {transform: translate(246px, 243px)}
+    32% {transform: translate(253px, 237px)}
+    36% {transform: translate(264px, 273px)}
+    40% {transform: translate(273px, 266px)}
+    44% {transform: translate(282px, 300px)}
+    48% {transform: translate(272px, 296px)}
+    52% {transform: translate(264px, 330px)}
+    56% {transform: translate(275px, 323px)}
+    60% {transform: translate(284px, 356px)}
+    64% {transform: translate(290px, 350px)}
+    68% {transform: translate(301px, 387px)}
+    72% {transform: translate(309px, 381px)}
+    76% {transform: translate(320px, 415px)}
+    80% {transform: translate(331px, 406px)}
+    91%, 100% {transform: translate(339px, 500px)}
+}
+
+@keyframes path6_4 {
+    0% {transform: translate(264px, 124px)}
+    4% {transform: translate(263px, 155px)}
+    8% {transform: translate(246px, 148px)}
+    12% {transform: translate(246px, 186px)}
+    16% {transform: translate(261px, 180px)}
+    20% {transform: translate(264px, 214px)}
+    24% {transform: translate(251px, 208px)}
+    28% {transform: translate(246px, 243px)}
+    32% {transform: translate(238px, 235px)}
+    36% {transform: translate(226px, 272px)}
+    40% {transform: translate(216px, 264px)}
+    44% {transform: translate(208px, 300px)}
+    48% {transform: translate(196px, 294px)}
+    52% {transform: translate(190px, 328px)}
+    56% {transform: translate(179px, 319px)}
+    60% {transform: translate(172px, 358px)}
+    64% {transform: translate(181px, 351px)}
+    68% {transform: translate(189px, 385px)}
+    72% {transform: translate(198px, 378px)}
+    76% {transform: translate(207px, 414px)}
+    80% {transform: translate(199px, 408px)}
+    91%, 100% {transform: translate(189px, 500px)}
+}
+
+@keyframes path6_5 {
+    0% {transform: translate(263px, 124px)}
+    4% {transform: translate(263px, 156px)}
+    8% {transform: translate(250px, 153px)}
+    12% {transform: translate(246px, 186px)}
+    16% {transform: translate(235px, 181px)}
+    20% {transform: translate(227px, 216px)}
+    24% {transform: translate(213px, 212px)}
+    28% {transform: translate(208px, 243px)}
+    32% {transform: translate(223px, 241px)}
+    36% {transform: translate(225px, 273px)}
+    40% {transform: translate(209px, 271px)}
+    44% {transform: translate(207px, 301px)}
+    48% {transform: translate(193px, 297px)}
+    52% {transform: translate(189px, 330px)}
+    56% {transform: translate(170px, 328px)}
+    60% {transform: translate(171px, 358px)}
+    64% {transform: translate(187px, 350px)}
+    68% {transform: translate(190px, 387px)}
+    72% {transform: translate(202px, 381px)}
+    76% {transform: translate(212px, 415px)}
+    80% {transform: translate(226px, 409px)}
+    91%, 100% {transform: translate(244px, 500px)}
+}
+
+@keyframes path6_6 {
+    0% {transform: translate(263px, 124px)}
+    4% {transform: translate(263px, 156px)}
+    8% {transform: translate(250px, 153px)}
+    12% {transform: translate(246px, 186px)}
+    16% {transform: translate(235px, 181px)}
+    20% {transform: translate(227px, 216px)}
+    24% {transform: translate(213px, 212px)}
+    28% {transform: translate(208px, 243px)}
+    32% {transform: translate(223px, 241px)}
+    36% {transform: translate(225px, 273px)}
+    40% {transform: translate(209px, 271px)}
+    44% {transform: translate(207px, 301px)}
+    48% {transform: translate(193px, 297px)}
+    52% {transform: translate(189px, 330px)}
+    56% {transform: translate(203px, 328px)}
+    60% {transform: translate(209px, 358px)}
+    64% {transform: translate(221px, 350px)}
+    68% {transform: translate(227px, 387px)}
+    72% {transform: translate(239px, 381px)}
+    76% {transform: translate(247px, 415px)}
+    80% {transform: translate(261px, 409px)}
+    91%, 100% {transform: translate(288px, 500px)}
+}
+
+@keyframes path6_7 {
+    0% {transform: translate(263px, 124px)}
+    4% {transform: translate(263px, 156px)}
+    8% {transform: translate(252px, 151px)}
+    12% {transform: translate(246px, 186px)}
+    16% {transform: translate(235px, 181px)}
+    20% {transform: translate(227px, 216px)}
+    24% {transform: translate(240px, 212px)}
+    28% {transform: translate(247px, 243px)}
+    32% {transform: translate(257px, 237px)}
+    36% {transform: translate(264px, 273px)}
+    40% {transform: translate(275px, 268px)}
+    44% {transform: translate(284px, 300px)}
+    48% {transform: translate(272px, 297px)}
+    52% {transform: translate(264px, 330px)}
+    56% {transform: translate(275px, 326px)}
+    60% {transform: translate(283px, 358px)}
+    64% {transform: translate(293px, 350px)}
+    68% {transform: translate(301px, 387px)}
+    72% {transform: translate(309px, 381px)}
+    76% {transform: translate(320px, 415px)}
+    80% {transform: translate(332px, 409px)}
+    91%, 100% {transform: translate(337px, 500px)}
+}
+
+@keyframes path7_4 {
+    0% {transform: translate(301px, 124px)}
+    4% {transform: translate(301px, 156px)}
+    8% {transform: translate(317px, 148px)}
+    12% {transform: translate(320px, 186px)}
+    16% {transform: translate(312px, 180px)}
+    20% {transform: translate(302px, 214px)}
+    24% {transform: translate(314px, 208px)}
+    28% {transform: translate(317px, 243px)}
+    32% {transform: translate(306px, 235px)}
+    36% {transform: translate(301px, 272px)}
+    40% {transform: translate(294px, 264px)}
+    44% {transform: translate(283px, 300px)}
+    48% {transform: translate(276px, 294px)}
+    52% {transform: translate(263px, 328px)}
+    56% {transform: translate(253px, 319px)}
+    60% {transform: translate(245px, 358px)}
+    64% {transform: translate(233px, 351px)}
+    68% {transform: translate(225px, 385px)}
+    72% {transform: translate(215px, 378px)}
+    76% {transform: translate(207px, 414px)}
+    80% {transform: translate(199px, 408px)}
+    91%, 100% {transform: translate(189px, 500px)}
+}
+
+@keyframes path7_5 {
+    0% {transform: translate(300px, 124px)}
+    4% {transform: translate(300px, 156px)}
+    8% {transform: translate(286px, 151px)}
+    12% {transform: translate(283px, 186px)}
+    16% {transform: translate(271px, 181px)}
+    20% {transform: translate(262px, 216px)}
+    24% {transform: translate(251px, 212px)}
+    28% {transform: translate(247px, 243px)}
+    32% {transform: translate(257px, 237px)}
+    36% {transform: translate(264px, 273px)}
+    40% {transform: translate(275px, 268px)}
+    44% {transform: translate(284px, 300px)}
+    48% {transform: translate(272px, 297px)}
+    52% {transform: translate(264px, 330px)}
+    56% {transform: translate(253px, 324px)}
+    60% {transform: translate(246px, 357px)}
+    64% {transform: translate(237px, 352px)}
+    68% {transform: translate(225px, 387px)}
+    72% {transform: translate(216px, 380px)}
+    76% {transform: translate(210px, 415px)}
+    80% {transform: translate(225px, 410px)}
+    91%, 100% {transform: translate(242px, 500px)}
+}
+
+@keyframes path7_6 {
+    0% {transform: translate(300px, 124px)}
+    4% {transform: translate(300px, 156px)}
+    8% {transform: translate(286px, 151px)}
+    12% {transform: translate(283px, 186px)}
+    16% {transform: translate(271px, 181px)}
+    20% {transform: translate(262px, 216px)}
+    24% {transform: translate(251px, 212px)}
+    28% {transform: translate(247px, 243px)}
+    32% {transform: translate(257px, 237px)}
+    36% {transform: translate(264px, 273px)}
+    40% {transform: translate(275px, 268px)}
+    44% {transform: translate(284px, 300px)}
+    48% {transform: translate(272px, 297px)}
+    52% {transform: translate(264px, 330px)}
+    56% {transform: translate(275px, 326px)}
+    60% {transform: translate(281px, 357px)}
+    64% {transform: translate(269px, 352px)}
+    68% {transform: translate(265px, 387px)}
+    72% {transform: translate(253px, 382px)}
+    76% {transform: translate(248px, 415px)}
+    80% {transform: translate(266px, 407px)}
+    91%, 100% {transform: translate(291px, 500px)}
+}
+
+@keyframes path7_7 {
+    0% {transform: translate(300px, 124px)}
+    4% {transform: translate(300px, 156px)}
+    8% {transform: translate(286px, 151px)}
+    12% {transform: translate(283px, 186px)}
+    16% {transform: translate(271px, 181px)}
+    20% {transform: translate(262px, 216px)}
+    24% {transform: translate(251px, 212px)}
+    28% {transform: translate(247px, 243px)}
+    32% {transform: translate(257px, 237px)}
+    36% {transform: translate(264px, 273px)}
+    40% {transform: translate(275px, 268px)}
+    44% {transform: translate(284px, 300px)}
+    48% {transform: translate(272px, 297px)}
+    52% {transform: translate(264px, 330px)}
+    56% {transform: translate(275px, 326px)}
+    60% {transform: translate(283px, 358px)}
+    64% {transform: translate(293px, 350px)}
+    68% {transform: translate(301px, 387px)}
+    72% {transform: translate(309px, 381px)}
+    76% {transform: translate(320px, 415px)}
+    80% {transform: translate(332px, 409px)}
+    91%, 100% {transform: translate(337px, 500px)}
+}
+
+#prize {
+    opacity: 1;
+    padding-top: 36px;
+    margin: 0 auto;
+    max-width: 670px;
+    overflow: hidden;
+    max-height: 400px;
+    transition: all 1s ease-in-out;
+}
+
+#prize.hidden {
+    pointer-events: none;
+    opacity: 0;
+}
+
+#prize.full {
+    max-height: 1700px;
+}
+
+#prize h2 {
+    opacity: 1;
+    font-family: 'Cocon Pro Bold', sans-serif;
+    font-size: 25px;
+    color: #534696;
+    margin: 0;
+    transform: scale(1);
+    transition: all .5s .3s ease-in-out;
+}
+
+#prize.hidden h2 {
+    opacity: 0;
+    transform: scale(.5);
+}
+
+#prize h2.smaller {
+    font-size: 22px;
+    line-height: 1.1;
+}
+
+#prize h3 {
+    opacity: 1;
+    font-family: 'Cocon Pro Bold', sans-serif;
+    color: #141C4B;
+    font-size: 18px;
+    margin: 0 0 24px 0;
+    transform: scale(1);
+    transition: all .5s .5s ease-in-out;
+}
+
+#prize.hidden h3 {
+    opacity: 0;
+    transform: scale(.5);
+}
+
+#prize h4 {
+    font-family: 'Cocon Pro Bold', sans-serif;
+    color: #141C4B;
+    font-size: 18px;
+    margin: 0 0 32px 0;
+}
+
+#prize h2.small {
+    font-size: 22px;
+}
+
+#open_view {
+    opacity: 1;
+    position: relative;
+    width: 254px;
+    height: 254px;
+    margin: 0 auto 24px auto;
+    background: url(../imgs/open_view.png) no-repeat;
+    background-size: cover;
+    transform: scale(1);
+    transition: all .5s .7s ease-in-out;
+}
+
+#prize.hidden #open_view {
+    opacity: 0;
+    transform: scale(.5);
+}
+
+#info {
+    padding-bottom: 24px;
+}
+
+#info h3 {
+    color: #534696;
+    margin-bottom: 8px;
+}
+
+#info h4 {
+    font-family: 'Cocon Pro Regular', sans-serif;
+    color: #141C4B;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+#info .bttn.plus {
+    border: solid 1px #141C4B;
+    padding: 2px 21px;
+}
+
+#info .bttn.plus:hover {
+    background-color: #141C4B;
+}
+
+#white_circle {
+    width: 180px;
+    height: 180px;
+    padding-top: 8px;
+    border-radius: 90px;
+    background: #fff;
+    margin: 0 auto;
+}
+
+#ballots {
+    width: 120px;
+    height: 160px;
+}
+
+#open_view #ballots {
+    width: 150px;
+    height: 200px;
+    margin-top: 30px;
+}
+
+#plus_block {
+    text-align: left;
+    color: #fff;
+    background: #534696;
+    padding: 18px 24px;
+    border-radius: 0px 24px;
+    margin-bottom: 16px;
+}
+
+#plus_block.invis {
+    display: none;
+}
+
+#plus_img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 172px;
+    max-width: 100%;
+}
+
+#prize #plus_block h2, #prize #plus_block h3, #prize #plus_block h4, #prize #plus_block h5 {
+    font-family: 'Cocon Pro Regular';
+    font-size: 18px;
+    line-height: 1.2;
+    color: #fff;
+    margin: 0 0 6px 0;
+}
+
+#prize #plus_block h2 {
+    font-size: 25px;
+    margin-bottom: 4px;
+}
+
+#prize #plus_block h3 {
+    margin-bottom: 24px;
+}
+
+#prize #plus_block h4 {
+    color: #CFC2DF;
+    margin-bottom: 12px;
+}
+
+#plus_block h2 {
+    font-family: 'Cocon Pro Bold';
+    font-size: 26px;
+}
+
+#plus_note {
+    color: #141C4B;
+    font-size: 14px;
+    margin: 0;
+}
+
+#plus_note a {
+    color: #141C4B;
+    font-family: 'Cocon Pro Bold';
+    text-decoration: underline;
+}
+
+#plus_note a:hover {
+    text-decoration: none;
+}
+
+#vendorproducts {
+    margin: 12px 0;
+}
+
+#prize_nav {
+    font-size: 18px;
+    padding: 24px 0 8px 0;
+}
+
+#prize_nav a {
+    font-family: 'Cocon Pro Bold';
+    color: #534696;
+    text-decoration: none;
+    margin: 0 8px;
+}
+
+#prize_nav a:hover {
+    text-decoration: underline;
+}
+
+#prize_nav a svg {
+    margin-top: -4px;
+    vertical-align: middle;
+}
+
+@media (max-width: 1540px) {
+    header a {
+        font-size: 14px;
+        margin: 0 4px;
+    }
+    header a.bttn, .bttn {
+        font-size: 12px;
+        padding: 3px 8px;
+    }
+}
+
+@media (max-width: 1330px) {
+    #vendors br {
+        display: none;
+    }
+}
+
+@media (max-width: 1290px) {
+    header a {
+        font-size: 12px;
+        margin: 0 2px;
+    }
+    header a.bttn, .bttn {
+        font-size: 10px;
+        padding: 2px 4px;
+    }
+}
+
+@media (max-width: 1100px) {
+    #header_links svg:not(#header_links a:first-child svg),
+    #header_button svg {
+        display: none;
+    }
+    #header_links a:first-child svg {
+        width: 27px;
+        height: 23px;
+        margin: 0;
+    }
+    header a {
+        margin: 0 6px;
+    }
+    header a.bttn, .bttn {
+        padding: 2px 10px;
+    }
+}
+
+@media (max-width: 998px) {
+    #mobile_menu {
+        display: block;
+        top: 15px;
+        right: 16px;
+    }
+    #header_links, #header_button {
+        display: none;
+    }
+    header {
+        min-height: 44px;
+    }
+    header a {
+        margin: 4px 0;
+    }
+    footer {
+        padding: 16px;
+    }
+    #main {
+        padding: 44px 0 0 0;
+    }
+    .bttn.start {
+        width: 100%;
+        max-width: 334px;
+    }
+    #prize .bttn.start {
+        width: 100%;
+        max-width: initial;
+        white-space: nowrap;
+        padding: 2px 16px;
+    }
+    #start_bttn {
+        font-size: 14px;
+    }
+    #logo {
+        width: 260px;
+    }
+    #social img {
+        width: 32px;
+        margin: 0 8px;
+    }
+    #footer_links {
+        font-size: 0px;
+    }
+    #footer_links a {
+        display: block;
+        font-size: 16px;
+        margin: 8px 0;
+    }
+    #vendors img {
+        max-height: 50px;
+    }
+    #note {
+        margin: 8px 0;
+    }
+    #prize {
+        padding-top: 24px;
+        max-height: 370px;
+        width: 96%;
+    }
+    #prize h3, #prize h4, #open_view {
+        margin-bottom: 6px;
+    }
+    #plus_block {
+        width: 94%;
+        margin: 0 auto 32px auto;
+        padding: 12px 18px;
+    }
+    .clmn_33, .clmn_66 {
+        float: none;
+        width: 100%;
+    }
+    .clmn_66 {
+        padding: 8px 0 0 0;
+        text-align: center;
+    }
+    #plus_img {
+        max-height: initial;
+        width: 90%;
+    }
+    #vendorproducts {
+        width: 100%;
+    }
+    #prize_nav {
+        padding-bottom: 32px;
+    }
+    #vendors img:last-child {
+        margin-top: -10px;
+    }
+}
