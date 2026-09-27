@@ -107,12 +107,22 @@ header a.bttn.bonus:hover, .bttn.bonus:hover {
 }
 
 .bttn.start {
-    font-family: 'Cocon Pro Bold', sans-serif;
     padding: 2px 24px;
     font-size: 16px;
     background: #3A3069;
     color: #fff;
     margin: 0;
+}
+
+.bttn.start.tall {
+    padding: 14px 32px;
+    min-width: 300px;
+    margin: 0 0 24px 0;
+}
+
+.bttn.start.tall svg {
+    margin: -2px 4px 0 0;
+    vertical-align: middle;
 }
 
 .bttn.start:hover {
@@ -121,7 +131,6 @@ header a.bttn.bonus:hover, .bttn.bonus:hover {
 
 .bttn.plus {
     font-size: 14px;
-    font-family: 'Cocon Pro Bold', sans-serif;
     padding: 0 21px;
     margin: 8px 0 16px 0;
 }
@@ -159,7 +168,7 @@ a:hover {
 #main {
     min-height: 1000px;
     background: url(../imgs/bg.svg) repeat-x center top;
-    background-size: 1920px 1400px;
+    background-size: 2194px 1600px;
     position: relative;
     padding: 70px 0 48px 0;
     text-align: center;
@@ -300,96 +309,84 @@ footer a:hover {
 
 #hand {
     pointer-events: none;
-    animation: hand 8s ease-in-out infinite;
+    animation: hand 10s ease-in-out infinite;
 }
 
 @keyframes hand {
-    0%, 40%, 100% {
+    0%, 28%, 100% {
         transform: translate(202px, 137px);
     }
-    0%, 40%, 100% {
-        opacity: 1;
-    }
-    50%, 90% {
-        opacity: 0;
-    }
-    5%, 35% {
+    3%, 23% {
         transform: translate(188px, 124px) scale(.9);
     }
-    13% {
+    8% {
         transform: translate(138px, 124px) scale(.9);
     }
-    26% {
+    16% {
         transform: translate(238px, 124px) scale(.9);
+    }
+    0%, 29%, 100% {
+        opacity: 1;
+    }
+    32%, 95% {
+        opacity: 0;
     }
 }
 
 #arrow_left {
     pointer-events: none;
-    animation: arrow_left 8s ease-in-out infinite;
+    animation: arrow_left 10s ease-in-out infinite;
 }
 
 @keyframes arrow_left {
-    0%, 5%, 40%, 100% {
-        opacity: 1;
+    0%, 3%, 24%, 100% {
         transform: translate(0px, 0px);
     }
-    13% {
-        opacity: 0;
+    8%, 23% {
         transform: translate(-50px, 0px);
     }
-    35% {
-        opacity: 0;
-        transform: translate(0px, 0px);
-    }
-    0%, 40%, 100% {
+    0%, 3%, 100% {
         opacity: 1;
     }
-    50%, 90% {
+    8%, 95% {
         opacity: 0;
     }
 }
 
 #arrow_right {
     pointer-events: none;
-    animation: arrow_right 8s ease-in-out infinite;
+    animation: arrow_right 10s ease-in-out infinite;
 }
 
 @keyframes arrow_right {
-    0%, 17%, 40%, 100% {
-        opacity: 1;
+    0%, 10%, 24%, 100% {
         transform: translate(0px, 0px);
     }
-    24% {
-        opacity: 0;
+    16%, 23% {
         transform: translate(50px, 0px);
     }
-    35% {
-        opacity: 0;
-        transform: translate(0px, 0px);
-    }
-    0%, 40%, 100% {
+    0%, 10%, 100% {
         opacity: 1;
     }
-    50%, 90% {
+    16%, 95% {
         opacity: 0;
     }
 }
 
 #ball {
     transform: translate(188px, 124px);
-    animation: ball 8s ease-in-out infinite;
+    animation: ball 10s ease-in-out infinite;
     cursor: grab;
 }
 
 @keyframes ball {
-    0%, 5%, 35%, 100% {
+    0%, 3%, 23%, 100% {
         transform: translate(188px, 124px);
     }
-    13% {
+    8% {
         transform: translate(138px, 124px);
     }
-    26% {
+    16% {
         transform: translate(238px, 124px);
     }
 }
@@ -403,59 +400,32 @@ footer a:hover {
 }
 
 .play #ball.p1_1 { animation: path1_1 4s ease-in-out forwards}
-
 .play #ball.p1_2 { animation: path1_2 4s ease-in-out forwards}
-
 .play #ball.p1_3 { animation: path1_3 4s ease-in-out forwards}
-
 .play #ball.p1_4 { animation: path1_4 4s ease-in-out forwards}
-
 .play #ball.p2_1 { animation: path2_1 4s ease-in-out forwards}
-
 .play #ball.p2_2 { animation: path2_2 4s ease-in-out forwards}
-
 .play #ball.p2_3 { animation: path2_3 4s ease-in-out forwards}
-
 .play #ball.p2_4 { animation: path2_4 4s ease-in-out forwards}
-
 .play #ball.p3_1 { animation: path3_1 4s ease-in-out forwards}
-
 .play #ball.p3_2 { animation: path3_2 4s ease-in-out forwards}
-
 .play #ball.p3_3 { animation: path3_3 4s ease-in-out forwards}
-
 .play #ball.p3_4 { animation: path3_4 4s ease-in-out forwards}
-
 .play #ball.p4_1 { animation: path4_1 4s ease-in-out forwards}
-
 .play #ball.p4_2 { animation: path4_2 4s ease-in-out forwards}
-
 .play #ball.p4_3 { animation: path4_3 4s ease-in-out forwards}
-
 .play #ball.p4_4 { animation: path4_4 4s ease-in-out forwards}
-
 .play #ball.p5_4 { animation: path5_4 4s ease-in-out forwards}
-
 .play #ball.p5_5 { animation: path5_5 4s ease-in-out forwards}
-
 .play #ball.p5_6 { animation: path5_6 4s ease-in-out forwards}
-
 .play #ball.p5_7 { animation: path5_7 4s ease-in-out forwards}
-
 .play #ball.p6_4 { animation: path6_4 4s ease-in-out forwards}
-
 .play #ball.p6_5 { animation: path6_5 4s ease-in-out forwards}
-
 .play #ball.p6_6 { animation: path6_6 4s ease-in-out forwards}
-
 .play #ball.p6_7 { animation: path6_7 4s ease-in-out forwards}
-
 .play #ball.p7_4 { animation: path7_4 4s ease-in-out forwards}
-
 .play #ball.p7_5 { animation: path7_5 4s ease-in-out forwards}
-
 .play #ball.p7_6 { animation: path7_6 4s ease-in-out forwards}
-
 .play #ball.p7_7 { animation: path7_7 4s ease-in-out forwards}
 
 @keyframes path1_1 {
@@ -1162,7 +1132,7 @@ footer a:hover {
     opacity: 1;
     padding-top: 36px;
     margin: 0 auto;
-    max-width: 670px;
+    max-width: 590px;
     overflow: hidden;
     max-height: 400px;
     transition: all 1s ease-in-out;
@@ -1179,8 +1149,9 @@ footer a:hover {
 
 #prize h2 {
     opacity: 1;
-    font-family: 'Cocon Pro Bold', sans-serif;
-    font-size: 25px;
+    font-family: 'Cocon Pro Regular', sans-serif;
+    font-size: 35px;
+    font-weight: normal;
     color: #534696;
     margin: 0;
     transform: scale(1);
@@ -1199,10 +1170,10 @@ footer a:hover {
 
 #prize h3 {
     opacity: 1;
-    font-family: 'Cocon Pro Bold', sans-serif;
     color: #141C4B;
-    font-size: 18px;
-    margin: 0 0 24px 0;
+    font-size: 28px;
+    font-weight: normal;
+    margin: 0;
     transform: scale(1);
     transition: all .5s .5s ease-in-out;
 }
@@ -1213,31 +1184,17 @@ footer a:hover {
 }
 
 #prize h4 {
-    font-family: 'Cocon Pro Bold', sans-serif;
     color: #141C4B;
     font-size: 18px;
-    margin: 0 0 32px 0;
+    margin: 0 0 48px 0;
+}
+
+#prize h4 a {
+    color: #141C4B;
 }
 
 #prize h2.small {
     font-size: 22px;
-}
-
-#open_view {
-    opacity: 1;
-    position: relative;
-    width: 254px;
-    height: 254px;
-    margin: 0 auto 24px auto;
-    background: url(../imgs/open_view.png) no-repeat;
-    background-size: cover;
-    transform: scale(1);
-    transition: all .5s .7s ease-in-out;
-}
-
-#prize.hidden #open_view {
-    opacity: 0;
-    transform: scale(.5);
 }
 
 #info {
@@ -1251,87 +1208,19 @@ footer a:hover {
 
 #info h4 {
     font-family: 'Cocon Pro Regular', sans-serif;
-    color: #141C4B;
-    font-size: 14px;
+    color: #534696;
+    font-size: 18px;
     margin-bottom: 8px;
 }
 
 #info .bttn.plus {
+    min-width: 260px;
     border: solid 1px #141C4B;
     padding: 2px 21px;
 }
 
 #info .bttn.plus:hover {
     background-color: #141C4B;
-}
-
-#white_circle {
-    width: 180px;
-    height: 180px;
-    padding-top: 8px;
-    border-radius: 90px;
-    background: #fff;
-    margin: 0 auto;
-}
-
-#ballots {
-    width: 120px;
-    height: 160px;
-}
-
-#open_view #ballots {
-    width: 150px;
-    height: 200px;
-    margin-top: 30px;
-}
-
-#plus_block {
-    text-align: left;
-    color: #fff;
-    background: #534696;
-    padding: 18px 24px;
-    border-radius: 0px 24px;
-    margin-bottom: 16px;
-}
-
-#plus_block.invis {
-    display: none;
-}
-
-#plus_img {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    max-height: 172px;
-    max-width: 100%;
-}
-
-#prize #plus_block h2, #prize #plus_block h3, #prize #plus_block h4, #prize #plus_block h5 {
-    font-family: 'Cocon Pro Regular';
-    font-size: 18px;
-    line-height: 1.2;
-    color: #fff;
-    margin: 0 0 6px 0;
-}
-
-#prize #plus_block h2 {
-    font-size: 25px;
-    margin-bottom: 4px;
-}
-
-#prize #plus_block h3 {
-    margin-bottom: 24px;
-}
-
-#prize #plus_block h4 {
-    color: #CFC2DF;
-    margin-bottom: 12px;
-}
-
-#plus_block h2 {
-    font-family: 'Cocon Pro Bold';
-    font-size: 26px;
 }
 
 #plus_note {
@@ -1350,17 +1239,17 @@ footer a:hover {
     text-decoration: none;
 }
 
-#vendorproducts {
-    margin: 12px 0;
+#prizes {
+    max-width: 584px;
+    margin: 12px auto 56px auto;
 }
 
 #prize_nav {
     font-size: 18px;
-    padding: 24px 0 8px 0;
+    padding: 8px 0;
 }
 
 #prize_nav a {
-    font-family: 'Cocon Pro Bold';
     color: #534696;
     text-decoration: none;
     margin: 0 8px;
@@ -1373,6 +1262,30 @@ footer a:hover {
 #prize_nav a svg {
     margin-top: -4px;
     vertical-align: middle;
+}
+
+img.instant_img {
+    max-width: 190px;
+    margin: 16px auto;
+}
+
+#win_again {
+    padding: 32px 0 0 0;
+}
+
+#win_again h2 {
+    font-size: 25px;
+    margin: 0 0 16px 0;
+}
+
+#win_again h3 {
+    font-size: 24px;
+}
+
+#win_again h3 img {
+    max-width: 140px;
+    vertical-align: middle;
+    margin: -8px 4px 30px 4px;
 }
 
 @media (max-width: 1540px) {
@@ -1450,7 +1363,6 @@ footer a:hover {
         width: 100%;
         max-width: initial;
         white-space: nowrap;
-        padding: 2px 16px;
     }
     #start_bttn {
         font-size: 14px;
@@ -1481,7 +1393,7 @@ footer a:hover {
         max-height: 370px;
         width: 96%;
     }
-    #prize h3, #prize h4, #open_view {
+    #prize h3, #open_view {
         margin-bottom: 6px;
     }
     #plus_block {
@@ -1509,5 +1421,20 @@ footer a:hover {
     }
     #vendors img:last-child {
         margin-top: -10px;
+    }
+    #wrapper h3 {
+        padding: 20px 0 8px 0;
+    }
+    #prize h2 {
+        font-size: 30px;
+    }
+    #prize h3 {
+        font-size: 21px;
+    }
+    #win_again h3 img {
+        margin: -8px 4px 6px 4px;
+    }
+    #prizes {
+        max-width: 100%;
     }
 }

@@ -55,6 +55,45 @@ function $(sel) {
   return document.querySelector(sel);
 }
 
+let ballots = 1;
+
+function pathName(peg) {
+  let sector = 0;
+  if (peg >= 1 && peg <= 4) {
+    switch (ballots) {
+      case 2:
+      sector = 1;
+      break;
+      case 5:
+      sector = 2;
+      break;
+      case 10:
+      sector = 3;
+      break;
+      case 1:
+      sector = 4;
+      break;
+    }
+  }
+  if (peg >= 5 && peg <= 7) {
+    switch (ballots) {
+      case 2:
+      sector = 7;
+      break;
+      case 5:
+      sector = 6;
+      break;
+      case 10:
+      sector = 5;
+      break;
+      case 1:
+      sector = 4;
+      break;
+    }
+  }
+  return "p" + peg + "_" + sector;
+}
+
 const ball = $('#ball');
 const svg = ball.ownerSVGElement;
 
@@ -105,31 +144,42 @@ function setupDrag(startEvent) {
       return Math.abs(curr - currentX) < Math.abs(prev - currentX) ? curr : prev;
     });
 
+    ball.style.transform = `translate(${closestX}px, ${FIXED_Y}px)`;
+
     switch (closestX) {
       case 76:
-      $("#ball").classList.add("p1_4");
+      $("#ball").classList.add(pathName(1));
       break;
       case 113:
-      $("#ball").classList.add("p2_4");
+      $("#ball").classList.add(pathName(2));
       break;
       case 152:
-      $("#ball").classList.add("p3_4");
+      $("#ball").classList.add(pathName(3));
       break;
       case 188:
-      $("#ball").classList.add("p4_4");
+      $("#ball").classList.add(pathName(4));
       break;
       case 229:
-      $("#ball").classList.add("p5_4");
+      $("#ball").classList.add(pathName(5));
       break;
       case 264:
-      $("#ball").classList.add("p6_4");
+      $("#ball").classList.add(pathName(6));
       break;
       case 300:
-      $("#ball").classList.add("p7_4");
+      $("#ball").classList.add(pathName(7));
       break;
+      default:
+        console.log("wrong value");
     }
 
-    ball.style.transform = `translate(${closestX}px, ${FIXED_Y}px)`;
+    setTimeout(function(){
+      $("#wrapper").classList.add("invis");
+      $("#prize").classList.remove("hidden");
+    }, 4200);
+
+    setTimeout(function(){
+      $("#prize").classList.add("full");
+    }, 5000);
     
     if (isTouch) {
       window.removeEventListener('touchmove', onMove);
