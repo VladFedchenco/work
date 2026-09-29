@@ -1,4 +1,7 @@
-/* const randomNumber = Math.floor(Math.random() * 1000) + 1;
+let total_amount, ballots_amount;
+let clmn_amount = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+let fields = [$("#c1"), $("#c2"), $("#c3"), $("#c4"), $("#c5"), $("#c6"), $("#c7"), $("#c8"), $("#c9"), $("#c10"), $("#c11"), $("#c12")];
+let labels = [$("#l1"), $("#l2"), $("#l3"), $("#l4"), $("#l5"), $("#l6"), $("#l7"), $("#l8"), $("#l9"), $("#l10"), $("#l11"), $("#l12")];
 
 let request = new XMLHttpRequest();
 request.open('GET', requestURL);
@@ -7,60 +10,35 @@ request.send();
 
 request.onload = function() {
   const prizeData = request.response;
-  let ballots_img = prizeData.ballots_img;
-  $("#ballots").setAttribute("src", ballots_img);
-  if($("#ballot_text")) {
-    $("#ballot_text").innerHTML = prizeData.ballots_amount;
+  ballots_amount = prizeData.ballots_amount;
+  total_amount = ballots_amount;
+  $("#entries_left").innerHTML = ballots_amount;
+  switch (ballots_amount) {
+    case 2:
+      $("#ballot_amount").setAttribute("src", "imgs/ballot_2.png");
+    break;
+    case 5:
+      $("#ballot_amount").setAttribute("src", "imgs/ballot_5.png");
+    break;
+    case 10:
+      $("#ballot_amount").setAttribute("src", "imgs/ballot_10.png");
+    break;
   }
-}
-
-$("#start_bttn").addEventListener("click", function(){
-  reveal();
-});
-
-$("#animation").addEventListener("click", function(){
-  reveal();
-});
-
-function reveal() {
-  $("#main").classList.add("play");
-  setTimeout(function(){
-    $("#confetti").setAttribute("href", "imgs/confetti.svg?v=" + randomNumber);
-    $("#click_hand").classList.add("invis");
-  }, 100);
-  setTimeout(function(){
-    $("#cap").classList.add("open");
-  }, 300);
-  setTimeout(function(){
-    play_sound();
-  }, 600);
-  setTimeout(function(){
-    $("#wrapper").classList.add("invis");
-    $("#prize").classList.remove("hidden");
-  }, 2500);
-  setTimeout(function(){
-    $("#ballots").classList.add("reveal");
-  }, 3400);
-  setTimeout(function(){
-    $("#prize").classList.add("full");
-  }, 3800);
 }
 
 function play_sound() {
   $("#sound").play();
   $("#sound").loop=false;
-} */
+}
 
 function $(sel) {
   return document.querySelector(sel);
 }
 
-let ballots = 1;
-
 function pathName(peg) {
   let sector = 0;
   if (peg >= 1 && peg <= 4) {
-    switch (ballots) {
+    switch (ballots_amount) {
       case 2:
       sector = 1;
       break;
@@ -76,7 +54,7 @@ function pathName(peg) {
     }
   }
   if (peg >= 5 && peg <= 7) {
-    switch (ballots) {
+    switch (ballots_amount) {
       case 2:
       sector = 7;
       break;
@@ -93,6 +71,93 @@ function pathName(peg) {
   }
   return "p" + peg + "_" + sector;
 }
+
+const p = document.querySelectorAll('.bttn_plus');
+const m = document.querySelectorAll('.bttn_minus');
+
+for (let i = 0; i < 12; i++) {
+  (function(index) {
+    let amount = clmn_amount[index];
+    let field = fields[index];
+    let label = labels[index];
+
+    p[index].addEventListener("click", () => {
+      amount = amount_plus(amount);
+      counterBttnPlus(amount, field, label);
+    }, false);
+
+    m[index].addEventListener("click", () => {
+      amount = amount_minus(amount);
+      counterBttnMinus(amount, field, label);
+    }, false);
+  })(i);
+}
+
+function counterBttnPlus(a, f, l) {
+  f.innerHTML = a;
+  if(a == 1) {
+    l.innerHTML = "BALLOT"
+  } else {
+    l.innerHTML = "BALLOTS"
+  }
+  $("#entries_left").innerHTML = ballots_amount;
+  if(ballots_amount == 0) {
+    $("#enter_ballots").classList.remove("disable");
+  }
+}
+
+function counterBttnMinus(a, f, l) {
+  f.innerHTML = a;
+  if(a == 1) {
+    l.innerHTML = "BALLOT"
+  } else {
+    l.innerHTML = "BALLOTS"
+  }
+  $("#entries_left").innerHTML = ballots_amount;
+  if(ballots_amount > 0) {
+    $("#enter_ballots").classList.add("disable");
+  }
+}
+
+function amount_plus(num) {
+  if(num < 30) {
+    if(ballots_amount > 0) {
+      num++;
+      ballots_amount--;
+    }
+  }
+  return num;
+}
+
+function amount_minus(num) {
+  if(num > 0) {
+    if(ballots_amount < total_amount) {
+      num--;
+      ballots_amount++;
+    }
+  }
+  return num;
+}
+
+$("#enter_ballots").addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "instant"
+  });
+  play_sound();
+  for (let i = 0; i < 12; i++) {
+    p[i].classList.add("invis");
+    m[i].classList.add("invis");
+  }
+  $("#ballots_bottom").classList.add("hidden");
+  $("#ballots_available").classList.remove("hidden");
+  $("#ballot_init").classList.add("hidden");
+  setTimeout(function(){
+    $("#ballots_available").classList.remove("invis");
+    $("#ballots_bottom").classList.add("invis");
+    $("#congrats").classList.remove("hidden");
+  }, 100);
+}, false);
 
 const ball = $('#ball');
 const svg = ball.ownerSVGElement;
@@ -174,11 +239,20 @@ function setupDrag(startEvent) {
 
     setTimeout(function(){
       $("#wrapper").classList.add("invis");
-      $("#prize").classList.remove("hidden");
+      if(ballots_amount == 1) {
+        play_sound();
+        $("#prize").classList.remove("hidden");
+      } else {
+        $("#ballot_init").classList.remove("hidden");
+      }
     }, 4200);
 
     setTimeout(function(){
-      $("#prize").classList.add("full");
+      if(ballots_amount == 1) {
+        $("#prize").classList.add("full");
+      } else {
+        $("#ballot_items").classList.remove("hidden");
+      }
     }, 5000);
     
     if (isTouch) {

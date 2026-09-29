@@ -168,7 +168,8 @@ a:hover {
 #main {
     min-height: 1000px;
     background: url(../imgs/bg.svg) repeat-x center top;
-    background-size: 2194px 1600px;
+    /*background-size: 2194px 1600px;*/
+    background-size: cover;
     position: relative;
     padding: 70px 0 48px 0;
     text-align: center;
@@ -194,13 +195,47 @@ footer a:hover {
 
 .clmns {
     overflow: hidden;
-    padding: 8px 0;
+}
+
+.clmn_25 {
+    width: 25%;
+    float: left;
+}
+
+.clmn_30 {
+    width: 30%;
+    float: left;
+}
+
+.clmn_31 {
+    margin-top: 6px;
+    width: 31%;
+    float: left;
 }
 
 .clmn_33 {
     width: 33%;
     float: left;
-    text-align: center;
+}
+
+.clmn_35 {
+    width: 35%;
+    float: left;
+}
+
+.clmn_38 {
+    width: 38%;
+    float: left;
+}
+
+.clmn_40 {
+    width: 40%;
+    float: left;
+}
+
+.clmn_45 {
+    width: 45%;
+    float: left;
 }
 
 .clmn_50 {
@@ -1141,6 +1176,8 @@ footer a:hover {
 #prize.hidden {
     pointer-events: none;
     opacity: 0;
+    position: absolute;
+    width: 100%;
 }
 
 #prize.full {
@@ -1286,6 +1323,191 @@ img.instant_img {
     max-width: 140px;
     vertical-align: middle;
     margin: -8px 4px 30px 4px;
+}
+
+#ballot_init, #congrats {
+    padding: 32px 0;
+    overflow: hidden;
+    max-height: 440px;
+    transition: all .4s ease-in-out;
+}
+
+#ballot_init.hidden, #congrats.hidden {
+    padding: 0 0;
+    max-height: 0;
+    pointer-events: none;
+    opacity: 0;
+}
+
+#ballot_init h3 {
+    font-size: 28px;
+    color: #141C4B;
+    margin: 0 0 16px 0;
+    font-weight: normal;
+}
+
+#ballot_init h4 {
+    margin: 0 0 32px 0;
+    font-size: 24px;
+    line-height: 1;
+    color: #DE0B2B;
+    font-weight: normal;
+}
+
+#ballot_init h5 {
+    color: #534696;
+    font-size: 22px;
+    margin: 0;
+    font-weight: normal;
+    line-height: 1.6;
+}
+
+#ballot_amount {
+    display: block;
+    margin: 0 auto;
+    max-height: 125px;
+}
+
+#congrats h2 {
+    font-size: 34px;
+    font-weight: normal;
+    color: #534696;
+    margin: 0 0 16px 0;
+}
+
+#congrats h3 {
+    font-size: 28px;
+    font-weight: normal;
+    color: #141C4B;
+    margin: 0 0 16px 0;
+}
+
+#congrats h4 {
+    font-size: 18px;
+    color: #141C4B;
+}
+
+#ballot_items {
+    max-width: 960px;
+    margin: 0 auto;
+    overflow: hidden;
+    max-height: 1260px;
+    transition: all .7s ease-in-out;
+}
+
+#ballot_items.hidden {
+    max-height: 0;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.ballot_item {
+    background: #fff;
+    margin: 8px;
+    padding: 16px 8px;
+    border-radius: 8px;
+}
+
+.ballot_item .clmn_30 img {
+    max-width: 90%;
+}
+
+.ballot_item .clmn_45, .ballot_item .clmn_25 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    padding-left: 8px;
+    min-height: 130px;
+}
+
+.ballot_item h3 {
+    font-size: 18px;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #534696;
+    line-height: 1.1;
+    margin: 0 0 8px 0;
+}
+
+.ballot_item h4 {
+    font-size: 14px;
+    color: #141C4B;
+    font-weight: normal;
+    margin: 0;
+}
+
+.counter_wrapper {
+    display: inline-block;
+    background: #f5f2f8;
+    padding: 6px;
+}
+
+.counter {
+    padding: 0 3px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.counter .clmn_30 {
+    padding-top: 9px;
+}
+
+.counter .clmn_38 {
+    user-select: none;
+    text-align: center;
+    font-weight: 700;
+    font-size: 30px;
+    color: #534696;
+    line-height: 1;
+}
+
+.counter_wrapper p {
+    user-select: none;
+}
+
+.counter_bttn:hover svg {
+    fill: #CC0000;
+}
+
+.counter_wrapper p {
+    margin: 0;
+    text-align: center;
+    font-size: 10px;
+    color: #534696;
+}
+
+#ballots_bottom, #ballots_available {
+    opacity: 1;
+    padding: 16px 0 8px 0;
+    max-height: 300px;
+    transition: all .3s ease-in-out;
+}
+
+#ballots_bottom.invis, #ballots_available.invis {
+    opacity: 0;
+    padding: 0 0 0 0;
+    pointer-events: none;
+    position: absolute;
+    max-height: 0px;
+    width: 960px;
+}
+
+#ballots_bottom.hidden, #ballots_available.hidden {
+    display: none;
+}
+
+#ballots_bottom h3, #ballots_available h3 {
+    color: #141C4B;
+}
+
+#enter_ballots.disable {
+    opacity: .5;
+    pointer-events: none;
+}
+
+.bttn_plus.invis, .bttn_minus.invis {
+    display: none;
 }
 
 @media (max-width: 1540px) {
@@ -1436,5 +1658,46 @@ img.instant_img {
     }
     #prizes {
         max-width: 100%;
+    }
+    #ballot_items > .clmns > .clmn_50 {
+        float: none;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .ballot_item {
+        margin: 0 0 16px 0;
+    }
+    #ballot_init, #congrats {
+        min-width: 340px;
+        width: 100%;
+        padding: 24px 16px;
+    }
+    #ballot_items {
+        padding: 0 12px 32px 12px;
+    }
+    .ballot_item .clmn_30 {
+        float: none;
+        width: 100%;
+    }
+    .ballot_item .clmn_30 img {
+        max-height: 170px;
+    }
+    .ballot_item .clmn_45 {
+        width: 60%;
+        min-height: 90px;
+    }
+    .ballot_item .clmn_25 {
+        width: 40%;
+        min-height: 90px;
+        text-align: right;
+        display: block;
+    }
+    .counter_wrapper {
+        max-width: 140px;
+        width: 100%;
+        display: inline-block;
+    }
+    #ballot_items {
+        max-height: 4200px;
     }
 }
